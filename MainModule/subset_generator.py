@@ -38,10 +38,10 @@ class SubsetGenerator:
         :return: random sample
         :rtype: pd.DataFrame
         """
-        if not (0 <= size <= self.df.shape[0]):
-            raise ValueError(f"Size must be between 0 and dataset size (={self.df.shape[0]}). Got {size} instead.")
-        rel_sample_size = 2 * size / self.df.shape[0]
-        max_overlap = self._base_overlap / rel_sample_size
+        if not (0 <= size <= self.df1.shape[0]):
+            raise ValueError(f"Size must be between 0 and size of one of the two source data sets (={self.df1.shape[0]}). Got {size} instead.")
+        rel_sample_size = size / self.df.shape[0]
+        max_overlap = min(1.0, self._base_overlap / rel_sample_size)
         if overlap is None:
             overlap = self._base_overlap
         if not (0 <= overlap <= max_overlap or overlap is None):
