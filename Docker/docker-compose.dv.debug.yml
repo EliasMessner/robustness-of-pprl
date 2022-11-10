@@ -1,0 +1,10 @@
+version: "4.12.0"
+services:
+  mainmodule:
+    image: datasetvariation
+    build:
+      context: ..
+      dockerfile: Docker/datasetvariation.Dockerfile
+    command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 MainModule/dataset_variation.py "]
+    ports:
+      - 5678:5678

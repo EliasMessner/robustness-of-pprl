@@ -1,7 +1,0 @@
-version: "4.12.0"
-services:
-  mainmodule:
-    build:
-      context: ..
-      dockerfile: Docker/mainmodule.Dockerfile
-    network_mode: host
