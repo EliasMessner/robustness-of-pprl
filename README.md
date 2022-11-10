@@ -1,12 +1,12 @@
 > cd Docker
 
-### Build and start MainModule
-> docker compose -f docker-compose.base.yml up -d --build
+### Build and start dataset variation
+> docker compose -f docker-compose.dv.yml up -d --build
 
-### Stop MainModule container
-> docker compose -f docker-compose.base.yml down
+### Stop dataset variation container
+> docker compose -f docker-compose.dv.yml down
 
-<!-- ### Build and start RecordLinkage and MainModule
+<!-- ### Build and start RecordLinkage and dataset variation
 > docker compose -f docker-compose.yml up -d --build
 
 ### Stop them
