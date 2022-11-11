@@ -4,4 +4,3 @@ services:
     build:
       context: ..
       dockerfile: Docker/recordlinkage.Dockerfile
-    network_mode: host

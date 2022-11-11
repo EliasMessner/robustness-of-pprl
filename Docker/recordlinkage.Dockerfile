@@ -1,6 +1,6 @@
 FROM openjdk:17.0.1
-COPY /RecordLinkage ./RecordLinkage
-WORKDIR /RecordLinkage
+COPY /RecordLinkageInterface ./RecordLinkageInterface
+WORKDIR /RecordLinkageInterface
 RUN javac GreetServer.java
 WORKDIR /
-CMD [ "java", "RecordLinkage.GreetServer" ]
+CMD [ "java", "RecordLinkageInterface.GreetServer" ]
