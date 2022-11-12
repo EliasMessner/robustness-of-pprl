@@ -1,24 +1,52 @@
+package RecordLinkageInterface.src;
+
 import org.apache.commons.cli.*;
 
 public class Main {
 
+    static String fromFile, outFile;
+    // static String configFile;
+    static String l, k, t;
+
     public static void main(String[] args) {
-        Options options = new Options();
-        options.addRequiredOption("d", "data", true, "Filepath to dataset used for linkage process.");
-        options.addRequiredOption("o", "out", true, "Filepath to write linked pairs into.");
-        options.addRequiredOption("c", "config", true, "Filepath to config json file.");
-        CommandLineParser parser = new DefaultParser();
+        tryGetCommandLineArgumentValues(args);
+        PPRLAdapter adapter = new PPRLAdapter();
+        // TODO use adapter to perform linking
+    }
+
+    /**
+     * Try to get the command line argument values and assign them to the class fields. If any are missing, print error message
+     * and exit program with code 1.
+     * @param args Command line arguments
+     */
+    private static void tryGetCommandLineArgumentValues(String[] args) {
         try {
-            System.out.println("Working Directory = " + System.getProperty("user.dir"));
-            CommandLine cmd = parser.parse(options, args);
-            String fromFile = cmd.getOptionValue("d");
-            String outFile = cmd.getOptionValue("o");
-            String configFile = cmd.getOptionValue("c");
-            System.out.printf("From: %s \nOut: %s \nConfig: %s \n%n", fromFile, outFile, configFile);
+            CommandLine cmd = getCommandLine(args);
+            fromFile = cmd.getOptionValue("d");
+            outFile = cmd.getOptionValue("o");
+            // String configFile = cmd.getOptionValue("c");
+            l = cmd.getOptionValue("l");
+            k = cmd.getOptionValue("k");
+            t = cmd.getOptionValue("t");
         } catch (ParseException e) {
             System.err.print("Parse error: ");
             System.err.println(e.getMessage());
+            System.exit(1);
         }
     }
 
+    private static CommandLine getCommandLine(String[] args) throws ParseException {
+        Options options = new Options();
+        options.addRequiredOption("d", "data", true, "Filepath to dataset used for linkage process.");
+        options.addRequiredOption("o", "out", true, "Filepath to write linked pairs into.");
+        // options.addRequiredOption("c", "config", true, "Filepath to config json file.");
+        // TODO read Parameters from config file and add additional layer of abstraction,
+        //  i.e. this class should have no knowledge of threshold
+        options.addRequiredOption("l", "bflength", true, "Length of Bloom Filter.");
+        options.addRequiredOption("k", "hashcount", true, "Number of hashing iterations on Bloom Filter.");
+        options.addRequiredOption("t", "threshold", true, "Threshold for linking process.");
+        CommandLineParser parser = new DefaultParser();
+        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+        return parser.parse(options, args);
+    }
 }
