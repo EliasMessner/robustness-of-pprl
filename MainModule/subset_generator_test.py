@@ -3,7 +3,7 @@ import unittest
 import pandas as pd
 
 
-filepath = "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
+filepath = "../data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
 col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH,PLACEOFBIRTH,COUNTRY,CITY,PLZ,STREET,GENDER,ETHNIC,RACE".split(",")
 
 
@@ -60,8 +60,6 @@ class Test_SubsetGenerator(unittest.TestCase):
         expected_overlap = 0.1
         self.assertRaises(ValueError, self.sg.random_sample, size=150000, seed=1, overlap=expected_overlap)
 
-    # TODO test with specified overlap
-    # TODO test with odd values
 
 if __name__ == '__main__':
     unittest.main()
