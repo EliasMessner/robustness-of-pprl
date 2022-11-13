@@ -1,4 +1,4 @@
-package PPRL.src;
+package PPRL;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -32,6 +32,7 @@ public class Launcher {
      */
     public void prepare(Person[] dataSet, Parameters parameters) {
         this.dataSet = dataSet;
+        this.parameters = parameters;
         this.progressHandler = new ProgressHandler(dataSet.length, 1);
         setPersonAttributeWeights();
         // create all the bloom filters
@@ -44,7 +45,7 @@ public class Launcher {
         // If blockingCheat turned on, use globalID as additional blocking key to avoid false negatives due to blocking
         if (blockingCheat) blockingKeyEncoders.add(person -> person.getAttributeValue("globalID"));
         // create blockingMap
-        this.blockingMap = getBlockingMap(parameters.blocking(), blockingKeyEncoders.toArray(BlockingKeyEncoder[]::new));
+        this.blockingMap = getBlockingMap(blockingKeyEncoders.toArray(BlockingKeyEncoder[]::new));
     }
 
     /**
@@ -98,12 +99,11 @@ public class Launcher {
      * Assigns each entry in given dataset to a blocking key and returns the resulting map. If blocking is turned off, maps
      * all records to the same blocking key "DUMMY_VALUE".
      *
-     * @param blocking true if blocking is turned on, else false
      * @return a map that maps each blocking key to a set of records encoded by that key.
      */
-    private Map<String, Set<Person>> getBlockingMap(Boolean blocking, BlockingKeyEncoder... blockingKeyEncoders) {
+    private Map<String, Set<Person>> getBlockingMap(BlockingKeyEncoder... blockingKeyEncoders) {
         Map<String, Set<Person>> blockingMap;
-        if (!blocking) {
+        if (!parameters.blocking()) {
             return Map.ofEntries(entry("DUMMY_VALUE", new HashSet<>(Arrays.asList(dataSet))));
         }
         System.out.println("Creating Blocking Keys...");

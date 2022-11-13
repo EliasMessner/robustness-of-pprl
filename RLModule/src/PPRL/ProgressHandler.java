@@ -1,4 +1,4 @@
-package PPRL.src;
+package PPRL;
 
 import java.util.concurrent.atomic.AtomicLong;
 

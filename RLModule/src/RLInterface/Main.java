@@ -1,4 +1,4 @@
-package RecordLinkageInterface.src;
+package RLInterface;
 
 import org.apache.commons.cli.*;
 

@@ -1,4 +1,4 @@
-package PPRL.src;
+package PPRL;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;

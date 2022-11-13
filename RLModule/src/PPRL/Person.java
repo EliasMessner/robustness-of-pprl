@@ -1,4 +1,4 @@
-package PPRL.src;
+package PPRL;
 
 import org.apache.commons.codec.language.Soundex;
 

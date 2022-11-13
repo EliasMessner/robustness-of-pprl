@@ -1,4 +1,4 @@
-package RecordLinkageInterface.src;
+package RLInterface;
 
 public interface RecordLinkageI {
 

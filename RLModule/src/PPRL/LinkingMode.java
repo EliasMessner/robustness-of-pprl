@@ -1,4 +1,4 @@
-package PPRL.src;
+package PPRL;
 
 public enum LinkingMode {
     STABLE_MARRIAGE,

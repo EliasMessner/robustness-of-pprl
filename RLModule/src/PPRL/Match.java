@@ -1,4 +1,4 @@
-package PPRL.src;
+package PPRL;
 
 /**
  * Class for representing a destination record (Person) in a match and the belonging similarity value.

@@ -1,6 +1,6 @@
-package RecordLinkageInterface.src;
+package RLInterface;
 
-import PPRL.src.*;
+import PPRL.*;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvValidationException;
@@ -73,7 +73,11 @@ public class PPRLAdapter implements RecordLinkageI {
 
     private void storeLinkingToFile(Set<PersonPair> linking, String outFilePath) {
         File file = new File(outFilePath);
-        try (CSVWriter writer = new CSVWriter(new FileWriter(file))) {
+        try (CSVWriter writer = new CSVWriter(new FileWriter(file),
+                CSVWriter.DEFAULT_SEPARATOR,
+                CSVWriter.NO_QUOTE_CHARACTER,
+                CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+                CSVWriter.DEFAULT_LINE_END)) {
             String[] header = {"globalID_A", "globalID_B"};
             writer.writeNext(header);
             for (PersonPair pair : linking) {

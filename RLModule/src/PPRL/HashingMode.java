@@ -1,4 +1,4 @@
-package PPRL.src;
+package PPRL;
 
 public enum HashingMode {
     DOUBLE_HASHING,
