@@ -9,20 +9,30 @@ import static java.util.Map.entry;
 /**
  * Creates all the Bloom Filters, creates the blocking map, invokes the linking process.
  */
-public class Executor {
+public class Launcher {
 
     Parameters parameters;
     Person[] dataSet;
     ProgressHandler progressHandler;
+    boolean blockingCheat;
     boolean parallel;
     Map<Person, BloomFilter> personBloomFilterMap;
     Map<String, Set<Person>> blockingMap;
 
-    public Executor(Person[] dataSet, Parameters parameters, boolean blockingCheat, boolean parallel) {
-        this.parameters = parameters;
+    public Launcher(boolean blockingCheat, boolean parallel) {
+        this.blockingCheat = blockingCheat;
+        this.parallel = parallel;
+        setPersonAttributeWeights();
+    }
+
+    /**
+     * Creates all Bloom filters, creates the blocking map.
+     * @param dataSet the dataset used for linking
+     * @param parameters Params used for Bloom Filter creation and linking.
+     */
+    public void prepare(Person[] dataSet, Parameters parameters) {
         this.dataSet = dataSet;
         this.progressHandler = new ProgressHandler(dataSet.length, 1);
-        this.parallel = parallel;
         setPersonAttributeWeights();
         // create all the bloom filters
         this.personBloomFilterMap = getPersonBloomFilterMap();
@@ -37,6 +47,10 @@ public class Executor {
         this.blockingMap = getBlockingMap(parameters.blocking(), blockingKeyEncoders.toArray(BlockingKeyEncoder[]::new));
     }
 
+    /**
+     * Invokes the linkage process.
+     * @return a set of all matches pairs.
+     */
     public Set<PersonPair> getLinking() {
         Linker linker = new Linker(dataSet, progressHandler, parameters, personBloomFilterMap, blockingMap, "A", "B", parallel);
         return linker.getLinking();
