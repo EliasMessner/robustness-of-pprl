@@ -8,15 +8,23 @@ public class Main {
     // static String configFile;
     static String l, k, t;
 
+    /**
+     * Required command line options:
+     * -d / -data: file path to dataset
+     * -o / -out: file path to out file (where linked pairs should be stored)
+     * -l, -k, -t
+     * TODO: l, k, t to be replaced with config file
+     */
     public static void main(String[] args) {
         tryGetCommandLineArgumentValues(args);
         PPRLAdapter adapter = new PPRLAdapter();
-        // TODO use adapter to perform linking
+        adapter.readData(fromFile, l, k, t);
+        adapter.getLinking(outFile);
     }
 
     /**
-     * Try to get the command line argument values and assign them to the class fields. If any are missing, print error message
-     * and exit program with code 1.
+     * Try to get the command line argument values and assign them to the class fields. If any are missing, print error
+     * message and exit program with code 1.
      * @param args Command line arguments
      */
     private static void tryGetCommandLineArgumentValues(String[] args) {
@@ -41,7 +49,8 @@ public class Main {
         options.addRequiredOption("o", "out", true, "Filepath to write linked pairs into.");
         // options.addRequiredOption("c", "config", true, "Filepath to config json file.");
         // TODO read Parameters from config file and add additional layer of abstraction,
-        //  i.e. this class should have no knowledge of threshold
+        //  i.e. this class should have no knowledge of l, k, t, but just pass the config
+        //  file to the adapter
         options.addRequiredOption("l", "bflength", true, "Length of Bloom Filter.");
         options.addRequiredOption("k", "hashcount", true, "Number of hashing iterations on Bloom Filter.");
         options.addRequiredOption("t", "threshold", true, "Threshold for linking process.");
