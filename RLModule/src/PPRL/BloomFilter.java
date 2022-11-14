@@ -208,16 +208,16 @@ public class BloomFilter {
     }
 
     /**
-     * Function for generating a hash value from a given key using a specified hash-algorithm.
-     * @param key the string to be hashed.
+     * Function for generating a hash value from a given value using a specified hash-algorithm.
+     * @param value the string to be hashed.
      * @param algorithm a string representing the hash algorithm to be used, eg. "MD5".
      * @return resulting hash value as BigInteger.
      * @throws NoSuchAlgorithmException If the specified hash-algorithm is unknown.
      */
-    private BigInteger getHash(String key, String algorithm) throws NoSuchAlgorithmException {
+    private BigInteger getHash(String value, String algorithm) throws NoSuchAlgorithmException {
         MessageDigest digest = MessageDigest.getInstance(algorithm);
         digest.reset();
-        digest.update(key.getBytes(StandardCharsets.UTF_8));
+        digest.update(value.getBytes(StandardCharsets.UTF_8));
         return new BigInteger(1, digest.digest());
     }
 }
