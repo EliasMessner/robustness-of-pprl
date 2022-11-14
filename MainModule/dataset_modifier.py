@@ -2,7 +2,7 @@ import pandas as pd
 from typing import Tuple
 
 
-class SubsetGenerator:
+class DatasetModifier:
     def __init__(self, filepath: str, col_names: list, source_id_col_name: str = "sourceID",
                  global_id_col_name: str = "globalID"):
         """
@@ -25,14 +25,23 @@ class SubsetGenerator:
         self.true_matches1, self.true_matches2 = self._get_true_matches()
         self._base_overlap = self._get_base_overlap()
 
-    def random_sample(self, size: int, seed: int, overlap: float = None) -> pd.DataFrame:
+    def get_variation(self, params):
+        if params["subsetSelector"] == "RANDOM":
+            return self.random_sample(params)
+
+    def random_sample(self, params):
         """
         Draw random sample from base dataset.
-        :param size: number of records to draw from each of the two sources
-        :param seed: Seed for reproducibility
-        :param overlap: ratio of true matches to whole size of one source, if not specified the ratio will be the same as in the base dataset
+        :param params: dict containing the keys described below.
+        size (int): number of records to draw from each of the two sources
+        seed (int): Seed for reproducibility
+        overlap (float) (optional): ratio of true matches to whole size of one source, if not specified the ratio will be the same
+        as in the base dataset
         :return: random sample drawn from base dataframe
         """
+        return self._random_sample(size=params["size"], seed=params["seed"], overlap=params.get("overlap", None))
+
+    def _random_sample(self, size: int, seed: int, overlap: float = None) -> pd.DataFrame:
         if not (0 <= size <= self.df1.shape[0]):
             raise ValueError(
                 f"Size must be between 0 and size of one of the two source data sets (={self.df1.shape[0]}). Got {size} instead.")
@@ -68,7 +77,7 @@ class SubsetGenerator:
 
     def _get_base_overlap(self):
         """
-        Returns overlap in base dataset. Overlap is calculated wrt. size of one source, 
+        Returns overlap in base dataset. Overlap is calculated wrt. size of one source,
         which means that if there are two datasets A and B with each 100 records,
         20 of which are matches and 80 non-matches, then the overlap will be 0.2.
         :return: Overlap value between 0 and 1.
@@ -76,3 +85,4 @@ class SubsetGenerator:
         """
         intersect = pd.merge(self.df1, self.df2, how="inner", on=[self.global_id_col_name])
         return 2 * intersect.shape[0] / self.df.shape[0]
+
