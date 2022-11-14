@@ -1,6 +1,0 @@
-version: "4.12.0"
-services:
-  recordlinkage:
-    build:
-      context: ..
-      dockerfile: Docker/recordlinkage.Dockerfile

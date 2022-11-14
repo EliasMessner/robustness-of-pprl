@@ -1,8 +1,0 @@
-version: "4.12.0"
-services:
-  mainmodule:
-    image: datasetvariation
-    build:
-      context: ..
-      dockerfile: Docker/datasetvariation.Dockerfile
-      
