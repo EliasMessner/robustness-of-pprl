@@ -1,15 +1,55 @@
 import pandas as pd
-from typing import Tuple
+
+from util import read_json
+
+
+def get_param_variations(config):
+    """
+    Return a list of all parameter variations created from given config dict
+    """
+    param_vars = []
+    for params in config["variations"]:
+        for k, values in params["replacements"].items():
+            for v in values:
+                param_variation = params.copy()
+                param_variation.pop('replacements', None)
+                param_variation[k] = v
+                param_vars.append(param_variation)
+    return param_vars
 
 
 class DatasetModifier:
-    def __init__(self, filepath: str, col_names: list, source_id_col_name: str = "sourceID",
+    def __init__(self):
+        self.df = None
+        self.df1 = None
+        self.df2 = None
+        self.source_id_col_name = None
+        self.global_id_col_name = None
+        self.true_matches1 = None
+        self.true_matches2 = None
+        self._base_overlap = None
+
+    def read_csv_config_json(self, config_path: str):
+        """
+        Reads parameters from json and calls self.read_csv with the parameters.
+        """
+        config = read_json(config_path)
+        self.read_csv_config_dict(config)
+
+    def read_csv_config_dict(self, config: dict):
+        """
+        Calls self.read_csv and accepts parameters as a dict.
+        """
+        self.read_csv(dataset_path=config["base_dataset"], col_names=config["col_names"],
+                      source_id_col_name=config["source_id_col_name"], global_id_col_name=config["global_id_col_name"])
+
+    def read_csv(self, dataset_path: str, col_names: list, source_id_col_name: str = "sourceID",
                  global_id_col_name: str = "globalID"):
         """
-        The passed dataset is expected to consist of two equally sized sources, 
+        The passed dataset is expected to consist of two equally sized sources,
         distinguishable by a column containing a sourceID.
-        :param filepath: Filepath to dataset csv
-        :type filepath: str
+        :param dataset_path: Filepath to dataset csv
+        :type dataset_path: str
         :param col_names: column names of dataset
         :type col_names: list of str
         :param source_id_col_name: name of the column containing the two sourceID (e.g. A and B), defaults to "sourceID"
@@ -17,7 +57,7 @@ class DatasetModifier:
         :param global_id_col_name: name of column containing global ID, defaults to "globalID"
         :type global_id_col_name: str
         """
-        self.df = pd.read_csv(filepath, names=col_names)
+        self.df = pd.read_csv(dataset_path, names=col_names, dtype={"PLZ": str}, keep_default_na=False)  # keep_default_na for representing empty PLZ values as empty str and not nan
         self.df1, self.df2 = [x for _, x in self.df.groupby(source_id_col_name)]
         assert self.df1.shape == self.df2.shape
         self.global_id_col_name = global_id_col_name
@@ -25,8 +65,23 @@ class DatasetModifier:
         self.true_matches1, self.true_matches2 = self._get_true_matches()
         self._base_overlap = self._get_base_overlap()
 
+    def get_variations_by_config_file(self, config_path, out_location):
+        """
+        Read dataset modifier config file, create dataset variations as described in the file, write them all to
+        out_location folder.
+        """
+        config = read_json(config_path)
+        return self.get_variations_by_config_dict(config)
+
+    def get_variations_by_config_dict(self, config):
+        variations = []
+        self.read_csv_config_dict(config)  # read the dataset
+        for params in get_param_variations(config):
+            variations.append(self.get_variation(params))
+        return variations
+
     def get_variation(self, params):
-        if params["subsetSelector"] == "RANDOM":
+        if params["subset_selection"] == "RANDOM":
             return self.random_sample(params)
 
     def random_sample(self, params):
@@ -35,7 +90,8 @@ class DatasetModifier:
         :param params: dict containing the keys described below.
         size (int): number of records to draw from each of the two sources
         seed (int): Seed for reproducibility
-        overlap (float) (optional): ratio of true matches to whole size of one source, if not specified the ratio will be the same
+        overlap (float) (optional): ratio of true matches to whole size of one source, if not specified the ratio will
+        be the same
         as in the base dataset
         :return: random sample drawn from base dataframe
         """
@@ -44,7 +100,8 @@ class DatasetModifier:
     def _random_sample(self, size: int, seed: int, overlap: float = None) -> pd.DataFrame:
         if not (0 <= size <= self.df1.shape[0]):
             raise ValueError(
-                f"Size must be between 0 and size of one of the two source data sets (={self.df1.shape[0]}). Got {size} instead.")
+                f"Size must be between 0 and size of one of the two source data sets (={self.df1.shape[0]}). Got "
+                f"{size} instead.")
         rel_sample_size = size / self.df.shape[0]
         max_overlap = min(1.0, self._base_overlap / rel_sample_size)
         if overlap is None:
@@ -64,7 +121,24 @@ class DatasetModifier:
         # concatenate all
         return pd.concat([a_matches, a_non_matches, b_matches, b_non_matches])
 
-    def _get_true_matches(self) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    def get_subsets_by_param_group_by(self, param, mapping_to_group_by: callable) -> dict:
+        """
+        Return the subsets that result from grouping by a new column
+        """
+        values_to_group_by = self.df[param].map(mapping_to_group_by)
+        groups = self.df.groupby(values_to_group_by)
+        return {key: groups.get_group(key) for key in set(groups.keys)}
+
+    def get_subset_by_parameter_match(self, param: str, values: list[str], complement=False, match_case=True):
+        if match_case:
+            condition = self.df[param].isin(values)
+        else:
+            condition = self.df[param].str.lower().isin([v.lower() for v in values])
+        if complement:
+            condition = ~condition
+        return self.df[condition]
+
+    def _get_true_matches(self) -> (pd.DataFrame, pd.DataFrame):
         """
         Return all records that are part of the overlap, aka all records that have a true match.
         Returned as tuple of two dataframes, one for each sourceID.
