@@ -33,3 +33,9 @@ Install requirements
 ### Run Experiments
 
 > python main.py
+
+## Miscellaneous
+
+### Freeze requirements when conda env activated
+
+> pip list --format=freeze > requirements.txt
