@@ -4,6 +4,9 @@ import PPRL.*;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvValidationException;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -25,13 +28,16 @@ public class PPRLAdapter implements RecordLinkageI {
     }
 
     /**
-     * Reads dataset from file and prepares the launcher.
-     * parameters = l, k, t in that order TODO config file
+     * Reads dataset and config file and prepares the launcher.
      */
-    public void readData(String fromFile, String... params) {
-        Person[] dataSet = getDatasetFromFile(fromFile);
-        Parameters parameters = getParametersObject(params);
-        launcher.prepare(dataSet, parameters);
+    public void readData(String fromFile, String configFile) {
+        try {
+            Person[] dataSet = getDatasetFromFile(fromFile);
+            Parameters parameters = getParametersObject(configFile);
+            launcher.prepare(dataSet, parameters);
+        } catch (IOException | ParseException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     /**
@@ -56,19 +62,23 @@ public class PPRLAdapter implements RecordLinkageI {
         return records.toArray(Person[]::new);
     }
 
-    private Parameters getParametersObject(String... params) {
-        int l = Integer.parseInt(params[0]);
-        int k = Integer.parseInt(params[1]);
-        double t = Double.parseDouble(params[2]);
-        return new Parameters(
-                LinkingMode.POLYGAMOUS,
-                HashingMode.ENHANCED_DOUBLE_HASHING,
-                "SHA-1",
-                "MD5",
-                true,
-                true,
-                "",
-                l, k, t);
+    private Parameters getParametersObject(String configFile) throws IOException, ParseException {
+        try (FileReader reader = new FileReader(configFile)) {
+            JSONObject jsonObject = (JSONObject) (new JSONParser().parse(reader));
+            int l = (int) (long) jsonObject.get("l");
+            int k = (int) (long) jsonObject.get("k");
+            double t = (double) jsonObject.get("t");
+            String tokenSalting = (String) jsonObject.get("seed");
+            return new Parameters(
+                    LinkingMode.POLYGAMOUS,
+                    HashingMode.ENHANCED_DOUBLE_HASHING,
+                    "SHA-1",
+                    "MD5",
+                    true,
+                    true,
+                    tokenSalting,
+                    l, k, t);
+        }
     }
 
     private void storeLinkingToFile(Set<PersonPair> linking, String outFilePath) {
