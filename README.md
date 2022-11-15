@@ -1,16 +1,32 @@
-> cd Docker
+# MainModule
 
-### Build and start dataset variation
-> docker compose -f docker-compose.dv.yml up -d --build
+Python 3.9 needed
 
-### Stop dataset variation container
-> docker compose -f docker-compose.dv.yml down
+### Install requirements
 
-<!-- ### Build and start RecordLinkageInterface and dataset variation
-> docker compose -f docker-compose.yml up -d --build
+If using conda environment, first install pip in conda env using
 
-### Stop them
-> docker compose -f docker-compose.yml down
+> conda activate <some-python-3.9-env>
 
-### Build and start RecordLinkageInterface
-> docker compose -f docker-compose.rl.yml up -d --build -->
+> conda install pip
+
+Install requirements
+
+> cd MainModule
+
+> pip install -r requirements.txt
+
+### Run
+
+> python main.py
+
+
+# RLModule
+
+### Build jar
+> cd RLModule
+
+> mvn package
+
+### Run
+> java -jar target/RLModule.jar -d <path-to-dataset> -o <path-to-outfile> -c <path-to-config-file>
