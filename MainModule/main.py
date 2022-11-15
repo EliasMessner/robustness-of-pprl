@@ -1,11 +1,10 @@
-import json
 import os.path
 import subprocess
 from pathlib import Path
-from subprocess import Popen
 
-from constants import *
+from util import read_json
 from config_file_handler import ConfigFileHandler
+from constants import *
 from dataset_modifier import DatasetModifier
 
 
@@ -86,12 +85,6 @@ def create_and_store_random_sample():
     dm = DatasetModifier(base_dataset_path, col_names)
     random_sample = dm.random_sample({"size": 300, "seed": 1, "overlap": 0.1})
     random_sample.to_csv("data/out/random_300_1_0.1.csv", index=False, header=False)
-
-
-def read_json(path):
-    with open(path, "r") as f:
-        json_object = json.load(f)
-    return json_object
 
 
 if __name__ == "__main__":
