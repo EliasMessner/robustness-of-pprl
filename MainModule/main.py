@@ -55,7 +55,7 @@ def conduct_runs(exp_id: int, exp_dir):
         run_id = read_json(os.path.join(exp_dir, run))["id"]
         data_path = get_data_path(exp_id, run_id)
         outfile_path = get_outfile_path(exp_dir, run_id)
-        subprocess.run(["../RLModule/run.sh",
+        subprocess.run(["java", "-jar", "../RLModule/target/RLModule.jar",
                         "-d", data_path,
                         "-o", outfile_path,
                         "-c", run_config_path],
