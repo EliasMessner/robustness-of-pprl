@@ -1,88 +1,69 @@
+import json
 import os.path
 import subprocess
 from pathlib import Path
 
-from util import read_json
-from config_file_handler import ConfigFileHandler
 from constants import *
 from dataset_modifier import DatasetModifier
+from util import read_json
 
 
 def main():
-    # create config files
-    cfh = ConfigFileHandler(exp_config_path, run_configs_path)
-    cfh.create_experiment_config()
-    cfh.create_run_configs()
-    # create dataset variations
-    create_all_dataset_variations()
-    # conduct experiments
+    create_exp_config()
     conduct_experiments()
     # TODO evaluate results
     # TODO write to mlflow
 
 
-def create_all_dataset_variations():
+def create_exp_config():
     """
-    Iterate all run config files and create the dataset variation for each file. The resulting datasets are
-    stored in the file locations specified by the get_data_path method.
+    Create experiment config json file, containing all the information about the experiments and runs to be executed.
     """
-    Path(dataset_variations_dir).mkdir(parents=True, exist_ok=True)
-    dm = DatasetModifier(base_dataset_path, col_names)
-    for exp_folder_name in os.listdir(run_configs_path):
-        exp_dir = os.path.join(run_configs_path, exp_folder_name)
-        for run in os.listdir(exp_dir):
-            run_config_path = os.path.join(exp_dir, run)
-            run_id = read_json(os.path.join(exp_dir, run))["id"]
-            exp_id = int(exp_folder_name)
-            data_path = get_data_path(exp_id, run_id)
-            params = read_json(run_config_path)
-            variation = dm.get_variation(params)
-            variation.to_csv(data_path, index=False, header=False)
+    # TODO create dict by combining values from given parameter lists
+    config = {"experiments": [
+        {"id": 0, "seed": 1, "l": 1000, "k": 10, "t": 0.6},
+        {"id": 1, "seed": 1, "l": 1000, "k": 10, "t": 0.7}
+    ]}
+    with open(exp_config_path, "w") as file:
+        json.dump(config, file, indent=2)
 
 
 def conduct_experiments():
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     exp_config = read_json(exp_config_path)
-    for exp in exp_config["experiments"]:
-        exp_dir = os.path.join(run_configs_path, str(exp["id"]))
-        conduct_runs(exp["id"], exp_dir)
+    for exp_params in exp_config["experiments"]:
+        conduct_runs(exp_params)
 
 
-def conduct_runs(exp_id: int, exp_dir):
-    for run in os.listdir(exp_dir):
-        run_config_path = os.path.join(exp_dir, run)
-        run_id = read_json(os.path.join(exp_dir, run))["id"]
-        data_path = get_data_path(exp_id, run_id)
-        outfile_path = get_outfile_path(exp_dir, run_id)
-        subprocess.run(["java", "-jar", "../RLModule/target/RLModule.jar",
+def create_exp_config_temp(exp_params: dict):
+    """
+    create temporary experiment config and return filepath
+    """
+    with open(exp_config_temp_path, "w") as file:
+        json.dump(exp_params, file, indent=2)
+
+
+def conduct_runs(exp_params):
+    # create folder for this experiment's matching results
+    outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
+    Path(outfile_folder).mkdir(exist_ok=True)
+    for variation in os.listdir(dataset_variations_dir):
+        variation_name = ''.join(variation.split(".")[:-1])  # strip extension
+        data_path = os.path.join(dataset_variations_dir, variation)
+        outfile_path = os.path.join(outfile_folder, variation_name)
+        create_exp_config_temp(exp_params)
+        subprocess.check_output(["java", "-jar", "../RLModule/target/RLModule.jar",
                         "-d", data_path,
                         "-o", outfile_path,
-                        "-c", run_config_path],
-                       check=True, capture_output=True)
-
-
-def get_data_path(exp_id: int, run_id: int) -> str:
-    """
-    Return path to modified dataset for given run.
-    File name will be exp-id_run-id.json, e.g. 5_22.csv.
-    """
-    filename = f"{exp_id}_{run_id}.csv"
-    return os.path.join(dataset_variations_dir, filename)
-
-
-def get_outfile_path(exp_id: int, run_id: int) -> str:
-    """
-    Return path to file containing results of matching process for a given run.
-    """
-    filename = f"{exp_id}_{run_id}.csv"
-    return os.path.join(matchings_dir, filename)
+                        "-c", exp_config_temp_path])
 
 
 def create_and_store_random_sample():
     """
     example function
     """
-    dm = DatasetModifier(base_dataset_path, col_names)
+    dm = DatasetModifier()
+    dm.load_dataset_by_config_file(dm_config_path)
     random_sample = dm.random_sample({"size": 300, "seed": 1, "overlap": 0.1})
     random_sample.to_csv("data/out/random_300_1_0.1.csv", index=False, header=False)
 
