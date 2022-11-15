@@ -1,3 +1,13 @@
+# RLModule
+
+### Build jar
+> cd RLModule
+
+> mvn package
+
+### Run
+> java -jar target/RLModule.jar -d <path-to-dataset> -o <path-to-outfile> -c <path-to-config-file>
+
 # MainModule
 
 Python 3.9 needed
@@ -16,17 +26,10 @@ Install requirements
 
 > pip install -r requirements.txt
 
-### Run
+### Create all Dataset Variations
+
+> python dataset_modifier.py
+
+### Run Experiments
 
 > python main.py
-
-
-# RLModule
-
-### Build jar
-> cd RLModule
-
-> mvn package
-
-### Run
-> java -jar target/RLModule.jar -d <path-to-dataset> -o <path-to-outfile> -c <path-to-config-file>
