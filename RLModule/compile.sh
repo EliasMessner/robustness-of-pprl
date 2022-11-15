@@ -1,1 +1,0 @@
-javac -d classes -cp .:lib/* src/PPRL/*.java src/RLInterface/*.java
