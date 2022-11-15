@@ -11,7 +11,7 @@ col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH
 class Test_DatasetModifier(TestCase):
     def setUp(self) -> None:
         self.sg = DatasetModifier()
-        self.sg.read_csv_config_json("../data/dataset_modifier_test.json")
+        self.sg.load_dataset_by_config_file("../data/dataset_modifier_test.json")
 
     def test_size(self):
         self.assertEqual(self.sg.df.shape[0], 200000)

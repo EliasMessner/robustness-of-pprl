@@ -1,6 +1,17 @@
+import os.path
+from pathlib import Path
+
 import pandas as pd
 
 from util import read_json
+from constants import dm_config_path, dataset_variations_dir
+
+
+def main():
+    # create dataset variations
+    dm = DatasetModifier()
+    dm.load_dataset_by_config_file(dm_config_path)
+    dm.create_variations_by_config_file(dm_config_path, dataset_variations_dir)
 
 
 def get_param_variations(config):
@@ -18,6 +29,13 @@ def get_param_variations(config):
     return param_vars
 
 
+def get_variation_name(params):
+    """
+    Name used for filename of dataset variation and for run identification
+    """
+    return "_".join([str(v) for v in params.values()])
+
+
 class DatasetModifier:
     def __init__(self):
         self.df = None
@@ -29,9 +47,10 @@ class DatasetModifier:
         self.true_matches2 = None
         self._base_overlap = None
 
-    def read_csv_config_json(self, config_path: str):
+    def load_dataset_by_config_file(self, config_path: str):
         """
-        Reads parameters from json and calls self.read_csv with the parameters.
+        Reads config file (json) and loads dataset as specified in the file.
+        More precisely, reads parameters from json and calls self.read_csv with the parameters.
         """
         config = read_json(config_path)
         self.read_csv_config_dict(config)
@@ -57,7 +76,8 @@ class DatasetModifier:
         :param global_id_col_name: name of column containing global ID, defaults to "globalID"
         :type global_id_col_name: str
         """
-        self.df = pd.read_csv(dataset_path, names=col_names, dtype={"PLZ": str}, keep_default_na=False)  # keep_default_na for representing empty PLZ values as empty str and not nan
+        self.df = pd.read_csv(dataset_path, names=col_names, dtype={"PLZ": str},
+                              keep_default_na=False)  # keep_default_na for representing empty PLZ values as empty str and not nan
         self.df1, self.df2 = [x for _, x in self.df.groupby(source_id_col_name)]
         assert self.df1.shape == self.df2.shape
         self.global_id_col_name = global_id_col_name
@@ -65,24 +85,27 @@ class DatasetModifier:
         self.true_matches1, self.true_matches2 = self._get_true_matches()
         self._base_overlap = self._get_base_overlap()
 
-    def get_variations_by_config_file(self, config_path, out_location):
+    def create_variations_by_config_file(self, config_path, outfile_directory):
         """
         Read dataset modifier config file, create dataset variations as described in the file, write them all to
         out_location folder.
         """
         config = read_json(config_path)
-        return self.get_variations_by_config_dict(config)
+        variations = self.get_variations_by_config_dict(config)
+        Path(outfile_directory).mkdir(exist_ok=True)
+        for variation_name, variation in variations.items():
+            outfile_path = os.path.join(outfile_directory, variation_name+".csv")
+            variation.to_csv(outfile_path, index=False, header=False)
 
-    def get_variations_by_config_dict(self, config):
-        variations = []
+    def get_variations_by_config_dict(self, config) -> dict[str, pd.DataFrame]:
         self.read_csv_config_dict(config)  # read the dataset
-        for params in get_param_variations(config):
-            variations.append(self.get_variation(params))
-        return variations
+        return {get_variation_name(params): self.get_variation(params)
+                for params in get_param_variations(config)}
 
     def get_variation(self, params):
         if params["subset_selection"] == "RANDOM":
             return self.random_sample(params)
+        # TODO add missing subset selectors
 
     def random_sample(self, params):
         """
@@ -95,7 +118,10 @@ class DatasetModifier:
         as in the base dataset
         :return: random sample drawn from base dataframe
         """
-        return self._random_sample(size=params["size"], seed=params["seed"], overlap=params.get("overlap", None))
+        try:
+            return self._random_sample(size=params["size"], seed=params["seed"], overlap=params.get("overlap", None))
+        except ValueError as e:
+            raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
     def _random_sample(self, size: int, seed: int, overlap: float = None) -> pd.DataFrame:
         if not (0 <= size <= self.df1.shape[0]):
@@ -160,3 +186,6 @@ class DatasetModifier:
         intersect = pd.merge(self.df1, self.df2, how="inner", on=[self.global_id_col_name])
         return 2 * intersect.shape[0] / self.df.shape[0]
 
+
+if __name__ == "__main__":
+    main()
