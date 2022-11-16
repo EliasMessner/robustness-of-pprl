@@ -17,12 +17,14 @@ import java.util.Set;
 
 public class PPRLAdapter implements RecordLinkageI {
     
-    Launcher launcher;
-    
+    private final Launcher launcher;
+    private StringBuilder logs;
+
     public PPRLAdapter() {
         boolean blockingCheat = true;
         boolean parallel = true;
         this.launcher = new Launcher(blockingCheat, parallel);
+        this.logs = new StringBuilder();
     }
 
     public PPRLAdapter(boolean blockingCheat, boolean parallel) {
@@ -35,6 +37,7 @@ public class PPRLAdapter implements RecordLinkageI {
     public void readData(String fromFile, String configFile) {
         try {
             Person[] dataSet = getDatasetFromFile(fromFile);
+            logs.append(String.format("Dataset size: %d\n", dataSet.length));
             Parameters parameters = getParametersObject(configFile);
             launcher.prepare(dataSet, parameters);
         } catch (IOException | ParseException e) {
@@ -48,6 +51,7 @@ public class PPRLAdapter implements RecordLinkageI {
     @Override
     public void getLinking(String outFile) {
         Set<PersonPair> linking = launcher.getLinking();
+        logs.append(String.format("Matches: %d\n", linking.size()));
         try {
             storeLinkingToFile(linking, outFile);
         } catch (IOException e) {
@@ -106,4 +110,10 @@ public class PPRLAdapter implements RecordLinkageI {
             }
         }
     }
+
+    public void printLogs(boolean clear) {
+        System.out.println(logs.toString());
+        if (clear) logs.setLength(0);
+    }
+
 }

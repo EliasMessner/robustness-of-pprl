@@ -17,6 +17,7 @@ public class Main {
         PPRLAdapter adapter = new PPRLAdapter();
         adapter.readData(fromFile, configFile);
         adapter.getLinking(outFile);
+        adapter.printLogs(true);
     }
 
     /**
