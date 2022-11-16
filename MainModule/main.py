@@ -34,7 +34,7 @@ def conduct_experiments():
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     exp_config = read_json(exp_config_path)
     experiments = exp_config["experiments"]
-    for exp_params in tqdm(experiments, desc="Experiments"):
+    for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
         conduct_runs(exp_params)
 
 
@@ -51,7 +51,7 @@ def conduct_runs(exp_params):
     outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
     Path(outfile_folder).mkdir(exist_ok=True)
     variations = os.listdir(dataset_variations_dir)
-    for variation in tqdm(variations, desc="Variations"):
+    for variation in tqdm(variations, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
         data_path = os.path.abspath(os.path.join(dataset_variations_dir, variation))
         outfile_path = os.path.abspath(os.path.join(outfile_folder, variation))
         config_path = os.path.abspath(exp_config_temp_path)
@@ -61,11 +61,9 @@ def conduct_runs(exp_params):
                "-o", outfile_path,
                "-c", config_path]
         try:
-            subprocess.check_output(cmd)
+            subprocess.check_output(cmd, encoding='UTF-8')
         except subprocess.CalledProcessError as e:
             print(f"Command: '{' '.join(cmd)}'")
-            print("Java version: ")
-            subprocess.check_output(["java", "-version"])
             raise e
 
 
