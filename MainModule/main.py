@@ -3,6 +3,8 @@ import os.path
 import subprocess
 from pathlib import Path
 
+from tqdm import tqdm
+
 from constants import *
 from dataset_modifier import DatasetModifier
 from util import read_json
@@ -31,7 +33,7 @@ def create_exp_config():
 def conduct_experiments():
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     exp_config = read_json(exp_config_path)
-    for exp_params in exp_config["experiments"]:
+    for exp_params in tqdm(exp_config["experiments"], "Experiment"):
         conduct_runs(exp_params)
 
 
@@ -47,7 +49,7 @@ def conduct_runs(exp_params):
     # create folder for this experiment's matching results
     outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
     Path(outfile_folder).mkdir(exist_ok=True)
-    for variation in os.listdir(dataset_variations_dir):
+    for variation in tqdm(os.listdir(dataset_variations_dir), desc="Run", leave=False):
         data_path = os.path.join(dataset_variations_dir, variation)
         outfile_path = os.path.join(outfile_folder, variation)
         create_exp_config_temp(exp_params)

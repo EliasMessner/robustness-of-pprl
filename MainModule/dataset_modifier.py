@@ -2,6 +2,7 @@ import os.path
 from pathlib import Path
 
 import pandas as pd
+from tqdm import tqdm
 
 from util import read_json
 from constants import dm_config_path, dataset_variations_dir
@@ -93,7 +94,7 @@ class DatasetModifier:
         config = read_json(config_path)
         variations = self.get_variations_by_config_dict(config)
         Path(outfile_directory).mkdir(exist_ok=True)
-        for variation_name, variation in variations.items():
+        for variation_name, variation in tqdm(variations.items(), desc="Creating Variations"):
             outfile_path = os.path.join(outfile_directory, variation_name+".csv")
             variation.to_csv(outfile_path, index=False, header=False)
 
