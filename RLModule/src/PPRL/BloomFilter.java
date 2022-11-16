@@ -148,7 +148,7 @@ public class BloomFilter {
     }
 
     private void storeBigramRandom(String bigram, int k) {
-        long seed = 0;
+        long seed = Long.parseLong(this.tokenSalting);
         for (int i = 0; i < bigram.length(); i++) {
             seed += bigram.charAt(i) * (Math.pow(257L,  i));
         }
