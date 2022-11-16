@@ -48,14 +48,15 @@ def conduct_runs(exp_params):
     outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
     Path(outfile_folder).mkdir(exist_ok=True)
     for variation in os.listdir(dataset_variations_dir):
-        variation_name = ''.join(variation.split(".")[:-1])  # strip extension
         data_path = os.path.join(dataset_variations_dir, variation)
-        outfile_path = os.path.join(outfile_folder, variation_name)
+        outfile_path = os.path.join(outfile_folder, variation)
         create_exp_config_temp(exp_params)
-        subprocess.check_output(["java", "-jar", "../RLModule/target/RLModule.jar",
-                                 "-d", data_path,
-                                 "-o", outfile_path,
-                                 "-c", exp_config_temp_path])
+        cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
+               "-d", data_path,
+               "-o", outfile_path,
+               "-c", exp_config_temp_path]
+        print(f"Command: '{' '.join(cmd)}'")
+        subprocess.check_output(cmd)
 
 
 def create_and_store_random_sample():
