@@ -89,7 +89,7 @@ public class PPRLAdapter implements RecordLinkageI {
 
     private void storeLinkingToFile(Set<PersonPair> linking, String outFilePath) throws IOException {
         File file = new File(outFilePath);
-        Files.createDirectories(Paths.get(file.getParent()));
+        Files.createDirectories(Paths.get(file.getParent()));  // create folder if not exists
         try (CSVWriter writer = new CSVWriter(new FileWriter(file),
                 CSVWriter.DEFAULT_SEPARATOR,
                 CSVWriter.NO_QUOTE_CHARACTER,
