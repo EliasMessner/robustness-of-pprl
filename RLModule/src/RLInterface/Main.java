@@ -16,6 +16,7 @@ public class Main {
         tryGetCommandLineArgumentValues(args);
         PPRLAdapter adapter = new PPRLAdapter();
         adapter.readData(fromFile, configFile);
+        adapter.printLogs(true);
         adapter.getLinking(outFile);
         adapter.printLogs(true);
     }

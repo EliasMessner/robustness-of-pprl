@@ -22,7 +22,7 @@ public class PPRLAdapter implements RecordLinkageI {
 
     public PPRLAdapter() {
         boolean blockingCheat = true;
-        boolean parallel = true;
+        boolean parallel = false;
         this.launcher = new Launcher(blockingCheat, parallel);
         this.logs = new StringBuilder();
     }
