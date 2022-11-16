@@ -33,7 +33,8 @@ def create_exp_config():
 def conduct_experiments():
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     exp_config = read_json(exp_config_path)
-    for exp_params in tqdm(exp_config["experiments"], "Experiment"):
+    experiments = exp_config["experiments"]
+    for exp_params in tqdm(experiments, desc="Experiments"):
         conduct_runs(exp_params)
 
 
@@ -49,7 +50,8 @@ def conduct_runs(exp_params):
     # create folder for this experiment's matching results
     outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
     Path(outfile_folder).mkdir(exist_ok=True)
-    for variation in tqdm(os.listdir(dataset_variations_dir), desc="Run", leave=False):
+    variations = os.listdir(dataset_variations_dir)
+    for variation in tqdm(variations, desc="Variations"):
         data_path = os.path.join(dataset_variations_dir, variation)
         outfile_path = os.path.join(outfile_folder, variation)
         create_exp_config_temp(exp_params)
@@ -57,8 +59,11 @@ def conduct_runs(exp_params):
                "-d", data_path,
                "-o", outfile_path,
                "-c", exp_config_temp_path]
-        print(f"Command: '{' '.join(cmd)}'")
-        subprocess.check_output(cmd)
+        try:
+            subprocess.check_output(cmd)
+        except subprocess.CalledProcessError as e:
+            print(f"Command: '{' '.join(cmd)}'")
+            raise e
 
 
 def create_and_store_random_sample():
