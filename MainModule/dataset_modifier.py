@@ -94,7 +94,7 @@ class DatasetModifier:
         config = read_json(config_path)
         variations = self.get_variations_by_config_dict(config)
         Path(outfile_directory).mkdir(exist_ok=True)
-        for variation_name, variation in tqdm(variations.items(), desc="Creating Variations"):
+        for variation_name, variation in tqdm(variations.items(), desc="Creating Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
             outfile_path = os.path.join(outfile_directory, variation_name+".csv")
             variation.to_csv(outfile_path, index=False, header=False)
 
