@@ -53,9 +53,9 @@ def conduct_runs(exp_params):
         outfile_path = os.path.join(outfile_folder, variation_name)
         create_exp_config_temp(exp_params)
         subprocess.check_output(["java", "-jar", "../RLModule/target/RLModule.jar",
-                        "-d", data_path,
-                        "-o", outfile_path,
-                        "-c", exp_config_temp_path])
+                                 "-d", data_path,
+                                 "-o", outfile_path,
+                                 "-c", exp_config_temp_path])
 
 
 def create_and_store_random_sample():
