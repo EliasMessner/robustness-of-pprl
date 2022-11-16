@@ -52,17 +52,20 @@ def conduct_runs(exp_params):
     Path(outfile_folder).mkdir(exist_ok=True)
     variations = os.listdir(dataset_variations_dir)
     for variation in tqdm(variations, desc="Variations"):
-        data_path = os.path.join(dataset_variations_dir, variation)
-        outfile_path = os.path.join(outfile_folder, variation)
+        data_path = os.path.abspath(os.path.join(dataset_variations_dir, variation))
+        outfile_path = os.path.abspath(os.path.join(outfile_folder, variation))
+        config_path = os.path.abspath(exp_config_temp_path)
         create_exp_config_temp(exp_params)
         cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
                "-d", data_path,
                "-o", outfile_path,
-               "-c", exp_config_temp_path]
+               "-c", config_path]
         try:
             subprocess.check_output(cmd)
         except subprocess.CalledProcessError as e:
             print(f"Command: '{' '.join(cmd)}'")
+            print("Java version: ")
+            subprocess.check_output(["java", "-version"])
             raise e
 
 
