@@ -35,7 +35,34 @@ def conduct_experiments():
     exp_config = read_json(exp_config_path)
     experiments = exp_config["experiments"]
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
-        conduct_runs(exp_params)
+        conduct_experiment(exp_params)
+
+
+def conduct_experiment(exp_params):
+    # create folder for this experiment's matching results
+    outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
+    Path(outfile_folder).mkdir(exist_ok=True)
+    # TODO track experiment
+    variations = os.listdir(dataset_variations_dir)
+    for variation in tqdm(variations, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
+        data_path = os.path.abspath(os.path.join(dataset_variations_dir, variation))
+        outfile_path = os.path.abspath(os.path.join(outfile_folder, variation))
+        config_path = os.path.abspath(exp_config_temp_path)
+        conduct_run(config_path, data_path, exp_params, outfile_path)
+
+
+def conduct_run(config_path, data_path, exp_params, outfile_path):
+    create_exp_config_temp(exp_params)
+    cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
+           "-d", data_path,
+           "-o", outfile_path,
+           "-c", config_path]
+    try:
+        subprocess.check_output(cmd, encoding='UTF-8')
+    except subprocess.CalledProcessError as e:
+        print(f"Command: '{' '.join(cmd)}'")
+        raise e
+    # TODO track run
 
 
 def create_exp_config_temp(exp_params: dict):
@@ -44,27 +71,6 @@ def create_exp_config_temp(exp_params: dict):
     """
     with open(exp_config_temp_path, "w") as file:
         json.dump(exp_params, file, indent=2)
-
-
-def conduct_runs(exp_params):
-    # create folder for this experiment's matching results
-    outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
-    Path(outfile_folder).mkdir(exist_ok=True)
-    variations = os.listdir(dataset_variations_dir)
-    for variation in tqdm(variations, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
-        data_path = os.path.abspath(os.path.join(dataset_variations_dir, variation))
-        outfile_path = os.path.abspath(os.path.join(outfile_folder, variation))
-        config_path = os.path.abspath(exp_config_temp_path)
-        create_exp_config_temp(exp_params)
-        cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
-               "-d", data_path,
-               "-o", outfile_path,
-               "-c", config_path]
-        try:
-            subprocess.check_output(cmd, encoding='UTF-8')
-        except subprocess.CalledProcessError as e:
-            print(f"Command: '{' '.join(cmd)}'")
-            raise e
 
 
 def create_and_store_random_sample():
