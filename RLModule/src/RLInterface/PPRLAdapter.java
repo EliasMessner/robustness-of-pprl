@@ -48,7 +48,11 @@ public class PPRLAdapter implements RecordLinkageI {
     @Override
     public void getLinking(String outFile) {
         Set<PersonPair> linking = launcher.getLinking();
-        storeLinkingToFile(linking, outFile);
+        try {
+            storeLinkingToFile(linking, outFile);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private Person[] getDatasetFromFile(String filePath) {
@@ -83,14 +87,14 @@ public class PPRLAdapter implements RecordLinkageI {
         }
     }
 
-    private void storeLinkingToFile(Set<PersonPair> linking, String outFilePath) {
+    private void storeLinkingToFile(Set<PersonPair> linking, String outFilePath) throws IOException {
         File file = new File(outFilePath);
+        Files.createDirectories(Paths.get(file.getParent()));
         try (CSVWriter writer = new CSVWriter(new FileWriter(file),
                 CSVWriter.DEFAULT_SEPARATOR,
                 CSVWriter.NO_QUOTE_CHARACTER,
                 CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                 CSVWriter.DEFAULT_LINE_END)) {
-            Files.createDirectories(Paths.get(file.getParent()));  // create dir if not exists
             String[] header = {"globalID_A", "globalID_B"};
             writer.writeNext(header);
             for (PersonPair pair : linking) {
@@ -100,8 +104,6 @@ public class PPRLAdapter implements RecordLinkageI {
                 };
                 writer.writeNext(nextLine);
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
     }
 }
