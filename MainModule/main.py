@@ -34,6 +34,7 @@ def conduct_experiments():
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     exp_config = read_json(exp_config_path)
     experiments = exp_config["experiments"]
+    # for each experiment, there is a dict of parameters for the RLModule
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
         conduct_experiment(exp_params)
 
@@ -43,7 +44,7 @@ def conduct_experiment(exp_params):
     outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
     Path(outfile_folder).mkdir(exist_ok=True)
     # TODO track experiment
-    variations = os.listdir(dataset_variations_dir)
+    variations = os.listdir(dataset_variations_dir)  # one run per dataset variation
     for variation in tqdm(variations, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
         data_path = os.path.abspath(os.path.join(dataset_variations_dir, variation))
         outfile_path = os.path.abspath(os.path.join(outfile_folder, variation))
@@ -52,6 +53,9 @@ def conduct_experiment(exp_params):
 
 
 def conduct_run(config_path, data_path, exp_params, outfile_path):
+    """
+    Call RLModule with given parameters
+    """
     create_exp_config_temp(exp_params)
     cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
            "-d", data_path,
@@ -67,7 +71,7 @@ def conduct_run(config_path, data_path, exp_params, outfile_path):
 
 def create_exp_config_temp(exp_params: dict):
     """
-    create temporary experiment config and return filepath
+    create temporary experiment config
     """
     with open(exp_config_temp_path, "w") as file:
         json.dump(exp_params, file, indent=2)
