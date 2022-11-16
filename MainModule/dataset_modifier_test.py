@@ -3,7 +3,7 @@ from unittest import TestCase, main
 from dataset_modifier import DatasetModifier, get_param_variations
 import pandas as pd
 
-filepath = "../data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
+filepath = "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
 col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH,PLACEOFBIRTH,COUNTRY,CITY,PLZ,STREET,GENDER,ETHNIC,RACE".split(
     ",")
 
@@ -11,7 +11,7 @@ col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH
 class Test_DatasetModifier(TestCase):
     def setUp(self) -> None:
         self.sg = DatasetModifier()
-        self.sg.load_dataset_by_config_file("../data/dataset_modifier_test.json")
+        self.sg.load_dataset_by_config_file("data/dataset_modifier_test.json")
 
     def test_size(self):
         self.assertEqual(self.sg.df.shape[0], 200000)
