@@ -9,6 +9,8 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -88,6 +90,7 @@ public class PPRLAdapter implements RecordLinkageI {
                 CSVWriter.NO_QUOTE_CHARACTER,
                 CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                 CSVWriter.DEFAULT_LINE_END)) {
+            Files.createDirectories(Paths.get(file.getParent()));  // create dir if not exists
             String[] header = {"globalID_A", "globalID_B"};
             writer.writeNext(header);
             for (PersonPair pair : linking) {
