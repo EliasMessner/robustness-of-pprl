@@ -4,15 +4,15 @@ from pathlib import Path
 import pandas as pd
 from tqdm import tqdm
 
-from util import read_json
-from constants import dm_config_path, dataset_variations_dir
+from util import read_json, write_json
+from constants import dm_config_path, dataset_variants_dir
 
 
 def main():
     # create dataset variations
     dm = DatasetModifier()
     dm.load_dataset_by_config_file(dm_config_path)
-    dm.create_variations_by_config_file(dm_config_path, dataset_variations_dir)
+    dm.create_variants_by_config_file(dm_config_path, dataset_variants_dir)
 
 
 def get_param_variations(config):
@@ -28,13 +28,6 @@ def get_param_variations(config):
                 param_variation[k] = v
                 param_vars.append(param_variation)
     return param_vars
-
-
-def get_variation_name(params):
-    """
-    Name used for filename of dataset variation and for run identification
-    """
-    return "_".join([str(v) for v in params.values()])
 
 
 class DatasetModifier:
@@ -86,24 +79,35 @@ class DatasetModifier:
         self.true_matches1, self.true_matches2 = self._get_true_matches()
         self._base_overlap = self._get_base_overlap()
 
-    def create_variations_by_config_file(self, config_path, outfile_directory):
+    def create_variants_by_config_file(self, config_path, outfile_directory):
         """
         Read dataset modifier config file, create dataset variations as described in the file, write them all to
-        out_location folder.
+        out_location folder. Each variant goes in a sub folder containing its parameters in params.json and its records
+        in records.csv.
         """
         config = read_json(config_path)
-        variations = self.get_variations_by_config_dict(config)
+        variations = self.get_variants_by_config_dict(config)
         Path(outfile_directory).mkdir(exist_ok=True)
-        for variation_name, variation in tqdm(variations.items(), desc="Creating Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
-            outfile_path = os.path.join(outfile_directory, variation_name+".csv")
-            variation.to_csv(outfile_path, index=False, header=False)
+        variant_id = 0
+        for (params, variant) in tqdm(variations, desc="Creating Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+            # create this variant's sub folder
+            variant_sub_folder = os.path.join(outfile_directory, f"DV_{variant_id}")
+            Path(variant_sub_folder).mkdir(exist_ok=True)
+            # create records.csv
+            variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
+            # create param.json
+            write_json(params, os.path.join(variant_sub_folder, "params.json"))
+            variant_id += 1
 
-    def get_variations_by_config_dict(self, config) -> dict[str, pd.DataFrame]:
+    def get_variants_by_config_dict(self, config) -> list[(dict, pd.DataFrame)]:
+        """
+        Returns list of tuples: (params, variant), with params a dict of parameter key-value pairs, and variant the
+        variant created by those params as DataFrame.
+        """
         self.read_csv_config_dict(config)  # read the dataset
-        return {get_variation_name(params): self.get_variation(params)
-                for params in get_param_variations(config)}
+        return [(params, self.get_variant(params)) for params in get_param_variations(config)]
 
-    def get_variation(self, params):
+    def get_variant(self, params):
         if params["subset_selection"] == "RANDOM":
             return self.random_sample(params)
         # TODO add missing subset selectors

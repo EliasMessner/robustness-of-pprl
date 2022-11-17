@@ -7,7 +7,7 @@
     {"subset_selection":  "RANDOM", "seed":  1, "size": 5000, "overlap": 0.1,
       "replacements": {
         "size": [1000, 2000, 10000],
-        "overlap": [0, 0.1, 0.2, 0.3, 0.4, 0.5]
+        "overlap": [0.1, 0.2, 0.3]
       }
     }
   ]

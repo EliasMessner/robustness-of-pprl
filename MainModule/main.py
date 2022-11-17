@@ -7,17 +7,17 @@ from tqdm import tqdm
 
 from constants import *
 from dataset_modifier import DatasetModifier
-from util import read_json
+from util import read_json, write_json
 
 
 def main():
-    create_exp_config()
+    create_experiments_config()
     conduct_experiments()
     # TODO evaluate results
     # TODO write to mlflow
 
 
-def create_exp_config():
+def create_experiments_config():
     """
     Create experiment config json file, containing all the information about the experiments and runs to be executed.
     """
@@ -41,22 +41,33 @@ def conduct_experiments():
 
 def conduct_experiment(exp_params):
     # create folder for this experiment's matching results
-    outfile_folder = os.path.join(matchings_dir, str(exp_params["id"]))
-    Path(outfile_folder).mkdir(exist_ok=True)
+    exp_out_folder = os.path.join(matchings_dir, f"exp_{exp_params['id']}")
+    Path(exp_out_folder).mkdir(exist_ok=True)
     # TODO track experiment
-    variations = os.listdir(dataset_variations_dir)  # one run per dataset variation
-    for variation in tqdm(variations, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
-        data_path = os.path.abspath(os.path.join(dataset_variations_dir, variation))
-        outfile_path = os.path.abspath(os.path.join(outfile_folder, variation))
-        config_path = os.path.abspath(exp_config_temp_path)
-        conduct_run(config_path, data_path, exp_params, outfile_path)
+    variants = os.listdir(dataset_variants_dir)  # one run per dataset variant
+    for variant_folder_name in tqdm(variants, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
+        data_path = os.path.join(dataset_variants_dir, variant_folder_name, "records.csv")
+        run_out_folder = os.path.join(exp_out_folder, variant_folder_name)
+        outfile_path = os.path.join(run_out_folder, "matching.csv")
+        # create matcher_config.json in the folder for this run
+        matcher_config_abs_path = create_matcher_config(exp_params, run_out_folder)
+        conduct_run(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path)
 
 
-def conduct_run(config_path, data_path, exp_params, outfile_path):
+def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
+    """
+    create config for matcher for this run and return its absolute path
+    """
+    Path(run_out_folder).mkdir(exist_ok=True)
+    matcher_config_path = os.path.join(run_out_folder, "config.json")
+    write_json(exp_params, matcher_config_path)
+    return os.path.abspath(matcher_config_path)
+
+
+def conduct_run(data_path, outfile_path, config_path):
     """
     Call RLModule with given parameters
     """
-    create_exp_config_temp(exp_params)
     cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
            "-d", data_path,
            "-o", outfile_path,
@@ -67,14 +78,6 @@ def conduct_run(config_path, data_path, exp_params, outfile_path):
         print(f"Command: '{' '.join(cmd)}'")
         raise e
     # TODO track run
-
-
-def create_exp_config_temp(exp_params: dict):
-    """
-    create temporary experiment config
-    """
-    with open(exp_config_temp_path, "w") as file:
-        json.dump(exp_params, file, indent=2)
 
 
 def create_and_store_random_sample():
