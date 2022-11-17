@@ -171,10 +171,10 @@ class DatasetModifier:
 
     def _get_true_matches(self) -> (pd.DataFrame, pd.DataFrame):
         """
-        Return all records that are part of the overlap, aka all records that have a true match.
+        Return form each source all records that are part of the overlap, aka all records that have a true match in the
+        other source.
         Returned as tuple of two dataframes, one for each sourceID.
         They are not linked to their partners, i.e. the dataframes have no specific order.
-        :return: all records in the base dataset that have a true match
         """
         true_matches_1 = self.df1[self.df1[self.global_id_col_name].isin(self.df2[self.global_id_col_name])]
         true_matches_2 = self.df2[self.df2[self.global_id_col_name].isin(self.df1[self.global_id_col_name])]
