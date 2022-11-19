@@ -1,4 +1,3 @@
-import json
 import os.path
 import subprocess
 from pathlib import Path
@@ -15,27 +14,10 @@ TIMESTAMP = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
 
 
 def main():
-    create_experiments_config()
-    conduct_experiments()
-
-
-def create_experiments_config():
-    """
-    Create experiment config json file, containing all the information about the experiments and runs to be executed.
-    """
-    # TODO create dict by combining values from given parameter lists
-    config = {"experiments": [
-        {"id": 0, "seed": 1, "l": 1000, "k": 10, "t": 0.6},
-        {"id": 1, "seed": 1, "l": 1000, "k": 10, "t": 0.7}
-    ]}
-    with open(exp_config_path, "w") as file:
-        json.dump(config, file, indent=2)
-
-
-def conduct_experiments():
+    # create outfile for matching result if not exists
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
-    exp_config = read_json(exp_config_path)
-    experiments = exp_config["experiments"]
+    # get configs for all experiments
+    experiments = read_json(exp_config_path)["experiments"]
     # for each experiment, there is a dict of parameters for the RLModule
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
         conduct_experiment(exp_params)
@@ -43,9 +25,10 @@ def conduct_experiments():
 
 def conduct_experiment(exp_params):
     # create folder for this experiment's matching results
-    exp_out_folder = os.path.join(matchings_dir, f"exp_{exp_params['id']}")
+    exp_no = exp_params.pop("exp_no")
+    exp_out_folder = os.path.join(matchings_dir, f"exp_{exp_no}")
     Path(exp_out_folder).mkdir(exist_ok=True)
-    mlflow.create_experiment(name=f"{exp_params['id']}_{TIMESTAMP}")
+    exp_id = mlflow.create_experiment(name=f"{exp_no}_{TIMESTAMP}")
     variants = os.listdir(dataset_variants_dir)  # one run per dataset variant
     for variant_folder_name in tqdm(variants, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
         data_path = os.path.join(dataset_variants_dir, variant_folder_name, "records.csv")
@@ -53,7 +36,8 @@ def conduct_experiment(exp_params):
         outfile_path = os.path.join(run_out_folder, "matching.csv")
         # create matcher_config.json in the folder for this run
         matcher_config_abs_path = create_matcher_config(exp_params, run_out_folder)
-        conduct_run(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path, exp_params)
+        conduct_run(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path,
+                    exp_id, exp_params)
 
 
 def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
@@ -66,11 +50,11 @@ def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
     return os.path.abspath(matcher_config_path)
 
 
-def conduct_run(data_path, outfile_path, config_path, exp_params: dict):
+def conduct_run(data_path, outfile_path, config_path, exp_id: str, exp_params: dict):
     """
     Call RLModule with given parameters
     """
-    with mlflow.start_run():
+    with mlflow.start_run(experiment_id=exp_id):
         cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
                "-d", data_path,
                "-o", outfile_path,
