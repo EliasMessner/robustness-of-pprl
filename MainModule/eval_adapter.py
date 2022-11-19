@@ -20,6 +20,14 @@ class EvalAdapter:
         self.links_pred = pd.read_csv(pred_path, names=[pred_clm_a, pred_clm_b], index_col=[pred_clm_a, pred_clm_b])
         self.total = d1.shape[0] * d2.shape[0]  # total number of possible record pairs
 
+    def metrics(self):
+        return {
+            "precision": self.precision(),
+            "recall": self.recall(),
+            "fscore": self.fscore(),
+            "accuracy": self.accuracy()
+        }
+
     def precision(self):
         return rl.precision(self.links_true, self.links_pred)
 
