@@ -2,19 +2,21 @@ import json
 import os.path
 import subprocess
 from pathlib import Path
+from datetime import datetime as dt
 
+import mlflow
 from tqdm import tqdm
 
 from constants import *
-from dataset_modifier import DatasetModifier
+from eval_adapter import EvalAdapter
 from util import read_json, write_json
+
+TIMESTAMP = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
 
 
 def main():
     create_experiments_config()
     conduct_experiments()
-    # TODO evaluate results
-    # TODO write to mlflow
 
 
 def create_experiments_config():
@@ -43,7 +45,7 @@ def conduct_experiment(exp_params):
     # create folder for this experiment's matching results
     exp_out_folder = os.path.join(matchings_dir, f"exp_{exp_params['id']}")
     Path(exp_out_folder).mkdir(exist_ok=True)
-    # TODO track experiment
+    mlflow.create_experiment(name=f"{exp_params['id']}_{TIMESTAMP}")
     variants = os.listdir(dataset_variants_dir)  # one run per dataset variant
     for variant_folder_name in tqdm(variants, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
         data_path = os.path.join(dataset_variants_dir, variant_folder_name, "records.csv")
@@ -51,7 +53,7 @@ def conduct_experiment(exp_params):
         outfile_path = os.path.join(run_out_folder, "matching.csv")
         # create matcher_config.json in the folder for this run
         matcher_config_abs_path = create_matcher_config(exp_params, run_out_folder)
-        conduct_run(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path)
+        conduct_run(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path, exp_params)
 
 
 def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
@@ -64,30 +66,26 @@ def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
     return os.path.abspath(matcher_config_path)
 
 
-def conduct_run(data_path, outfile_path, config_path):
+def conduct_run(data_path, outfile_path, config_path, exp_params: dict):
     """
     Call RLModule with given parameters
     """
-    cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
-           "-d", data_path,
-           "-o", outfile_path,
-           "-c", config_path]
-    try:
-        subprocess.check_output(cmd, encoding='UTF-8')
-    except subprocess.CalledProcessError as e:
-        print(f"Command: '{' '.join(cmd)}'")
-        raise e
-    # TODO track run
-
-
-def create_and_store_random_sample():
-    """
-    example function
-    """
-    dm = DatasetModifier()
-    dm.load_dataset_by_config_file(dm_config_path)
-    random_sample = dm.random_sample({"size": 300, "seed": 1, "overlap": 0.1})
-    random_sample.to_csv("data/out/random_300_1_0.1.csv", index=False, header=False)
+    with mlflow.start_run():
+        cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
+               "-d", data_path,
+               "-o", outfile_path,
+               "-c", config_path]
+        try:
+            subprocess.check_output(cmd, encoding='UTF-8')
+        except subprocess.CalledProcessError as e:
+            print(f"Command: '{' '.join(cmd)}'")
+            raise e
+        # evaluate and track the run
+        data_clm_names = read_json(dm_config_path)["col_names"]
+        eval_adapter = EvalAdapter(data_path, data_clm_names=data_clm_names, pred_path=outfile_path)
+        mlflow.log_params(exp_params)
+        mlflow.log_metrics(eval_adapter.metrics())
+        mlflow.log_artifact(data_path)
 
 
 if __name__ == "__main__":
