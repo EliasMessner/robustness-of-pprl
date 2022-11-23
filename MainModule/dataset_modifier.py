@@ -141,7 +141,10 @@ class DatasetModifier:
         variant created by those params as DataFrame.
         """
         self.read_csv_config_dict(config)  # read the dataset
-        return [(params, self.get_variant(params)) for params in get_param_variations(config)]
+        variants = []
+        for params in tqdm(get_param_variations(config), desc="Creating Variants", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+            variants.append((params, self.get_variant(params)))
+        return variants
 
     def get_variant(self, params) -> pd.DataFrame:
         if params["subset_selection"] == "RANDOM":
