@@ -2,6 +2,7 @@ from unittest import TestCase, main
 
 from dataset_modifier import DatasetModifier, get_param_variations
 import pandas as pd
+from datetime import datetime as dt
 
 filepath = "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
 col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH,PLACEOFBIRTH,COUNTRY,CITY,PLZ,STREET,GENDER,ETHNIC,RACE".split(
@@ -67,6 +68,18 @@ class TestDatasetModifier(TestCase):
         # must raise value error because only 100k values are in each source
         expected_overlap = 0.1
         self.assertRaises(ValueError, self.sg.random_sample, {"size": 150000, "seed": 1, "overlap": expected_overlap})
+
+    def test_plz_subset(self):
+        subset0 = self.sg.plz_subset({"digits": 1, "equal": 0})
+        subset2 = self.sg.plz_subset({"digits": 1, "equal": 2})
+        self.assertTrue(subset0["PLZ"].map(lambda plz: int(plz[:1]) == 0).all())
+        self.assertTrue(subset2["PLZ"].map(lambda plz: int(plz[:1]) == 2).all())
+
+    def test_age_subset(self):
+        this_year = dt.now().year
+        subset_12_22 = self.sg.age_subset({"range": [12, 22]})
+        age = subset_12_22["YEAROFBIRTH"].map(lambda yob: this_year - yob)
+        self.assertTrue(age.map(lambda a: 12 <= a <= 22).all())
 
     def test_get_param_variations(self):
         config = {

@@ -4,6 +4,7 @@ from pathlib import Path
 import pandas as pd
 from tqdm import tqdm
 import itertools
+from datetime import datetime as dt
 
 from util import read_json, write_json
 from constants import dm_config_path, dataset_variants_dir
@@ -16,31 +17,25 @@ def main():
     dm.create_variants_by_config_file(dm_config_path, dataset_variants_dir)
 
 
-def get_param_variations(config):
+def get_param_variations(config: dict):
     """
     Return a list of all parameter variations created from given config dict.
     If variation lists for multiple parameters are given in one replacement, they
     are combined to their cartesian product.
     """
-    # param_vars = []
-    # for params in config["variations"]:
-    #     for k, values in params["replacements"].items():
-    #         for v in values:
-    #             param_variation = params.copy()
-    #             param_variation.pop('replacements', None)
-    #             param_variation[k] = v
-    #             param_vars.append(param_variation)
-    # return param_vars
     param_vars = []
     for params in config["variations"]:
-        cartesian_prod = _get_cartesian_product(params["replacements"].items())
+        cartesian_prod = _get_cartesian_product(params.get("replacements", {}).items())
         for kv_combination in cartesian_prod:
             param_variation = _get_param_variation(kv_combination, params)
             param_vars.append(param_variation)
+        # add default parameters
+        params.pop("replacements", None)
+        param_vars.append(params)
     return param_vars
 
 
-def _get_param_variation(kv_combination, params):
+def _get_param_variation(kv_combination: list[(str, any)], params: dict):
     """
     For given list of key-value pairs and given base parameters, modify params so
     that k-v pairs are all applied. But leave the actual params object as is and return
@@ -53,7 +48,7 @@ def _get_param_variation(kv_combination, params):
     return param_variation
 
 
-def _get_cartesian_product(items):
+def _get_cartesian_product(items: list[(str, any)]):
     """
     For dict items with lists of values to each key, return cartesian product of key-value pairs.
     Result will not contain duplicates.
@@ -148,12 +143,17 @@ class DatasetModifier:
         self.read_csv_config_dict(config)  # read the dataset
         return [(params, self.get_variant(params)) for params in get_param_variations(config)]
 
-    def get_variant(self, params):
+    def get_variant(self, params) -> pd.DataFrame:
         if params["subset_selection"] == "RANDOM":
             return self.random_sample(params)
-        # TODO add missing subset selectors
+        if params["subset_selection"] == "GENDER":
+            return self.df[self.df["GENDER"].map(lambda g: g in params["allowed"])]
+        if params["subset_selection"] == "PLZ":
+            return self.plz_subset(params)
+        if params["subset_selection"] == "AGE":
+            return self.age_subset(params)
 
-    def random_sample(self, params):
+    def random_sample(self, params) -> pd.DataFrame:
         """
         Draw random sample from base dataset.
         :param params: dict containing the keys described below.
@@ -193,9 +193,20 @@ class DatasetModifier:
         # concatenate all
         return pd.concat([a_matches, a_non_matches, b_matches, b_non_matches])
 
-    def get_subsets_by_param_group_by(self, param, mapping_to_group_by: callable) -> dict:
+    def plz_subset(self, params) -> pd.DataFrame:
+        n = params["digits"]  # first n digits
+        value = params["equal"]  # must be equal to value
+        return self.df[self.df["PLZ"].map(lambda plz: plz.isdigit() and int(plz[0:n]) == value)]
+
+    def age_subset(self, params) -> pd.DataFrame:
+        this_year = dt.now().year
+        min_age = params["range"][0]
+        max_age = params["range"][1]
+        return self.df[self.df["YEAROFBIRTH"].map(lambda yob: min_age <= (this_year - yob) <= max_age)]
+
+    def get_subsets_by_param_group_by(self, param, mapping_to_group_by: callable = (lambda x: x)) -> dict:
         """
-        Return the subsets that result from grouping by a new column
+        Return the subsets that result from grouping by param or mapping applied on param
         """
         values_to_group_by = self.df[param].map(mapping_to_group_by)
         groups = self.df.groupby(values_to_group_by)
