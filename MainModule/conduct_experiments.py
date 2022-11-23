@@ -68,7 +68,8 @@ def conduct_run(data_path, outfile_path, config_path, exp_id: str, exp_params: d
         # evaluate and track the run
         data_clm_names = read_json(dm_config_path)["col_names"]
         eval_adapter = EvalAdapter(data_path, data_clm_names=data_clm_names, pred_path=outfile_path)
-        mlflow.log_params(exp_params)
+        dv_params = read_json(os.path.normpath(os.path.join(data_path, "..", "params.json")))
+        mlflow.log_params(dv_params)
         mlflow.log_metrics(eval_adapter.metrics())
         mlflow.log_artifact(data_path)
         mlflow.log_artifact(outfile_path)
