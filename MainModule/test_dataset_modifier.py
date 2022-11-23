@@ -73,7 +73,24 @@ class TestDatasetModifier(TestCase):
             "variations": [
                 {"subset_selection": "RANDOM", "seed": 1, "size": 20000, "overlap": 0.1,
                  "replacements": {
-                     "size": [1000, 5000, 10000],
+                     "size": [1000, 2000, 10000],
+                 }
+                 }
+            ]
+        }
+        variations = get_param_variations(config)
+        expectation = [
+            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1}
+        ]
+        self.assertCountEqual(variations, expectation)
+
+        config = {
+            "variations": [
+                {"subset_selection": "RANDOM", "seed": 1, "size": 20000, "overlap": 0.1,
+                 "replacements": {
+                     "size": [1000, 2000, 10000],
                      "overlap": [0.1, 0.2, 0.3]
                  }
                  }
@@ -82,13 +99,16 @@ class TestDatasetModifier(TestCase):
         variations = get_param_variations(config)
         expectation = [
             {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 5000, "overlap": 0.1},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.2},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.3},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.2},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.3},
             {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 20000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 20000, "overlap": 0.2},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 20000, "overlap": 0.3}
+            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.2},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.3}
         ]
-        self.assertListEqual(variations, expectation)
+        self.assertCountEqual(variations, expectation)
 
     def test_get_subset_by_parameter_match(self):
         all_genders = self.sg.get_subset_by_parameter_match("GENDER", ["M", "F", "U"])

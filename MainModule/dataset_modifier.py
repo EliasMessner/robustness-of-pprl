@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 from tqdm import tqdm
+import itertools
 
 from util import read_json, write_json
 from constants import dm_config_path, dataset_variants_dir
@@ -17,17 +18,57 @@ def main():
 
 def get_param_variations(config):
     """
-    Return a list of all parameter variations created from given config dict
+    Return a list of all parameter variations created from given config dict.
+    If variation lists for multiple parameters are given in one replacement, they
+    are combined to their cartesian product.
     """
+    # param_vars = []
+    # for params in config["variations"]:
+    #     for k, values in params["replacements"].items():
+    #         for v in values:
+    #             param_variation = params.copy()
+    #             param_variation.pop('replacements', None)
+    #             param_variation[k] = v
+    #             param_vars.append(param_variation)
+    # return param_vars
     param_vars = []
     for params in config["variations"]:
-        for k, values in params["replacements"].items():
-            for v in values:
-                param_variation = params.copy()
-                param_variation.pop('replacements', None)
-                param_variation[k] = v
-                param_vars.append(param_variation)
+        cartesian_prod = _get_cartesian_product(params["replacements"].items())
+        for kv_combination in cartesian_prod:
+            param_variation = _get_param_variation(kv_combination, params)
+            param_vars.append(param_variation)
     return param_vars
+
+
+def _get_param_variation(kv_combination, params):
+    """
+    For given list of key-value pairs and given base parameters, modify params so
+    that k-v pairs are all applied. But leave the actual params object as is and return
+    a new object param_variation.
+    """
+    param_variation = params.copy()
+    param_variation.pop('replacements', None)
+    for k, v in kv_combination:
+        param_variation[k] = v
+    return param_variation
+
+
+def _get_cartesian_product(items):
+    """
+    For dict items with lists of values to each key, return cartesian product of key-value pairs.
+    Result will not contain duplicates.
+    Example:
+        items = [("size", [1000, 2000]), ("overlap", [0.1, 0.2, 0.3])]
+        will return
+        [((size, 1000), (overlap, 0.1)), ((size, 1000), (overlap, 0.2)), ((size, 1000), (overlap, 0.3)),
+        ((size, 2000), (overlap, 0.1)), ((size, 2000), (overlap, 0.2)), ((size, 2000), (overlap, 0.3))]
+    """
+    all_kv_lists = []
+    for k, values in items:
+        kv_list = [(k, v) for v in values]  # = [(size, 1000), (size, 2000), ...]
+        all_kv_lists.append(kv_list)
+    cartesian_prod = itertools.product(*all_kv_lists)  # = [((size, 1000), (overlap, 0.1)), ...]
+    return list({*cartesian_prod})
 
 
 class DatasetModifier:
@@ -86,10 +127,10 @@ class DatasetModifier:
         in records.csv.
         """
         config = read_json(config_path)
-        variations = self.get_variants_by_config_dict(config)
+        variants = self.get_variants_by_config_dict(config)
         Path(outfile_directory).mkdir(exist_ok=True)
         variant_id = 0
-        for (params, variant) in tqdm(variations, desc="Creating Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+        for (params, variant) in tqdm(variants, desc="Saving Variants", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
             # create this variant's sub folder
             variant_sub_folder = os.path.join(outfile_directory, f"DV_{variant_id}")
             Path(variant_sub_folder).mkdir(exist_ok=True)
