@@ -24,14 +24,15 @@ def get_param_variations(config: dict):
     are combined to their cartesian product.
     """
     param_vars = []
-    for params in config["variations"]:
-        cartesian_prod = _get_cartesian_product(params.get("replacements", {}).items())
+    for variation in config["variations"]:
+        params = variation["params"]
+        replacements = variation.get("replacements", {})
+        cartesian_prod = _get_cartesian_product(replacements.items())
         for kv_combination in cartesian_prod:
             param_variation = _get_param_variation(kv_combination, params)
             param_vars.append(param_variation)
-        # add default parameters
-        params.pop("replacements", None)
-        param_vars.append(params)
+        if variation.get("include_default", False):
+            param_vars.append(params)
     return param_vars
 
 
@@ -42,7 +43,6 @@ def _get_param_variation(kv_combination: list[(str, any)], params: dict):
     a new object param_variation.
     """
     param_variation = params.copy()
-    param_variation.pop('replacements', None)
     for k, v in kv_combination:
         param_variation[k] = v
     return param_variation

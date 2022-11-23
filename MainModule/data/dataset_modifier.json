@@ -5,29 +5,46 @@
   "global_id_col_name": "globalID",
   "variations":[
     {
-      "subset_selection":  "RANDOM", "seed":  1, "size": 5000, "overlap": 0.1,
+      "params": {
+        "subset_selection":  "RANDOM",
+        "seed":  1,
+        "size": 5000,
+        "overlap": 0.1
+      },
       "replacements": {
         "size": [1000, 2000, 10000],
         "overlap": [0.1, 0.2, 0.3]
       }
     },
     {
-      "subset_selection":  "GENDER", "allowed": [],
+      "params": {
+        "subset_selection":  "GENDER",
+        "allowed": []
+      },
       "replacements":  {
         "allowed": [["M"], ["F"], ["M", "U"], ["F", "U"]]
       }
     },
     {
-      "subset_selection": "PLZ", "digits": 1, "equal": 0,
+      "params": {
+        "subset_selection": "PLZ",
+        "digits": 1,
+        "equal": 0
+      },
       "replacements": {
         "equal": [1, 2, 3, 4, 5, 6, 7, 8, 9]
-      }
+      },
+      "include_default": true
     },
     {
-      "subset_selection": "AGE", "range": [0, 19],
+      "params": {
+        "subset_selection": "AGE",
+        "range": [0, 19]
+      },
       "replacements": {
         "range": [[20, 39], [40, 59], [60, 79], [80, 120]]
-      }
+      },
+      "include_default": true
     }
   ]
 }

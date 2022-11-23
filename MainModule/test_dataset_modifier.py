@@ -84,11 +84,17 @@ class TestDatasetModifier(TestCase):
     def test_get_param_variations(self):
         config = {
             "variations": [
-                {"subset_selection": "RANDOM", "seed": 1, "size": 20000, "overlap": 0.1,
-                 "replacements": {
-                     "size": [1000, 2000, 10000],
-                 }
-                 }
+                {
+                    "params": {
+                        "subset_selection": "RANDOM",
+                        "seed": 1,
+                        "size": 5000,
+                        "overlap": 0.1
+                    },
+                    "replacements": {
+                        "size": [1000, 2000, 10000],
+                    }
+                }
             ]
         }
         variations = get_param_variations(config)
@@ -99,13 +105,45 @@ class TestDatasetModifier(TestCase):
         ]
         self.assertCountEqual(variations, expectation)
 
+        # same but with include_default = true
         config = {
             "variations": [
-                {"subset_selection": "RANDOM", "seed": 1, "size": 20000, "overlap": 0.1,
-                 "replacements": {
-                     "size": [1000, 2000, 10000],
-                     "overlap": [0.1, 0.2, 0.3]
-                 }
+                {
+                    "params": {
+                        "subset_selection": "RANDOM",
+                        "seed": 1,
+                        "size": 5000,
+                        "overlap": 0.1
+                    },
+                    "replacements": {
+                        "size": [1000, 2000, 10000],
+                    },
+                    "include_default": True
+                }
+            ]
+        }
+        variations = get_param_variations(config)
+        expectation = [
+            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1},
+            {"subset_selection": "RANDOM", "seed": 1, "size": 5000, "overlap": 0.1}
+        ]
+        self.assertCountEqual(variations, expectation)
+
+        config = {
+            "variations": [
+                {
+                    "params": {
+                        "subset_selection": "RANDOM",
+                        "seed": 1,
+                        "size": 20000,
+                        "overlap": 0.1
+                    },
+                    "replacements": {
+                        "size": [1000, 2000, 10000],
+                        "overlap": [0.1, 0.2, 0.3]
+                    }
                  }
             ]
         }
