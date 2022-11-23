@@ -63,7 +63,7 @@ def _get_cartesian_product(items: list[(str, any)]):
         kv_list = [(k, v) for v in values]  # = [(size, 1000), (size, 2000), ...]
         all_kv_lists.append(kv_list)
     cartesian_prod = itertools.product(*all_kv_lists)  # = [((size, 1000), (overlap, 0.1)), ...]
-    return list({*cartesian_prod})
+    return [*cartesian_prod]
 
 
 class DatasetModifier:
