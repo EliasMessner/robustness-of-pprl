@@ -52,7 +52,8 @@ def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
 
 def conduct_run(data_path, outfile_path, config_path, exp_id: str, exp_params: dict):
     """
-    Call RLModule with given parameters
+    Call RLModule with given parameters.
+    Evaluate and track run.
     """
     with mlflow.start_run(experiment_id=exp_id):
         cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
@@ -70,6 +71,8 @@ def conduct_run(data_path, outfile_path, config_path, exp_id: str, exp_params: d
         mlflow.log_params(exp_params)
         mlflow.log_metrics(eval_adapter.metrics())
         mlflow.log_artifact(data_path)
+        mlflow.log_artifact(outfile_path)
+        mlflow.log_artifact(config_path)
 
 
 if __name__ == "__main__":
