@@ -37,7 +37,7 @@ def conduct_experiment(exp_params):
         # create matcher_config.json in the folder for this run
         matcher_config_abs_path = create_matcher_config(exp_params, run_out_folder)
         conduct_run(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path,
-                    exp_id, exp_params)
+                    exp_id)
 
 
 def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
@@ -50,7 +50,7 @@ def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
     return os.path.abspath(matcher_config_path)
 
 
-def conduct_run(data_path, outfile_path, config_path, exp_id: str, exp_params: dict):
+def conduct_run(data_path, outfile_path, config_path, exp_id: str):
     """
     Call RLModule with given parameters.
     Evaluate and track run.
