@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import recordlinkage as rl
 
 
@@ -12,13 +13,23 @@ class EvalAdapter:
         https://recordlinkage.readthedocs.io/en/latest/ref-evaluation.html
         """
         data = pd.read_csv(data_path, names=data_clm_names)
-        d1, d2 = [x for _, x in data.groupby(src_clm)]
-        ids_true = pd.merge(d1, d2, how="inner", on=[id_clm])[id_clm]
-        self.links_true = pd.concat([ids_true, ids_true], axis=1)
-        self.links_true.columns = [pred_clm_a, pred_clm_b]
+        d1_and_d2 = [x for _, x in data.groupby(src_clm)]
+        if len(d1_and_d2) < 2:
+            # if there are no records or only records from one source, no true links exist
+            self.links_true = pd.DataFrame(columns=[pred_clm_a, pred_clm_b])  # empty dataframe
+            self.total = 0
+        else:
+            # there is at least one record from each source
+            # split into the 2 sources
+            d1, d2 = d1_and_d2
+            self.total = d1.shape[0] * d2.shape[0]  # total number of possible record pairs
+            # get ids of the true links
+            ids_true = pd.merge(d1, d2, how="inner", on=[id_clm])[id_clm]
+            # concat with itself horizontally, ending up with the same id twice in each row
+            self.links_true = pd.concat([ids_true, ids_true], axis=1)
+            self.links_true.columns = [pred_clm_a, pred_clm_b]
         self.links_true.set_index([pred_clm_a, pred_clm_b], inplace=True)
         self.links_pred = pd.read_csv(pred_path, names=[pred_clm_a, pred_clm_b], index_col=[pred_clm_a, pred_clm_b])
-        self.total = d1.shape[0] * d2.shape[0]  # total number of possible record pairs
 
     def metrics(self):
         return {
@@ -29,13 +40,21 @@ class EvalAdapter:
         }
 
     def precision(self):
+        if self.links_true.shape[0] == 0:
+            return np.nan
         return rl.precision(self.links_true, self.links_pred)
 
     def recall(self):
+        if self.links_true.shape[0] == 0:
+            return np.nan
         return rl.recall(self.links_true, self.links_pred)
 
     def fscore(self):
+        if self.links_true.shape[0] == 0:
+            return np.nan
         return rl.fscore(self.links_true, self.links_pred)
 
     def accuracy(self):
+        if self.total == 0:
+            return np.nan
         return rl.accuracy(self.links_true, self.links_pred, self.total)
