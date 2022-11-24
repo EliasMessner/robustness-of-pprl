@@ -67,12 +67,12 @@ def _get_cartesian_product(items: list[(str, any)]):
 
 
 def _create_params_json(params, variant, variant_sub_folder):
-    actual_size = variant.shape[0] / 2
+    actual_size = variant.shape[0]
     # assert that the size stored in params (if it exists) is equal to the size of the variant
     assert params.get("size", actual_size) == actual_size
     # set the size value in params to the actual size of the dataset, in case it wasn't set already
     params["size"] = actual_size
-    # create param.json
+    # create params.json
     write_json(params, os.path.join(variant_sub_folder, "params.json"))
 
 
@@ -169,7 +169,8 @@ class DatasetModifier:
         """
         Draw random sample from base dataset.
         :param params: dict containing the keys described below.
-        size (int): number of records to draw from each of the two sources
+        size (int): number of records to draw all together (from each source, size/2 records will be drawn). Therefore,
+                    size must be divisible by 2
         seed (int): Seed for reproducibility
         overlap (float) (optional): ratio of true matches to whole size of one source, if not specified the ratio will
         be the same
@@ -177,11 +178,16 @@ class DatasetModifier:
         :return: random sample drawn from base dataframe
         """
         try:
-            return self._random_sample(size=params["size"], seed=params["seed"], overlap=params.get("overlap", None))
+            return self._random_sample(total_size=params["size"], seed=params["seed"],
+                                       overlap=params.get("overlap", None))
         except ValueError as e:
             raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
-    def _random_sample(self, size: int, seed: int, overlap: float = None) -> pd.DataFrame:
+    def _random_sample(self, total_size: int, seed: int, overlap: float = None) -> pd.DataFrame:
+        if not (total_size % 2 == 0):
+            raise ValueError(f"total_size must be divisible by 2. Each source in the random sample will have half the "
+                             f"size of total_size")
+        size = int(total_size / 2)
         if not (0 <= size <= self.df1.shape[0]):
             raise ValueError(
                 f"Size must be between 0 and size of one of the two source data sets (={self.df1.shape[0]}). Got "
