@@ -125,21 +125,27 @@ class DatasetModifier:
         self.true_matches1, self.true_matches2 = self._get_true_matches()
         self._base_overlap = self._get_base_overlap()
 
-    def create_variants_by_config_file(self, config_path, outfile_directory):
+    def create_variants_by_config_file(self, config_path, outfile_directory, omit_if_too_small=True, min_size_per_source=10):
         """
         Read dataset modifier config file, create dataset variations as described in the file, write them all to
         out_location folder. Each variant goes in a sub folder containing its parameters in params.json and its records
         in records.csv.
+        :param omit_if_too_small: if set to True (default), only store variant if each source contains at least
+            min_size_per_source records.
+        :param min_size_per_source: minimum number of records required in each source to keep the dataset. Will be
+            ignored if omit_if_too_small is set to False. Defaults to 10.
         """
         config = read_json(config_path)
         variants = self.get_variants_by_config_dict(config)
         Path(outfile_directory).mkdir(exist_ok=True)
         variant_id = 0
         for (params, variant) in tqdm(variants, desc="Saving Variants", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+            if self._check_if_variant_should_be_omitted(min_size_per_source, omit_if_too_small, variant):
+                continue
             # create this variant's sub folder
             variant_sub_folder = os.path.join(outfile_directory, f"DV_{variant_id}")
             Path(variant_sub_folder).mkdir(exist_ok=True)
-            # create records.csv
+            # create records.csv and params.json
             variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
             _create_params_json(params, variant, variant_sub_folder)
             variant_id += 1
@@ -154,6 +160,19 @@ class DatasetModifier:
         for params in tqdm(get_param_variations(config), desc="Creating Variants", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
             variants.append((params, self.get_variant(params)))
         return variants
+
+    def _check_if_variant_should_be_omitted(self, min_size_per_source, omit_if_too_small, variant):
+        if not omit_if_too_small:
+            return False
+        a_b = [x for _, x in variant.groupby(self.source_id_col_name)]  # split into the two sources
+        if len(a_b) < 2:
+            # at least one of the two sources has size 0
+            observed_min_size = 0
+        else:
+            observed_min_size = min(a_b[0].shape[0], a_b[1].shape[0])
+        if observed_min_size < min_size_per_source:
+            return True
+        return False
 
     def get_variant(self, params) -> pd.DataFrame:
         if params["subset_selection"] == "RANDOM":
