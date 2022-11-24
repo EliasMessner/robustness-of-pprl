@@ -66,6 +66,16 @@ def _get_cartesian_product(items: list[(str, any)]):
     return [*cartesian_prod]
 
 
+def _create_params_json(params, variant, variant_sub_folder):
+    actual_size = variant.shape[0] / 2
+    # assert that the size stored in params (if it exists) is equal to the size of the variant
+    assert params.get("size", actual_size) == actual_size
+    # set the size value in params to the actual size of the dataset, in case it wasn't set already
+    params["size"] = actual_size
+    # create param.json
+    write_json(params, os.path.join(variant_sub_folder, "params.json"))
+
+
 class DatasetModifier:
     def __init__(self):
         self.df = None
@@ -131,8 +141,7 @@ class DatasetModifier:
             Path(variant_sub_folder).mkdir(exist_ok=True)
             # create records.csv
             variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
-            # create param.json
-            write_json(params, os.path.join(variant_sub_folder, "params.json"))
+            _create_params_json(params, variant, variant_sub_folder)
             variant_id += 1
 
     def get_variants_by_config_dict(self, config) -> list[(dict, pd.DataFrame)]:
