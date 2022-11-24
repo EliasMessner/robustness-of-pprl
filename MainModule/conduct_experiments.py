@@ -30,7 +30,7 @@ def conduct_experiment(exp_params):
     Path(exp_out_folder).mkdir(exist_ok=True)
     exp_id = mlflow.create_experiment(name=f"{exp_no}_{TIMESTAMP}")
     variants = os.listdir(dataset_variants_dir)  # one run per dataset variant
-    for variant_folder_name in tqdm(variants, desc="Variations", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
+    for variant_folder_name in tqdm(variants, desc="Runs", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
         data_path = os.path.join(dataset_variants_dir, variant_folder_name, "records.csv")
         run_out_folder = os.path.join(exp_out_folder, variant_folder_name)
         outfile_path = os.path.join(run_out_folder, "matching.csv")
