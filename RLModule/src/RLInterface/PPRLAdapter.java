@@ -78,7 +78,7 @@ public class PPRLAdapter implements RecordLinkageI {
             int l = (int) (long) jsonObject.get("l");
             int k = (int) (long) jsonObject.get("k");
             double t = (double) jsonObject.get("t");
-            String tokenSalting = ((Long) jsonObject.get("seed")).toString();
+            String tokenSalting = (String) jsonObject.get("seed");
             return new Parameters(
                     LinkingMode.POLYGAMOUS,
                     HashingMode.ENHANCED_DOUBLE_HASHING,
