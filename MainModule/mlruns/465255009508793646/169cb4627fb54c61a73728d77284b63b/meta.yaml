@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/465255009508793646/169cb4627fb54c61a73728d77284b63b/artifacts
+end_time: 1669297286690
+entry_point_name: ''
+experiment_id: '465255009508793646'
+lifecycle_stage: active
+run_id: 169cb4627fb54c61a73728d77284b63b
+run_name: upbeat-skunk-629
+run_uuid: 169cb4627fb54c61a73728d77284b63b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297276148
+status: 3
+tags: []
+user_id: elias

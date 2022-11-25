@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/357507134588258841/12ccadbd11db4b99be1533339e5de980/artifacts
+end_time: 1669292313247
+entry_point_name: ''
+experiment_id: '357507134588258841'
+lifecycle_stage: active
+run_id: 12ccadbd11db4b99be1533339e5de980
+run_name: efficient-yak-669
+run_uuid: 12ccadbd11db4b99be1533339e5de980
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292311443
+status: 3
+tags: []
+user_id: elias

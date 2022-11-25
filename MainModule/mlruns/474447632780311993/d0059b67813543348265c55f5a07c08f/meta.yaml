@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/474447632780311993/d0059b67813543348265c55f5a07c08f/artifacts
+end_time: 1669297053242
+entry_point_name: ''
+experiment_id: '474447632780311993'
+lifecycle_stage: active
+run_id: d0059b67813543348265c55f5a07c08f
+run_name: enthused-snipe-465
+run_uuid: d0059b67813543348265c55f5a07c08f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297053026
+status: 3
+tags: []
+user_id: elias

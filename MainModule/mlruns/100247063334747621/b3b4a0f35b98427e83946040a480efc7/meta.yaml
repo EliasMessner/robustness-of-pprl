@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/100247063334747621/b3b4a0f35b98427e83946040a480efc7/artifacts
+end_time: 1669292540162
+entry_point_name: ''
+experiment_id: '100247063334747621'
+lifecycle_stage: active
+run_id: b3b4a0f35b98427e83946040a480efc7
+run_name: bald-bass-311
+run_uuid: b3b4a0f35b98427e83946040a480efc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292527975
+status: 3
+tags: []
+user_id: elias

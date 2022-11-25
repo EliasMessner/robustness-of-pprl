@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/158394098813251478/67387fa39f22498d804a694b1d18c9e2/artifacts
+end_time: 1669302435317
+entry_point_name: ''
+experiment_id: '158394098813251478'
+lifecycle_stage: active
+run_id: 67387fa39f22498d804a694b1d18c9e2
+run_name: receptive-snake-359
+run_uuid: 67387fa39f22498d804a694b1d18c9e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669302420205
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/125426553996140220/97afab668a9645cb81337ad71949b952/artifacts
+end_time: 1669227759671
+entry_point_name: ''
+experiment_id: '125426553996140220'
+lifecycle_stage: active
+run_id: 97afab668a9645cb81337ad71949b952
+run_name: crawling-panda-811
+run_uuid: 97afab668a9645cb81337ad71949b952
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669227756881
+status: 3
+tags: []
+user_id: elias

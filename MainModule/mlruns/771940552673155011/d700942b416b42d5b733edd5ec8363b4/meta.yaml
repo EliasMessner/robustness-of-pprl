@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/771940552673155011/d700942b416b42d5b733edd5ec8363b4/artifacts
+end_time: 1668860422530
+entry_point_name: ''
+experiment_id: '771940552673155011'
+lifecycle_stage: active
+run_id: d700942b416b42d5b733edd5ec8363b4
+run_name: bald-snail-133
+run_uuid: d700942b416b42d5b733edd5ec8363b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1668860419875
+status: 3
+tags: []
+user_id: elias

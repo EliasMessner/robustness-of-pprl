@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/838082611194119125/0cdfe96b99ec4c8296a4f8b3c2c72c93/artifacts
+end_time: 1669289777372
+entry_point_name: ''
+experiment_id: '838082611194119125'
+lifecycle_stage: active
+run_id: 0cdfe96b99ec4c8296a4f8b3c2c72c93
+run_name: puzzled-snipe-262
+run_uuid: 0cdfe96b99ec4c8296a4f8b3c2c72c93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289759446
+status: 3
+tags: []
+user_id: elias

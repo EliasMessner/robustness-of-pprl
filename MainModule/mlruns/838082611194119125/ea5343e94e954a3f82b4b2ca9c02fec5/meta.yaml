@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/838082611194119125/ea5343e94e954a3f82b4b2ca9c02fec5/artifacts
+end_time: 1669289650074
+entry_point_name: ''
+experiment_id: '838082611194119125'
+lifecycle_stage: active
+run_id: ea5343e94e954a3f82b4b2ca9c02fec5
+run_name: unequaled-conch-494
+run_uuid: ea5343e94e954a3f82b4b2ca9c02fec5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289637540
+status: 3
+tags: []
+user_id: elias

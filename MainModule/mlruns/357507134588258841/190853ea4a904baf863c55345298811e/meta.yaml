@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/357507134588258841/190853ea4a904baf863c55345298811e/artifacts
+end_time: 1669292418571
+entry_point_name: ''
+experiment_id: '357507134588258841'
+lifecycle_stage: active
+run_id: 190853ea4a904baf863c55345298811e
+run_name: wistful-pig-291
+run_uuid: 190853ea4a904baf863c55345298811e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292414299
+status: 3
+tags: []
+user_id: elias

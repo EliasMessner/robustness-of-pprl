@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/838082611194119125/30bd5cc0de034da7b8c7308ebb03aaca/artifacts
+end_time: 1669289667386
+entry_point_name: ''
+experiment_id: '838082611194119125'
+lifecycle_stage: active
+run_id: 30bd5cc0de034da7b8c7308ebb03aaca
+run_name: thundering-hawk-66
+run_uuid: 30bd5cc0de034da7b8c7308ebb03aaca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289666889
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/323871373673908029/082014e6bbc0417fa0c5839dd177443a/artifacts
+end_time: 1669291417842
+entry_point_name: ''
+experiment_id: '323871373673908029'
+lifecycle_stage: active
+run_id: 082014e6bbc0417fa0c5839dd177443a
+run_name: luminous-carp-563
+run_uuid: 082014e6bbc0417fa0c5839dd177443a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291403966
+status: 3
+tags: []
+user_id: elias

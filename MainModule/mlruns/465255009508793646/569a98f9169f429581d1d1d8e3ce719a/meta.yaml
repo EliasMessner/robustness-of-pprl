@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/465255009508793646/569a98f9169f429581d1d1d8e3ce719a/artifacts
+end_time: 1669297357515
+entry_point_name: ''
+experiment_id: '465255009508793646'
+lifecycle_stage: active
+run_id: 569a98f9169f429581d1d1d8e3ce719a
+run_name: smiling-lynx-595
+run_uuid: 569a98f9169f429581d1d1d8e3ce719a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297342970
+status: 3
+tags: []
+user_id: elias

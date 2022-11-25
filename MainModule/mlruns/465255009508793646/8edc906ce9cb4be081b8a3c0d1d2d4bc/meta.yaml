@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/465255009508793646/8edc906ce9cb4be081b8a3c0d1d2d4bc/artifacts
+end_time: 1669297267536
+entry_point_name: ''
+experiment_id: '465255009508793646'
+lifecycle_stage: active
+run_id: 8edc906ce9cb4be081b8a3c0d1d2d4bc
+run_name: wistful-chimp-929
+run_uuid: 8edc906ce9cb4be081b8a3c0d1d2d4bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297253610
+status: 3
+tags: []
+user_id: elias

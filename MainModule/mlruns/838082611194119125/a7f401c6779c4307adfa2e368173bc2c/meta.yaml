@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/838082611194119125/a7f401c6779c4307adfa2e368173bc2c/artifacts
+end_time: 1669289612355
+entry_point_name: ''
+experiment_id: '838082611194119125'
+lifecycle_stage: active
+run_id: a7f401c6779c4307adfa2e368173bc2c
+run_name: bold-wolf-401
+run_uuid: a7f401c6779c4307adfa2e368173bc2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289612119
+status: 3
+tags: []
+user_id: elias

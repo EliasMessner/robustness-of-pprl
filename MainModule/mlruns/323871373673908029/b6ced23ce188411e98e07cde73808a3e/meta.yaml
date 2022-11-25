@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/323871373673908029/b6ced23ce188411e98e07cde73808a3e/artifacts
+end_time: 1669291498278
+entry_point_name: ''
+experiment_id: '323871373673908029'
+lifecycle_stage: active
+run_id: b6ced23ce188411e98e07cde73808a3e
+run_name: unruly-carp-154
+run_uuid: b6ced23ce188411e98e07cde73808a3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291498121
+status: 3
+tags: []
+user_id: elias

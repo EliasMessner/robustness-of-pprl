@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/323871373673908029/319307d1f7b64d188ccd74f0dc6aed77/artifacts
+end_time: 1669291359576
+entry_point_name: ''
+experiment_id: '323871373673908029'
+lifecycle_stage: active
+run_id: 319307d1f7b64d188ccd74f0dc6aed77
+run_name: able-stoat-672
+run_uuid: 319307d1f7b64d188ccd74f0dc6aed77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291359244
+status: 3
+tags: []
+user_id: elias

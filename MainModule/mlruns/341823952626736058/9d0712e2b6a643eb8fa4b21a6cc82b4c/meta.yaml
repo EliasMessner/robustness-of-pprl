@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/341823952626736058/9d0712e2b6a643eb8fa4b21a6cc82b4c/artifacts
+end_time: 1669228947840
+entry_point_name: ''
+experiment_id: '341823952626736058'
+lifecycle_stage: active
+run_id: 9d0712e2b6a643eb8fa4b21a6cc82b4c
+run_name: zealous-bat-13
+run_uuid: 9d0712e2b6a643eb8fa4b21a6cc82b4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669228944098
+status: 3
+tags: []
+user_id: elias

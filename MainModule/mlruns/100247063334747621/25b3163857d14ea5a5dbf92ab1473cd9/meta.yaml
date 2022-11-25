@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/100247063334747621/25b3163857d14ea5a5dbf92ab1473cd9/artifacts
+end_time: 1669292462230
+entry_point_name: ''
+experiment_id: '100247063334747621'
+lifecycle_stage: active
+run_id: 25b3163857d14ea5a5dbf92ab1473cd9
+run_name: dashing-rat-738
+run_uuid: 25b3163857d14ea5a5dbf92ab1473cd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292462072
+status: 3
+tags: []
+user_id: elias

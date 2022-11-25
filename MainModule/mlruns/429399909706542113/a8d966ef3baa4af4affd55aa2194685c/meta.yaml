@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/429399909706542113/a8d966ef3baa4af4affd55aa2194685c/artifacts
+end_time: 1669300372966
+entry_point_name: ''
+experiment_id: '429399909706542113'
+lifecycle_stage: active
+run_id: a8d966ef3baa4af4affd55aa2194685c
+run_name: bald-dove-829
+run_uuid: a8d966ef3baa4af4affd55aa2194685c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669300355392
+status: 3
+tags: []
+user_id: elias

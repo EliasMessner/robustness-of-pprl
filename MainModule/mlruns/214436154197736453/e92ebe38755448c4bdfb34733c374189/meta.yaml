@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/214436154197736453/e92ebe38755448c4bdfb34733c374189/artifacts
+end_time: 1669291615533
+entry_point_name: ''
+experiment_id: '214436154197736453'
+lifecycle_stage: active
+run_id: e92ebe38755448c4bdfb34733c374189
+run_name: likeable-hawk-359
+run_uuid: e92ebe38755448c4bdfb34733c374189
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291585886
+status: 3
+tags: []
+user_id: elias

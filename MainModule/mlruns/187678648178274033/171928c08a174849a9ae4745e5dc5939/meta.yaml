@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/187678648178274033/171928c08a174849a9ae4745e5dc5939/artifacts
+end_time: 1669289911371
+entry_point_name: ''
+experiment_id: '187678648178274033'
+lifecycle_stage: active
+run_id: 171928c08a174849a9ae4745e5dc5939
+run_name: judicious-ram-784
+run_uuid: 171928c08a174849a9ae4745e5dc5939
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289907270
+status: 3
+tags: []
+user_id: elias

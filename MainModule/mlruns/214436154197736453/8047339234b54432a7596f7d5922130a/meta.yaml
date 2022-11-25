@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/214436154197736453/8047339234b54432a7596f7d5922130a/artifacts
+end_time: 1669291550285
+entry_point_name: ''
+experiment_id: '214436154197736453'
+lifecycle_stage: active
+run_id: 8047339234b54432a7596f7d5922130a
+run_name: defiant-colt-388
+run_uuid: 8047339234b54432a7596f7d5922130a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291550018
+status: 3
+tags: []
+user_id: elias

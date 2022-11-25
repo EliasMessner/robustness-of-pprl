@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/100247063334747621/89615864d6944f1a9f33eacc4a952344/artifacts
+end_time: 1669292447882
+entry_point_name: ''
+experiment_id: '100247063334747621'
+lifecycle_stage: active
+run_id: 89615864d6944f1a9f33eacc4a952344
+run_name: angry-chimp-733
+run_uuid: 89615864d6944f1a9f33eacc4a952344
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292446149
+status: 3
+tags: []
+user_id: elias

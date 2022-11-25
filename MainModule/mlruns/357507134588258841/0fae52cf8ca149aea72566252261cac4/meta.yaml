@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/357507134588258841/0fae52cf8ca149aea72566252261cac4/artifacts
+end_time: 1669292414142
+entry_point_name: ''
+experiment_id: '357507134588258841'
+lifecycle_stage: active
+run_id: 0fae52cf8ca149aea72566252261cac4
+run_name: unleashed-crane-312
+run_uuid: 0fae52cf8ca149aea72566252261cac4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292409981
+status: 3
+tags: []
+user_id: elias

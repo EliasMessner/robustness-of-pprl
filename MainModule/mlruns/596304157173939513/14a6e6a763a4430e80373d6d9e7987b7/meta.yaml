@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/596304157173939513/14a6e6a763a4430e80373d6d9e7987b7/artifacts
+end_time: 1669292008234
+entry_point_name: ''
+experiment_id: '596304157173939513'
+lifecycle_stage: active
+run_id: 14a6e6a763a4430e80373d6d9e7987b7
+run_name: enchanting-bass-683
+run_uuid: 14a6e6a763a4430e80373d6d9e7987b7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292006343
+status: 3
+tags: []
+user_id: elias

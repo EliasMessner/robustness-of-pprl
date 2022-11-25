@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/357507134588258841/da70e2cd36d44471a6601a49dfa0ebfb/artifacts
+end_time: 1669292272843
+entry_point_name: ''
+experiment_id: '357507134588258841'
+lifecycle_stage: active
+run_id: da70e2cd36d44471a6601a49dfa0ebfb
+run_name: righteous-ram-53
+run_uuid: da70e2cd36d44471a6601a49dfa0ebfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292270914
+status: 3
+tags: []
+user_id: elias
