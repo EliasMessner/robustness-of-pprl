@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/754894049258019327/6f795e00ccb74f70bf47d946a478291c/artifacts
+end_time: 1669302560961
+entry_point_name: ''
+experiment_id: '754894049258019327'
+lifecycle_stage: active
+run_id: 6f795e00ccb74f70bf47d946a478291c
+run_name: rare-kite-251
+run_uuid: 6f795e00ccb74f70bf47d946a478291c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669302545662
+status: 3
+tags: []
+user_id: elias

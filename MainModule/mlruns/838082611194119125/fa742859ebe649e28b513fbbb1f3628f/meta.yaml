@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/838082611194119125/fa742859ebe649e28b513fbbb1f3628f/artifacts
+end_time: 1669289755270
+entry_point_name: ''
+experiment_id: '838082611194119125'
+lifecycle_stage: active
+run_id: fa742859ebe649e28b513fbbb1f3628f
+run_name: loud-smelt-425
+run_uuid: fa742859ebe649e28b513fbbb1f3628f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289751122
+status: 3
+tags: []
+user_id: elias

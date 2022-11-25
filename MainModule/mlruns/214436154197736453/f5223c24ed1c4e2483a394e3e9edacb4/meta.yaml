@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/214436154197736453/f5223c24ed1c4e2483a394e3e9edacb4/artifacts
+end_time: 1669291628543
+entry_point_name: ''
+experiment_id: '214436154197736453'
+lifecycle_stage: active
+run_id: f5223c24ed1c4e2483a394e3e9edacb4
+run_name: delightful-bear-298
+run_uuid: f5223c24ed1c4e2483a394e3e9edacb4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291615540
+status: 3
+tags: []
+user_id: elias

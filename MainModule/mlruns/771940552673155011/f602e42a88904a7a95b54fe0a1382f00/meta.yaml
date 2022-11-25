@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/771940552673155011/f602e42a88904a7a95b54fe0a1382f00/artifacts
+end_time: 1668860436421
+entry_point_name: ''
+experiment_id: '771940552673155011'
+lifecycle_stage: active
+run_id: f602e42a88904a7a95b54fe0a1382f00
+run_name: honorable-mare-696
+run_uuid: f602e42a88904a7a95b54fe0a1382f00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1668860431379
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/323871373673908029/45ef359c6a174b89b36d570f64e156f0/artifacts
+end_time: 1669291378209
+entry_point_name: ''
+experiment_id: '323871373673908029'
+lifecycle_stage: active
+run_id: 45ef359c6a174b89b36d570f64e156f0
+run_name: bittersweet-gnu-395
+run_uuid: 45ef359c6a174b89b36d570f64e156f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291359582
+status: 3
+tags: []
+user_id: elias

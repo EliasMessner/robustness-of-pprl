@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/225297837165219607/538a1a044e9944ffa48bbe731480a20e/artifacts
+end_time: 1669300654605
+entry_point_name: ''
+experiment_id: '225297837165219607'
+lifecycle_stage: active
+run_id: 538a1a044e9944ffa48bbe731480a20e
+run_name: chill-snake-515
+run_uuid: 538a1a044e9944ffa48bbe731480a20e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669300640208
+status: 3
+tags: []
+user_id: elias

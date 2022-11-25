@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/214436154197736453/e09deb1e0aef40c49237384f347fa4a4/artifacts
+end_time: 1669291674664
+entry_point_name: ''
+experiment_id: '214436154197736453'
+lifecycle_stage: active
+run_id: e09deb1e0aef40c49237384f347fa4a4
+run_name: gentle-hog-423
+run_uuid: e09deb1e0aef40c49237384f347fa4a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291658702
+status: 3
+tags: []
+user_id: elias

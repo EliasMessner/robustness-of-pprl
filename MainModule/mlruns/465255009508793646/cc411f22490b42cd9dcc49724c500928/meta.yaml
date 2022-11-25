@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/465255009508793646/cc411f22490b42cd9dcc49724c500928/artifacts
+end_time: 1669297408320
+entry_point_name: ''
+experiment_id: '465255009508793646'
+lifecycle_stage: active
+run_id: cc411f22490b42cd9dcc49724c500928
+run_name: merciful-mole-966
+run_uuid: cc411f22490b42cd9dcc49724c500928
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297390712
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/357507134588258841/9099120b2b164b289b68798bfeae7a98/artifacts
+end_time: 1669292290347
+entry_point_name: ''
+experiment_id: '357507134588258841'
+lifecycle_stage: active
+run_id: 9099120b2b164b289b68798bfeae7a98
+run_name: worried-finch-116
+run_uuid: 9099120b2b164b289b68798bfeae7a98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292273053
+status: 3
+tags: []
+user_id: elias

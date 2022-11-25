@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/465255009508793646/a32556b4553c427e9b9856636d136a49/artifacts
+end_time: 1669297274858
+entry_point_name: ''
+experiment_id: '465255009508793646'
+lifecycle_stage: active
+run_id: a32556b4553c427e9b9856636d136a49
+run_name: bold-toad-523
+run_uuid: a32556b4553c427e9b9856636d136a49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297267970
+status: 3
+tags: []
+user_id: elias

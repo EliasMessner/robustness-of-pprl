@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/465255009508793646/8a1e01895fd249b4b4fa3c24c3f098c3/artifacts
+end_time: 1669297381504
+entry_point_name: ''
+experiment_id: '465255009508793646'
+lifecycle_stage: active
+run_id: 8a1e01895fd249b4b4fa3c24c3f098c3
+run_name: unruly-wren-337
+run_uuid: 8a1e01895fd249b4b4fa3c24c3f098c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297362577
+status: 3
+tags: []
+user_id: elias

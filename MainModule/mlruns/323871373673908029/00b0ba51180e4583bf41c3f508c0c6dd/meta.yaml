@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/323871373673908029/00b0ba51180e4583bf41c3f508c0c6dd/artifacts
+end_time: 1669291356091
+entry_point_name: ''
+experiment_id: '323871373673908029'
+lifecycle_stage: active
+run_id: 00b0ba51180e4583bf41c3f508c0c6dd
+run_name: gaudy-snake-763
+run_uuid: 00b0ba51180e4583bf41c3f508c0c6dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291354044
+status: 3
+tags: []
+user_id: elias

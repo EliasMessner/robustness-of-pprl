@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/838082611194119125/88bf5fb0f7de4d22ad9de8aa4ce4a5c2/artifacts
+end_time: 1669289730655
+entry_point_name: ''
+experiment_id: '838082611194119125'
+lifecycle_stage: active
+run_id: 88bf5fb0f7de4d22ad9de8aa4ce4a5c2
+run_name: omniscient-asp-30
+run_uuid: 88bf5fb0f7de4d22ad9de8aa4ce4a5c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289730501
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/158394098813251478/686800e015404072b1dd4dd8f7d11061/artifacts
+end_time: 1669302376506
+entry_point_name: ''
+experiment_id: '158394098813251478'
+lifecycle_stage: active
+run_id: 686800e015404072b1dd4dd8f7d11061
+run_name: tasteful-mink-195
+run_uuid: 686800e015404072b1dd4dd8f7d11061
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669302368896
+status: 3
+tags: []
+user_id: elias

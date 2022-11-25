@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/754894049258019327/64c8e42c1f0f47208483c29ed5de490f/artifacts
+end_time: 1669302513955
+entry_point_name: ''
+experiment_id: '754894049258019327'
+lifecycle_stage: active
+run_id: 64c8e42c1f0f47208483c29ed5de490f
+run_name: polite-mole-67
+run_uuid: 64c8e42c1f0f47208483c29ed5de490f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669302499624
+status: 3
+tags: []
+user_id: elias

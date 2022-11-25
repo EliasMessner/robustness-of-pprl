@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/444885488884527585/f8d069cddbdf49cb8d5e0ee633a0f3d9/artifacts
+end_time: 1669227751468
+entry_point_name: ''
+experiment_id: '444885488884527585'
+lifecycle_stage: active
+run_id: f8d069cddbdf49cb8d5e0ee633a0f3d9
+run_name: caring-lamb-827
+run_uuid: f8d069cddbdf49cb8d5e0ee633a0f3d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669227746283
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/357507134588258841/118407135a2641d59ae4b9f0449be6c2/artifacts
+end_time: 1669292311427
+entry_point_name: ''
+experiment_id: '357507134588258841'
+lifecycle_stage: active
+run_id: 118407135a2641d59ae4b9f0449be6c2
+run_name: merciful-fly-522
+run_uuid: 118407135a2641d59ae4b9f0449be6c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292298367
+status: 3
+tags: []
+user_id: elias

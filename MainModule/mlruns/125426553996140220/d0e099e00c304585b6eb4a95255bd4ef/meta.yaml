@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/125426553996140220/d0e099e00c304585b6eb4a95255bd4ef/artifacts
+end_time: 1669227765625
+entry_point_name: ''
+experiment_id: '125426553996140220'
+lifecycle_stage: active
+run_id: d0e099e00c304585b6eb4a95255bd4ef
+run_name: learned-foal-825
+run_uuid: d0e099e00c304585b6eb4a95255bd4ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669227763784
+status: 3
+tags: []
+user_id: elias

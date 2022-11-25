@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/429399909706542113/fc692ec4d9cd4a1e8f41f2491d23194a/artifacts
+end_time: 1669300528377
+entry_point_name: ''
+experiment_id: '429399909706542113'
+lifecycle_stage: active
+run_id: fc692ec4d9cd4a1e8f41f2491d23194a
+run_name: melodic-colt-629
+run_uuid: fc692ec4d9cd4a1e8f41f2491d23194a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669300523545
+status: 3
+tags: []
+user_id: elias

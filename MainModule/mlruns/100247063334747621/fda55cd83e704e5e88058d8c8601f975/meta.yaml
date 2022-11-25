@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/100247063334747621/fda55cd83e704e5e88058d8c8601f975/artifacts
+end_time: 1669292565698
+entry_point_name: ''
+experiment_id: '100247063334747621'
+lifecycle_stage: active
+run_id: fda55cd83e704e5e88058d8c8601f975
+run_name: selective-cat-321
+run_uuid: fda55cd83e704e5e88058d8c8601f975
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292565521
+status: 3
+tags: []
+user_id: elias

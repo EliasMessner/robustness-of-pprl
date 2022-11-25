@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/225297837165219607/573da1de5f7445b4a8cfc6da7f4496f8/artifacts
+end_time: 1669300633372
+entry_point_name: ''
+experiment_id: '225297837165219607'
+lifecycle_stage: active
+run_id: 573da1de5f7445b4a8cfc6da7f4496f8
+run_name: dapper-frog-55
+run_uuid: 573da1de5f7445b4a8cfc6da7f4496f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669300631870
+status: 3
+tags: []
+user_id: elias

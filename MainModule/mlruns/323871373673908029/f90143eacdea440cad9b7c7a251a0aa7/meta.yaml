@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/323871373673908029/f90143eacdea440cad9b7c7a251a0aa7/artifacts
+end_time: 1669291502770
+entry_point_name: ''
+experiment_id: '323871373673908029'
+lifecycle_stage: active
+run_id: f90143eacdea440cad9b7c7a251a0aa7
+run_name: tasteful-swan-734
+run_uuid: f90143eacdea440cad9b7c7a251a0aa7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291502609
+status: 3
+tags: []
+user_id: elias

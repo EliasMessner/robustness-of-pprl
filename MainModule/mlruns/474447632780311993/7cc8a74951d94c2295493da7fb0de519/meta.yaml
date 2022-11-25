@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/474447632780311993/7cc8a74951d94c2295493da7fb0de519/artifacts
+end_time: 1669297154428
+entry_point_name: ''
+experiment_id: '474447632780311993'
+lifecycle_stage: active
+run_id: 7cc8a74951d94c2295493da7fb0de519
+run_name: colorful-mole-19
+run_uuid: 7cc8a74951d94c2295493da7fb0de519
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297115692
+status: 3
+tags: []
+user_id: elias

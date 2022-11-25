@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/323871373673908029/ce4ef7696dca4ed39bf61f6406d2d2dc/artifacts
+end_time: 1669291419933
+entry_point_name: ''
+experiment_id: '323871373673908029'
+lifecycle_stage: active
+run_id: ce4ef7696dca4ed39bf61f6406d2d2dc
+run_name: dazzling-ape-326
+run_uuid: ce4ef7696dca4ed39bf61f6406d2d2dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291418520
+status: 3
+tags: []
+user_id: elias

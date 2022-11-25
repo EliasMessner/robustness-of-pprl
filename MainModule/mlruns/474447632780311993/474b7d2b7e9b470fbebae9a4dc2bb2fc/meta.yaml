@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/474447632780311993/474b7d2b7e9b470fbebae9a4dc2bb2fc/artifacts
+end_time: 1669297176957
+entry_point_name: ''
+experiment_id: '474447632780311993'
+lifecycle_stage: active
+run_id: 474b7d2b7e9b470fbebae9a4dc2bb2fc
+run_name: salty-loon-63
+run_uuid: 474b7d2b7e9b470fbebae9a4dc2bb2fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669297171395
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/715424052573714932/dcc03f7780e0423cacbabb38deb74f78/artifacts
+end_time: 1669287818540
+entry_point_name: ''
+experiment_id: '715424052573714932'
+lifecycle_stage: active
+run_id: dcc03f7780e0423cacbabb38deb74f78
+run_name: welcoming-shrew-148
+run_uuid: dcc03f7780e0423cacbabb38deb74f78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669287816674
+status: 3
+tags: []
+user_id: elias

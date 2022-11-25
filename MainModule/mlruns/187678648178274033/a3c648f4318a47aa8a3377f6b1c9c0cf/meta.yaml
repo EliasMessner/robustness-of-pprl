@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/187678648178274033/a3c648f4318a47aa8a3377f6b1c9c0cf/artifacts
+end_time: 1669289806503
+entry_point_name: ''
+experiment_id: '187678648178274033'
+lifecycle_stage: active
+run_id: a3c648f4318a47aa8a3377f6b1c9c0cf
+run_name: languid-perch-570
+run_uuid: a3c648f4318a47aa8a3377f6b1c9c0cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289806343
+status: 3
+tags: []
+user_id: elias

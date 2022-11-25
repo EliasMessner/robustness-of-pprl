@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/754894049258019327/eeb416b3d0e6489188677dde1808349f/artifacts
+end_time: 1669302538725
+entry_point_name: ''
+experiment_id: '754894049258019327'
+lifecycle_stage: active
+run_id: eeb416b3d0e6489188677dde1808349f
+run_name: auspicious-deer-741
+run_uuid: eeb416b3d0e6489188677dde1808349f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669302537343
+status: 3
+tags: []
+user_id: elias

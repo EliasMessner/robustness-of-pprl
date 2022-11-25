@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/596304157173939513/662d71b6f19245bb94409aced313b31c/artifacts
+end_time: 1669292006333
+entry_point_name: ''
+experiment_id: '596304157173939513'
+lifecycle_stage: active
+run_id: 662d71b6f19245bb94409aced313b31c
+run_name: fortunate-pug-373
+run_uuid: 662d71b6f19245bb94409aced313b31c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292004285
+status: 3
+tags: []
+user_id: elias

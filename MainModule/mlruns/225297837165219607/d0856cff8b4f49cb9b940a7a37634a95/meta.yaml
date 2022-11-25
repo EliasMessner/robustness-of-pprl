@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/225297837165219607/d0856cff8b4f49cb9b940a7a37634a95/artifacts
+end_time: 1669300659400
+entry_point_name: ''
+experiment_id: '225297837165219607'
+lifecycle_stage: active
+run_id: d0856cff8b4f49cb9b940a7a37634a95
+run_name: smiling-cub-537
+run_uuid: d0856cff8b4f49cb9b940a7a37634a95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669300654611
+status: 3
+tags: []
+user_id: elias

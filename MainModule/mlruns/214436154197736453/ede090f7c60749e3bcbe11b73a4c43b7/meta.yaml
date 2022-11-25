@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/214436154197736453/ede090f7c60749e3bcbe11b73a4c43b7/artifacts
+end_time: 1669291536465
+entry_point_name: ''
+experiment_id: '214436154197736453'
+lifecycle_stage: active
+run_id: ede090f7c60749e3bcbe11b73a4c43b7
+run_name: salty-mouse-185
+run_uuid: ede090f7c60749e3bcbe11b73a4c43b7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669291536232
+status: 3
+tags: []
+user_id: elias

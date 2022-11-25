@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/100247063334747621/584f950fef1948aa953098323bbae1ba/artifacts
+end_time: 1669292480291
+entry_point_name: ''
+experiment_id: '100247063334747621'
+lifecycle_stage: active
+run_id: 584f950fef1948aa953098323bbae1ba
+run_name: treasured-sow-880
+run_uuid: 584f950fef1948aa953098323bbae1ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669292469580
+status: 3
+tags: []
+user_id: elias

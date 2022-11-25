@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/429399909706542113/697c55d206744601ad6a9b26c1436ae2/artifacts
+end_time: 1669300445065
+entry_point_name: ''
+experiment_id: '429399909706542113'
+lifecycle_stage: active
+run_id: 697c55d206744601ad6a9b26c1436ae2
+run_name: blushing-cub-990
+run_uuid: 697c55d206744601ad6a9b26c1436ae2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669300438091
+status: 3
+tags: []
+user_id: elias

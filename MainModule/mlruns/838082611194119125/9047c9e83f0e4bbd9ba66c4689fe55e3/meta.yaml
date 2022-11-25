@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/838082611194119125/9047c9e83f0e4bbd9ba66c4689fe55e3/artifacts
+end_time: 1669289759442
+entry_point_name: ''
+experiment_id: '838082611194119125'
+lifecycle_stage: active
+run_id: 9047c9e83f0e4bbd9ba66c4689fe55e3
+run_name: gregarious-deer-521
+run_uuid: 9047c9e83f0e4bbd9ba66c4689fe55e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669289755424
+status: 3
+tags: []
+user_id: elias
