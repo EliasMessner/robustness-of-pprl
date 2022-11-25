@@ -1,5 +1,7 @@
 # RLModule
 
+Requires JDK 17 or newer.
+
 ### Build jar
 > cd RLModule
 
@@ -10,7 +12,7 @@
 
 # MainModule
 
-Python 3.9 needed
+Requires Python 3.9.
 
 ### Install requirements
 
