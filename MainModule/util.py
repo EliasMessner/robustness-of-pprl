@@ -1,4 +1,5 @@
 import json
+from sys import argv
 
 
 def read_json(path) -> dict:
@@ -10,3 +11,16 @@ def read_json(path) -> dict:
 def write_json(data, path, mode="w", indent=2):
     with open(path, mode) as f:
         json.dump(data, f, indent=indent)
+
+
+def get_config_path_from_argv(default: str):
+    """
+    Check if config path was passed as command line argument,
+    if yes return it, otherwise return the default value.
+    Raise Exception if too many command line args are given.
+    """
+    if len(argv) == 1:
+        return default
+    if len(argv) == 2:
+        return argv[1]
+    raise ValueError("Too many command line arguments.")

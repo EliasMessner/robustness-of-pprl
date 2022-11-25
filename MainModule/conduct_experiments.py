@@ -5,10 +5,11 @@ from datetime import datetime as dt
 
 import mlflow
 from tqdm import tqdm
+from sys import argv
 
 from constants import *
 from eval_adapter import EvalAdapter
-from util import read_json, write_json
+from util import read_json, write_json, get_config_path_from_argv
 
 TIMESTAMP = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
 
@@ -16,8 +17,9 @@ TIMESTAMP = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
 def main():
     # create outfile for matching result if not exists
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
+    _exp_config_path = get_config_path_from_argv(default=exp_config_path)
     # get configs for all experiments
-    experiments = read_json(exp_config_path)["experiments"]
+    experiments = read_json(_exp_config_path)["experiments"]
     # for each experiment, there is a dict of parameters for the RLModule
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
         conduct_experiment(exp_params)

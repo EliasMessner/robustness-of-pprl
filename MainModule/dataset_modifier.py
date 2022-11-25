@@ -5,16 +5,18 @@ import pandas as pd
 from tqdm import tqdm
 import itertools
 from datetime import datetime as dt
+from sys import argv
 
-from util import read_json, write_json
+from util import read_json, write_json, get_config_path_from_argv
 from constants import dm_config_path, dataset_variants_dir
 
 
 def main():
+    _dm_config_path = get_config_path_from_argv(default=dm_config_path)
     # create dataset variations
     dm = DatasetModifier()
-    dm.load_dataset_by_config_file(dm_config_path)
-    dm.create_variants_by_config_file(dm_config_path, dataset_variants_dir)
+    dm.load_dataset_by_config_file(_dm_config_path)
+    dm.create_variants_by_config_file(_dm_config_path, dataset_variants_dir)
 
 
 def get_param_variations(config: dict):
