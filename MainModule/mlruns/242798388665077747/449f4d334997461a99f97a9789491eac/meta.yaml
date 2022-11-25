@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/242798388665077747/449f4d334997461a99f97a9789491eac/artifacts
+end_time: 1669374312660
+entry_point_name: ''
+experiment_id: '242798388665077747'
+lifecycle_stage: active
+run_id: 449f4d334997461a99f97a9789491eac
+run_name: rogue-rook-680
+run_uuid: 449f4d334997461a99f97a9789491eac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669374302192
+status: 3
+tags: []
+user_id: elias
