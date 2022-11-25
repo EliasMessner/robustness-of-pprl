@@ -5,7 +5,6 @@ import pandas as pd
 from tqdm import tqdm
 import itertools
 from datetime import datetime as dt
-from sys import argv
 
 from util import read_json, write_json, get_config_path_from_argv
 from constants import dm_config_path, dataset_variants_dir
