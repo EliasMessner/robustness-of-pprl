@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/242798388665077747/8782a8c576394f76ae3b7598916e4a94/artifacts
+end_time: 1669374209471
+entry_point_name: ''
+experiment_id: '242798388665077747'
+lifecycle_stage: active
+run_id: 8782a8c576394f76ae3b7598916e4a94
+run_name: rebellious-snake-881
+run_uuid: 8782a8c576394f76ae3b7598916e4a94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669374187070
+status: 3
+tags: []
+user_id: elias

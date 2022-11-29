@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/242798388665077747/88621f2aa50b41f3bda86bd242b87908/artifacts
+end_time: 1669374150065
+entry_point_name: ''
+experiment_id: '242798388665077747'
+lifecycle_stage: active
+run_id: 88621f2aa50b41f3bda86bd242b87908
+run_name: suave-trout-824
+run_uuid: 88621f2aa50b41f3bda86bd242b87908
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1669374132262
+status: 3
+tags: []
+user_id: elias
