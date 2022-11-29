@@ -62,7 +62,8 @@ public class Encoder {
 
     private void loadPbm() {
         File file = new File(pbmPath);
-        try (FileInputStream fis = new FileInputStream(file);
+        try (RandomAccessFile raf = new RandomAccessFile(file, "r");
+             FileInputStream fis = new FileInputStream(raf.getFD());
              ObjectInputStream ois = new ObjectInputStream(fis)) {
             this.personBloomFilterMap = (ConcurrentHashMap<Person, BloomFilter>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
