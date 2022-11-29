@@ -15,13 +15,14 @@ public class Launcher {
     Person[] dataSet;
     ProgressHandler progressHandler;
     boolean blockingCheat;
-    boolean parallel;
+    boolean parallelBlockingMapCreation, parallelLinking;
     Map<Person, BloomFilter> personBloomFilterMap;
     Map<String, Set<Person>> blockingMap;
 
-    public Launcher(boolean blockingCheat, boolean parallel) {
+    public Launcher(boolean blockingCheat, boolean parallelBlockingMapCreation, boolean parallelLinking) {
         this.blockingCheat = blockingCheat;
-        this.parallel = parallel;
+        this.parallelBlockingMapCreation = parallelBlockingMapCreation;
+        this.parallelLinking = parallelLinking;
         setPersonAttributeWeights();
     }
 
@@ -53,7 +54,7 @@ public class Launcher {
      * @return a set of all matches pairs.
      */
     public Set<PersonPair> getLinking() {
-        Linker linker = new Linker(dataSet, progressHandler, parameters, personBloomFilterMap, blockingMap, "A", "B", parallel);
+        Linker linker = new Linker(dataSet, progressHandler, parameters, personBloomFilterMap, blockingMap, "A", "B", parallelLinking);
         return linker.getLinking();
     }
 
@@ -120,7 +121,7 @@ public class Launcher {
     private ConcurrentHashMap<String, Set<Person>> mapRecordsToBlockingKeys(Person[] dataSet, ProgressHandler progressHandler, BlockingKeyEncoder... blockingKeyEncoders) {
         ConcurrentHashMap<String, Set<Person>> blockingMap = new ConcurrentHashMap<>();
         Stream<Person> stream = Arrays.stream(dataSet);
-        if (parallel) stream = stream.parallel();
+        if (parallelBlockingMapCreation) stream = stream.parallel();
         stream.forEach(person -> {
             for (BlockingKeyEncoder blockingKeyEncoder : blockingKeyEncoders) {
                 String blockingKey = blockingKeyEncoder.encode(person);

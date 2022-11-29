@@ -22,13 +22,14 @@ public class PPRLAdapter implements RecordLinkageI {
 
     public PPRLAdapter() {
         boolean blockingCheat = true;
-        boolean parallel = false;
-        this.launcher = new Launcher(blockingCheat, parallel);
+        boolean parallelBlockingMapCreation = false;
+        boolean parallelLinking = false;
+        this.launcher = new Launcher(blockingCheat, parallelBlockingMapCreation, parallelLinking);
         this.logs = new StringBuilder();
     }
 
-    public PPRLAdapter(boolean blockingCheat, boolean parallel) {
-        this.launcher = new Launcher(blockingCheat, parallel);
+    public PPRLAdapter(boolean blockingCheat, boolean parallelBlockingMapCreation, boolean parallelLinking) {
+        this.launcher = new Launcher(blockingCheat, parallelBlockingMapCreation, parallelLinking);
     }
 
     /**
