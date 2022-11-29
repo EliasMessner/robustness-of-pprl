@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 /**
  * Class for linking data points from two sources
  */
-public class Linker {
+public class Matcher {
 
     Person[] dataSet;
     ProgressHandler progressHandler;
@@ -28,8 +28,8 @@ public class Linker {
      * @param sourceNameA name of source A
      * @param sourceNameB name of source B
      */
-    public Linker(Person[] dataSet, ProgressHandler progressHandler, Parameters parameters, Map<Person, BloomFilter> personBloomFilterMap,
-                  Map<String, Set<Person>> blockingMap, String sourceNameA, String sourceNameB, boolean parallel) {
+    public Matcher(Person[] dataSet, ProgressHandler progressHandler, Parameters parameters, Map<Person, BloomFilter> personBloomFilterMap,
+                   Map<String, Set<Person>> blockingMap, String sourceNameA, String sourceNameB, boolean parallel) {
         this.dataSet = dataSet;
         this.progressHandler = progressHandler;
         this.parameters = parameters;
@@ -152,7 +152,7 @@ public class Linker {
         Stream<String> blockingKeysStream = blockingMap.keySet().stream();
         if (parallel) blockingKeysStream = blockingKeysStream.parallel();
         blockingKeysStream.forEach(blockingKey ->
-                oneSidedMarriageLinkingHelper(blockingMap.get(blockingKey), linkingWithSimilarities, leftIsMonogamous));
+                semiMonogamousLinkingHelper(blockingMap.get(blockingKey), linkingWithSimilarities, leftIsMonogamous));
         Set<PersonPair> linking = new HashSet<>();
         for (Person a : linkingWithSimilarities.keySet()) {
             linking.add(new PersonPair(a, linkingWithSimilarities.get(a).getPerson()));
@@ -180,9 +180,9 @@ public class Linker {
     }
 
     /**
-     * Helper method for getOneSidedMarriageLinking
+     * Helper method for getSemiMonogamousLinking
      */
-    private void oneSidedMarriageLinkingHelper(Set<Person> blockingSubSet, Map<Person, Match> linking, boolean leftIsMonogamous) {
+    private void semiMonogamousLinkingHelper(Set<Person> blockingSubSet, Map<Person, Match> linking, boolean leftIsMonogamous) {
         List<Person[]> splitData = splitDataBySource(blockingSubSet.toArray(Person[]::new));
         Person[] A = splitData.get(0);
         Person[] B = splitData.get(1);

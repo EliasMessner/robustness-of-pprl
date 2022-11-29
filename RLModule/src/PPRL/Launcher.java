@@ -54,8 +54,8 @@ public class Launcher {
      * @return a set of all matches pairs.
      */
     public Set<PersonPair> getLinking() {
-        Linker linker = new Linker(dataSet, progressHandler, parameters, personBloomFilterMap, blockingMap, "A", "B", parallelLinking);
-        return linker.getLinking();
+        Matcher matcher = new Matcher(dataSet, progressHandler, parameters, personBloomFilterMap, blockingMap, "A", "B", parallelLinking);
+        return matcher.getLinking();
     }
 
     private static void setPersonAttributeWeights() {
