@@ -2,6 +2,7 @@ package PPRL;
 
 import org.apache.commons.codec.language.Soundex;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -9,7 +10,7 @@ import java.util.Map;
 /**
  * Class representing a person, with the attributes as in the dataset.
  */
-public class Person {
+public class Person implements Serializable {
 
     public static String[] attributeNames;
     public String[] attributeValues;

@@ -11,7 +11,7 @@ public class Matcher {
 
     Person[] dataSet;
     ProgressHandler progressHandler;
-    Parameters parameters;
+    MatcherParams parameters;
     Map<Person, BloomFilter> personBloomFilterMap;
     Map<String, Set<Person>> blockingMap;
     String sourceNameA;
@@ -21,17 +21,16 @@ public class Matcher {
     /**
      * Constructor for Linker object that can then be used to perform various linking methods on the data.
      * @param dataSet entire dataset
-     * @param progressHandler for showing progress in terminal
      * @param parameters program parameters
      * @param personBloomFilterMap map containing person objects as keys and their BloomFilters as values. See Main.getPersonBloomFilterMap().
      * @param blockingMap map containing the blocking keys and sets of records. See Person.getBlockingMap().
      * @param sourceNameA name of source A
      * @param sourceNameB name of source B
      */
-    public Matcher(Person[] dataSet, ProgressHandler progressHandler, Parameters parameters, Map<Person, BloomFilter> personBloomFilterMap,
+    public Matcher(Person[] dataSet, MatcherParams parameters, Map<Person, BloomFilter> personBloomFilterMap,
                    Map<String, Set<Person>> blockingMap, String sourceNameA, String sourceNameB, boolean parallel) {
         this.dataSet = dataSet;
-        this.progressHandler = progressHandler;
+        this.progressHandler = new ProgressHandler(dataSet.length, 1);
         this.parameters = parameters;
         this.personBloomFilterMap = personBloomFilterMap;
         this.sourceNameA = sourceNameA;

@@ -35,12 +35,13 @@ public class PPRLAdapter implements RecordLinkageI {
     /**
      * Reads dataset and config file and prepares the launcher.
      */
-    public void readData(String fromFile, String configFile) {
+    public void readData(String fromFile, String configFile, String personBloomFilterMapPath) {
         try {
             Person[] dataSet = getDatasetFromFile(fromFile);
             logs.append(String.format("Dataset size: %d\n", dataSet.length));
-            Parameters parameters = getParametersObject(configFile);
-            launcher.prepare(dataSet, parameters);
+            EncoderParams encoderParams = getEncoderParams(configFile);
+            MatcherParams matcherParams = getMatcherParams(configFile);
+            launcher.prepare(dataSet, encoderParams, matcherParams, personBloomFilterMapPath);
         } catch (IOException | ParseException e) {
             throw new RuntimeException(e);
         }
@@ -73,22 +74,29 @@ public class PPRLAdapter implements RecordLinkageI {
         return records.toArray(Person[]::new);
     }
 
-    private Parameters getParametersObject(String configFile) throws IOException, ParseException {
+    private MatcherParams getMatcherParams(String configFile) throws IOException, ParseException {
+        try (FileReader reader = new FileReader(configFile)) {
+            JSONObject jsonObject = (JSONObject) (new JSONParser().parse(reader));
+            double t = (double) jsonObject.get("t");
+            return new MatcherParams(
+                    LinkingMode.POLYGAMOUS,
+                    true, t);
+        }
+    }
+
+    private EncoderParams getEncoderParams(String configFile) throws IOException, ParseException {
         try (FileReader reader = new FileReader(configFile)) {
             JSONObject jsonObject = (JSONObject) (new JSONParser().parse(reader));
             int l = (int) (long) jsonObject.get("l");
             int k = (int) (long) jsonObject.get("k");
-            double t = (double) jsonObject.get("t");
             String tokenSalting = (String) jsonObject.get("seed");
-            return new Parameters(
-                    LinkingMode.POLYGAMOUS,
+            return new EncoderParams(
                     HashingMode.ENHANCED_DOUBLE_HASHING,
                     "SHA-1",
                     "MD5",
                     true,
-                    true,
                     tokenSalting,
-                    l, k, t);
+                    l, k);
         }
     }
 
