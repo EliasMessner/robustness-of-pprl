@@ -2,6 +2,8 @@ package RLInterface;
 
 import org.apache.commons.cli.*;
 
+import java.nio.file.Paths;
+
 public class Main {
 
     static String fromFile, outFile, configFile;
@@ -13,9 +15,10 @@ public class Main {
      * -c / -config: path to config file
      */
     public static void main(String[] args) {
+        String personBloomFilterMapPath = Paths.get("storage", "pbm").toString();
         tryGetCommandLineArgumentValues(args);
         PPRLAdapter adapter = new PPRLAdapter();
-        adapter.readData(fromFile, configFile);
+        adapter.readData(fromFile, configFile, personBloomFilterMapPath);
         adapter.printLogs(true);
         adapter.getLinking(outFile);
         adapter.printLogs(true);

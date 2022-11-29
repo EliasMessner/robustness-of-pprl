@@ -7,12 +7,12 @@ import java.util.stream.Stream;
 /**
  * Class for linking data points from two sources
  */
-public class Linker {
+public class Matcher {
 
     Person[] dataSet;
     ProgressHandler progressHandler;
-    Parameters parameters;
-    Map<Person, BloomFilter> personBloomFilterMap;
+    MatcherParams parameters;
+    Map<String, BloomFilter> personBloomFilterMap;
     Map<String, Set<Person>> blockingMap;
     String sourceNameA;
     String sourceNameB;
@@ -21,17 +21,16 @@ public class Linker {
     /**
      * Constructor for Linker object that can then be used to perform various linking methods on the data.
      * @param dataSet entire dataset
-     * @param progressHandler for showing progress in terminal
      * @param parameters program parameters
      * @param personBloomFilterMap map containing person objects as keys and their BloomFilters as values. See Main.getPersonBloomFilterMap().
      * @param blockingMap map containing the blocking keys and sets of records. See Person.getBlockingMap().
      * @param sourceNameA name of source A
      * @param sourceNameB name of source B
      */
-    public Linker(Person[] dataSet, ProgressHandler progressHandler, Parameters parameters, Map<Person, BloomFilter> personBloomFilterMap,
-                  Map<String, Set<Person>> blockingMap, String sourceNameA, String sourceNameB, boolean parallel) {
+    public Matcher(Person[] dataSet, MatcherParams parameters, Map<String, BloomFilter> personBloomFilterMap,
+                   Map<String, Set<Person>> blockingMap, String sourceNameA, String sourceNameB, boolean parallel) {
         this.dataSet = dataSet;
-        this.progressHandler = progressHandler;
+        this.progressHandler = new ProgressHandler(dataSet.length, 1);
         this.parameters = parameters;
         this.personBloomFilterMap = personBloomFilterMap;
         this.sourceNameA = sourceNameA;
@@ -90,8 +89,8 @@ public class Linker {
             } else {
                 Person currentA = getPartnerOf(favoriteB, pairs);
                 assert currentA != null;
-                double currentSimilarity = personBloomFilterMap.get(favoriteB).computeJaccardSimilarity(personBloomFilterMap.get(currentA));
-                double newSimilarity = personBloomFilterMap.get(favoriteB).computeJaccardSimilarity(personBloomFilterMap.get(freeA));
+                double currentSimilarity = personBloomFilterMap.get(favoriteB.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(currentA.getAttributeValue("localID")));
+                double newSimilarity = personBloomFilterMap.get(favoriteB.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(freeA.getAttributeValue("localID")));
                 if (newSimilarity >= currentSimilarity) {
                     if (!pairs.remove(new PersonPair(currentA, favoriteB))) throw new IllegalStateException();
                     pairs.add(new PersonPair(freeA, favoriteB));
@@ -122,7 +121,7 @@ public class Linker {
         if (parallel) personStream = personStream.parallel();
         personStream.forEach(B -> {
             if (hasProposedTo.containsKey(freeA) && hasProposedTo.get(freeA).contains(B)) return;
-            double newSimilarity = personBloomFilterMap.get(freeA).computeJaccardSimilarity(personBloomFilterMap.get(B));
+            double newSimilarity = personBloomFilterMap.get(freeA.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(B.getAttributeValue("localID")));
             if (favoriteB.get() == null || newSimilarity > similarity.get()) {
                 favoriteB.set(B);
                 similarity.set(newSimilarity);
@@ -152,7 +151,7 @@ public class Linker {
         Stream<String> blockingKeysStream = blockingMap.keySet().stream();
         if (parallel) blockingKeysStream = blockingKeysStream.parallel();
         blockingKeysStream.forEach(blockingKey ->
-                oneSidedMarriageLinkingHelper(blockingMap.get(blockingKey), linkingWithSimilarities, leftIsMonogamous));
+                semiMonogamousLinkingHelper(blockingMap.get(blockingKey), linkingWithSimilarities, leftIsMonogamous));
         Set<PersonPair> linking = new HashSet<>();
         for (Person a : linkingWithSimilarities.keySet()) {
             linking.add(new PersonPair(a, linkingWithSimilarities.get(a).getPerson()));
@@ -180,16 +179,16 @@ public class Linker {
     }
 
     /**
-     * Helper method for getOneSidedMarriageLinking
+     * Helper method for getSemiMonogamousLinking
      */
-    private void oneSidedMarriageLinkingHelper(Set<Person> blockingSubSet, Map<Person, Match> linking, boolean leftIsMonogamous) {
+    private void semiMonogamousLinkingHelper(Set<Person> blockingSubSet, Map<Person, Match> linking, boolean leftIsMonogamous) {
         List<Person[]> splitData = splitDataBySource(blockingSubSet.toArray(Person[]::new));
         Person[] A = splitData.get(0);
         Person[] B = splitData.get(1);
         Stream<Person> outerStream = Arrays.stream(leftIsMonogamous ? A : B);
         if (parallel) outerStream = outerStream.parallel();
         outerStream.forEach(a -> Arrays.stream(leftIsMonogamous ? B : A).forEach(b-> {
-            double similarity = personBloomFilterMap.get(a).computeJaccardSimilarity(personBloomFilterMap.get(b));
+            double similarity = personBloomFilterMap.get(a.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(b.getAttributeValue("localID")));
             synchronized (linking) {
                 if (similarity >= parameters.t() && (!linking.containsKey(a) || similarity >= linking.get(a).getSimilarity())) {
                     linking.put(a, new Match(b, similarity));
@@ -211,7 +210,7 @@ public class Linker {
         Person[] B = splitData.get(1);
         Stream<Person> outerStream = parallel ? Arrays.stream(A) : Arrays.stream(A).parallel();
         outerStream.forEach(a -> Arrays.stream(B).forEach(b-> {
-            double similarity = personBloomFilterMap.get(a).computeJaccardSimilarity(personBloomFilterMap.get(b));
+            double similarity = personBloomFilterMap.get(a.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(b.getAttributeValue("localID")));
             if (similarity >= parameters.t()) {
                 linking.add(new PersonPair(a, b));
             }

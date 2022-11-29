@@ -11,12 +11,14 @@ import static java.util.Map.entry;
  */
 public class Launcher {
 
-    Parameters parameters;
+    Matcher matcher;
+    Encoder encoder;
+    EncoderParams encoderParams;
+    MatcherParams matcherParams;
     Person[] dataSet;
     ProgressHandler progressHandler;
     boolean blockingCheat;
     boolean parallelBlockingMapCreation, parallelLinking;
-    Map<Person, BloomFilter> personBloomFilterMap;
     Map<String, Set<Person>> blockingMap;
 
     public Launcher(boolean blockingCheat, boolean parallelBlockingMapCreation, boolean parallelLinking) {
@@ -29,24 +31,28 @@ public class Launcher {
     /**
      * Creates all Bloom filters, creates the blocking map.
      * @param dataSet the dataset used for linking
-     * @param parameters Params used for Bloom Filter creation and linking.
+     * @param encoderParams Params used for Bloom Filter creation.
+     * @param matcherParams Params used for linking.
      */
-    public void prepare(Person[] dataSet, Parameters parameters) {
+    public void prepare(Person[] dataSet, EncoderParams encoderParams, MatcherParams matcherParams, String personBloomFilterMapPath) {
         this.dataSet = dataSet;
-        this.parameters = parameters;
-        this.progressHandler = new ProgressHandler(dataSet.length, 1);
         setPersonAttributeWeights();
-        // create all the bloom filters
-        this.personBloomFilterMap = getPersonBloomFilterMap();
-        // create the blockingKeyEncoders to generate the blockingMap
-        List<BlockingKeyEncoder> blockingKeyEncoders = new ArrayList<>();
-        blockingKeyEncoders.add(person -> person.getSoundex("firstName").concat(person.getAttributeValue("yearOfBirth")));
-        blockingKeyEncoders.add(person -> person.getSoundex("lastName").concat(person.getAttributeValue("yearOfBirth")));
-        blockingKeyEncoders.add(person -> person.getSoundex("firstName").concat(person.getSoundex("lastName")));
-        // If blockingCheat turned on, use globalID as additional blocking key to avoid false negatives due to blocking
-        if (blockingCheat) blockingKeyEncoders.add(person -> person.getAttributeValue("globalID"));
-        // create blockingMap
-        this.blockingMap = getBlockingMap(blockingKeyEncoders.toArray(BlockingKeyEncoder[]::new));
+        this.progressHandler = new ProgressHandler(dataSet.length, 1);
+        prepareEncoder(dataSet, encoderParams, personBloomFilterMapPath);
+        prepareMatcher(dataSet, matcherParams);
+    }
+
+    private void prepareEncoder(Person[] dataSet, EncoderParams encoderParams, String personBloomFilterMapPath) {
+        this.encoderParams = encoderParams;
+        this.encoder = new Encoder(dataSet, encoderParams, personBloomFilterMapPath);
+        // create all the bloom filters, or load from file if they exist
+        encoder.createPbmIfNotExist();
+    }
+
+    private void prepareMatcher(Person[] dataSet, MatcherParams matcherParams) {
+        this.matcherParams = matcherParams;
+        this.blockingMap = getBlockingMap(getBlockingKeyEncoders());
+        this.matcher = new Matcher(dataSet, matcherParams, encoder.getPersonBloomFilterMap(), blockingMap, "A", "B", parallelLinking);
     }
 
     /**
@@ -54,8 +60,7 @@ public class Launcher {
      * @return a set of all matches pairs.
      */
     public Set<PersonPair> getLinking() {
-        Linker linker = new Linker(dataSet, progressHandler, parameters, personBloomFilterMap, blockingMap, "A", "B", parallelLinking);
-        return linker.getLinking();
+        return matcher.getLinking();
     }
 
     private static void setPersonAttributeWeights() {
@@ -78,22 +83,15 @@ public class Launcher {
         );
     }
 
-    /**
-     * Creates a BloomFilter for each Person object in given dataset and returns a map with Person as keys and
-     * BloomFilter as values.
-     */
-    private Map<Person, BloomFilter> getPersonBloomFilterMap() {
-        progressHandler.reset();
-        System.out.println("Creating Bloom Filters...");
-        Map<Person, BloomFilter> personBloomFilterMap = new ConcurrentHashMap<>();
-        Arrays.stream(dataSet).parallel().forEach(person -> {
-            BloomFilter bf = new BloomFilter(parameters.l(), parameters.k(), parameters.hashingMode(), parameters.tokenSalting(), parameters.h1(), parameters.h2());
-            bf.storePersonData(person, parameters.weightedAttributes());
-            personBloomFilterMap.put(person, bf);
-            progressHandler.updateProgress();
-        });
-        progressHandler.finish();
-        return personBloomFilterMap;
+    private BlockingKeyEncoder[] getBlockingKeyEncoders() {
+        // create the blockingKeyEncoders to generate the blockingMap
+        List<BlockingKeyEncoder> blockingKeyEncoders = new ArrayList<>();
+        blockingKeyEncoders.add(person -> person.getSoundex("firstName").concat(person.getAttributeValue("yearOfBirth")));
+        blockingKeyEncoders.add(person -> person.getSoundex("lastName").concat(person.getAttributeValue("yearOfBirth")));
+        blockingKeyEncoders.add(person -> person.getSoundex("firstName").concat(person.getSoundex("lastName")));
+        // If blockingCheat turned on, use globalID as additional blocking key to avoid false negatives due to blocking
+        if (blockingCheat) blockingKeyEncoders.add(person -> person.getAttributeValue("globalID"));
+        return blockingKeyEncoders.toArray(BlockingKeyEncoder[]::new);
     }
 
     /**
@@ -104,7 +102,7 @@ public class Launcher {
      */
     private Map<String, Set<Person>> getBlockingMap(BlockingKeyEncoder... blockingKeyEncoders) {
         Map<String, Set<Person>> blockingMap;
-        if (!parameters.blocking()) {
+        if (!matcherParams.blocking()) {
             return Map.ofEntries(entry("DUMMY_VALUE", new HashSet<>(Arrays.asList(dataSet))));
         }
         System.out.println("Creating Blocking Keys...");

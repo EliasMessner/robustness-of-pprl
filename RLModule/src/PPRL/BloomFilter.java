@@ -1,5 +1,6 @@
 package PPRL;
 
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -11,7 +12,7 @@ import java.util.*;
  * Uses double hashing, enhanced double hashing, triple hashing or random hashing, depending on hashingMode.
  * Uses bigrams.
  */
-public class BloomFilter {
+public class BloomFilter implements Serializable {
 
     boolean[] hashArea;
     int k; // # of hash functions to be simulated
