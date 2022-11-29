@@ -89,8 +89,8 @@ public class Matcher {
             } else {
                 Person currentA = getPartnerOf(favoriteB, pairs);
                 assert currentA != null;
-                double currentSimilarity = personBloomFilterMap.get(favoriteB.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(currentA.getAttributeValue("globalID")));
-                double newSimilarity = personBloomFilterMap.get(favoriteB.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(freeA.getAttributeValue("globalID")));
+                double currentSimilarity = personBloomFilterMap.get(favoriteB.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(currentA.getAttributeValue("localID")));
+                double newSimilarity = personBloomFilterMap.get(favoriteB.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(freeA.getAttributeValue("localID")));
                 if (newSimilarity >= currentSimilarity) {
                     if (!pairs.remove(new PersonPair(currentA, favoriteB))) throw new IllegalStateException();
                     pairs.add(new PersonPair(freeA, favoriteB));
@@ -121,7 +121,7 @@ public class Matcher {
         if (parallel) personStream = personStream.parallel();
         personStream.forEach(B -> {
             if (hasProposedTo.containsKey(freeA) && hasProposedTo.get(freeA).contains(B)) return;
-            double newSimilarity = personBloomFilterMap.get(freeA.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(B.getAttributeValue("globalID")));
+            double newSimilarity = personBloomFilterMap.get(freeA.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(B.getAttributeValue("localID")));
             if (favoriteB.get() == null || newSimilarity > similarity.get()) {
                 favoriteB.set(B);
                 similarity.set(newSimilarity);
@@ -188,7 +188,7 @@ public class Matcher {
         Stream<Person> outerStream = Arrays.stream(leftIsMonogamous ? A : B);
         if (parallel) outerStream = outerStream.parallel();
         outerStream.forEach(a -> Arrays.stream(leftIsMonogamous ? B : A).forEach(b-> {
-            double similarity = personBloomFilterMap.get(a.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(b.getAttributeValue("globalID")));
+            double similarity = personBloomFilterMap.get(a.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(b.getAttributeValue("localID")));
             synchronized (linking) {
                 if (similarity >= parameters.t() && (!linking.containsKey(a) || similarity >= linking.get(a).getSimilarity())) {
                     linking.put(a, new Match(b, similarity));
@@ -210,7 +210,7 @@ public class Matcher {
         Person[] B = splitData.get(1);
         Stream<Person> outerStream = parallel ? Arrays.stream(A) : Arrays.stream(A).parallel();
         outerStream.forEach(a -> Arrays.stream(B).forEach(b-> {
-            double similarity = personBloomFilterMap.get(a.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(b.getAttributeValue("globalID")));
+            double similarity = personBloomFilterMap.get(a.getAttributeValue("localID")).computeJaccardSimilarity(personBloomFilterMap.get(b.getAttributeValue("localID")));
             if (similarity >= parameters.t()) {
                 linking.add(new PersonPair(a, b));
             }

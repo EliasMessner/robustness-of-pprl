@@ -53,10 +53,6 @@ public class Person implements Serializable {
         throw new IllegalArgumentException("No such attribute '" + key + "'");
     }
 
-    public boolean equalGlobalID(Person other) {
-        return this.attributeValues[1].equals(other.attributeValues[1]);
-    }
-
     public String getSoundex(String attributeName) {
         Soundex soundex = new Soundex();
         return soundex.soundex(this.getAttributeValue(attributeName));

@@ -53,7 +53,7 @@ public class Encoder {
         Arrays.stream(dataSet).parallel().forEach(person -> {
             BloomFilter bf = new BloomFilter(parameters.l(), parameters.k(), parameters.hashingMode(), parameters.tokenSalting(), parameters.h1(), parameters.h2());
             bf.storePersonData(person, parameters.weightedAttributes());
-            personBloomFilterMap.put(person.getAttributeValue("globalID"), bf);
+            personBloomFilterMap.put(person.getAttributeValue("localID"), bf);
             progressHandler.updateProgress();
         });
         progressHandler.finish();
