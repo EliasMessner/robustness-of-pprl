@@ -11,7 +11,7 @@ public class Encoder {
     Person[] dataSet;
     EncoderParams parameters;
     ProgressHandler progressHandler;
-    Map<Person, BloomFilter> personBloomFilterMap;
+    Map<String, BloomFilter> personBloomFilterMap;
 
     public Encoder(Person[] dataSet, EncoderParams parameters, String personBloomFilterMapPath) {
         this.pbmPath = personBloomFilterMapPath;
@@ -20,7 +20,7 @@ public class Encoder {
         this.progressHandler = new ProgressHandler(dataSet.length, 1);
     }
 
-    public Map<Person, BloomFilter> getPersonBloomFilterMap() {
+    public Map<String, BloomFilter> getPersonBloomFilterMap() {
         return personBloomFilterMap;
     }
 
@@ -46,14 +46,14 @@ public class Encoder {
      * Creates a BloomFilter for each Person object in given dataset and returns a map with Person as keys and
      * BloomFilter as values.
      */
-    private Map<Person, BloomFilter> createPersonBloomFilterMap() {
+    private Map<String, BloomFilter> createPersonBloomFilterMap() {
         progressHandler.reset();
         System.out.println("Creating Bloom Filters...");
-        Map<Person, BloomFilter> personBloomFilterMap = new ConcurrentHashMap<>();
+        Map<String, BloomFilter> personBloomFilterMap = new ConcurrentHashMap<>();
         Arrays.stream(dataSet).parallel().forEach(person -> {
             BloomFilter bf = new BloomFilter(parameters.l(), parameters.k(), parameters.hashingMode(), parameters.tokenSalting(), parameters.h1(), parameters.h2());
             bf.storePersonData(person, parameters.weightedAttributes());
-            personBloomFilterMap.put(person, bf);
+            personBloomFilterMap.put(person.getAttributeValue("globalID"), bf);
             progressHandler.updateProgress();
         });
         progressHandler.finish();
@@ -65,7 +65,7 @@ public class Encoder {
         try (RandomAccessFile raf = new RandomAccessFile(file, "r");
              FileInputStream fis = new FileInputStream(raf.getFD());
              ObjectInputStream ois = new ObjectInputStream(fis)) {
-            this.personBloomFilterMap = (ConcurrentHashMap<Person, BloomFilter>) ois.readObject();
+            this.personBloomFilterMap = (ConcurrentHashMap<String, BloomFilter>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

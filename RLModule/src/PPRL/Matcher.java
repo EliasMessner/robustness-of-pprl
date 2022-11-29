@@ -12,7 +12,7 @@ public class Matcher {
     Person[] dataSet;
     ProgressHandler progressHandler;
     MatcherParams parameters;
-    Map<Person, BloomFilter> personBloomFilterMap;
+    Map<String, BloomFilter> personBloomFilterMap;
     Map<String, Set<Person>> blockingMap;
     String sourceNameA;
     String sourceNameB;
@@ -27,7 +27,7 @@ public class Matcher {
      * @param sourceNameA name of source A
      * @param sourceNameB name of source B
      */
-    public Matcher(Person[] dataSet, MatcherParams parameters, Map<Person, BloomFilter> personBloomFilterMap,
+    public Matcher(Person[] dataSet, MatcherParams parameters, Map<String, BloomFilter> personBloomFilterMap,
                    Map<String, Set<Person>> blockingMap, String sourceNameA, String sourceNameB, boolean parallel) {
         this.dataSet = dataSet;
         this.progressHandler = new ProgressHandler(dataSet.length, 1);
@@ -89,8 +89,8 @@ public class Matcher {
             } else {
                 Person currentA = getPartnerOf(favoriteB, pairs);
                 assert currentA != null;
-                double currentSimilarity = personBloomFilterMap.get(favoriteB).computeJaccardSimilarity(personBloomFilterMap.get(currentA));
-                double newSimilarity = personBloomFilterMap.get(favoriteB).computeJaccardSimilarity(personBloomFilterMap.get(freeA));
+                double currentSimilarity = personBloomFilterMap.get(favoriteB.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(currentA.getAttributeValue("globalID")));
+                double newSimilarity = personBloomFilterMap.get(favoriteB.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(freeA.getAttributeValue("globalID")));
                 if (newSimilarity >= currentSimilarity) {
                     if (!pairs.remove(new PersonPair(currentA, favoriteB))) throw new IllegalStateException();
                     pairs.add(new PersonPair(freeA, favoriteB));
@@ -121,7 +121,7 @@ public class Matcher {
         if (parallel) personStream = personStream.parallel();
         personStream.forEach(B -> {
             if (hasProposedTo.containsKey(freeA) && hasProposedTo.get(freeA).contains(B)) return;
-            double newSimilarity = personBloomFilterMap.get(freeA).computeJaccardSimilarity(personBloomFilterMap.get(B));
+            double newSimilarity = personBloomFilterMap.get(freeA.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(B.getAttributeValue("globalID")));
             if (favoriteB.get() == null || newSimilarity > similarity.get()) {
                 favoriteB.set(B);
                 similarity.set(newSimilarity);
@@ -188,7 +188,7 @@ public class Matcher {
         Stream<Person> outerStream = Arrays.stream(leftIsMonogamous ? A : B);
         if (parallel) outerStream = outerStream.parallel();
         outerStream.forEach(a -> Arrays.stream(leftIsMonogamous ? B : A).forEach(b-> {
-            double similarity = personBloomFilterMap.get(a).computeJaccardSimilarity(personBloomFilterMap.get(b));
+            double similarity = personBloomFilterMap.get(a.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(b.getAttributeValue("globalID")));
             synchronized (linking) {
                 if (similarity >= parameters.t() && (!linking.containsKey(a) || similarity >= linking.get(a).getSimilarity())) {
                     linking.put(a, new Match(b, similarity));
@@ -210,7 +210,7 @@ public class Matcher {
         Person[] B = splitData.get(1);
         Stream<Person> outerStream = parallel ? Arrays.stream(A) : Arrays.stream(A).parallel();
         outerStream.forEach(a -> Arrays.stream(B).forEach(b-> {
-            double similarity = personBloomFilterMap.get(a).computeJaccardSimilarity(personBloomFilterMap.get(b));
+            double similarity = personBloomFilterMap.get(a.getAttributeValue("globalID")).computeJaccardSimilarity(personBloomFilterMap.get(b.getAttributeValue("globalID")));
             if (similarity >= parameters.t()) {
                 linking.add(new PersonPair(a, b));
             }
