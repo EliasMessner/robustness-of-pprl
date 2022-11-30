@@ -27,9 +27,15 @@ public class Encoder {
     /**
      * Check if personBloomFilterMap is stored in the specified filepath. If yes, load it,
      * otherwise, create a new one and write it.
+     * If alwaysRecreate is set to true, this method will not check if a storage file exists but always create a new
+     * personBloomFilterMap.
      * After calling this method the field personBloomFilterMap will be set.
      */
-    public void createPbmIfNotExist() {
+    public void createPbmIfNotExist(boolean alwaysRecreate) {
+        if (alwaysRecreate) {
+            this.personBloomFilterMap = createPersonBloomFilterMap();
+            return;
+        }
         if (!pbmExists()) {
             this.personBloomFilterMap = createPersonBloomFilterMap();
             System.out.println("Saving Bloom Filters...");

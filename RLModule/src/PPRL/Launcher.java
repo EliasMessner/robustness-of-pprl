@@ -17,14 +17,14 @@ public class Launcher {
     MatcherParams matcherParams;
     Person[] dataSet;
     ProgressHandler progressHandler;
-    boolean blockingCheat;
-    boolean parallelBlockingMapCreation, parallelLinking;
+    boolean blockingCheat, parallelBlockingMapCreation, parallelLinking, alwaysRecreateBloomFilters;
     Map<String, Set<Person>> blockingMap;
 
-    public Launcher(boolean blockingCheat, boolean parallelBlockingMapCreation, boolean parallelLinking) {
+    public Launcher(boolean blockingCheat, boolean parallelBlockingMapCreation, boolean parallelLinking, boolean alwaysRecreateBloomFilters) {
         this.blockingCheat = blockingCheat;
         this.parallelBlockingMapCreation = parallelBlockingMapCreation;
         this.parallelLinking = parallelLinking;
+        this.alwaysRecreateBloomFilters = alwaysRecreateBloomFilters;
         setPersonAttributeWeights();
     }
 
@@ -46,7 +46,7 @@ public class Launcher {
         this.encoderParams = encoderParams;
         this.encoder = new Encoder(dataSet, encoderParams, personBloomFilterMapPath);
         // create all the bloom filters, or load from file if they exist
-        encoder.createPbmIfNotExist();
+        encoder.createPbmIfNotExist(true);
     }
 
     private void prepareMatcher(Person[] dataSet, MatcherParams matcherParams) {

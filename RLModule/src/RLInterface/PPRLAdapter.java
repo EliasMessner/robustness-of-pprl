@@ -24,12 +24,12 @@ public class PPRLAdapter implements RecordLinkageI {
         boolean blockingCheat = true;
         boolean parallelBlockingMapCreation = false;
         boolean parallelLinking = false;
-        this.launcher = new Launcher(blockingCheat, parallelBlockingMapCreation, parallelLinking);
+        this.launcher = new Launcher(blockingCheat, parallelBlockingMapCreation, parallelLinking, true);
         this.logs = new StringBuilder();
     }
 
-    public PPRLAdapter(boolean blockingCheat, boolean parallelBlockingMapCreation, boolean parallelLinking) {
-        this.launcher = new Launcher(blockingCheat, parallelBlockingMapCreation, parallelLinking);
+    public PPRLAdapter(boolean blockingCheat, boolean parallelBlockingMapCreation, boolean parallelLinking, boolean alwaysRecreateBloomFilters) {
+        this.launcher = new Launcher(blockingCheat, parallelBlockingMapCreation, parallelLinking, alwaysRecreateBloomFilters);
     }
 
     /**
