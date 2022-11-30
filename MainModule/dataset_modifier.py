@@ -16,7 +16,7 @@ def main():
     # create dataset variations
     dm = DatasetModifier()
     dm.load_dataset_by_config_file(_dm_config_path)
-    shutil.rmtree(dataset_variants_dir)  # delete existing dataset variants
+    shutil.rmtree(dataset_variants_dir, ignore_errors=True)  # delete existing dataset variants
     dm.create_variants_by_config_file(_dm_config_path, dataset_variants_dir)
 
 

@@ -1,5 +1,6 @@
 import logging
 import os.path
+import shutil
 import subprocess
 from pathlib import Path
 from datetime import datetime as dt
@@ -17,28 +18,14 @@ def main():
     prepare_logger()
     # create outfile for matching result if not exists
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
+    shutil.rmtree(matchings_dir, ignore_errors=True)  # delete existing matching
     _exp_config_path = get_config_path_from_argv(default=exp_config_path)
     # get configs for all experiments
     experiments = read_json(_exp_config_path)["experiments"]
-    experiments = resolve_seed_lists(experiments)
     # for each experiment, there is a dict of parameters for the RLModule
     tracker = Tracker()
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
         conduct_experiment(exp_params, tracker)
-
-
-def resolve_seed_lists(experiments):
-    new_experiments = []
-    for exp_params in experiments:
-        if isinstance(exp_params["seed"], list):
-            for i, seed in enumerate(exp_params["seed"]):
-                new_exp_params = exp_params.copy()
-                new_exp_params["seed"] = seed
-                new_exp_params["exp_no"] = f"{exp_params['exp_no']}_{i}"
-                new_experiments.append(new_exp_params)
-        else:
-            new_experiments.append(exp_params)
-    return new_experiments
 
 
 def prepare_logger():
@@ -56,29 +43,50 @@ def conduct_experiment(exp_params, tracker):
     exp_no = exp_params.pop("exp_no")
     # create folder for this experiment's matching results
     exp_out_folder = os.path.join(matchings_dir, f"exp_{exp_no}")
-    Path(exp_out_folder).mkdir(exist_ok=True)
-    variants = os.listdir(dataset_variants_dir)  # one run per dataset variant
-    for variant_folder_name in tqdm(variants, desc="Runs", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
-        data_path = os.path.join(dataset_variants_dir, variant_folder_name, "records.csv")
-        run_out_folder = os.path.join(exp_out_folder, variant_folder_name)
-        outfile_path = os.path.join(run_out_folder, "matching.csv")
-        # create matcher_config.json in the folder for this run
-        matcher_config_abs_path = create_matcher_config(exp_params, run_out_folder)
-        conduct_run(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path,
-                    tracker)
+    Path(exp_out_folder).mkdir(exist_ok=True, parents=True)
+    matcher_configs = get_matcher_configs(exp_params)
+    for matcher_config in matcher_configs:
+        variants = os.listdir(dataset_variants_dir)  # one run per dataset variant
+        for variant_folder_name in tqdm(variants, desc="Runs", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
+            conduct_run(exp_out_folder, matcher_config, tracker, variant_folder_name)
 
 
-def create_matcher_config(exp_params: dict, run_out_folder: str) -> str:
+def conduct_run(exp_out_folder, matcher_config, tracker, variant_folder_name):
+    data_path = os.path.join(dataset_variants_dir, variant_folder_name, "records.csv")
+    run_out_folder = os.path.join(exp_out_folder, variant_folder_name)
+    outfile_path = os.path.join(run_out_folder, "matching.csv")
+    # create matcher_config.json in the folder for this run
+    matcher_config_abs_path = write_matcher_config(matcher_config, run_out_folder)
+    call_rl_module(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path,
+                   tracker)
+
+
+def get_matcher_configs(exp_params):
+    """
+    In case there is a list of seeds (=token-salting affixes) given, make one matcher config for each value in the list.
+    """
+    matcher_configs = []
+    if isinstance(exp_params["seed"], list):
+        for seed in exp_params["seed"]:
+            new_matcher_config = exp_params.copy()
+            new_matcher_config["seed"] = seed
+            matcher_configs.append(new_matcher_config)
+    else:
+        matcher_configs.append(exp_params)
+    return matcher_configs
+
+
+def write_matcher_config(matcher_config: dict, run_out_folder: str) -> str:
     """
     create config for matcher for this run and return its absolute path
     """
     Path(run_out_folder).mkdir(exist_ok=True)
     matcher_config_path = os.path.join(run_out_folder, "config.json")
-    write_json(exp_params, matcher_config_path)
+    write_json(matcher_config, matcher_config_path)
     return os.path.abspath(matcher_config_path)
 
 
-def conduct_run(data_path, outfile_path, config_path, tracker: Tracker):
+def call_rl_module(data_path, outfile_path, config_path, tracker: Tracker):
     """
     Call RLModule with given parameters.
     Evaluate and track run.
