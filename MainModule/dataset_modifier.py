@@ -128,7 +128,8 @@ class DatasetModifier:
         self.true_matches1, self.true_matches2 = self._get_true_matches()
         self._calculate_base_overlap()
 
-    def create_variants_by_config_file(self, config_path, outfile_directory, omit_if_too_small=True, min_size_per_source=10):
+    def create_variants_by_config_file(self, config_path, outfile_directory, omit_if_too_small=True,
+                                       min_size_per_source=10):
         """
         Read dataset modifier config file, create dataset variations as described in the file, write them all to
         out_location folder. Each variant goes in a sub folder containing its parameters in params.json and its records
@@ -160,8 +161,12 @@ class DatasetModifier:
         """
         self.read_csv_config_dict(config)  # read the dataset
         variants = []
-        for params in tqdm(get_param_variations(config), desc="Creating Variants", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
-            variants.append((params, self.get_variant(params)))
+        for params in tqdm(get_param_variations(config), desc="Creating Variants",
+                           bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+            variant = self.get_variant(params)
+            if variant is None:
+                continue
+            variants.append((params, variant))
         return variants
 
     def _check_if_variant_should_be_omitted(self, min_size_per_source, omit_if_too_small, variant):
@@ -177,7 +182,7 @@ class DatasetModifier:
             return True
         return False
 
-    def get_variant(self, params) -> pd.DataFrame:
+    def get_variant(self, params) -> pd.DataFrame | None:
         if params["subset_selection"] == "RANDOM":
             return self.random_sample(params)
         if params["subset_selection"] == "ATTRIBUTE_VALUE":
@@ -187,9 +192,9 @@ class DatasetModifier:
         if params["subset_selection"] == "AGE":
             return self.age_subset(params)
 
-    def random_sample(self, params) -> pd.DataFrame:
+    def random_sample(self, params) -> pd.DataFrame | None:
         """
-        Draw random sample from base dataset.
+        Draw random sample from base dataset. Returns None if the desired overlap cannot be drawn.
         :param params: dict containing the keys described below.
         size (int): number of records to draw all together (from each source, size/2 records will be drawn). Therefore,
                     size must be divisible by 2
@@ -203,7 +208,8 @@ class DatasetModifier:
             return self._random_sample(total_sample_size=params["size"], seed=params["seed"],
                                        overlap=params.get("overlap", None))
         except ValueError as e:
-            raise ValueError(f"{e}\nParameters causing ValueError: {params}")
+            return None
+            # raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
     def _random_sample(self, total_sample_size: int, seed: int, overlap: float = None) -> pd.DataFrame:
         if not (total_sample_size % 2 == 0):
