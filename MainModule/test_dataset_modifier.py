@@ -34,8 +34,8 @@ class TestDatasetModifier(TestCase):
         observed_overlap = 2 * intersec.shape[0] / sample.shape[0]
         self.assertEqual(expected_overlap, observed_overlap)
 
-        # sample of size 387 with original overlap
-        sample = self.sg.random_sample({"size": 387, "seed": 1})
+        # sample of size 2*387 with original overlap
+        sample = self.sg.random_sample({"size": 2*387, "seed": 1})
         sample_a = sample[sample[self.sg.source_id_col_name].isin(
             self.sg.df1[self.sg.source_id_col_name])]  # records in sample from source A
         sample_b = sample[sample[self.sg.source_id_col_name].isin(
@@ -46,9 +46,9 @@ class TestDatasetModifier(TestCase):
         observed_size = intersec.shape[0]
         self.assertEqual(expected_size, observed_size)
 
-        # sample size 445 with overlap = 0.35
+        # sample size 2*445 with overlap = 0.35
         expected_overlap = 0.35
-        sample = self.sg.random_sample({"size": 445, "seed": 1, "overlap": expected_overlap})
+        sample = self.sg.random_sample({"size": 2*445, "seed": 1, "overlap": expected_overlap})
         sample_a = sample[sample[self.sg.source_id_col_name].isin(
             self.sg.df1[self.sg.source_id_col_name])]  # records in sample from source A
         sample_b = sample[sample[self.sg.source_id_col_name].isin(
@@ -59,19 +59,19 @@ class TestDatasetModifier(TestCase):
         observed_size = intersec.shape[0]
         self.assertEqual(expected_size, observed_size)
 
-        # sample size 100k with overlap = 0.35
+        # sample size 200k with overlap = 0.35
         # must raise value error because original overlap is only 0.2 and dataset size is 200k
         expected_overlap = 0.35
-        self.assertRaises(ValueError, self.sg.random_sample, {"size": 100000, "seed": 1, "overlap": expected_overlap})
+        self.assertRaises(ValueError, self.sg.random_sample, {"size": 200000, "seed": 1, "overlap": expected_overlap})
 
-        # sample size 150k with overlap = 0.1
+        # sample size 300k with overlap = 0.1
         # must raise value error because only 100k values are in each source
         expected_overlap = 0.1
-        self.assertRaises(ValueError, self.sg.random_sample, {"size": 150000, "seed": 1, "overlap": expected_overlap})
+        self.assertRaises(ValueError, self.sg.random_sample, {"size": 300000, "seed": 1, "overlap": expected_overlap})
 
     def test_plz_subset(self):
-        subset0 = self.sg.plz_subset({"digits": 1, "equal": 0})
-        subset2 = self.sg.plz_subset({"digits": 1, "equal": 2})
+        subset0 = self.sg.plz_subset({"digits": 1, "equals": 0})
+        subset2 = self.sg.plz_subset({"digits": 1, "equals": 2})
         self.assertTrue(subset0["PLZ"].map(lambda plz: int(plz[:1]) == 0).all())
         self.assertTrue(subset2["PLZ"].map(lambda plz: int(plz[:1]) == 2).all())
 
@@ -161,10 +161,10 @@ class TestDatasetModifier(TestCase):
         ]
         self.assertCountEqual(variations, expectation)
 
-    def test_get_subset_by_parameter_match(self):
-        all_genders = self.sg.get_subset_by_parameter_match("GENDER", ["M", "F", "U"])
+    def test_attribute_value_subset(self):
+        all_genders = self.sg.attribute_value_subset(params={"column": "GENDER", "is_in": ["M", "F", "U"]})
         pd.testing.assert_frame_equal(all_genders, self.sg.df, check_like=True)
-        f = self.sg.get_subset_by_parameter_match("GENDER", ["F"])
+        f = self.sg.attribute_value_subset(params={"column": "GENDER", "equals": "F"})
         self.assertTrue(f.eq("F").all(axis=0)["GENDER"])
 
 

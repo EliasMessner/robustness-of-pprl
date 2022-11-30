@@ -178,8 +178,8 @@ class DatasetModifier:
     def get_variant(self, params) -> pd.DataFrame:
         if params["subset_selection"] == "RANDOM":
             return self.random_sample(params)
-        if params["subset_selection"] == "GENDER":
-            return self.df[self.df["GENDER"].map(lambda g: g in params["allowed"])]
+        if params["subset_selection"] == "ATTRIBUTE_VALUE":
+            return self.attribute_value_subset(params)
         if params["subset_selection"] == "PLZ":
             return self.plz_subset(params)
         if params["subset_selection"] == "AGE":
@@ -233,9 +233,20 @@ class DatasetModifier:
         # concatenate all
         return pd.concat([a_matches, a_non_matches, b_matches, b_non_matches])
 
+    def attribute_value_subset(self, params: dict) -> pd.DataFrame:
+        assert len({"range", "equals", "is_in"} & params.keys()) == 1  # exactly one of these keys must be present
+        if "equals" in params:
+            return self.df[self.df[params["column"]] == params["equals"]]
+        if "is_in" in params:
+            return self.df[self.df[params["column"]].map(lambda value: value in params["is_in"])]
+        if "range" in params:
+            min_v = params["range"][0]
+            max_v = params["range"][1]
+            return self.df[self.df[params["column"]].map(lambda value: min_v <= value <= max_v)]
+
     def plz_subset(self, params) -> pd.DataFrame:
         n = params["digits"]  # first n digits
-        value = params["equal"]  # must be equal to value
+        value = params["equals"]  # must be equal to value
         return self.df[self.df["PLZ"].map(lambda plz: plz.isdigit() and int(plz[0:n]) == value)]
 
     def age_subset(self, params) -> pd.DataFrame:
@@ -243,23 +254,6 @@ class DatasetModifier:
         min_age = params["range"][0]
         max_age = params["range"][1]
         return self.df[self.df["YEAROFBIRTH"].map(lambda yob: min_age <= (this_year - yob) <= max_age)]
-
-    def get_subsets_by_param_group_by(self, param, mapping_to_group_by: callable = (lambda x: x)) -> dict:
-        """
-        Return the subsets that result from grouping by param or mapping applied on param
-        """
-        values_to_group_by = self.df[param].map(mapping_to_group_by)
-        groups = self.df.groupby(values_to_group_by)
-        return {key: groups.get_group(key) for key in set(groups.keys)}
-
-    def get_subset_by_parameter_match(self, param: str, values: list[str], complement=False, match_case=True):
-        if match_case:
-            condition = self.df[param].isin(values)
-        else:
-            condition = self.df[param].str.lower().isin([v.lower() for v in values])
-        if complement:
-            condition = ~condition
-        return self.df[condition]
 
     def _get_true_matches(self) -> (pd.DataFrame, pd.DataFrame):
         """
