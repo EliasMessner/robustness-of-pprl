@@ -47,7 +47,7 @@ def conduct_experiment(exp_params, tracker):
     Path(exp_out_folder).mkdir(exist_ok=True, parents=True)
     matcher_configs = get_matcher_configs(exp_params)
     variants = os.listdir(dataset_variants_dir)  # one run per matcher_config per dataset_variant
-    for matcher_config, variant_folder_name in tqdm(itertools.product(matcher_configs, variants),
+    for matcher_config, variant_folder_name in tqdm(list(itertools.product(matcher_configs, variants)),
                                                     desc="Variants", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
                                                     leave=False):
         conduct_run(exp_out_folder, matcher_config, tracker, variant_folder_name)
