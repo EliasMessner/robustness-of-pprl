@@ -29,7 +29,7 @@ class TestDatasetModifier(TestCase):
         sample_b = sample[sample[self.sg.source_id_col_name].isin(
             self.sg.df2[self.sg.source_id_col_name])]  # records in sample from source B
         # check that the overlap is correct
-        expected_overlap = self.sg._base_overlap
+        expected_overlap = self.sg.base_overlap
         intersec = pd.merge(sample_a, sample_b, how="inner", on=self.sg.global_id_col_name)
         observed_overlap = 2 * intersec.shape[0] / sample.shape[0]
         self.assertEqual(expected_overlap, observed_overlap)

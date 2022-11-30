@@ -86,7 +86,7 @@ class DatasetModifier:
         self.global_id_col_name = None
         self.true_matches1 = None
         self.true_matches2 = None
-        self._base_overlap = None
+        self.base_overlap = None
 
     def load_dataset_by_config_file(self, config_path: str):
         """
@@ -124,7 +124,7 @@ class DatasetModifier:
         self.global_id_col_name = global_id_col_name
         self.source_id_col_name = source_id_col_name
         self.true_matches1, self.true_matches2 = self._get_true_matches()
-        self._base_overlap = self._get_base_overlap()
+        self._calculate_base_overlap()
 
     def create_variants_by_config_file(self, config_path, outfile_directory, omit_if_too_small=True, min_size_per_source=10):
         """
@@ -198,26 +198,28 @@ class DatasetModifier:
         :return: random sample drawn from base dataframe
         """
         try:
-            return self._random_sample(total_size=params["size"], seed=params["seed"],
+            return self._random_sample(total_sample_size=params["size"], seed=params["seed"],
                                        overlap=params.get("overlap", None))
         except ValueError as e:
             raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
-    def _random_sample(self, total_size: int, seed: int, overlap: float = None) -> pd.DataFrame:
-        if not (total_size % 2 == 0):
+    def _random_sample(self, total_sample_size: int, seed: int, overlap: float = None) -> pd.DataFrame:
+        if not (total_sample_size % 2 == 0):
             raise ValueError(f"total_size must be divisible by 2. Each source in the random sample will have half the "
                              f"size of total_size")
-        size = int(total_size / 2)
+        size = int(total_sample_size / 2)
         if not (0 <= size <= self.df1.shape[0]):
             raise ValueError(
                 f"Size must be between 0 and size of one of the two source data sets (={self.df1.shape[0]}). Got "
                 f"{size} instead.")
         rel_sample_size = size / self.df.shape[0]
-        max_overlap = min(1.0, self._base_overlap / rel_sample_size)
+        max_overlap = min(1.0, self.base_overlap / rel_sample_size)
+        non_matches_count = self.df.shape[0] - self.base_overlap * self.df1.shape[0]  # e.g. 200k - 0.2 * 100k = 180k
+        min_overlap = max(0, 1 - non_matches_count / total_sample_size)
         if overlap is None:
-            overlap = self._base_overlap
-        if not (0 <= overlap <= max_overlap or overlap is None):
-            raise ValueError(f"Overlap must be between 0 and {max_overlap}. Got {overlap} instead.")
+            overlap = self.base_overlap
+        if not (min_overlap <= overlap <= max_overlap or overlap is None):
+            raise ValueError(f"Overlap must be between {min_overlap} and {max_overlap}. Got {overlap} instead.")
         # draw size*overlap from true matches of source A
         a_matches = self.true_matches1.sample(round(size * overlap), random_state=seed)
         # draw size*(1-overlap) from non-matches of source A
@@ -270,7 +272,7 @@ class DatasetModifier:
         true_matches_2 = self.df2[self.df2[self.global_id_col_name].isin(self.df1[self.global_id_col_name])]
         return true_matches_1, true_matches_2
 
-    def _get_base_overlap(self):
+    def _calculate_base_overlap(self):
         """
         Returns overlap in base dataset. Overlap is calculated wrt. size of one source,
         which means that if there are two datasets A and B with each 100 records,
@@ -279,7 +281,7 @@ class DatasetModifier:
         :rtype: float
         """
         intersect = pd.merge(self.df1, self.df2, how="inner", on=[self.global_id_col_name])
-        return 2 * intersect.shape[0] / self.df.shape[0]
+        self.base_overlap = 2 * intersect.shape[0] / self.df.shape[0]
 
 
 if __name__ == "__main__":
