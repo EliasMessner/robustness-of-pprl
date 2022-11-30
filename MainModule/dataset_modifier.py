@@ -182,7 +182,7 @@ class DatasetModifier:
             return True
         return False
 
-    def get_variant(self, params) -> pd.DataFrame | None:
+    def get_variant(self, params) -> pd.DataFrame:
         if params["subset_selection"] == "RANDOM":
             return self.random_sample(params)
         if params["subset_selection"] == "ATTRIBUTE_VALUE":
@@ -192,7 +192,7 @@ class DatasetModifier:
         if params["subset_selection"] == "AGE":
             return self.age_subset(params)
 
-    def random_sample(self, params) -> pd.DataFrame | None:
+    def random_sample(self, params) -> pd.DataFrame:
         """
         Draw random sample from base dataset. Returns None if the desired overlap cannot be drawn.
         :param params: dict containing the keys described below.
@@ -207,7 +207,7 @@ class DatasetModifier:
         try:
             return self._random_sample(total_sample_size=params["size"], seed=params["seed"],
                                        overlap=params.get("overlap", None))
-        except ValueError as e:
+        except ValueError:
             return None
             # raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
