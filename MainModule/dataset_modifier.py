@@ -1,4 +1,5 @@
 import os.path
+import shutil
 from pathlib import Path
 
 import pandas as pd
@@ -15,6 +16,7 @@ def main():
     # create dataset variations
     dm = DatasetModifier()
     dm.load_dataset_by_config_file(_dm_config_path)
+    shutil.rmtree(dataset_variants_dir)  # delete existing dataset variants
     dm.create_variants_by_config_file(_dm_config_path, dataset_variants_dir)
 
 
