@@ -10,7 +10,7 @@ class Tracker:
     def start_exp(self, exp_params):
         exp_no = exp_params["exp_no"]
         if exp_params.get("id", None) is None:
-            exp_id = mlflow.create_experiment(name=f"{exp_no}_{self.timestamp}")
+            exp_id = mlflow.create_experiment(name=f"{exp_no}_{self.timestamp}", tags=exp_params)
             self.current_exp = mlflow.get_experiment(exp_id)
         else:
             # TODO check if such an experiment exists in backend store
