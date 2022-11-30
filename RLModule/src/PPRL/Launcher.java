@@ -46,7 +46,7 @@ public class Launcher {
         this.encoderParams = encoderParams;
         this.encoder = new Encoder(dataSet, encoderParams, personBloomFilterMapPath);
         // create all the bloom filters, or load from file if they exist
-        encoder.createPbmIfNotExist(true);
+        encoder.createPbmIfNotExist(false);
     }
 
     private void prepareMatcher(Person[] dataSet, MatcherParams matcherParams) {
