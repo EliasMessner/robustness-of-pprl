@@ -1,3 +1,4 @@
+import logging
 import os.path
 import subprocess
 from pathlib import Path
@@ -6,13 +7,14 @@ from datetime import datetime as dt
 import mlflow
 from tqdm import tqdm
 
-from tracker import Tracker
 from constants import *
 from eval_adapter import EvalAdapter
+from tracker import Tracker
 from util import read_json, write_json, get_config_path_from_argv
 
 
 def main():
+    prepare_logger()
     # create outfile for matching result if not exists
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     _exp_config_path = get_config_path_from_argv(default=exp_config_path)
@@ -22,6 +24,16 @@ def main():
     tracker = Tracker()
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
         conduct_experiment(exp_params, tracker)
+
+
+def prepare_logger():
+    Path(logs_dir).mkdir(parents=True, exist_ok=True)
+    timestamp = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
+    logging.basicConfig(filename=os.path.join(logs_dir, f"{timestamp}.txt"),
+                        filemode='a',
+                        format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                        datefmt='%H:%M:%S',
+                        level=logging.INFO)
 
 
 def conduct_experiment(exp_params, tracker):
@@ -60,12 +72,15 @@ def conduct_run(data_path, outfile_path, config_path, tracker: Tracker):
         cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
                "-d", data_path,
                "-o", outfile_path,
-               "-c", config_path]
+               "-c", config_path,
+               "-s", pprl_storage_file_location]
         try:
-            subprocess.check_output(cmd, encoding='UTF-8')
+            output = subprocess.check_output(cmd, encoding='UTF-8')
         except subprocess.CalledProcessError as e:
             print(f"Command: '{' '.join(cmd)}'")
             raise e
+        finally:
+            logging.info(output)
         # evaluate and track the run
         data_clm_names = read_json(dm_config_path)["col_names"]
         eval_adapter = EvalAdapter(data_path, data_clm_names=data_clm_names, pred_path=outfile_path)
