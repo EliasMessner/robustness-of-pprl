@@ -59,7 +59,7 @@ def conduct_run(exp_out_folder, matcher_config, tracker, variant_folder_name):
     outfile_path = os.path.join(run_out_folder, "matching.csv")
     # create matcher_config.json in the folder for this run
     matcher_config_abs_path = write_matcher_config(matcher_config, run_out_folder)
-    call_rl_module(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path,
+    call_rl_module(os.path.abspath(data_path), os.path.abspath(outfile_path), matcher_config_abs_path, matcher_config,
                    tracker)
 
 
@@ -88,7 +88,7 @@ def write_matcher_config(matcher_config: dict, run_out_folder: str) -> str:
     return os.path.abspath(matcher_config_path)
 
 
-def call_rl_module(data_path, outfile_path, config_path, tracker: Tracker):
+def call_rl_module(data_path, outfile_path, config_path: str, config: dict, tracker: Tracker):
     """
     Call RLModule with given parameters.
     Evaluate and track run.
@@ -112,6 +112,7 @@ def call_rl_module(data_path, outfile_path, config_path, tracker: Tracker):
         dv_params = read_json(os.path.normpath(os.path.join(data_path, "..", "params.json")))
         mlflow.log_metrics(eval_adapter.metrics())
         mlflow.log_params(dv_params)
+        mlflow.set_tags(config)
         mlflow.log_artifact(data_path)
         mlflow.log_artifact(outfile_path)
         mlflow.log_artifact(config_path)
