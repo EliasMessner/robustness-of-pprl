@@ -20,21 +20,25 @@ def main():
     _exp_config_path = get_config_path_from_argv(default=exp_config_path)
     # get configs for all experiments
     experiments = read_json(_exp_config_path)["experiments"]
+    experiments = resolve_seed_lists(experiments)
     # for each experiment, there is a dict of parameters for the RLModule
     tracker = Tracker()
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+        conduct_experiment(exp_params, tracker)
+
+
+def resolve_seed_lists(experiments):
+    new_experiments = []
+    for exp_params in experiments:
         if isinstance(exp_params["seed"], list):
-            resolve_seed_list(exp_params, tracker)
+            for i, seed in enumerate(exp_params["seed"]):
+                new_exp_params = exp_params.copy()
+                new_exp_params["seed"] = seed
+                new_exp_params["exp_no"] = f"{exp_params['exp_no']}_{i}"
+                new_experiments.append(new_exp_params)
         else:
-            conduct_experiment(exp_params, tracker)
-
-
-def resolve_seed_list(exp_params, tracker):
-    for i, seed in enumerate(exp_params["seed"]):
-        new_exp_params = exp_params.copy()
-        new_exp_params["seed"] = seed
-        new_exp_params["exp_no"] = f"{exp_params['exp_no']}_{i}"
-        conduct_experiment(new_exp_params, tracker)
+            new_experiments.append(exp_params)
+    return new_experiments
 
 
 def prepare_logger():
