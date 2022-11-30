@@ -1,20 +1,21 @@
 package PPRL;
 
 import java.io.*;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class Encoder {
 
-    String pbmPath;
+    String storageFolder;
     Person[] dataSet;
     EncoderParams parameters;
     ProgressHandler progressHandler;
     Map<String, BloomFilter> personBloomFilterMap;
 
-    public Encoder(Person[] dataSet, EncoderParams parameters, String personBloomFilterMapPath) {
-        this.pbmPath = personBloomFilterMapPath;
+    public Encoder(Person[] dataSet, EncoderParams parameters, String storageFolder) {
+        this.storageFolder = storageFolder;
         this.dataSet = dataSet;
         this.parameters = parameters;
         this.progressHandler = new ProgressHandler(dataSet.length, 1);
@@ -66,8 +67,12 @@ public class Encoder {
         return personBloomFilterMap;
     }
 
+    private String getStorageFileName() {
+        return Paths.get(storageFolder, parameters.tokenSalting()).toString();
+    }
+
     private void loadPbm() {
-        File file = new File(pbmPath);
+        File file = new File(getStorageFileName());
         try (RandomAccessFile raf = new RandomAccessFile(file, "r");
              FileInputStream fis = new FileInputStream(raf.getFD());
              ObjectInputStream ois = new ObjectInputStream(fis)) {
@@ -78,7 +83,7 @@ public class Encoder {
     }
 
     private void savePbm() {
-        File file = new File(pbmPath);
+        File file = new File(getStorageFileName());
         try (FileOutputStream fos = new FileOutputStream(file);
              ObjectOutputStream oos = new ObjectOutputStream(fos)) {
             oos.writeObject(this.personBloomFilterMap);
@@ -89,7 +94,7 @@ public class Encoder {
     }
 
     private boolean pbmExists() {
-        return (new File(pbmPath).isFile());
+        return (new File(getStorageFileName()).isFile());
     }
 
 }
