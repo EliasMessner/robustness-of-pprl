@@ -2,7 +2,7 @@
   "experiments": [
     {
       "exp_no": 0,
-      "seed": "1",
+      "seed": ["aa", "ab", "ac", "ad", "ae", "af", "ag", "ah", "ai", "aj"],
       "l": 1024,
       "k": 10,
       "t": 0.75

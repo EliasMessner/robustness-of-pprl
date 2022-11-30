@@ -23,7 +23,18 @@ def main():
     # for each experiment, there is a dict of parameters for the RLModule
     tracker = Tracker()
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
-        conduct_experiment(exp_params, tracker)
+        if isinstance(exp_params["seed"], list):
+            resolve_seed_list(exp_params, tracker)
+        else:
+            conduct_experiment(exp_params, tracker)
+
+
+def resolve_seed_list(exp_params, tracker):
+    for i, seed in enumerate(exp_params["seed"]):
+        new_exp_params = exp_params.copy()
+        new_exp_params["seed"] = seed
+        new_exp_params["exp_no"] = f"{exp_params['exp_no']}_{i}"
+        conduct_experiment(new_exp_params, tracker)
 
 
 def prepare_logger():
@@ -37,9 +48,9 @@ def prepare_logger():
 
 
 def conduct_experiment(exp_params, tracker):
-    # create folder for this experiment's matching results
     tracker.start_exp(exp_params)
     exp_no = exp_params.pop("exp_no")
+    # create folder for this experiment's matching results
     exp_out_folder = os.path.join(matchings_dir, f"exp_{exp_no}")
     Path(exp_out_folder).mkdir(exist_ok=True)
     variants = os.listdir(dataset_variants_dir)  # one run per dataset variant
