@@ -30,6 +30,8 @@ def get_param_variations(config: dict):
     for variation in config["variations"]:
         params = variation["params"]
         replacements = variation.get("replacements", {})
+        if variation.get("as_range", False):
+            handle_ranges(replacements)
         cartesian_prod = _get_cartesian_product(replacements.items())
         for kv_combination in cartesian_prod:
             param_variation = _get_param_variation(kv_combination, params)
@@ -37,6 +39,12 @@ def get_param_variations(config: dict):
         if variation.get("include_default", False):
             param_vars.append(params)
     return param_vars
+
+
+def handle_ranges(replacements):
+    for k, v in replacements.items():
+        if isinstance(v, list):
+            replacements[k] = range(*v)
 
 
 def _get_param_variation(kv_combination: list[(str, any)], params: dict):

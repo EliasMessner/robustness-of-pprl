@@ -35,7 +35,7 @@ class TestDatasetModifier(TestCase):
         self.assertEqual(expected_overlap, observed_overlap)
 
         # sample of size 2*387 with original overlap
-        sample = self.sg.random_sample({"size": 2*387, "seed": 1})
+        sample = self.sg.random_sample({"size": 2 * 387, "seed": 1})
         sample_a = sample[sample[self.sg.source_id_col_name].isin(
             self.sg.df1[self.sg.source_id_col_name])]  # records in sample from source A
         sample_b = sample[sample[self.sg.source_id_col_name].isin(
@@ -48,7 +48,7 @@ class TestDatasetModifier(TestCase):
 
         # sample size 2*445 with overlap = 0.35
         expected_overlap = 0.35
-        sample = self.sg.random_sample({"size": 2*445, "seed": 1, "overlap": expected_overlap})
+        sample = self.sg.random_sample({"size": 2 * 445, "seed": 1, "overlap": expected_overlap})
         sample_a = sample[sample[self.sg.source_id_col_name].isin(
             self.sg.df1[self.sg.source_id_col_name])]  # records in sample from source A
         sample_b = sample[sample[self.sg.source_id_col_name].isin(
@@ -144,7 +144,7 @@ class TestDatasetModifier(TestCase):
                         "size": [1000, 2000, 10000],
                         "overlap": [0.1, 0.2, 0.3]
                     }
-                 }
+                }
             ]
         }
         variations = get_param_variations(config)
@@ -158,6 +158,28 @@ class TestDatasetModifier(TestCase):
             {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1},
             {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.2},
             {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.3}
+        ]
+        self.assertCountEqual(variations, expectation)
+
+        config = {
+            "variations": [
+                {
+                    "params": {
+                        "subset_selection": "PLZ",
+                        "digits": 2,
+                        "equals": None
+                    },
+                    "replacements": {
+                        "equals": [0, 99]
+                    },
+                    "as_range": True
+                }
+            ]
+        }
+        variations = get_param_variations(config)
+        expectation = [
+            {"subset_selection": "PLZ", "digits": 2, "equals": e}
+            for e in range(0, 99)
         ]
         self.assertCountEqual(variations, expectation)
 
