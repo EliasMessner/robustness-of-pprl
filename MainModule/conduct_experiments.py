@@ -30,9 +30,10 @@ def main():
 
 
 def prepare_logger():
-    Path(logs_dir).mkdir(parents=True, exist_ok=True)
+    logs_sub_dir = os.path.join(logs_dir, "conduct_experiments")
+    Path(logs_sub_dir).mkdir(parents=True, exist_ok=True)
     timestamp = dt.now().strftime("%Y-%m-%d_%H-%M-%S")
-    logging.basicConfig(filename=os.path.join(logs_dir, f"{timestamp}.txt"),
+    logging.basicConfig(filename=os.path.join(logs_sub_dir, f"{timestamp}.txt"),
                         filemode='a',
                         format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
                         datefmt='%H:%M:%S',
