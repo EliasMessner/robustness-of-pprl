@@ -1,3 +1,4 @@
+import logging
 import os.path
 import shutil
 from pathlib import Path
@@ -8,7 +9,7 @@ import itertools
 from datetime import datetime as dt
 
 from util import read_json, write_json, get_config_path_from_argv
-from constants import dm_config_path, dataset_variants_dir
+from constants import dm_config_path, dataset_variants_dir, logs_dir
 
 
 def main():
@@ -18,6 +19,18 @@ def main():
     dm.load_dataset_by_config_file(_dm_config_path)
     shutil.rmtree(dataset_variants_dir, ignore_errors=True)  # delete existing dataset variants
     dm.create_variants_by_config_file(_dm_config_path, dataset_variants_dir)
+
+
+def prepare_logger():
+    logs_sub_dir = os.path.join(logs_dir, "dataset_modifier")
+    Path(logs_sub_dir).mkdir(parents=True, exist_ok=True)
+    timestamp = dt.now().strftime("%Y-%m-%d_%H-%M-%S")
+    logging.basicConfig(filename=os.path.join(logs_sub_dir, f"{timestamp}.txt"),
+                        filemode='a',
+                        format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                        datefmt='%H:%M:%S',
+                        level=logging.INFO)
+    logging.getLogger().addHandler(logging.StreamHandler())
 
 
 def get_param_variations(config: dict):
@@ -151,8 +164,10 @@ class DatasetModifier:
         variants = self.get_variants_by_config_dict(config)
         Path(outfile_directory).mkdir(exist_ok=True)
         variant_id = 0
+        omitted = 0
         for (params, variant) in tqdm(variants, desc="Saving Variants", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
             if self._check_if_variant_should_be_omitted(min_size_per_source, omit_if_too_small, variant):
+                omitted += 1
                 continue
             # create this variant's sub folder
             variant_sub_folder = os.path.join(outfile_directory, f"DV_{variant_id}")
@@ -161,6 +176,8 @@ class DatasetModifier:
             variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
             _create_params_json(params, variant, variant_sub_folder)
             variant_id += 1
+        if omitted:
+            logging.info(f"Omitted {omitted} variants because they were smaller than {min_size_per_source}")
 
     def get_variants_by_config_dict(self, config) -> list[(dict, pd.DataFrame)]:
         """
@@ -169,12 +186,20 @@ class DatasetModifier:
         """
         self.read_csv_config_dict(config)  # read the dataset
         variants = []
+        omitted = 0
         for params in tqdm(get_param_variations(config), desc="Creating Variants",
                            bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
             variant = self.get_variant(params)
             if variant is None:
+                # variant could be None if for example a ValueError occurred due to impossible sample size in random
+                #  subset
+                omitted += 1
                 continue
             variants.append((params, variant))
+        if omitted:
+            logging.info(
+                f"Omitted {omitted} variants because they could not be created (possibly due to impossible parameter "
+                f"combination). See logs for further info.")
         return variants
 
     def _check_if_variant_should_be_omitted(self, min_size_per_source, omit_if_too_small, variant):
@@ -215,7 +240,11 @@ class DatasetModifier:
         try:
             return self._random_sample(total_sample_size=params["size"], seed=params["seed"],
                                        overlap=params.get("overlap", None))
-        except ValueError:
+        except ValueError as e:
+            logging.warning(f"Could not draw random sample because ValueError was raised.\n"
+                            f"Omitting parameters: \n"
+                            f"{params} \n"
+                            f"Exception: {e}")
             return None
             # raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
