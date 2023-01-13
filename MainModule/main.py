@@ -1,13 +1,13 @@
 """
-For Launching dataset_modifier and conduct_experiments subsequently with given filenames
+For launching dataset_modifier and conduct_experiments subsequently with given filenames
 """
 
 import subprocess as sp
 
 
 def main():
-    run("dataset_modifier_random_only_size", "exp_config")
-    run("dataset_modifier_plz_3", "exp_config")
+    run("dataset_modifier_random_only_overlap", "exp_config")
+    run("dataset_modifier", "exp_config_0725")
 
 
 def run(dm, ec):
