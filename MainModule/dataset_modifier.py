@@ -100,8 +100,40 @@ def _create_params_json(params, variant, variant_sub_folder):
     write_json(params, os.path.join(variant_sub_folder, "params.json"))
 
 
+def get_overlap(df1: pd.DataFrame, df2: pd.DataFrame, source_id_col_name, global_id_col_name="globalID"):
+    """
+   Returns overlap of a given dataset. Overlap is calculated wrt. size of one source,
+   which means that if there are two datasets A and B with each 100 records,
+   20 of which are matches and 80 non-matches, then the overlap will be 0.2.
+   Caller can either
+   1) pass the whole dataset (containing the two sources) as parameter df1 and leave df2=None,
+   in that case the source_id_col_name must be specified so that this method can split the dataset
+   into the two source.
+   ... or
+   2) pass the two sources as df1 and df2. In that case the source_id_col_name need not be specified
+   :return: Overlap value between 0 and 1.
+   :rtype: float
+   """
+    if df2 is None:
+        if source_id_col_name is None:
+            raise ValueError("If only one DataFrame is given, it is assumed this method should split it into the two "
+                             "sources before calculating the overlap. For that, the source_id_col_name parameter must "
+                             "be specified.")
+        df = df1.copy()
+        df1, df2 = [x for _, x in df.groupby(source_id_col_name)]
+    else:
+        df = pd.concat([df1, df2])
+    intersect = pd.merge(df1, df2, how="inner", on=[global_id_col_name])
+    return 2 * intersect.shape[0] / df.shape[0]
+
+
 class DatasetModifier:
-    def __init__(self):
+    def __init__(self, omit_if_not_possible=True):
+        """
+        :param omit_if_not_possible: Set to True (default) if a variant should be omitted instead of raising a
+        ValueError, in case a specified ds-variant cannot be drawn (for example, a random sample with an overlap too large)
+        """
+        self.omit_if_not_possible = omit_if_not_possible
         self.df = None
         self.df1 = None
         self.df2 = None
@@ -147,7 +179,7 @@ class DatasetModifier:
         self.global_id_col_name = global_id_col_name
         self.source_id_col_name = source_id_col_name
         self.true_matches1, self.true_matches2 = self._get_true_matches()
-        self._calculate_base_overlap()
+        self.base_overlap = get_overlap(self.df1, self.df2, self.global_id_col_name)
 
     def create_variants_by_config_file(self, config_path, outfile_directory, omit_if_too_small=True,
                                        min_size_per_source=10):
@@ -225,28 +257,32 @@ class DatasetModifier:
         if params["subset_selection"] == "AGE":
             return self.age_subset(params)
 
-    def random_sample(self, params) -> pd.DataFrame:
+    def random_sample(self, params) -> pd.DataFrame | None:
         """
-        Draw random sample from base dataset. Returns None if the desired overlap cannot be drawn.
+        Draw random sample from base dataset.
+        If the desired overlap cannot be drawn, ...
+            ...returns None, if self.omit_if_not_possible == True
+            ...raises a ValueError, otherwise
         :param params: dict containing the keys described below.
         size (int): number of records to draw all together (from each source, size/2 records will be drawn). Therefore,
                     size must be divisible by 2
         seed (int): Seed for reproducibility
         overlap (float) (optional): ratio of true matches to whole size of one source, if not specified the ratio will
-        be the same
-        as in the base dataset
+        be the same as in the base dataset
         :return: random sample drawn from base dataframe
         """
         try:
             return self._random_sample(total_sample_size=params["size"], seed=params["seed"],
                                        overlap=params.get("overlap", None))
         except ValueError as e:
-            logging.warning(f"Could not draw random sample because ValueError was raised.\n"
-                            f"Omitting parameters: \n"
-                            f"{params} \n"
-                            f"Exception: {e}")
-            return None
-            # raise ValueError(f"{e}\nParameters causing ValueError: {params}")
+            if self.omit_if_not_possible:
+                logging.warning(f"Could not draw random sample because ValueError was raised.\n"
+                                f"Omitting parameters: \n"
+                                f"{params} \n"
+                                f"Exception: {e}")
+                return None
+            else:
+                raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
     def _random_sample(self, total_sample_size: int, seed: int, overlap: float = None) -> pd.DataFrame:
         if not (total_sample_size % 2 == 0):

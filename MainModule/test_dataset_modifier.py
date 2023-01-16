@@ -11,7 +11,7 @@ col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH
 
 class TestDatasetModifier(TestCase):
     def setUp(self) -> None:
-        self.sg = DatasetModifier()
+        self.sg = DatasetModifier(omit_if_not_possible=False)
         self.sg.load_dataset_by_config_file("data/test_dataset_modifier.json")
 
     def test_size(self):
