@@ -12,13 +12,13 @@ Requires JDK 17 or newer.
 
 # MainModule
 
-Requires Python 3.9.
+Requires Python 3.10.
 
 ### Install requirements
 
 If using conda environment, first install pip in conda env using
 
-> conda activate \<some-python-3.9-env\>
+> conda activate \<some-python-3.10-env\>
 
 > conda install pip
 
