@@ -16,18 +16,18 @@ class TestDatasetModifier(TestCase):
 
     def test_size(self):
         self.assertEqual(self.sg.df.shape[0], 200000)
-        self.assertEqual(self.sg.df1.shape[0], 100000)
-        self.assertEqual(self.sg.df2.shape[0], 100000)
-        self.assertTrue(self.sg.df1.sourceID.eq("A").all(axis=0))
-        self.assertTrue(self.sg.df2.sourceID.eq("B").all(axis=0))
+        self.assertEqual(self.sg.df_a.shape[0], 100000)
+        self.assertEqual(self.sg.df_b.shape[0], 100000)
+        self.assertTrue(self.sg.df_a.sourceID.eq("A").all(axis=0))
+        self.assertTrue(self.sg.df_b.sourceID.eq("B").all(axis=0))
 
     def test_random_sample(self):
         # draw sample of size 10 with original overlap
         sample = self.sg.random_sample({"size": 10, "seed": 1})
         sample_a = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df1[self.sg.source_id_col_name])]  # records in sample from source A
+            self.sg.df_a[self.sg.source_id_col_name])]  # records in sample from source A
         sample_b = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df2[self.sg.source_id_col_name])]  # records in sample from source B
+            self.sg.df_b[self.sg.source_id_col_name])]  # records in sample from source B
         # check that the overlap is correct
         expected_overlap = self.sg.base_overlap
         intersec = pd.merge(sample_a, sample_b, how="inner", on=self.sg.global_id_col_name)
@@ -37,9 +37,9 @@ class TestDatasetModifier(TestCase):
         # sample of size 2*387 with original overlap
         sample = self.sg.random_sample({"size": 2 * 387, "seed": 1})
         sample_a = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df1[self.sg.source_id_col_name])]  # records in sample from source A
+            self.sg.df_a[self.sg.source_id_col_name])]  # records in sample from source A
         sample_b = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df2[self.sg.source_id_col_name])]  # records in sample from source B
+            self.sg.df_b[self.sg.source_id_col_name])]  # records in sample from source B
         # check that the overlap is correct
         intersec = pd.merge(sample_a, sample_b, how="inner", on=self.sg.global_id_col_name)
         expected_size = round(expected_overlap * sample.shape[0] / 2)  # round because only whole records are counted
@@ -50,9 +50,9 @@ class TestDatasetModifier(TestCase):
         expected_overlap = 0.35
         sample = self.sg.random_sample({"size": 2 * 445, "seed": 1, "overlap": expected_overlap})
         sample_a = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df1[self.sg.source_id_col_name])]  # records in sample from source A
+            self.sg.df_a[self.sg.source_id_col_name])]  # records in sample from source A
         sample_b = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df2[self.sg.source_id_col_name])]  # records in sample from source B
+            self.sg.df_b[self.sg.source_id_col_name])]  # records in sample from source B
         # check that the overlap is correct
         intersec = pd.merge(sample_a, sample_b, how="inner", on=self.sg.global_id_col_name)
         expected_size = round(expected_overlap * sample.shape[0] / 2)  # round because only whole records are counted
