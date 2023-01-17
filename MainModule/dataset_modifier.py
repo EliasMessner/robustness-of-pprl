@@ -8,6 +8,7 @@ from tqdm import tqdm
 import itertools
 from datetime import datetime as dt
 
+from dataset_properties import get_overlap, get_true_matches, split_by_source_id
 from util import read_json, write_json, get_config_path_from_argv
 from constants import dm_config_path, dataset_variants_dir, logs_dir
 
@@ -33,100 +34,6 @@ def prepare_logger():
     logging.getLogger().addHandler(logging.StreamHandler())
 
 
-def get_param_variations(config: dict):
-    """
-    Return a list of all parameter variations created from given config dict.
-    If variation lists for multiple parameters are given in one replacement, they
-    are combined to their cartesian product.
-    """
-    param_vars = []
-    for variation in config["variations"]:
-        params = variation["params"]
-        replacements = variation.get("replacements", {})
-        if variation.get("as_range", False):
-            handle_ranges(replacements)
-        cartesian_prod = _get_cartesian_product(replacements.items())
-        for kv_combination in cartesian_prod:
-            param_variation = _get_param_variation(kv_combination, params)
-            param_vars.append(param_variation)
-        if variation.get("include_default", False):
-            param_vars.append(params)
-    return param_vars
-
-
-def handle_ranges(replacements):
-    for k, v in replacements.items():
-        if isinstance(v, list):
-            replacements[k] = range(*v)
-
-
-def _get_param_variation(kv_combination: list[(str, any)], params: dict):
-    """
-    For given list of key-value pairs and given base parameters, modify params so
-    that k-v pairs are all applied. But leave the actual params object as is and return
-    a new object param_variation.
-    """
-    param_variation = params.copy()
-    for k, v in kv_combination:
-        param_variation[k] = v
-    return param_variation
-
-
-def _get_cartesian_product(items: list[(str, any)]):
-    """
-    For dict items with lists of values to each key, return cartesian product of key-value pairs.
-    Result will not contain duplicates.
-    Example:
-        items = [("size", [1000, 2000]), ("overlap", [0.1, 0.2, 0.3])]
-        will return
-        [((size, 1000), (overlap, 0.1)), ((size, 1000), (overlap, 0.2)), ((size, 1000), (overlap, 0.3)),
-        ((size, 2000), (overlap, 0.1)), ((size, 2000), (overlap, 0.2)), ((size, 2000), (overlap, 0.3))]
-    """
-    all_kv_lists = []
-    for k, values in items:
-        kv_list = [(k, v) for v in values]  # = [(size, 1000), (size, 2000), ...]
-        all_kv_lists.append(kv_list)
-    cartesian_prod = itertools.product(*all_kv_lists)  # = [((size, 1000), (overlap, 0.1)), ...]
-    return [*cartesian_prod]
-
-
-def _create_params_json(params, variant, variant_sub_folder):
-    actual_size = variant.shape[0]
-    # assert that the size stored in params (if it exists) is equal to the size of the variant
-    assert params.get("size", actual_size) == actual_size
-    # set the size value in params to the actual size of the dataset, in case it wasn't set already
-    params["size"] = actual_size
-    # create params.json
-    write_json(params, os.path.join(variant_sub_folder, "params.json"))
-
-
-def get_overlap(df1: pd.DataFrame, df2: pd.DataFrame, source_id_col_name, global_id_col_name="globalID"):
-    """
-   Returns overlap of a given dataset. Overlap is calculated wrt. size of one source,
-   which means that if there are two datasets A and B with each 100 records,
-   20 of which are matches and 80 non-matches, then the overlap will be 0.2.
-   Caller can either
-   1) pass the whole dataset (containing the two sources) as parameter df1 and leave df2=None,
-   in that case the source_id_col_name must be specified so that this method can split the dataset
-   into the two source.
-   ... or
-   2) pass the two sources as df1 and df2. In that case the source_id_col_name need not be specified
-   :return: Overlap value between 0 and 1.
-   :rtype: float
-   """
-    if df2 is None:
-        if source_id_col_name is None:
-            raise ValueError("If only one DataFrame is given, it is assumed this method should split it into the two "
-                             "sources before calculating the overlap. For that, the source_id_col_name parameter must "
-                             "be specified.")
-        df = df1.copy()
-        df1, df2 = [x for _, x in df.groupby(source_id_col_name)]
-    else:
-        df = pd.concat([df1, df2])
-    intersect = pd.merge(df1, df2, how="inner", on=[global_id_col_name])
-    return 2 * intersect.shape[0] / df.shape[0]
-
-
 class DatasetModifier:
     def __init__(self, omit_if_not_possible=True):
         """
@@ -135,8 +42,8 @@ class DatasetModifier:
         """
         self.omit_if_not_possible = omit_if_not_possible
         self.df = None
-        self.df1 = None
-        self.df2 = None
+        self.df_a = None
+        self.df_b = None
         self.source_id_col_name = None
         self.global_id_col_name = None
         self.true_matches1 = None
@@ -174,12 +81,12 @@ class DatasetModifier:
         """
         self.df = pd.read_csv(dataset_path, names=col_names, dtype={"PLZ": str},
                               keep_default_na=False)  # keep_default_na for representing empty PLZ values as empty str and not nan
-        self.df1, self.df2 = [x for _, x in self.df.groupby(source_id_col_name)]
-        assert self.df1.shape == self.df2.shape
+        self.df_a, self.df_b = split_by_source_id(self.df)
+        assert self.df_a.shape == self.df_b.shape
         self.global_id_col_name = global_id_col_name
         self.source_id_col_name = source_id_col_name
-        self.true_matches1, self.true_matches2 = self._get_true_matches()
-        self.base_overlap = get_overlap(self.df1, self.df2, self.global_id_col_name)
+        self.true_matches1, self.true_matches2 = get_true_matches(self.df_a, self.df_b, self.global_id_col_name)
+        self.base_overlap = get_overlap(self.df_a, self.df_b, self.global_id_col_name)
 
     def create_variants_by_config_file(self, config_path, outfile_directory, omit_if_too_small=True,
                                        min_size_per_source=10):
@@ -272,8 +179,8 @@ class DatasetModifier:
         :return: random sample drawn from base dataframe
         """
         try:
-            return self._random_sample(total_sample_size=params["size"], seed=params["seed"],
-                                       overlap=params.get("overlap", None))
+            return random_sample(self.df_a, self.df_b, total_sample_size=params["size"], seed=params["seed"],
+                                 overlap=params.get("overlap", None))
         except ValueError as e:
             if self.omit_if_not_possible:
                 logging.warning(f"Could not draw random sample because ValueError was raised.\n"
@@ -283,36 +190,6 @@ class DatasetModifier:
                 return None
             else:
                 raise ValueError(f"{e}\nParameters causing ValueError: {params}")
-
-    def _random_sample(self, total_sample_size: int, seed: int, overlap: float = None) -> pd.DataFrame:
-        if not (total_sample_size % 2 == 0):
-            raise ValueError(f"total_size must be divisible by 2. Each source in the random sample will have half the "
-                             f"size of total_size")
-        size = int(total_sample_size / 2)
-        if not (0 <= size <= self.df1.shape[0]):
-            raise ValueError(
-                f"Size must be between 0 and size of one of the two source data sets (={self.df1.shape[0]}). Got "
-                f"{size} instead.")
-        rel_sample_size = size / self.df.shape[0]
-        max_overlap = min(1.0, self.base_overlap / rel_sample_size)
-        non_matches_count = self.df.shape[0] - self.base_overlap * self.df1.shape[0]  # e.g. 200k - 0.2 * 100k = 180k
-        min_overlap = max(0, 1 - non_matches_count / total_sample_size)
-        if overlap is None:
-            overlap = self.base_overlap
-        if not (min_overlap <= overlap <= max_overlap or overlap is None):
-            raise ValueError(f"Overlap must be between {min_overlap} and {max_overlap}. Got {overlap} instead.")
-        # draw size*overlap from true matches of source A
-        a_matches = self.true_matches1.sample(round(size * overlap), random_state=seed)
-        # draw size*(1-overlap) from non-matches of source A
-        a_non_matches = self.df1[~self.df1[self.global_id_col_name].isin(self.true_matches1[self.global_id_col_name])] \
-            .sample(round(size * (1 - overlap)), random_state=seed)
-        # draw size*overlap from true matches of source B
-        b_matches = self.true_matches2.sample(round(size * overlap), random_state=seed)
-        # draw size*(1-overlap) from non-matches of source B
-        b_non_matches = self.df2[~self.df2[self.global_id_col_name].isin(self.true_matches2[self.global_id_col_name])] \
-            .sample(round(size * (1 - overlap)), random_state=seed)
-        # concatenate all
-        return pd.concat([a_matches, a_non_matches, b_matches, b_non_matches])
 
     def attribute_value_subset(self, params: dict) -> pd.DataFrame:
         assert len({"range", "equals", "is_in"} & params.keys()) == 1  # exactly one of these keys must be present
@@ -336,17 +213,6 @@ class DatasetModifier:
         max_age = params["range"][1]
         return self.df[self.df["YEAROFBIRTH"].map(lambda yob: min_age <= (this_year - yob) <= max_age)]
 
-    def _get_true_matches(self) -> (pd.DataFrame, pd.DataFrame):
-        """
-        Return form each source all records that are part of the overlap, aka all records that have a true match in the
-        other source.
-        Returned as tuple of two dataframes, one for each sourceID.
-        They are not linked to their partners, i.e. the dataframes have no specific order.
-        """
-        true_matches_1 = self.df1[self.df1[self.global_id_col_name].isin(self.df2[self.global_id_col_name])]
-        true_matches_2 = self.df2[self.df2[self.global_id_col_name].isin(self.df1[self.global_id_col_name])]
-        return true_matches_1, true_matches_2
-
     def _calculate_base_overlap(self):
         """
         Returns overlap in base dataset. Overlap is calculated wrt. size of one source,
@@ -355,8 +221,124 @@ class DatasetModifier:
         :return: Overlap value between 0 and 1.
         :rtype: float
         """
-        intersect = pd.merge(self.df1, self.df2, how="inner", on=[self.global_id_col_name])
+        intersect = pd.merge(self.df_a, self.df_b, how="inner", on=[self.global_id_col_name])
         self.base_overlap = 2 * intersect.shape[0] / self.df.shape[0]
+
+
+def random_sample(df_a: pd.DataFrame, df_b: pd.DataFrame, total_sample_size: int, seed: int = None, overlap: float = None,
+                  global_id_col_name="globalID") -> pd.DataFrame:
+    """
+    For documentation see DatasetModifier.random_sample
+    """
+    if df_a.shape[0] != df_b.shape[0]:
+        raise ValueError("df1 and df2 must be of the same size.")
+    df = pd.concat([df_a, df_b])
+    if not (total_sample_size % 2 == 0):
+        raise ValueError(f"total_size must be divisible by 2. Each source in the random sample will have half the "
+                         f"size of total_size")
+    size = int(total_sample_size / 2)
+    if not (0 <= size <= df_a.shape[0]):
+        raise ValueError(
+            f"Size must be between 0 and size of one of the two source data sets (={df_a.shape[0]}). Got {size} instead.")
+    rel_sample_size = size / df.shape[0]
+    base_overlap = get_overlap(df_a, df_b)
+    max_overlap = min(1.0, base_overlap / rel_sample_size)
+    non_matches_count = df.shape[0] - base_overlap * df_a.shape[0]
+    min_overlap = max(0.0, 1 - non_matches_count / total_sample_size)
+    if overlap is None:
+        overlap = base_overlap
+    if not (min_overlap <= overlap <= max_overlap or overlap is None):
+        raise ValueError(f"Overlap must be between {min_overlap} and {max_overlap}. Got {overlap} instead.")
+    true_matches1, true_matches2 = get_true_matches(df_a, df_b, global_id_col_name)
+    # draw size*overlap from true matches of source A
+    a_matches = true_matches1.sample(round(size * overlap), random_state=seed)
+    # draw size*(1-overlap) from non-matches of source A
+    a_non_matches = df_a[~df_a[global_id_col_name].isin(true_matches1[global_id_col_name])] \
+        .sample(round(size * (1 - overlap)), random_state=seed)
+    # draw size*overlap from true matches of source B
+    b_matches = true_matches2.sample(round(size * overlap), random_state=seed)
+    # draw size*(1-overlap) from non-matches of source B
+    b_non_matches = df_b[~df_b[global_id_col_name].isin(true_matches2[global_id_col_name])] \
+        .sample(round(size * (1 - overlap)), random_state=seed)
+    # concatenate all
+    return pd.concat([a_matches, a_non_matches, b_matches, b_non_matches])
+
+
+def random_sample_wrapper(df: pd.DataFrame, total_sample_size: int, seed: int = None, overlap: float = None,
+                          global_id_col_name="globalID") -> pd.DataFrame:
+    """
+    Wrapper function that splits the passed data into the two sources before calling random_sample, allowing to pass
+    the whole dataset.
+    """
+    df_a, df_b = split_by_source_id(df)
+    return random_sample(df_a, df_b, total_sample_size, seed, overlap, global_id_col_name)
+
+
+def get_param_variations(config: dict):
+    """
+    Return a list of all parameter variations created from given config dict.
+    If variation lists for multiple parameters are given in one replacement, they
+    are combined to their cartesian product.
+    """
+    param_vars = []
+    for variation in config["variations"]:
+        params = variation["params"]
+        replacements = variation.get("replacements", {})
+        if variation.get("as_range", False):
+            handle_ranges(replacements)
+        cartesian_prod = _get_cartesian_product(replacements.items())
+        for kv_combination in cartesian_prod:
+            param_variation = _get_param_variation(kv_combination, params)
+            param_vars.append(param_variation)
+        if variation.get("include_default", False):
+            param_vars.append(params)
+    return param_vars
+
+
+def handle_ranges(replacements):
+    for k, v in replacements.items():
+        if isinstance(v, list):
+            replacements[k] = range(*v)
+
+
+def _get_param_variation(kv_combination: list[(str, any)], params: dict):
+    """
+    For given list of key-value pairs and given base parameters, modify params so
+    that k-v pairs are all applied. But leave the actual params object as is and return
+    a new object param_variation.
+    """
+    param_variation = params.copy()
+    for k, v in kv_combination:
+        param_variation[k] = v
+    return param_variation
+
+
+def _get_cartesian_product(items: list[(str, any)]):
+    """
+    For dict items with lists of values to each key, return cartesian product of key-value pairs.
+    Result will not contain duplicates.
+    Example:
+        items = [("size", [1000, 2000]), ("overlap", [0.1, 0.2, 0.3])]
+        will return
+        [((size, 1000), (overlap, 0.1)), ((size, 1000), (overlap, 0.2)), ((size, 1000), (overlap, 0.3)),
+        ((size, 2000), (overlap, 0.1)), ((size, 2000), (overlap, 0.2)), ((size, 2000), (overlap, 0.3))]
+    """
+    all_kv_lists = []
+    for k, values in items:
+        kv_list = [(k, v) for v in values]  # = [(size, 1000), (size, 2000), ...]
+        all_kv_lists.append(kv_list)
+    cartesian_prod = itertools.product(*all_kv_lists)  # = [((size, 1000), (overlap, 0.1)), ...]
+    return [*cartesian_prod]
+
+
+def _create_params_json(params, variant, variant_sub_folder):
+    actual_size = variant.shape[0]
+    # assert that the size stored in params (if it exists) is equal to the size of the variant
+    assert params.get("size", actual_size) == actual_size
+    # set the size value in params to the actual size of the dataset, in case it wasn't set already
+    params["size"] = actual_size
+    # create params.json
+    write_json(params, os.path.join(variant_sub_folder, "params.json"))
 
 
 if __name__ == "__main__":
