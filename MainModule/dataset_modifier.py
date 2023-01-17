@@ -171,12 +171,12 @@ class DatasetModifier:
             ...returns None, if self.omit_if_not_possible == True
             ...raises a ValueError, otherwise
         :param params: dict containing the keys described below.
-        size (int): number of records to draw all together (from each source, size/2 records will be drawn). Therefore,
-                    size must be divisible by 2
+        size (int): number of records to draw all together (the ratio between source A and B will be preserved as
+        closely as possible after rounding)
         seed (int): Seed for reproducibility
         overlap (float) (optional): ratio of true matches to whole size of one source, if not specified the ratio will
         be the same as in the base dataset
-        :return: random sample drawn from base dataframe
+        :return: random sample drawn from base dataset
         """
         try:
             return random_sample(self.df_a, self.df_b, total_size=params["size"], seed=params["seed"],
@@ -227,6 +227,9 @@ class DatasetModifier:
 
 def random_sample(df_a: pd.DataFrame, df_b: pd.DataFrame, total_size: int, seed: int = None, overlap: float = None,
                   global_id_col_name="globalID") -> pd.DataFrame:
+    """
+    For documentation see DatasetModifier.random_sample
+    """
     if overlap is None:
         overlap = get_overlap(df_a, df_b)
     df = pd.concat([df_a, df_b])
