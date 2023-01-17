@@ -1,6 +1,7 @@
 from unittest import TestCase, main
 
-from dataset_modifier import DatasetModifier, get_param_variations
+from dataset_modifier import DatasetModifier, get_param_variations, random_sample
+from dataset_properties import get_overlap, split_by_source_id
 import pandas as pd
 from datetime import datetime as dt
 
@@ -30,16 +31,12 @@ class TestDatasetModifier(TestCase):
             self.sg.df_b[self.sg.source_id_col_name])]  # records in sample from source B
         # check that the overlap is correct
         expected_overlap = self.sg.base_overlap
-        intersec = pd.merge(sample_a, sample_b, how="inner", on=self.sg.global_id_col_name)
-        observed_overlap = 2 * intersec.shape[0] / sample.shape[0]
+        observed_overlap = get_overlap(sample_a, sample_b)
         self.assertEqual(expected_overlap, observed_overlap)
 
         # sample of size 2*387 with original overlap
         sample = self.sg.random_sample({"size": 2 * 387, "seed": 1})
-        sample_a = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df_a[self.sg.source_id_col_name])]  # records in sample from source A
-        sample_b = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df_b[self.sg.source_id_col_name])]  # records in sample from source B
+        sample_a, sample_b = split_by_source_id(sample)
         # check that the overlap is correct
         intersec = pd.merge(sample_a, sample_b, how="inner", on=self.sg.global_id_col_name)
         expected_size = round(expected_overlap * sample.shape[0] / 2)  # round because only whole records are counted
@@ -49,10 +46,7 @@ class TestDatasetModifier(TestCase):
         # sample size 2*445 with overlap = 0.35
         expected_overlap = 0.35
         sample = self.sg.random_sample({"size": 2 * 445, "seed": 1, "overlap": expected_overlap})
-        sample_a = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df_a[self.sg.source_id_col_name])]  # records in sample from source A
-        sample_b = sample[sample[self.sg.source_id_col_name].isin(
-            self.sg.df_b[self.sg.source_id_col_name])]  # records in sample from source B
+        sample_a, sample_b = split_by_source_id(sample)
         # check that the overlap is correct
         intersec = pd.merge(sample_a, sample_b, how="inner", on=self.sg.global_id_col_name)
         expected_size = round(expected_overlap * sample.shape[0] / 2)  # round because only whole records are counted
@@ -68,6 +62,20 @@ class TestDatasetModifier(TestCase):
         # must raise value error because only 100k values are in each source
         expected_overlap = 0.1
         self.assertRaises(ValueError, self.sg.random_sample, {"size": 300000, "seed": 1, "overlap": expected_overlap})
+
+        # test with differently sized sources
+        expected_overlap = 0.1
+        df_a, df_b = split_by_source_id(self.sg.df)
+        df_a = df_a.sample(80_000, random_state=42)
+        self.assertEqual(df_a.shape[0], 80_000)
+        self.assertEqual(df_b.shape[0], 100_000)
+        sample = random_sample(df_a, df_b, 75_000, seed=42, overlap=expected_overlap)
+        sample_a, sample_b = split_by_source_id(sample)
+        # check that source a/b ratio is preserved
+        self.assertEqual(round(sample_a.shape[0] / sample_b.shape[0], 3),
+                         round(df_a.shape[0] / df_b.shape[0], 3))
+        # check that the overlap is correct
+        self.assertEqual(expected_overlap, get_overlap(sample_a, sample_b))
 
     def test_plz_subset(self):
         subset0 = self.sg.plz_subset({"digits": 1, "equals": 0})

@@ -179,7 +179,7 @@ class DatasetModifier:
         :return: random sample drawn from base dataframe
         """
         try:
-            return random_sample(self.df_a, self.df_b, total_sample_size=params["size"], seed=params["seed"],
+            return random_sample(self.df_a, self.df_b, total_size=params["size"], seed=params["seed"],
                                  overlap=params.get("overlap", None))
         except ValueError as e:
             if self.omit_if_not_possible:
@@ -225,41 +225,30 @@ class DatasetModifier:
         self.base_overlap = 2 * intersect.shape[0] / self.df.shape[0]
 
 
-def random_sample(df_a: pd.DataFrame, df_b: pd.DataFrame, total_sample_size: int, seed: int = None, overlap: float = None,
+def random_sample(df_a: pd.DataFrame, df_b: pd.DataFrame, total_size: int, seed: int = None, overlap: float = None,
                   global_id_col_name="globalID") -> pd.DataFrame:
-    """
-    For documentation see DatasetModifier.random_sample
-    """
-    if df_a.shape[0] != df_b.shape[0]:
-        raise ValueError("df1 and df2 must be of the same size.")
-    df = pd.concat([df_a, df_b])
-    if not (total_sample_size % 2 == 0):
-        raise ValueError(f"total_size must be divisible by 2. Each source in the random sample will have half the "
-                         f"size of total_size")
-    size = int(total_sample_size / 2)
-    if not (0 <= size <= df_a.shape[0]):
-        raise ValueError(
-            f"Size must be between 0 and size of one of the two source data sets (={df_a.shape[0]}). Got {size} instead.")
-    rel_sample_size = size / df.shape[0]
-    base_overlap = get_overlap(df_a, df_b)
-    max_overlap = min(1.0, base_overlap / rel_sample_size)
-    non_matches_count = df.shape[0] - base_overlap * df_a.shape[0]
-    min_overlap = max(0.0, 1 - non_matches_count / total_sample_size)
     if overlap is None:
-        overlap = base_overlap
-    if not (min_overlap <= overlap <= max_overlap or overlap is None):
-        raise ValueError(f"Overlap must be between {min_overlap} and {max_overlap}. Got {overlap} instead.")
-    true_matches1, true_matches2 = get_true_matches(df_a, df_b, global_id_col_name)
-    # draw size*overlap from true matches of source A
-    a_matches = true_matches1.sample(round(size * overlap), random_state=seed)
-    # draw size*(1-overlap) from non-matches of source A
-    a_non_matches = df_a[~df_a[global_id_col_name].isin(true_matches1[global_id_col_name])] \
-        .sample(round(size * (1 - overlap)), random_state=seed)
-    # draw size*overlap from true matches of source B
-    b_matches = true_matches2.sample(round(size * overlap), random_state=seed)
-    # draw size*(1-overlap) from non-matches of source B
-    b_non_matches = df_b[~df_b[global_id_col_name].isin(true_matches2[global_id_col_name])] \
-        .sample(round(size * (1 - overlap)), random_state=seed)
+        overlap = get_overlap(df_a, df_b)
+    df = pd.concat([df_a, df_b])
+    if not (0 <= total_size <= df.shape[0]):
+        raise ValueError(f"total_size must be between 0 and {df.shape[0]}, got {total_size} instead.")
+    portion_a, portion_b = [_df.shape[0] / (df_a.shape[0] + df_b.shape[0])
+                            for _df in (df_a, df_b)]
+    size_a, size_b = [round(total_size * portion)
+                      for portion in (portion_a, portion_b)]
+    size_overlap = round(total_size * overlap / 2)
+    assert size_a >= size_overlap <= size_b
+    true_matches_a, true_matches_b = get_true_matches(df_a, df_b, global_id_col_name)
+    # draw size_overlap records from true matches of source A
+    a_matches = true_matches_a.sample(size_overlap, random_state=seed)
+    # get the corresponding partners from B
+    b_matches = true_matches_b[true_matches_b[global_id_col_name].isin(a_matches[global_id_col_name])]
+    # draw size_a - size_overlap from non-matches of source A
+    a_non_matches = df_a[~df_a[global_id_col_name].isin(true_matches_a[global_id_col_name])]\
+        .sample(size_a - size_overlap, random_state=seed)
+    # likewise for B
+    b_non_matches = df_b[~df_b[global_id_col_name].isin(true_matches_b[global_id_col_name])] \
+        .sample(size_b - size_overlap, random_state=seed)
     # concatenate all
     return pd.concat([a_matches, a_non_matches, b_matches, b_non_matches])
 
