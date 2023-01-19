@@ -13,12 +13,6 @@ def get_true_matches(df_a: pd.DataFrame, df_b: pd.DataFrame, global_id_col_name=
     return true_matches_a, true_matches_b
 
 
-def get_matching_pairs(df_a: pd.DataFrame, df_b: pd.DataFrame, global_id_col_name="globalID") -> (pd.DataFrame, pd.DataFrame):
-    true_matches_a, true_matches_b = get_true_matches(df_a, df_b, global_id_col_name)
-    true_matches_a = true_matches_a.sort_values(by=[global_id_col_name])
-    true_matches_b = true_matches_b.sort_values(by=[global_id_col_name])
-
-
 def get_overlap(df_a: pd.DataFrame, df_b: pd.DataFrame, global_id_col_name="globalID") -> float:
     """
     Returns overlap of a given dataset. Overlap is calculated wrt. size of one source,
