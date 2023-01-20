@@ -36,8 +36,8 @@ def avg_edit_distance(row, attrs, suffixes=None):
 
 
 def get_all_errors(df: pd.DataFrame, measure: callable) -> pd.Series:
-    df1, df2 = split_by_source_id(df)
-    pairs = get_pairs(df1, df2)
+    df_a, df_b = split_by_source_id(df)
+    pairs = get_pairs(df_a, df_b)
     return pairs.apply(measure, axis=1)
 
 
