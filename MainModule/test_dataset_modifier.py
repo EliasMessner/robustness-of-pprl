@@ -6,8 +6,8 @@ import pandas as pd
 from datetime import datetime as dt
 
 filepath = "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
-col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH,PLACEOFBIRTH,COUNTRY,CITY,PLZ,STREET,GENDER,ETHNIC,RACE".split(
-    ",")
+col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH,PLACEOFBIRTH,COUNTRY,CITY,PLZ," \
+            "STREET,GENDER,ETHNIC,RACE".split(",")
 
 
 class TestDatasetModifier(TestCase):
