@@ -110,17 +110,16 @@ class TestDatasetModifier(TestCase):
                 }
             ]
         }
-        variations = get_param_variant_groups(config)
         expectation = [
-            [
-                (var, "test description") for var in
-                [
-                    {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
-                    {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
-                    {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1}
-                ]
-            ]
+            ([
+                 {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
+                 {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
+                 {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1}
+             ],
+             "test description")
         ]
+
+        variations = get_param_variant_groups(config)
         self.assertCountEqual(variations, expectation)
 
         # same but with include_default = true
@@ -140,7 +139,7 @@ class TestDatasetModifier(TestCase):
                 }
             ]
         }
-        variations = [[var for var, desc in group] for group in get_param_variant_groups(config)]
+        variations = [group for group, desc in get_param_variant_groups(config)]
         expectation = [
             [
                 {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
@@ -177,7 +176,7 @@ class TestDatasetModifier(TestCase):
                 }
             ]
         }
-        variations = [[var for var, desc in group] for group in get_param_variant_groups(config)]
+        variations = [group for group, desc in get_param_variant_groups(config)]
         expectation = [
             [
                 {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
@@ -212,7 +211,7 @@ class TestDatasetModifier(TestCase):
                 }
             ]
         }
-        variations = [[var for var, desc in group] for group in get_param_variant_groups(config)]
+        variations = [group for group, desc in get_param_variant_groups(config)]
         expectation = [
             [
                 {"subset_selection": "PLZ", "digits": 2, "equals": e}
