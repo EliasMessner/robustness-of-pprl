@@ -1,6 +1,6 @@
 from unittest import TestCase, main
 
-from dataset_modifier import DatasetModifier, get_param_variations, random_sample
+from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
 from dataset_properties import get_overlap, split_by_source_id
 import pandas as pd
 from datetime import datetime as dt
@@ -101,15 +101,21 @@ class TestDatasetModifier(TestCase):
                     },
                     "replacements": {
                         "size": [1000, 2000, 10000],
-                    }
+                    },
+                    "desc": "test description"
                 }
             ]
         }
-        variations = get_param_variations(config)
+        variations = get_param_variant_groups(config)
         expectation = [
-            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1}
+            [
+                (var, "test description") for var in
+                [
+                    {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
+                    {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
+                    {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1}
+                ]
+            ]
         ]
         self.assertCountEqual(variations, expectation)
 
@@ -130,12 +136,14 @@ class TestDatasetModifier(TestCase):
                 }
             ]
         }
-        variations = get_param_variations(config)
+        variations = [[var for var, desc in group] for group in get_param_variant_groups(config)]
         expectation = [
-            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 5000, "overlap": 0.1}
+            [
+                {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 5000, "overlap": 0.1}
+            ]
         ]
         self.assertCountEqual(variations, expectation)
 
@@ -152,20 +160,36 @@ class TestDatasetModifier(TestCase):
                         "size": [1000, 2000, 10000],
                         "overlap": [0.1, 0.2, 0.3]
                     }
+                },
+                {
+                    "params": {
+                        "subset_selection": "AGE",
+                        "range": [0, 19]
+                    },
+                    "replacements": {
+                        "range": [[20, 39]]
+                    },
+                    "include_default": True
                 }
             ]
         }
-        variations = get_param_variations(config)
+        variations = [[var for var, desc in group] for group in get_param_variant_groups(config)]
         expectation = [
-            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.2},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.3},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.2},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.3},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.2},
-            {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.3}
+            [
+                {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.1},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.2},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 1000, "overlap": 0.3},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.1},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.2},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 2000, "overlap": 0.3},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.1},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.2},
+                {"subset_selection": "RANDOM", "seed": 1, "size": 10000, "overlap": 0.3}
+            ],
+            [
+                {"subset_selection": "AGE", "range": [20, 39]},
+                {"subset_selection": "AGE", "range": [0, 19]}
+            ]
         ]
         self.assertCountEqual(variations, expectation)
 
@@ -184,10 +208,12 @@ class TestDatasetModifier(TestCase):
                 }
             ]
         }
-        variations = get_param_variations(config)
+        variations = [[var for var, desc in group] for group in get_param_variant_groups(config)]
         expectation = [
-            {"subset_selection": "PLZ", "digits": 2, "equals": e}
-            for e in range(0, 99)
+            [
+                {"subset_selection": "PLZ", "digits": 2, "equals": e}
+                for e in range(0, 99)
+            ]
         ]
         self.assertCountEqual(variations, expectation)
 

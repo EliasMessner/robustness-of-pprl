@@ -2,6 +2,7 @@ import logging
 import os.path
 import shutil
 from pathlib import Path
+from typing import Union
 
 import pandas as pd
 from tqdm import tqdm
@@ -35,12 +36,16 @@ def prepare_logger():
 
 
 class DatasetModifier:
-    def __init__(self, omit_if_not_possible=True):
+    def __init__(self, omit_if_not_possible=True, omit_if_too_small=True, min_size_per_source=10):
         """
         :param omit_if_not_possible: Set to True (default) if a variant should be omitted instead of raising a
         ValueError, in case a specified ds-variant cannot be drawn (for example, a random sample with an overlap too large)
         """
         self.omit_if_not_possible = omit_if_not_possible
+        self.omit_if_too_small = omit_if_too_small
+        self.omitted_too_small = 0
+        self.omitted_invald_params = 0
+        self.min_size_per_source = min_size_per_source
         self.df = None
         self.df_a = None
         self.df_b = None
@@ -88,63 +93,58 @@ class DatasetModifier:
         self.true_matches1, self.true_matches2 = get_true_matches(self.df_a, self.df_b, self.global_id_col_name)
         self.base_overlap = get_overlap(self.df_a, self.df_b, self.global_id_col_name)
 
-    def create_variants_by_config_file(self, config_path, outfile_directory, omit_if_too_small=True,
-                                       min_size_per_source=10):
+    def create_variants_by_config_file(self, config_path, outfile_directory):
         """
         Read dataset modifier config file, create dataset variations as described in the file, write them all to
-        out_location folder. Each variant goes in a sub folder containing its parameters in params.json and its records
-        in records.csv.
-        :param omit_if_too_small: if set to True (default), only store variant if each source contains at least
-            min_size_per_source records.
-        :param min_size_per_source: minimum number of records required in each source to keep the dataset. Will be
-            ignored if omit_if_too_small is set to False. Defaults to 10.
+        out_location folder.
+        For each "variation" value in the config file, a separate sub-folder (dv group) is created.
+        In the group sub folder, each variant goes in a sub folder containing its parameters in params.json and its
+        records in records.csv.
         """
-        config = read_json(config_path)
-        variants = self.get_variants_by_config_dict(config)
+        param_variant_groups = get_param_variant_groups(read_json(config_path))
         Path(outfile_directory).mkdir(exist_ok=True)
+        group_id = 0
         variant_id = 0
-        omitted = 0
-        for (params, variant, comment) in tqdm(variants, desc="Saving Variants",
-                                               bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
-            if self._check_if_variant_should_be_omitted(min_size_per_source, omit_if_too_small, variant):
-                omitted += 1
-                continue
-            # create this variant's sub folder
-            variant_sub_folder = os.path.join(outfile_directory, f"DV_{variant_id}")
-            Path(variant_sub_folder).mkdir(exist_ok=True)
-            # create records.csv, params.json and comment.txt
-            variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
-            _create_params_json(params, variant, variant_sub_folder)
-            _create_comment_txt(comment, variant_sub_folder)
-            variant_id += 1
-        if omitted:
-            logging.info(f"Omitted {omitted} variants because they were smaller than {min_size_per_source}")
+        for param_variant_group, description in tqdm(param_variant_groups, desc="Groups"):
+            variant_group = self._get_ds_variants(param_variant_group)
+            min_group_size = min(variant_group, key=lambda v: v[0].shape[0])
+            # create this group's sub folder
+            group_sub_folder = os.path.join(outfile_directory, f"group_{group_id}")
+            Path(group_sub_folder).mkdir(exist_ok=True)
+            _create_description_txt(description, group_sub_folder)
+            for variant, params in tqdm(variant_group, desc="Variant",
+                                        bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                        leave=False):
+                # sample down if necessary # TODO
+                # if params.get("downsampling", None) == "TO_MIN_GROUP_SIZE":
+                #     variant = random_sample_wrapper(variant, min_group_size)
+                # create this variant's sub folder
+                variant_sub_folder = os.path.join(group_sub_folder, f"DV_{variant_id}")
+                Path(variant_sub_folder).mkdir(exist_ok=True)
+                # create records.csv, params.json and comment.txt
+                variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
+                _create_params_json(params, variant, variant_sub_folder)
+                variant_id += 1
+            group_id += 1
+        self.log_and_reset_omitted()
 
-    def get_variants_by_config_dict(self, config) -> list[(dict, pd.DataFrame)]:
-        """
-        Returns list of tuples: (params, variant), with params a dict of parameter key-value pairs, and variant the
-        variant created by those params as DataFrame.
-        """
-        self.read_csv_config_dict(config)  # read the dataset
+    def _get_ds_variants(self, param_variants):
         variants = []
-        omitted = 0
-        for params, comment in tqdm(get_param_variations(config), desc="Creating Variants",
-                                    bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+        for params in param_variants:
             variant = self.get_variant(params)
             if variant is None:
                 # variant could be None if for example a ValueError occurred due to impossible sample size in random
                 #  subset
-                omitted += 1
+                self.omitted_invald_params += 1
                 continue
-            variants.append((params, variant, comment))
-        if omitted:
-            logging.info(
-                f"Omitted {omitted} variants because they could not be created (possibly due to impossible parameter "
-                f"combination). See logs for further info.")
+            if self._check_if_variant_should_be_omitted(variant):
+                self.omitted_too_small += 1
+                continue
+            variants.append((variant, params))
         return variants
 
-    def _check_if_variant_should_be_omitted(self, min_size_per_source, omit_if_too_small, variant):
-        if not omit_if_too_small:
+    def _check_if_variant_should_be_omitted(self, variant):
+        if not self.omit_if_too_small:
             return False
         a_b = [x for _, x in variant.groupby(self.source_id_col_name)]  # split into the two sources
         if len(a_b) < 2:
@@ -152,7 +152,7 @@ class DatasetModifier:
             observed_min_size = 0
         else:
             observed_min_size = min(a_b[0].shape[0], a_b[1].shape[0])
-        if observed_min_size < min_size_per_source:
+        if observed_min_size < self.min_size_per_source:
             return True
         return False
 
@@ -166,7 +166,7 @@ class DatasetModifier:
         if params["subset_selection"] == "AGE":
             return self.age_subset(params)
 
-    def random_sample(self, params) -> pd.DataFrame | None:
+    def random_sample(self, params) -> Union[pd.DataFrame, None]:
         """
         Draw random sample from base dataset.
         If the desired overlap cannot be drawn, ...
@@ -226,6 +226,15 @@ class DatasetModifier:
         intersect = pd.merge(self.df_a, self.df_b, how="inner", on=[self.global_id_col_name])
         self.base_overlap = 2 * intersect.shape[0] / self.df.shape[0]
 
+    def log_and_reset_omitted(self):
+        if self.omitted_too_small:
+            logging.info(
+                f"Omitted {self.omitted_too_small} variants because they were smaller than min_size_per_source")
+        if self.omitted_invald_params:
+            logging.info(
+                f"Omitted {self.omitted_invald_params} variants because they could not be created (possibly due to impossible parameter "
+                f"combination). See logs for further info.")
+
 
 def random_sample(df_a: pd.DataFrame, df_b: pd.DataFrame, total_size: int, seed: int = None, overlap: float = None,
                   global_id_col_name="globalID") -> pd.DataFrame:
@@ -268,17 +277,19 @@ def random_sample_wrapper(df: pd.DataFrame, total_sample_size: int, seed: int = 
     return random_sample(df_a, df_b, total_sample_size, seed, overlap, global_id_col_name)
 
 
-def get_param_variations(config: dict):
+def get_param_variant_groups(config) -> list[(list[dict], str)]:
     """
-    Return a list of all parameter variations created from given config dict.
+    Return a grouped list of all parameter variations created from given config dict.
+    All parameter variations created from the same "variations" key, are contained in the same group.
     If variation lists for multiple parameters are given in one replacement, they
     are combined to their cartesian product.
     For each parameter variation, a tuple containing (variant, comment) is returned, comment being the comment in the
     config file describing this param variation, or an empty string if no comment was specified.
     """
-    param_vars = []
+    groups = []
     for variation in config["variations"]:
-        comment = variation.get("comment", "")
+        param_vars = []
+        description = variation.get("desc", "")
         params = variation["params"]
         replacements = variation.get("replacements", {})
         if variation.get("as_range", False):
@@ -286,10 +297,35 @@ def get_param_variations(config: dict):
         cartesian_prod = _get_cartesian_product(replacements.items())
         for kv_combination in cartesian_prod:
             param_variation = _get_param_variation(kv_combination, params)
-            param_vars.append((param_variation, comment))
+            param_vars.append(param_variation)
         if variation.get("include_default", False):
-            param_vars.append((params, comment))
-    return param_vars
+            param_vars.append(params)
+        groups.append((param_vars, description))
+    return groups
+
+
+# def get_param_variations(config: dict):
+#     """
+#     Return a list of all parameter variations created from given config dict.
+#     If variation lists for multiple parameters are given in one replacement, they
+#     are combined to their cartesian product.
+#     For each parameter variation, a tuple containing (variant, comment) is returned, comment being the comment in the
+#     config file describing this param variation, or an empty string if no comment was specified.
+#     """
+#     param_vars = []
+#     for variation in config["variations"]:
+#         comment = variation.get("comment", "")
+#         params = variation["params"]
+#         replacements = variation.get("replacements", {})
+#         if variation.get("as_range", False):
+#             handle_ranges(replacements)
+#         cartesian_prod = _get_cartesian_product(replacements.items())
+#         for kv_combination in cartesian_prod:
+#             param_variation = _get_param_variation(kv_combination, params)
+#             param_vars.append((param_variation, comment))
+#         if variation.get("include_default", False):
+#             param_vars.append((params, comment))
+#     return param_vars
 
 
 def handle_ranges(replacements):
@@ -338,8 +374,8 @@ def _create_params_json(params, variant, variant_sub_folder):
     write_json(params, os.path.join(variant_sub_folder, "params.json"))
 
 
-def _create_comment_txt(comment: str, variant_sub_folder):
-    outpath = os.path.join(variant_sub_folder, "comment.txt")
+def _create_description_txt(comment: str, location):
+    outpath = os.path.join(location, "desc.txt")
     with open(outpath, 'w') as outfile:
         outfile.write(comment)
 

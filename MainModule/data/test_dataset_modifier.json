@@ -6,15 +6,31 @@
   "variations":[
     {
       "params": {
-        "subset_selection":  "RANDOM",
-        "seed":  1,
+        "subset_selection": "RANDOM",
+        "seed": 1,
         "size": null,
         "overlap": 0.2
       },
       "replacements": {
-        "size": [2000, 3000, 4000]
+        "size": [
+          2000,
+          3000,
+          4000
+        ]
       },
-      "comment": "A comment about this variation, optional"
+      "desc": "A comment about this variation, optional"
+    },
+    {
+      "params": {
+        "subset_selection":  "RANDOM",
+        "seed":  1,
+        "size": 10000,
+        "overlap": null
+      },
+      "replacements": {
+        "overlap": [0.1, 0.3]
+      },
+      "desc": "this is the second variation!"
     }
   ]
 }
