@@ -1,0 +1,31 @@
+{
+  "base_dataset": "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv",
+  "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
+  "source_id_col_name": "sourceID",
+  "global_id_col_name": "globalID",
+  "variations": [
+    {
+      "params": {
+        "subset_selection": "ATTRIBUTE_VALUE",
+        "column": "GENDER",
+        "equals": null,
+        "downsampling": "TO_MIN_GROUP_SIZE"
+      },
+      "replacements": {
+        "equals": ["M", "F"]
+      },
+      "desc": "Male and Female Subsets, sampled down to equal size (the size of the smaller one)"
+    },
+    {
+      "params": {
+        "subset_selection": "ATTRIBUTE_VALUE",
+        "column": "GENDER",
+        "equals": null
+      },
+      "replacements": {
+        "equals": ["M", "F"]
+      },
+      "desc": "Male and Female Subsets with original sizes."
+    }
+  ]
+}

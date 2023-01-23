@@ -1,9 +1,13 @@
+import shutil
 from unittest import TestCase, main
 
+from constants import dataset_variants_dir, dm_config_path
 from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
 from dataset_properties import get_overlap, split_by_source_id
 import pandas as pd
 from datetime import datetime as dt
+
+from util import read_json
 
 filepath = "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
 col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH,PLACEOFBIRTH,COUNTRY,CITY,PLZ," \
@@ -222,6 +226,30 @@ class TestDatasetModifier(TestCase):
         pd.testing.assert_frame_equal(all_genders, self.sg.df, check_like=True)
         f = self.sg.attribute_value_subset(params={"column": "GENDER", "equals": "F"})
         self.assertTrue(f.eq("F").all(axis=0)["GENDER"])
+
+    def test_downsampling(self):
+        self.sg.load_dataset_by_config_file("data/dataset_modifier_downsampling.json")
+        shutil.rmtree(dataset_variants_dir, ignore_errors=True)  # delete existing dataset variants
+        self.sg.create_variants_by_config_file("data/dataset_modifier_downsampling.json", dataset_variants_dir)
+        self.assertEqual(
+            read_json("data/dataset_variants/group_0/DV_1/params.json"),
+            {
+                "subset_selection": "ATTRIBUTE_VALUE",
+                "column": "GENDER",
+                "equals": "F",
+                "downsampling": "TO_MIN_GROUP_SIZE",
+                "size": 86605
+            }
+        )
+        self.assertEqual(
+            read_json("data/dataset_variants/group_1/DV_3/params.json"),
+            {
+                "subset_selection": "ATTRIBUTE_VALUE",
+                "column": "GENDER",
+                "equals": "F",
+                "size": 106860
+            }
+        )
 
 
 if __name__ == '__main__':

@@ -107,7 +107,7 @@ class DatasetModifier:
         variant_id = 0
         for param_variant_group, description in tqdm(param_variant_groups, desc="Groups"):
             variant_group = self._get_ds_variants(param_variant_group)
-            min_group_size = min(variant_group, key=lambda v: v[0].shape[0])
+            min_group_size = min(v[0].shape[0] for v in variant_group)  # size of the smallest variant in this group
             # create this group's sub folder
             group_sub_folder = os.path.join(outfile_directory, f"group_{group_id}")
             Path(group_sub_folder).mkdir(exist_ok=True)
@@ -116,8 +116,8 @@ class DatasetModifier:
                                         bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
                                         leave=False):
                 # sample down if necessary # TODO
-                # if params.get("downsampling", None) == "TO_MIN_GROUP_SIZE":
-                #     variant = random_sample_wrapper(variant, min_group_size)
+                if params.get("downsampling", None) == "TO_MIN_GROUP_SIZE":
+                    variant = random_sample_wrapper(variant, min_group_size)
                 # create this variant's sub folder
                 variant_sub_folder = os.path.join(group_sub_folder, f"DV_{variant_id}")
                 Path(variant_sub_folder).mkdir(exist_ok=True)
@@ -374,10 +374,10 @@ def _create_params_json(params, variant, variant_sub_folder):
     write_json(params, os.path.join(variant_sub_folder, "params.json"))
 
 
-def _create_description_txt(comment: str, location):
+def _create_description_txt(desc: str, location):
     outpath = os.path.join(location, "desc.txt")
     with open(outpath, 'w') as outfile:
-        outfile.write(comment)
+        outfile.write(desc)
 
 
 if __name__ == "__main__":
