@@ -115,9 +115,8 @@ class DatasetModifier:
             for variant, params in tqdm(variant_group, desc="Variant",
                                         bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
                                         leave=False):
-                # sample down if necessary # TODO
-                if params.get("downsampling", None) == "TO_MIN_GROUP_SIZE":
-                    variant = random_sample_wrapper(variant, min_group_size)
+                # sample down if necessary
+                variant = _sample_down_if_needed(min_group_size, params, variant)
                 # create this variant's sub folder
                 variant_sub_folder = os.path.join(group_sub_folder, f"DV_{variant_id}")
                 Path(variant_sub_folder).mkdir(exist_ok=True)
@@ -165,6 +164,7 @@ class DatasetModifier:
             return self.plz_subset(params)
         if params["subset_selection"] == "AGE":
             return self.age_subset(params)
+        # TODO add cases for error rate and attribute value frequency
 
     def random_sample(self, params) -> Union[pd.DataFrame, None]:
         """
@@ -293,7 +293,7 @@ def get_param_variant_groups(config) -> list[(list[dict], str)]:
         params = variation["params"]
         replacements = variation.get("replacements", {})
         if variation.get("as_range", False):
-            handle_ranges(replacements)
+            _handle_ranges(replacements)
         cartesian_prod = _get_cartesian_product(replacements.items())
         for kv_combination in cartesian_prod:
             param_variation = _get_param_variation(kv_combination, params)
@@ -304,31 +304,7 @@ def get_param_variant_groups(config) -> list[(list[dict], str)]:
     return groups
 
 
-# def get_param_variations(config: dict):
-#     """
-#     Return a list of all parameter variations created from given config dict.
-#     If variation lists for multiple parameters are given in one replacement, they
-#     are combined to their cartesian product.
-#     For each parameter variation, a tuple containing (variant, comment) is returned, comment being the comment in the
-#     config file describing this param variation, or an empty string if no comment was specified.
-#     """
-#     param_vars = []
-#     for variation in config["variations"]:
-#         comment = variation.get("comment", "")
-#         params = variation["params"]
-#         replacements = variation.get("replacements", {})
-#         if variation.get("as_range", False):
-#             handle_ranges(replacements)
-#         cartesian_prod = _get_cartesian_product(replacements.items())
-#         for kv_combination in cartesian_prod:
-#             param_variation = _get_param_variation(kv_combination, params)
-#             param_vars.append((param_variation, comment))
-#         if variation.get("include_default", False):
-#             param_vars.append((params, comment))
-#     return param_vars
-
-
-def handle_ranges(replacements):
+def _handle_ranges(replacements):
     for k, v in replacements.items():
         if isinstance(v, list):
             replacements[k] = range(*v)
@@ -362,6 +338,20 @@ def _get_cartesian_product(items: list[(str, any)]):
         all_kv_lists.append(kv_list)
     cartesian_prod = itertools.product(*all_kv_lists)  # = [((size, 1000), (overlap, 0.1)), ...]
     return [*cartesian_prod]
+
+
+def _sample_down_if_needed(min_group_size, params, variant):
+    downsampling_kind = params.get("downsampling", None)
+    if downsampling_kind is None:
+        return variant
+    if downsampling_kind == "TO_MIN_GROUP_SIZE":
+        downsampling_size = min_group_size
+    elif isinstance(downsampling_kind, int):
+        downsampling_size = downsampling_kind
+    else:
+        raise ValueError(f"Bad downsampling parameter '{downsampling_kind}'.")
+    variant = random_sample_wrapper(variant, downsampling_size)
+    return variant
 
 
 def _create_params_json(params, variant, variant_sub_folder):
