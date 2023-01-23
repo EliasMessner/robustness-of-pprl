@@ -1,4 +1,5 @@
 import json
+import os
 from sys import argv
 
 
@@ -13,6 +14,10 @@ def write_json(data, path, mode="w", indent=2):
         json.dump(data, f, indent=indent)
 
 
+def read_txt(path) -> str:
+    return "".join(open(path, "r").readlines())
+
+
 def get_config_path_from_argv(default: str):
     """
     Check if config path was passed as command line argument,
@@ -24,3 +29,7 @@ def get_config_path_from_argv(default: str):
     if len(argv) == 2:
         return argv[1]
     raise ValueError("Too many command line arguments.")
+
+
+def list_folder_names(dir_path):
+    return next(os.walk(dir_path))[1]

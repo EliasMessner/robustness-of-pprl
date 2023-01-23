@@ -12,7 +12,7 @@ from tqdm import tqdm
 from constants import *
 from eval_adapter import EvalAdapter
 from tracker import Tracker
-from util import read_json, write_json, get_config_path_from_argv
+from util import read_json, write_json, get_config_path_from_argv, read_txt, list_folder_names
 
 
 def main():
@@ -47,11 +47,19 @@ def conduct_experiment(exp_params, tracker):
     exp_out_folder = os.path.join(matchings_dir, f"exp_{exp_no}")
     Path(exp_out_folder).mkdir(exist_ok=True, parents=True)
     matcher_configs = get_matcher_configs(exp_params)
-    variants = os.listdir(dataset_variants_dir)  # one run per matcher_config per dataset_variant
-    for matcher_config, variant_folder_name in tqdm(list(itertools.product(matcher_configs, variants)),
-                                                    desc="Runs", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
-                                                    leave=False):
-        conduct_run(exp_out_folder, matcher_config, tracker, variant_folder_name)
+    variant_groups = os.listdir(dataset_variants_dir)  # one run per matcher_config per dataset_variant
+    for variant_group in tqdm(variant_groups, desc="Run-Groups", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                              leave=False):
+        variant_group_path = os.path.join(dataset_variants_dir, variant_group)
+        variants = list_folder_names(variant_group_path)
+        parent_run_description = read_txt(os.path.normpath(os.path.join(variant_group_path, "desc.txt")))
+        with mlflow.start_run(experiment_id=tracker.get_current_exp_id(), nested=True, description=parent_run_description):
+            for matcher_config, variant_folder_name in tqdm(list(itertools.product(matcher_configs, variants)),
+                                                            desc="Runs",
+                                                            bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                                            leave=False):
+                variant_folder_name = os.path.join(variant_group, variant_folder_name)
+                conduct_run(exp_out_folder, matcher_config, tracker, variant_folder_name)
 
 
 def conduct_run(exp_out_folder, matcher_config, tracker, variant_folder_name):
@@ -83,7 +91,7 @@ def write_matcher_config(matcher_config: dict, run_out_folder: str) -> str:
     """
     create config for matcher for this run and return its absolute path
     """
-    Path(run_out_folder).mkdir(exist_ok=True)
+    Path(run_out_folder).mkdir(exist_ok=True, parents=True)
     matcher_config_path = os.path.join(run_out_folder, "config.json")
     write_json(matcher_config, matcher_config_path)
     return os.path.abspath(matcher_config_path)
@@ -94,7 +102,7 @@ def call_rl_module(data_path, outfile_path, config_path: str, config: dict, trac
     Call RLModule with given parameters.
     Evaluate and track run.
     """
-    with mlflow.start_run(experiment_id=tracker.get_current_exp_id()):
+    with mlflow.start_run(experiment_id=tracker.get_current_exp_id(), nested=True):
         cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
                "-d", data_path,
                "-o", outfile_path,
@@ -111,12 +119,14 @@ def call_rl_module(data_path, outfile_path, config_path: str, config: dict, trac
         data_clm_names = read_json(dm_config_path)["col_names"]
         eval_adapter = EvalAdapter(data_path, data_clm_names=data_clm_names, pred_path=outfile_path)
         dv_params = read_json(os.path.normpath(os.path.join(data_path, "..", "params.json")))
+        desc_path = os.path.normpath(os.path.join(data_path, "..", "..", "desc.txt"))
         mlflow.log_metrics(eval_adapter.metrics())
         mlflow.log_params(dv_params)
         mlflow.set_tags(config)
         mlflow.log_artifact(data_path)
         mlflow.log_artifact(outfile_path)
         mlflow.log_artifact(config_path)
+        mlflow.log_artifact(desc_path)
 
 
 if __name__ == "__main__":
