@@ -104,16 +104,18 @@ class DatasetModifier:
         Path(outfile_directory).mkdir(exist_ok=True)
         variant_id = 0
         omitted = 0
-        for (params, variant) in tqdm(variants, desc="Saving Variants", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+        for (params, variant, comment) in tqdm(variants, desc="Saving Variants",
+                                               bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
             if self._check_if_variant_should_be_omitted(min_size_per_source, omit_if_too_small, variant):
                 omitted += 1
                 continue
             # create this variant's sub folder
             variant_sub_folder = os.path.join(outfile_directory, f"DV_{variant_id}")
             Path(variant_sub_folder).mkdir(exist_ok=True)
-            # create records.csv and params.json
+            # create records.csv, params.json and comment.txt
             variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
             _create_params_json(params, variant, variant_sub_folder)
+            _create_comment_txt(comment, variant_sub_folder)
             variant_id += 1
         if omitted:
             logging.info(f"Omitted {omitted} variants because they were smaller than {min_size_per_source}")
@@ -126,15 +128,15 @@ class DatasetModifier:
         self.read_csv_config_dict(config)  # read the dataset
         variants = []
         omitted = 0
-        for params in tqdm(get_param_variations(config), desc="Creating Variants",
-                           bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+        for params, comment in tqdm(get_param_variations(config), desc="Creating Variants",
+                                    bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
             variant = self.get_variant(params)
             if variant is None:
                 # variant could be None if for example a ValueError occurred due to impossible sample size in random
                 #  subset
                 omitted += 1
                 continue
-            variants.append((params, variant))
+            variants.append((params, variant, comment))
         if omitted:
             logging.info(
                 f"Omitted {omitted} variants because they could not be created (possibly due to impossible parameter "
@@ -174,7 +176,7 @@ class DatasetModifier:
         size (int): number of records to draw all together (the ratio between source A and B will be preserved as
         closely as possible after rounding)
         seed (int): Seed for reproducibility
-        overlap (float) (optional): ratio of true matches to whole size of one source, if not specified the ratio will
+        overlap (float) (optional): (2* number of matching pairs) / (total data size), if not specified the ratio will
         be the same as in the base dataset
         :return: random sample drawn from base dataset
         """
@@ -247,7 +249,7 @@ def random_sample(df_a: pd.DataFrame, df_b: pd.DataFrame, total_size: int, seed:
     # get the corresponding partners from B
     b_matches = true_matches_b[true_matches_b[global_id_col_name].isin(a_matches[global_id_col_name])]
     # draw size_a - size_overlap from non-matches of source A
-    a_non_matches = df_a[~df_a[global_id_col_name].isin(true_matches_a[global_id_col_name])]\
+    a_non_matches = df_a[~df_a[global_id_col_name].isin(true_matches_a[global_id_col_name])] \
         .sample(size_a - size_overlap, random_state=seed)
     # likewise for B
     b_non_matches = df_b[~df_b[global_id_col_name].isin(true_matches_b[global_id_col_name])] \
@@ -271,9 +273,12 @@ def get_param_variations(config: dict):
     Return a list of all parameter variations created from given config dict.
     If variation lists for multiple parameters are given in one replacement, they
     are combined to their cartesian product.
+    For each parameter variation, a tuple containing (variant, comment) is returned, comment being the comment in the
+    config file describing this param variation, or an empty string if no comment was specified.
     """
     param_vars = []
     for variation in config["variations"]:
+        comment = variation.get("comment", "")
         params = variation["params"]
         replacements = variation.get("replacements", {})
         if variation.get("as_range", False):
@@ -281,9 +286,9 @@ def get_param_variations(config: dict):
         cartesian_prod = _get_cartesian_product(replacements.items())
         for kv_combination in cartesian_prod:
             param_variation = _get_param_variation(kv_combination, params)
-            param_vars.append(param_variation)
+            param_vars.append((param_variation, comment))
         if variation.get("include_default", False):
-            param_vars.append(params)
+            param_vars.append((params, comment))
     return param_vars
 
 
@@ -331,6 +336,12 @@ def _create_params_json(params, variant, variant_sub_folder):
     params["size"] = actual_size
     # create params.json
     write_json(params, os.path.join(variant_sub_folder, "params.json"))
+
+
+def _create_comment_txt(comment: str, variant_sub_folder):
+    outpath = os.path.join(variant_sub_folder, "comment.txt")
+    with open(outpath, 'w') as outfile:
+        outfile.write(comment)
 
 
 if __name__ == "__main__":
