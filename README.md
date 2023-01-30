@@ -1,3 +1,6 @@
+This Project is part of my bachelor's thesis at Leipzig University.
+Its purpose is to test the robustness of Privacy Preserving Record Linkage against dataset variations.
+
 # RLModule
 
 Requires JDK 17 or newer.
