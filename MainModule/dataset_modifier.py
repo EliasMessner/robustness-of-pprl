@@ -10,6 +10,7 @@ import itertools
 from datetime import datetime as dt
 
 from dataset_properties import get_overlap, get_true_matches, split_by_source_id
+from error_rates import filter_by_error_rate
 from util import read_json, write_json, get_config_path_from_argv
 from constants import dm_config_path, dataset_variants_dir, logs_dir
 
@@ -104,30 +105,20 @@ class DatasetModifier:
         param_variant_groups = get_param_variant_groups(read_json(config_path))
         Path(outfile_directory).mkdir(exist_ok=True)
         group_id = 0
-        variant_id = 0
         for param_variant_group, description in tqdm(param_variant_groups, desc="Groups"):
+            # Downsampling must be done separately,
+            # when all ds variants have been created,
+            # because the minimum ds size in the group must be known first.
             variant_group = self._get_ds_variants(param_variant_group)
-            min_group_size = min(v[0].shape[0] for v in variant_group)  # size of the smallest variant in this group
-            # create this group's sub folder
-            group_sub_folder = os.path.join(outfile_directory, f"group_{group_id}")
-            Path(group_sub_folder).mkdir(exist_ok=True)
-            _create_description_txt(description, group_sub_folder)
-            for variant, params in tqdm(variant_group, desc="Variant",
-                                        bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
-                                        leave=False):
-                # sample down if necessary
-                variant = _sample_down_if_needed(min_group_size, params, variant)
-                # create this variant's sub folder
-                variant_sub_folder = os.path.join(group_sub_folder, f"DV_{variant_id}")
-                Path(variant_sub_folder).mkdir(exist_ok=True)
-                # create records.csv, params.json and comment.txt
-                variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
-                _create_params_json(params, variant, variant_sub_folder)
-                variant_id += 1
+            variant_group = _sample_all_down_if_needed(variant_group)
+            _write_group_folder(variant_group, group_id, description, outfile_directory)
             group_id += 1
         self.log_and_reset_omitted()
 
     def _get_ds_variants(self, param_variants):
+        """
+        Return a list of variants from a given list of parameter combinations.
+        """
         variants = []
         for params in param_variants:
             variant = self.get_variant(params)
@@ -145,17 +136,15 @@ class DatasetModifier:
     def _check_if_variant_should_be_omitted(self, variant):
         if not self.omit_if_too_small:
             return False
-        a_b = [x for _, x in variant.groupby(self.source_id_col_name)]  # split into the two sources
-        if len(a_b) < 2:
-            # at least one of the two sources has size 0
-            observed_min_size = 0
-        else:
-            observed_min_size = min(a_b[0].shape[0], a_b[1].shape[0])
-        if observed_min_size < self.min_size_per_source:
+        a, b = split_by_source_id(variant)
+        if min(a.shape[0], b.shape[0]) < self.min_size_per_source:
             return True
         return False
 
     def get_variant(self, params) -> pd.DataFrame:
+        """
+        Does not apply down-sampling because minimum dataset size in group must be known for that.
+        """
         if params["subset_selection"] == "RANDOM":
             return self.random_sample(params)
         if params["subset_selection"] == "ATTRIBUTE_VALUE":
@@ -164,7 +153,9 @@ class DatasetModifier:
             return self.plz_subset(params)
         if params["subset_selection"] == "AGE":
             return self.age_subset(params)
-        # TODO add cases for error rate and attribute value frequency
+        if params["subset_selection"] == "ERROR_RATE":
+            return self.error_rate_subset(params)
+        # TODO add cases for attribute value frequency
 
     def random_sample(self, params) -> Union[pd.DataFrame, None]:
         """
@@ -214,6 +205,14 @@ class DatasetModifier:
         min_age = params["range"][0]
         max_age = params["range"][1]
         return self.df[self.df["YEAROFBIRTH"].map(lambda yob: min_age <= (this_year - yob) <= max_age)]
+
+    def error_rate_subset(self, params):
+        # TODO write test case and example config
+        min_e, max_e = params["range"]  # TODO check if unpacking ok
+        return filter_by_error_rate(self.df,
+                                    min_e, max_e, params["measure"],
+                                    self.global_id_col_name, self.source_id_col_name,
+                                    params["preserve_overlap"], params["seed"])
 
     def _calculate_base_overlap(self):
         """
@@ -340,18 +339,69 @@ def _get_cartesian_product(items: list[(str, any)]):
     return [*cartesian_prod]
 
 
-def _sample_down_if_needed(min_group_size, params, variant):
-    downsampling_kind = params.get("downsampling", None)
-    if downsampling_kind is None:
+def _sample_down_if_needed(min_group_size, downsampling_mode, variant):
+    """
+    Return a down-sampled version of the passed dataset variant according to the specified downsampling mode.
+    Downsampling mode can be one of:
+        None                -> return the original variant
+        "TO_MIN_GROUP_SIZE" -> sample down to the min_group_size (assumed to be the size of the smallest subset in the
+                                group)
+        An integer          -> sample down to the specified size
+    """
+    if downsampling_mode is None:
         return variant
-    if downsampling_kind == "TO_MIN_GROUP_SIZE":
+    if downsampling_mode == "TO_MIN_GROUP_SIZE":
         downsampling_size = min_group_size
-    elif isinstance(downsampling_kind, int):
-        downsampling_size = downsampling_kind
+    elif isinstance(downsampling_mode, int):
+        downsampling_size = downsampling_mode
     else:
-        raise ValueError(f"Bad downsampling parameter '{downsampling_kind}'.")
+        raise ValueError(f"Bad downsampling parameter '{downsampling_mode}'.")
     variant = random_sample_wrapper(variant, downsampling_size)
     return variant
+
+
+def _sample_all_down_if_needed(variant_group):
+    """
+    On each element in the passed list do:
+
+        Get a down-sampled version of the passed dataset variant according to the specified downsampling mode.
+        Downsampling mode can be one of:
+            None                -> return the original variant
+            "TO_MIN_GROUP_SIZE" -> sample down to the size of the smallest subset in the group
+            An integer          -> sample down to the specified size
+
+    And return the resulting list.
+    Each element in the passed list should be tuple of a dataset variant and its parameter dict, where the downsampling
+    mode is specified under the top-level key "downsampling".
+    """
+    result = []
+    min_group_size = min(variant[0].shape[0] for variant in variant_group)  # size of the smallest variant in this group
+    for variant, params in tqdm(variant_group, desc="Variant",
+                                bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                leave=False):
+        # sample down if necessary
+        downsampling_mode = params.get("downsampling", None)
+        variant = _sample_down_if_needed(min_group_size, downsampling_mode, variant)
+        result.append(variant)
+    return result
+
+
+def _write_group_folder(variant_group, group_id, description, outfile_directory):
+    # create this group's sub folder
+    group_sub_folder = os.path.join(outfile_directory, f"group_{group_id}")
+    Path(group_sub_folder).mkdir(exist_ok=True)
+    _create_description_txt(description, group_sub_folder)
+    variant_id = 0
+    for variant, params in tqdm(variant_group, desc="Variant",
+                                bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                leave=False):
+        # create this variant's sub folder
+        variant_sub_folder = os.path.join(group_sub_folder, f"DV_{variant_id}")
+        Path(variant_sub_folder).mkdir(exist_ok=True)
+        # create records.csv, params.json and comment.txt
+        variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
+        _create_params_json(params, variant, variant_sub_folder)
+        variant_id += 1
 
 
 def _create_params_json(params, variant, variant_sub_folder):
