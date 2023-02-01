@@ -1,13 +1,16 @@
+import os.path
 import shutil
 from unittest import TestCase, main
 
-from constants import dataset_variants_dir, dm_config_path
+import error_rates
+from constants import dataset_variants_dir, dataset_variants_dir_test
 from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
 from dataset_properties import get_overlap, split_by_source_id
 import pandas as pd
 from datetime import datetime as dt
 
-from util import read_json
+from error_rates import get_all_errors
+from util import read_json, list_folder_names
 
 filepath = "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
 col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH,PLACEOFBIRTH,COUNTRY,CITY,PLZ," \
@@ -227,11 +230,12 @@ class TestDatasetModifier(TestCase):
         self.assertTrue(f.eq("F").all(axis=0)["GENDER"])
 
     def test_downsampling(self):
-        self.sg.load_dataset_by_config_file("data/dataset_modifier_downsampling.json")
-        shutil.rmtree(dataset_variants_dir, ignore_errors=True)  # delete existing dataset variants
-        self.sg.create_variants_by_config_file("data/dataset_modifier_downsampling.json", dataset_variants_dir)
+        self.sg.load_dataset_by_config_file("data/test_dataset_modifier_downsampling.json")
+        shutil.rmtree(dataset_variants_dir_test, ignore_errors=True)  # delete existing dataset variants
+        self.sg.create_variants_by_config_file("data/test_dataset_modifier_downsampling.json",
+                                               dataset_variants_dir_test)
         self.assertEqual(
-            read_json("data/dataset_variants/group_0/DV_1/params.json"),
+            read_json(os.path.join(dataset_variants_dir_test, "group_0/DV_1/params.json")),
             {
                 "subset_selection": "ATTRIBUTE_VALUE",
                 "column": "GENDER",
@@ -241,7 +245,7 @@ class TestDatasetModifier(TestCase):
             }
         )
         self.assertEqual(
-            read_json("data/dataset_variants/group_1/DV_3/params.json"),
+            read_json(os.path.join(dataset_variants_dir_test, "group_1/DV_1/params.json")),
             {
                 "subset_selection": "ATTRIBUTE_VALUE",
                 "column": "GENDER",
@@ -249,6 +253,34 @@ class TestDatasetModifier(TestCase):
                 "size": 106860
             }
         )
+
+    def test_error_rate_selection(self):
+        self.sg.load_dataset_by_config_file("data/test_dataset_modifier_error_rate.json")
+        shutil.rmtree(dataset_variants_dir_test, ignore_errors=True)  # delete existing dataset variants
+        self.sg.create_variants_by_config_file("data/test_dataset_modifier_error_rate.json", dataset_variants_dir_test)
+        param_groups = get_param_variant_groups(read_json("data/test_dataset_modifier_error_rate.json"))
+        variant_groups_folders = list_folder_names(dataset_variants_dir_test)
+        self.assertEqual(len(param_groups), len(variant_groups_folders))
+        for (param_group, desc), variant_group_folder in zip(param_groups, variant_groups_folders):
+            variant_group = list_folder_names(os.path.join(dataset_variants_dir_test, variant_group_folder))
+            param_group = [params for params in param_group
+                           if not self.sg._check_if_variant_should_be_omitted(self.sg.get_variant(params))]
+            self.assertEqual(len(param_group), len(variant_group))
+            for params, variant_folder in zip(param_group, variant_group):
+                stored_params = read_json(os.path.join(dataset_variants_dir_test, variant_group_folder,
+                                                       variant_folder, "params.json"))
+                for k, v in params.items():
+                    self.assertEqual(v, stored_params[k])
+                variant = pd.read_csv(os.path.join(dataset_variants_dir_test, variant_group_folder, variant_folder,
+                                                   "records.csv"),
+                                      names=col_names, dtype={"PLZ": str}, keep_default_na=False)
+                self.error_rates_ok(variant, params)
+
+    def error_rates_ok(self, df, params):
+        min_e, max_e = params["range"]
+        measure = params["measure"]
+        errors = get_all_errors(df, measure)
+        self.assertTrue(all([min_e <= e <= max_e for e in errors]))
 
 
 if __name__ == '__main__':

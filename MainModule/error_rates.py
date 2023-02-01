@@ -1,3 +1,5 @@
+from typing import Union
+
 import pandas as pd
 import numpy as np
 import nltk
@@ -35,25 +37,29 @@ def avg_edit_distance(row, attrs, suffixes=None):
     )
 
 
-def get_all_errors(df: pd.DataFrame, measure: callable) -> pd.Series:
+def get_all_errors(df: pd.DataFrame, measure: Union[callable, str]) -> pd.Series:
+    measure = globals()[measure] if isinstance(measure, str) else measure  # resolve method name if given as string
     df_a, df_b = split_by_source_id(df)
     pairs = get_pairs(df_a, df_b)
-    return pairs.apply(measure, axis=1)
+    attrs = [col for col in df.columns.values if not col.lower().endswith("id")]
+    return pairs.apply(lambda row: measure(row, attrs), axis=1)
 
 
-def filter_by_error_rate(df: pd.DataFrame, min_e, max_e, measure: callable, global_id_col_name="globalID",
+def filter_by_error_rate(df: pd.DataFrame, min_e, max_e, measure: Union[callable, str], global_id_col_name="globalID",
                          source_id_col_name="sourceID", preserve_overlap=False, seed: int = None):
     """
     Filter all matching pairs so that only those with the specified error rate remain.
     If preserve_overlap = True, sample down non matches to the same factor. In that case, a seed can be specified.
     """
+    measure = globals()[measure] if isinstance(measure, str) else measure  # resolve method name if given as string
     if not preserve_overlap and seed is not None:
         raise ValueError("Seed should only be specified if preserve_overlap = True.")
     if min_e > max_e:
         raise ValueError("min_e must be smaller or equal to max_e")
     df_a, df_b = split_by_source_id(df, source_id_col_name)
     pairs = get_pairs(df_a, df_b)
-    pairs["error"] = pairs.apply(measure, axis=1)
+    attrs = [col for col in df.columns.values if not col.lower().endswith("id")]
+    pairs["error"] = pairs.apply(lambda row: measure(row, attrs), axis=1)
     pairs_filtered = pairs[(pairs["error"] >= min_e) &
                            (pairs["error"] <= max_e)]
     matches_a, matches_b = get_true_matches(df_a, df_b, global_id_col_name)
@@ -65,5 +71,5 @@ def filter_by_error_rate(df: pd.DataFrame, min_e, max_e, measure: callable, glob
     if preserve_overlap:
         # scale down non-matches to the same factor
         sample_size = round(non_matches.shape[0] * matches_a_filtered.shape[0] / matches_a.shape[0])
-        non_matches = non_matches.sample(sample_size, seed)
+        non_matches = non_matches.sample(n=sample_size, random_state=seed)
     return pd.concat([matches_a_filtered, matches_b_filtered, non_matches])
