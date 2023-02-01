@@ -11,6 +11,8 @@ from datetime import datetime as dt
 
 from dataset_properties import get_overlap, get_true_matches, split_by_source_id
 from error_rates import filter_by_error_rate
+from attr_val_freq import attr_value_distribution_random_sample
+from random_sample import random_sample, random_sample_wrapper
 from util import read_json, write_json, get_config_path_from_argv
 from constants import dm_config_path, dataset_variants_dir, logs_dir
 
@@ -136,7 +138,10 @@ class DatasetModifier:
     def _check_if_variant_should_be_omitted(self, variant):
         if not self.omit_if_too_small:
             return False
-        a, b = split_by_source_id(variant)
+        sources = split_by_source_id(variant, number_of_sources=None)
+        if len(sources) < 2:
+            return True
+        a, b = sources
         if min(a.shape[0], b.shape[0]) < self.min_size_per_source:
             return True
         return False
@@ -155,7 +160,6 @@ class DatasetModifier:
             return self.age_subset(params)
         if params["subset_selection"] == "ERROR_RATE":
             return self.error_rate_subset(params)
-        # TODO add cases for attribute value frequency
 
     def random_sample(self, params) -> Union[pd.DataFrame, None]:
         """
@@ -185,7 +189,7 @@ class DatasetModifier:
                 raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
     def attribute_value_subset(self, params: dict) -> pd.DataFrame:
-        assert len({"range", "equals", "is_in"} & params.keys()) == 1  # exactly one of these keys must be present
+        assert len({"range", "equals", "is_in", "dist"} & params.keys()) == 1  # exactly one of these keys must be present
         if "equals" in params:
             return self.df[self.df[params["column"]] == params["equals"]]
         if "is_in" in params:
@@ -194,6 +198,12 @@ class DatasetModifier:
             min_v = params["range"][0]
             max_v = params["range"][1]
             return self.df[self.df[params["column"]].map(lambda value: min_v <= value <= max_v)]
+        if "dist" in params:
+            return attr_value_distribution_random_sample(self.df,
+                                                         desired_distr=params["dist"],
+                                                         desired_size=params["desired_size"],
+                                                         attr_name=params["column"],
+                                                         seed=params.get("seed", None))
 
     def plz_subset(self, params) -> pd.DataFrame:
         n = params["digits"]  # first n digits
@@ -207,12 +217,11 @@ class DatasetModifier:
         return self.df[self.df["YEAROFBIRTH"].map(lambda yob: min_age <= (this_year - yob) <= max_age)]
 
     def error_rate_subset(self, params):
-        # TODO write test case and example config
-        min_e, max_e = params["range"]  # TODO check if unpacking ok
+        min_e, max_e = params["range"]
         return filter_by_error_rate(self.df,
                                     min_e, max_e, params["measure"],
                                     self.global_id_col_name, self.source_id_col_name,
-                                    params["preserve_overlap"], params["seed"])
+                                    params.get("preserve_overlap", False), params.get("seed", None))
 
     def _calculate_base_overlap(self):
         """
@@ -233,47 +242,6 @@ class DatasetModifier:
             logging.info(
                 f"Omitted {self.omitted_invald_params} variants because they could not be created (possibly due to impossible parameter "
                 f"combination). See logs for further info.")
-
-
-def random_sample(df_a: pd.DataFrame, df_b: pd.DataFrame, total_size: int, seed: int = None, overlap: float = None,
-                  global_id_col_name="globalID") -> pd.DataFrame:
-    """
-    For documentation see DatasetModifier.random_sample
-    """
-    if overlap is None:
-        overlap = get_overlap(df_a, df_b)
-    df = pd.concat([df_a, df_b])
-    if not (0 <= total_size <= df.shape[0]):
-        raise ValueError(f"total_size must be between 0 and {df.shape[0]}, got {total_size} instead.")
-    portion_a, portion_b = [_df.shape[0] / (df_a.shape[0] + df_b.shape[0])
-                            for _df in (df_a, df_b)]
-    size_a, size_b = [round(total_size * portion)
-                      for portion in (portion_a, portion_b)]
-    size_overlap = round(total_size * overlap / 2)
-    assert size_a >= size_overlap <= size_b
-    true_matches_a, true_matches_b = get_true_matches(df_a, df_b, global_id_col_name)
-    # draw size_overlap records from true matches of source A
-    a_matches = true_matches_a.sample(size_overlap, random_state=seed)
-    # get the corresponding partners from B
-    b_matches = true_matches_b[true_matches_b[global_id_col_name].isin(a_matches[global_id_col_name])]
-    # draw size_a - size_overlap from non-matches of source A
-    a_non_matches = df_a[~df_a[global_id_col_name].isin(true_matches_a[global_id_col_name])] \
-        .sample(size_a - size_overlap, random_state=seed)
-    # likewise for B
-    b_non_matches = df_b[~df_b[global_id_col_name].isin(true_matches_b[global_id_col_name])] \
-        .sample(size_b - size_overlap, random_state=seed)
-    # concatenate all
-    return pd.concat([a_matches, a_non_matches, b_matches, b_non_matches])
-
-
-def random_sample_wrapper(df: pd.DataFrame, total_sample_size: int, seed: int = None, overlap: float = None,
-                          global_id_col_name="globalID") -> pd.DataFrame:
-    """
-    Wrapper function that splits the passed data into the two sources before calling random_sample, allowing to pass
-    the whole dataset.
-    """
-    df_a, df_b = split_by_source_id(df)
-    return random_sample(df_a, df_b, total_sample_size, seed, overlap, global_id_col_name)
 
 
 def get_param_variant_groups(config) -> list[(list[dict], str)]:
@@ -382,7 +350,7 @@ def _sample_all_down_if_needed(variant_group):
         # sample down if necessary
         downsampling_mode = params.get("downsampling", None)
         variant = _sample_down_if_needed(min_group_size, downsampling_mode, variant)
-        result.append(variant)
+        result.append((variant, params))
     return result
 
 

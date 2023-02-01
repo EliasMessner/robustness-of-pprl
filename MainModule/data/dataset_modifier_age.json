@@ -1,0 +1,30 @@
+{
+  "base_dataset": "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv",
+  "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
+  "source_id_col_name": "sourceID",
+  "global_id_col_name": "globalID",
+  "variations": [
+    {
+      "params": {
+        "subset_selection": "AGE",
+        "range": null,
+        "downsampling": "TO_MIN_GROUP_SIZE"
+      },
+      "replacements": {
+        "range": [[20, 39], [40, 59], [60, 1000]]
+      },
+      "desc": "Different age subset, once with downsampling to min group size."
+    },
+    {
+      "params": {
+        "subset_selection": "AGE",
+        "range": null,
+        "downsampling": null
+      },
+      "replacements": {
+        "range": [[20, 39], [40, 59], [60, 1000]]
+      },
+      "desc": "Different age subset, without downsampling."
+    }
+  ]
+}
