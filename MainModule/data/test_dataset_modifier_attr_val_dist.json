@@ -1,0 +1,21 @@
+{
+  "base_dataset": "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv",
+  "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
+  "source_id_col_name": "sourceID",
+  "global_id_col_name": "globalID",
+  "variations": [
+    {
+      "desc": "2 times 50k records with specific gender distribution, once with preserve_overlap and once without.",
+      "params": {
+        "subset_selection": "ATTRIBUTE_VALUE",
+        "column": "GENDER",
+        "dist": {"M": 0.75, "F": 0.25},
+        "preserve_overlap": null,
+        "size": 50000
+      },
+      "replacements": {
+        "preserve_overlap": [true, false]
+      }
+    }
+  ]
+}

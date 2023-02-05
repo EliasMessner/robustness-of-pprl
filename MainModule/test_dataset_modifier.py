@@ -7,7 +7,7 @@ import pandas as pd
 
 from constants import dataset_variants_dir_test
 from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
-from dataset_properties import get_overlap, split_by_source_id
+from dataset_properties import get_overlap, split_by_source_id, split_and_get_overlap
 from error_rates import get_all_errors
 from util import read_json, list_folder_names
 
@@ -253,11 +253,15 @@ class TestDatasetModifier(TestCase):
             }
         )
 
-    def test_error_rate_selection(self):
-        self.sg.load_dataset_by_config_file("data/test_dataset_modifier_error_rate.json")
+    def check_all_variants_ok(self, dm_config_path: str, check_operation: callable):
+        """
+        callable must be a function or lambda taking (variant: pd.DataFrame, params: dict) as input and returning a
+        bool stating if the given variant is expected wrt. to the given params.
+        """
+        self.sg.load_dataset_by_config_file(dm_config_path)
         shutil.rmtree(dataset_variants_dir_test, ignore_errors=True)  # delete existing dataset variants
-        self.sg.create_variants_by_config_file("data/test_dataset_modifier_error_rate.json", dataset_variants_dir_test)
-        param_groups = get_param_variant_groups(read_json("data/test_dataset_modifier_error_rate.json"))
+        self.sg.create_variants_by_config_file(dm_config_path, dataset_variants_dir_test)
+        param_groups = get_param_variant_groups(read_json(dm_config_path))
         variant_groups_folders = list_folder_names(dataset_variants_dir_test)
         self.assertEqual(len(param_groups), len(variant_groups_folders))
         for (param_group, desc), variant_group_folder in zip(param_groups, variant_groups_folders):
@@ -273,13 +277,25 @@ class TestDatasetModifier(TestCase):
                 variant = pd.read_csv(os.path.join(dataset_variants_dir_test, variant_group_folder, variant_folder,
                                                    "records.csv"),
                                       names=col_names, dtype={"PLZ": str}, keep_default_na=False)
-                self.error_rates_ok(variant, params)
+                check_operation(variant, params)
 
     def error_rates_ok(self, df, params):
         min_e, max_e = params["range"]
         measure = params["measure"]
         errors = get_all_errors(df, measure)
         self.assertTrue(all([min_e <= e <= max_e for e in errors]))
+
+    def test_error_rate_selection(self):
+        self.check_all_variants_ok("data/test_dataset_modifier_error_rate.json", self.error_rates_ok)
+
+    def attr_val_dist_ok(self, df, params):
+        # check overlap
+        if params["preserve_overlap"]:
+            self.assertEqual(split_and_get_overlap(df), self.sg.base_overlap)
+        # TODO check distribution
+
+    def test_attr_val_dist(self):
+        self.check_all_variants_ok("data/test_dataset_modifier_attr_val_dist.json", self.attr_val_dist_ok)
 
 
 if __name__ == '__main__':

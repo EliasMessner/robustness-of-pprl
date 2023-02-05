@@ -201,7 +201,7 @@ class DatasetModifier:
         if "dist" in params:
             return attr_value_distribution_random_sample(self.df,
                                                          desired_distr=params["dist"],
-                                                         desired_size=params["desired_size"],
+                                                         desired_size=params["size"],
                                                          attr_name=params["column"],
                                                          seed=params.get("seed", None))
 
