@@ -1,14 +1,13 @@
 import os.path
 import shutil
+from datetime import datetime as dt
 from unittest import TestCase, main
 
-import error_rates
-from constants import dataset_variants_dir, dataset_variants_dir_test
+import pandas as pd
+
+from constants import dataset_variants_dir_test
 from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
 from dataset_properties import get_overlap, split_by_source_id
-import pandas as pd
-from datetime import datetime as dt
-
 from error_rates import get_all_errors
 from util import read_json, list_folder_names
 
