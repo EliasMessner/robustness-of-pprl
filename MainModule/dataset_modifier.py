@@ -11,7 +11,7 @@ from datetime import datetime as dt
 
 from dataset_properties import get_overlap, get_true_matches, split_by_source_id
 from error_rates import filter_by_error_rate
-from attr_val_freq import attr_value_distribution_random_sample
+from attr_val_dist import attr_val_dist_random_sample
 from random_sample import random_sample, random_sample_wrapper
 from util import read_json, write_json, get_config_path_from_argv
 from constants import dm_config_path, dataset_variants_dir, logs_dir
@@ -199,11 +199,12 @@ class DatasetModifier:
             max_v = params["range"][1]
             return self.df[self.df[params["column"]].map(lambda value: min_v <= value <= max_v)]
         if "dist" in params:
-            return attr_value_distribution_random_sample(self.df,
-                                                         desired_distr=params["dist"],
-                                                         desired_size=params["size"],
-                                                         attr_name=params["column"],
-                                                         seed=params.get("seed", None))
+            return attr_val_dist_random_sample(self.df,
+                                               desired_distr=params["dist"],
+                                               desired_size=params["size"],
+                                               attr_name=params["column"],
+                                               preserve_overlap=params.get("preserve_overlap", False),
+                                               seed=params.get("seed", None))
 
     def plz_subset(self, params) -> pd.DataFrame:
         n = params["digits"]  # first n digits
