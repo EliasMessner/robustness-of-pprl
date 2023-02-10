@@ -291,8 +291,7 @@ class TestDatasetModifier(TestCase):
     def attr_val_dist_ok(self, df, params):
         # check overlap
         if params["preserve_overlap"]:
-            self.assertEqual(self.sg.base_overlap, split_and_get_overlap(df))
-            # TODO maybe need to check for approximate equality
+            self.assertAlmostEqual(self.sg.base_overlap, split_and_get_overlap(df), places=3)
         # check size
         self.assertEqual(params["size"], df.shape[0])
         # check distribution
@@ -300,8 +299,9 @@ class TestDatasetModifier(TestCase):
         col = params["column"]
         obs_dist = {key: df[(key[0] <= df[col] <= key[1]) if isinstance(key, tuple) else (df[col] == key)]
                     for key in exp_dist}
-        obs_dist = {key: val.shape[0] for key, val in obs_dist}
+        obs_dist = {key: val.shape[0] for key, val in obs_dist.items()}
         self.assertDictEqual(exp_dist, obs_dist)
+        # TODO add YOB case to test config file
 
     def test_attr_val_dist(self):
         self.check_all_variants_ok("data/test_dataset_modifier_attr_val_dist.json", self.attr_val_dist_ok)

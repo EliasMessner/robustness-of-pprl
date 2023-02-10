@@ -11,7 +11,8 @@
         "column": "GENDER",
         "dist": {"M": 0.75, "F": 0.25},
         "preserve_overlap": null,
-        "size": 50000
+        "size": 50000,
+        "seed": 42
       },
       "replacements": {
         "preserve_overlap": [true, false]
