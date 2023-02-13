@@ -1,14 +1,14 @@
 import os.path
 import shutil
+from ast import literal_eval
+from datetime import datetime as dt
 from unittest import TestCase, main
 
-import error_rates
-from constants import dataset_variants_dir, dataset_variants_dir_test
-from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
-from dataset_properties import get_overlap, split_by_source_id
 import pandas as pd
-from datetime import datetime as dt
 
+from constants import dataset_variants_dir_test
+from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
+from dataset_properties import get_overlap, split_by_source_id, split_and_get_overlap
 from error_rates import get_all_errors
 from util import read_json, list_folder_names
 
@@ -254,11 +254,15 @@ class TestDatasetModifier(TestCase):
             }
         )
 
-    def test_error_rate_selection(self):
-        self.sg.load_dataset_by_config_file("data/test_dataset_modifier_error_rate.json")
+    def check_all_variants_ok(self, dm_config_path: str, check_operation: callable):
+        """
+        callable must be a function or lambda taking (variant: pd.DataFrame, params: dict) as input and returning a
+        bool stating if the given variant is expected wrt. to the given params.
+        """
+        self.sg.load_dataset_by_config_file(dm_config_path)
         shutil.rmtree(dataset_variants_dir_test, ignore_errors=True)  # delete existing dataset variants
-        self.sg.create_variants_by_config_file("data/test_dataset_modifier_error_rate.json", dataset_variants_dir_test)
-        param_groups = get_param_variant_groups(read_json("data/test_dataset_modifier_error_rate.json"))
+        self.sg.create_variants_by_config_file(dm_config_path, dataset_variants_dir_test)
+        param_groups = get_param_variant_groups(read_json(dm_config_path))
         variant_groups_folders = list_folder_names(dataset_variants_dir_test)
         self.assertEqual(len(param_groups), len(variant_groups_folders))
         for (param_group, desc), variant_group_folder in zip(param_groups, variant_groups_folders):
@@ -274,13 +278,37 @@ class TestDatasetModifier(TestCase):
                 variant = pd.read_csv(os.path.join(dataset_variants_dir_test, variant_group_folder, variant_folder,
                                                    "records.csv"),
                                       names=col_names, dtype={"PLZ": str}, keep_default_na=False)
-                self.error_rates_ok(variant, params)
+                check_operation(variant, params)
+
+    def test_error_rate_selection(self):
+        self.check_all_variants_ok("data/test_dataset_modifier_error_rate.json", self.error_rates_ok)
 
     def error_rates_ok(self, df, params):
         min_e, max_e = params["range"]
         measure = params["measure"]
         errors = get_all_errors(df, measure)
         self.assertTrue(all([min_e <= e <= max_e for e in errors]))
+
+    def test_attr_val_dist(self):
+        self.check_all_variants_ok("data/test_dataset_modifier_attr_val_dist.json", self.attr_val_dist_ok)
+
+    def attr_val_dist_ok(self, df, params):
+        # check overlap
+        if params["preserve_overlap"]:
+            self.assertAlmostEqual(self.sg.base_overlap, split_and_get_overlap(df), places=3)
+        # check size
+        self.assertEqual(params["size"], df.shape[0])
+        # check distribution
+        exp_dist = params["dist"]
+        col = params["column"]
+        if params.get("dist_is_range", False):
+            condition = lambda key: (literal_eval(key)[0] <= df[col]) & (df[col] <= literal_eval(key)[1])
+        else:
+            condition = lambda key: df[col] == key
+        obs_dist = {key: df[condition(key)]
+                    for key in exp_dist}
+        obs_dist = {key: val.shape[0]/df.shape[0] for key, val in obs_dist.items()}
+        self.assertDictEqual(exp_dist, obs_dist)
 
 
 if __name__ == '__main__':

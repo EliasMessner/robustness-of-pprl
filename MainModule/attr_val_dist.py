@@ -1,10 +1,13 @@
+import random
+
 import pandas as pd
 
+from dataset_properties import split_and_get_overlap
 from random_sample import random_sample_wrapper
 
 
-def attr_value_distribution_random_sample(df: pd.DataFrame, desired_distr: dict, desired_size: int, attr_name: str,
-                                          seed: int = None):
+def attr_val_dist_random_sample(df: pd.DataFrame, desired_distr: dict, desired_size: int, attr_name: str,
+                                preserve_overlap=False, seed: int = None):
     """
     Draws and returns a random subset with the desired distribution of attribute values.
     desired_distr should be a dict with:
@@ -13,6 +16,10 @@ def attr_value_distribution_random_sample(df: pd.DataFrame, desired_distr: dict,
         values = the portion that each of the attribute values (or ranges) should make up in the drawn sample.
             the portions must add up to 1.
     """
+    if seed is None:
+        seed = random.randint(0, 10000)
+        # need to use same seed for getting the scaling factor and for drawing
+        # subsets, to avoid minor deviation of overlap
     if isinstance(list(desired_distr.keys())[0], tuple):
         # keys are given as ranges
         condition = lambda key, value: key[0] <= value <= key[1]
@@ -21,15 +28,39 @@ def attr_value_distribution_random_sample(df: pd.DataFrame, desired_distr: dict,
         condition = lambda key, value: key == value
         check_all_values_possible(attr_name, desired_distr, df)
     check_portions_sum(desired_distr)
-    check_size_possible(df, desired_distr, desired_size, attr_name, condition)
+    check_size_possible(df, desired_distr, desired_size, attr_name, condition)  # TODO maybe remove because it takes very long time and if size was not possible an exception would be thrown at a later point anyway
+    scaling_factor = get_scaling_factor(df, desired_distr, desired_size, attr_name, preserve_overlap, seed)
     # draw randomly according to the desired distribution
-    result_subsets = [random_sample_wrapper(df[df.apply(lambda row: condition(key, row[attr_name]), axis=1)],
-                                            total_sample_size=round(portion * desired_size),
-                                            seed=seed)
-                      for key, portion in desired_distr.items()]
+    result_subsets = []
+    for key, portion in desired_distr.items():
+        subset_pool = df[df.apply(lambda row: condition(key, row[attr_name]), axis=1)]  # pool to draw subset from
+        scaled_overlap = None if not preserve_overlap else split_and_get_overlap(subset_pool) * scaling_factor
+        subset = random_sample_wrapper(subset_pool, total_sample_size=round(portion * desired_size),
+                                       seed=seed, overlap=scaled_overlap)
+        result_subsets.append(subset)
     # concatenate all and return
     return pd.concat(result_subsets)
-# TODO write test cases
+
+
+def get_scaling_factor(df, desired_distr, desired_size, attr_name, preserve_overlap, seed):
+    """
+    Return the factor to which the overlaps of the individual subsets must be scaled so that the original overlap can be
+    preserved.
+    Example:
+        base data = 50% F (overlap=0.3), 50% M (overlap=0.1)
+        -> base overlap = 0.2
+        desired_dist = {F: 75%, M: 25%}
+        -> altered overlap = 75% * 0.3 + 25% * 0.1 = 0.25
+        -> scaling factor = 0.2 / 0.25 = 0.8
+    """
+    # get the scaling factor
+    if not preserve_overlap:
+        return 1.0
+    altered_overlap = split_and_get_overlap(
+        attr_val_dist_random_sample(df, desired_distr, desired_size, attr_name, preserve_overlap=False, seed=seed)
+    )
+    original_overlap = split_and_get_overlap(df)
+    return original_overlap / altered_overlap
 
 
 def check_all_values_possible(attr_name, desired_distr, df):
