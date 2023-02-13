@@ -1,6 +1,7 @@
 import logging
 import os.path
 import shutil
+from ast import literal_eval
 from pathlib import Path
 from typing import Union
 
@@ -199,8 +200,9 @@ class DatasetModifier:
             max_v = params["range"][1]
             return self.df[self.df[params["column"]].map(lambda value: min_v <= value <= max_v)]
         if "dist" in params:
+            dist = get_dist_as_dict(params)
             return attr_val_dist_random_sample(self.df,
-                                               desired_distr=params["dist"],
+                                               desired_distr=dist,
                                                desired_size=params["size"],
                                                attr_name=params["column"],
                                                preserve_overlap=params.get("preserve_overlap", False),
@@ -308,27 +310,6 @@ def _get_cartesian_product(items: list[(str, any)]):
     return [*cartesian_prod]
 
 
-def _sample_down_if_needed(min_group_size, downsampling_mode, variant):
-    """
-    Return a down-sampled version of the passed dataset variant according to the specified downsampling mode.
-    Downsampling mode can be one of:
-        None                -> return the original variant
-        "TO_MIN_GROUP_SIZE" -> sample down to the min_group_size (assumed to be the size of the smallest subset in the
-                                group)
-        An integer          -> sample down to the specified size
-    """
-    if downsampling_mode is None:
-        return variant
-    if downsampling_mode == "TO_MIN_GROUP_SIZE":
-        downsampling_size = min_group_size
-    elif isinstance(downsampling_mode, int):
-        downsampling_size = downsampling_mode
-    else:
-        raise ValueError(f"Bad downsampling parameter '{downsampling_mode}'.")
-    variant = random_sample_wrapper(variant, downsampling_size)
-    return variant
-
-
 def _sample_all_down_if_needed(variant_group):
     """
     On each element in the passed list do:
@@ -355,6 +336,27 @@ def _sample_all_down_if_needed(variant_group):
     return result
 
 
+def _sample_down_if_needed(min_group_size, downsampling_mode, variant):
+    """
+    Return a down-sampled version of the passed dataset variant according to the specified downsampling mode.
+    Downsampling mode can be one of:
+        None                -> return the original variant
+        "TO_MIN_GROUP_SIZE" -> sample down to the min_group_size (assumed to be the size of the smallest subset in the
+                                group)
+        An integer          -> sample down to the specified size
+    """
+    if downsampling_mode is None:
+        return variant
+    if downsampling_mode == "TO_MIN_GROUP_SIZE":
+        downsampling_size = min_group_size
+    elif isinstance(downsampling_mode, int):
+        downsampling_size = downsampling_mode
+    else:
+        raise ValueError(f"Bad downsampling parameter '{downsampling_mode}'.")
+    variant = random_sample_wrapper(variant, downsampling_size)
+    return variant
+
+
 def _write_group_folder(variant_group, group_id, description, outfile_directory):
     # create this group's sub folder
     group_sub_folder = os.path.join(outfile_directory, f"group_{group_id}")
@@ -373,6 +375,12 @@ def _write_group_folder(variant_group, group_id, description, outfile_directory)
         variant_id += 1
 
 
+def _create_description_txt(desc: str, location):
+    outpath = os.path.join(location, "desc.txt")
+    with open(outpath, 'w') as outfile:
+        outfile.write(desc)
+
+
 def _create_params_json(params, variant, variant_sub_folder):
     actual_size = variant.shape[0]
     # assert that the size stored in params (if it exists) is equal to the size of the variant
@@ -383,10 +391,24 @@ def _create_params_json(params, variant, variant_sub_folder):
     write_json(params, os.path.join(variant_sub_folder, "params.json"))
 
 
-def _create_description_txt(desc: str, location):
-    outpath = os.path.join(location, "desc.txt")
-    with open(outpath, 'w') as outfile:
-        outfile.write(desc)
+def get_dist_as_dict(params):
+    """
+    Returns the distribution specified under the "dist" key and transforms string-keys to tuples if "dist_is_range" is
+    set to true. Useful because for some distributions (e.g. age) ranges are preferred as keys, but JSON only allows
+    strings as keys, while python also allows tuples.
+    For example parameter see test_dataset_modifier_attr_val_dist.json.
+    """
+    if params.get("dist_is_range", False):
+        dist = {}
+        for k, v in params["dist"].items():
+            k_eval = literal_eval(k)  # key evaluated
+            if not (isinstance(k_eval, tuple) and len(k_eval) == 2 and k_eval[0] <= k_eval[1]):
+                raise ValueError(f"Cannot interpret '{k}' as range-tuple. (must contain two values separated by comma, "
+                                 f"the second one must be greater or equal to the first one.")
+            dist[k_eval] = v
+    else:
+        dist = params["dist"]
+    return dist
 
 
 if __name__ == "__main__":

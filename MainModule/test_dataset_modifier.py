@@ -1,5 +1,6 @@
 import os.path
 import shutil
+from ast import literal_eval
 from datetime import datetime as dt
 from unittest import TestCase, main
 
@@ -279,14 +280,17 @@ class TestDatasetModifier(TestCase):
                                       names=col_names, dtype={"PLZ": str}, keep_default_na=False)
                 check_operation(variant, params)
 
+    def test_error_rate_selection(self):
+        self.check_all_variants_ok("data/test_dataset_modifier_error_rate.json", self.error_rates_ok)
+
     def error_rates_ok(self, df, params):
         min_e, max_e = params["range"]
         measure = params["measure"]
         errors = get_all_errors(df, measure)
         self.assertTrue(all([min_e <= e <= max_e for e in errors]))
 
-    def test_error_rate_selection(self):
-        self.check_all_variants_ok("data/test_dataset_modifier_error_rate.json", self.error_rates_ok)
+    def test_attr_val_dist(self):
+        self.check_all_variants_ok("data/test_dataset_modifier_attr_val_dist.json", self.attr_val_dist_ok)
 
     def attr_val_dist_ok(self, df, params):
         # check overlap
@@ -297,14 +301,14 @@ class TestDatasetModifier(TestCase):
         # check distribution
         exp_dist = params["dist"]
         col = params["column"]
-        obs_dist = {key: df[(key[0] <= df[col] <= key[1]) if isinstance(key, tuple) else (df[col] == key)]
+        if params.get("dist_is_range", False):
+            condition = lambda key: (literal_eval(key)[0] <= df[col]) & (df[col] <= literal_eval(key)[1])
+        else:
+            condition = lambda key: df[col] == key
+        obs_dist = {key: df[condition(key)]
                     for key in exp_dist}
-        obs_dist = {key: val.shape[0] for key, val in obs_dist.items()}
+        obs_dist = {key: val.shape[0]/df.shape[0] for key, val in obs_dist.items()}
         self.assertDictEqual(exp_dist, obs_dist)
-        # TODO add YOB case to test config file
-
-    def test_attr_val_dist(self):
-        self.check_all_variants_ok("data/test_dataset_modifier_attr_val_dist.json", self.attr_val_dist_ok)
 
 
 if __name__ == '__main__':

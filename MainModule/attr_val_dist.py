@@ -28,7 +28,7 @@ def attr_val_dist_random_sample(df: pd.DataFrame, desired_distr: dict, desired_s
         condition = lambda key, value: key == value
         check_all_values_possible(attr_name, desired_distr, df)
     check_portions_sum(desired_distr)
-    check_size_possible(df, desired_distr, desired_size, attr_name, condition)
+    check_size_possible(df, desired_distr, desired_size, attr_name, condition)  # TODO maybe remove because it takes very long time and if size was not possible an exception would be thrown at a later point anyway
     scaling_factor = get_scaling_factor(df, desired_distr, desired_size, attr_name, preserve_overlap, seed)
     # draw randomly according to the desired distribution
     result_subsets = []

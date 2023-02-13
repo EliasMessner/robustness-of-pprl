@@ -17,6 +17,21 @@
       "replacements": {
         "preserve_overlap": [true, false]
       }
+    },
+    {
+      "desc": "50k records with specific age distributions, which are specified as ranges. (2x -> with and w/o preserve_overlap.)\n The keys for the ranges are given as string representations of tuples because JSON requires strings as keys. Therefore, dist_as_range needs to be set to true for it to be parsed correctly.",
+      "params": {
+        "subset_selection": "ATTRIBUTE_VALUE",
+        "column": "YEAROFBIRTH",
+        "dist": {"1940, 1965": 0.3, "1966, 2020": 0.7},
+        "dist_is_range": true,
+        "preserve_overlap": null,
+        "size": 50000,
+        "seed": 43
+      },
+      "replacements": {
+        "preserve_overlap": [true, false]
+      }
     }
   ]
 }
