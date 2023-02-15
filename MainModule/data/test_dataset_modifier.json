@@ -5,6 +5,7 @@
   "global_id_col_name": "globalID",
   "variations":[
     {
+      "desc": "A comment about this variation, optional",
       "params": {
         "subset_selection": "RANDOM",
         "seed": 1,
@@ -17,10 +18,10 @@
           3000,
           4000
         ]
-      },
-      "desc": "A comment about this variation, optional"
+      }
     },
     {
+      "desc": "this is the second variation!",
       "params": {
         "subset_selection":  "RANDOM",
         "seed":  1,
@@ -29,8 +30,7 @@
       },
       "replacements": {
         "overlap": [0.1, 0.3]
-      },
-      "desc": "this is the second variation!"
+      }
     }
   ]
 }
