@@ -6,6 +6,7 @@ from unittest import TestCase, main
 
 import pandas as pd
 
+from attr_val_dist import get_observed_dist
 from constants import dataset_variants_dir_test
 from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
 from dataset_properties import get_overlap, split_by_source_id, split_and_get_overlap
@@ -300,14 +301,7 @@ class TestDatasetModifier(TestCase):
         self.assertEqual(params["size"], df.shape[0])
         # check distribution
         exp_dist = params["dist"]
-        col = params["column"]
-        if params.get("dist_is_range", False):
-            condition = lambda key: (literal_eval(key)[0] <= df[col]) & (df[col] <= literal_eval(key)[1])
-        else:
-            condition = lambda key: df[col] == key
-        obs_dist = {key: df[condition(key)]
-                    for key in exp_dist}
-        obs_dist = {key: val.shape[0]/df.shape[0] for key, val in obs_dist.items()}
+        obs_dist = get_observed_dist(df, params["column"], exp_dist.keys(), is_range=params.get("dist_is_range", False))
         self.assertDictEqual(exp_dist, obs_dist)
 
 

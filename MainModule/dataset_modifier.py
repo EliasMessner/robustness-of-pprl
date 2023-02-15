@@ -202,9 +202,10 @@ class DatasetModifier:
         if "dist" in params:
             dist = get_dist_as_dict(params)
             return attr_val_dist_random_sample(self.df,
-                                               desired_distr=dist,
-                                               desired_size=params["size"],
+                                               desired_dist=dist,
+                                               desired_size=params.get("size", None),
                                                attr_name=params["column"],
+                                               is_range=params.get("dist_is_range", False),
                                                preserve_overlap=params.get("preserve_overlap", False),
                                                seed=params.get("seed", None))
 
@@ -243,8 +244,8 @@ class DatasetModifier:
                 f"Omitted {self.omitted_too_small} variants because they were smaller than min_size_per_source")
         if self.omitted_invald_params:
             logging.info(
-                f"Omitted {self.omitted_invald_params} variants because they could not be created (possibly due to impossible parameter "
-                f"combination). See logs for further info.")
+                f"Omitted {self.omitted_invald_params} variants because they could not be created (possibly due to "
+                f"impossible parameter combination). See logs for further info.")
 
 
 def get_param_variant_groups(config) -> list[(list[dict], str)]:
