@@ -190,7 +190,7 @@ class DatasetModifier:
                 raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
     def attribute_value_subset(self, params: dict) -> pd.DataFrame:
-        assert len({"range", "equals", "is_in", "dist"} & params.keys()) == 1  # exactly one of these keys must be present
+        assert len({"equals", "is_in", "range", "dist", "length"} & params.keys()) == 1  # exactly one of these keys must be present
         if "equals" in params:
             return self.df[self.df[params["column"]] == params["equals"]]
         if "is_in" in params:
@@ -208,6 +208,17 @@ class DatasetModifier:
                                                is_range=params.get("dist_is_range", False),
                                                preserve_overlap=params.get("preserve_overlap", False),
                                                seed=params.get("seed", None))
+        if "length" in params:
+            # TODO add test case
+            return self._filter_by_attr_value_length(params)
+
+    def _filter_by_attr_value_length(self, params):
+        if isinstance(params["length"], list):
+            min_len, max_len = params["length"]  # length given as range
+        else:
+            min_len = max_len = params["length"]  # length given as single value to equal
+        mask = (self.df[params["column"]].str.len() >= min_len) & (self.df[params["column"]].str.len() <= max_len)
+        return self.df[mask]
 
     def plz_subset(self, params) -> pd.DataFrame:
         n = params["digits"]  # first n digits
