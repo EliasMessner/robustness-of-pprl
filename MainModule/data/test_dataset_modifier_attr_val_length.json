@@ -1,0 +1,16 @@
+{
+  "base_dataset": "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv",
+  "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
+  "source_id_col_name": "sourceID",
+  "global_id_col_name": "globalID",
+  "variations": [
+    {
+      "desc": "All records with length of last name from 3 to 5.",
+      "params": {
+        "subset_selection": "ATTRIBUTE_VALUE",
+        "column": "LASTNAME",
+        "length": [3, 5]
+      }
+    }
+  ]
+}

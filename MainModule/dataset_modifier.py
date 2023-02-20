@@ -209,14 +209,10 @@ class DatasetModifier:
                                                preserve_overlap=params.get("preserve_overlap", False),
                                                seed=params.get("seed", None))
         if "length" in params:
-            # TODO add test case
             return self._filter_by_attr_value_length(params)
 
     def _filter_by_attr_value_length(self, params):
-        if isinstance(params["length"], list):
-            min_len, max_len = params["length"]  # length given as range
-        else:
-            min_len = max_len = params["length"]  # length given as single value to equal
+        min_len, max_len = params["length"]
         mask = (self.df[params["column"]].str.len() >= min_len) & (self.df[params["column"]].str.len() <= max_len)
         return self.df[mask]
 

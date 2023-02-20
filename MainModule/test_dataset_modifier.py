@@ -226,15 +226,12 @@ class TestDatasetModifier(TestCase):
 
     def test_attribute_value_subset(self):
         all_genders = self.sg.attribute_value_subset(params={"column": "GENDER", "is_in": ["M", "F", "U"]})
-        pd.testing.assert_frame_equal(all_genders, self.sg.df, check_like=True)
+        pd.testing.assert_frame_equal(all_genders, self.sg.df, check_like=True)  # ignore order
         f = self.sg.attribute_value_subset(params={"column": "GENDER", "equals": "F"})
         self.assertTrue(f.eq("F").all(axis=0)["GENDER"])
 
     def test_downsampling(self):
-        self.sg.load_dataset_by_config_file("data/test_dataset_modifier_downsampling.json")
-        shutil.rmtree(dataset_variants_dir_test, ignore_errors=True)  # delete existing dataset variants
-        self.sg.create_variants_by_config_file("data/test_dataset_modifier_downsampling.json",
-                                               dataset_variants_dir_test)
+        self.create_variants("data/test_dataset_modifier_downsampling.json")
         self.assertEqual(
             read_json(os.path.join(dataset_variants_dir_test, "group_0/DV_1/params.json")),
             {
@@ -257,12 +254,10 @@ class TestDatasetModifier(TestCase):
 
     def check_all_variants_ok(self, dm_config_path: str, check_operation: callable):
         """
-        callable must be a function or lambda taking (variant: pd.DataFrame, params: dict) as input and returning a
-        bool stating if the given variant is expected wrt. to the given params.
+        check_operation must be a function or lambda taking (variant: pd.DataFrame, params: dict) as input and
+        returning a bool stating if the given variant is expected wrt. to the given params.
         """
-        self.sg.load_dataset_by_config_file(dm_config_path)
-        shutil.rmtree(dataset_variants_dir_test, ignore_errors=True)  # delete existing dataset variants
-        self.sg.create_variants_by_config_file(dm_config_path, dataset_variants_dir_test)
+        self.create_variants(dm_config_path)
         param_groups = get_param_variant_groups(read_json(dm_config_path))
         variant_groups_folders = list_folder_names(dataset_variants_dir_test)
         self.assertEqual(len(param_groups), len(variant_groups_folders))
@@ -303,6 +298,22 @@ class TestDatasetModifier(TestCase):
         exp_dist = params["dist"]
         obs_dist = get_observed_dist(df, params["column"], exp_dist.keys(), is_range=params.get("dist_is_range", False))
         self.assertDictEqual(exp_dist, obs_dist)
+
+    def test_attr_val_length(self):
+        dm_config_path = "data/test_dataset_modifier_attr_val_length.json"
+        self.create_variants(dm_config_path)
+        self.check_all_variants_ok(dm_config_path, check_operation=lambda variant, params: self.attr_val_length_ok)
+
+    def attr_val_length_ok(self, df: pd.DataFrame, params: dict):
+        min_len, max_len = params["length"]
+        self.assertTrue(
+            df.applymap(lambda element: min_len <= element.str.len <= max_len).all(axis=0)[params["column"]]
+        )
+
+    def create_variants(self, dm_config_path):
+        self.sg.load_dataset_by_config_file(dm_config_path)
+        shutil.rmtree(dataset_variants_dir_test, ignore_errors=True)  # delete existing dataset variants
+        self.sg.create_variants_by_config_file(dm_config_path, dataset_variants_dir_test)
 
 
 if __name__ == '__main__':
