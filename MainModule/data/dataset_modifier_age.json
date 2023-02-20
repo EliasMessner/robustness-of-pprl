@@ -5,26 +5,26 @@
   "global_id_col_name": "globalID",
   "variations": [
     {
+      "desc": "Different age subset, with downsampling to min group size.",
       "params": {
         "subset_selection": "AGE",
         "range": null,
         "downsampling": "TO_MIN_GROUP_SIZE"
       },
       "replacements": {
-        "range": [[20, 39], [40, 59], [60, 1000]]
-      },
-      "desc": "Different age subset, once with downsampling to min group size."
+        "range": [[0, 19], [20, 39], [40, 59], [60, 1000]]
+      }
     },
     {
+      "desc": "Different age subset, without downsampling.",
       "params": {
         "subset_selection": "AGE",
         "range": null,
         "downsampling": null
       },
       "replacements": {
-        "range": [[20, 39], [40, 59], [60, 1000]]
-      },
-      "desc": "Different age subset, without downsampling."
+        "range": [[0, 19],[20, 39], [40, 59], [60, 1000]]
+      }
     }
   ]
 }

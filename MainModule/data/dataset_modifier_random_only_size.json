@@ -5,9 +5,10 @@
   "global_id_col_name": "globalID",
   "variations":[
     {
+      "desc": "Random subsets with different sizes, overlap=0.2",
       "params": {
         "subset_selection": "RANDOM",
-        "seed": 1,
+        "seed": 42,
         "size": null,
         "overlap": 0.2
       },

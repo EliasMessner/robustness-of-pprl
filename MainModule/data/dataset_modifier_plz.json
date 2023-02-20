@@ -1,0 +1,34 @@
+{
+  "base_dataset": "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv",
+  "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
+  "source_id_col_name": "sourceID",
+  "global_id_col_name": "globalID",
+  "variations": [
+    {
+      "desc": "Divided by first 2 digits of PLZ. \nDownsampling=[on,off]",
+      "params": {
+        "subset_selection": "PLZ",
+        "digits": 2,
+        "equals": null,
+        "downsampling": null
+      },
+      "replacements": {
+        "equals": [0, 99],
+        "downsampling": [null, "TO_MIN_GROUP_SIZE"]
+      },
+      "as_range": true
+    },
+    {
+      "desc": "Divided by first 3 digits of PLZ. \nDownsampling=off",
+      "params": {
+        "subset_selection": "PLZ",
+        "digits": 3,
+        "equals": null
+      },
+      "replacements": {
+        "equals": [0, 999]
+      },
+      "as_range": true
+    }
+  ]
+}

@@ -6,8 +6,7 @@ import subprocess as sp
 
 
 def main():
-    run("dataset_modifier_random_only_overlap", "exp_config")
-    run("dataset_modifier", "exp_config_0725")
+    run("dataset_modifier_error_rate", "exp_config")
 
 
 def run(dm, ec):

@@ -5,27 +5,59 @@
   "global_id_col_name": "globalID",
   "variations": [
     {
-      "desc": "Different error rate ranges, with downsampling to min group size.",
+      "desc": "Different error rate ranges (step=2), \npreserve_overlap=[on,off] \ndownsampling=off",
       "params": {
         "subset_selection": "ERROR_RATE",
         "measure": "count_errors",
         "range": null,
-        "downsampling": "TO_MIN_GROUP_SIZE"
+        "downsampling": null,
+        "preserve_overlap": true,
+        "seed": 42
       },
       "replacements": {
-        "range": [[0, 0], [1, 2], [2, 4], [3, 11]]
+        "range": [[0, 0], [1, 2], [3, 4], [5, 6], [7, 8], [8, 12]]
       }
     },
     {
-      "desc": "Different error rate ranges, without downsampling.",
+      "desc": "Different error rate ranges (step=3), \npreserve_overlap=[on,off] \ndownsampling=off",
       "params": {
         "subset_selection": "ERROR_RATE",
         "measure": "count_errors",
         "range": null,
-        "downsampling": null
+        "downsampling": null,
+        "preserve_overlap": true,
+        "seed": 42
       },
       "replacements": {
-        "range": [[0, 0], [1, 2], [2, 4], [3, 11]]
+        "range": [[0, 2], [3, 5], [6, 8], [8, 12]]
+      }
+    },
+    {
+      "desc": "Different error rate ranges (step=2), \npreserve_overlap=[on,off] \ndownsampling=TO_MIN_GROUP_SIZE",
+      "params": {
+        "subset_selection": "ERROR_RATE",
+        "measure": "count_errors",
+        "range": null,
+        "downsampling": "TO_MIN_GROUP_SIZE",
+        "preserve_overlap": null
+      },
+      "replacements": {
+        "range": [[0, 0], [1, 2], [3, 4], [5, 6], [7, 8], [8, 12]],
+        "preserve_overlap": [true, false]
+      }
+    },
+    {
+      "desc": "Different error rate ranges (step=3), \npreserve_overlap=[on,off] \ndownsampling=TO_MIN_GROUP_SIZE",
+      "params": {
+        "subset_selection": "ERROR_RATE",
+        "measure": "count_errors",
+        "range": null,
+        "downsampling": "TO_MIN_GROUP_SIZE",
+        "preserve_overlap": null
+      },
+      "replacements": {
+        "range": [[0, 2], [3, 5], [6, 8], [8, 12]],
+        "preserve_overlap": [true, false]
       }
     }
   ]
