@@ -32,11 +32,11 @@ class EvalAdapter:
         self.links_pred = pd.read_csv(pred_path, names=[pred_clm_a, pred_clm_b], index_col=[pred_clm_a, pred_clm_b])
 
     def metrics(self):
+        # accuracy not important for record linkage
         return {
             "precision": self.precision(),
             "recall": self.recall(),
-            "fscore": self.fscore(),
-            "accuracy": self.accuracy()
+            "fscore": self.fscore()
         }
 
     def precision(self):
@@ -52,6 +52,8 @@ class EvalAdapter:
     def fscore(self):
         if self.links_true.shape[0] == 0:
             return np.nan
+        if self.precision() + self.recall() == 0:
+            return 0
         return rl.fscore(self.links_true, self.links_pred)
 
     def accuracy(self):
