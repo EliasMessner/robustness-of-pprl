@@ -6,7 +6,7 @@ import recordlinkage as rl
 class EvalAdapter:
     def __init__(self, data_path, data_clm_names, pred_path,
                  id_clm="globalID", src_clm="sourceID",
-                 pred_clm_a="globalID_A", pred_clm_b="globalID_B") -> (pd.DataFrame, pd.DataFrame, int):
+                 pred_clm_a="globalID_A", pred_clm_b="globalID_B"):
         """
         Read dataset and predicted matches from files, generate true matches from data,
         prepare the data needed for evaluation with third party recordlinkage module.
