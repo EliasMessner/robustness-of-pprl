@@ -48,7 +48,7 @@ class DatasetModifier:
         self.omit_if_not_possible = omit_if_not_possible
         self.omit_if_too_small = omit_if_too_small
         self.omitted_too_small = 0
-        self.omitted_invald_params = 0
+        self.omitted_invalid_params = 0
         self.min_size_per_source = min_size_per_source
         self.df = None
         self.df_a = None
@@ -128,7 +128,7 @@ class DatasetModifier:
             if variant is None:
                 # variant could be None if for example a ValueError occurred due to impossible sample size in random
                 #  subset
-                self.omitted_invald_params += 1
+                self.omitted_invalid_params += 1
                 continue
             if self._check_if_variant_should_be_omitted(variant):
                 self.omitted_too_small += 1
@@ -249,9 +249,9 @@ class DatasetModifier:
         if self.omitted_too_small:
             logging.info(
                 f"Omitted {self.omitted_too_small} variants because they were smaller than min_size_per_source")
-        if self.omitted_invald_params:
+        if self.omitted_invalid_params:
             logging.info(
-                f"Omitted {self.omitted_invald_params} variants because they could not be created (possibly due to "
+                f"Omitted {self.omitted_invalid_params} variants because they could not be created (possibly due to "
                 f"impossible parameter combination). See logs for further info.")
 
 
