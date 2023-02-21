@@ -53,11 +53,12 @@ def conduct_experiment(exp_params, tracker):
         variant_group_path = os.path.join(dataset_variants_dir, variant_group)
         variants = list_folder_names(variant_group_path)
         parent_run_description = read_txt(os.path.normpath(os.path.join(variant_group_path, "desc.txt")))
-        with mlflow.start_run(experiment_id=tracker.get_current_exp_id(), nested=True, description=parent_run_description):
+        with mlflow.start_run(experiment_id=tracker.get_current_exp_id(), nested=True,
+                              description=parent_run_description):
             for rl_config, variant_folder_name in tqdm(list(itertools.product(rl_configs, variants)),
-                                                            desc="Runs",
-                                                            bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
-                                                            leave=False):
+                                                       desc="Runs",
+                                                       bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                                       leave=False):
                 variant_folder_name = os.path.join(variant_group, variant_folder_name)
                 conduct_run(exp_out_folder, rl_config, tracker, variant_folder_name)
 
