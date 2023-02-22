@@ -1,9 +1,8 @@
 package RLInterface;
 
 import PPRL.*;
-import com.opencsv.CSVReader;
+import com.opencsv.CSVParser;
 import com.opencsv.CSVWriter;
-import com.opencsv.exceptions.CsvValidationException;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -63,12 +62,15 @@ public class PPRLAdapter implements RecordLinkageI {
 
     private Person[] getDatasetFromFile(String filePath) {
         List<Person> records = new ArrayList<>();
-        try (CSVReader csvReader = new CSVReader(new FileReader(filePath))) {
-            String[] values;
-            while ((values = csvReader.readNext()) != null) {
+        CSVParser csvParser = new CSVParser();
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                line = line.replace("\\", "");  // remove all backslash because they are escape characters in csv-parser
+                String[] values = csvParser.parseLine(line);
                 records.add(new Person(values));
             }
-        } catch (IOException | CsvValidationException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e.getMessage());
         }
         return records.toArray(Person[]::new);
