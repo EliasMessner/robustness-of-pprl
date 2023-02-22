@@ -20,7 +20,7 @@ def main():
     # create outfile for matching result if not exists
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     shutil.rmtree(matchings_dir, ignore_errors=True)  # delete existing matching
-    _exp_config_path = get_config_path_from_argv(default=exp_config_path)
+    _exp_config_path = get_config_path_from_argv(default=default_exp_config_path)
     # get configs for all experiments
     experiments = read_json(_exp_config_path)["experiments"]
     # for each experiment, there is a dict of parameters for the RLModule
@@ -41,13 +41,13 @@ def prepare_logger():
 
 
 def conduct_experiment(exp_params, tracker):
-    tracker.start_exp(exp_params)
+    tracker.start_exp(exp_params, exp_tags=get_exp_tags())
     exp_no = exp_params.pop("exp_no")
     # create folder for this experiment's matching results
     exp_out_folder = os.path.join(matchings_dir, f"exp_{exp_no}")
     Path(exp_out_folder).mkdir(exist_ok=True, parents=True)
     rl_configs = get_rl_configs(exp_params)
-    variant_groups = os.listdir(dataset_variants_dir)  # one run per rl_config per dataset_variant
+    variant_groups = list_folder_names(dataset_variants_dir)  # one run per rl_config per dataset_variant
     for variant_group in tqdm(variant_groups, desc="Run-Groups", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
                               leave=False):
         variant_group_path = os.path.join(dataset_variants_dir, variant_group)
@@ -61,6 +61,14 @@ def conduct_experiment(exp_params, tracker):
                                                        leave=False):
                 variant_folder_name = os.path.join(variant_group, variant_folder_name)
                 conduct_run(exp_out_folder, rl_config, tracker, variant_folder_name)
+
+
+def get_exp_tags():
+    _dm_config_path = os.path.join(dataset_variants_dir, "dm_config.json")
+    desc = read_json(_dm_config_path).get("desc", None)
+    base_dataset = read_json(_dm_config_path)["base_dataset"]
+    exp_tags = {"base_dataset": base_dataset, "desc": desc}
+    return exp_tags
 
 
 def conduct_run(exp_out_folder, rl_config, tracker, variant_folder_name):
@@ -99,7 +107,7 @@ def write_record_linkage_config(rl_config: dict, run_out_folder: str) -> str:
     return os.path.abspath(rl_config_path)
 
 
-def call_rl_module(data_path, outfile_path, config_path: str, config: dict, tracker: Tracker):
+def call_rl_module(data_path, outfile_path, rl_config_path: str, rl_config: dict, tracker: Tracker):
     """
     Call RLModule with given parameters.
     Evaluate and track run.
@@ -108,27 +116,30 @@ def call_rl_module(data_path, outfile_path, config_path: str, config: dict, trac
         cmd = ["java", "-jar", "../RLModule/target/RLModule.jar",
                "-d", data_path,
                "-o", outfile_path,
-               "-c", config_path,
+               "-c", rl_config_path,
                "-s", pprl_storage_file_location]
         try:
             output = subprocess.check_output(cmd, encoding='UTF-8')
+            logging.info(output)
         except subprocess.CalledProcessError as e:
             print(f"Command: '{' '.join(cmd)}'")
+            logging.exception(output)
             raise e
-        finally:
-            logging.info(output)
         # evaluate and track the run
-        data_clm_names = read_json(dm_config_path)["col_names"]
+        _dm_config_path = os.path.join(dataset_variants_dir, "dm_config.json")
+        data_clm_names = read_json(_dm_config_path)["col_names"]
         eval_adapter = EvalAdapter(data_path, data_clm_names=data_clm_names, pred_path=outfile_path)
         dv_params = read_json(os.path.normpath(os.path.join(data_path, "..", "params.json")))
         desc_path = os.path.normpath(os.path.join(data_path, "..", "..", "desc.txt"))
         mlflow.log_metrics(eval_adapter.metrics())
         mlflow.log_params(dv_params)
-        mlflow.set_tags(config)
-        mlflow.log_artifact(data_path)
-        mlflow.log_artifact(outfile_path)
-        mlflow.log_artifact(config_path)
-        mlflow.log_artifact(desc_path)
+        mlflow.set_tags(rl_config)
+        mlflow.set_tag("base_dataset", read_json(_dm_config_path)["base_dataset"])
+        mlflow.log_artifact(_dm_config_path)
+        mlflow.log_artifact(data_path)  # records.csv
+        mlflow.log_artifact(outfile_path)  # matching.csv
+        mlflow.log_artifact(rl_config_path)  # rl_config.json
+        mlflow.log_artifact(desc_path)  # desc.txt
 
 
 if __name__ == "__main__":

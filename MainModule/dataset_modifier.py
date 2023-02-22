@@ -15,15 +15,19 @@ from error_rates import filter_by_error_rate
 from attr_val_dist import attr_val_dist_random_sample
 from random_sample import random_sample, random_sample_wrapper
 from util import read_json, write_json, get_config_path_from_argv
-from constants import dm_config_path, dataset_variants_dir, logs_dir
+from constants import default_dm_config_path, dataset_variants_dir, logs_dir
 
 
 def main():
-    _dm_config_path = get_config_path_from_argv(default=dm_config_path)
+    _dm_config_path = get_config_path_from_argv(default=default_dm_config_path)
+    # delete existing dataset variants
+    shutil.rmtree(dataset_variants_dir, ignore_errors=True)
+    Path(dataset_variants_dir).mkdir(exist_ok=True)
+    # store dm_config.json at top level in dataset_variants folder, so it can be logged by mlflow later
+    shutil.copyfile(_dm_config_path, os.path.join(dataset_variants_dir, "dm_config.json"))
     # create dataset variations
     dm = DatasetModifier()
     dm.load_dataset_by_config_file(_dm_config_path)
-    shutil.rmtree(dataset_variants_dir, ignore_errors=True)  # delete existing dataset variants
     dm.create_variants_by_config_file(_dm_config_path, dataset_variants_dir)
 
 
