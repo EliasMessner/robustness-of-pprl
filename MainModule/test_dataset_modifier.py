@@ -1,16 +1,16 @@
 import os.path
 import shutil
-from ast import literal_eval
 from datetime import datetime as dt
+from typing import Union
 from unittest import TestCase, main
 
 import pandas as pd
 
+import error_rates
 from attr_val_dist import get_observed_dist
 from constants import dataset_variants_dir_test
 from dataset_modifier import DatasetModifier, get_param_variant_groups, random_sample
 from dataset_properties import get_overlap, split_by_source_id, split_and_get_overlap
-from error_rates import get_all_errors
 from util import read_json, list_folder_names
 
 filepath = "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
@@ -264,7 +264,7 @@ class TestDatasetModifier(TestCase):
         for (param_group, desc), variant_group_folder in zip(param_groups, variant_groups_folders):
             variant_group = list_folder_names(os.path.join(dataset_variants_dir_test, variant_group_folder))
             param_group = [params for params in param_group
-                           if not self.sg._check_if_variant_should_be_omitted(self.sg.get_variant(params))]
+                           if not self.sg.check_if_variant_should_be_omitted(self.sg.get_variant(params))]
             self.assertEqual(len(param_group), len(variant_group))
             for params, variant_folder in zip(param_group, variant_group):
                 stored_params = read_json(os.path.join(dataset_variants_dir_test, variant_group_folder,
@@ -282,8 +282,16 @@ class TestDatasetModifier(TestCase):
     def error_rates_ok(self, df, params):
         min_e, max_e = params["range"]
         measure = params["measure"]
-        errors = get_all_errors(df, measure)
+        errors = self.get_all_errors(df, measure)
         self.assertTrue(all([min_e <= e <= max_e for e in errors]))
+
+    def get_all_errors(self, df: pd.DataFrame, measure: Union[callable, str]) -> pd.Series:
+        measure = getattr(error_rates, measure) if isinstance(measure,
+                                                              str) else measure  # resolve method name if given as string
+        df_a, df_b = split_by_source_id(df)
+        pairs = df_a.merge(df_b, on=self.sg.global_id_col_name, suffixes=["_a", "_b"])
+        attrs = [col for col in df.columns.values if not col.lower().endswith("id")]
+        return pairs.apply(lambda row: measure(row, attrs), axis=1)
 
     def test_attr_val_dist(self):
         self.check_all_variants_ok("data/test_dataset_modifier_attr_val_dist.json", self.attr_val_dist_ok)
