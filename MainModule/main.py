@@ -7,6 +7,7 @@ import subprocess as sp
 
 def main():
     run("dataset_modifier_error_rate", "exp_config")
+    run("dataset_modifier_gender", "exp_config")
 
 
 def run(dm, ec):
