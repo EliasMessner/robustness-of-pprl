@@ -3,6 +3,7 @@
   "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
   "source_id_col_name": "sourceID",
   "global_id_col_name": "globalID",
+  "desc": "Variation of error rates.",
   "variations": [
     {
       "desc": "Different error rate ranges (step=2), \npreserve_overlap=[on,off] \ndownsampling=off",
