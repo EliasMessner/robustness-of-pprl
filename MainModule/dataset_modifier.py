@@ -10,8 +10,8 @@ from tqdm import tqdm
 import itertools
 from datetime import datetime as dt
 
+import error_rates
 from dataset_properties import get_overlap, get_true_matches, split_by_source_id
-from error_rates import filter_by_error_rate
 from attr_val_dist import attr_val_dist_random_sample
 from random_sample import random_sample, random_sample_wrapper
 from util import read_json, write_json, get_config_path_from_argv
@@ -20,6 +20,7 @@ from constants import default_dm_config_path, dataset_variants_dir, logs_dir
 
 def main():
     _dm_config_path = get_config_path_from_argv(default=default_dm_config_path)
+    print(f"Creating variants based on {_dm_config_path}")
     # delete existing dataset variants
     shutil.rmtree(dataset_variants_dir, ignore_errors=True)
     Path(dataset_variants_dir).mkdir(exist_ok=True)
@@ -59,9 +60,11 @@ class DatasetModifier:
         self.df_b = None
         self.source_id_col_name = None
         self.global_id_col_name = None
-        self.true_matches1 = None
-        self.true_matches2 = None
+        self.true_matches_a = None
+        self.true_matches_b = None
         self.base_overlap = None
+        self.attrs = None  # all attributes that are not IDs, such as name, address, etc
+        self.pairs = None  # merged version of the true matches a and b
 
     def load_dataset_by_config_file(self, config_path: str):
         """
@@ -98,8 +101,10 @@ class DatasetModifier:
         assert self.df_a.shape == self.df_b.shape
         self.global_id_col_name = global_id_col_name
         self.source_id_col_name = source_id_col_name
-        self.true_matches1, self.true_matches2 = get_true_matches(self.df_a, self.df_b, self.global_id_col_name)
+        self.true_matches_a, self.true_matches_b = get_true_matches(self.df_a, self.df_b, self.global_id_col_name)
         self.base_overlap = get_overlap(self.df_a, self.df_b, self.global_id_col_name)
+        self.attrs = [col for col in self.df.columns.values if not col.lower().endswith("id")]
+        self.pairs = self.true_matches_a.merge(self.true_matches_b, on=self.global_id_col_name, suffixes=["_a", "_b"])
 
     def create_variants_by_config_file(self, config_path, outfile_directory):
         """
@@ -116,13 +121,13 @@ class DatasetModifier:
             # Downsampling must be done separately,
             # when all ds variants have been created,
             # because the minimum ds size in the group must be known first.
-            variant_group = self._get_ds_variants(param_variant_group)
-            variant_group = _sample_all_down_if_needed(variant_group)
-            _write_group_folder(variant_group, group_id, description, outfile_directory)
+            variant_group = self.get_variant_group(param_variant_group)
+            variant_group = sample_all_down_if_needed(variant_group)
+            write_group_folder(variant_group, group_id, description, outfile_directory)
             group_id += 1
         self.log_and_reset_omitted()
 
-    def _get_ds_variants(self, param_variants):
+    def get_variant_group(self, param_variants):
         """
         Return a list of variants from a given list of parameter combinations.
         """
@@ -134,22 +139,11 @@ class DatasetModifier:
                 #  subset
                 self.omitted_invalid_params += 1
                 continue
-            if self._check_if_variant_should_be_omitted(variant):
+            if self.check_if_variant_should_be_omitted(variant):
                 self.omitted_too_small += 1
                 continue
             variants.append((variant, params))
         return variants
-
-    def _check_if_variant_should_be_omitted(self, variant):
-        if not self.omit_if_too_small:
-            return False
-        sources = split_by_source_id(variant, number_of_sources=None)
-        if len(sources) < 2:
-            return True
-        a, b = sources
-        if min(a.shape[0], b.shape[0]) < self.min_size_per_source:
-            return True
-        return False
 
     def get_variant(self, params) -> pd.DataFrame:
         """
@@ -165,6 +159,17 @@ class DatasetModifier:
             return self.age_subset(params)
         if params["subset_selection"] == "ERROR_RATE":
             return self.error_rate_subset(params)
+
+    def check_if_variant_should_be_omitted(self, variant):
+        if not self.omit_if_too_small:
+            return False
+        sources = split_by_source_id(variant, number_of_sources=None)
+        if len(sources) < 2:
+            return True
+        a, b = sources
+        if min(a.shape[0], b.shape[0]) < self.min_size_per_source:
+            return True
+        return False
 
     def random_sample(self, params) -> Union[pd.DataFrame, None]:
         """
@@ -194,7 +199,8 @@ class DatasetModifier:
                 raise ValueError(f"{e}\nParameters causing ValueError: {params}")
 
     def attribute_value_subset(self, params: dict) -> pd.DataFrame:
-        assert len({"equals", "is_in", "range", "dist", "length"} & params.keys()) == 1  # exactly one of these keys must be present
+        assert len({"equals", "is_in", "range", "dist",
+                    "length"} & params.keys()) == 1  # exactly one of these keys must be present
         if "equals" in params:
             return self.df[self.df[params["column"]] == params["equals"]]
         if "is_in" in params:
@@ -213,9 +219,9 @@ class DatasetModifier:
                                                preserve_overlap=params.get("preserve_overlap", False),
                                                seed=params.get("seed", None))
         if "length" in params:
-            return self._filter_by_attr_value_length(params)
+            return self.filter_by_attr_value_length(params)
 
-    def _filter_by_attr_value_length(self, params):
+    def filter_by_attr_value_length(self, params):
         min_len, max_len = params["length"]
         mask = (self.df[params["column"]].str.len() >= min_len) & (self.df[params["column"]].str.len() <= max_len)
         return self.df[mask]
@@ -233,21 +239,35 @@ class DatasetModifier:
 
     def error_rate_subset(self, params):
         min_e, max_e = params["range"]
-        return filter_by_error_rate(self.df,
-                                    min_e, max_e, params["measure"],
-                                    self.global_id_col_name, self.source_id_col_name,
-                                    params.get("preserve_overlap", False), params.get("seed", None))
+        return self.filter_by_error_rate(min_e, max_e, params["measure"],
+                                         params.get("preserve_overlap", False), params.get("seed", None))
 
-    def _calculate_base_overlap(self):
+    def filter_by_error_rate(self, min_e, max_e, measure: Union[callable, str], preserve_overlap=False,
+                             seed: int = None):
         """
-        Returns overlap in base dataset. Overlap is calculated wrt. size of one source,
-        which means that if there are two datasets A and B with each 100 records,
-        20 of which are matches and 80 non-matches, then the overlap will be 0.2.
-        :return: Overlap value between 0 and 1.
-        :rtype: float
+        Filter all matching pairs so that only those with the specified error rate remain.
+        If preserve_overlap = True, sample down non matches to the same factor. In that case, a seed can be specified.
         """
-        intersect = pd.merge(self.df_a, self.df_b, how="inner", on=[self.global_id_col_name])
-        self.base_overlap = 2 * intersect.shape[0] / self.df.shape[0]
+        if min_e > max_e:
+            raise ValueError("min_e must be smaller or equal to max_e")
+        # resolve method name if given as string
+        measure = getattr(error_rates, measure) if isinstance(measure, str) else measure
+        error_column = measure.__name__  # name of the column where the error for each pair should be stored
+        if error_column not in self.pairs.columns:
+            self.pairs[error_column] = self.pairs.apply(lambda row: measure(row, self.attrs), axis=1)
+        pairs_filtered = self.pairs[(self.pairs[error_column] >= min_e) &
+                                    (self.pairs[error_column] <= max_e)]
+        matches_a_filtered = self.true_matches_a[
+            self.true_matches_a[self.global_id_col_name].isin(pairs_filtered[self.global_id_col_name])]
+        matches_b_filtered = self.true_matches_b[
+            self.true_matches_b[self.global_id_col_name].isin(pairs_filtered[self.global_id_col_name])]
+        assert matches_a_filtered.shape[0] == matches_b_filtered.shape[0]
+        non_matches = self.df[~self.df[self.global_id_col_name].isin(self.pairs[self.global_id_col_name])]
+        if preserve_overlap:
+            # scale down non-matches to the same factor
+            sample_size = round(non_matches.shape[0] * matches_a_filtered.shape[0] / self.true_matches_a.shape[0])
+            non_matches = non_matches.sample(n=sample_size, random_state=seed)
+        return pd.concat([matches_a_filtered, matches_b_filtered, non_matches])
 
     def log_and_reset_omitted(self):
         if self.omitted_too_small:
@@ -322,7 +342,7 @@ def _get_cartesian_product(items: list[(str, any)]):
     return [*cartesian_prod]
 
 
-def _sample_all_down_if_needed(variant_group):
+def sample_all_down_if_needed(variant_group):
     """
     On each element in the passed list do:
 
@@ -338,7 +358,7 @@ def _sample_all_down_if_needed(variant_group):
     """
     result = []
     min_group_size = min(variant[0].shape[0] for variant in variant_group)  # size of the smallest variant in this group
-    for variant, params in tqdm(variant_group, desc="Variant",
+    for variant, params in tqdm(variant_group, desc="Downsampling",
                                 bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
                                 leave=False):
         # sample down if necessary
@@ -369,7 +389,7 @@ def _sample_down_if_needed(min_group_size, downsampling_mode, variant):
     return variant
 
 
-def _write_group_folder(variant_group, group_id, description, outfile_directory):
+def write_group_folder(variant_group, group_id, description, outfile_directory):
     # create this group's sub folder
     group_sub_folder = os.path.join(outfile_directory, f"group_{group_id}")
     Path(group_sub_folder).mkdir(exist_ok=True)

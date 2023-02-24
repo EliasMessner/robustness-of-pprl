@@ -21,6 +21,7 @@ def main():
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     shutil.rmtree(matchings_dir, ignore_errors=True)  # delete existing matching
     _exp_config_path = get_config_path_from_argv(default=default_exp_config_path)
+    print(f"Conducting experiments based on {_exp_config_path}")
     # get configs for all experiments
     experiments = read_json(_exp_config_path)["experiments"]
     # for each experiment, there is a dict of parameters for the RLModule

@@ -39,6 +39,16 @@ Install requirements
 
 > python main.py
 
+# Streamlit
+
+For visualization of results
+
+### Start local server
+
+> cd MainModule
+
+> streamlit run streamlit_app.py --server.fileWatcherType none
+
 ## Miscellaneous
 
 ### Freeze requirements when conda env activated
