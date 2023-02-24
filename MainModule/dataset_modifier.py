@@ -428,7 +428,7 @@ def get_dist_as_dict(params):
     Returns the distribution specified under the "dist" key and transforms string-keys to tuples if "dist_is_range" is
     set to true. Useful because for some distributions (e.g. age) ranges are preferred as keys, but JSON only allows
     strings as keys, while python also allows tuples.
-    For example parameter see test_dataset_modifier_attr_val_dist.json.
+    For example parameter see test_dm_config_attr_val_dist.json.
     """
     if params.get("dist_is_range", False):
         dist = {}
