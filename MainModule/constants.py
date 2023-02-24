@@ -1,6 +1,6 @@
 import os
 
-default_exp_config_path = "data/rl_config.json"
+default_rl_config_path = "data/rl_config.json"
 default_dm_config_path = "data/dm_config.json"
 dataset_variants_dir = "data/dataset_variants"
 dataset_variants_dir_test = "data/dataset_variants_test"

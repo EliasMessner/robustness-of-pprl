@@ -6,8 +6,8 @@ import subprocess as sp
 
 
 def main():
-    run("dataset_modifier_error_rate", "exp_config")
-    run("dataset_modifier_attr_val_length", "exp_config")
+    run("dm_config_error_rate", "rl_config")
+    run("dm_config_attr_val_length", "rl_config")
 
 
 def run(dm, ec):

@@ -19,17 +19,17 @@ from constants import default_dm_config_path, dataset_variants_dir, logs_dir
 
 
 def main():
-    _dm_config_path = get_config_path_from_argv(default=default_dm_config_path)
-    print(f"Creating variants based on {_dm_config_path}")
+    dm_config_path = get_config_path_from_argv(default=default_dm_config_path)
+    print(f"Creating variants based on {dm_config_path}")
     # delete existing dataset variants
     shutil.rmtree(dataset_variants_dir, ignore_errors=True)
     Path(dataset_variants_dir).mkdir(exist_ok=True)
     # store dm_config.json at top level in dataset_variants folder, so it can be logged by mlflow later
-    shutil.copyfile(_dm_config_path, os.path.join(dataset_variants_dir, "dm_config.json"))
+    shutil.copyfile(dm_config_path, os.path.join(dataset_variants_dir, "dm_config.json"))
     # create dataset variations
     dm = DatasetModifier()
-    dm.load_dataset_by_config_file(_dm_config_path)
-    dm.create_variants_by_config_file(_dm_config_path, dataset_variants_dir)
+    dm.load_dataset_by_config_file(dm_config_path)
+    dm.create_variants_by_config_file(dm_config_path, dataset_variants_dir)
 
 
 def prepare_logger():

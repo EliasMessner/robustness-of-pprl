@@ -20,10 +20,10 @@ def main():
     # create outfile for matching result if not exists
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     shutil.rmtree(matchings_dir, ignore_errors=True)  # delete existing matching
-    _exp_config_path = get_config_path_from_argv(default=default_exp_config_path)
-    print(f"Conducting experiments based on {_exp_config_path}")
+    rl_config_path = get_config_path_from_argv(default=default_rl_config_path)
+    print(f"Conducting experiments based on {rl_config_path}")
     # get configs for all experiments
-    experiments = read_json(_exp_config_path)["experiments"]
+    experiments = read_json(rl_config_path)["experiments"]
     # for each experiment, there is a dict of parameters for the RLModule
     tracker = Tracker()
     for exp_params in tqdm(experiments, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
