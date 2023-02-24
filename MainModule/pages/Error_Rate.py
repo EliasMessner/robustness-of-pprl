@@ -6,7 +6,15 @@ st.write("# Error Rate")
 
 CHART_ARRANGEMENT = st.sidebar.radio(label="Chart Arrangement", options=["Vertical", "Horizontal"])
 
-exp_ids = experiment_multiselect(default=["762972457522318676"])
+
+def experiment_multiselect(default):
+    options = [f"{e.experiment_id} '{e.name}'" for e in mlflow.search_experiments()]  # show ID and name
+    default = [f"{_id} '{mlflow.get_experiment(_id).name}'" for _id in default]
+    selection = st.multiselect("Experiments", options, default)
+    return [value.split()[0] for value in selection]  # return only ID
+
+
+exp_ids = experiment_multiselect(default=["573398124053858303"])
 runs = get_runs(exp_ids)
 assert (runs["params.subset_selection"] == "ERROR_RATE").all()
 
@@ -26,7 +34,7 @@ for step, preserve_overlap, downsampling in itertools.product(step_selections, p
     if step == 2:
         ranges = [[1, 2], [3, 4], [5, 6], [7, 8], [9, 12]]
     elif step == 3:
-        ranges = [[0, 2], [3, 5], [6, 8], [9, 12]]  # TODO change to [[1, 3], [4, 6], [7, 10]]
+        ranges = [[1, 3], [4, 6], [7, 10]]
     else:
         raise ValueError()
     param = "params.range"

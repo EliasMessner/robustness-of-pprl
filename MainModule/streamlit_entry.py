@@ -11,15 +11,6 @@ KEY = 0  # keys for enumerating widgets to avoid DuplicateWidgetID error
 st.set_page_config(layout="wide")
 
 
-def experiment_multiselect(default):
-    global KEY
-    options = [f"{e.experiment_id} '{e.name}'" for e in mlflow.search_experiments()]  # show ID and name
-    KEY += 1
-    default = [f"{_id} '{mlflow.get_experiment(_id).name}'" for _id in default]
-    selection = st.multiselect("Experiments", options, default, key=KEY)
-    return [value.split()[0] for value in selection]  # return only ID
-
-
 def get_runs(exp_ids):
     runs = mlflow.search_runs(exp_ids)
     runs = runs.apply(pd.to_numeric, errors="ignore")  # make numeric wherever possible
