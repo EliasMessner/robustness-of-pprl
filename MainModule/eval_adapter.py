@@ -12,7 +12,8 @@ class EvalAdapter:
         prepare the data needed for evaluation with third party recordlinkage module.
         https://recordlinkage.readthedocs.io/en/latest/ref-evaluation.html
         """
-        data = pd.read_csv(data_path, names=data_clm_names)
+        data = pd.read_csv(data_path, names=data_clm_names, dtype={"PLZ": str, "YEAROFBIRTH": int},
+                           keep_default_na=False)
         d1_and_d2 = [x for _, x in data.groupby(src_clm)]
         if len(d1_and_d2) < 2:
             # if there are no records or only records from one source, no true links exist

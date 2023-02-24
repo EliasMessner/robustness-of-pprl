@@ -1,6 +1,7 @@
 import os
 
 import mlflow
+from tqdm import tqdm
 
 from constants import matchings_dir, dataset_variants_dir
 from eval_adapter import EvalAdapter
@@ -9,7 +10,8 @@ from util import list_folder_names, read_json, read_txt
 
 def main():
     evaluator = Evaluator()
-    for exp in list_folder_names(matchings_dir):
+    for exp in tqdm(list_folder_names(matchings_dir), desc="Evaluating...",
+                    bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
         evaluator.track_experiment(exp)
 
 
@@ -29,7 +31,10 @@ class Evaluator:
         variant_groups = list_folder_names(dataset_variants_dir)
         matching_groups = list_folder_names(os.path.join(matchings_dir, exp_folder_name))
         assert len(variant_groups) == len(matching_groups)
-        for variant_group_name, matching_group_name in zip(variant_groups, matching_groups):
+        for variant_group_name, matching_group_name in tqdm(list(zip(variant_groups, matching_groups)),
+                                                            desc="Variant-Groups",
+                                                            bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                                            leave=False):
             assert variant_group_name == matching_group_name
             self.group_name = variant_group_name
             self.evaluate_group()
@@ -39,12 +44,26 @@ class Evaluator:
             variants = list_folder_names(os.path.join(dataset_variants_dir, self.group_name))
             matchings = list_folder_names(os.path.join(matchings_dir, self.exp_name, self.group_name))
             assert len(variants) == len(matchings)
-            for variant, matching in zip(variants, matchings):
+            for variant, matching in tqdm(list(zip(variants, matchings)), desc="Variants",
+                                          bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                          leave=False):
                 assert variant == matching  # assert that the folder names are equal
                 self.variant_path = os.path.join(dataset_variants_dir, self.group_name, variant, "records.csv")
-                self.matching_path = os.path.join(matchings_dir, self.exp_name, self.group_name, matching, "matching.csv")
-                self.evaluate_matching()
-                self.track_run()
+                self.evaluate_rl_configs_folder(matching)
+
+    def evaluate_rl_configs_folder(self, matching):
+        """
+        Iterate the folder containing the matching results for the different rl-parameter combinations
+        """
+        for rl_param_folder in tqdm(list_folder_names(os.path.join(matchings_dir, self.exp_name, self.group_name,
+                                                                   matching)),
+                                    desc="RL-configs",
+                                    bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                    leave=False):
+            self.matching_path = os.path.join(matchings_dir, self.exp_name, self.group_name, matching,
+                                              rl_param_folder, "matching.csv")
+            self.evaluate_matching()
+            self.track_run()
 
     def evaluate_matching(self):
         data_clm_names = read_json(self.dm_config_path)["col_names"]
@@ -67,7 +86,7 @@ class Evaluator:
             mlflow.log_artifact(desc_path)  # desc.txt
 
 
-def try_create_experiment(original_exp_name, limit=100) -> str:
+def try_create_experiment(exp_name, limit=100) -> str:
     """
     Try to create an experiment with the given name and return its experiment id.
     If an experiment with the same name already exists, append (2) (or (3), (4), ... and so on) to the name and
@@ -76,13 +95,13 @@ def try_create_experiment(original_exp_name, limit=100) -> str:
     """
     i = 1
     while True:
-        exp_name = original_exp_name if i == 1 else f"{original_exp_name} ({i})"
-        if len(mlflow.search_experiments(filter_string=f"name = '{exp_name}'")) > 0:
+        exp_name_with_counter = exp_name if i == 1 else f"{exp_name} ({i})"
+        if len(mlflow.search_experiments(filter_string=f"name = '{exp_name_with_counter}'")) > 0:
             i += 1
             if limit is not None and i > limit:
-                raise Exception(f"Experiment naming limit reached for '{exp_name}'")
+                raise Exception(f"Experiment naming limit reached for '{exp_name_with_counter}'")
             continue
-        return mlflow.create_experiment(name=exp_name)
+        return mlflow.create_experiment(name=exp_name_with_counter)
 
 
 def get_parent_run_description(variant_group_name):
