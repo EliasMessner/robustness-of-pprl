@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 from constants import matchings_dir, dataset_variants_dir
 from eval_adapter import EvalAdapter
-from util import list_folder_names, read_json, read_txt
+from util import list_folder_names, read_json, list_folder_names_flattened
 
 
 def main():
@@ -40,8 +40,8 @@ class Evaluator:
             mlflow.log_artifact(rl_base_config_path)
             mlflow.log_artifact(self.rl_config_path)
             mlflow.log_params(self.rl_config)
-            variants = list_folder_names(os.path.join(dataset_variants_dir))
-            matchings = list_folder_names(os.path.join(matchings_dir, rl_config_folder_name))
+            variants = list_folder_names_flattened(os.path.join(dataset_variants_dir))
+            matchings = list_folder_names_flattened(os.path.join(matchings_dir, rl_config_folder_name))
             assert len(variants) == len(matchings)
             for variant_name, matching_name in tqdm(list(zip(variants, matchings)), desc="Variants",
                                                     bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
@@ -80,7 +80,7 @@ def try_create_experiment(exp_name, limit=100, add_timestamp=True) -> str:
     If limit is not None, stop trying when the limit is reached.
     """
     if add_timestamp:
-        exp_name += dt.now().strftime("%Y-%m-%d_%H-%M-%S")
+        exp_name += "_" + dt.now().strftime("%Y-%m-%d_%H-%M-%S")
     i = 1
     while True:
         exp_name_with_counter = exp_name if i == 1 else f"{exp_name} ({i})"

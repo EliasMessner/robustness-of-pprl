@@ -9,7 +9,7 @@ import logging
 from tqdm import tqdm
 
 from constants import logs_dir, matchings_dir, default_rl_config_path, dataset_variants_dir, pprl_storage_file_location
-from util import get_config_path_from_argv, read_json, list_folder_names, write_json
+from util import get_config_path_from_argv, read_json, write_json, list_folder_names_flattened
 
 
 def main():
@@ -63,7 +63,7 @@ def resolve_rl_config(rl_base_config: dict):
 
 def iterate_variants(rl_config, rl_config_folder):
     rl_config_path = write_rl_config(rl_config, rl_config_folder)
-    for variant_name in tqdm(list_folder_names(dataset_variants_dir), desc="Variants",
+    for variant_name in tqdm(list_folder_names_flattened(dataset_variants_dir), desc="Variants",
                              bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
         data_path = os.path.join(dataset_variants_dir, variant_name, "records.csv")
         outfile_path = os.path.join(rl_config_folder, variant_name, "matching.csv")
