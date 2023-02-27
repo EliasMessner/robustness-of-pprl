@@ -71,7 +71,7 @@ class Evaluator:
 
     def track_run(self):
         dv_params = read_json(os.path.normpath(os.path.join(self.variant_path, "..", "params.json")))
-        rl_config_path = os.path.normpath(os.path.join(self.matching_path, "..", "rl_config.json"))
+        rl_config_path = os.path.normpath(os.path.join(self.matching_path, "..", "exp_config.json"))
         rl_config = read_json(rl_config_path)
         desc_path = os.path.join(dataset_variants_dir, self.group_name, "desc.txt")
         with mlflow.start_run(experiment_id=self.exp_id, nested=True):
@@ -82,7 +82,7 @@ class Evaluator:
             mlflow.log_artifact(self.dm_config_path)
             mlflow.log_artifact(self.variant_path)  # records.csv
             mlflow.log_artifact(self.matching_path)  # matching.csv
-            mlflow.log_artifact(rl_config_path)  # rl_config.json
+            mlflow.log_artifact(rl_config_path)  # exp_config.json
             mlflow.log_artifact(desc_path)  # desc.txt
 
 

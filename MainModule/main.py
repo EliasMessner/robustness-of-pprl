@@ -1,13 +1,13 @@
 """
-For launching dataset_modifier and conduct_experiments subsequently with given filenames
+For launching dataset_modifier, experiment_launcher, and evaluator subsequently with given filenames
 """
 
 import subprocess as sp
 
 
 def main():
-    run("dm_config_error_rate", "rl_config")
-    run("dm_config_attr_val_length", "rl_config")
+    run("dm_config_error_rate", "exp_config")
+    run("dm_config_attr_val_length", "exp_config")
 
 
 def run(dm, ec):

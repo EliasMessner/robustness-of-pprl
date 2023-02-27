@@ -7,7 +7,7 @@ import logging
 
 from tqdm import tqdm
 
-from constants import logs_dir, matchings_dir, default_rl_config_path, dataset_variants_dir, pprl_storage_file_location
+from constants import logs_dir, matchings_dir, default_exp_config_path, dataset_variants_dir, pprl_storage_file_location
 from util import get_config_path_from_argv, read_json, list_folder_names, write_json
 
 
@@ -16,12 +16,12 @@ def main():
     # create outfile for matching result if not exists
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
     shutil.rmtree(matchings_dir, ignore_errors=True)  # delete existing matching
-    rl_base_config_path = get_config_path_from_argv(default=default_rl_config_path)
-    print(f"Conducting matching based on {rl_base_config_path}")
+    exp_base_config_path = get_config_path_from_argv(default=default_exp_config_path)
+    print(f"Conducting matching based on {exp_base_config_path}")
     # get configs for all experiments
-    rl_config_list = read_json(rl_base_config_path)["experiments"]  # TODO change key name
-    for rl_base_config in tqdm(rl_config_list, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
-        iterate_variant_groups(rl_base_config)
+    exp_configs = read_json(exp_base_config_path)["experiments"]
+    for exp_config in tqdm(exp_configs, desc="Experiments", bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+        iterate_variant_groups(exp_config)
 
 
 def prepare_logger():
@@ -35,14 +35,14 @@ def prepare_logger():
                         level=logging.INFO)
 
 
-def iterate_variant_groups(rl_base_config):
-    exp_no = rl_base_config['exp_no']
+def iterate_variant_groups(exp_config):
+    exp_no = exp_config['exp_no']
     timestamp = dt.now().strftime("%Y-%m-%d_%H:%M:%S")
     exp_name = f"{exp_no}_{timestamp}"
     # create folder for this experiment's matching results
     exp_out_folder = os.path.join(matchings_dir, exp_name)
     Path(exp_out_folder).mkdir(exist_ok=True, parents=True)
-    rl_configs = resolve_rl_configs(rl_base_config)
+    rl_configs = resolve_rl_configs(exp_config)
     v_group_folder_names = list_folder_names(dataset_variants_dir)  # variant group folder names
     for v_group_folder_name in tqdm(v_group_folder_names, desc="Variant-Groups",
                                     bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
@@ -52,7 +52,7 @@ def iterate_variant_groups(rl_base_config):
 
 def resolve_rl_configs(rl_base_config):
     """
-    Resolve the base config into the individual rl configurations.
+    Resolve the experiment config into the individual rl configurations.
     E.g., in case there is a list of seeds (=token-salting affixes) given, make one rl-config for each value in
     the list.
     """
@@ -89,7 +89,7 @@ def write_rl_config(rl_config: dict, out_folder: str) -> str:
     create config for rl module for this run and return its absolute path
     """
     Path(out_folder).mkdir(exist_ok=True, parents=True)
-    rl_config_path = os.path.join(out_folder, "rl_config.json")
+    rl_config_path = os.path.join(out_folder, "exp_config.json")
     write_json(rl_config, rl_config_path)
     return os.path.abspath(rl_config_path)
 
