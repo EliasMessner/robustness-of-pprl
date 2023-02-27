@@ -78,7 +78,7 @@ class Evaluator:
             mlflow.log_metrics(self.eval_adapter.metrics())
             mlflow.log_params(dv_params)
             mlflow.set_tags(rl_config)
-            mlflow.set_tag("base_dataset", read_json(self.dm_config_path)["base_dataset"])
+            mlflow.log_param("base_dataset", read_json(self.dm_config_path)["base_dataset"])
             mlflow.log_artifact(self.dm_config_path)
             mlflow.log_artifact(self.variant_path)  # records.csv
             mlflow.log_artifact(self.matching_path)  # matching.csv
