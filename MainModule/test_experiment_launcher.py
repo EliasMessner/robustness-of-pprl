@@ -1,11 +1,11 @@
 from unittest import TestCase
 
-from experiment_launcher import resolve_exp_config
+from experiment_launcher import resolve_rl_config
 
 
 class Test(TestCase):
     def test_resolve_exp_config(self):
-        o = resolve_exp_config({
+        o = resolve_rl_config({
             "exp_no": 0,
             "seed": "42",
             "l": 1024,
@@ -58,7 +58,7 @@ class Test(TestCase):
         ]
         self.assertCountEqual(e, o)
 
-        o = resolve_exp_config({
+        o = resolve_rl_config({
             "exp_no": 0,
             "seed": "42",
             "l": 1024,

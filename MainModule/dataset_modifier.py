@@ -50,6 +50,7 @@ class DatasetModifier:
         :param omit_if_not_possible: Set to True (default) if a variant should be omitted instead of raising a
         ValueError, in case a specified ds-variant cannot be drawn (for example, a random sample with an overlap too large)
         """
+        self.variant_id = 0
         self.omit_if_not_possible = omit_if_not_possible
         self.omit_if_too_small = omit_if_too_small
         self.omitted_too_small = 0
@@ -116,16 +117,30 @@ class DatasetModifier:
         """
         param_variant_groups = get_param_variant_groups(read_json(config_path))
         Path(outfile_directory).mkdir(exist_ok=True)
-        group_id = 0
         for param_variant_group, description in tqdm(param_variant_groups, desc="Groups"):
             # Downsampling must be done separately,
             # when all ds variants have been created,
             # because the minimum ds size in the group must be known first.
             variant_group = self.get_variant_group(param_variant_group)
             variant_group = sample_all_down_if_needed(variant_group)
-            write_group_folder(variant_group, group_id, description, outfile_directory)
-            group_id += 1
+            self.write_variants(variant_group, outfile_directory)
         self.log_and_reset_omitted()
+        self.variant_id = 0
+
+    def write_variants(self, variants, outfile_directory):
+        """
+        Write all variants in given list
+        """
+        for variant, params in tqdm(variants, desc="Variant",
+                                    bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
+                                    leave=False):
+            # create this variant's sub folder
+            variant_sub_folder = os.path.join(outfile_directory, f"DV_{self.variant_id}")
+            Path(variant_sub_folder).mkdir(exist_ok=True)
+            # create records.csv and params.json
+            variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
+            _create_params_json(params, variant, variant_sub_folder)
+            self.variant_id += 1
 
     def get_variant_group(self, param_variants):
         """
@@ -387,30 +402,6 @@ def _sample_down_if_needed(min_group_size, downsampling_mode, variant):
         raise ValueError(f"Bad downsampling parameter '{downsampling_mode}'.")
     variant = random_sample_wrapper(variant, downsampling_size)
     return variant
-
-
-def write_group_folder(variant_group, group_id, description, outfile_directory):
-    # create this group's sub folder
-    group_sub_folder = os.path.join(outfile_directory, f"group_{group_id}")
-    Path(group_sub_folder).mkdir(exist_ok=True)
-    _create_description_txt(description, group_sub_folder)
-    variant_id = 0
-    for variant, params in tqdm(variant_group, desc="Variant",
-                                bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
-                                leave=False):
-        # create this variant's sub folder
-        variant_sub_folder = os.path.join(group_sub_folder, f"DV_{variant_id}")
-        Path(variant_sub_folder).mkdir(exist_ok=True)
-        # create records.csv, params.json and comment.txt
-        variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
-        _create_params_json(params, variant, variant_sub_folder)
-        variant_id += 1
-
-
-def _create_description_txt(desc: str, location):
-    outpath = os.path.join(location, "desc.txt")
-    with open(outpath, 'w') as outfile:
-        outfile.write(desc)
 
 
 def _create_params_json(params, variant, variant_sub_folder):

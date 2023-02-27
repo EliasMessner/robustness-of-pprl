@@ -1,4 +1,4 @@
-from constants import default_exp_config_path
+from constants import default_rl_config_path
 from util import write_json
 
 
@@ -11,4 +11,4 @@ def create_experiments_config():
         {"exp_no": 0, "seed": 1, "l": 1000, "k": 10, "t": 0.6},
         {"exp_no": 1, "seed": 1, "l": 1000, "k": 10, "t": 0.7}
     ]}
-    write_json(config, default_exp_config_path)
+    write_json(config, default_rl_config_path)
