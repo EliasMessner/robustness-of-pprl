@@ -1,10 +1,18 @@
 import itertools
 from streamlit_entry import *
 
+key = 0
+
 st.set_page_config(page_title="Error Rate")
 st.write("# Error Rate")
 
 CHART_ARRANGEMENT = st.sidebar.radio(label="Chart Arrangement", options=["Vertical", "Horizontal"])
+st.sidebar.write("Figure Size")
+key += 1
+size_x = st.sidebar.slider(label="X", min_value=5, max_value=20, value=DEFAULT_FIG_SIZE[0], key=key)
+key += 1
+size_y = st.sidebar.slider(label="Y", min_value=3, max_value=15, value=DEFAULT_FIG_SIZE[1], key=key)
+fig = plt.figure(figsize=(size_x, size_y))
 
 
 def experiment_multiselect(default):
@@ -50,5 +58,6 @@ for step, preserve_overlap, downsampling in itertools.product(step_selections, p
         if runs_filtered.shape[0] == 0:
             continue
         # st.dataframe(runs_filtered)
+        key += 1
         basic_box_plot(runs_filtered, param=param, x_order=sorted(runs_filtered[param].unique().tolist()),
-                       chart_arrangement=CHART_ARRANGEMENT)
+                       chart_arrangement=CHART_ARRANGEMENT, key=key, fig=fig)
