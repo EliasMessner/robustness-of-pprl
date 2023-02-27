@@ -1,3 +1,4 @@
+import itertools
 import os
 import shutil
 import subprocess
@@ -42,7 +43,7 @@ def iterate_variant_groups(exp_config):
     # create folder for this experiment's matching results
     exp_out_folder = os.path.join(matchings_dir, exp_name)
     Path(exp_out_folder).mkdir(exist_ok=True, parents=True)
-    rl_configs = resolve_rl_configs(exp_config)
+    rl_configs = resolve_exp_config(exp_config)
     v_group_folder_names = list_folder_names(dataset_variants_dir)  # variant group folder names
     for v_group_folder_name in tqdm(v_group_folder_names, desc="Variant-Groups",
                                     bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
@@ -50,20 +51,20 @@ def iterate_variant_groups(exp_config):
         do_matching_for_variant_group(rl_configs, v_group_folder_name, exp_out_folder)
 
 
-def resolve_rl_configs(rl_base_config):
+def resolve_exp_config(exp_config: dict):
     """
     Resolve the experiment config into the individual rl configurations.
     E.g., in case there is a list of seeds (=token-salting affixes) given, make one rl-config for each value in
     the list.
     """
+    exp_config_val_lists = {key: value if isinstance(value, list) else [value]
+                            for key, value in exp_config.items()}  # convert all values to lists if they aren't already
     rl_configs = []
-    if isinstance(rl_base_config["seed"], list):
-        for seed in rl_base_config["seed"]:
-            new_rl_config = rl_base_config.copy()
-            new_rl_config["seed"] = seed
-            rl_configs.append(new_rl_config)
-    else:
-        rl_configs.append(rl_base_config)
+    for value_combination in itertools.product(*exp_config_val_lists.values()):
+        new_rl_config = exp_config.copy()
+        for key, value in zip(exp_config_val_lists.keys(), value_combination):
+            new_rl_config[key] = value
+        rl_configs.append(new_rl_config)
     return rl_configs
 
 
