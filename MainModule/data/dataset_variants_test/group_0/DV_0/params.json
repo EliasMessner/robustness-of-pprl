@@ -1,0 +1,12 @@
+{
+  "subset_selection": "ERROR_RATE",
+  "measure": "count_errors",
+  "range": [
+    1,
+    3
+  ],
+  "downsampling": null,
+  "preserve_overlap": true,
+  "seed": 42,
+  "size": 88300
+}
