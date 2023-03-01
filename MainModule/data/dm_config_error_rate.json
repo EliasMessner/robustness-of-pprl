@@ -3,15 +3,15 @@
   "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
   "source_id_col_name": "sourceID",
   "global_id_col_name": "globalID",
-  "desc": "Variation of error rates.",
+  "desc": "ERROR-RATE",
   "variations": [
     {
-      "desc": "Different error rate ranges (step=2), \npreserve_overlap=[on,off] \ndownsampling=TO_MIN_GROUP_SIZE",
+      "desc": "Different error rate ranges (step=2), \npreserve_overlap=[on,off] \ndownsampling=200000",
       "params": {
         "subset_selection": "ERROR_RATE",
         "measure": "count_errors",
         "range": null,
-        "downsampling": "TO_MIN_GROUP_SIZE",
+        "downsampling": 200000,
         "preserve_overlap": null
       },
       "replacements": {
@@ -20,12 +20,12 @@
       }
     },
     {
-      "desc": "Different error rate ranges (step=3), \npreserve_overlap=[on,off] \ndownsampling=TO_MIN_GROUP_SIZE",
+      "desc": "Different error rate ranges (step=3), \npreserve_overlap=[on,off] \ndownsampling=200000",
       "params": {
         "subset_selection": "ERROR_RATE",
         "measure": "count_errors",
         "range": null,
-        "downsampling": "TO_MIN_GROUP_SIZE",
+        "downsampling": 200000,
         "preserve_overlap": null
       },
       "replacements": {

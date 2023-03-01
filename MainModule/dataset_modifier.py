@@ -50,6 +50,8 @@ class DatasetModifier:
         :param omit_if_not_possible: Set to True (default) if a variant should be omitted instead of raising a
         ValueError, in case a specified ds-variant cannot be drawn (for example, a random sample with an overlap too large)
         """
+        self.variant_id = 0
+        self.group_id = 0
         self.omit_if_not_possible = omit_if_not_possible
         self.omit_if_too_small = omit_if_too_small
         self.omitted_too_small = 0
@@ -116,16 +118,32 @@ class DatasetModifier:
         """
         param_variant_groups = get_param_variant_groups(read_json(config_path))
         Path(outfile_directory).mkdir(exist_ok=True)
-        group_id = 0
         for param_variant_group, description in tqdm(param_variant_groups, desc="Groups"):
             # Downsampling must be done separately,
             # when all ds variants have been created,
             # because the minimum ds size in the group must be known first.
             variant_group = self.get_variant_group(param_variant_group)
             variant_group = sample_all_down_if_needed(variant_group)
-            write_group_folder(variant_group, group_id, description, outfile_directory)
-            group_id += 1
+            self.write_variant_group(variant_group, outfile_directory)
+            self.group_id += 1
         self.log_and_reset_omitted()
+        self.variant_id = 0
+        self.group_id = 0
+
+    def write_variant_group(self, variants, outfile_directory):
+        """
+        Write given variants in new group folder
+        """
+        group_folder = os.path.join(outfile_directory, f"group_{self.group_id}")
+        Path(group_folder).mkdir(parents=True)
+        for variant, params in tqdm(variants, desc="Variant", leave=False):
+            # create this variant's sub folder
+            variant_sub_folder = os.path.join(group_folder, f"DV_{self.variant_id}")
+            Path(variant_sub_folder).mkdir(parents=True)
+            # create records.csv and params.json
+            variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
+            _create_params_json(params, variant, variant_sub_folder)
+            self.variant_id += 1
 
     def get_variant_group(self, param_variants):
         """
@@ -277,6 +295,8 @@ class DatasetModifier:
             logging.info(
                 f"Omitted {self.omitted_invalid_params} variants because they could not be created (possibly due to "
                 f"impossible parameter combination). See logs for further info.")
+        self.omitted_invalid_params = 0
+        self.omit_if_not_possible = 0
 
 
 def get_param_variant_groups(config) -> list[(list[dict], str)]:
@@ -358,9 +378,7 @@ def sample_all_down_if_needed(variant_group):
     """
     result = []
     min_group_size = min(variant[0].shape[0] for variant in variant_group)  # size of the smallest variant in this group
-    for variant, params in tqdm(variant_group, desc="Downsampling",
-                                bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
-                                leave=False):
+    for variant, params in tqdm(variant_group, desc="Downsampling", leave=False):
         # sample down if necessary
         downsampling_mode = params.get("downsampling", None)
         variant = _sample_down_if_needed(min_group_size, downsampling_mode, variant)
@@ -382,35 +400,11 @@ def _sample_down_if_needed(min_group_size, downsampling_mode, variant):
     if downsampling_mode == "TO_MIN_GROUP_SIZE":
         downsampling_size = min_group_size
     elif isinstance(downsampling_mode, int):
-        downsampling_size = downsampling_mode
+        downsampling_size = min(downsampling_mode, min_group_size)
     else:
         raise ValueError(f"Bad downsampling parameter '{downsampling_mode}'.")
     variant = random_sample_wrapper(variant, downsampling_size)
     return variant
-
-
-def write_group_folder(variant_group, group_id, description, outfile_directory):
-    # create this group's sub folder
-    group_sub_folder = os.path.join(outfile_directory, f"group_{group_id}")
-    Path(group_sub_folder).mkdir(exist_ok=True)
-    _create_description_txt(description, group_sub_folder)
-    variant_id = 0
-    for variant, params in tqdm(variant_group, desc="Variant",
-                                bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
-                                leave=False):
-        # create this variant's sub folder
-        variant_sub_folder = os.path.join(group_sub_folder, f"DV_{variant_id}")
-        Path(variant_sub_folder).mkdir(exist_ok=True)
-        # create records.csv, params.json and comment.txt
-        variant.to_csv(os.path.join(variant_sub_folder, "records.csv"), index=False, header=False)
-        _create_params_json(params, variant, variant_sub_folder)
-        variant_id += 1
-
-
-def _create_description_txt(desc: str, location):
-    outpath = os.path.join(location, "desc.txt")
-    with open(outpath, 'w') as outfile:
-        outfile.write(desc)
 
 
 def _create_params_json(params, variant, variant_sub_folder):

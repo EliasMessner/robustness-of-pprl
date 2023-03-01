@@ -243,7 +243,7 @@ class TestDatasetModifier(TestCase):
             }
         )
         self.assertEqual(
-            read_json(os.path.join(dataset_variants_dir_test, "group_1/DV_1/params.json")),
+            read_json(os.path.join(dataset_variants_dir_test, "group_1/DV_3/params.json")),
             {
                 "subset_selection": "ATTRIBUTE_VALUE",
                 "column": "GENDER",
