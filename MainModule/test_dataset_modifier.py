@@ -225,10 +225,15 @@ class TestDatasetModifier(TestCase):
         self.assertCountEqual(variations, expectation)
 
     def test_attribute_value_subset(self):
+        # test is_in
         all_genders = self.sg.attribute_value_subset(params={"column": "GENDER", "is_in": ["M", "F", "U"]})
         pd.testing.assert_frame_equal(all_genders, self.sg.df, check_like=True)  # ignore order
+        # test equals
         f = self.sg.attribute_value_subset(params={"column": "GENDER", "equals": "F"})
         self.assertTrue(f.eq("F").all(axis=0)["GENDER"])
+        # test range
+        yob_selection = self.sg.attribute_value_subset(params={"column": "YEAROFBIRTH", "range": [1950, 1965]})
+        self.assertTrue(yob_selection["YEAROFBIRTH"].map(lambda yob: 1950 <= yob <= 1965).all())
 
     def test_downsampling(self):
         self.create_variants("data/test_dm_config_downsampling.json")
