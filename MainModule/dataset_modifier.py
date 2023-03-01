@@ -86,8 +86,7 @@ class DatasetModifier:
     def read_csv(self, dataset_path: str, col_names: list, source_id_col_name: str = "sourceID",
                  global_id_col_name: str = "globalID"):
         """
-        The passed dataset is expected to consist of two equally sized sources,
-        distinguishable by a column containing a sourceID.
+        The passed dataset is expected to consist of two sources, distinguishable by a column containing a sourceID.
         :param dataset_path: Filepath to dataset csv
         :type dataset_path: str
         :param col_names: column names of dataset
@@ -100,7 +99,6 @@ class DatasetModifier:
         self.df = pd.read_csv(dataset_path, names=col_names, dtype={"PLZ": str},
                               keep_default_na=False)  # keep_default_na for representing empty PLZ values as empty str and not nan
         self.df_a, self.df_b = split_by_source_id(self.df)
-        assert self.df_a.shape == self.df_b.shape
         self.global_id_col_name = global_id_col_name
         self.source_id_col_name = source_id_col_name
         self.true_matches_a, self.true_matches_b = get_true_matches(self.df_a, self.df_b, self.global_id_col_name)
