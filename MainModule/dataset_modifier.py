@@ -136,9 +136,7 @@ class DatasetModifier:
         """
         group_folder = os.path.join(outfile_directory, f"group_{self.group_id}")
         Path(group_folder).mkdir(parents=True)
-        for variant, params in tqdm(variants, desc="Variant",
-                                    bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
-                                    leave=False):
+        for variant, params in tqdm(variants, desc="Variant", leave=False):
             # create this variant's sub folder
             variant_sub_folder = os.path.join(group_folder, f"DV_{self.variant_id}")
             Path(variant_sub_folder).mkdir(parents=True)
@@ -297,6 +295,8 @@ class DatasetModifier:
             logging.info(
                 f"Omitted {self.omitted_invalid_params} variants because they could not be created (possibly due to "
                 f"impossible parameter combination). See logs for further info.")
+        self.omitted_invalid_params = 0
+        self.omit_if_not_possible = 0
 
 
 def get_param_variant_groups(config) -> list[(list[dict], str)]:
@@ -378,9 +378,7 @@ def sample_all_down_if_needed(variant_group):
     """
     result = []
     min_group_size = min(variant[0].shape[0] for variant in variant_group)  # size of the smallest variant in this group
-    for variant, params in tqdm(variant_group, desc="Downsampling",
-                                bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}',
-                                leave=False):
+    for variant, params in tqdm(variant_group, desc="Downsampling", leave=False):
         # sample down if necessary
         downsampling_mode = params.get("downsampling", None)
         variant = _sample_down_if_needed(min_group_size, downsampling_mode, variant)

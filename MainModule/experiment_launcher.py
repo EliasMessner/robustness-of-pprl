@@ -37,9 +37,7 @@ def prepare_logger():
 
 def iterate_rl_configs(rl_base_config_path):
     rl_configs = resolve_rl_config(read_json(rl_base_config_path))
-    for rl_config_no, rl_config in tqdm(list(enumerate(rl_configs)),
-                                        desc="RL-configs",
-                                        bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+    for rl_config_no, rl_config in tqdm(list(enumerate(rl_configs)), desc="RL-configs"):
         rl_config_folder = os.path.join(matchings_dir, f"rl_config_{rl_config_no}")
         Path(rl_config_folder).mkdir(exist_ok=True, parents=True)
         iterate_variants(rl_config, rl_config_folder)
@@ -63,8 +61,7 @@ def resolve_rl_config(rl_base_config: dict):
 
 def iterate_variants(rl_config, rl_config_folder):
     rl_config_path = write_rl_config(rl_config, rl_config_folder)
-    for variant_name in tqdm(list_folder_names_flattened(dataset_variants_dir), desc="Variants",
-                             bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
+    for variant_name in tqdm(list_folder_names_flattened(dataset_variants_dir), desc="Variants", leave=False):
         data_path = os.path.join(dataset_variants_dir, variant_name, "records.csv")
         outfile_path = os.path.join(rl_config_folder, variant_name, "matching.csv")
         call_rl_module(data_path, outfile_path, rl_config_path)

@@ -28,8 +28,7 @@ class Evaluator:
     def track_experiment(self):
         exp_name = read_json(self.dm_config_path)["desc"]
         self.exp_id = try_create_experiment(exp_name=exp_name)
-        for rl_config_folder_name in tqdm(list_folder_names(matchings_dir), desc="RL-configs",
-                                          bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}'):
+        for rl_config_folder_name in tqdm(list_folder_names(matchings_dir), desc="RL-configs"):
             self.track_parent_run(rl_config_folder_name)
 
     def track_parent_run(self, rl_config_folder_name):
@@ -43,8 +42,7 @@ class Evaluator:
             variants = list_folder_names_flattened(os.path.join(dataset_variants_dir))
             matchings = list_folder_names_flattened(os.path.join(matchings_dir, rl_config_folder_name))
             assert len(variants) == len(matchings)
-            for variant_name, matching_name in tqdm(list(zip(variants, matchings)), desc="Variants",
-                                                    bar_format='{l_bar}{bar:10}{r_bar}{bar:-10b}', leave=False):
+            for variant_name, matching_name in tqdm(list(zip(variants, matchings)), desc="Variants", leave=False):
                 assert variant_name == matching_name  # assert that the folder names are equal
                 self.variant_name = variant_name
                 self.variant_path = os.path.join(dataset_variants_dir, variant_name, "records.csv")
