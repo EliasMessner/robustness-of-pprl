@@ -6,7 +6,7 @@
   "desc": "RANDOM-CARTESIAN",
   "variations":[
     {
-      "desc": "Random subsets with different sizes, overlap=0.2",
+      "desc": "Random subsets with all combinations of different sizes and overlaps",
       "params": {
         "subset_selection": "RANDOM",
         "seed": 42,
