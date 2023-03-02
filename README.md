@@ -15,13 +15,15 @@ Requires JDK 17 or newer.
 
 # MainModule
 
-Requires Python 3.10.
+Requires Python 3.9.x
+
+Python 3.10 might cause problems with MLflow.
 
 ## Install requirements
 
 If using conda environment, first install pip in conda env using
 
-> conda activate \<some-python-3.10-env\>
+> conda activate \<some-python-3.9-env\>
 
 > conda install pip
 
