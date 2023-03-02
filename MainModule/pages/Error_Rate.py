@@ -22,7 +22,7 @@ def experiment_multiselect(default):
     return [value.split()[0] for value in selection]  # return only ID
 
 
-exp_ids = experiment_multiselect(default=["573398124053858303"])
+exp_ids = experiment_multiselect(default=["308707501760303082"])
 runs = get_runs(exp_ids)
 assert (runs["params.subset_selection"] == "ERROR_RATE").all()
 
@@ -37,7 +37,8 @@ def resolve_downsampling(observed_value, selected_value):
     return observed_value == selected_value
 
 
-for step, preserve_overlap, downsampling in itertools.product(step_selections, preserve_overlap_selections, downsampling_selections):
+for step, preserve_overlap, downsampling in itertools.product(step_selections, preserve_overlap_selections,
+                                                              downsampling_selections):
     # TODO add step as param to dm_config and select by this param
     if step == 2:
         ranges = [[1, 2], [3, 4], [5, 6], [7, 8], [9, 12]]

@@ -21,7 +21,7 @@ def experiment_multiselect(default):
     return [value.split()[0] for value in selection]  # return only ID
 
 
-exp_ids = experiment_multiselect(default=["470582673248318889"])
+exp_ids = experiment_multiselect(default=["841125091019294509"])
 runs = get_runs(exp_ids)
 assert (runs["params.subset_selection"] == "ATTRIBUTE_VALUE").all()
 assert (~runs["params.length"].isnull()).all()
