@@ -22,7 +22,7 @@ public class Matcher {
      * Constructor for Linker object that can then be used to perform various linking methods on the data.
      * @param dataSet entire dataset
      * @param parameters program parameters
-     * @param personBloomFilterMap map containing person objects as keys and their BloomFilters as values. See Main.getPersonBloomFilterMap().
+     * @param personBloomFilterMap map containing person objects as keys and their BloomFilters as values. See Encoder.createPersonBloomFilterMap().
      * @param blockingMap map containing the blocking keys and sets of records. See Person.getBlockingMap().
      * @param sourceNameA name of source A
      * @param sourceNameB name of source B
