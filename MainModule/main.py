@@ -12,6 +12,7 @@ def main():
     run("dm_config_age", "rl_config")
     run("dm_config_plz", "rl_config")
     # run("dm_config_random_cartesian_product", "rl_config_10_seeds")  TODO run this over night
+    # run("dm_config_random", "rl_config")
 
 
 def run(dm_config_name, rl_config_name):
