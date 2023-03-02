@@ -22,7 +22,7 @@ public class Matcher {
      * Constructor for Linker object that can then be used to perform various linking methods on the data.
      * @param dataSet entire dataset
      * @param parameters program parameters
-     * @param personBloomFilterMap map containing person objects as keys and their BloomFilters as values. See Main.getPersonBloomFilterMap().
+     * @param personBloomFilterMap map containing person objects as keys and their BloomFilters as values. See Encoder.createPersonBloomFilterMap().
      * @param blockingMap map containing the blocking keys and sets of records. See Person.getBlockingMap().
      * @param sourceNameA name of source A
      * @param sourceNameB name of source B
@@ -220,9 +220,9 @@ public class Matcher {
 
     /**
      * Splits the dataset into two equally sized subsets by the sourceID attribute. Therefore, the dataset is expected to
-     * have half the entries with sourceID "A", the other half with sourceID "B".
+     * have only entries with sourceID = this.sourceNameA or sourceID = this.sourceNameB.
      * @param dataSet the array to be split.
-     * @return a 2D Person-array, the first dimension only containing two entries, each a subset of the dataset.
+     * @return a list with two Person-Arrays, one for each sourceID.
      */
     private List<Person[]> splitDataBySource(Person[] dataSet) {
         List<Person> a = new ArrayList<>();
