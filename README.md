@@ -17,7 +17,7 @@ Requires JDK 17 or newer.
 
 Requires Python 3.10.
 
-### Install requirements
+## Install requirements
 
 If using conda environment, first install pip in conda env using
 
@@ -31,11 +31,37 @@ Install requirements
 
 > pip install -r requirements.txt
 
-### Create all Dataset Variations
+## Standard Use Case
 
-> python dataset_modifier.py
+The work flow consists of three successive steps:
 
-### Run Experiments
+1. Create dataset variants
+
+2. Conduct experiments
+
+3. Evaluate results
+
+They can be conducted manually:
+
+> cd MainModule
+
+### Create all Dataset Variants
+
+> python dataset_modifier.py \<optional_dm_config_path\>
+
+<optional_dm_config_path> = path to dataset modifier configuration file, defaults to data/dm_config.json
+
+### Conduct Experiments
+
+> python experiment_launcher.py <optional_rl_config_path>
+
+\<optional_rl_config_path\> = path to record linkage configuration file, defaults to data/rl_config.json
+
+### Evaluate Results
+
+> python evaluator.py
+
+To automatically conduct the three steps with all relevant config files, call
 
 > python main.py
 
@@ -43,14 +69,14 @@ Install requirements
 
 For visualization of results
 
-### Start local server
+## Start local server
 
 > cd MainModule
 
 > streamlit run streamlit_app.py --server.fileWatcherType none
 
-## Miscellaneous
+# Miscellaneous
 
-### Freeze requirements when conda env activated
+## Freeze requirements when conda env activated
 
 > pip list --format=freeze \> requirements.txt
