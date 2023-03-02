@@ -43,7 +43,7 @@ The work flow consists of three successive steps:
 
 3. Evaluate results
 
-They can be conducted manually:
+They can be conducted manually or automatically. For manual use:
 
 > cd MainModule
 
