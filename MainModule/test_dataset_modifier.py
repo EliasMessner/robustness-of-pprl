@@ -21,7 +21,7 @@ col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH
 class TestDatasetModifier(TestCase):
     def setUp(self) -> None:
         self.sg = DatasetModifier(omit_if_not_possible=False)
-        self.sg.load_dataset_by_config_file("data/test_dm_config.json")
+        self.sg.load_dataset_by_config_file("data/dm_config.json")
 
     def test_size(self):
         self.assertEqual(self.sg.df.shape[0], 200000)
@@ -236,7 +236,7 @@ class TestDatasetModifier(TestCase):
         self.assertTrue(yob_selection["YEAROFBIRTH"].map(lambda yob: 1950 <= yob <= 1965).all())
 
     def test_downsampling(self):
-        self.create_variants("data/test_dm_config_downsampling.json")
+        self.create_variants("test_resources/dm_config_downsampling.json")
         self.assertEqual(
             read_json(os.path.join(dataset_variants_dir_test, "group_0/DV_1/params.json")),
             {
@@ -282,7 +282,7 @@ class TestDatasetModifier(TestCase):
                 check_operation(variant, params)
 
     def test_error_rate_selection(self):
-        self.check_all_variants_ok("data/test_dm_config_error_rate.json", self.error_rates_ok)
+        self.check_all_variants_ok("test_resources/dm_config_error_rate.json", self.error_rates_ok)
 
     def error_rates_ok(self, df, params):
         min_e, max_e = params["range"]
@@ -299,7 +299,7 @@ class TestDatasetModifier(TestCase):
         return pairs.apply(lambda row: measure(row, attrs), axis=1)
 
     def test_attr_val_dist(self):
-        self.check_all_variants_ok("data/test_dm_config_attr_val_dist.json", self.attr_val_dist_ok)
+        self.check_all_variants_ok("test_resources/dm_config_attr_val_dist.json", self.attr_val_dist_ok)
 
     def attr_val_dist_ok(self, df, params):
         # check overlap
@@ -313,7 +313,7 @@ class TestDatasetModifier(TestCase):
         self.assertDictEqual(exp_dist, obs_dist)
 
     def test_attr_val_length(self):
-        dm_config_path = "data/test_dm_config_attr_val_length.json"
+        dm_config_path = "test_resources/dm_config_attr_val_length.json"
         self.create_variants(dm_config_path)
         self.check_all_variants_ok(dm_config_path, check_operation=lambda variant, params: self.attr_val_length_ok)
 

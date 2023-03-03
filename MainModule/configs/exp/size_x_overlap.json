@@ -1,0 +1,11 @@
+{
+  "experiments": [
+    {
+      "exp_name": "SIZE-OVERLAP-CORRELATION",
+      "dm_config": "configs/dm/size_x_overlap.json",
+      "rl_config": "configs/rl/10_seeds.json",
+      "append_if_exists": false,
+      "timestamp": true
+    }
+  ]
+}

@@ -1,8 +1,10 @@
+"""
+Changes artifact path prefixes for all runs in given experiments
+"""
+
 import os.path
 
 from util import list_folder_names
-
-# change artifact path prefixes for all runs in given experiments
 
 old_path_prefix = "C:/Users/elias/PycharmProjects"
 new_path_prefix = "home/elias/VSCodeProjects"

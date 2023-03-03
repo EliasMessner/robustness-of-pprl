@@ -1,0 +1,22 @@
+{
+  "experiments": [
+    {
+      "exp_name": "GENDER",
+      "dm_config": "configs/dm/gender.json",
+      "append_if_exists": false,
+      "timestamp": true
+    },
+    {
+      "exp_name": "PLZ",
+      "dm_config": "configs/dm/plz.json",
+      "append_if_exists": false,
+      "timestamp": true
+    },
+    {
+      "exp_name": "AGE",
+      "dm_config": "configs/dm/age.json",
+      "append_if_exists": false,
+      "timestamp": true
+    }
+  ]
+}

@@ -13,35 +13,17 @@ from datetime import datetime as dt
 import error_rates
 from dataset_properties import get_overlap, get_true_matches, split_by_source_id
 from attr_val_dist import attr_val_dist_random_sample
+from log import prepare_logger
 from random_sample import random_sample, random_sample_wrapper
-from util import read_json, write_json, get_config_path_from_argv
-from constants import default_dm_config_path, dataset_variants_dir, logs_dir
+from util import read_json, write_json, get_config_path_from_argv, write_file
+from constants import dataset_variants_dir, logs_dir
 
 
 def main():
-    dm_config_path = get_config_path_from_argv(default=default_dm_config_path)
-    print(f"Creating variants based on {dm_config_path}")
-    # delete existing dataset variants
-    shutil.rmtree(dataset_variants_dir, ignore_errors=True)
-    Path(dataset_variants_dir).mkdir(exist_ok=True)
-    # store dm_config.json at top level in dataset_variants folder, so it can be logged by mlflow later
-    shutil.copyfile(dm_config_path, os.path.join(dataset_variants_dir, "dm_config.json"))
-    # create dataset variations
+    dm_config_path = get_config_path_from_argv(required=True)
     dm = DatasetModifier()
     dm.load_dataset_by_config_file(dm_config_path)
     dm.create_variants_by_config_file(dm_config_path, dataset_variants_dir)
-
-
-def prepare_logger():
-    logs_sub_dir = os.path.join(logs_dir, "dataset_modifier")
-    Path(logs_sub_dir).mkdir(parents=True, exist_ok=True)
-    timestamp = dt.now().strftime("%Y-%m-%d_%H-%M-%S")
-    logging.basicConfig(filename=os.path.join(logs_sub_dir, f"{timestamp}.txt"),
-                        filemode='a',
-                        format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
-                        datefmt='%H:%M:%S',
-                        level=logging.INFO)
-    logging.getLogger().addHandler(logging.StreamHandler())
 
 
 class DatasetModifier:
@@ -50,6 +32,7 @@ class DatasetModifier:
         :param omit_if_not_possible: Set to True (default) if a variant should be omitted instead of raising a
         ValueError, in case a specified ds-variant cannot be drawn (for example, a random sample with an overlap too large)
         """
+        prepare_logger()
         self.variant_id = 0
         self.group_id = 0
         self.omit_if_not_possible = omit_if_not_possible
@@ -114,6 +97,13 @@ class DatasetModifier:
         In the group sub folder, each variant goes in a sub folder containing its parameters in params.json and its
         records in records.csv.
         """
+        print(f"Creating variants based on {config_path}")
+        # delete existing dataset variants
+        shutil.rmtree(dataset_variants_dir, ignore_errors=True)
+        Path(dataset_variants_dir).mkdir(exist_ok=True)
+        # store dm_config.json at top level in dataset_variants folder, so it can be logged by mlflow later
+        shutil.copyfile(config_path, os.path.join(dataset_variants_dir, "dm_config.json"))
+        # create dataset variations
         param_variant_groups = get_param_variant_groups(read_json(config_path))
         Path(outfile_directory).mkdir(exist_ok=True)
         for param_variant_group, description in tqdm(param_variant_groups, desc="Groups"):
@@ -122,18 +112,19 @@ class DatasetModifier:
             # because the minimum ds size in the group must be known first.
             variant_group = self.get_variant_group(param_variant_group)
             variant_group = sample_all_down_if_needed(variant_group)
-            self.write_variant_group(variant_group, outfile_directory)
+            self.write_variant_group(variant_group, outfile_directory, description)
             self.group_id += 1
         self.log_and_reset_omitted()
         self.variant_id = 0
         self.group_id = 0
 
-    def write_variant_group(self, variants, outfile_directory):
+    def write_variant_group(self, variants, outfile_directory, description):
         """
         Write given variants in new group folder
         """
         group_folder = os.path.join(outfile_directory, f"group_{self.group_id}")
         Path(group_folder).mkdir(parents=True)
+        write_file(os.path.join(group_folder, "description.txt"), description)
         for variant, params in tqdm(variants, desc="Variant", leave=False):
             # create this variant's sub folder
             variant_sub_folder = os.path.join(group_folder, f"DV_{self.variant_id}")
@@ -420,7 +411,7 @@ def get_dist_as_dict(params):
     Returns the distribution specified under the "dist" key and transforms string-keys to tuples if "dist_is_range" is
     set to true. Useful because for some distributions (e.g. age) ranges are preferred as keys, but JSON only allows
     strings as keys, while python also allows tuples.
-    For example parameter see test_dm_config_attr_val_dist.json.
+    For example parameter see test_resources/dm_config_attr_val_dist.json.
     """
     if params.get("dist_is_range", False):
         dist = {}

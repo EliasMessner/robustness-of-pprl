@@ -1,0 +1,11 @@
+{
+  "experiments": [
+    {
+      "exp_name": "TEST",
+      "dm_config": "test_resources/dm_config.json",
+      "rl_config": "test_resources/rl_config.json",
+      "append_if_exists": false,
+      "timestamp": true
+    }
+  ]
+}

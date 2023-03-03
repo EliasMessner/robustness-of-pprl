@@ -1,24 +1,15 @@
 """
-For launching dataset_modifier, experiment_launcher, and evaluator subsequently with given filenames
+Launches all experiment config files in experiment configs dir (configs/exp)
 """
 
-import subprocess as sp
+import launch_experiments
+from constants import exp_configs_dir
+from util import list_file_paths
 
 
 def main():
-    run("dm_config_error_rate", "rl_config")
-    run("dm_config_attr_val_length", "rl_config")
-    run("dm_config_gender", "rl_config")
-    run("dm_config_age", "rl_config")
-    run("dm_config_plz", "rl_config")
-    # run("dm_config_random_cartesian_product", "rl_config_10_seeds")  TODO run this over night
-    # run("dm_config_random", "rl_config")
-
-
-def run(dm_config_name, rl_config_name):
-    sp.run(f"python dataset_modifier.py data/{dm_config_name}.json", shell=True, check=True)
-    sp.run(f"python experiment_launcher.py data/{rl_config_name}.json", shell=True, check=True)
-    sp.run("python evaluator.py", shell=True, check=True)
+    for exp_config_path in list_file_paths(exp_configs_dir):
+        launch_experiments.main(exp_config_path)
 
 
 if __name__ == "__main__":

@@ -6,9 +6,9 @@ from eval_adapter import EvalAdapter
 
 class Test(TestCase):
     def setUp(self) -> None:
-        self.data_path = "data/test_eval_data.csv"
+        self.data_path = "test_resources/eval_data.csv"
         self.data_clm_names = ["sourceID", "globalID"]
-        self.pred_path = "data/test_eval_pred.csv"
+        self.pred_path = "test_resources/eval_pred.csv"
         self.eval = EvalAdapter(self.data_path, self.data_clm_names, self.pred_path)
 
     def test_init(self):

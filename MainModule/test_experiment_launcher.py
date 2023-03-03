@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from experiment_launcher import resolve_rl_config
+from create_linking import resolve_rl_config
 
 
 class Test(TestCase):

@@ -3,36 +3,27 @@ import os
 import shutil
 import subprocess
 from pathlib import Path
-from datetime import datetime as dt
 import logging
 
 from tqdm import tqdm
 
-from constants import logs_dir, matchings_dir, default_rl_config_path, dataset_variants_dir, pprl_storage_file_location
+from constants import matchings_dir, default_rl_config_path, dataset_variants_dir, pprl_storage_file_location
+from log import prepare_logger
 from util import get_config_path_from_argv, read_json, write_json, list_folder_names_flattened
 
 
-def main():
+def main(rl_base_config_path=None):
     prepare_logger()
+    logging.getLogger().setLevel(logging.WARNING)
     # create outfile for matching result if not exists
     shutil.rmtree(matchings_dir, ignore_errors=True)  # delete existing matching
     Path(matchings_dir).mkdir(parents=True, exist_ok=True)
-    rl_base_config_path = get_config_path_from_argv(default=default_rl_config_path)
+    if rl_base_config_path is None:
+        rl_base_config_path = get_config_path_from_argv(default=default_rl_config_path)
     # copy rl_base_config matchings dir on top level, so it can be logged as artifact later
     shutil.copyfile(rl_base_config_path, os.path.join(matchings_dir, "rl_base_config.json"))
     print(f"Conducting matching based on {rl_base_config_path}")
     iterate_rl_configs(rl_base_config_path)
-
-
-def prepare_logger():
-    logs_sub_dir = os.path.join(logs_dir, "conduct_matching")
-    Path(logs_sub_dir).mkdir(parents=True, exist_ok=True)
-    timestamp = dt.now().strftime("%Y-%m-%d_%H-%M-%S")
-    logging.basicConfig(filename=os.path.join(logs_sub_dir, f"{timestamp}.txt"),
-                        filemode='a',
-                        format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
-                        datefmt='%H:%M:%S',
-                        level=logging.INFO)
 
 
 def iterate_rl_configs(rl_base_config_path):
@@ -89,6 +80,7 @@ def call_rl_module(data_path, outfile_path, rl_config_path):
     except subprocess.CalledProcessError as e:
         print(f"Command: '{' '.join(cmd)}'")
         logging.exception(e)
+        logging.exception(e.output)
         raise e
 
 
