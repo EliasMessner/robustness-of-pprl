@@ -1,4 +1,4 @@
-import create_linking
+import create_matching
 from constants import default_rl_config_path, dataset_variants_dir
 from dataset_modifier import DatasetModifier
 from evaluator import Evaluator
@@ -15,7 +15,7 @@ def main(exp_config_path=None):
         rl_config_path = experiment.get('rl_config', default_rl_config_path)
         dm.load_dataset_by_config_file(dm_config_path)
         dm.create_variants_by_config_file(dm_config_path, dataset_variants_dir)
-        create_linking.main(rl_base_config_path=rl_config_path)
+        create_matching.main(rl_base_config_path=rl_config_path)
         exp_name = experiment["exp_name"]
         append_if_exists = experiment.get("append_if_exists", None)
         add_timestamp = experiment.get("get_timestamp", None)
