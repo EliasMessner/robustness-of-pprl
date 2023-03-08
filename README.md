@@ -39,7 +39,7 @@ The work flow consists of three successive steps:
 
 1. Create dataset variants
 
-2. Conduct experiments
+2. Create linking
 
 3. Evaluate results
 
@@ -53,9 +53,9 @@ They can be conducted manually or automatically. For manual use:
 
 <optional_dm_config_path> = path to dataset modifier configuration file, defaults to data/dm_config.json
 
-### Conduct Experiments
+### Create Linking
 
-> python experiment_launcher.py <optional_rl_config_path>
+> python create_linking.py \<optional_rl_config_path\>
 
 \<optional_rl_config_path\> = path to record linkage configuration file, defaults to data/rl_config.json
 
@@ -63,7 +63,11 @@ They can be conducted manually or automatically. For manual use:
 
 > python evaluator.py
 
-To automatically conduct the three steps with all relevant config files, call
+To autimaticall conduct the three steps with a given exp_config.json file, run
+
+> python launch_experiments.py \<path_to_exp_config.json\>
+
+To automatically launch experiments with all relevant config files, call
 
 > python main.py
 
