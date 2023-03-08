@@ -3,7 +3,7 @@
   "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
   "source_id_col_name": "sourceID",
   "global_id_col_name": "globalID",
-  "desc": "GENDER",
+  "desc": "Varying gender distributions",
   "variations":[
     {
       "desc": "All genders with downsampling to min group size",

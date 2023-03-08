@@ -3,7 +3,7 @@
   "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
   "source_id_col_name": "sourceID",
   "global_id_col_name": "globalID",
-  "desc": "PLZ",
+  "desc": "Division by first 2 or 3 digits of PLU, downsampling to 200k",
   "variations": [
     {
       "desc": "Divided by first 2 digits of PLZ. \nDownsampling=200k",

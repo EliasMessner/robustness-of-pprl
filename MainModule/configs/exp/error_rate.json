@@ -1,0 +1,10 @@
+{
+  "experiments": [
+    {
+      "exp_name": "ERROR-RATE",
+      "dm_config": "configs/dm/error_rate.json",
+      "append_if_exists": false,
+      "timestamp": true
+    }
+  ]
+}

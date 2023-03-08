@@ -1,0 +1,11 @@
+{
+  "experiments": [
+    {
+      "exp_name": "ENCODER-PARAMS",
+      "dm_config": "configs/dm/random_size.json",
+      "rl_config": "configs/rl/10_seeds_many_k_and_t.json",
+      "append_if_exists": false,
+      "timestamp": true
+    }
+  ]
+}

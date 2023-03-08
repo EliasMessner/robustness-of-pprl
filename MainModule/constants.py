@@ -1,9 +1,9 @@
 import os
 
-default_rl_config_path = "data/rl_config.json"
-default_dm_config_path = "data/dm_config.json"
+default_rl_config_path = "configs/rl/default.json"
+exp_configs_dir = "configs/exp"
 dataset_variants_dir = "data/dataset_variants"
-dataset_variants_dir_test = "data/dataset_variants_test"
+dataset_variants_dir_test = "test_resources/dataset_variants_test"
 matchings_dir = "data/matchings"
 logs_dir = "logs"
 

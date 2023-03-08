@@ -3,7 +3,7 @@
   "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
   "source_id_col_name": "sourceID",
   "global_id_col_name": "globalID",
-  "desc": "ATTR-VAL-LENGTH",
+  "desc": "Varying lengths for FIRSTNAME, MIDDLENAME, LASTNAME, STREET, and CITY, resulting in subsets of each approx 100k-200k records",
   "variations": [
     {
       "desc": "Length of LASTNAME/FIRSTNAME in [<5, 5, 6, 7, >7], downsampling on",

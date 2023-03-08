@@ -1,0 +1,16 @@
+{
+  "experiments": [
+    {
+      "exp_name": "SIZE",
+      "dm_config": "configs/dm/size.json",
+      "append_if_exists": false,
+      "timestamp": true
+    },
+    {
+      "exp_name": "OVERLAP",
+      "dm_config": "configs/dm/overlap.json",
+      "append_if_exists": false,
+      "timestamp": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "experiments": [
+    {
+      "exp_name": "ATTR-VAL-LENGTH",
+      "dm_config": "configs/dm/attr_val_length.json",
+      "append_if_exists": false,
+      "timestamp": true
+    }
+  ]
+}

@@ -9,11 +9,6 @@ from eval_adapter import EvalAdapter
 from util import list_folder_names, read_json, list_folder_names_flattened
 
 
-def main():
-    evaluator = Evaluator()
-    evaluator.track_experiment()
-
-
 class Evaluator:
     def __init__(self):
         self.exp_id = None
@@ -25,9 +20,9 @@ class Evaluator:
         self.matching_path = None
         self.eval_adapter = None
 
-    def track_experiment(self):
-        exp_name = read_json(self.dm_config_path)["desc"]
-        self.exp_id = try_create_experiment(exp_name=exp_name)
+    def evaluate_experiment(self, exp_name, append_if_exists=False, add_timestamp=True):
+        self.exp_id = try_create_experiment(exp_name=exp_name, append_if_exists=append_if_exists,
+                                            add_timestamp=add_timestamp)
         for rl_config_folder_name in tqdm(list_folder_names(matchings_dir), desc="RL-configs"):
             self.track_parent_run(rl_config_folder_name)
 
@@ -70,12 +65,12 @@ class Evaluator:
             mlflow.log_artifact(self.rl_config_path)  # rl_config.json
 
 
-def try_create_experiment(exp_name, limit=100, add_timestamp=True) -> str:
+def try_create_experiment(exp_name, append_if_exists=False, add_timestamp=True) -> str:
     """
     Try to create an experiment with the given name and return its experiment id.
-    If an experiment with the same name already exists, append (2) (or (3), (4), ... and so on) to the name and
-    try again.
-    If limit is not None, stop trying when the limit is reached.
+    If an experiment with the same name already exists, ...
+        ... append (2) (or (3), (4), ... and so on) to the name and try again, if append_if_exists=True,
+        ... or return the id of the existing experiment, otherwise
     """
     if add_timestamp:
         exp_name += "_" + dt.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -83,12 +78,9 @@ def try_create_experiment(exp_name, limit=100, add_timestamp=True) -> str:
     while True:
         exp_name_with_counter = exp_name if i == 1 else f"{exp_name} ({i})"
         if len(mlflow.search_experiments(filter_string=f"name = '{exp_name_with_counter}'")) > 0:
-            i += 1
-            if limit is not None and i > limit:
-                raise Exception(f"Experiment naming limit reached for '{exp_name_with_counter}'")
-            continue
+            if append_if_exists:
+                i += 1
+                continue
+            else:
+                return mlflow.get_experiment_by_name(exp_name_with_counter).experiment_id
         return mlflow.create_experiment(name=exp_name_with_counter)
-
-
-if __name__ == "__main__":
-    main()
