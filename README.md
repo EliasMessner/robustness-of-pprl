@@ -39,7 +39,7 @@ The work flow consists of three successive steps:
 
 1. Create dataset variants
 
-2. Create linking
+2. Create matching
 
 3. Evaluate results
 
@@ -53,9 +53,9 @@ They can be conducted manually or automatically. For manual use:
 
 <optional_dm_config_path> = path to dataset modifier configuration file, defaults to data/dm_config.json
 
-### Create Linking
+### Create Matching
 
-> python create_linking.py \<optional_rl_config_path\>
+> python create_matching.py \<optional_rl_config_path\>
 
 \<optional_rl_config_path\> = path to record linkage configuration file, defaults to data/rl_config.json
 
