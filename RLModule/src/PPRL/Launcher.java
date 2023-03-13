@@ -1,8 +1,7 @@
 package PPRL;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Stream;
+import java.util.Map;
+import java.util.Set;
 
 import static java.util.Map.entry;
 
@@ -13,6 +12,7 @@ public class Launcher {
 
     Matcher matcher;
     Encoder encoder;
+    Blocker blocker;
     EncoderParams encoderParams;
     MatcherParams matcherParams;
     Person[] dataSet;
@@ -38,20 +38,25 @@ public class Launcher {
         this.dataSet = dataSet;
         setPersonAttributeWeights();
         this.progressHandler = new ProgressHandler(dataSet.length, 1);
-        prepareEncoder(dataSet, encoderParams, personBloomFilterMapPath);
+        this.encoderParams = encoderParams;
+        this.matcherParams = matcherParams;
+        prepareEncoder(encoderParams, personBloomFilterMapPath);
+        prepareBlocker();
         prepareMatcher(dataSet, matcherParams);
     }
 
-    private void prepareEncoder(Person[] dataSet, EncoderParams encoderParams, String personBloomFilterMapPath) {
-        this.encoderParams = encoderParams;
-        this.encoder = new Encoder(dataSet, encoderParams, personBloomFilterMapPath);
+    private void prepareEncoder(EncoderParams encoderParams, String personBloomFilterMapPath) {
+        this.encoder = new Encoder(this.dataSet, encoderParams, personBloomFilterMapPath);
         // create all the bloom filters, or load from file if they exist
         encoder.createPbmIfNotExist(true);
     }
 
+    private void prepareBlocker() {
+        this.blocker = new Blocker(this.matcherParams.blocking(), this.blockingCheat, this.parallelBlockingMapCreation);
+    }
+
     private void prepareMatcher(Person[] dataSet, MatcherParams matcherParams) {
-        this.matcherParams = matcherParams;
-        this.blockingMap = getBlockingMap(getBlockingKeyEncoders());
+        this.blockingMap = this.blocker.getBlockingMap(this.dataSet);
         this.matcher = new Matcher(dataSet, matcherParams, encoder.getPersonBloomFilterMap(), blockingMap, "A", "B", parallelLinking);
     }
 
@@ -83,51 +88,5 @@ public class Launcher {
         );
     }
 
-    private BlockingKeyEncoder[] getBlockingKeyEncoders() {
-        // create the blockingKeyEncoders to generate the blockingMap
-        List<BlockingKeyEncoder> blockingKeyEncoders = new ArrayList<>();
-        blockingKeyEncoders.add(person -> person.getSoundex("firstName").concat(person.getAttributeValue("yearOfBirth")));
-        blockingKeyEncoders.add(person -> person.getSoundex("lastName").concat(person.getAttributeValue("yearOfBirth")));
-        blockingKeyEncoders.add(person -> person.getSoundex("firstName").concat(person.getSoundex("lastName")));
-        // If blockingCheat turned on, use globalID as additional blocking key to avoid false negatives due to blocking
-        if (blockingCheat) blockingKeyEncoders.add(person -> person.getAttributeValue("globalID"));
-        return blockingKeyEncoders.toArray(BlockingKeyEncoder[]::new);
-    }
 
-    /**
-     * Assigns each entry in given dataset to a blocking key and returns the resulting map. If blocking is turned off, maps
-     * all records to the same blocking key "DUMMY_VALUE".
-     *
-     * @return a map that maps each blocking key to a set of records encoded by that key.
-     */
-    private Map<String, Set<Person>> getBlockingMap(BlockingKeyEncoder... blockingKeyEncoders) {
-        Map<String, Set<Person>> blockingMap;
-        if (!matcherParams.blocking()) {
-            return Map.ofEntries(entry("DUMMY_VALUE", new HashSet<>(Arrays.asList(dataSet))));
-        }
-        System.out.println("Creating Blocking Keys...");
-        progressHandler.reset();
-        progressHandler.setTotalSize(dataSet.length);
-        blockingMap = mapRecordsToBlockingKeys(dataSet, progressHandler, blockingKeyEncoders);
-        progressHandler.finish();
-        return blockingMap;
-    }
-
-    /**
-     * Helper method for getBlockingMap.
-     */
-    private ConcurrentHashMap<String, Set<Person>> mapRecordsToBlockingKeys(Person[] dataSet, ProgressHandler progressHandler, BlockingKeyEncoder... blockingKeyEncoders) {
-        ConcurrentHashMap<String, Set<Person>> blockingMap = new ConcurrentHashMap<>();
-        Stream<Person> stream = Arrays.stream(dataSet);
-        if (parallelBlockingMapCreation) stream = stream.parallel();
-        stream.forEach(person -> {
-            for (BlockingKeyEncoder blockingKeyEncoder : blockingKeyEncoders) {
-                String blockingKey = blockingKeyEncoder.encode(person);
-                blockingMap.putIfAbsent(blockingKey, new HashSet<>());
-                blockingMap.get(blockingKey).add(person);
-            }
-            progressHandler.updateProgress();
-        });
-        return blockingMap;
-    }
 }
