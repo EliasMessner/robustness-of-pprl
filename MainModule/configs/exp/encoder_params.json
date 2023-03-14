@@ -1,9 +1,16 @@
 {
   "experiments": [
     {
-      "exp_name": "ENCODER-PARAMS",
+      "exp_name": "ENCODER-PARAMS-T",
       "dm_config": "configs/dm/size.json",
-      "rl_config": "configs/rl/10_seeds_many_k_and_t.json",
+      "rl_config": "configs/rl/10_seeds_many_t.json",
+      "append_if_exists": false,
+      "timestamp": true
+    },
+    {
+      "exp_name": "ENCODER-PARAMS-K",
+      "dm_config": "configs/dm/size.json",
+      "rl_config": "configs/rl/10_seeds_many_k.json",
       "append_if_exists": false,
       "timestamp": true
     }
