@@ -11,6 +11,7 @@ def main(exp_config_path=None):
     dm = DatasetModifier()
     evaluator = Evaluator()
     for experiment in read_json(exp_config_path)["experiments"]:
+        print(f"\n----- Starting Experiment '{experiment['exp_name']}' -----")
         dm_config_path = experiment['dm_config']
         rl_config_path = experiment.get('rl_config', default_rl_config_path)
         dm.load_dataset_by_config_file(dm_config_path)
@@ -18,8 +19,9 @@ def main(exp_config_path=None):
         create_matching.main(rl_base_config_path=rl_config_path)
         exp_name = experiment["exp_name"]
         append_if_exists = experiment.get("append_if_exists", None)
-        add_timestamp = experiment.get("get_timestamp", None)
+        add_timestamp = experiment.get("timestamp", None)
         evaluator.evaluate_experiment(exp_name, append_if_exists, add_timestamp)
+        print(f"Experiment '{experiment['exp_name']}' finished.\n")
 
 
 if __name__ == "__main__":
