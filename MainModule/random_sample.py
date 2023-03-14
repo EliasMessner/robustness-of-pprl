@@ -19,19 +19,19 @@ def random_sample(df_a: pd.DataFrame, df_b: pd.DataFrame, total_size: int, seed:
                       for portion in (portion_a, portion_b)]
     size_overlap = round(total_size * overlap / 2)
     assert size_a >= size_overlap <= size_b
-    true_matches_a, true_matches_b = get_true_matches(df_a, df_b, global_id_col_name)
+    a_matches_all, b_matches_all = get_true_matches(df_a, df_b, global_id_col_name)
     # draw size_overlap records from true matches of source A
-    a_matches = true_matches_a.sample(size_overlap, random_state=seed)
+    a_matches_sample = a_matches_all.sample(size_overlap, random_state=seed)
     # get the corresponding partners from B
-    b_matches = true_matches_b[true_matches_b[global_id_col_name].isin(a_matches[global_id_col_name])]
+    b_matches_sample = b_matches_all[b_matches_all[global_id_col_name].isin(a_matches_sample[global_id_col_name])]
     # draw size_a - size_overlap from non-matches of source A
-    a_non_matches = df_a[~df_a[global_id_col_name].isin(true_matches_a[global_id_col_name])] \
+    a_non_matches = df_a[~df_a[global_id_col_name].isin(a_matches_all[global_id_col_name])] \
         .sample(size_a - size_overlap, random_state=seed)
     # likewise for B
-    b_non_matches = df_b[~df_b[global_id_col_name].isin(true_matches_b[global_id_col_name])] \
+    b_non_matches = df_b[~df_b[global_id_col_name].isin(b_matches_all[global_id_col_name])] \
         .sample(size_b - size_overlap, random_state=seed)
     # concatenate all
-    return pd.concat([a_matches, a_non_matches, b_matches, b_non_matches])
+    return pd.concat([a_matches_sample, a_non_matches, b_matches_sample, b_non_matches])
 
 
 def random_sample_wrapper(df: pd.DataFrame, total_sample_size: int, seed: int = None, overlap: float = None,
