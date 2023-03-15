@@ -18,11 +18,12 @@ def main():
 
 
 def get_files_to_skip():
+    skip_txt = "skip.txt"
     try:
-        with open(os.path.join(exp_configs_dir, "skip.txt")) as file:
-            return file.readlines()
+        with open(os.path.join(exp_configs_dir, skip_txt)) as file:
+            return file.readlines() + [skip_txt]
     except FileNotFoundError:
-        return []
+        return [skip_txt]
 
 
 if __name__ == "__main__":
