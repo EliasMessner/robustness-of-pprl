@@ -22,7 +22,7 @@ def get_files_to_skip():
     skip_txt = "skip.txt"
     try:
         with open(os.path.join(exp_configs_dir, skip_txt)) as file:
-            return file.readlines() + [skip_txt]
+            return [f.strip() for f in file.readlines()] + [skip_txt]
     except FileNotFoundError:
         return [skip_txt]
 
