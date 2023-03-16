@@ -57,17 +57,17 @@ class DatasetModifier:
         More precisely, reads parameters from json and calls self.read_csv with the parameters.
         """
         config = read_json(config_path)
-        self.read_csv_config_dict(config)
+        self.load_dataset_by_config_dict(config)
 
-    def read_csv_config_dict(self, config: dict):
+    def load_dataset_by_config_dict(self, config: dict):
         """
-        Calls self.read_csv and accepts parameters as a dict.
+        Calls self.load_dataset and accepts parameters as a dict.
         """
-        self.read_csv(dataset_path=config["base_dataset"], col_names=config["col_names"],
-                      source_id_col_name=config["source_id_col_name"], global_id_col_name=config["global_id_col_name"])
+        self.load_dataset(dataset_path=config["base_dataset"], col_names=config["col_names"],
+                          source_id_col_name=config["source_id_col_name"], global_id_col_name=config["global_id_col_name"])
 
-    def read_csv(self, dataset_path: str, col_names: list, source_id_col_name: str = "sourceID",
-                 global_id_col_name: str = "globalID"):
+    def load_dataset(self, dataset_path: str, col_names: list, source_id_col_name: str = "sourceID",
+                     global_id_col_name: str = "globalID"):
         """
         The passed dataset is expected to consist of two sources, distinguishable by a column containing a sourceID.
         :param dataset_path: Filepath to dataset csv
