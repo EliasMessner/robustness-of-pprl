@@ -317,7 +317,7 @@ def get_param_variant_groups(config) -> list[(list[dict], str)]:
 
 def _handle_ranges(replacements):
     for k, v in replacements.items():
-        if isinstance(v, list):
+        if isinstance(v, list) or isinstance(v, tuple):
             replacements[k] = range(*v)
 
 
