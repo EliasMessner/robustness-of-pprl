@@ -13,7 +13,6 @@ from dataset_modifier import DatasetModifier, get_param_variant_groups, random_s
 from dataset_properties import get_overlap, split_by_source_id, split_and_get_overlap
 from util import read_json, list_folder_names
 
-filepath = "data/2021_NCVR_Panse_001/dataset_ncvr_dirty.csv"
 col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH,PLACEOFBIRTH,COUNTRY,CITY,PLZ," \
             "STREET,GENDER,ETHNIC,RACE".split(",")
 
@@ -21,7 +20,7 @@ col_names = "sourceID,globalID,localID,FIRSTNAME,MIDDLENAME,LASTNAME,YEAROFBIRTH
 class TestDatasetModifier(TestCase):
     def setUp(self) -> None:
         self.sg = DatasetModifier(omit_if_not_possible=False)
-        self.sg.load_dataset_by_config_file("data/dm_config.json")
+        self.sg.load_dataset_by_config_file("test_resources/dm_config.json")
 
     def test_size(self):
         self.assertEqual(self.sg.df.shape[0], 200000)

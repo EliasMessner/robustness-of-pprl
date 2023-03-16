@@ -85,9 +85,9 @@ class DatasetModifier:
         self.global_id_col_name = global_id_col_name
         self.source_id_col_name = source_id_col_name
         self.true_matches_a, self.true_matches_b = get_true_matches(self.df_a, self.df_b, self.global_id_col_name)
+        self.pairs = self.true_matches_a.merge(self.true_matches_b, on=self.global_id_col_name, suffixes=["_a", "_b"])
         self.base_overlap = get_overlap(self.df_a, self.df_b, self.global_id_col_name)
         self.attrs = [col for col in self.df.columns.values if not col.lower().endswith("id")]
-        self.pairs = self.true_matches_a.merge(self.true_matches_b, on=self.global_id_col_name, suffixes=["_a", "_b"])
 
     def create_variants_by_config_file(self, config_path, outfile_directory):
         """
