@@ -68,3 +68,7 @@ def list_file_paths(dir_path):
     return an alphabetically sorted list of all files (their paths) in given directory. Omit folders.
     """
     return [os.path.join(dir_path, file_name) for file_name in sorted(next(os.walk(dir_path))[2])]
+
+
+def str_to_bool(s):
+    return s.lower() in ['true', '1', 't', 'y', 'yes']

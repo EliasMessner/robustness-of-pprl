@@ -1,20 +1,31 @@
 import os
 from datetime import datetime as dt
+from sys import argv
 
 import mlflow
 from tqdm import tqdm
 
-from constants import matchings_dir, dataset_variants_dir
+from constants import matchings_dir, dataset_variants_dir, rl_params_file_name
 from eval_adapter import EvalAdapter
-from util import list_folder_names, read_json, list_folder_names_flattened
+from util import list_folder_names, read_json, list_folder_names_flattened, str_to_bool
+
+
+def main():
+    if len(argv) != 4:
+        raise ValueError("Please specify arguments exp_name, append_if_exists, add_timestamp")
+    exp_name, append_if_exists, add_timestamp = argv[1:]
+    append_if_exists = str_to_bool(append_if_exists)
+    add_timestamp = str_to_bool(add_timestamp)
+    evaluator = Evaluator()
+    evaluator.evaluate_experiment(exp_name, append_if_exists, add_timestamp)
 
 
 class Evaluator:
     def __init__(self):
         self.exp_id = None
         self.dm_config_path = os.path.join(dataset_variants_dir, "dm_config.json")
-        self.rl_config_path = None
-        self.rl_config = None
+        self.rl_params_file_path = None
+        self.rl_params = None
         self.variant_name = None
         self.variant_path = None
         self.matching_path = None
@@ -28,12 +39,12 @@ class Evaluator:
 
     def track_parent_run(self, rl_config_folder_name):
         rl_base_config_path = os.path.join(matchings_dir, "rl_base_config.json")
-        self.rl_config_path = os.path.join(matchings_dir, rl_config_folder_name, "rl_config.json")
-        self.rl_config = read_json(self.rl_config_path)
+        self.rl_params_file_path = os.path.join(matchings_dir, rl_config_folder_name, rl_params_file_name)
+        self.rl_params = read_json(self.rl_params_file_path)
         with mlflow.start_run(experiment_id=self.exp_id, run_name=self.get_parent_run_name()):
             mlflow.log_artifact(rl_base_config_path)
-            mlflow.log_artifact(self.rl_config_path)
-            mlflow.log_params(self.rl_config)
+            mlflow.log_artifact(self.rl_params_file_path)
+            mlflow.log_params(self.rl_params)
             variants = list_folder_names_flattened(os.path.join(dataset_variants_dir))
             matchings = list_folder_names_flattened(os.path.join(matchings_dir, rl_config_folder_name))
             assert len(variants) == len(matchings)
@@ -46,7 +57,7 @@ class Evaluator:
                 self.track_child_run()
 
     def get_parent_run_name(self):
-        return " | ".join([f"{k}={v}" for k, v in self.rl_config.items()])
+        return " | ".join([f"{k}={v}" for k, v in self.rl_params.items()])
 
     def evaluate_matching(self):
         data_clm_names = read_json(self.dm_config_path)["col_names"]
@@ -58,11 +69,11 @@ class Evaluator:
             mlflow.log_metrics(self.eval_adapter.metrics())
             mlflow.log_params(dv_params)
             mlflow.log_param("base_dataset", read_json(self.dm_config_path)["base_dataset"])
-            mlflow.set_tags(self.rl_config)
+            mlflow.set_tags(self.rl_params)
             mlflow.log_artifact(self.dm_config_path)
             mlflow.log_artifact(self.variant_path)  # records.csv
             mlflow.log_artifact(self.matching_path)  # matching.csv
-            mlflow.log_artifact(self.rl_config_path)  # rl_config.json
+            mlflow.log_artifact(self.rl_params_file_path)  # rl_params.json
 
 
 def try_create_experiment(exp_name, append_if_exists=False, add_timestamp=True) -> str:
@@ -84,3 +95,7 @@ def try_create_experiment(exp_name, append_if_exists=False, add_timestamp=True) 
             else:
                 return mlflow.get_experiment_by_name(exp_name_with_counter).experiment_id
         return mlflow.create_experiment(name=exp_name_with_counter)
+
+
+if __name__ == "__main__":
+    main()
