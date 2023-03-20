@@ -286,16 +286,8 @@ class TestDatasetModifier(TestCase):
     def error_rates_ok(self, df, params):
         min_e, max_e = params["range"]
         measure = params["measure"]
-        errors = self.get_all_errors(df, measure)
+        errors = error_rates.get_all_errors(df, measure, self.sg.global_id_col_name)
         self.assertTrue(all([min_e <= e <= max_e for e in errors]))
-
-    def get_all_errors(self, df: pd.DataFrame, measure: Union[callable, str]) -> pd.Series:
-        measure = getattr(error_rates, measure) if isinstance(measure,
-                                                              str) else measure  # resolve method name if given as string
-        df_a, df_b = split_by_source_id(df)
-        pairs = df_a.merge(df_b, on=self.sg.global_id_col_name, suffixes=["_a", "_b"])
-        attrs = [col for col in df.columns.values if not col.lower().endswith("id")]
-        return pairs.apply(lambda row: measure(row, attrs), axis=1)
 
     def test_attr_val_dist(self):
         self.check_all_variants_ok("test_resources/dm_config_attr_val_dist.json", self.attr_val_dist_ok)
