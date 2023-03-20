@@ -2,3 +2,4 @@
 .vscode/*
 .idea/*
 MainModule/__pycache__/*
+MainModule/logs/
