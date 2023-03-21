@@ -3,7 +3,7 @@
     {
       "exp_name": "ENCODER-PARAMS",
       "dm_config": "configs/dm/base_ds_small.json",
-      "rl_config": "configs/rl/10_seeds_many_t_and_k.json",
+      "rl_config": "configs/rl/varying_k.json",
       "append_if_exists": false,
       "timestamp": true
     }
