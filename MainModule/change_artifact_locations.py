@@ -1,5 +1,6 @@
 """
-Changes artifact path prefixes for all runs in given experiments
+Utility script to aid with cross-platform use.
+Changes artifact path prefixes for all runs in given experiments.
 """
 
 import os.path
