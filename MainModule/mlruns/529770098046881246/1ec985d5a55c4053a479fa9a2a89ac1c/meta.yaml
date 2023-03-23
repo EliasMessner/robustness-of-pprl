@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/1ec985d5a55c4053a479fa9a2a89ac1c/artifacts
+end_time: 1679486627795
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 1ec985d5a55c4053a479fa9a2a89ac1c
+run_name: calm-snake-51
+run_uuid: 1ec985d5a55c4053a479fa9a2a89ac1c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486626764
+status: 3
+tags: []
+user_id: elias

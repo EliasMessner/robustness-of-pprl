@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/71a2551a58924b32b4a006aba8912a67/artifacts
+end_time: 1679502627635
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 71a2551a58924b32b4a006aba8912a67
+run_name: brawny-crane-388
+run_uuid: 71a2551a58924b32b4a006aba8912a67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502626698
+status: 3
+tags: []
+user_id: elias

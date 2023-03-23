@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/088fdcb6544c4686a496b33090b72cc8/artifacts
+end_time: 1679513289034
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 088fdcb6544c4686a496b33090b72cc8
+run_name: rumbling-stoat-237
+run_uuid: 088fdcb6544c4686a496b33090b72cc8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513286925
+status: 3
+tags: []
+user_id: elias

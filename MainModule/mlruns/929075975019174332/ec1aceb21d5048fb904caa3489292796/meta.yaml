@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/ec1aceb21d5048fb904caa3489292796/artifacts
+end_time: 1679502196893
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: ec1aceb21d5048fb904caa3489292796
+run_name: nebulous-pig-696
+run_uuid: ec1aceb21d5048fb904caa3489292796
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502196534
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e418fcc4342b48f5b01a014d462eb3eb/artifacts
+end_time: 1679531817559
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e418fcc4342b48f5b01a014d462eb3eb
+run_name: masked-penguin-654
+run_uuid: e418fcc4342b48f5b01a014d462eb3eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531817043
+status: 3
+tags: []
+user_id: elias

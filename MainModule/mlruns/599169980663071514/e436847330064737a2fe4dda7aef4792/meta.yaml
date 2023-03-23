@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e436847330064737a2fe4dda7aef4792/artifacts
+end_time: 1679531869482
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e436847330064737a2fe4dda7aef4792
+run_name: wise-carp-558
+run_uuid: e436847330064737a2fe4dda7aef4792
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531868544
+status: 3
+tags: []
+user_id: elias

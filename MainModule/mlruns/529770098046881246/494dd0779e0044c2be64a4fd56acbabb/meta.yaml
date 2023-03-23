@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/494dd0779e0044c2be64a4fd56acbabb/artifacts
+end_time: 1679486683812
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 494dd0779e0044c2be64a4fd56acbabb
+run_name: blushing-mare-303
+run_uuid: 494dd0779e0044c2be64a4fd56acbabb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486682718
+status: 3
+tags: []
+user_id: elias

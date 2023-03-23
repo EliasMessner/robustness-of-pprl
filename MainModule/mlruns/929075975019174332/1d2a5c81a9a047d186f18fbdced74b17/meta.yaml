@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/1d2a5c81a9a047d186f18fbdced74b17/artifacts
+end_time: 1679502460897
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 1d2a5c81a9a047d186f18fbdced74b17
+run_name: amazing-lark-301
+run_uuid: 1d2a5c81a9a047d186f18fbdced74b17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502460038
+status: 3
+tags: []
+user_id: elias

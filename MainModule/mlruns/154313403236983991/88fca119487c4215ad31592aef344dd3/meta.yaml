@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/88fca119487c4215ad31592aef344dd3/artifacts
+end_time: 1679508569496
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 88fca119487c4215ad31592aef344dd3
+run_name: amazing-mare-898
+run_uuid: 88fca119487c4215ad31592aef344dd3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508569059
+status: 3
+tags: []
+user_id: elias

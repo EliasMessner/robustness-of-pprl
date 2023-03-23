@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b9950bc5b3d345d89b2d72b9ec212d65/artifacts
+end_time: 1679531969594
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b9950bc5b3d345d89b2d72b9ec212d65
+run_name: bedecked-penguin-149
+run_uuid: b9950bc5b3d345d89b2d72b9ec212d65
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531968906
+status: 3
+tags: []
+user_id: elias

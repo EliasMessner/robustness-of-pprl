@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bba15c35ecf143718c1fb27b759f5b65/artifacts
+end_time: 1679531022824
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bba15c35ecf143718c1fb27b759f5b65
+run_name: gifted-yak-974
+run_uuid: bba15c35ecf143718c1fb27b759f5b65
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531021871
+status: 3
+tags: []
+user_id: elias

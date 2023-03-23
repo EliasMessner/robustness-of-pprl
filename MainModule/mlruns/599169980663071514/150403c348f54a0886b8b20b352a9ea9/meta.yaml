@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/150403c348f54a0886b8b20b352a9ea9/artifacts
+end_time: 1679531556085
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 150403c348f54a0886b8b20b352a9ea9
+run_name: shivering-slug-772
+run_uuid: 150403c348f54a0886b8b20b352a9ea9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531553960
+status: 3
+tags: []
+user_id: elias

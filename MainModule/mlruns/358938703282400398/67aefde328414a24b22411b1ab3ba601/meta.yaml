@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/67aefde328414a24b22411b1ab3ba601/artifacts
+end_time: 1679482605047
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 67aefde328414a24b22411b1ab3ba601
+run_name: caring-lynx-95
+run_uuid: 67aefde328414a24b22411b1ab3ba601
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482604437
+status: 3
+tags: []
+user_id: elias

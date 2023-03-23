@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/7d33912263f444f88c40992d9ca4bdfe/artifacts
+end_time: 1679489363613
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 7d33912263f444f88c40992d9ca4bdfe
+run_name: enchanting-hound-348
+run_uuid: 7d33912263f444f88c40992d9ca4bdfe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489363410
+status: 3
+tags: []
+user_id: elias

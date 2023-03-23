@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/74d652ec13ea487daf7c1c969f267e46/artifacts
+end_time: 1679502239832
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 74d652ec13ea487daf7c1c969f267e46
+run_name: debonair-foal-745
+run_uuid: 74d652ec13ea487daf7c1c969f267e46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502238660
+status: 3
+tags: []
+user_id: elias

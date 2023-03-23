@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/9873774bcf514b1db21d2ce9dabc9559/artifacts
+end_time: 1679502719044
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 9873774bcf514b1db21d2ce9dabc9559
+run_name: spiffy-calf-353
+run_uuid: 9873774bcf514b1db21d2ce9dabc9559
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502718356
+status: 3
+tags: []
+user_id: elias

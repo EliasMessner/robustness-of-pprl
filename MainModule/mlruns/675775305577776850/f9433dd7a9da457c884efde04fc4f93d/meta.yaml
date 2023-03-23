@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/f9433dd7a9da457c884efde04fc4f93d/artifacts
+end_time: 1679491268033
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: f9433dd7a9da457c884efde04fc4f93d
+run_name: valuable-stoat-714
+run_uuid: f9433dd7a9da457c884efde04fc4f93d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491267127
+status: 3
+tags: []
+user_id: elias

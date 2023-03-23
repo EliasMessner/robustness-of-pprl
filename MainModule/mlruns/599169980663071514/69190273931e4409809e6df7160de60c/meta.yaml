@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/69190273931e4409809e6df7160de60c/artifacts
+end_time: 1679530365905
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 69190273931e4409809e6df7160de60c
+run_name: able-kite-194
+run_uuid: 69190273931e4409809e6df7160de60c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530365155
+status: 3
+tags: []
+user_id: elias

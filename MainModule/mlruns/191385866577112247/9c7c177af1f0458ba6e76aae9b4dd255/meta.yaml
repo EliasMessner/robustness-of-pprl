@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/9c7c177af1f0458ba6e76aae9b4dd255/artifacts
+end_time: 1679513216829
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 9c7c177af1f0458ba6e76aae9b4dd255
+run_name: casual-tern-245
+run_uuid: 9c7c177af1f0458ba6e76aae9b4dd255
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513216001
+status: 3
+tags: []
+user_id: elias

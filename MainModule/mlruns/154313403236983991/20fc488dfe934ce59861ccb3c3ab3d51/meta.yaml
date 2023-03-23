@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/20fc488dfe934ce59861ccb3c3ab3d51/artifacts
+end_time: 1679508505917
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 20fc488dfe934ce59861ccb3c3ab3d51
+run_name: dapper-midge-98
+run_uuid: 20fc488dfe934ce59861ccb3c3ab3d51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508505307
+status: 3
+tags: []
+user_id: elias

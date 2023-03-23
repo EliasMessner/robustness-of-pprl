@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/53926f8aecc14aa3a7180ace3becb8fe/artifacts
+end_time: 1679482629173
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 53926f8aecc14aa3a7180ace3becb8fe
+run_name: righteous-hawk-339
+run_uuid: 53926f8aecc14aa3a7180ace3becb8fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482628626
+status: 3
+tags: []
+user_id: elias

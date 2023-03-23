@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2e54ba3469764b80978a0d41fc17b4f7/artifacts
+end_time: 1679532305490
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2e54ba3469764b80978a0d41fc17b4f7
+run_name: abundant-chimp-555
+run_uuid: 2e54ba3469764b80978a0d41fc17b4f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532304037
+status: 3
+tags: []
+user_id: elias

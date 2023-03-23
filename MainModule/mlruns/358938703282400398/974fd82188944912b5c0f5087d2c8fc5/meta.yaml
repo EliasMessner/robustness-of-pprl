@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/974fd82188944912b5c0f5087d2c8fc5/artifacts
+end_time: 1679482411575
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 974fd82188944912b5c0f5087d2c8fc5
+run_name: glamorous-squid-233
+run_uuid: 974fd82188944912b5c0f5087d2c8fc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482410825
+status: 3
+tags: []
+user_id: elias

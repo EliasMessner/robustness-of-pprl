@@ -1,0 +1,25 @@
+{
+  "base_dataset": "data/2023_NCVR_Panse_1M/records.csv",
+  "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
+  "source_id_col_name": "sourceID",
+  "global_id_col_name": "globalID",
+  "desc": "Random subsets with different sizes, overlap=0.2",
+  "variations":[
+    {
+      "desc": "Random subsets with different sizes, overlap=0.2",
+      "params": {
+        "subset_selection": "RANDOM",
+        "seed": 42,
+        "size": null,
+        "overlap": 0.2
+      },
+      "replacements": {
+        "size": [
+          10000, 20000, 30000, 40000, 50000, 60000, 70000,
+          80000, 90000, 100000, 110000, 120000, 130000, 140000,
+          150000, 160000, 170000, 180000, 190000, 200000
+        ]
+      }
+    }
+  ]
+}

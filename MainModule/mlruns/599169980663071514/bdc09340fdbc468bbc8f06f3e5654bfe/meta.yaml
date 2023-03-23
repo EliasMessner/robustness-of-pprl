@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bdc09340fdbc468bbc8f06f3e5654bfe/artifacts
+end_time: 1679531997781
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bdc09340fdbc468bbc8f06f3e5654bfe
+run_name: illustrious-vole-268
+run_uuid: bdc09340fdbc468bbc8f06f3e5654bfe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531996359
+status: 3
+tags: []
+user_id: elias

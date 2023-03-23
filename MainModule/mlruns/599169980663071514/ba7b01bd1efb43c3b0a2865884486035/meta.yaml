@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ba7b01bd1efb43c3b0a2865884486035/artifacts
+end_time: 1679530374296
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ba7b01bd1efb43c3b0a2865884486035
+run_name: whimsical-rat-268
+run_uuid: ba7b01bd1efb43c3b0a2865884486035
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530373546
+status: 3
+tags: []
+user_id: elias

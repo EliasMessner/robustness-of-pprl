@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/1398e209c9774dc99fb148a9421f669d/artifacts
+end_time: 1679486602233
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 1398e209c9774dc99fb148a9421f669d
+run_name: lyrical-dog-834
+run_uuid: 1398e209c9774dc99fb148a9421f669d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486601389
+status: 3
+tags: []
+user_id: elias

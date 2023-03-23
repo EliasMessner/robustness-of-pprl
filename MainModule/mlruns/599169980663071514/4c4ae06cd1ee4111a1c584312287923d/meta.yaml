@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4c4ae06cd1ee4111a1c584312287923d/artifacts
+end_time: 1679530930870
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4c4ae06cd1ee4111a1c584312287923d
+run_name: brawny-hawk-70
+run_uuid: 4c4ae06cd1ee4111a1c584312287923d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530929667
+status: 3
+tags: []
+user_id: elias

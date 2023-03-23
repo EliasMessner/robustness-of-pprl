@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/374c5ea7fd3a4419958b2a6f254149a7/artifacts
+end_time: 1679482281838
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 374c5ea7fd3a4419958b2a6f254149a7
+run_name: upset-rook-566
+run_uuid: 374c5ea7fd3a4419958b2a6f254149a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482281432
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/34aa0f9528fe4aa9bee0580cb14f526f/artifacts
+end_time: 1679530802523
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 34aa0f9528fe4aa9bee0580cb14f526f
+run_name: illustrious-wolf-772
+run_uuid: 34aa0f9528fe4aa9bee0580cb14f526f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530802085
+status: 3
+tags: []
+user_id: elias

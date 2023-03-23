@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5de1e39d302348bea9b42979478fae50/artifacts
+end_time: 1679531612742
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5de1e39d302348bea9b42979478fae50
+run_name: mysterious-worm-854
+run_uuid: 5de1e39d302348bea9b42979478fae50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531611945
+status: 3
+tags: []
+user_id: elias

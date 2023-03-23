@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1e4afcb7b2dd469e803ec2fad622f91f/artifacts
+end_time: 1679530640458
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1e4afcb7b2dd469e803ec2fad622f91f
+run_name: puzzled-conch-420
+run_uuid: 1e4afcb7b2dd469e803ec2fad622f91f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530639833
+status: 3
+tags: []
+user_id: elias

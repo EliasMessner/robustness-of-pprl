@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ba1d71f854634837a234d68e68b1be62/artifacts
+end_time: 1679531077966
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ba1d71f854634837a234d68e68b1be62
+run_name: puzzled-robin-533
+run_uuid: ba1d71f854634837a234d68e68b1be62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531077247
+status: 3
+tags: []
+user_id: elias

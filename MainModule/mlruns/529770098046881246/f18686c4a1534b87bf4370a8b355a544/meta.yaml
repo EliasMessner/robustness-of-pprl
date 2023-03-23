@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/f18686c4a1534b87bf4370a8b355a544/artifacts
+end_time: 1679486704313
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: f18686c4a1534b87bf4370a8b355a544
+run_name: clumsy-panda-471
+run_uuid: f18686c4a1534b87bf4370a8b355a544
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486701969
+status: 3
+tags: []
+user_id: elias

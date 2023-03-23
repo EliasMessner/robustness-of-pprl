@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/c69b0459a18c4f31962fa141db3885ec/artifacts
+end_time: 1679513004528
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: c69b0459a18c4f31962fa141db3885ec
+run_name: zealous-moth-230
+run_uuid: c69b0459a18c4f31962fa141db3885ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513003012
+status: 3
+tags: []
+user_id: elias

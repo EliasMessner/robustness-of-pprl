@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/6bf861a0ff734f688a1bb0a2b0628ab0/artifacts
+end_time: 1679508059423
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 6bf861a0ff734f688a1bb0a2b0628ab0
+run_name: suave-bass-688
+run_uuid: 6bf861a0ff734f688a1bb0a2b0628ab0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508059188
+status: 3
+tags: []
+user_id: elias

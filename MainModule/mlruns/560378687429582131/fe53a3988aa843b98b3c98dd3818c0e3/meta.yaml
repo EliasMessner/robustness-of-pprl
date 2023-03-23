@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/fe53a3988aa843b98b3c98dd3818c0e3/artifacts
+end_time: 1679497598209
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: fe53a3988aa843b98b3c98dd3818c0e3
+run_name: overjoyed-shrike-950
+run_uuid: fe53a3988aa843b98b3c98dd3818c0e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497596912
+status: 3
+tags: []
+user_id: elias

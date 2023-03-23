@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/5b3dae49e24843189e818c15c57a2b53/artifacts
+end_time: 1679512899806
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 5b3dae49e24843189e818c15c57a2b53
+run_name: flawless-rook-635
+run_uuid: 5b3dae49e24843189e818c15c57a2b53
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512899368
+status: 3
+tags: []
+user_id: elias

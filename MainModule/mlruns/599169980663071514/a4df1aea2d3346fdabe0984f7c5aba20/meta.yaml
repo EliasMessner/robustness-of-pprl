@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a4df1aea2d3346fdabe0984f7c5aba20/artifacts
+end_time: 1679532094768
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a4df1aea2d3346fdabe0984f7c5aba20
+run_name: thundering-trout-140
+run_uuid: a4df1aea2d3346fdabe0984f7c5aba20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532093955
+status: 3
+tags: []
+user_id: elias

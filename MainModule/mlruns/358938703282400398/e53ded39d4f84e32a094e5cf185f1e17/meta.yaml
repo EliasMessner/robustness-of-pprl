@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/e53ded39d4f84e32a094e5cf185f1e17/artifacts
+end_time: 1679482283822
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: e53ded39d4f84e32a094e5cf185f1e17
+run_name: righteous-pig-689
+run_uuid: e53ded39d4f84e32a094e5cf185f1e17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482283588
+status: 3
+tags: []
+user_id: elias

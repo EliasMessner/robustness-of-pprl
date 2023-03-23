@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/e5f6733d5c0a4703a2ffd48b2b645384/artifacts
+end_time: 1679489185391
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: e5f6733d5c0a4703a2ffd48b2b645384
+run_name: sassy-skunk-613
+run_uuid: e5f6733d5c0a4703a2ffd48b2b645384
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489185235
+status: 3
+tags: []
+user_id: elias

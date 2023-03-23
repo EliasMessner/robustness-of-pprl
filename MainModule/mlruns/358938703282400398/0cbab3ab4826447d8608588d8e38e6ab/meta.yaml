@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/0cbab3ab4826447d8608588d8e38e6ab/artifacts
+end_time: 1679482073397
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 0cbab3ab4826447d8608588d8e38e6ab
+run_name: suave-shrimp-561
+run_uuid: 0cbab3ab4826447d8608588d8e38e6ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482073162
+status: 3
+tags: []
+user_id: elias

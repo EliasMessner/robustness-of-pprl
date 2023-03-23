@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/de8a59935e7e42f5b790639aa0c04b4f/artifacts
+end_time: 1679513088467
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: de8a59935e7e42f5b790639aa0c04b4f
+run_name: grandiose-gnu-362
+run_uuid: de8a59935e7e42f5b790639aa0c04b4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513087389
+status: 3
+tags: []
+user_id: elias

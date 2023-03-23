@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/37036f9e6ba24b54b10a4f381cb2a2d0/artifacts
+end_time: 1679508074908
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 37036f9e6ba24b54b10a4f381cb2a2d0
+run_name: receptive-asp-596
+run_uuid: 37036f9e6ba24b54b10a4f381cb2a2d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508074018
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/68653db6970e43ad8ce52d481570be48/artifacts
+end_time: 1679486503230
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 68653db6970e43ad8ce52d481570be48
+run_name: rogue-lamb-949
+run_uuid: 68653db6970e43ad8ce52d481570be48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486502215
+status: 3
+tags: []
+user_id: elias

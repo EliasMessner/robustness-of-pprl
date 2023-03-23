@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/50458fb711ef45c3839f9781ebf98359/artifacts
+end_time: 1679489284206
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 50458fb711ef45c3839f9781ebf98359
+run_name: abrasive-stork-453
+run_uuid: 50458fb711ef45c3839f9781ebf98359
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489284034
+status: 3
+tags: []
+user_id: elias

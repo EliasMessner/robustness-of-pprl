@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/65b4bb0e6e7840fe8ddc6a1205112f8c/artifacts
+end_time: 1679532549606
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 65b4bb0e6e7840fe8ddc6a1205112f8c
+run_name: burly-dolphin-170
+run_uuid: 65b4bb0e6e7840fe8ddc6a1205112f8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532548825
+status: 3
+tags: []
+user_id: elias

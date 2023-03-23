@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/47eafa13fc6a4ac79cdb85e54966119c/artifacts
+end_time: 1679508104674
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 47eafa13fc6a4ac79cdb85e54966119c
+run_name: ambitious-squid-35
+run_uuid: 47eafa13fc6a4ac79cdb85e54966119c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508104439
+status: 3
+tags: []
+user_id: elias

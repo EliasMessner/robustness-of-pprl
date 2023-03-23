@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/35269bfb8f6b43e89a820d8b058efc6b/artifacts
+end_time: 1679491280814
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 35269bfb8f6b43e89a820d8b058efc6b
+run_name: smiling-ant-686
+run_uuid: 35269bfb8f6b43e89a820d8b058efc6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491279392
+status: 3
+tags: []
+user_id: elias

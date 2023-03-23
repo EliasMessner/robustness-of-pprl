@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/32b7b1eda8bf423aa5890fefb8eeb13c/artifacts
+end_time: 1679491381195
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 32b7b1eda8bf423aa5890fefb8eeb13c
+run_name: clean-vole-689
+run_uuid: 32b7b1eda8bf423aa5890fefb8eeb13c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491380242
+status: 3
+tags: []
+user_id: elias

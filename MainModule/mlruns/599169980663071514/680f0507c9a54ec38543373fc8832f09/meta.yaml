@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/680f0507c9a54ec38543373fc8832f09/artifacts
+end_time: 1679532118643
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 680f0507c9a54ec38543373fc8832f09
+run_name: rumbling-cow-189
+run_uuid: 680f0507c9a54ec38543373fc8832f09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532117971
+status: 3
+tags: []
+user_id: elias

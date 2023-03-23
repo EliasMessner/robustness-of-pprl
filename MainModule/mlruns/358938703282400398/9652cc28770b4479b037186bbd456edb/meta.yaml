@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/9652cc28770b4479b037186bbd456edb/artifacts
+end_time: 1679482195602
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 9652cc28770b4479b037186bbd456edb
+run_name: polite-hen-608
+run_uuid: 9652cc28770b4479b037186bbd456edb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482195227
+status: 3
+tags: []
+user_id: elias

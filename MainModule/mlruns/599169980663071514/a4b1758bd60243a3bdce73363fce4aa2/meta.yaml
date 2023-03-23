@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a4b1758bd60243a3bdce73363fce4aa2/artifacts
+end_time: 1679532378524
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a4b1758bd60243a3bdce73363fce4aa2
+run_name: upset-quail-343
+run_uuid: a4b1758bd60243a3bdce73363fce4aa2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532377711
+status: 3
+tags: []
+user_id: elias

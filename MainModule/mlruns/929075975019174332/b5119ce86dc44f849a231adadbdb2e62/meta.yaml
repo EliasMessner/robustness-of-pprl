@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/b5119ce86dc44f849a231adadbdb2e62/artifacts
+end_time: 1679502540243
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: b5119ce86dc44f849a231adadbdb2e62
+run_name: learned-mole-307
+run_uuid: b5119ce86dc44f849a231adadbdb2e62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502539853
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b026eee42eaf4e099460e8532ec3bbae/artifacts
+end_time: 1679531860997
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b026eee42eaf4e099460e8532ec3bbae
+run_name: clean-trout-884
+run_uuid: b026eee42eaf4e099460e8532ec3bbae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531860404
+status: 3
+tags: []
+user_id: elias

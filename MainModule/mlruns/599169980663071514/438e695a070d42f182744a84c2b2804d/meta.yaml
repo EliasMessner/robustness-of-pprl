@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/438e695a070d42f182744a84c2b2804d/artifacts
+end_time: 1679531780418
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 438e695a070d42f182744a84c2b2804d
+run_name: redolent-snake-380
+run_uuid: 438e695a070d42f182744a84c2b2804d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531779590
+status: 3
+tags: []
+user_id: elias

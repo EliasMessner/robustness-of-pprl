@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/59b81aed3ef1497eb282f1370e7c52da/artifacts
+end_time: 1679482526561
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 59b81aed3ef1497eb282f1370e7c52da
+run_name: blushing-ram-306
+run_uuid: 59b81aed3ef1497eb282f1370e7c52da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482526327
+status: 3
+tags: []
+user_id: elias

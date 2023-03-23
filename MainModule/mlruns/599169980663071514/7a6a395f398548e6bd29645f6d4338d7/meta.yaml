@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/7a6a395f398548e6bd29645f6d4338d7/artifacts
+end_time: 1679530578410
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 7a6a395f398548e6bd29645f6d4338d7
+run_name: merciful-bass-953
+run_uuid: 7a6a395f398548e6bd29645f6d4338d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530577550
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/affd7ff35a9d4df4998ff2ac4469ac3b/artifacts
+end_time: 1679532356288
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: affd7ff35a9d4df4998ff2ac4469ac3b
+run_name: orderly-goose-235
+run_uuid: affd7ff35a9d4df4998ff2ac4469ac3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532355632
+status: 3
+tags: []
+user_id: elias

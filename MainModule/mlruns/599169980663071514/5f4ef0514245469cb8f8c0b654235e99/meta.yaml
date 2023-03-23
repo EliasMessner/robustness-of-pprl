@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5f4ef0514245469cb8f8c0b654235e99/artifacts
+end_time: 1679531851622
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5f4ef0514245469cb8f8c0b654235e99
+run_name: agreeable-hound-990
+run_uuid: 5f4ef0514245469cb8f8c0b654235e99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531851107
+status: 3
+tags: []
+user_id: elias

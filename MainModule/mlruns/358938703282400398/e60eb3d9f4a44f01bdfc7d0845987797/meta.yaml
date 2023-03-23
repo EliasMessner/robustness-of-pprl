@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/e60eb3d9f4a44f01bdfc7d0845987797/artifacts
+end_time: 1679482657126
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: e60eb3d9f4a44f01bdfc7d0845987797
+run_name: victorious-duck-708
+run_uuid: e60eb3d9f4a44f01bdfc7d0845987797
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482656642
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8ed653684c304838bf83cf2dbc473795/artifacts
+end_time: 1679532189551
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8ed653684c304838bf83cf2dbc473795
+run_name: dapper-conch-293
+run_uuid: 8ed653684c304838bf83cf2dbc473795
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532188926
+status: 3
+tags: []
+user_id: elias

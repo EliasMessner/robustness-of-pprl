@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/2b8a06df8d9f432f925a7a19efd69a35/artifacts
+end_time: 1679513162126
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 2b8a06df8d9f432f925a7a19efd69a35
+run_name: gregarious-kite-869
+run_uuid: 2b8a06df8d9f432f925a7a19efd69a35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513161124
+status: 3
+tags: []
+user_id: elias

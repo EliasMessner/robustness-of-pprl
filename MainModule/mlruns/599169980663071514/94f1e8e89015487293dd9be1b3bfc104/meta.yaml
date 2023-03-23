@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/94f1e8e89015487293dd9be1b3bfc104/artifacts
+end_time: 1679530836336
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 94f1e8e89015487293dd9be1b3bfc104
+run_name: calm-chimp-153
+run_uuid: 94f1e8e89015487293dd9be1b3bfc104
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530835430
+status: 3
+tags: []
+user_id: elias

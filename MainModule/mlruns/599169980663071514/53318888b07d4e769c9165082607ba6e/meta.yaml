@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/53318888b07d4e769c9165082607ba6e/artifacts
+end_time: 1679531926311
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 53318888b07d4e769c9165082607ba6e
+run_name: calm-moth-672
+run_uuid: 53318888b07d4e769c9165082607ba6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531925811
+status: 3
+tags: []
+user_id: elias

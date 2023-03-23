@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a04b95b74fbb46bd84f021bb52bb8c23/artifacts
+end_time: 1679531893092
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a04b95b74fbb46bd84f021bb52bb8c23
+run_name: righteous-roo-16
+run_uuid: a04b95b74fbb46bd84f021bb52bb8c23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531892592
+status: 3
+tags: []
+user_id: elias

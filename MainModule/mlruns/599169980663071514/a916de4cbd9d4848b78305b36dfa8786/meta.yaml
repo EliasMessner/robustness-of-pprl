@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a916de4cbd9d4848b78305b36dfa8786/artifacts
+end_time: 1679530782648
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a916de4cbd9d4848b78305b36dfa8786
+run_name: carefree-gnu-548
+run_uuid: a916de4cbd9d4848b78305b36dfa8786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530780820
+status: 3
+tags: []
+user_id: elias

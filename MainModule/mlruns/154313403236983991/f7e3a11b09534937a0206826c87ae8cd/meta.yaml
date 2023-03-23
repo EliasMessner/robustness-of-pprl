@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/f7e3a11b09534937a0206826c87ae8cd/artifacts
+end_time: 1679508223864
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: f7e3a11b09534937a0206826c87ae8cd
+run_name: chill-finch-815
+run_uuid: f7e3a11b09534937a0206826c87ae8cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508222926
+status: 3
+tags: []
+user_id: elias

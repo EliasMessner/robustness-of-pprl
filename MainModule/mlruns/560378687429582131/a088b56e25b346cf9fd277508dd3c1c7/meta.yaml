@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/a088b56e25b346cf9fd277508dd3c1c7/artifacts
+end_time: 1679497532583
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: a088b56e25b346cf9fd277508dd3c1c7
+run_name: colorful-hound-773
+run_uuid: a088b56e25b346cf9fd277508dd3c1c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497531083
+status: 3
+tags: []
+user_id: elias

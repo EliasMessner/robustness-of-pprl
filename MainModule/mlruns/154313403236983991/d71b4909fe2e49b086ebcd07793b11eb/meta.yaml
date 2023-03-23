@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/d71b4909fe2e49b086ebcd07793b11eb/artifacts
+end_time: 1679508203223
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: d71b4909fe2e49b086ebcd07793b11eb
+run_name: masked-koi-794
+run_uuid: d71b4909fe2e49b086ebcd07793b11eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508202270
+status: 3
+tags: []
+user_id: elias

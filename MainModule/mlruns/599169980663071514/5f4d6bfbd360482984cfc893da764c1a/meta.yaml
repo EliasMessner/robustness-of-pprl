@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5f4d6bfbd360482984cfc893da764c1a/artifacts
+end_time: 1679531790684
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5f4d6bfbd360482984cfc893da764c1a
+run_name: sneaky-snipe-59
+run_uuid: 5f4d6bfbd360482984cfc893da764c1a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531790137
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c6fee1b2ae7548159cd5014272f334f7/artifacts
+end_time: 1679531348159
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c6fee1b2ae7548159cd5014272f334f7
+run_name: clean-snake-575
+run_uuid: c6fee1b2ae7548159cd5014272f334f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531347564
+status: 3
+tags: []
+user_id: elias

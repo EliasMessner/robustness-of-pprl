@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/563f7b759de940079df35098c04c7c45/artifacts
+end_time: 1679531539475
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 563f7b759de940079df35098c04c7c45
+run_name: burly-dove-290
+run_uuid: 563f7b759de940079df35098c04c7c45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531538616
+status: 3
+tags: []
+user_id: elias

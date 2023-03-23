@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/025828dc297b49cbbef0909fd9e46333/artifacts
+end_time: 1679513010981
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 025828dc297b49cbbef0909fd9e46333
+run_name: receptive-finch-245
+run_uuid: 025828dc297b49cbbef0909fd9e46333
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513010387
+status: 3
+tags: []
+user_id: elias

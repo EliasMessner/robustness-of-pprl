@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fc06ec93853b4e318107825e57f4eb97/artifacts
+end_time: 1679531837685
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fc06ec93853b4e318107825e57f4eb97
+run_name: unequaled-turtle-470
+run_uuid: fc06ec93853b4e318107825e57f4eb97
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531836966
+status: 3
+tags: []
+user_id: elias

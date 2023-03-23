@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/5a5bc28999c24107a12382f6f14f490e/artifacts
+end_time: 1679489336316
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 5a5bc28999c24107a12382f6f14f490e
+run_name: useful-sloth-689
+run_uuid: 5a5bc28999c24107a12382f6f14f490e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489336129
+status: 3
+tags: []
+user_id: elias

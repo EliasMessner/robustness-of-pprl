@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/99bc8e6501044bd3af0dfff5d56014a8/artifacts
+end_time: 1679497355814
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 99bc8e6501044bd3af0dfff5d56014a8
+run_name: overjoyed-grub-606
+run_uuid: 99bc8e6501044bd3af0dfff5d56014a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497353314
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/0254c29b89d34446a3f542df9cabb3d4/artifacts
+end_time: 1679508709139
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 0254c29b89d34446a3f542df9cabb3d4
+run_name: loud-lynx-598
+run_uuid: 0254c29b89d34446a3f542df9cabb3d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508708108
+status: 3
+tags: []
+user_id: elias

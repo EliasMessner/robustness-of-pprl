@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/beb94aac430f437eaded5fe60913cda5/artifacts
+end_time: 1679530809008
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: beb94aac430f437eaded5fe60913cda5
+run_name: agreeable-perch-155
+run_uuid: beb94aac430f437eaded5fe60913cda5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530808555
+status: 3
+tags: []
+user_id: elias

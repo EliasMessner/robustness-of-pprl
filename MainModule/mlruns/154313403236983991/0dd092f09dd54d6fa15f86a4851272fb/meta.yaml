@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/0dd092f09dd54d6fa15f86a4851272fb/artifacts
+end_time: 1679508491167
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 0dd092f09dd54d6fa15f86a4851272fb
+run_name: shivering-carp-628
+run_uuid: 0dd092f09dd54d6fa15f86a4851272fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508490198
+status: 3
+tags: []
+user_id: elias

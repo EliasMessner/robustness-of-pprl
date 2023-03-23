@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e358dfd23eea4457ba344ec45f110092/artifacts
+end_time: 1679532673171
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e358dfd23eea4457ba344ec45f110092
+run_name: capable-skink-216
+run_uuid: e358dfd23eea4457ba344ec45f110092
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532672343
+status: 3
+tags: []
+user_id: elias

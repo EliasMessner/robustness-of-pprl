@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/090cb93f6ebb4b2c868abd7ac1988643/artifacts
+end_time: 1679491401649
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 090cb93f6ebb4b2c868abd7ac1988643
+run_name: lyrical-auk-721
+run_uuid: 090cb93f6ebb4b2c868abd7ac1988643
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491400086
+status: 3
+tags: []
+user_id: elias

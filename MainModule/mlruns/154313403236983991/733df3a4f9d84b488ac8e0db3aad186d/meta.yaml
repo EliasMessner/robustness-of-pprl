@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/733df3a4f9d84b488ac8e0db3aad186d/artifacts
+end_time: 1679508328335
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 733df3a4f9d84b488ac8e0db3aad186d
+run_name: honorable-bird-144
+run_uuid: 733df3a4f9d84b488ac8e0db3aad186d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508327554
+status: 3
+tags: []
+user_id: elias

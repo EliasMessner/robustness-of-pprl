@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e100cc0677b34ffdb75b93a8c5974ceb/artifacts
+end_time: 1679531920639
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e100cc0677b34ffdb75b93a8c5974ceb
+run_name: unruly-goat-946
+run_uuid: e100cc0677b34ffdb75b93a8c5974ceb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531920046
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5f4741611bdb485a84ccc5e06b19eb77/artifacts
+end_time: 1679531922092
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5f4741611bdb485a84ccc5e06b19eb77
+run_name: loud-doe-340
+run_uuid: 5f4741611bdb485a84ccc5e06b19eb77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531921374
+status: 3
+tags: []
+user_id: elias

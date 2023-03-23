@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/abc61801969b4d18b4b2d2d0e0c7a8cb/artifacts
+end_time: 1679532070502
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: abc61801969b4d18b4b2d2d0e0c7a8cb
+run_name: resilient-sloth-110
+run_uuid: abc61801969b4d18b4b2d2d0e0c7a8cb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532069971
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/351bc11bafe44b0492810f6c74efcf4d/artifacts
+end_time: 1679489335816
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 351bc11bafe44b0492810f6c74efcf4d
+run_name: judicious-skunk-177
+run_uuid: 351bc11bafe44b0492810f6c74efcf4d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489335613
+status: 3
+tags: []
+user_id: elias

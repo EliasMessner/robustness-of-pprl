@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/fb7d31c1d0da4d17b423eeebbabc68cd/artifacts
+end_time: 1679489219064
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: fb7d31c1d0da4d17b423eeebbabc68cd
+run_name: kindly-loon-205
+run_uuid: fb7d31c1d0da4d17b423eeebbabc68cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489218908
+status: 3
+tags: []
+user_id: elias

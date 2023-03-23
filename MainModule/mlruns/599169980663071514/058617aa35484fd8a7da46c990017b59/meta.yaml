@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/058617aa35484fd8a7da46c990017b59/artifacts
+end_time: 1679530401797
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 058617aa35484fd8a7da46c990017b59
+run_name: merciful-colt-65
+run_uuid: 058617aa35484fd8a7da46c990017b59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530401297
+status: 3
+tags: []
+user_id: elias

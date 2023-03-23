@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/59bc7eb1fc50407ebd80c89c7f915b5b/artifacts
+end_time: 1679532684421
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 59bc7eb1fc50407ebd80c89c7f915b5b
+run_name: worried-worm-336
+run_uuid: 59bc7eb1fc50407ebd80c89c7f915b5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532683686
+status: 3
+tags: []
+user_id: elias

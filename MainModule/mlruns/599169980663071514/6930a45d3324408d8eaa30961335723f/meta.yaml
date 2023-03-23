@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6930a45d3324408d8eaa30961335723f/artifacts
+end_time: 1679531101310
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6930a45d3324408d8eaa30961335723f
+run_name: sincere-kite-317
+run_uuid: 6930a45d3324408d8eaa30961335723f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531100622
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/81b3a0f196ee482cb41ab9ef3f9715aa/artifacts
+end_time: 1679531575303
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 81b3a0f196ee482cb41ab9ef3f9715aa
+run_name: respected-whale-196
+run_uuid: 81b3a0f196ee482cb41ab9ef3f9715aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531574225
+status: 3
+tags: []
+user_id: elias

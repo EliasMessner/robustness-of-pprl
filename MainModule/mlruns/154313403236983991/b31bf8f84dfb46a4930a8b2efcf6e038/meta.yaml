@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/b31bf8f84dfb46a4930a8b2efcf6e038/artifacts
+end_time: 1679508566106
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: b31bf8f84dfb46a4930a8b2efcf6e038
+run_name: charming-shoat-278
+run_uuid: b31bf8f84dfb46a4930a8b2efcf6e038
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508565137
+status: 3
+tags: []
+user_id: elias

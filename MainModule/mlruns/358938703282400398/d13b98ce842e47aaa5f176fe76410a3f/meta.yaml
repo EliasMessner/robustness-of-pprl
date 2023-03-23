@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/d13b98ce842e47aaa5f176fe76410a3f/artifacts
+end_time: 1679482317120
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: d13b98ce842e47aaa5f176fe76410a3f
+run_name: enchanting-mole-773
+run_uuid: d13b98ce842e47aaa5f176fe76410a3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482316245
+status: 3
+tags: []
+user_id: elias

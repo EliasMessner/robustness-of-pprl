@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/2a4c3a23c4b44dfba01603acd0f56ce0/artifacts
+end_time: 1679497665179
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 2a4c3a23c4b44dfba01603acd0f56ce0
+run_name: capricious-bird-200
+run_uuid: 2a4c3a23c4b44dfba01603acd0f56ce0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497663992
+status: 3
+tags: []
+user_id: elias

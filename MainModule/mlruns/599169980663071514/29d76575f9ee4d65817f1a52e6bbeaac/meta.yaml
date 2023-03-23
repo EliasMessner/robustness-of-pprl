@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/29d76575f9ee4d65817f1a52e6bbeaac/artifacts
+end_time: 1679532179144
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 29d76575f9ee4d65817f1a52e6bbeaac
+run_name: bemused-hare-419
+run_uuid: 29d76575f9ee4d65817f1a52e6bbeaac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532177597
+status: 3
+tags: []
+user_id: elias

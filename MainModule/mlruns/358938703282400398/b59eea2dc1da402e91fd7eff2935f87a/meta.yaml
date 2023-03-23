@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/b59eea2dc1da402e91fd7eff2935f87a/artifacts
+end_time: 1679482180945
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: b59eea2dc1da402e91fd7eff2935f87a
+run_name: fun-moose-133
+run_uuid: b59eea2dc1da402e91fd7eff2935f87a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482180710
+status: 3
+tags: []
+user_id: elias

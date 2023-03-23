@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/30cd5b3b97cd4c7da6c1542f8e27c205/artifacts
+end_time: 1679508213442
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 30cd5b3b97cd4c7da6c1542f8e27c205
+run_name: masked-shrew-460
+run_uuid: 30cd5b3b97cd4c7da6c1542f8e27c205
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508212786
+status: 3
+tags: []
+user_id: elias

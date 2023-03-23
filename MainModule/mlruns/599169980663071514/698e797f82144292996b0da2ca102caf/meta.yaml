@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/698e797f82144292996b0da2ca102caf/artifacts
+end_time: 1679531071997
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 698e797f82144292996b0da2ca102caf
+run_name: crawling-bat-255
+run_uuid: 698e797f82144292996b0da2ca102caf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531071497
+status: 3
+tags: []
+user_id: elias

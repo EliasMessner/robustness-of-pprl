@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/293ee504112c4c1595feb1840b895fdc/artifacts
+end_time: 1679530729647
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 293ee504112c4c1595feb1840b895fdc
+run_name: bouncy-carp-533
+run_uuid: 293ee504112c4c1595feb1840b895fdc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530728803
+status: 3
+tags: []
+user_id: elias

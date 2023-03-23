@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b0f7e40cb7994244a731fc1851ff7815/artifacts
+end_time: 1679531892420
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b0f7e40cb7994244a731fc1851ff7815
+run_name: bald-grub-300
+run_uuid: b0f7e40cb7994244a731fc1851ff7815
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531891374
+status: 3
+tags: []
+user_id: elias

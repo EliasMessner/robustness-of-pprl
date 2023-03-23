@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3b9614a0bb7d488c85a289a449d04236/artifacts
+end_time: 1679530323295
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3b9614a0bb7d488c85a289a449d04236
+run_name: nervous-moth-849
+run_uuid: 3b9614a0bb7d488c85a289a449d04236
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530322873
+status: 3
+tags: []
+user_id: elias

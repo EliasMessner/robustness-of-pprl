@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ce2478c07c604a12a628c4e28884127f/artifacts
+end_time: 1679531840497
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ce2478c07c604a12a628c4e28884127f
+run_name: salty-bear-948
+run_uuid: ce2478c07c604a12a628c4e28884127f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531839982
+status: 3
+tags: []
+user_id: elias

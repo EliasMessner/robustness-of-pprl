@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dc5a7add8cf946af95a2b7a728b0c316/artifacts
+end_time: 1679532010813
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dc5a7add8cf946af95a2b7a728b0c316
+run_name: caring-conch-995
+run_uuid: dc5a7add8cf946af95a2b7a728b0c316
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532009735
+status: 3
+tags: []
+user_id: elias

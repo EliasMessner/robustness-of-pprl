@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ecf8878bd3804aa68242b7c3ef321b89/artifacts
+end_time: 1679532471087
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ecf8878bd3804aa68242b7c3ef321b89
+run_name: overjoyed-tern-917
+run_uuid: ecf8878bd3804aa68242b7c3ef321b89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532469947
+status: 3
+tags: []
+user_id: elias

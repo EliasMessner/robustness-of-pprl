@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1b930180a24e4cc2a483a69acf51fc98/artifacts
+end_time: 1679531018933
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1b930180a24e4cc2a483a69acf51fc98
+run_name: righteous-koi-577
+run_uuid: 1b930180a24e4cc2a483a69acf51fc98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531018183
+status: 3
+tags: []
+user_id: elias

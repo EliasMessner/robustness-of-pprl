@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/b9c8c467a10a4fa38213e22e2b176579/artifacts
+end_time: 1679508645154
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: b9c8c467a10a4fa38213e22e2b176579
+run_name: nosy-rat-515
+run_uuid: b9c8c467a10a4fa38213e22e2b176579
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508644826
+status: 3
+tags: []
+user_id: elias

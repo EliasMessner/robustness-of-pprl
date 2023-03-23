@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/abee73d0ba5f4285aa8500a01030a6ab/artifacts
+end_time: 1679530613988
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: abee73d0ba5f4285aa8500a01030a6ab
+run_name: magnificent-crow-476
+run_uuid: abee73d0ba5f4285aa8500a01030a6ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530613129
+status: 3
+tags: []
+user_id: elias

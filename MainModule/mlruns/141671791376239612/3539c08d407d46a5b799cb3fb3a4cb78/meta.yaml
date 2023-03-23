@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/3539c08d407d46a5b799cb3fb3a4cb78/artifacts
+end_time: 1679489199094
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 3539c08d407d46a5b799cb3fb3a4cb78
+run_name: monumental-seal-286
+run_uuid: 3539c08d407d46a5b799cb3fb3a4cb78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489198266
+status: 3
+tags: []
+user_id: elias

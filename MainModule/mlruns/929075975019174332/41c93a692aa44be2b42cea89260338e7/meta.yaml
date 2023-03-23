@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/41c93a692aa44be2b42cea89260338e7/artifacts
+end_time: 1679502319676
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 41c93a692aa44be2b42cea89260338e7
+run_name: sneaky-ray-508
+run_uuid: 41c93a692aa44be2b42cea89260338e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502318989
+status: 3
+tags: []
+user_id: elias

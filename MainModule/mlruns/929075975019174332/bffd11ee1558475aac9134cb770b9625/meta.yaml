@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/bffd11ee1558475aac9134cb770b9625/artifacts
+end_time: 1679502593915
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: bffd11ee1558475aac9134cb770b9625
+run_name: dashing-midge-504
+run_uuid: bffd11ee1558475aac9134cb770b9625
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502593056
+status: 3
+tags: []
+user_id: elias

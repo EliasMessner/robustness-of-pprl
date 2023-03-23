@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d6c77e4455f74ea29af64ce940f1e40d/artifacts
+end_time: 1679531640820
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d6c77e4455f74ea29af64ce940f1e40d
+run_name: shivering-kite-936
+run_uuid: d6c77e4455f74ea29af64ce940f1e40d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531639680
+status: 3
+tags: []
+user_id: elias

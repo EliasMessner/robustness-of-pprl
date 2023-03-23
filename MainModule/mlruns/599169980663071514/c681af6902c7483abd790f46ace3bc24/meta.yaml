@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c681af6902c7483abd790f46ace3bc24/artifacts
+end_time: 1679531829841
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c681af6902c7483abd790f46ace3bc24
+run_name: funny-fawn-543
+run_uuid: c681af6902c7483abd790f46ace3bc24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531829310
+status: 3
+tags: []
+user_id: elias

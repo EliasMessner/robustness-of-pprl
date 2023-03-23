@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/d4c914f89679485591d3b0bca492b575/artifacts
+end_time: 1679502590556
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: d4c914f89679485591d3b0bca492b575
+run_name: abrasive-snake-927
+run_uuid: d4c914f89679485591d3b0bca492b575
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502588868
+status: 3
+tags: []
+user_id: elias

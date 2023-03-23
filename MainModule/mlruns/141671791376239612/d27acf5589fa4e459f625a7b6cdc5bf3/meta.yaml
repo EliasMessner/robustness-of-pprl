@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/d27acf5589fa4e459f625a7b6cdc5bf3/artifacts
+end_time: 1679489363879
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: d27acf5589fa4e459f625a7b6cdc5bf3
+run_name: nervous-wasp-257
+run_uuid: d27acf5589fa4e459f625a7b6cdc5bf3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489363676
+status: 3
+tags: []
+user_id: elias

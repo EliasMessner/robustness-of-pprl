@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/49a66d04b9084318ae3740de50c3046b/artifacts
+end_time: 1679508232645
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 49a66d04b9084318ae3740de50c3046b
+run_name: unique-mare-1
+run_uuid: 49a66d04b9084318ae3740de50c3046b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508232176
+status: 3
+tags: []
+user_id: elias

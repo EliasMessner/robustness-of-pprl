@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f085d6a8275d44688e365e24b4868067/artifacts
+end_time: 1679530506939
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f085d6a8275d44688e365e24b4868067
+run_name: amusing-stag-271
+run_uuid: f085d6a8275d44688e365e24b4868067
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530505970
+status: 3
+tags: []
+user_id: elias

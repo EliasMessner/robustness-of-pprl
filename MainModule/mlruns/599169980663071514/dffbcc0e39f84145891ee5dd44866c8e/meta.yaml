@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dffbcc0e39f84145891ee5dd44866c8e/artifacts
+end_time: 1679530473939
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dffbcc0e39f84145891ee5dd44866c8e
+run_name: carefree-bass-159
+run_uuid: dffbcc0e39f84145891ee5dd44866c8e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530472095
+status: 3
+tags: []
+user_id: elias

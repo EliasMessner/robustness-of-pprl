@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/7101b92aca034aebb23621f9d07e83be/artifacts
+end_time: 1679502465382
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 7101b92aca034aebb23621f9d07e83be
+run_name: calm-roo-710
+run_uuid: 7101b92aca034aebb23621f9d07e83be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502464991
+status: 3
+tags: []
+user_id: elias

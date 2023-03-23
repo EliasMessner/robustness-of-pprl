@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/23e68a686d754aa6908d44d101f892f0/artifacts
+end_time: 1679531819137
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 23e68a686d754aa6908d44d101f892f0
+run_name: masked-mare-146
+run_uuid: 23e68a686d754aa6908d44d101f892f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531818559
+status: 3
+tags: []
+user_id: elias

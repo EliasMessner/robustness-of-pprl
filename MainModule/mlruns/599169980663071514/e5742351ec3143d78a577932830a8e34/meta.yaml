@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e5742351ec3143d78a577932830a8e34/artifacts
+end_time: 1679530817586
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e5742351ec3143d78a577932830a8e34
+run_name: redolent-penguin-479
+run_uuid: e5742351ec3143d78a577932830a8e34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530816446
+status: 3
+tags: []
+user_id: elias

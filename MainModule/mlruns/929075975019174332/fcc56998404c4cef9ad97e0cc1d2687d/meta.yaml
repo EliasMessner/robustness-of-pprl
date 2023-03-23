@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/fcc56998404c4cef9ad97e0cc1d2687d/artifacts
+end_time: 1679502671808
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: fcc56998404c4cef9ad97e0cc1d2687d
+run_name: peaceful-crow-983
+run_uuid: fcc56998404c4cef9ad97e0cc1d2687d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502671293
+status: 3
+tags: []
+user_id: elias

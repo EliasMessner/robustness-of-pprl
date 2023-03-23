@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a9b39a18ffa24bf6995a5dcb322b6e05/artifacts
+end_time: 1679532345054
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a9b39a18ffa24bf6995a5dcb322b6e05
+run_name: chill-crow-739
+run_uuid: a9b39a18ffa24bf6995a5dcb322b6e05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532344319
+status: 3
+tags: []
+user_id: elias

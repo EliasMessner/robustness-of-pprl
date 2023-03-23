@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/4f52ba049f514196ad7f6e2218206955/artifacts
+end_time: 1679482199571
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 4f52ba049f514196ad7f6e2218206955
+run_name: amusing-dolphin-618
+run_uuid: 4f52ba049f514196ad7f6e2218206955
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482199196
+status: 3
+tags: []
+user_id: elias

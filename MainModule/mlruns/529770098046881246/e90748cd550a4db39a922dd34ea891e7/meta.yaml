@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/e90748cd550a4db39a922dd34ea891e7/artifacts
+end_time: 1679486609670
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: e90748cd550a4db39a922dd34ea891e7
+run_name: smiling-elk-578
+run_uuid: e90748cd550a4db39a922dd34ea891e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486609436
+status: 3
+tags: []
+user_id: elias

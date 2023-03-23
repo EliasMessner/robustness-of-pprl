@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/513d79d1d33846e99dd5caa9cc699290/artifacts
+end_time: 1679512933871
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 513d79d1d33846e99dd5caa9cc699290
+run_name: painted-jay-298
+run_uuid: 513d79d1d33846e99dd5caa9cc699290
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512932168
+status: 3
+tags: []
+user_id: elias

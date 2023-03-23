@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/44d68e3fa38a4d80ad38ce727b7e7ee3/artifacts
+end_time: 1679502504024
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 44d68e3fa38a4d80ad38ce727b7e7ee3
+run_name: amazing-dog-856
+run_uuid: 44d68e3fa38a4d80ad38ce727b7e7ee3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502503602
+status: 3
+tags: []
+user_id: elias

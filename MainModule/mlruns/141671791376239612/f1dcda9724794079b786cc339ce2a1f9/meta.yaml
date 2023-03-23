@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/f1dcda9724794079b786cc339ce2a1f9/artifacts
+end_time: 1679489238142
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: f1dcda9724794079b786cc339ce2a1f9
+run_name: rumbling-swan-921
+run_uuid: f1dcda9724794079b786cc339ce2a1f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489237986
+status: 3
+tags: []
+user_id: elias

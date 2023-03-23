@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/59c6bc6279c749be8ef62445cc665ebd/artifacts
+end_time: 1679532069705
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 59c6bc6279c749be8ef62445cc665ebd
+run_name: lyrical-wolf-785
+run_uuid: 59c6bc6279c749be8ef62445cc665ebd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532069080
+status: 3
+tags: []
+user_id: elias

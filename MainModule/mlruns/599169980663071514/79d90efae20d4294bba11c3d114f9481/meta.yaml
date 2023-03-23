@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/79d90efae20d4294bba11c3d114f9481/artifacts
+end_time: 1679531940452
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 79d90efae20d4294bba11c3d114f9481
+run_name: caring-doe-95
+run_uuid: 79d90efae20d4294bba11c3d114f9481
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531939608
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/560397ddd511453e8d1e118caaa9b206/artifacts
+end_time: 1679530810508
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 560397ddd511453e8d1e118caaa9b206
+run_name: carefree-skink-611
+run_uuid: 560397ddd511453e8d1e118caaa9b206
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530810024
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/c985fb835344465f8b1a837f7c2a49ca/artifacts
+end_time: 1679497385800
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: c985fb835344465f8b1a837f7c2a49ca
+run_name: illustrious-pug-348
+run_uuid: c985fb835344465f8b1a837f7c2a49ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497384096
+status: 3
+tags: []
+user_id: elias

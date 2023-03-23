@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/9cd720e36a894829947dfcc8f6333282/artifacts
+end_time: 1679502513680
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 9cd720e36a894829947dfcc8f6333282
+run_name: carefree-whale-579
+run_uuid: 9cd720e36a894829947dfcc8f6333282
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502512555
+status: 3
+tags: []
+user_id: elias

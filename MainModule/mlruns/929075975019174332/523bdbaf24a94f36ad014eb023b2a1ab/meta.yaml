@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/523bdbaf24a94f36ad014eb023b2a1ab/artifacts
+end_time: 1679502369896
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 523bdbaf24a94f36ad014eb023b2a1ab
+run_name: puzzled-kit-980
+run_uuid: 523bdbaf24a94f36ad014eb023b2a1ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502368693
+status: 3
+tags: []
+user_id: elias

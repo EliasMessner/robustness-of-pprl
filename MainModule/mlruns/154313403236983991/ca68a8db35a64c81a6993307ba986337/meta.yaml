@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/ca68a8db35a64c81a6993307ba986337/artifacts
+end_time: 1679508595403
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: ca68a8db35a64c81a6993307ba986337
+run_name: able-carp-7
+run_uuid: ca68a8db35a64c81a6993307ba986337
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508594903
+status: 3
+tags: []
+user_id: elias

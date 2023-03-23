@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/5c20c4bbd4f64b17ba942b3bd2aef2d2/artifacts
+end_time: 1679508435931
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 5c20c4bbd4f64b17ba942b3bd2aef2d2
+run_name: amusing-mouse-40
+run_uuid: 5c20c4bbd4f64b17ba942b3bd2aef2d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508435197
+status: 3
+tags: []
+user_id: elias

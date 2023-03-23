@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/8fed5dc43e42494a825a00a8e1503a31/artifacts
+end_time: 1679502542259
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 8fed5dc43e42494a825a00a8e1503a31
+run_name: industrious-tern-239
+run_uuid: 8fed5dc43e42494a825a00a8e1503a31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502541837
+status: 3
+tags: []
+user_id: elias

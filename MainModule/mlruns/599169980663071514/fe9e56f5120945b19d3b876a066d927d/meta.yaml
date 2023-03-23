@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fe9e56f5120945b19d3b876a066d927d/artifacts
+end_time: 1679530379983
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fe9e56f5120945b19d3b876a066d927d
+run_name: adaptable-sponge-354
+run_uuid: fe9e56f5120945b19d3b876a066d927d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530379468
+status: 3
+tags: []
+user_id: elias

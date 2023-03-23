@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6436f6c7d6d34a9a9e4c900bcd21f49a/artifacts
+end_time: 1679532502292
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6436f6c7d6d34a9a9e4c900bcd21f49a
+run_name: capable-lamb-542
+run_uuid: 6436f6c7d6d34a9a9e4c900bcd21f49a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532501121
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ca9d905ca355449f97515f9c7dba18be/artifacts
+end_time: 1679531870607
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ca9d905ca355449f97515f9c7dba18be
+run_name: luminous-ant-18
+run_uuid: ca9d905ca355449f97515f9c7dba18be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531869982
+status: 3
+tags: []
+user_id: elias

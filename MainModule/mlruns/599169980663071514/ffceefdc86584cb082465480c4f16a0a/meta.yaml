@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ffceefdc86584cb082465480c4f16a0a/artifacts
+end_time: 1679530530096
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ffceefdc86584cb082465480c4f16a0a
+run_name: unleashed-mole-838
+run_uuid: ffceefdc86584cb082465480c4f16a0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530528674
+status: 3
+tags: []
+user_id: elias

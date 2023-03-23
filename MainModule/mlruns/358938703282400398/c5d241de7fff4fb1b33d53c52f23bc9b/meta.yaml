@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/c5d241de7fff4fb1b33d53c52f23bc9b/artifacts
+end_time: 1679482278994
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: c5d241de7fff4fb1b33d53c52f23bc9b
+run_name: calm-midge-155
+run_uuid: c5d241de7fff4fb1b33d53c52f23bc9b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482278588
+status: 3
+tags: []
+user_id: elias

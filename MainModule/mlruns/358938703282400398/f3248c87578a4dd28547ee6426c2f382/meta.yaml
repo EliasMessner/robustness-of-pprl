@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/f3248c87578a4dd28547ee6426c2f382/artifacts
+end_time: 1679482579203
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: f3248c87578a4dd28547ee6426c2f382
+run_name: bouncy-whale-930
+run_uuid: f3248c87578a4dd28547ee6426c2f382
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482578797
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c406cdc5260a4321a7e7c8555b8be0dc/artifacts
+end_time: 1679531108311
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c406cdc5260a4321a7e7c8555b8be0dc
+run_name: entertaining-wren-89
+run_uuid: c406cdc5260a4321a7e7c8555b8be0dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531107794
+status: 3
+tags: []
+user_id: elias

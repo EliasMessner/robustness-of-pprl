@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/3abfa00818af467bbfe31a07be60b24e/artifacts
+end_time: 1679512939324
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 3abfa00818af467bbfe31a07be60b24e
+run_name: bouncy-ape-97
+run_uuid: 3abfa00818af467bbfe31a07be60b24e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512938464
+status: 3
+tags: []
+user_id: elias

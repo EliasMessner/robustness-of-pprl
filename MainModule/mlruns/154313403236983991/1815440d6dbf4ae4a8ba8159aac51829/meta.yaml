@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/1815440d6dbf4ae4a8ba8159aac51829/artifacts
+end_time: 1679508561934
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 1815440d6dbf4ae4a8ba8159aac51829
+run_name: resilient-shrew-817
+run_uuid: 1815440d6dbf4ae4a8ba8159aac51829
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508561059
+status: 3
+tags: []
+user_id: elias

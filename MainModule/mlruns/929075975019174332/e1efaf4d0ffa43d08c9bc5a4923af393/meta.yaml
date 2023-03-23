@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/e1efaf4d0ffa43d08c9bc5a4923af393/artifacts
+end_time: 1679502214065
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: e1efaf4d0ffa43d08c9bc5a4923af393
+run_name: smiling-mink-2
+run_uuid: e1efaf4d0ffa43d08c9bc5a4923af393
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502213690
+status: 3
+tags: []
+user_id: elias

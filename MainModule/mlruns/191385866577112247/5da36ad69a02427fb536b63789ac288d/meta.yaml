@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/5da36ad69a02427fb536b63789ac288d/artifacts
+end_time: 1679512856117
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 5da36ad69a02427fb536b63789ac288d
+run_name: learned-carp-550
+run_uuid: 5da36ad69a02427fb536b63789ac288d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512854383
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5c68b6b979dc4ab6bd696073a45c9b80/artifacts
+end_time: 1679531477052
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5c68b6b979dc4ab6bd696073a45c9b80
+run_name: delightful-wasp-537
+run_uuid: 5c68b6b979dc4ab6bd696073a45c9b80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531475630
+status: 3
+tags: []
+user_id: elias

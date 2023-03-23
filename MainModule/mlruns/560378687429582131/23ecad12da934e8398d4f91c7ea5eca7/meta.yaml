@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/23ecad12da934e8398d4f91c7ea5eca7/artifacts
+end_time: 1679497370720
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 23ecad12da934e8398d4f91c7ea5eca7
+run_name: lyrical-doe-60
+run_uuid: 23ecad12da934e8398d4f91c7ea5eca7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497369533
+status: 3
+tags: []
+user_id: elias

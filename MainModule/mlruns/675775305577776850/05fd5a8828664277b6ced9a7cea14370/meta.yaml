@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/05fd5a8828664277b6ced9a7cea14370/artifacts
+end_time: 1679491308236
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 05fd5a8828664277b6ced9a7cea14370
+run_name: awesome-sheep-890
+run_uuid: 05fd5a8828664277b6ced9a7cea14370
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491306642
+status: 3
+tags: []
+user_id: elias

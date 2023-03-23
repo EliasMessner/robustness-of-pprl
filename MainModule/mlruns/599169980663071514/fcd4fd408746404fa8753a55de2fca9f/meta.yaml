@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fcd4fd408746404fa8753a55de2fca9f/artifacts
+end_time: 1679531489709
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fcd4fd408746404fa8753a55de2fca9f
+run_name: whimsical-crab-320
+run_uuid: fcd4fd408746404fa8753a55de2fca9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531488552
+status: 3
+tags: []
+user_id: elias

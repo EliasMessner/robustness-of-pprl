@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/b6dcd382de2441ef9a775e9961e9e346/artifacts
+end_time: 1679491318440
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: b6dcd382de2441ef9a775e9961e9e346
+run_name: masked-colt-197
+run_uuid: b6dcd382de2441ef9a775e9961e9e346
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491317018
+status: 3
+tags: []
+user_id: elias

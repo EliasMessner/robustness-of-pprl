@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d74dc809f3f6447bb3007be4a69c4055/artifacts
+end_time: 1679531843388
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d74dc809f3f6447bb3007be4a69c4055
+run_name: painted-toad-667
+run_uuid: d74dc809f3f6447bb3007be4a69c4055
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531842810
+status: 3
+tags: []
+user_id: elias

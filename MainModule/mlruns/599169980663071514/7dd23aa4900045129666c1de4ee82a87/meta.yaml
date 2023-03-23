@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/7dd23aa4900045129666c1de4ee82a87/artifacts
+end_time: 1679530291904
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 7dd23aa4900045129666c1de4ee82a87
+run_name: indecisive-bat-543
+run_uuid: 7dd23aa4900045129666c1de4ee82a87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530290639
+status: 3
+tags: []
+user_id: elias

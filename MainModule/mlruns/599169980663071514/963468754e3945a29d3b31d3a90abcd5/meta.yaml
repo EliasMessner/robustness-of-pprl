@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/963468754e3945a29d3b31d3a90abcd5/artifacts
+end_time: 1679531017121
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 963468754e3945a29d3b31d3a90abcd5
+run_name: abrasive-crane-456
+run_uuid: 963468754e3945a29d3b31d3a90abcd5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531015418
+status: 3
+tags: []
+user_id: elias

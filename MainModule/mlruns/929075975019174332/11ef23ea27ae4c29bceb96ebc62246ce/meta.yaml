@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/11ef23ea27ae4c29bceb96ebc62246ce/artifacts
+end_time: 1679502466788
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 11ef23ea27ae4c29bceb96ebc62246ce
+run_name: smiling-fox-330
+run_uuid: 11ef23ea27ae4c29bceb96ebc62246ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502466382
+status: 3
+tags: []
+user_id: elias

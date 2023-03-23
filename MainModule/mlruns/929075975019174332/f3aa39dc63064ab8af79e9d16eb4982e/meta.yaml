@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/f3aa39dc63064ab8af79e9d16eb4982e/artifacts
+end_time: 1679502453366
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: f3aa39dc63064ab8af79e9d16eb4982e
+run_name: sedate-crow-990
+run_uuid: f3aa39dc63064ab8af79e9d16eb4982e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502452085
+status: 3
+tags: []
+user_id: elias

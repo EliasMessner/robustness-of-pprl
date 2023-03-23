@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/284b210066904638805b42a3dba8d18f/artifacts
+end_time: 1679502272222
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 284b210066904638805b42a3dba8d18f
+run_name: shivering-perch-533
+run_uuid: 284b210066904638805b42a3dba8d18f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502271816
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2a6aa43568214b6182dbc5d6104d0556/artifacts
+end_time: 1679532309163
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2a6aa43568214b6182dbc5d6104d0556
+run_name: serious-fish-838
+run_uuid: 2a6aa43568214b6182dbc5d6104d0556
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532308554
+status: 3
+tags: []
+user_id: elias

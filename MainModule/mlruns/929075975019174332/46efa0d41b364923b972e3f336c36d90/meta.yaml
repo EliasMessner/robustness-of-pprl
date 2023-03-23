@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/46efa0d41b364923b972e3f336c36d90/artifacts
+end_time: 1679502365615
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 46efa0d41b364923b972e3f336c36d90
+run_name: nimble-cod-13
+run_uuid: 46efa0d41b364923b972e3f336c36d90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502365209
+status: 3
+tags: []
+user_id: elias

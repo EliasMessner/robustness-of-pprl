@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/888dd98534a84b6f8cb771a4e1acee4f/artifacts
+end_time: 1679530748570
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 888dd98534a84b6f8cb771a4e1acee4f
+run_name: upbeat-elk-894
+run_uuid: 888dd98534a84b6f8cb771a4e1acee4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530747834
+status: 3
+tags: []
+user_id: elias

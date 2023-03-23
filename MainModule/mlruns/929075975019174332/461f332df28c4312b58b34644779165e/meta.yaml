@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/461f332df28c4312b58b34644779165e/artifacts
+end_time: 1679502519227
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 461f332df28c4312b58b34644779165e
+run_name: glamorous-bird-831
+run_uuid: 461f332df28c4312b58b34644779165e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502518617
+status: 3
+tags: []
+user_id: elias

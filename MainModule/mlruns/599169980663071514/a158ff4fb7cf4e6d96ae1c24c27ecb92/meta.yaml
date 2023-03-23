@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a158ff4fb7cf4e6d96ae1c24c27ecb92/artifacts
+end_time: 1679531356128
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a158ff4fb7cf4e6d96ae1c24c27ecb92
+run_name: enchanting-crab-359
+run_uuid: a158ff4fb7cf4e6d96ae1c24c27ecb92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531355112
+status: 3
+tags: []
+user_id: elias

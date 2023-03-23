@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f48b38a587ba4e97887b6a8e4cbd2a05/artifacts
+end_time: 1679530849118
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f48b38a587ba4e97887b6a8e4cbd2a05
+run_name: sedate-doe-861
+run_uuid: f48b38a587ba4e97887b6a8e4cbd2a05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530848336
+status: 3
+tags: []
+user_id: elias

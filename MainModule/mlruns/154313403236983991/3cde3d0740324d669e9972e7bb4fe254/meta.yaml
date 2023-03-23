@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/3cde3d0740324d669e9972e7bb4fe254/artifacts
+end_time: 1679508332147
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 3cde3d0740324d669e9972e7bb4fe254
+run_name: omniscient-snipe-597
+run_uuid: 3cde3d0740324d669e9972e7bb4fe254
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508331241
+status: 3
+tags: []
+user_id: elias

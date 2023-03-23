@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d411e346aa1242e280f803899ebcada2/artifacts
+end_time: 1679532374164
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d411e346aa1242e280f803899ebcada2
+run_name: languid-ram-745
+run_uuid: d411e346aa1242e280f803899ebcada2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532373539
+status: 3
+tags: []
+user_id: elias

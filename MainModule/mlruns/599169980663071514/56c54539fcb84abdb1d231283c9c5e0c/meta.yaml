@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/56c54539fcb84abdb1d231283c9c5e0c/artifacts
+end_time: 1679530434797
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 56c54539fcb84abdb1d231283c9c5e0c
+run_name: suave-chimp-864
+run_uuid: 56c54539fcb84abdb1d231283c9c5e0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530433938
+status: 3
+tags: []
+user_id: elias

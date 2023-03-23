@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/a53ff62e4eaa45128030f8c96199d6ba/artifacts
+end_time: 1679513221642
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: a53ff62e4eaa45128030f8c96199d6ba
+run_name: receptive-shrike-310
+run_uuid: a53ff62e4eaa45128030f8c96199d6ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513220391
+status: 3
+tags: []
+user_id: elias

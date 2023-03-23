@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f2523f6e8d0b47e2b1407d9d41944a1a/artifacts
+end_time: 1679531400690
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f2523f6e8d0b47e2b1407d9d41944a1a
+run_name: placid-shrew-912
+run_uuid: f2523f6e8d0b47e2b1407d9d41944a1a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531399081
+status: 3
+tags: []
+user_id: elias

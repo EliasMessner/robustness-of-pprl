@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9ad962f7ed1d430e81acc90a437878ab/artifacts
+end_time: 1679531903467
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9ad962f7ed1d430e81acc90a437878ab
+run_name: colorful-hog-153
+run_uuid: 9ad962f7ed1d430e81acc90a437878ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531902358
+status: 3
+tags: []
+user_id: elias

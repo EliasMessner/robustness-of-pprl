@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/720586ab4cd94902af3ffe1b9f516f2e/artifacts
+end_time: 1679508493714
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 720586ab4cd94902af3ffe1b9f516f2e
+run_name: honorable-grouse-365
+run_uuid: 720586ab4cd94902af3ffe1b9f516f2e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508493417
+status: 3
+tags: []
+user_id: elias

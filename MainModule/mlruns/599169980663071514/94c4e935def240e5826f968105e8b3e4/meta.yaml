@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/94c4e935def240e5826f968105e8b3e4/artifacts
+end_time: 1679531719838
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 94c4e935def240e5826f968105e8b3e4
+run_name: charming-colt-70
+run_uuid: 94c4e935def240e5826f968105e8b3e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531718448
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/7cfcfea2e1c14e4a84febc82066c92e4/artifacts
+end_time: 1679508075393
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 7cfcfea2e1c14e4a84febc82066c92e4
+run_name: stately-newt-862
+run_uuid: 7cfcfea2e1c14e4a84febc82066c92e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508075111
+status: 3
+tags: []
+user_id: elias

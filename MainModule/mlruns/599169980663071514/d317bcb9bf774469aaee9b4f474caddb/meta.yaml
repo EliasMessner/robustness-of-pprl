@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d317bcb9bf774469aaee9b4f474caddb/artifacts
+end_time: 1679532124408
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d317bcb9bf774469aaee9b4f474caddb
+run_name: melodic-conch-783
+run_uuid: d317bcb9bf774469aaee9b4f474caddb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532123877
+status: 3
+tags: []
+user_id: elias

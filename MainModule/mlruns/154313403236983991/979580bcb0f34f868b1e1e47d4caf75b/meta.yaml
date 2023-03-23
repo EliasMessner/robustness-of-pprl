@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/979580bcb0f34f868b1e1e47d4caf75b/artifacts
+end_time: 1679508422181
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 979580bcb0f34f868b1e1e47d4caf75b
+run_name: fun-fly-704
+run_uuid: 979580bcb0f34f868b1e1e47d4caf75b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508421165
+status: 3
+tags: []
+user_id: elias

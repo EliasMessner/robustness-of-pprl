@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/a45e04860b2d40ca92af125ea31fd786/artifacts
+end_time: 1679508494339
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: a45e04860b2d40ca92af125ea31fd786
+run_name: selective-fowl-425
+run_uuid: a45e04860b2d40ca92af125ea31fd786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508493964
+status: 3
+tags: []
+user_id: elias

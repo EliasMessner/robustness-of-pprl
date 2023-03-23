@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/41cdd27721624d9c8870073379f08baa/artifacts
+end_time: 1679508234895
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 41cdd27721624d9c8870073379f08baa
+run_name: bittersweet-mole-653
+run_uuid: 41cdd27721624d9c8870073379f08baa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508234348
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/d0cd3cdedb3140618baa4e487976eb1e/artifacts
+end_time: 1679482574812
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: d0cd3cdedb3140618baa4e487976eb1e
+run_name: upbeat-doe-801
+run_uuid: d0cd3cdedb3140618baa4e487976eb1e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482574219
+status: 3
+tags: []
+user_id: elias

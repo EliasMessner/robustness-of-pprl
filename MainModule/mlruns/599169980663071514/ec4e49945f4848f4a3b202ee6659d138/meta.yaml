@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ec4e49945f4848f4a3b202ee6659d138/artifacts
+end_time: 1679531009168
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ec4e49945f4848f4a3b202ee6659d138
+run_name: overjoyed-goose-192
+run_uuid: ec4e49945f4848f4a3b202ee6659d138
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531007980
+status: 3
+tags: []
+user_id: elias

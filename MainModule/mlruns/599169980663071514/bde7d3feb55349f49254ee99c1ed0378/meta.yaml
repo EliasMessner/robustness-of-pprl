@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bde7d3feb55349f49254ee99c1ed0378/artifacts
+end_time: 1679530562424
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bde7d3feb55349f49254ee99c1ed0378
+run_name: bright-kite-759
+run_uuid: bde7d3feb55349f49254ee99c1ed0378
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530561956
+status: 3
+tags: []
+user_id: elias

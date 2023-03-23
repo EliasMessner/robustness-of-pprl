@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5c538b7ba2e94c4b89fcec41a5dc88fa/artifacts
+end_time: 1679530982682
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5c538b7ba2e94c4b89fcec41a5dc88fa
+run_name: monumental-ape-655
+run_uuid: 5c538b7ba2e94c4b89fcec41a5dc88fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530982089
+status: 3
+tags: []
+user_id: elias

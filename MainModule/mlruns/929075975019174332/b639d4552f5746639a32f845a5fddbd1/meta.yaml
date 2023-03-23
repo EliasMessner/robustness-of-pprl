@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/b639d4552f5746639a32f845a5fddbd1/artifacts
+end_time: 1679502652073
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: b639d4552f5746639a32f845a5fddbd1
+run_name: sedate-owl-440
+run_uuid: b639d4552f5746639a32f845a5fddbd1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502651698
+status: 3
+tags: []
+user_id: elias

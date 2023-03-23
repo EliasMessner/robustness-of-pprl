@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/86eba5b8c8b74252ab49b0ffeea4c47d/artifacts
+end_time: 1679508584012
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 86eba5b8c8b74252ab49b0ffeea4c47d
+run_name: trusting-yak-795
+run_uuid: 86eba5b8c8b74252ab49b0ffeea4c47d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508583231
+status: 3
+tags: []
+user_id: elias

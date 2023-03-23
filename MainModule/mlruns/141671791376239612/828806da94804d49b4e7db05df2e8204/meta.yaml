@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/828806da94804d49b4e7db05df2e8204/artifacts
+end_time: 1679489184516
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 828806da94804d49b4e7db05df2e8204
+run_name: loud-carp-161
+run_uuid: 828806da94804d49b4e7db05df2e8204
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489184376
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5bcec0ff6fb441f5aac9c1fd1fe18526/artifacts
+end_time: 1679532363601
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5bcec0ff6fb441f5aac9c1fd1fe18526
+run_name: upbeat-moth-46
+run_uuid: 5bcec0ff6fb441f5aac9c1fd1fe18526
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532363007
+status: 3
+tags: []
+user_id: elias

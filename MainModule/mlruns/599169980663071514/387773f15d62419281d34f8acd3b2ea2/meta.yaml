@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/387773f15d62419281d34f8acd3b2ea2/artifacts
+end_time: 1679530313920
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 387773f15d62419281d34f8acd3b2ea2
+run_name: mercurial-owl-178
+run_uuid: 387773f15d62419281d34f8acd3b2ea2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530312576
+status: 3
+tags: []
+user_id: elias

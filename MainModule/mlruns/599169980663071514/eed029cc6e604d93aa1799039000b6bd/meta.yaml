@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/eed029cc6e604d93aa1799039000b6bd/artifacts
+end_time: 1679531617117
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: eed029cc6e604d93aa1799039000b6bd
+run_name: skittish-shrimp-172
+run_uuid: eed029cc6e604d93aa1799039000b6bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531616148
+status: 3
+tags: []
+user_id: elias

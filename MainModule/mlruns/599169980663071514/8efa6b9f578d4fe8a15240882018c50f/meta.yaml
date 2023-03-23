@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8efa6b9f578d4fe8a15240882018c50f/artifacts
+end_time: 1679531236110
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8efa6b9f578d4fe8a15240882018c50f
+run_name: puzzled-mouse-749
+run_uuid: 8efa6b9f578d4fe8a15240882018c50f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531234469
+status: 3
+tags: []
+user_id: elias

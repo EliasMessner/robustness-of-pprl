@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/27691e1d0cfa4db1b68143fb1731f5df/artifacts
+end_time: 1679532116440
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 27691e1d0cfa4db1b68143fb1731f5df
+run_name: blushing-shrike-94
+run_uuid: 27691e1d0cfa4db1b68143fb1731f5df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532115518
+status: 3
+tags: []
+user_id: elias

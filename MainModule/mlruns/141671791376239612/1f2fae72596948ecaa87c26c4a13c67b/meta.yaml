@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/1f2fae72596948ecaa87c26c4a13c67b/artifacts
+end_time: 1679489283722
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 1f2fae72596948ecaa87c26c4a13c67b
+run_name: welcoming-slug-813
+run_uuid: 1f2fae72596948ecaa87c26c4a13c67b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489283550
+status: 3
+tags: []
+user_id: elias

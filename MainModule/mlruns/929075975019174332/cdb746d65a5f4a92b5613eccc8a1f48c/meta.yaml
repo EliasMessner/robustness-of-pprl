@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/cdb746d65a5f4a92b5613eccc8a1f48c/artifacts
+end_time: 1679502328911
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: cdb746d65a5f4a92b5613eccc8a1f48c
+run_name: sedate-flea-774
+run_uuid: cdb746d65a5f4a92b5613eccc8a1f48c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502328536
+status: 3
+tags: []
+user_id: elias

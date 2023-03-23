@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/f3ba2c608a3d44979c8c6a8cc44d80fb/artifacts
+end_time: 1679489175938
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: f3ba2c608a3d44979c8c6a8cc44d80fb
+run_name: defiant-carp-7
+run_uuid: f3ba2c608a3d44979c8c6a8cc44d80fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489175782
+status: 3
+tags: []
+user_id: elias

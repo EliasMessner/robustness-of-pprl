@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/27bb70056eee438a80c726106ed733db/artifacts
+end_time: 1679532556700
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 27bb70056eee438a80c726106ed733db
+run_name: sassy-turtle-627
+run_uuid: 27bb70056eee438a80c726106ed733db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532556075
+status: 3
+tags: []
+user_id: elias

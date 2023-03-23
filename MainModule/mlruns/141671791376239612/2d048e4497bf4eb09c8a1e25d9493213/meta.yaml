@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/2d048e4497bf4eb09c8a1e25d9493213/artifacts
+end_time: 1679489325003
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 2d048e4497bf4eb09c8a1e25d9493213
+run_name: skillful-mouse-684
+run_uuid: 2d048e4497bf4eb09c8a1e25d9493213
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489324815
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5f1d7be1f31340dc82e3e2a0dee6e1fd/artifacts
+end_time: 1679532229801
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5f1d7be1f31340dc82e3e2a0dee6e1fd
+run_name: silent-pig-194
+run_uuid: 5f1d7be1f31340dc82e3e2a0dee6e1fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532228801
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/07c3406b6b06416dba0934e15459bfca/artifacts
+end_time: 1679482189664
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 07c3406b6b06416dba0934e15459bfca
+run_name: nervous-slug-642
+run_uuid: 07c3406b6b06416dba0934e15459bfca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482188992
+status: 3
+tags: []
+user_id: elias

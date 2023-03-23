@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/8c5b10f4179544d1898d22b2c32954bd/artifacts
+end_time: 1679508324929
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 8c5b10f4179544d1898d22b2c32954bd
+run_name: flawless-seal-768
+run_uuid: 8c5b10f4179544d1898d22b2c32954bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508324210
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2b0f7007cdd547bf901c0f19715d2560/artifacts
+end_time: 1679530320764
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2b0f7007cdd547bf901c0f19715d2560
+run_name: melodic-goose-623
+run_uuid: 2b0f7007cdd547bf901c0f19715d2560
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530320342
+status: 3
+tags: []
+user_id: elias

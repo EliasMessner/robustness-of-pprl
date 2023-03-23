@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1b2b4e4155f849fba546fa460315e2e9/artifacts
+end_time: 1679531118248
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1b2b4e4155f849fba546fa460315e2e9
+run_name: bemused-loon-820
+run_uuid: 1b2b4e4155f849fba546fa460315e2e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531117217
+status: 3
+tags: []
+user_id: elias

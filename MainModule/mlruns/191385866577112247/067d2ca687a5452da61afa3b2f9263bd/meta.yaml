@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/067d2ca687a5452da61afa3b2f9263bd/artifacts
+end_time: 1679512853226
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 067d2ca687a5452da61afa3b2f9263bd
+run_name: bold-shrimp-164
+run_uuid: 067d2ca687a5452da61afa3b2f9263bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512851680
+status: 3
+tags: []
+user_id: elias

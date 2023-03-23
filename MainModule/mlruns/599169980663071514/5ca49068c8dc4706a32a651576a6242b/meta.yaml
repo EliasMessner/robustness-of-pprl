@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5ca49068c8dc4706a32a651576a6242b/artifacts
+end_time: 1679531956765
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5ca49068c8dc4706a32a651576a6242b
+run_name: calm-shrew-868
+run_uuid: 5ca49068c8dc4706a32a651576a6242b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531955922
+status: 3
+tags: []
+user_id: elias

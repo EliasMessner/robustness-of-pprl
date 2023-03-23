@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e9fbe6dffdf043e0bff1edf8464d6176/artifacts
+end_time: 1679532205426
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e9fbe6dffdf043e0bff1edf8464d6176
+run_name: redolent-crab-362
+run_uuid: e9fbe6dffdf043e0bff1edf8464d6176
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532203505
+status: 3
+tags: []
+user_id: elias

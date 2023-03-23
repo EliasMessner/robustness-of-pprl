@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e275e047648f472cb6a70f1394617955/artifacts
+end_time: 1679532425867
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e275e047648f472cb6a70f1394617955
+run_name: unique-dolphin-361
+run_uuid: e275e047648f472cb6a70f1394617955
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532425008
+status: 3
+tags: []
+user_id: elias

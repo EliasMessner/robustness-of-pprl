@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8db614a85ebc427f9cdfd4296dc4cd17/artifacts
+end_time: 1679531189312
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8db614a85ebc427f9cdfd4296dc4cd17
+run_name: dapper-owl-796
+run_uuid: 8db614a85ebc427f9cdfd4296dc4cd17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531188609
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/1d663b2df0094781823dd091894f0543/artifacts
+end_time: 1679508642326
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 1d663b2df0094781823dd091894f0543
+run_name: big-wolf-448
+run_uuid: 1d663b2df0094781823dd091894f0543
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508641888
+status: 3
+tags: []
+user_id: elias

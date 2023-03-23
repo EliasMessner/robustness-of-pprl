@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/832d1221decd49bd8d3ef5f4c4faf6fe/artifacts
+end_time: 1679531431129
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 832d1221decd49bd8d3ef5f4c4faf6fe
+run_name: legendary-sloth-493
+run_uuid: 832d1221decd49bd8d3ef5f4c4faf6fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531429551
+status: 3
+tags: []
+user_id: elias

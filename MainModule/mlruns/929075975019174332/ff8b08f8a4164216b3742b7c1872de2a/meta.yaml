@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/ff8b08f8a4164216b3742b7c1872de2a/artifacts
+end_time: 1679502385803
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: ff8b08f8a4164216b3742b7c1872de2a
+run_name: burly-kit-213
+run_uuid: ff8b08f8a4164216b3742b7c1872de2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502385224
+status: 3
+tags: []
+user_id: elias

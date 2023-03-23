@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/118d2cbf0b6947d593e50953c2ed9b95/artifacts
+end_time: 1679502197565
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 118d2cbf0b6947d593e50953c2ed9b95
+run_name: mercurial-stoat-288
+run_uuid: 118d2cbf0b6947d593e50953c2ed9b95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502197159
+status: 3
+tags: []
+user_id: elias

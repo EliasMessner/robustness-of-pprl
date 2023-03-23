@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/cd7a0ab75b2c4409b147abb2588f6e61/artifacts
+end_time: 1679502250222
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: cd7a0ab75b2c4409b147abb2588f6e61
+run_name: unequaled-bug-228
+run_uuid: cd7a0ab75b2c4409b147abb2588f6e61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502249785
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fd61b8c8a66a4feaba5589a09f341ca1/artifacts
+end_time: 1679531025090
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fd61b8c8a66a4feaba5589a09f341ca1
+run_name: peaceful-deer-774
+run_uuid: fd61b8c8a66a4feaba5589a09f341ca1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531023965
+status: 3
+tags: []
+user_id: elias

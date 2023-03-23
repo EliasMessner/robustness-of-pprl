@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/ece92038778d484e9a8861f7feae4b5e/artifacts
+end_time: 1679508688061
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: ece92038778d484e9a8861f7feae4b5e
+run_name: luminous-ram-981
+run_uuid: ece92038778d484e9a8861f7feae4b5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508687717
+status: 3
+tags: []
+user_id: elias

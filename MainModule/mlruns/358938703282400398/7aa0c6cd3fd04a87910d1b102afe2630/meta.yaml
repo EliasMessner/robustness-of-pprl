@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/7aa0c6cd3fd04a87910d1b102afe2630/artifacts
+end_time: 1679482760379
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 7aa0c6cd3fd04a87910d1b102afe2630
+run_name: honorable-fawn-510
+run_uuid: 7aa0c6cd3fd04a87910d1b102afe2630
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482759800
+status: 3
+tags: []
+user_id: elias

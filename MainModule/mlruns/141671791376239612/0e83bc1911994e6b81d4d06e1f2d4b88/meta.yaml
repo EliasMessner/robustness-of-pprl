@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/0e83bc1911994e6b81d4d06e1f2d4b88/artifacts
+end_time: 1679489186032
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 0e83bc1911994e6b81d4d06e1f2d4b88
+run_name: gentle-deer-993
+run_uuid: 0e83bc1911994e6b81d4d06e1f2d4b88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489185876
+status: 3
+tags: []
+user_id: elias

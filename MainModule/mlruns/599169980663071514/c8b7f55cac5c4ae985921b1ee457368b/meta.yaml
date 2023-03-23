@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c8b7f55cac5c4ae985921b1ee457368b/artifacts
+end_time: 1679530256622
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c8b7f55cac5c4ae985921b1ee457368b
+run_name: spiffy-seal-210
+run_uuid: c8b7f55cac5c4ae985921b1ee457368b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530255528
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/ebcc1dd20e2c4505984f17f25905fa22/artifacts
+end_time: 1679489375910
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: ebcc1dd20e2c4505984f17f25905fa22
+run_name: rebellious-snipe-281
+run_uuid: ebcc1dd20e2c4505984f17f25905fa22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489375707
+status: 3
+tags: []
+user_id: elias

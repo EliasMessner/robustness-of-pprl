@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0e3c4a1da1cf4232b55297ddc10a2ec3/artifacts
+end_time: 1679531856247
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0e3c4a1da1cf4232b55297ddc10a2ec3
+run_name: zealous-bear-646
+run_uuid: 0e3c4a1da1cf4232b55297ddc10a2ec3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531855497
+status: 3
+tags: []
+user_id: elias

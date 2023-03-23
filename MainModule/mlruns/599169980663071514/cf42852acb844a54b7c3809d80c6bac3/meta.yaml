@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/cf42852acb844a54b7c3809d80c6bac3/artifacts
+end_time: 1679530901041
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: cf42852acb844a54b7c3809d80c6bac3
+run_name: melodic-koi-933
+run_uuid: cf42852acb844a54b7c3809d80c6bac3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530899853
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/32477c56b43647559a98b1ccad2c09d8/artifacts
+end_time: 1679512976355
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 32477c56b43647559a98b1ccad2c09d8
+run_name: funny-asp-588
+run_uuid: 32477c56b43647559a98b1ccad2c09d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512975543
+status: 3
+tags: []
+user_id: elias

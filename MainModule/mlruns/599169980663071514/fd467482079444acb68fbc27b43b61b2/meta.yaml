@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fd467482079444acb68fbc27b43b61b2/artifacts
+end_time: 1679532555887
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fd467482079444acb68fbc27b43b61b2
+run_name: gaudy-skink-24
+run_uuid: fd467482079444acb68fbc27b43b61b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532554715
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fcdc4625f82d4c4392d5ee555b4f0917/artifacts
+end_time: 1679531629992
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fcdc4625f82d4c4392d5ee555b4f0917
+run_name: rumbling-lynx-831
+run_uuid: fcdc4625f82d4c4392d5ee555b4f0917
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531629351
+status: 3
+tags: []
+user_id: elias

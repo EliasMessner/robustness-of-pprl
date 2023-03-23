@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/cb464f2d8b4d4c3aa1e2ce14eabed9eb/artifacts
+end_time: 1679502464085
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: cb464f2d8b4d4c3aa1e2ce14eabed9eb
+run_name: judicious-tern-63
+run_uuid: cb464f2d8b4d4c3aa1e2ce14eabed9eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502463710
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/facc861e8c9742bbbfe62e48e12dff9a/artifacts
+end_time: 1679502448054
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: facc861e8c9742bbbfe62e48e12dff9a
+run_name: upset-mink-714
+run_uuid: facc861e8c9742bbbfe62e48e12dff9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502447647
+status: 3
+tags: []
+user_id: elias

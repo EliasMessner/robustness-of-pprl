@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ddd4b70610a148978a163bb5870c191b/artifacts
+end_time: 1679530446531
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ddd4b70610a148978a163bb5870c191b
+run_name: welcoming-bass-542
+run_uuid: ddd4b70610a148978a163bb5870c191b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530445891
+status: 3
+tags: []
+user_id: elias

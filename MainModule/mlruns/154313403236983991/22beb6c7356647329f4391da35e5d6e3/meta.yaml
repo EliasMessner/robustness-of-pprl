@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/22beb6c7356647329f4391da35e5d6e3/artifacts
+end_time: 1679508355491
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 22beb6c7356647329f4391da35e5d6e3
+run_name: upbeat-midge-756
+run_uuid: 22beb6c7356647329f4391da35e5d6e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508354663
+status: 3
+tags: []
+user_id: elias

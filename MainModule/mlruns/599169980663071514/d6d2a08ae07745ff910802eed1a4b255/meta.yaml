@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d6d2a08ae07745ff910802eed1a4b255/artifacts
+end_time: 1679530590457
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d6d2a08ae07745ff910802eed1a4b255
+run_name: receptive-conch-617
+run_uuid: d6d2a08ae07745ff910802eed1a4b255
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530589972
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d45a174a734147d4ac25814772443185/artifacts
+end_time: 1679530949136
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d45a174a734147d4ac25814772443185
+run_name: overjoyed-gull-416
+run_uuid: d45a174a734147d4ac25814772443185
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530947729
+status: 3
+tags: []
+user_id: elias

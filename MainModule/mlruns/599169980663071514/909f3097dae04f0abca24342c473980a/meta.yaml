@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/909f3097dae04f0abca24342c473980a/artifacts
+end_time: 1679532446712
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 909f3097dae04f0abca24342c473980a
+run_name: abundant-roo-711
+run_uuid: 909f3097dae04f0abca24342c473980a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532445790
+status: 3
+tags: []
+user_id: elias

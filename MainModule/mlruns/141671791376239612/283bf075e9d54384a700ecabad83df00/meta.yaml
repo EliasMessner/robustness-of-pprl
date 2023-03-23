@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/283bf075e9d54384a700ecabad83df00/artifacts
+end_time: 1679489192266
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 283bf075e9d54384a700ecabad83df00
+run_name: merciful-lark-789
+run_uuid: 283bf075e9d54384a700ecabad83df00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489191376
+status: 3
+tags: []
+user_id: elias

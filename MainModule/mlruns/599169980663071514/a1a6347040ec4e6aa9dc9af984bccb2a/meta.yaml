@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a1a6347040ec4e6aa9dc9af984bccb2a/artifacts
+end_time: 1679530195839
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a1a6347040ec4e6aa9dc9af984bccb2a
+run_name: incongruous-crab-422
+run_uuid: a1a6347040ec4e6aa9dc9af984bccb2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530194980
+status: 3
+tags: []
+user_id: elias

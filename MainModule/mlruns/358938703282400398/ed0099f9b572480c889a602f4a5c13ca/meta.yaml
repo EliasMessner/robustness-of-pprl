@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/ed0099f9b572480c889a602f4a5c13ca/artifacts
+end_time: 1679482116787
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: ed0099f9b572480c889a602f4a5c13ca
+run_name: orderly-ray-260
+run_uuid: ed0099f9b572480c889a602f4a5c13ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482116178
+status: 3
+tags: []
+user_id: elias

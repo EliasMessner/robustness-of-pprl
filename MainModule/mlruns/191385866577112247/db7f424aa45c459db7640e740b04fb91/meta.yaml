@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/db7f424aa45c459db7640e740b04fb91/artifacts
+end_time: 1679512970777
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: db7f424aa45c459db7640e740b04fb91
+run_name: adorable-rook-372
+run_uuid: db7f424aa45c459db7640e740b04fb91
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512968933
+status: 3
+tags: []
+user_id: elias

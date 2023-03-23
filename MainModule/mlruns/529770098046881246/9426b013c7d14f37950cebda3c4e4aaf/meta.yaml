@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/9426b013c7d14f37950cebda3c4e4aaf/artifacts
+end_time: 1679486758377
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 9426b013c7d14f37950cebda3c4e4aaf
+run_name: vaunted-worm-658
+run_uuid: 9426b013c7d14f37950cebda3c4e4aaf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486757611
+status: 3
+tags: []
+user_id: elias

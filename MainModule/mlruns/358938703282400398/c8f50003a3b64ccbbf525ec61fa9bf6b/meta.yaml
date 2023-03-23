@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/c8f50003a3b64ccbbf525ec61fa9bf6b/artifacts
+end_time: 1679482319292
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: c8f50003a3b64ccbbf525ec61fa9bf6b
+run_name: capricious-squid-664
+run_uuid: c8f50003a3b64ccbbf525ec61fa9bf6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482318448
+status: 3
+tags: []
+user_id: elias

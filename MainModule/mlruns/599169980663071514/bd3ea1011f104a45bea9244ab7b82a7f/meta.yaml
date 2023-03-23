@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bd3ea1011f104a45bea9244ab7b82a7f/artifacts
+end_time: 1679532269678
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bd3ea1011f104a45bea9244ab7b82a7f
+run_name: carefree-lark-141
+run_uuid: bd3ea1011f104a45bea9244ab7b82a7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532268256
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/e65b2a98e89448f8a0616bb48b4abe0b/artifacts
+end_time: 1679489262502
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: e65b2a98e89448f8a0616bb48b4abe0b
+run_name: crawling-turtle-396
+run_uuid: e65b2a98e89448f8a0616bb48b4abe0b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489262314
+status: 3
+tags: []
+user_id: elias

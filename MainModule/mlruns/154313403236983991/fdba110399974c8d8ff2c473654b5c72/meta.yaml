@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/fdba110399974c8d8ff2c473654b5c72/artifacts
+end_time: 1679508085611
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: fdba110399974c8d8ff2c473654b5c72
+run_name: adorable-yak-544
+run_uuid: fdba110399974c8d8ff2c473654b5c72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508085049
+status: 3
+tags: []
+user_id: elias

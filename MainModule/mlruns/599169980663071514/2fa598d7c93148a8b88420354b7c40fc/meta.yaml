@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2fa598d7c93148a8b88420354b7c40fc/artifacts
+end_time: 1679531818324
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2fa598d7c93148a8b88420354b7c40fc
+run_name: victorious-slug-133
+run_uuid: 2fa598d7c93148a8b88420354b7c40fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531817793
+status: 3
+tags: []
+user_id: elias

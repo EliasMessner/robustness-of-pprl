@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/2ccbbd805caa45ddbe93b124a654e6ea/artifacts
+end_time: 1679482065989
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 2ccbbd805caa45ddbe93b124a654e6ea
+run_name: suave-goose-715
+run_uuid: 2ccbbd805caa45ddbe93b124a654e6ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482065567
+status: 3
+tags: []
+user_id: elias

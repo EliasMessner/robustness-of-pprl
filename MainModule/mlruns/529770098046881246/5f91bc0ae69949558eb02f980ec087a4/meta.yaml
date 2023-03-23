@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/5f91bc0ae69949558eb02f980ec087a4/artifacts
+end_time: 1679486433964
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 5f91bc0ae69949558eb02f980ec087a4
+run_name: fortunate-flea-963
+run_uuid: 5f91bc0ae69949558eb02f980ec087a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486433760
+status: 3
+tags: []
+user_id: elias

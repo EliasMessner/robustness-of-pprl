@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/f7229d13a47e44cda6ded61f5947f617/artifacts
+end_time: 1679489272628
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: f7229d13a47e44cda6ded61f5947f617
+run_name: charming-hound-811
+run_uuid: f7229d13a47e44cda6ded61f5947f617
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489272456
+status: 3
+tags: []
+user_id: elias

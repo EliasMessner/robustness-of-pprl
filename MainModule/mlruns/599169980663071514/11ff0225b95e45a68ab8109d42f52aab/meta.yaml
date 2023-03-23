@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/11ff0225b95e45a68ab8109d42f52aab/artifacts
+end_time: 1679530888259
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 11ff0225b95e45a68ab8109d42f52aab
+run_name: nebulous-hawk-583
+run_uuid: 11ff0225b95e45a68ab8109d42f52aab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530886462
+status: 3
+tags: []
+user_id: elias

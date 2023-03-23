@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/b091da7a7add400184d0fc07cf9c38fa/artifacts
+end_time: 1679489300987
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: b091da7a7add400184d0fc07cf9c38fa
+run_name: traveling-trout-54
+run_uuid: b091da7a7add400184d0fc07cf9c38fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489300800
+status: 3
+tags: []
+user_id: elias

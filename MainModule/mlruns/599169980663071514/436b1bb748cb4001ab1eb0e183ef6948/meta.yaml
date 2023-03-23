@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/436b1bb748cb4001ab1eb0e183ef6948/artifacts
+end_time: 1679531598508
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 436b1bb748cb4001ab1eb0e183ef6948
+run_name: bemused-snail-127
+run_uuid: 436b1bb748cb4001ab1eb0e183ef6948
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531597789
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/0ab54bce546d4e06913f2ebb3f968c6d/artifacts
+end_time: 1679502411818
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 0ab54bce546d4e06913f2ebb3f968c6d
+run_name: shivering-hawk-540
+run_uuid: 0ab54bce546d4e06913f2ebb3f968c6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502410943
+status: 3
+tags: []
+user_id: elias

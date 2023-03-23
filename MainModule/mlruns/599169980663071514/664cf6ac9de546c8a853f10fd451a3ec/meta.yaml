@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/664cf6ac9de546c8a853f10fd451a3ec/artifacts
+end_time: 1679530852571
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 664cf6ac9de546c8a853f10fd451a3ec
+run_name: classy-dog-17
+run_uuid: 664cf6ac9de546c8a853f10fd451a3ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530852008
+status: 3
+tags: []
+user_id: elias

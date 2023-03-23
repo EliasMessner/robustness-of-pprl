@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f474f745ea1c4dafb84cad9dd90a776f/artifacts
+end_time: 1679530665817
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f474f745ea1c4dafb84cad9dd90a776f
+run_name: traveling-gnat-868
+run_uuid: f474f745ea1c4dafb84cad9dd90a776f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530665098
+status: 3
+tags: []
+user_id: elias

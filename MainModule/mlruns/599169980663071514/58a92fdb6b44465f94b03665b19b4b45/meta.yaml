@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/58a92fdb6b44465f94b03665b19b4b45/artifacts
+end_time: 1679530423094
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 58a92fdb6b44465f94b03665b19b4b45
+run_name: skittish-grouse-367
+run_uuid: 58a92fdb6b44465f94b03665b19b4b45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530422203
+status: 3
+tags: []
+user_id: elias

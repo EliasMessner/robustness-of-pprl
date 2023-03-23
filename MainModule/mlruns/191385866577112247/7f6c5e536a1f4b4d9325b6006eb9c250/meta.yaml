@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/7f6c5e536a1f4b4d9325b6006eb9c250/artifacts
+end_time: 1679513123061
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 7f6c5e536a1f4b4d9325b6006eb9c250
+run_name: handsome-gull-870
+run_uuid: 7f6c5e536a1f4b4d9325b6006eb9c250
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513122280
+status: 3
+tags: []
+user_id: elias

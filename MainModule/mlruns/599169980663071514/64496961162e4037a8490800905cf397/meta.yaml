@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/64496961162e4037a8490800905cf397/artifacts
+end_time: 1679532461072
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 64496961162e4037a8490800905cf397
+run_name: melodic-ox-103
+run_uuid: 64496961162e4037a8490800905cf397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532459494
+status: 3
+tags: []
+user_id: elias

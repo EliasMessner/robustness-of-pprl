@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/493d9f4577d247a496fa7830956f7030/artifacts
+end_time: 1679502434772
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 493d9f4577d247a496fa7830956f7030
+run_name: indecisive-sponge-15
+run_uuid: 493d9f4577d247a496fa7830956f7030
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502433413
+status: 3
+tags: []
+user_id: elias

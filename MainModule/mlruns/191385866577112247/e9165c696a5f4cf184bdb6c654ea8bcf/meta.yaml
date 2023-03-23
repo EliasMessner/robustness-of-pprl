@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/e9165c696a5f4cf184bdb6c654ea8bcf/artifacts
+end_time: 1679513159952
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: e9165c696a5f4cf184bdb6c654ea8bcf
+run_name: wistful-seal-63
+run_uuid: e9165c696a5f4cf184bdb6c654ea8bcf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513159124
+status: 3
+tags: []
+user_id: elias

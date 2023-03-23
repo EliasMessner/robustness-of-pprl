@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/8a89d77a2a9b438fa27c3d50559ad318/artifacts
+end_time: 1679486727969
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 8a89d77a2a9b438fa27c3d50559ad318
+run_name: valuable-lynx-640
+run_uuid: 8a89d77a2a9b438fa27c3d50559ad318
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486725438
+status: 3
+tags: []
+user_id: elias

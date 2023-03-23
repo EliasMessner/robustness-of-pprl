@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ec5e9d8467d74dbd98249eb93836b3b7/artifacts
+end_time: 1679530891619
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ec5e9d8467d74dbd98249eb93836b3b7
+run_name: gifted-swan-596
+run_uuid: ec5e9d8467d74dbd98249eb93836b3b7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530891087
+status: 3
+tags: []
+user_id: elias

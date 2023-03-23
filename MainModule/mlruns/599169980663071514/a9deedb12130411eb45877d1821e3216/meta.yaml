@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a9deedb12130411eb45877d1821e3216/artifacts
+end_time: 1679530814977
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a9deedb12130411eb45877d1821e3216
+run_name: victorious-carp-766
+run_uuid: a9deedb12130411eb45877d1821e3216
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530813618
+status: 3
+tags: []
+user_id: elias

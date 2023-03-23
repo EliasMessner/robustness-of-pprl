@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/1354e7e376994b1c9e19f127de8a6cf4/artifacts
+end_time: 1679508542278
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 1354e7e376994b1c9e19f127de8a6cf4
+run_name: learned-skink-716
+run_uuid: 1354e7e376994b1c9e19f127de8a6cf4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508541903
+status: 3
+tags: []
+user_id: elias

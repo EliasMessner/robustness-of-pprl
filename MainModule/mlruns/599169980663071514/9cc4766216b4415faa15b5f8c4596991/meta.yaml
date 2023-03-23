@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9cc4766216b4415faa15b5f8c4596991/artifacts
+end_time: 1679532130160
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9cc4766216b4415faa15b5f8c4596991
+run_name: big-bass-392
+run_uuid: 9cc4766216b4415faa15b5f8c4596991
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532129519
+status: 3
+tags: []
+user_id: elias

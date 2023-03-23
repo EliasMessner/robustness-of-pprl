@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f76665b07ced4d4996aa5bf8d6e3f7ca/artifacts
+end_time: 1679532078440
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f76665b07ced4d4996aa5bf8d6e3f7ca
+run_name: handsome-whale-812
+run_uuid: f76665b07ced4d4996aa5bf8d6e3f7ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532077908
+status: 3
+tags: []
+user_id: elias

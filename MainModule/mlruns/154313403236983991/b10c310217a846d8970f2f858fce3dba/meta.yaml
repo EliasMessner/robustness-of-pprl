@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/b10c310217a846d8970f2f858fce3dba/artifacts
+end_time: 1679508548809
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: b10c310217a846d8970f2f858fce3dba
+run_name: receptive-bear-731
+run_uuid: b10c310217a846d8970f2f858fce3dba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508548528
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a3b99ed3fae441bbbdf15ac852ec840a/artifacts
+end_time: 1679531964625
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a3b99ed3fae441bbbdf15ac852ec840a
+run_name: capable-moth-11
+run_uuid: a3b99ed3fae441bbbdf15ac852ec840a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531963312
+status: 3
+tags: []
+user_id: elias

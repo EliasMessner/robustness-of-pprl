@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/ae8162f862364dbca91b6159391f4583/artifacts
+end_time: 1679502675824
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: ae8162f862364dbca91b6159391f4583
+run_name: stately-shoat-746
+run_uuid: ae8162f862364dbca91b6159391f4583
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502675402
+status: 3
+tags: []
+user_id: elias

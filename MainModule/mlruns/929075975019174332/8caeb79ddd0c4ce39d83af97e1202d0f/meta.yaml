@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/8caeb79ddd0c4ce39d83af97e1202d0f/artifacts
+end_time: 1679502494758
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 8caeb79ddd0c4ce39d83af97e1202d0f
+run_name: powerful-perch-351
+run_uuid: 8caeb79ddd0c4ce39d83af97e1202d0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502493695
+status: 3
+tags: []
+user_id: elias

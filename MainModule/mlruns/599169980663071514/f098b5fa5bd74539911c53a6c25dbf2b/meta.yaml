@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f098b5fa5bd74539911c53a6c25dbf2b/artifacts
+end_time: 1679530928854
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f098b5fa5bd74539911c53a6c25dbf2b
+run_name: nebulous-mare-167
+run_uuid: f098b5fa5bd74539911c53a6c25dbf2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530927509
+status: 3
+tags: []
+user_id: elias

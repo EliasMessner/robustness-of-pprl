@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f33507d4a88e492a8decbb0c21e8dc8a/artifacts
+end_time: 1679531745635
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f33507d4a88e492a8decbb0c21e8dc8a
+run_name: merciful-worm-102
+run_uuid: f33507d4a88e492a8decbb0c21e8dc8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531744713
+status: 3
+tags: []
+user_id: elias

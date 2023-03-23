@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1f12313d03cc450e87bbbac8f77d8692/artifacts
+end_time: 1679531845497
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1f12313d03cc450e87bbbac8f77d8692
+run_name: inquisitive-mink-988
+run_uuid: 1f12313d03cc450e87bbbac8f77d8692
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531844810
+status: 3
+tags: []
+user_id: elias

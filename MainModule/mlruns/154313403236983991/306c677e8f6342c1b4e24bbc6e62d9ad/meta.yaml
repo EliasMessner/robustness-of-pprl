@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/306c677e8f6342c1b4e24bbc6e62d9ad/artifacts
+end_time: 1679508297693
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 306c677e8f6342c1b4e24bbc6e62d9ad
+run_name: charming-sheep-264
+run_uuid: 306c677e8f6342c1b4e24bbc6e62d9ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508295912
+status: 3
+tags: []
+user_id: elias

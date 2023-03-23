@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/fef4c2b684ac469ba66b12c37cab0b33/artifacts
+end_time: 1679497675711
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: fef4c2b684ac469ba66b12c37cab0b33
+run_name: big-snake-636
+run_uuid: fef4c2b684ac469ba66b12c37cab0b33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497674554
+status: 3
+tags: []
+user_id: elias

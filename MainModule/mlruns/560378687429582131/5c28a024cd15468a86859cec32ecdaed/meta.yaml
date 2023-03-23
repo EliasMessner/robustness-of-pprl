@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/5c28a024cd15468a86859cec32ecdaed/artifacts
+end_time: 1679497295453
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 5c28a024cd15468a86859cec32ecdaed
+run_name: kindly-dog-337
+run_uuid: 5c28a024cd15468a86859cec32ecdaed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497294453
+status: 3
+tags: []
+user_id: elias

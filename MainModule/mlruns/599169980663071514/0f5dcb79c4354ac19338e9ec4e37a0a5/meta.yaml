@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0f5dcb79c4354ac19338e9ec4e37a0a5/artifacts
+end_time: 1679531900014
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0f5dcb79c4354ac19338e9ec4e37a0a5
+run_name: salty-ox-247
+run_uuid: 0f5dcb79c4354ac19338e9ec4e37a0a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531899092
+status: 3
+tags: []
+user_id: elias

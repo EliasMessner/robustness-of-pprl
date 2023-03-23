@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/483b4c07a9374942a8d3d35d00a03d83/artifacts
+end_time: 1679531358518
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 483b4c07a9374942a8d3d35d00a03d83
+run_name: youthful-calf-641
+run_uuid: 483b4c07a9374942a8d3d35d00a03d83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531357925
+status: 3
+tags: []
+user_id: elias

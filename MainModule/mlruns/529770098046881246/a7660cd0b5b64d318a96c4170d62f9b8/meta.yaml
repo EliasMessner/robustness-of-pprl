@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/a7660cd0b5b64d318a96c4170d62f9b8/artifacts
+end_time: 1679486511685
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: a7660cd0b5b64d318a96c4170d62f9b8
+run_name: efficient-fish-768
+run_uuid: a7660cd0b5b64d318a96c4170d62f9b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486511371
+status: 3
+tags: []
+user_id: elias

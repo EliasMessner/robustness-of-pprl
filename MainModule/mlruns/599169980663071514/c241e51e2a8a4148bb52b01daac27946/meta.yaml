@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c241e51e2a8a4148bb52b01daac27946/artifacts
+end_time: 1679531656900
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c241e51e2a8a4148bb52b01daac27946
+run_name: omniscient-fox-576
+run_uuid: c241e51e2a8a4148bb52b01daac27946
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531656197
+status: 3
+tags: []
+user_id: elias

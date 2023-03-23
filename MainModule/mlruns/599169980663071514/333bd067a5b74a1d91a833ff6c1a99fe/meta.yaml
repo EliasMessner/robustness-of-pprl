@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/333bd067a5b74a1d91a833ff6c1a99fe/artifacts
+end_time: 1679530723865
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 333bd067a5b74a1d91a833ff6c1a99fe
+run_name: fortunate-tern-806
+run_uuid: 333bd067a5b74a1d91a833ff6c1a99fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530722459
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1efa82fc8e014ad387484f33fd93435d/artifacts
+end_time: 1679530557502
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1efa82fc8e014ad387484f33fd93435d
+run_name: caring-horse-782
+run_uuid: 1efa82fc8e014ad387484f33fd93435d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530557049
+status: 3
+tags: []
+user_id: elias

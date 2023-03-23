@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/6b91783a8fdf4d09be45b3d04b1be654/artifacts
+end_time: 1679486536638
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 6b91783a8fdf4d09be45b3d04b1be654
+run_name: treasured-wolf-978
+run_uuid: 6b91783a8fdf4d09be45b3d04b1be654
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486535372
+status: 3
+tags: []
+user_id: elias

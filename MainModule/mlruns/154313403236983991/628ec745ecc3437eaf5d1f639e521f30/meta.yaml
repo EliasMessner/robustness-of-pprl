@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/628ec745ecc3437eaf5d1f639e521f30/artifacts
+end_time: 1679508244912
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 628ec745ecc3437eaf5d1f639e521f30
+run_name: debonair-seal-664
+run_uuid: 628ec745ecc3437eaf5d1f639e521f30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508244131
+status: 3
+tags: []
+user_id: elias

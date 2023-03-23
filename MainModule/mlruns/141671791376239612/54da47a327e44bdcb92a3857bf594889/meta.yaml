@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/54da47a327e44bdcb92a3857bf594889/artifacts
+end_time: 1679489299753
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 54da47a327e44bdcb92a3857bf594889
+run_name: chill-shrimp-762
+run_uuid: 54da47a327e44bdcb92a3857bf594889
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489299581
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/766e0759120a4a839c02d93f788d2055/artifacts
+end_time: 1679502536945
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 766e0759120a4a839c02d93f788d2055
+run_name: incongruous-bass-373
+run_uuid: 766e0759120a4a839c02d93f788d2055
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502535992
+status: 3
+tags: []
+user_id: elias

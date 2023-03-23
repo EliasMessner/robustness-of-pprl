@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/82eec4e952dc4a5c837683be2170e094/artifacts
+end_time: 1679508098080
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 82eec4e952dc4a5c837683be2170e094
+run_name: caring-finch-791
+run_uuid: 82eec4e952dc4a5c837683be2170e094
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508097830
+status: 3
+tags: []
+user_id: elias

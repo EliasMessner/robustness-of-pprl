@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/e4a8df68dce14dcab579ff8d2826fe8c/artifacts
+end_time: 1679502498649
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: e4a8df68dce14dcab579ff8d2826fe8c
+run_name: zealous-sow-388
+run_uuid: e4a8df68dce14dcab579ff8d2826fe8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502497727
+status: 3
+tags: []
+user_id: elias

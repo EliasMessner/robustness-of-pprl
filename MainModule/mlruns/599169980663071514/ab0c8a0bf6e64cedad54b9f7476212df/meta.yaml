@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ab0c8a0bf6e64cedad54b9f7476212df/artifacts
+end_time: 1679530716537
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ab0c8a0bf6e64cedad54b9f7476212df
+run_name: vaunted-asp-858
+run_uuid: ab0c8a0bf6e64cedad54b9f7476212df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530715443
+status: 3
+tags: []
+user_id: elias

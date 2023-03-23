@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/93be858c16374927a9b4de02b0cdd5ab/artifacts
+end_time: 1679531392128
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 93be858c16374927a9b4de02b0cdd5ab
+run_name: sassy-doe-381
+run_uuid: 93be858c16374927a9b4de02b0cdd5ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531390987
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1d55edfe86144f5b8a07f18cf7f4039c/artifacts
+end_time: 1679532454540
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1d55edfe86144f5b8a07f18cf7f4039c
+run_name: stately-boar-723
+run_uuid: 1d55edfe86144f5b8a07f18cf7f4039c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532453228
+status: 3
+tags: []
+user_id: elias

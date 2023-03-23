@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/87f801ff66f5497b8f5d742e9c5de47a/artifacts
+end_time: 1679532696718
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 87f801ff66f5497b8f5d742e9c5de47a
+run_name: fun-ox-466
+run_uuid: 87f801ff66f5497b8f5d742e9c5de47a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532695952
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/cc422812124b4e73a615e10765c82145/artifacts
+end_time: 1679508680499
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: cc422812124b4e73a615e10765c82145
+run_name: loud-newt-11
+run_uuid: cc422812124b4e73a615e10765c82145
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508679686
+status: 3
+tags: []
+user_id: elias

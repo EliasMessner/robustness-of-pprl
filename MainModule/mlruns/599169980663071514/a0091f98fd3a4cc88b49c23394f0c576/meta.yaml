@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a0091f98fd3a4cc88b49c23394f0c576/artifacts
+end_time: 1679531468818
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a0091f98fd3a4cc88b49c23394f0c576
+run_name: sneaky-fly-921
+run_uuid: a0091f98fd3a4cc88b49c23394f0c576
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531468037
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/d5eda0355aba42b38a0900638ddfe78a/artifacts
+end_time: 1679489186969
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: d5eda0355aba42b38a0900638ddfe78a
+run_name: nervous-conch-713
+run_uuid: d5eda0355aba42b38a0900638ddfe78a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489186797
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/87aecd1e739b44eba03c7dd3e64ae26f/artifacts
+end_time: 1679482284603
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 87aecd1e739b44eba03c7dd3e64ae26f
+run_name: orderly-croc-370
+run_uuid: 87aecd1e739b44eba03c7dd3e64ae26f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482284291
+status: 3
+tags: []
+user_id: elias

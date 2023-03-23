@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/398b3c49b8e741f28c249b0d0894941a/artifacts
+end_time: 1679508519604
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 398b3c49b8e741f28c249b0d0894941a
+run_name: blushing-stag-922
+run_uuid: 398b3c49b8e741f28c249b0d0894941a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508519245
+status: 3
+tags: []
+user_id: elias

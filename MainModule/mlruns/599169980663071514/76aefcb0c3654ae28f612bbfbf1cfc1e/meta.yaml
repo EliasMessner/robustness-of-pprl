@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/76aefcb0c3654ae28f612bbfbf1cfc1e/artifacts
+end_time: 1679530805273
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 76aefcb0c3654ae28f612bbfbf1cfc1e
+run_name: glamorous-fox-92
+run_uuid: 76aefcb0c3654ae28f612bbfbf1cfc1e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530804835
+status: 3
+tags: []
+user_id: elias

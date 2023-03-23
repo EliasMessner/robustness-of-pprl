@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/963963ab7ac1469ba7fd5d91fe544efe/artifacts
+end_time: 1679502274800
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 963963ab7ac1469ba7fd5d91fe544efe
+run_name: entertaining-ram-763
+run_uuid: 963963ab7ac1469ba7fd5d91fe544efe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502274441
+status: 3
+tags: []
+user_id: elias

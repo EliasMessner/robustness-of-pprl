@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0cecd51319914cd786bf173151b49e89/artifacts
+end_time: 1679532098658
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0cecd51319914cd786bf173151b49e89
+run_name: worried-ox-737
+run_uuid: 0cecd51319914cd786bf173151b49e89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532098018
+status: 3
+tags: []
+user_id: elias

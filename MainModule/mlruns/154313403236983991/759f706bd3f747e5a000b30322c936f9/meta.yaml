@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/759f706bd3f747e5a000b30322c936f9/artifacts
+end_time: 1679508644544
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 759f706bd3f747e5a000b30322c936f9
+run_name: unequaled-seal-776
+run_uuid: 759f706bd3f747e5a000b30322c936f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508644013
+status: 3
+tags: []
+user_id: elias

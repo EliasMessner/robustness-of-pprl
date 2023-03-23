@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/bdbcd34072b6401ebbc19d79d8520358/artifacts
+end_time: 1679502355051
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: bdbcd34072b6401ebbc19d79d8520358
+run_name: lyrical-bass-198
+run_uuid: bdbcd34072b6401ebbc19d79d8520358
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502353973
+status: 3
+tags: []
+user_id: elias

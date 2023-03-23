@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/c461683c27ec4e09ae3836f86c4db7db/artifacts
+end_time: 1679489295440
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: c461683c27ec4e09ae3836f86c4db7db
+run_name: wistful-squirrel-946
+run_uuid: c461683c27ec4e09ae3836f86c4db7db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489294659
+status: 3
+tags: []
+user_id: elias

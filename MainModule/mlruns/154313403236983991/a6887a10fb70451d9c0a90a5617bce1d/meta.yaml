@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/a6887a10fb70451d9c0a90a5617bce1d/artifacts
+end_time: 1679508204270
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: a6887a10fb70451d9c0a90a5617bce1d
+run_name: invincible-snipe-563
+run_uuid: a6887a10fb70451d9c0a90a5617bce1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508203973
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3015672e159941d58aac29e7d7d7b7f0/artifacts
+end_time: 1679530481908
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3015672e159941d58aac29e7d7d7b7f0
+run_name: defiant-crane-134
+run_uuid: 3015672e159941d58aac29e7d7d7b7f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530480189
+status: 3
+tags: []
+user_id: elias

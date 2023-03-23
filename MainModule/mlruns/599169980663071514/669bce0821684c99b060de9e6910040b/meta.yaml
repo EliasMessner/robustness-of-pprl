@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/669bce0821684c99b060de9e6910040b/artifacts
+end_time: 1679531093153
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 669bce0821684c99b060de9e6910040b
+run_name: resilient-fly-602
+run_uuid: 669bce0821684c99b060de9e6910040b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531092450
+status: 3
+tags: []
+user_id: elias

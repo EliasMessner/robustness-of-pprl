@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e7d693ebe323497c967f6b16b4d13c5f/artifacts
+end_time: 1679531202187
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e7d693ebe323497c967f6b16b4d13c5f
+run_name: wistful-whale-135
+run_uuid: e7d693ebe323497c967f6b16b4d13c5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531201703
+status: 3
+tags: []
+user_id: elias

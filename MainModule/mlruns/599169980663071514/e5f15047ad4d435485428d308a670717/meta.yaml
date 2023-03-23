@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e5f15047ad4d435485428d308a670717/artifacts
+end_time: 1679532023892
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e5f15047ad4d435485428d308a670717
+run_name: wise-chimp-687
+run_uuid: e5f15047ad4d435485428d308a670717
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532023220
+status: 3
+tags: []
+user_id: elias

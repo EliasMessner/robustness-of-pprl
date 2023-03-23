@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ab3f9d88d4fd4f3b9823fffd5d5309c7/artifacts
+end_time: 1679530803929
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ab3f9d88d4fd4f3b9823fffd5d5309c7
+run_name: nosy-lynx-152
+run_uuid: ab3f9d88d4fd4f3b9823fffd5d5309c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530803445
+status: 3
+tags: []
+user_id: elias

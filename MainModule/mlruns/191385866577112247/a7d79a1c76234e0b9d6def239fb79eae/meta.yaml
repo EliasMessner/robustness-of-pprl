@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/a7d79a1c76234e0b9d6def239fb79eae/artifacts
+end_time: 1679513109296
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: a7d79a1c76234e0b9d6def239fb79eae
+run_name: secretive-kite-279
+run_uuid: a7d79a1c76234e0b9d6def239fb79eae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513108108
+status: 3
+tags: []
+user_id: elias

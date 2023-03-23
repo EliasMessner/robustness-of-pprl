@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/2e2bc04f7fd541549d96efc90038f97f/artifacts
+end_time: 1679508104283
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 2e2bc04f7fd541549d96efc90038f97f
+run_name: luxuriant-goose-405
+run_uuid: 2e2bc04f7fd541549d96efc90038f97f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508104064
+status: 3
+tags: []
+user_id: elias

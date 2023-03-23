@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/dfada95e96d84a89ba150d36c20f75e7/artifacts
+end_time: 1679508529885
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: dfada95e96d84a89ba150d36c20f75e7
+run_name: glamorous-steed-289
+run_uuid: dfada95e96d84a89ba150d36c20f75e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508529198
+status: 3
+tags: []
+user_id: elias

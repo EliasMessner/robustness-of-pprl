@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/53df657cc8de4e76aa505632408979e4/artifacts
+end_time: 1679497183716
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 53df657cc8de4e76aa505632408979e4
+run_name: rare-colt-960
+run_uuid: 53df657cc8de4e76aa505632408979e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497182763
+status: 3
+tags: []
+user_id: elias

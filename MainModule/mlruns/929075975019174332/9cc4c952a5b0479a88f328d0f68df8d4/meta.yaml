@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/9cc4c952a5b0479a88f328d0f68df8d4/artifacts
+end_time: 1679502501305
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 9cc4c952a5b0479a88f328d0f68df8d4
+run_name: glamorous-ox-512
+run_uuid: 9cc4c952a5b0479a88f328d0f68df8d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502500852
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/7a5cbf81e79c47e8a8e245f3d4202c08/artifacts
+end_time: 1679497343892
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 7a5cbf81e79c47e8a8e245f3d4202c08
+run_name: capable-conch-13
+run_uuid: 7a5cbf81e79c47e8a8e245f3d4202c08
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497342439
+status: 3
+tags: []
+user_id: elias

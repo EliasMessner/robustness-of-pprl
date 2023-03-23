@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ca87899cc287422f92b12e518105ed08/artifacts
+end_time: 1679530602050
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ca87899cc287422f92b12e518105ed08
+run_name: gaudy-quail-444
+run_uuid: ca87899cc287422f92b12e518105ed08
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530601144
+status: 3
+tags: []
+user_id: elias

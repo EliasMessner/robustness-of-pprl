@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/2b8a977af0494ef4b97639f36a1eef26/artifacts
+end_time: 1679489402005
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 2b8a977af0494ef4b97639f36a1eef26
+run_name: flawless-swan-495
+run_uuid: 2b8a977af0494ef4b97639f36a1eef26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489401021
+status: 3
+tags: []
+user_id: elias

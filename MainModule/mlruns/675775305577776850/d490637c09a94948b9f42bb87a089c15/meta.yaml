@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/d490637c09a94948b9f42bb87a089c15/artifacts
+end_time: 1679491327987
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: d490637c09a94948b9f42bb87a089c15
+run_name: beautiful-skink-634
+run_uuid: d490637c09a94948b9f42bb87a089c15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491327081
+status: 3
+tags: []
+user_id: elias

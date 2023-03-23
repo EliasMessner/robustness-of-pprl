@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/db047f4f37c149bf9e0a9df9ac9a875d/artifacts
+end_time: 1679530821883
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: db047f4f37c149bf9e0a9df9ac9a875d
+run_name: unique-asp-355
+run_uuid: db047f4f37c149bf9e0a9df9ac9a875d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530820774
+status: 3
+tags: []
+user_id: elias

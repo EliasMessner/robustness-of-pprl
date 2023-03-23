@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/354301bc347f496ab700edc023d0d8ab/artifacts
+end_time: 1679486617780
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 354301bc347f496ab700edc023d0d8ab
+run_name: useful-finch-799
+run_uuid: 354301bc347f496ab700edc023d0d8ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486617014
+status: 3
+tags: []
+user_id: elias

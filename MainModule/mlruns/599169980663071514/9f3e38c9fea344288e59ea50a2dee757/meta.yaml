@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9f3e38c9fea344288e59ea50a2dee757/artifacts
+end_time: 1679531314720
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9f3e38c9fea344288e59ea50a2dee757
+run_name: auspicious-ram-226
+run_uuid: 9f3e38c9fea344288e59ea50a2dee757
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531314064
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/5210096b6b3b463e91a93946bc86e5fe/artifacts
+end_time: 1679497710165
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 5210096b6b3b463e91a93946bc86e5fe
+run_name: luminous-koi-937
+run_uuid: 5210096b6b3b463e91a93946bc86e5fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497708899
+status: 3
+tags: []
+user_id: elias

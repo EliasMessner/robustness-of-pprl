@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/b6559b507624458386fd6dcfbee03419/artifacts
+end_time: 1679508517589
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: b6559b507624458386fd6dcfbee03419
+run_name: efficient-hawk-255
+run_uuid: b6559b507624458386fd6dcfbee03419
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508517307
+status: 3
+tags: []
+user_id: elias

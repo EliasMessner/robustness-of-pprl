@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/a42fa18fb0b144d4a1af8138fc8861de/artifacts
+end_time: 1679482683721
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: a42fa18fb0b144d4a1af8138fc8861de
+run_name: abrasive-wren-892
+run_uuid: a42fa18fb0b144d4a1af8138fc8861de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482682955
+status: 3
+tags: []
+user_id: elias

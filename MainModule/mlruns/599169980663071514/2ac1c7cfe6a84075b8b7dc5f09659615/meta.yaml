@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2ac1c7cfe6a84075b8b7dc5f09659615/artifacts
+end_time: 1679530555534
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2ac1c7cfe6a84075b8b7dc5f09659615
+run_name: worried-moose-127
+run_uuid: 2ac1c7cfe6a84075b8b7dc5f09659615
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530553737
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/0b05689c87f849d0bd313e2985932ae5/artifacts
+end_time: 1679512861790
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 0b05689c87f849d0bd313e2985932ae5
+run_name: lyrical-rook-604
+run_uuid: 0b05689c87f849d0bd313e2985932ae5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512860945
+status: 3
+tags: []
+user_id: elias

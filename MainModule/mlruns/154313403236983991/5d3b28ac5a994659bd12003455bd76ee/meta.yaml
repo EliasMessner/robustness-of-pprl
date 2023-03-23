@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/5d3b28ac5a994659bd12003455bd76ee/artifacts
+end_time: 1679508541090
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 5d3b28ac5a994659bd12003455bd76ee
+run_name: upset-duck-349
+run_uuid: 5d3b28ac5a994659bd12003455bd76ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508540106
+status: 3
+tags: []
+user_id: elias

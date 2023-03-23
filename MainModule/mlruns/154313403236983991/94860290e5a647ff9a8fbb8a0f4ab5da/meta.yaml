@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/94860290e5a647ff9a8fbb8a0f4ab5da/artifacts
+end_time: 1679508456962
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 94860290e5a647ff9a8fbb8a0f4ab5da
+run_name: abrasive-goat-656
+run_uuid: 94860290e5a647ff9a8fbb8a0f4ab5da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508456275
+status: 3
+tags: []
+user_id: elias

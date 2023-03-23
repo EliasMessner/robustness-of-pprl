@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/656b6e56201145ba87c79f7f4cbd0613/artifacts
+end_time: 1679508317507
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 656b6e56201145ba87c79f7f4cbd0613
+run_name: sincere-cow-696
+run_uuid: 656b6e56201145ba87c79f7f4cbd0613
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508317272
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/1204dfe3deeb4d1886d38078de8c7aae/artifacts
+end_time: 1679502325723
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 1204dfe3deeb4d1886d38078de8c7aae
+run_name: rogue-newt-737
+run_uuid: 1204dfe3deeb4d1886d38078de8c7aae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502325286
+status: 3
+tags: []
+user_id: elias

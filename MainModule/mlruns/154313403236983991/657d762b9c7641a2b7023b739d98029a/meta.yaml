@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/657d762b9c7641a2b7023b739d98029a/artifacts
+end_time: 1679508330163
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 657d762b9c7641a2b7023b739d98029a
+run_name: rogue-skunk-875
+run_uuid: 657d762b9c7641a2b7023b739d98029a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508329351
+status: 3
+tags: []
+user_id: elias

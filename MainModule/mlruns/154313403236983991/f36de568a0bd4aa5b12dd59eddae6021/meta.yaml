@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/f36de568a0bd4aa5b12dd59eddae6021/artifacts
+end_time: 1679508214942
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: f36de568a0bd4aa5b12dd59eddae6021
+run_name: suave-penguin-825
+run_uuid: f36de568a0bd4aa5b12dd59eddae6021
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508214239
+status: 3
+tags: []
+user_id: elias

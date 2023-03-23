@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9c4ef082f56d40e8a10756b6d1d1b7de/artifacts
+end_time: 1679532646607
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9c4ef082f56d40e8a10756b6d1d1b7de
+run_name: rare-snake-776
+run_uuid: 9c4ef082f56d40e8a10756b6d1d1b7de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532645982
+status: 3
+tags: []
+user_id: elias

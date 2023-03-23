@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/e0d9f74d9802460583300311bf95aa72/artifacts
+end_time: 1679482077553
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: e0d9f74d9802460583300311bf95aa72
+run_name: exultant-hawk-398
+run_uuid: e0d9f74d9802460583300311bf95aa72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482076803
+status: 3
+tags: []
+user_id: elias

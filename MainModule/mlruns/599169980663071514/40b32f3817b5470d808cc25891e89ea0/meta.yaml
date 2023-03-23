@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/40b32f3817b5470d808cc25891e89ea0/artifacts
+end_time: 1679531641508
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 40b32f3817b5470d808cc25891e89ea0
+run_name: agreeable-croc-618
+run_uuid: 40b32f3817b5470d808cc25891e89ea0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531641008
+status: 3
+tags: []
+user_id: elias

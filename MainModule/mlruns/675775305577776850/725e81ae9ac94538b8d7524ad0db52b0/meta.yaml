@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/725e81ae9ac94538b8d7524ad0db52b0/artifacts
+end_time: 1679491424570
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 725e81ae9ac94538b8d7524ad0db52b0
+run_name: silent-fox-914
+run_uuid: 725e81ae9ac94538b8d7524ad0db52b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491423242
+status: 3
+tags: []
+user_id: elias

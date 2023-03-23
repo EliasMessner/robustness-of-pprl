@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/a0a77e5f57814031a80701acfb17ba17/artifacts
+end_time: 1679513167157
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: a0a77e5f57814031a80701acfb17ba17
+run_name: learned-yak-465
+run_uuid: a0a77e5f57814031a80701acfb17ba17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513165782
+status: 3
+tags: []
+user_id: elias

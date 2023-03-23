@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/423e88d2a5924b079579a2ba066ae112/artifacts
+end_time: 1679532504605
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 423e88d2a5924b079579a2ba066ae112
+run_name: vaunted-cod-907
+run_uuid: 423e88d2a5924b079579a2ba066ae112
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532503277
+status: 3
+tags: []
+user_id: elias

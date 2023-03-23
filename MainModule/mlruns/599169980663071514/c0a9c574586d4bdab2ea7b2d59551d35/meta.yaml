@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c0a9c574586d4bdab2ea7b2d59551d35/artifacts
+end_time: 1679532312226
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c0a9c574586d4bdab2ea7b2d59551d35
+run_name: bold-crane-760
+run_uuid: c0a9c574586d4bdab2ea7b2d59551d35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532310413
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/10f8dee8906b47bf9795c1491462bd51/artifacts
+end_time: 1679513119452
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 10f8dee8906b47bf9795c1491462bd51
+run_name: flawless-pug-777
+run_uuid: 10f8dee8906b47bf9795c1491462bd51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513118999
+status: 3
+tags: []
+user_id: elias

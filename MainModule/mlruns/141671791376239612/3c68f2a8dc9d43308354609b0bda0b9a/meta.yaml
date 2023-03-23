@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/3c68f2a8dc9d43308354609b0bda0b9a/artifacts
+end_time: 1679489289800
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 3c68f2a8dc9d43308354609b0bda0b9a
+run_name: traveling-slug-851
+run_uuid: 3c68f2a8dc9d43308354609b0bda0b9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489289612
+status: 3
+tags: []
+user_id: elias

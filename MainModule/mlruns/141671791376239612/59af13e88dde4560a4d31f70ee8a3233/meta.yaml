@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/59af13e88dde4560a4d31f70ee8a3233/artifacts
+end_time: 1679489329393
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 59af13e88dde4560a4d31f70ee8a3233
+run_name: defiant-turtle-845
+run_uuid: 59af13e88dde4560a4d31f70ee8a3233
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489329190
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/bd36d1c4b852428c95388f8cb0fb4aef/artifacts
+end_time: 1679491384445
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: bd36d1c4b852428c95388f8cb0fb4aef
+run_name: defiant-ram-366
+run_uuid: bd36d1c4b852428c95388f8cb0fb4aef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491382649
+status: 3
+tags: []
+user_id: elias

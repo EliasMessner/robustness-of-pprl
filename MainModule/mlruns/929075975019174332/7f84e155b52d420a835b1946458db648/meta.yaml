@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/7f84e155b52d420a835b1946458db648/artifacts
+end_time: 1679502487742
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 7f84e155b52d420a835b1946458db648
+run_name: victorious-trout-175
+run_uuid: 7f84e155b52d420a835b1946458db648
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502487352
+status: 3
+tags: []
+user_id: elias

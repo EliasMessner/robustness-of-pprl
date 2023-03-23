@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8e4fdd5c8b334f65a174cdacf40e82ab/artifacts
+end_time: 1679531060466
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8e4fdd5c8b334f65a174cdacf40e82ab
+run_name: legendary-ox-223
+run_uuid: 8e4fdd5c8b334f65a174cdacf40e82ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531059888
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/9d4d9d9a5c914ed2b7e7a980a562ca4a/artifacts
+end_time: 1679502667574
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 9d4d9d9a5c914ed2b7e7a980a562ca4a
+run_name: lyrical-vole-703
+run_uuid: 9d4d9d9a5c914ed2b7e7a980a562ca4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502666715
+status: 3
+tags: []
+user_id: elias

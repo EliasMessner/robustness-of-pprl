@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/977d9542125e4cefa6f1cd88ecfafd1e/artifacts
+end_time: 1679508079018
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 977d9542125e4cefa6f1cd88ecfafd1e
+run_name: bright-mink-202
+run_uuid: 977d9542125e4cefa6f1cd88ecfafd1e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508078596
+status: 3
+tags: []
+user_id: elias

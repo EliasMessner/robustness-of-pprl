@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3ed33fe1576a48c1a571469e12f3093c/artifacts
+end_time: 1679531192781
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3ed33fe1576a48c1a571469e12f3093c
+run_name: clumsy-horse-878
+run_uuid: 3ed33fe1576a48c1a571469e12f3093c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531191828
+status: 3
+tags: []
+user_id: elias

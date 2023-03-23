@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f082ef95c06b462c9c391eb6a270f6e5/artifacts
+end_time: 1679532466525
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f082ef95c06b462c9c391eb6a270f6e5
+run_name: bittersweet-croc-271
+run_uuid: f082ef95c06b462c9c391eb6a270f6e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532465806
+status: 3
+tags: []
+user_id: elias

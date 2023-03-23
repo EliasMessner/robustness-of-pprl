@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/ea14cd2383cc4ca896f309d54bb93fc3/artifacts
+end_time: 1679513201860
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: ea14cd2383cc4ca896f309d54bb93fc3
+run_name: righteous-shrew-769
+run_uuid: ea14cd2383cc4ca896f309d54bb93fc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513200626
+status: 3
+tags: []
+user_id: elias

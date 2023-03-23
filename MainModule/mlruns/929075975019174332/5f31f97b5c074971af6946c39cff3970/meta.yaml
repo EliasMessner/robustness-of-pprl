@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/5f31f97b5c074971af6946c39cff3970/artifacts
+end_time: 1679502672449
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 5f31f97b5c074971af6946c39cff3970
+run_name: mysterious-mole-577
+run_uuid: 5f31f97b5c074971af6946c39cff3970
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502672058
+status: 3
+tags: []
+user_id: elias

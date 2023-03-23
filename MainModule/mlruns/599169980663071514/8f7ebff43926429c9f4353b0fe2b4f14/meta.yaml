@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8f7ebff43926429c9f4353b0fe2b4f14/artifacts
+end_time: 1679530301217
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8f7ebff43926429c9f4353b0fe2b4f14
+run_name: debonair-zebra-578
+run_uuid: 8f7ebff43926429c9f4353b0fe2b4f14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530299451
+status: 3
+tags: []
+user_id: elias

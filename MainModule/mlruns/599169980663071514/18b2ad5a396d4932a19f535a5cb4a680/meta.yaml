@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/18b2ad5a396d4932a19f535a5cb4a680/artifacts
+end_time: 1679530347249
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 18b2ad5a396d4932a19f535a5cb4a680
+run_name: industrious-ray-626
+run_uuid: 18b2ad5a396d4932a19f535a5cb4a680
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530346546
+status: 3
+tags: []
+user_id: elias

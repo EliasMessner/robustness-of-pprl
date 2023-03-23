@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/c841dbd7c91942e2994f7348bc34b62a/artifacts
+end_time: 1679508216442
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: c841dbd7c91942e2994f7348bc34b62a
+run_name: traveling-asp-295
+run_uuid: c841dbd7c91942e2994f7348bc34b62a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508215786
+status: 3
+tags: []
+user_id: elias

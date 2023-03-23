@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/3be5924562e64b09bfd26e1c2fe4e9d1/artifacts
+end_time: 1679502348708
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 3be5924562e64b09bfd26e1c2fe4e9d1
+run_name: dazzling-cod-771
+run_uuid: 3be5924562e64b09bfd26e1c2fe4e9d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502348333
+status: 3
+tags: []
+user_id: elias

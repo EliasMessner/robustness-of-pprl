@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e884fd6ff2244746b1da1b2d53162685/artifacts
+end_time: 1679532016501
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e884fd6ff2244746b1da1b2d53162685
+run_name: merciful-midge-578
+run_uuid: e884fd6ff2244746b1da1b2d53162685
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532015110
+status: 3
+tags: []
+user_id: elias

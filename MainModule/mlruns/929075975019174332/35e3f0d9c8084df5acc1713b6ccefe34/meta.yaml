@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/35e3f0d9c8084df5acc1713b6ccefe34/artifacts
+end_time: 1679502462507
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 35e3f0d9c8084df5acc1713b6ccefe34
+run_name: learned-toad-139
+run_uuid: 35e3f0d9c8084df5acc1713b6ccefe34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502461897
+status: 3
+tags: []
+user_id: elias

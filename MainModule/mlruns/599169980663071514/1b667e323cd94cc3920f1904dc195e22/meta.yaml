@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1b667e323cd94cc3920f1904dc195e22/artifacts
+end_time: 1679532014001
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1b667e323cd94cc3920f1904dc195e22
+run_name: vaunted-newt-965
+run_uuid: 1b667e323cd94cc3920f1904dc195e22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532012657
+status: 3
+tags: []
+user_id: elias

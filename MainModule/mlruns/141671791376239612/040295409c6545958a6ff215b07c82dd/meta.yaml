@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/040295409c6545958a6ff215b07c82dd/artifacts
+end_time: 1679489384535
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 040295409c6545958a6ff215b07c82dd
+run_name: popular-goat-67
+run_uuid: 040295409c6545958a6ff215b07c82dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489384332
+status: 3
+tags: []
+user_id: elias

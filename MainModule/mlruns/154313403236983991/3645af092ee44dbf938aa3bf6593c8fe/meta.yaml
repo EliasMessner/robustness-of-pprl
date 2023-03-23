@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/3645af092ee44dbf938aa3bf6593c8fe/artifacts
+end_time: 1679508150019
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 3645af092ee44dbf938aa3bf6593c8fe
+run_name: adventurous-cub-603
+run_uuid: 3645af092ee44dbf938aa3bf6593c8fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508149362
+status: 3
+tags: []
+user_id: elias

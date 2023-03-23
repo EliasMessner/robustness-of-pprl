@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/07f37c6ff1454c79886f5594013df49a/artifacts
+end_time: 1679532210317
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 07f37c6ff1454c79886f5594013df49a
+run_name: bald-crow-20
+run_uuid: 07f37c6ff1454c79886f5594013df49a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532208755
+status: 3
+tags: []
+user_id: elias

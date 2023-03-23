@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/eb8922397b884f99af41abb3cf4b814e/artifacts
+end_time: 1679531826402
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: eb8922397b884f99af41abb3cf4b814e
+run_name: worried-flea-349
+run_uuid: eb8922397b884f99af41abb3cf4b814e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531825840
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ed78f4c4417a4a30a6c5a3e4bc17ccba/artifacts
+end_time: 1679530885853
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ed78f4c4417a4a30a6c5a3e4bc17ccba
+run_name: redolent-trout-524
+run_uuid: ed78f4c4417a4a30a6c5a3e4bc17ccba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530884603
+status: 3
+tags: []
+user_id: elias

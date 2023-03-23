@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/56337a521a8f4f3bac41890cba9bcf63/artifacts
+end_time: 1679489282268
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 56337a521a8f4f3bac41890cba9bcf63
+run_name: traveling-deer-164
+run_uuid: 56337a521a8f4f3bac41890cba9bcf63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489282097
+status: 3
+tags: []
+user_id: elias

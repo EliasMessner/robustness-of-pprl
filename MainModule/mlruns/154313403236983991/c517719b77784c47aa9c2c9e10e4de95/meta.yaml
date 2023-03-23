@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/c517719b77784c47aa9c2c9e10e4de95/artifacts
+end_time: 1679508182176
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: c517719b77784c47aa9c2c9e10e4de95
+run_name: thundering-ox-737
+run_uuid: c517719b77784c47aa9c2c9e10e4de95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508181833
+status: 3
+tags: []
+user_id: elias

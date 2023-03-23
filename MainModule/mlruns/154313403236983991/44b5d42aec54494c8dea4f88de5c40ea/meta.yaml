@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/44b5d42aec54494c8dea4f88de5c40ea/artifacts
+end_time: 1679508417461
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 44b5d42aec54494c8dea4f88de5c40ea
+run_name: popular-asp-988
+run_uuid: 44b5d42aec54494c8dea4f88de5c40ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508415945
+status: 3
+tags: []
+user_id: elias

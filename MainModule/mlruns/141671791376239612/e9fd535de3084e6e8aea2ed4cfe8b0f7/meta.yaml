@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/e9fd535de3084e6e8aea2ed4cfe8b0f7/artifacts
+end_time: 1679489222674
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: e9fd535de3084e6e8aea2ed4cfe8b0f7
+run_name: masked-yak-122
+run_uuid: e9fd535de3084e6e8aea2ed4cfe8b0f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489222502
+status: 3
+tags: []
+user_id: elias

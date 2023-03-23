@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a77bb3de28ed4135bc9879f74feaa9a8/artifacts
+end_time: 1679530668317
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a77bb3de28ed4135bc9879f74feaa9a8
+run_name: melodic-fox-492
+run_uuid: a77bb3de28ed4135bc9879f74feaa9a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530667864
+status: 3
+tags: []
+user_id: elias

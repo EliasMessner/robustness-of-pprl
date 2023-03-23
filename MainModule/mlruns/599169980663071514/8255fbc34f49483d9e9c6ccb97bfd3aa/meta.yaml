@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8255fbc34f49483d9e9c6ccb97bfd3aa/artifacts
+end_time: 1679531465161
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8255fbc34f49483d9e9c6ccb97bfd3aa
+run_name: receptive-gull-590
+run_uuid: 8255fbc34f49483d9e9c6ccb97bfd3aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531463567
+status: 3
+tags: []
+user_id: elias

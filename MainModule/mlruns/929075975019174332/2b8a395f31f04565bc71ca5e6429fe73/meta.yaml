@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/2b8a395f31f04565bc71ca5e6429fe73/artifacts
+end_time: 1679502309098
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 2b8a395f31f04565bc71ca5e6429fe73
+run_name: secretive-sloth-0
+run_uuid: 2b8a395f31f04565bc71ca5e6429fe73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502308723
+status: 3
+tags: []
+user_id: elias

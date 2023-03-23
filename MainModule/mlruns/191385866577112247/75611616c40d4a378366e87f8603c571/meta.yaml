@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/75611616c40d4a378366e87f8603c571/artifacts
+end_time: 1679513185001
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 75611616c40d4a378366e87f8603c571
+run_name: silent-hawk-6
+run_uuid: 75611616c40d4a378366e87f8603c571
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513183782
+status: 3
+tags: []
+user_id: elias

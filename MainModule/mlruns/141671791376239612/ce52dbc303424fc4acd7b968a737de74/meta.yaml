@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/ce52dbc303424fc4acd7b968a737de74/artifacts
+end_time: 1679489329643
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: ce52dbc303424fc4acd7b968a737de74
+run_name: gaudy-roo-42
+run_uuid: ce52dbc303424fc4acd7b968a737de74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489329456
+status: 3
+tags: []
+user_id: elias

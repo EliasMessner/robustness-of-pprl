@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/1666f837c3194869a6b03b26a102dfdb/artifacts
+end_time: 1679486664968
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 1666f837c3194869a6b03b26a102dfdb
+run_name: delicate-mink-471
+run_uuid: 1666f837c3194869a6b03b26a102dfdb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486664577
+status: 3
+tags: []
+user_id: elias

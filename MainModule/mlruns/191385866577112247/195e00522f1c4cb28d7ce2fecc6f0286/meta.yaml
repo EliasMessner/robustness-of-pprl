@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/195e00522f1c4cb28d7ce2fecc6f0286/artifacts
+end_time: 1679513247783
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 195e00522f1c4cb28d7ce2fecc6f0286
+run_name: omniscient-duck-623
+run_uuid: 195e00522f1c4cb28d7ce2fecc6f0286
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513244627
+status: 3
+tags: []
+user_id: elias

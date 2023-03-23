@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/d3cc8a417529474baeb45cdca3602cce/artifacts
+end_time: 1679486419010
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: d3cc8a417529474baeb45cdca3602cce
+run_name: selective-foal-452
+run_uuid: d3cc8a417529474baeb45cdca3602cce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486418307
+status: 3
+tags: []
+user_id: elias

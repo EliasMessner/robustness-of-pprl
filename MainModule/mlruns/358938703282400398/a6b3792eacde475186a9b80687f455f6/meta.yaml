@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/a6b3792eacde475186a9b80687f455f6/artifacts
+end_time: 1679482156648
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: a6b3792eacde475186a9b80687f455f6
+run_name: fortunate-kite-675
+run_uuid: a6b3792eacde475186a9b80687f455f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482156398
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/e10affd0c17e4114b3f31e0080c2595e/artifacts
+end_time: 1679502392834
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: e10affd0c17e4114b3f31e0080c2595e
+run_name: rumbling-grub-580
+run_uuid: e10affd0c17e4114b3f31e0080c2595e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502391631
+status: 3
+tags: []
+user_id: elias

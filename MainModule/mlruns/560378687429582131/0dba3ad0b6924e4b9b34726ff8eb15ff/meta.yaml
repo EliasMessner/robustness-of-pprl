@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/0dba3ad0b6924e4b9b34726ff8eb15ff/artifacts
+end_time: 1679497544505
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 0dba3ad0b6924e4b9b34726ff8eb15ff
+run_name: salty-mink-534
+run_uuid: 0dba3ad0b6924e4b9b34726ff8eb15ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497541396
+status: 3
+tags: []
+user_id: elias

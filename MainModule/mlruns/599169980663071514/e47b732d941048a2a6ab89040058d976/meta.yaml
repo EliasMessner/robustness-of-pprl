@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e47b732d941048a2a6ab89040058d976/artifacts
+end_time: 1679532108721
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e47b732d941048a2a6ab89040058d976
+run_name: traveling-kite-563
+run_uuid: e47b732d941048a2a6ab89040058d976
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532108033
+status: 3
+tags: []
+user_id: elias

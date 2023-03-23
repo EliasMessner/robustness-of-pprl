@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/ed31777506a049708538367fc74ee64c/artifacts
+end_time: 1679508378258
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: ed31777506a049708538367fc74ee64c
+run_name: glamorous-pig-572
+run_uuid: ed31777506a049708538367fc74ee64c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508377055
+status: 3
+tags: []
+user_id: elias

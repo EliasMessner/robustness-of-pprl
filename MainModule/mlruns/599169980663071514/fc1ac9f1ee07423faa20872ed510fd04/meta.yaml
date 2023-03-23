@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fc1ac9f1ee07423faa20872ed510fd04/artifacts
+end_time: 1679531894311
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fc1ac9f1ee07423faa20872ed510fd04
+run_name: masked-conch-193
+run_uuid: fc1ac9f1ee07423faa20872ed510fd04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531893749
+status: 3
+tags: []
+user_id: elias

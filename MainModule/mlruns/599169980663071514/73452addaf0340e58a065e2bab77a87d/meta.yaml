@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/73452addaf0340e58a065e2bab77a87d/artifacts
+end_time: 1679530920509
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 73452addaf0340e58a065e2bab77a87d
+run_name: worried-cow-460
+run_uuid: 73452addaf0340e58a065e2bab77a87d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530919166
+status: 3
+tags: []
+user_id: elias

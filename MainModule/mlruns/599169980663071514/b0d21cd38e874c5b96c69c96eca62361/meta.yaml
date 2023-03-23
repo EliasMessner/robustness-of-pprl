@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b0d21cd38e874c5b96c69c96eca62361/artifacts
+end_time: 1679531609445
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b0d21cd38e874c5b96c69c96eca62361
+run_name: secretive-stag-935
+run_uuid: b0d21cd38e874c5b96c69c96eca62361
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531608805
+status: 3
+tags: []
+user_id: elias

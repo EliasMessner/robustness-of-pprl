@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c3eec44bf1f84899bb5ee1f085ae128d/artifacts
+end_time: 1679530845118
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c3eec44bf1f84899bb5ee1f085ae128d
+run_name: capable-tern-819
+run_uuid: c3eec44bf1f84899bb5ee1f085ae128d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530844102
+status: 3
+tags: []
+user_id: elias

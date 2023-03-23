@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/53a224aa871e4618bbe127a1726b7072/artifacts
+end_time: 1679502496602
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 53a224aa871e4618bbe127a1726b7072
+run_name: nebulous-fox-350
+run_uuid: 53a224aa871e4618bbe127a1726b7072
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502495899
+status: 3
+tags: []
+user_id: elias

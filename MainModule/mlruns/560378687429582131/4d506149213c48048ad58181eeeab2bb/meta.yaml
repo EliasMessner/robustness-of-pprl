@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/4d506149213c48048ad58181eeeab2bb/artifacts
+end_time: 1679497912856
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 4d506149213c48048ad58181eeeab2bb
+run_name: intelligent-gnat-355
+run_uuid: 4d506149213c48048ad58181eeeab2bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497911403
+status: 3
+tags: []
+user_id: elias

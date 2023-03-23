@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d981a8405cf24c22894d976e40dcb0f8/artifacts
+end_time: 1679531558835
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d981a8405cf24c22894d976e40dcb0f8
+run_name: sassy-sponge-875
+run_uuid: d981a8405cf24c22894d976e40dcb0f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531558116
+status: 3
+tags: []
+user_id: elias

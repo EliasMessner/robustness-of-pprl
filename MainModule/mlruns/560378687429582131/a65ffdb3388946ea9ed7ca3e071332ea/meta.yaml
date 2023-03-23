@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/a65ffdb3388946ea9ed7ca3e071332ea/artifacts
+end_time: 1679497952701
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: a65ffdb3388946ea9ed7ca3e071332ea
+run_name: monumental-bat-188
+run_uuid: a65ffdb3388946ea9ed7ca3e071332ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497950622
+status: 3
+tags: []
+user_id: elias

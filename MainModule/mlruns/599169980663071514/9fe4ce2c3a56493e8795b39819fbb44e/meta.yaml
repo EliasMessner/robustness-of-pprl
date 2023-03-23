@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9fe4ce2c3a56493e8795b39819fbb44e/artifacts
+end_time: 1679532452478
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9fe4ce2c3a56493e8795b39819fbb44e
+run_name: unequaled-smelt-483
+run_uuid: 9fe4ce2c3a56493e8795b39819fbb44e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532451134
+status: 3
+tags: []
+user_id: elias

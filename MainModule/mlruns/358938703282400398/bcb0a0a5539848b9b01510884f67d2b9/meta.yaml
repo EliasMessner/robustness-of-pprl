@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/bcb0a0a5539848b9b01510884f67d2b9/artifacts
+end_time: 1679482238540
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: bcb0a0a5539848b9b01510884f67d2b9
+run_name: overjoyed-dog-653
+run_uuid: bcb0a0a5539848b9b01510884f67d2b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482237790
+status: 3
+tags: []
+user_id: elias

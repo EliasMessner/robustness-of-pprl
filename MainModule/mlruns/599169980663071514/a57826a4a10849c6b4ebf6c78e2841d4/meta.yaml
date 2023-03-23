@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a57826a4a10849c6b4ebf6c78e2841d4/artifacts
+end_time: 1679531336564
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a57826a4a10849c6b4ebf6c78e2841d4
+run_name: thundering-bat-951
+run_uuid: a57826a4a10849c6b4ebf6c78e2841d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531336017
+status: 3
+tags: []
+user_id: elias

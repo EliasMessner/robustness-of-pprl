@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/5b1821c47778467792ad052e1c101158/artifacts
+end_time: 1679508631966
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 5b1821c47778467792ad052e1c101158
+run_name: secretive-sheep-255
+run_uuid: 5b1821c47778467792ad052e1c101158
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508631169
+status: 3
+tags: []
+user_id: elias

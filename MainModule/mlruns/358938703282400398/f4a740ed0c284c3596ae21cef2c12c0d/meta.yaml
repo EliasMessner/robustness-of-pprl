@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/f4a740ed0c284c3596ae21cef2c12c0d/artifacts
+end_time: 1679482529483
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: f4a740ed0c284c3596ae21cef2c12c0d
+run_name: calm-shark-33
+run_uuid: f4a740ed0c284c3596ae21cef2c12c0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482529218
+status: 3
+tags: []
+user_id: elias

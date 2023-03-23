@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/c0c1f56b8e9e4fcfbff0fbfcfc87a512/artifacts
+end_time: 1679513154483
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: c0c1f56b8e9e4fcfbff0fbfcfc87a512
+run_name: clumsy-jay-863
+run_uuid: c0c1f56b8e9e4fcfbff0fbfcfc87a512
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513152686
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/65e6de8f4af1468caeeb50b8d69254cd/artifacts
+end_time: 1679530964354
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 65e6de8f4af1468caeeb50b8d69254cd
+run_name: selective-fawn-873
+run_uuid: 65e6de8f4af1468caeeb50b8d69254cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530962901
+status: 3
+tags: []
+user_id: elias

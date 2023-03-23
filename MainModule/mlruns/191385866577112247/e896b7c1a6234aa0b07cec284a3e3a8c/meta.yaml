@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/e896b7c1a6234aa0b07cec284a3e3a8c/artifacts
+end_time: 1679513187907
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: e896b7c1a6234aa0b07cec284a3e3a8c
+run_name: classy-stag-335
+run_uuid: e896b7c1a6234aa0b07cec284a3e3a8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513186297
+status: 3
+tags: []
+user_id: elias

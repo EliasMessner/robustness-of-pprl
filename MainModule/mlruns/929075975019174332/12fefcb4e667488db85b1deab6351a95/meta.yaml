@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/12fefcb4e667488db85b1deab6351a95/artifacts
+end_time: 1679502444694
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 12fefcb4e667488db85b1deab6351a95
+run_name: lyrical-sponge-559
+run_uuid: 12fefcb4e667488db85b1deab6351a95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502444272
+status: 3
+tags: []
+user_id: elias

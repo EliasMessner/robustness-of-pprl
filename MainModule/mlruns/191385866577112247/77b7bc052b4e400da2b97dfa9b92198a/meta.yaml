@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/77b7bc052b4e400da2b97dfa9b92198a/artifacts
+end_time: 1679513053514
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 77b7bc052b4e400da2b97dfa9b92198a
+run_name: intelligent-stag-627
+run_uuid: 77b7bc052b4e400da2b97dfa9b92198a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513052342
+status: 3
+tags: []
+user_id: elias

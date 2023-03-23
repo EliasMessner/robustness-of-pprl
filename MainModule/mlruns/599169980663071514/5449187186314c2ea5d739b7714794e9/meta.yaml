@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5449187186314c2ea5d739b7714794e9/artifacts
+end_time: 1679532053360
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5449187186314c2ea5d739b7714794e9
+run_name: intelligent-crab-988
+run_uuid: 5449187186314c2ea5d739b7714794e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532051892
+status: 3
+tags: []
+user_id: elias

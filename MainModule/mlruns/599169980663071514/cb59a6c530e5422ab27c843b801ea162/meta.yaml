@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/cb59a6c530e5422ab27c843b801ea162/artifacts
+end_time: 1679531339439
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: cb59a6c530e5422ab27c843b801ea162
+run_name: resilient-calf-175
+run_uuid: cb59a6c530e5422ab27c843b801ea162
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531338939
+status: 3
+tags: []
+user_id: elias

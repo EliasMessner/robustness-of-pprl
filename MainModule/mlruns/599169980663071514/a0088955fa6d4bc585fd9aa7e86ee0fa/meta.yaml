@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a0088955fa6d4bc585fd9aa7e86ee0fa/artifacts
+end_time: 1679530265606
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a0088955fa6d4bc585fd9aa7e86ee0fa
+run_name: glamorous-sow-159
+run_uuid: a0088955fa6d4bc585fd9aa7e86ee0fa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530264965
+status: 3
+tags: []
+user_id: elias

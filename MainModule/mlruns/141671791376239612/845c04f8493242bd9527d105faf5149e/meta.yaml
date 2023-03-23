@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/845c04f8493242bd9527d105faf5149e/artifacts
+end_time: 1679489257439
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 845c04f8493242bd9527d105faf5149e
+run_name: sneaky-worm-946
+run_uuid: 845c04f8493242bd9527d105faf5149e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489257267
+status: 3
+tags: []
+user_id: elias

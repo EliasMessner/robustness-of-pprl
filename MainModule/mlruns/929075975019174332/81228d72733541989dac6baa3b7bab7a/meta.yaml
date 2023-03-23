@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/81228d72733541989dac6baa3b7bab7a/artifacts
+end_time: 1679502254769
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 81228d72733541989dac6baa3b7bab7a
+run_name: handsome-bat-258
+run_uuid: 81228d72733541989dac6baa3b7bab7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502254410
+status: 3
+tags: []
+user_id: elias

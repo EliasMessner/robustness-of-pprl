@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/077f702556ab40da8202b3ce4b70daa8/artifacts
+end_time: 1679482610407
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 077f702556ab40da8202b3ce4b70daa8
+run_name: beautiful-duck-841
+run_uuid: 077f702556ab40da8202b3ce4b70daa8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482610094
+status: 3
+tags: []
+user_id: elias

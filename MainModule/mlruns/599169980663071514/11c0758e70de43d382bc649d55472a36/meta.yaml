@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/11c0758e70de43d382bc649d55472a36/artifacts
+end_time: 1679532110002
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 11c0758e70de43d382bc649d55472a36
+run_name: skillful-frog-497
+run_uuid: 11c0758e70de43d382bc649d55472a36
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532109237
+status: 3
+tags: []
+user_id: elias

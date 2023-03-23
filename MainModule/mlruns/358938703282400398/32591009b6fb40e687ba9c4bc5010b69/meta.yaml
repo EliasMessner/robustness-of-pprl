@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/32591009b6fb40e687ba9c4bc5010b69/artifacts
+end_time: 1679482466451
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 32591009b6fb40e687ba9c4bc5010b69
+run_name: puzzled-ox-807
+run_uuid: 32591009b6fb40e687ba9c4bc5010b69
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482465951
+status: 3
+tags: []
+user_id: elias

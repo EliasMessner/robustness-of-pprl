@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/eedb5488bf7f42c19eaf767e6ec6152b/artifacts
+end_time: 1679531935671
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: eedb5488bf7f42c19eaf767e6ec6152b
+run_name: salty-crane-471
+run_uuid: eedb5488bf7f42c19eaf767e6ec6152b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531934295
+status: 3
+tags: []
+user_id: elias

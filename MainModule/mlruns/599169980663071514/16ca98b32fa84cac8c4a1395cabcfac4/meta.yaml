@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/16ca98b32fa84cac8c4a1395cabcfac4/artifacts
+end_time: 1679530955557
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 16ca98b32fa84cac8c4a1395cabcfac4
+run_name: glamorous-perch-438
+run_uuid: 16ca98b32fa84cac8c4a1395cabcfac4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530954636
+status: 3
+tags: []
+user_id: elias

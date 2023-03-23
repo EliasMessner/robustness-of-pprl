@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/73fd39b509f54c8a9f7d02fa6c0da25a/artifacts
+end_time: 1679508639794
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 73fd39b509f54c8a9f7d02fa6c0da25a
+run_name: burly-rook-275
+run_uuid: 73fd39b509f54c8a9f7d02fa6c0da25a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508639451
+status: 3
+tags: []
+user_id: elias

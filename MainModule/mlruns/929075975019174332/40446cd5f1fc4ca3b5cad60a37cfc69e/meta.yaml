@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/40446cd5f1fc4ca3b5cad60a37cfc69e/artifacts
+end_time: 1679502293269
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 40446cd5f1fc4ca3b5cad60a37cfc69e
+run_name: gregarious-tern-858
+run_uuid: 40446cd5f1fc4ca3b5cad60a37cfc69e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502292925
+status: 3
+tags: []
+user_id: elias

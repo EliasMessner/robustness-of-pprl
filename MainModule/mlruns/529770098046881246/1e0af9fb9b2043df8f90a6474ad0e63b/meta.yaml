@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/1e0af9fb9b2043df8f90a6474ad0e63b/artifacts
+end_time: 1679486570263
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 1e0af9fb9b2043df8f90a6474ad0e63b
+run_name: adventurous-grub-298
+run_uuid: 1e0af9fb9b2043df8f90a6474ad0e63b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486570028
+status: 3
+tags: []
+user_id: elias

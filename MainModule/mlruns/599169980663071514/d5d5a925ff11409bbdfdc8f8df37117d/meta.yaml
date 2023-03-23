@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d5d5a925ff11409bbdfdc8f8df37117d/artifacts
+end_time: 1679532004906
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d5d5a925ff11409bbdfdc8f8df37117d
+run_name: upbeat-skink-496
+run_uuid: d5d5a925ff11409bbdfdc8f8df37117d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532004187
+status: 3
+tags: []
+user_id: elias

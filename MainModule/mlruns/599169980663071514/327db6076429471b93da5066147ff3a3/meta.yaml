@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/327db6076429471b93da5066147ff3a3/artifacts
+end_time: 1679530934557
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 327db6076429471b93da5066147ff3a3
+run_name: hilarious-bass-442
+run_uuid: 327db6076429471b93da5066147ff3a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530933807
+status: 3
+tags: []
+user_id: elias

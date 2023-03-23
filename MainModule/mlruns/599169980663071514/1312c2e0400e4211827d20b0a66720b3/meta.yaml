@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1312c2e0400e4211827d20b0a66720b3/artifacts
+end_time: 1679532407555
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1312c2e0400e4211827d20b0a66720b3
+run_name: rebellious-crab-215
+run_uuid: 1312c2e0400e4211827d20b0a66720b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532406899
+status: 3
+tags: []
+user_id: elias

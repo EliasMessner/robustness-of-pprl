@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/7d55eb0b6e8c45439cbd3c1a46bc433d/artifacts
+end_time: 1679513067295
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 7d55eb0b6e8c45439cbd3c1a46bc433d
+run_name: wise-grouse-852
+run_uuid: 7d55eb0b6e8c45439cbd3c1a46bc433d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513066529
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/e7d29d6bf7764c1e9e2794d80f6c89de/artifacts
+end_time: 1679502440241
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: e7d29d6bf7764c1e9e2794d80f6c89de
+run_name: omniscient-pug-639
+run_uuid: e7d29d6bf7764c1e9e2794d80f6c89de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502439554
+status: 3
+tags: []
+user_id: elias

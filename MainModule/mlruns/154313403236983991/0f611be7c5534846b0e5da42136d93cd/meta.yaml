@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/0f611be7c5534846b0e5da42136d93cd/artifacts
+end_time: 1679508105799
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 0f611be7c5534846b0e5da42136d93cd
+run_name: skillful-colt-933
+run_uuid: 0f611be7c5534846b0e5da42136d93cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508105283
+status: 3
+tags: []
+user_id: elias

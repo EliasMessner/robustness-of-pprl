@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/f2f21cbd39af4164a7327c0eaef84e0e/artifacts
+end_time: 1679486664187
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: f2f21cbd39af4164a7327c0eaef84e0e
+run_name: invincible-sloth-108
+run_uuid: f2f21cbd39af4164a7327c0eaef84e0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486663843
+status: 3
+tags: []
+user_id: elias

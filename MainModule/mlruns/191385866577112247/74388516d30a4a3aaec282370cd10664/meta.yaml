@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/74388516d30a4a3aaec282370cd10664/artifacts
+end_time: 1679513191188
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 74388516d30a4a3aaec282370cd10664
+run_name: seed=f | l=1024 | k=10 | t=0.7
+run_uuid: 74388516d30a4a3aaec282370cd10664
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513173313
+status: 3
+tags: []
+user_id: elias

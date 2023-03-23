@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4612b14d954447af923853c03454940a/artifacts
+end_time: 1679532138082
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4612b14d954447af923853c03454940a
+run_name: exultant-dog-266
+run_uuid: 4612b14d954447af923853c03454940a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532137019
+status: 3
+tags: []
+user_id: elias

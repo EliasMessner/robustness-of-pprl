@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/890a28523ff841529ac52e32deaa4d57/artifacts
+end_time: 1679497252358
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 890a28523ff841529ac52e32deaa4d57
+run_name: bemused-lynx-584
+run_uuid: 890a28523ff841529ac52e32deaa4d57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497249624
+status: 3
+tags: []
+user_id: elias

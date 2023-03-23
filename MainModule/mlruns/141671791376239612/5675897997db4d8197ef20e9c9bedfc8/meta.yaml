@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/5675897997db4d8197ef20e9c9bedfc8/artifacts
+end_time: 1679489348676
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 5675897997db4d8197ef20e9c9bedfc8
+run_name: entertaining-cub-816
+run_uuid: 5675897997db4d8197ef20e9c9bedfc8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489348473
+status: 3
+tags: []
+user_id: elias

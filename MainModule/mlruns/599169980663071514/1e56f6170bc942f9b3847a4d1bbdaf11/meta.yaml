@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1e56f6170bc942f9b3847a4d1bbdaf11/artifacts
+end_time: 1679531651447
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1e56f6170bc942f9b3847a4d1bbdaf11
+run_name: victorious-sheep-525
+run_uuid: 1e56f6170bc942f9b3847a4d1bbdaf11
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531650103
+status: 3
+tags: []
+user_id: elias

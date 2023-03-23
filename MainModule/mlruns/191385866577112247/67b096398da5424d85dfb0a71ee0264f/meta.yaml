@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/67b096398da5424d85dfb0a71ee0264f/artifacts
+end_time: 1679513049045
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 67b096398da5424d85dfb0a71ee0264f
+run_name: worried-ant-461
+run_uuid: 67b096398da5424d85dfb0a71ee0264f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513048264
+status: 3
+tags: []
+user_id: elias

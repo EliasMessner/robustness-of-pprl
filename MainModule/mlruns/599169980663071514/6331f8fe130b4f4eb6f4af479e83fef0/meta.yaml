@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6331f8fe130b4f4eb6f4af479e83fef0/artifacts
+end_time: 1679531097997
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6331f8fe130b4f4eb6f4af479e83fef0
+run_name: selective-shark-289
+run_uuid: 6331f8fe130b4f4eb6f4af479e83fef0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531097497
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/7110d1fad9df4b0984ebc0812daa1a33/artifacts
+end_time: 1679531033668
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 7110d1fad9df4b0984ebc0812daa1a33
+run_name: funny-foal-754
+run_uuid: 7110d1fad9df4b0984ebc0812daa1a33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531031933
+status: 3
+tags: []
+user_id: elias

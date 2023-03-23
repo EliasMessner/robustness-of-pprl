@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/2215029b78954142a1f05cc4cb8e0c80/artifacts
+end_time: 1679486569669
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 2215029b78954142a1f05cc4cb8e0c80
+run_name: gifted-crab-292
+run_uuid: 2215029b78954142a1f05cc4cb8e0c80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486569341
+status: 3
+tags: []
+user_id: elias

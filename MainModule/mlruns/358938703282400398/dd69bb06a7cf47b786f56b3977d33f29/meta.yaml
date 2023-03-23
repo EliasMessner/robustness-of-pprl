@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/dd69bb06a7cf47b786f56b3977d33f29/artifacts
+end_time: 1679482100569
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: dd69bb06a7cf47b786f56b3977d33f29
+run_name: defiant-horse-778
+run_uuid: dd69bb06a7cf47b786f56b3977d33f29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482100162
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/93797d0e36c244af8d467625e691e9ac/artifacts
+end_time: 1679530985073
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 93797d0e36c244af8d467625e691e9ac
+run_name: unequaled-sponge-346
+run_uuid: 93797d0e36c244af8d467625e691e9ac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530984589
+status: 3
+tags: []
+user_id: elias

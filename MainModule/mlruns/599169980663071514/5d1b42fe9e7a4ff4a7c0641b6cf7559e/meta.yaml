@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5d1b42fe9e7a4ff4a7c0641b6cf7559e/artifacts
+end_time: 1679532319679
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5d1b42fe9e7a4ff4a7c0641b6cf7559e
+run_name: flawless-grub-442
+run_uuid: 5d1b42fe9e7a4ff4a7c0641b6cf7559e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532318663
+status: 3
+tags: []
+user_id: elias

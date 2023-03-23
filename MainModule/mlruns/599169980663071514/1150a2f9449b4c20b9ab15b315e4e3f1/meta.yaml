@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1150a2f9449b4c20b9ab15b315e4e3f1/artifacts
+end_time: 1679531979797
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1150a2f9449b4c20b9ab15b315e4e3f1
+run_name: debonair-calf-885
+run_uuid: 1150a2f9449b4c20b9ab15b315e4e3f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531978500
+status: 3
+tags: []
+user_id: elias

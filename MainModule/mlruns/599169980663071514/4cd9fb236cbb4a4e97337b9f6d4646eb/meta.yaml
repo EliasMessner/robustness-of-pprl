@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4cd9fb236cbb4a4e97337b9f6d4646eb/artifacts
+end_time: 1679532629826
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4cd9fb236cbb4a4e97337b9f6d4646eb
+run_name: loud-tern-320
+run_uuid: 4cd9fb236cbb4a4e97337b9f6d4646eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532629201
+status: 3
+tags: []
+user_id: elias

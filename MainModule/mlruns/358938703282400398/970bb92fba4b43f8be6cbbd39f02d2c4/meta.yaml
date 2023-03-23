@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/970bb92fba4b43f8be6cbbd39f02d2c4/artifacts
+end_time: 1679482492108
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 970bb92fba4b43f8be6cbbd39f02d2c4
+run_name: delicate-wren-83
+run_uuid: 970bb92fba4b43f8be6cbbd39f02d2c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482491655
+status: 3
+tags: []
+user_id: elias

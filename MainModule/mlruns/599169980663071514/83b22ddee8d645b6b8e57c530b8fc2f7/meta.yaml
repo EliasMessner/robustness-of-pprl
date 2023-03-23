@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/83b22ddee8d645b6b8e57c530b8fc2f7/artifacts
+end_time: 1679531428723
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 83b22ddee8d645b6b8e57c530b8fc2f7
+run_name: illustrious-ram-851
+run_uuid: 83b22ddee8d645b6b8e57c530b8fc2f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531426676
+status: 3
+tags: []
+user_id: elias

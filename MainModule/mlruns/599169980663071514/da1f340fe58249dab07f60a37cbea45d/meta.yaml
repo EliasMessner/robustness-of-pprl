@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/da1f340fe58249dab07f60a37cbea45d/artifacts
+end_time: 1679531171281
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: da1f340fe58249dab07f60a37cbea45d
+run_name: righteous-hawk-25
+run_uuid: da1f340fe58249dab07f60a37cbea45d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531169953
+status: 3
+tags: []
+user_id: elias

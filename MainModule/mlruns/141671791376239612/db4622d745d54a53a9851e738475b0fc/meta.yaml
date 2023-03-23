@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/db4622d745d54a53a9851e738475b0fc/artifacts
+end_time: 1679489253658
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: db4622d745d54a53a9851e738475b0fc
+run_name: legendary-rook-337
+run_uuid: db4622d745d54a53a9851e738475b0fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489253486
+status: 3
+tags: []
+user_id: elias

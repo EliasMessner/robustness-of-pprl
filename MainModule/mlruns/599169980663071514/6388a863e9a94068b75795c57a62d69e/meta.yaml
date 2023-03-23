@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6388a863e9a94068b75795c57a62d69e/artifacts
+end_time: 1679530693334
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6388a863e9a94068b75795c57a62d69e
+run_name: bald-fox-193
+run_uuid: 6388a863e9a94068b75795c57a62d69e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530692787
+status: 3
+tags: []
+user_id: elias

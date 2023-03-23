@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/42d5caa523c545238ba79ae9a0aa4631/artifacts
+end_time: 1679531413223
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 42d5caa523c545238ba79ae9a0aa4631
+run_name: luxuriant-carp-745
+run_uuid: 42d5caa523c545238ba79ae9a0aa4631
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531411442
+status: 3
+tags: []
+user_id: elias

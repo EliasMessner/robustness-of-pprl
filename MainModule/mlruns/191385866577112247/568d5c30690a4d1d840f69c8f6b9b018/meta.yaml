@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/568d5c30690a4d1d840f69c8f6b9b018/artifacts
+end_time: 1679513040684
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 568d5c30690a4d1d840f69c8f6b9b018
+run_name: amusing-elk-720
+run_uuid: 568d5c30690a4d1d840f69c8f6b9b018
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513039090
+status: 3
+tags: []
+user_id: elias

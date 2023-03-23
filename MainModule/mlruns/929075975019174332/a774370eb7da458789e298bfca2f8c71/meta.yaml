@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/a774370eb7da458789e298bfca2f8c71/artifacts
+end_time: 1679502522883
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: a774370eb7da458789e298bfca2f8c71
+run_name: gregarious-swan-261
+run_uuid: a774370eb7da458789e298bfca2f8c71
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502522445
+status: 3
+tags: []
+user_id: elias

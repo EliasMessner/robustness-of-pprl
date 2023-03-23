@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a91e64e81f0940b8a6b8873c6dbaf495/artifacts
+end_time: 1679530633052
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a91e64e81f0940b8a6b8873c6dbaf495
+run_name: gentle-crow-956
+run_uuid: a91e64e81f0940b8a6b8873c6dbaf495
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530632130
+status: 3
+tags: []
+user_id: elias

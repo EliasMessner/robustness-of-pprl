@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/5b612e2a7f7a4e49afa7d5e3616389f6/artifacts
+end_time: 1679482514327
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 5b612e2a7f7a4e49afa7d5e3616389f6
+run_name: kindly-hare-850
+run_uuid: 5b612e2a7f7a4e49afa7d5e3616389f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482513639
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/179ce06012d9444bb7e61628d5a6de05/artifacts
+end_time: 1679486415479
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 179ce06012d9444bb7e61628d5a6de05
+run_name: stylish-bird-780
+run_uuid: 179ce06012d9444bb7e61628d5a6de05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486414745
+status: 3
+tags: []
+user_id: elias

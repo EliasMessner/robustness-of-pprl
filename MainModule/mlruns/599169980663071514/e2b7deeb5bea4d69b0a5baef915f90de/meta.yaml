@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e2b7deeb5bea4d69b0a5baef915f90de/artifacts
+end_time: 1679531127717
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e2b7deeb5bea4d69b0a5baef915f90de
+run_name: orderly-steed-830
+run_uuid: e2b7deeb5bea4d69b0a5baef915f90de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531126717
+status: 3
+tags: []
+user_id: elias

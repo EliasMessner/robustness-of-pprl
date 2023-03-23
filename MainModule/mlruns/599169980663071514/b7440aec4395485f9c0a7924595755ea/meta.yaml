@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b7440aec4395485f9c0a7924595755ea/artifacts
+end_time: 1679531320111
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b7440aec4395485f9c0a7924595755ea
+run_name: languid-dove-518
+run_uuid: b7440aec4395485f9c0a7924595755ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531319533
+status: 3
+tags: []
+user_id: elias

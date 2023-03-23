@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e4920531a42a4a5c962b259725914eba/artifacts
+end_time: 1679532280803
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e4920531a42a4a5c962b259725914eba
+run_name: upset-shrike-813
+run_uuid: e4920531a42a4a5c962b259725914eba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532279787
+status: 3
+tags: []
+user_id: elias

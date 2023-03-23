@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/f73eccf1da274046a11e2aee0a918764/artifacts
+end_time: 1679489309847
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: f73eccf1da274046a11e2aee0a918764
+run_name: blushing-donkey-521
+run_uuid: f73eccf1da274046a11e2aee0a918764
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489309659
+status: 3
+tags: []
+user_id: elias

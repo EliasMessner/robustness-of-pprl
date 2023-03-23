@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3574b15247524f2c811b800c9634d84b/artifacts
+end_time: 1679531083622
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3574b15247524f2c811b800c9634d84b
+run_name: treasured-stag-151
+run_uuid: 3574b15247524f2c811b800c9634d84b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531082935
+status: 3
+tags: []
+user_id: elias

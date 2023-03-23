@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/59ee7d6d48b74f5e88da7ac9eb4a7257/artifacts
+end_time: 1679497590397
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 59ee7d6d48b74f5e88da7ac9eb4a7257
+run_name: legendary-shoat-465
+run_uuid: 59ee7d6d48b74f5e88da7ac9eb4a7257
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497589319
+status: 3
+tags: []
+user_id: elias

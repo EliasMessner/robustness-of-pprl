@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/618cfeb881c7419bbcf397c33cd3441e/artifacts
+end_time: 1679531594773
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 618cfeb881c7419bbcf397c33cd3441e
+run_name: likeable-toad-714
+run_uuid: 618cfeb881c7419bbcf397c33cd3441e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531593508
+status: 3
+tags: []
+user_id: elias

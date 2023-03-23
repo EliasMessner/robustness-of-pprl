@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/cf740091a34b4b48abdb3a7fa810434b/artifacts
+end_time: 1679508452150
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: cf740091a34b4b48abdb3a7fa810434b
+run_name: grandiose-crab-174
+run_uuid: cf740091a34b4b48abdb3a7fa810434b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508451572
+status: 3
+tags: []
+user_id: elias

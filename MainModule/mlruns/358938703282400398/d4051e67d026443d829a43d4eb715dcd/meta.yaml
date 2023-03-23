@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/d4051e67d026443d829a43d4eb715dcd/artifacts
+end_time: 1679482409121
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: d4051e67d026443d829a43d4eb715dcd
+run_name: colorful-goat-421
+run_uuid: d4051e67d026443d829a43d4eb715dcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482408715
+status: 3
+tags: []
+user_id: elias

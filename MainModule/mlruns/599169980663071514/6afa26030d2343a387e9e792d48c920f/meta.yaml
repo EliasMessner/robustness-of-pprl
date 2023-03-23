@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6afa26030d2343a387e9e792d48c920f/artifacts
+end_time: 1679532365663
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6afa26030d2343a387e9e792d48c920f
+run_name: righteous-worm-293
+run_uuid: 6afa26030d2343a387e9e792d48c920f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532365038
+status: 3
+tags: []
+user_id: elias

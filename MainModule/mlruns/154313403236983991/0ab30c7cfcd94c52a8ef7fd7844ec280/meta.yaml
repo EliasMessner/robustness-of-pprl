@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/0ab30c7cfcd94c52a8ef7fd7844ec280/artifacts
+end_time: 1679508573481
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 0ab30c7cfcd94c52a8ef7fd7844ec280
+run_name: whimsical-hare-961
+run_uuid: 0ab30c7cfcd94c52a8ef7fd7844ec280
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508573199
+status: 3
+tags: []
+user_id: elias

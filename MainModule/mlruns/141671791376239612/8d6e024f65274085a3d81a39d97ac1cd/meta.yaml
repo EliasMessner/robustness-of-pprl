@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/8d6e024f65274085a3d81a39d97ac1cd/artifacts
+end_time: 1679489187188
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 8d6e024f65274085a3d81a39d97ac1cd
+run_name: judicious-seal-61
+run_uuid: 8d6e024f65274085a3d81a39d97ac1cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489187032
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/f716128b736340e4850903723011db88/artifacts
+end_time: 1679508552981
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: f716128b736340e4850903723011db88
+run_name: legendary-cub-374
+run_uuid: f716128b736340e4850903723011db88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508552278
+status: 3
+tags: []
+user_id: elias

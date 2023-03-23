@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/37147ba132d24b74bd8cda44c78df332/artifacts
+end_time: 1679532720265
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 37147ba132d24b74bd8cda44c78df332
+run_name: indecisive-doe-755
+run_uuid: 37147ba132d24b74bd8cda44c78df332
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532718921
+status: 3
+tags: []
+user_id: elias

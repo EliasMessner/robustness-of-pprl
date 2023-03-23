@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/3fbf9b088b6d4649a6873eadb618875b/artifacts
+end_time: 1679482092709
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 3fbf9b088b6d4649a6873eadb618875b
+run_name: colorful-fish-170
+run_uuid: 3fbf9b088b6d4649a6873eadb618875b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482092366
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fee6be0724f040a89f86a69d73f827aa/artifacts
+end_time: 1679532123768
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fee6be0724f040a89f86a69d73f827aa
+run_name: gregarious-lynx-336
+run_uuid: fee6be0724f040a89f86a69d73f827aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532122893
+status: 3
+tags: []
+user_id: elias

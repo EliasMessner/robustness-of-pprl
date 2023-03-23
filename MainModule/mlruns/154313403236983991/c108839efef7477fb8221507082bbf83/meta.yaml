@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/c108839efef7477fb8221507082bbf83/artifacts
+end_time: 1679508311554
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: c108839efef7477fb8221507082bbf83
+run_name: receptive-zebra-46
+run_uuid: c108839efef7477fb8221507082bbf83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508311304
+status: 3
+tags: []
+user_id: elias

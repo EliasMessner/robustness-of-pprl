@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0cee5ea3ff6d41ebbebcf8075490edca/artifacts
+end_time: 1679531388237
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0cee5ea3ff6d41ebbebcf8075490edca
+run_name: smiling-tern-729
+run_uuid: 0cee5ea3ff6d41ebbebcf8075490edca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531387237
+status: 3
+tags: []
+user_id: elias

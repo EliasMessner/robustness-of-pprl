@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ac1bf462a76848db8182fd3f30463ab3/artifacts
+end_time: 1679530649552
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ac1bf462a76848db8182fd3f30463ab3
+run_name: overjoyed-snake-74
+run_uuid: ac1bf462a76848db8182fd3f30463ab3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530649005
+status: 3
+tags: []
+user_id: elias

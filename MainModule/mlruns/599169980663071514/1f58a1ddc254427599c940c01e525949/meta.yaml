@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1f58a1ddc254427599c940c01e525949/artifacts
+end_time: 1679532166894
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1f58a1ddc254427599c940c01e525949
+run_name: enchanting-squid-248
+run_uuid: 1f58a1ddc254427599c940c01e525949
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532165582
+status: 3
+tags: []
+user_id: elias

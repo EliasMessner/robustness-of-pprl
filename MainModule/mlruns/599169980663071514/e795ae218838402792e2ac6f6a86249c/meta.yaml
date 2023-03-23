@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e795ae218838402792e2ac6f6a86249c/artifacts
+end_time: 1679530636473
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e795ae218838402792e2ac6f6a86249c
+run_name: upset-shrew-557
+run_uuid: e795ae218838402792e2ac6f6a86249c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530635348
+status: 3
+tags: []
+user_id: elias

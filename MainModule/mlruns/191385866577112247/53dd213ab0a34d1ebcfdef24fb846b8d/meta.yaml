@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/53dd213ab0a34d1ebcfdef24fb846b8d/artifacts
+end_time: 1679512957480
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 53dd213ab0a34d1ebcfdef24fb846b8d
+run_name: rebellious-calf-472
+run_uuid: 53dd213ab0a34d1ebcfdef24fb846b8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512956714
+status: 3
+tags: []
+user_id: elias

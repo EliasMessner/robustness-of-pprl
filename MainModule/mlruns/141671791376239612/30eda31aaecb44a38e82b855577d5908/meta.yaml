@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/30eda31aaecb44a38e82b855577d5908/artifacts
+end_time: 1679489326768
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 30eda31aaecb44a38e82b855577d5908
+run_name: beautiful-wren-658
+run_uuid: 30eda31aaecb44a38e82b855577d5908
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489326581
+status: 3
+tags: []
+user_id: elias

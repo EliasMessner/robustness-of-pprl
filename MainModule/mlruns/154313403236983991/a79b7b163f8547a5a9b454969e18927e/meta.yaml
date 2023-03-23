@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/a79b7b163f8547a5a9b454969e18927e/artifacts
+end_time: 1679508295053
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: a79b7b163f8547a5a9b454969e18927e
+run_name: treasured-kite-274
+run_uuid: a79b7b163f8547a5a9b454969e18927e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508293693
+status: 3
+tags: []
+user_id: elias

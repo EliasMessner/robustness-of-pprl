@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0fa6cc08d6324b32b75f3bcdd7413895/artifacts
+end_time: 1679530374858
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0fa6cc08d6324b32b75f3bcdd7413895
+run_name: dashing-seal-285
+run_uuid: 0fa6cc08d6324b32b75f3bcdd7413895
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530374421
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/0a5750930a5644ae874122cdcb0c828e/artifacts
+end_time: 1679489291737
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 0a5750930a5644ae874122cdcb0c828e
+run_name: painted-fawn-659
+run_uuid: 0a5750930a5644ae874122cdcb0c828e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489291565
+status: 3
+tags: []
+user_id: elias

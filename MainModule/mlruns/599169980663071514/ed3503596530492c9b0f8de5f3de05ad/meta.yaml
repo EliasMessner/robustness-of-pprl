@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ed3503596530492c9b0f8de5f3de05ad/artifacts
+end_time: 1679532011548
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ed3503596530492c9b0f8de5f3de05ad
+run_name: indecisive-lamb-536
+run_uuid: ed3503596530492c9b0f8de5f3de05ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532010985
+status: 3
+tags: []
+user_id: elias

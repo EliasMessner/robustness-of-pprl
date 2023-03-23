@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e6ffb7893ae548f58420756d3b38cb55/artifacts
+end_time: 1679531386456
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e6ffb7893ae548f58420756d3b38cb55
+run_name: bald-crab-769
+run_uuid: e6ffb7893ae548f58420756d3b38cb55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531385565
+status: 3
+tags: []
+user_id: elias

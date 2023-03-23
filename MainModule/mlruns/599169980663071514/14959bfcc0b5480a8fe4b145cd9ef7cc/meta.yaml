@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/14959bfcc0b5480a8fe4b145cd9ef7cc/artifacts
+end_time: 1679531599133
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 14959bfcc0b5480a8fe4b145cd9ef7cc
+run_name: handsome-owl-559
+run_uuid: 14959bfcc0b5480a8fe4b145cd9ef7cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531598633
+status: 3
+tags: []
+user_id: elias

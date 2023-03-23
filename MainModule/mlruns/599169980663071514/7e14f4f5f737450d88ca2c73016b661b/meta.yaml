@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/7e14f4f5f737450d88ca2c73016b661b/artifacts
+end_time: 1679531635648
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 7e14f4f5f737450d88ca2c73016b661b
+run_name: smiling-foal-40
+run_uuid: 7e14f4f5f737450d88ca2c73016b661b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531634633
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/10a752bcdaa246fb8632423c8f2b0a30/artifacts
+end_time: 1679531222359
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 10a752bcdaa246fb8632423c8f2b0a30
+run_name: gentle-dove-266
+run_uuid: 10a752bcdaa246fb8632423c8f2b0a30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531221562
+status: 3
+tags: []
+user_id: elias

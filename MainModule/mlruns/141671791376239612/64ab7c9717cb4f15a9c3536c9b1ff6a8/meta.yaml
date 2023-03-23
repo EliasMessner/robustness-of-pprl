@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/64ab7c9717cb4f15a9c3536c9b1ff6a8/artifacts
+end_time: 1679489229720
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 64ab7c9717cb4f15a9c3536c9b1ff6a8
+run_name: polite-panda-40
+run_uuid: 64ab7c9717cb4f15a9c3536c9b1ff6a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489229564
+status: 3
+tags: []
+user_id: elias

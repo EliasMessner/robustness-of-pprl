@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/bef9cb36e28545fd9021739e0241589d/artifacts
+end_time: 1679486679140
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: bef9cb36e28545fd9021739e0241589d
+run_name: bald-eel-361
+run_uuid: bef9cb36e28545fd9021739e0241589d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486678749
+status: 3
+tags: []
+user_id: elias

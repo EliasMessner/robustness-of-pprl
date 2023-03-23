@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b6d68364330048a7941834f92c0a37f0/artifacts
+end_time: 1679531059106
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b6d68364330048a7941834f92c0a37f0
+run_name: exultant-mole-922
+run_uuid: b6d68364330048a7941834f92c0a37f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531058606
+status: 3
+tags: []
+user_id: elias

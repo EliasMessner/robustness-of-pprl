@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9e78e30b10554fc2ab6f1c60faf51c8a/artifacts
+end_time: 1679531938717
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9e78e30b10554fc2ab6f1c60faf51c8a
+run_name: bouncy-perch-912
+run_uuid: 9e78e30b10554fc2ab6f1c60faf51c8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531937889
+status: 3
+tags: []
+user_id: elias

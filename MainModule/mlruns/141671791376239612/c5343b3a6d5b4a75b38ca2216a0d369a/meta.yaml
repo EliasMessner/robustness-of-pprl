@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/c5343b3a6d5b4a75b38ca2216a0d369a/artifacts
+end_time: 1679489317675
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: c5343b3a6d5b4a75b38ca2216a0d369a
+run_name: aged-shrew-548
+run_uuid: c5343b3a6d5b4a75b38ca2216a0d369a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489317487
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/5cc800375a6c4a9ab7dc524d2abb5f66/artifacts
+end_time: 1679491252970
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 5cc800375a6c4a9ab7dc524d2abb5f66
+run_name: dapper-dog-250
+run_uuid: 5cc800375a6c4a9ab7dc524d2abb5f66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491252063
+status: 3
+tags: []
+user_id: elias

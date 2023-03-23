@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b6fdbefbc79c4ce2984f004a77ad1d12/artifacts
+end_time: 1679531827293
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b6fdbefbc79c4ce2984f004a77ad1d12
+run_name: inquisitive-wolf-141
+run_uuid: b6fdbefbc79c4ce2984f004a77ad1d12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531826699
+status: 3
+tags: []
+user_id: elias

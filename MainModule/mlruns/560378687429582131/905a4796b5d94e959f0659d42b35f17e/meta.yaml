@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/905a4796b5d94e959f0659d42b35f17e/artifacts
+end_time: 1679497924685
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 905a4796b5d94e959f0659d42b35f17e
+run_name: bedecked-mole-701
+run_uuid: 905a4796b5d94e959f0659d42b35f17e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497921779
+status: 3
+tags: []
+user_id: elias

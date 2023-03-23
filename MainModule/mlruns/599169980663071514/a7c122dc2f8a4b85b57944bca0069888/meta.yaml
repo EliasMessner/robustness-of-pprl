@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a7c122dc2f8a4b85b57944bca0069888/artifacts
+end_time: 1679532155972
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a7c122dc2f8a4b85b57944bca0069888
+run_name: suave-perch-459
+run_uuid: a7c122dc2f8a4b85b57944bca0069888
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532154503
+status: 3
+tags: []
+user_id: elias

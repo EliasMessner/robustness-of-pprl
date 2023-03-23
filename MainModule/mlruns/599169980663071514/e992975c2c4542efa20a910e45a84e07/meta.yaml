@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e992975c2c4542efa20a910e45a84e07/artifacts
+end_time: 1679532520230
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e992975c2c4542efa20a910e45a84e07
+run_name: selective-seal-14
+run_uuid: e992975c2c4542efa20a910e45a84e07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532519058
+status: 3
+tags: []
+user_id: elias

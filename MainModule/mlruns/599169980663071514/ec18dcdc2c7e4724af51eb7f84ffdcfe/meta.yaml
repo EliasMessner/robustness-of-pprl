@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ec18dcdc2c7e4724af51eb7f84ffdcfe/artifacts
+end_time: 1679532207848
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ec18dcdc2c7e4724af51eb7f84ffdcfe
+run_name: gentle-snipe-503
+run_uuid: ec18dcdc2c7e4724af51eb7f84ffdcfe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532206301
+status: 3
+tags: []
+user_id: elias

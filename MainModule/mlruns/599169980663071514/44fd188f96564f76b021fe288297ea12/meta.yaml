@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/44fd188f96564f76b021fe288297ea12/artifacts
+end_time: 1679531701525
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 44fd188f96564f76b021fe288297ea12
+run_name: bemused-fox-717
+run_uuid: 44fd188f96564f76b021fe288297ea12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531700369
+status: 3
+tags: []
+user_id: elias

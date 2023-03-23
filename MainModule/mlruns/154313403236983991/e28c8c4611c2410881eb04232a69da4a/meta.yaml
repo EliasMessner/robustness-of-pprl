@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/e28c8c4611c2410881eb04232a69da4a/artifacts
+end_time: 1679508077221
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: e28c8c4611c2410881eb04232a69da4a
+run_name: angry-seal-399
+run_uuid: e28c8c4611c2410881eb04232a69da4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508076908
+status: 3
+tags: []
+user_id: elias

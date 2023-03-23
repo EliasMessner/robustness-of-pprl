@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e93af26d00ed4ebdacfff5db4f91d118/artifacts
+end_time: 1679532683061
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e93af26d00ed4ebdacfff5db4f91d118
+run_name: omniscient-gnat-78
+run_uuid: e93af26d00ed4ebdacfff5db4f91d118
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532682390
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/1a7ca0a08ec94dd49f08aeb29c9b1708/artifacts
+end_time: 1679482468779
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 1a7ca0a08ec94dd49f08aeb29c9b1708
+run_name: grandiose-swan-334
+run_uuid: 1a7ca0a08ec94dd49f08aeb29c9b1708
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482468232
+status: 3
+tags: []
+user_id: elias

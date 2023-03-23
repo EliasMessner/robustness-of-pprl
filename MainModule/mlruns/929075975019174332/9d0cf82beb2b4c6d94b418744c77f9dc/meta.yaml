@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/9d0cf82beb2b4c6d94b418744c77f9dc/artifacts
+end_time: 1679502200127
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 9d0cf82beb2b4c6d94b418744c77f9dc
+run_name: honorable-horse-113
+run_uuid: 9d0cf82beb2b4c6d94b418744c77f9dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502199721
+status: 3
+tags: []
+user_id: elias

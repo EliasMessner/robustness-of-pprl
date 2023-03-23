@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/5f93a8b2a0d148598b00ccf5654fda9f/artifacts
+end_time: 1679489375363
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 5f93a8b2a0d148598b00ccf5654fda9f
+run_name: debonair-flea-383
+run_uuid: 5f93a8b2a0d148598b00ccf5654fda9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489375160
+status: 3
+tags: []
+user_id: elias

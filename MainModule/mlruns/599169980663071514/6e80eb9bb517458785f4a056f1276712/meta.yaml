@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6e80eb9bb517458785f4a056f1276712/artifacts
+end_time: 1679531288189
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6e80eb9bb517458785f4a056f1276712
+run_name: defiant-zebra-646
+run_uuid: 6e80eb9bb517458785f4a056f1276712
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531286563
+status: 3
+tags: []
+user_id: elias

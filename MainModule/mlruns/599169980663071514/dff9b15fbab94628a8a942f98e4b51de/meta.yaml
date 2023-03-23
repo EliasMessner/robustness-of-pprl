@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dff9b15fbab94628a8a942f98e4b51de/artifacts
+end_time: 1679532698140
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dff9b15fbab94628a8a942f98e4b51de
+run_name: youthful-auk-353
+run_uuid: dff9b15fbab94628a8a942f98e4b51de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532697390
+status: 3
+tags: []
+user_id: elias

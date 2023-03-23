@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c46bfac6099149559002386e241551de/artifacts
+end_time: 1679531510646
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c46bfac6099149559002386e241551de
+run_name: smiling-hen-770
+run_uuid: c46bfac6099149559002386e241551de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531509162
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5b8e25f24d6740568344295e1ae0448d/artifacts
+end_time: 1679531933421
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5b8e25f24d6740568344295e1ae0448d
+run_name: capable-newt-54
+run_uuid: 5b8e25f24d6740568344295e1ae0448d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531932217
+status: 3
+tags: []
+user_id: elias

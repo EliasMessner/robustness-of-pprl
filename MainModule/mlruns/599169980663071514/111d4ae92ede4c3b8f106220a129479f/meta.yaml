@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/111d4ae92ede4c3b8f106220a129479f/artifacts
+end_time: 1679532067126
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 111d4ae92ede4c3b8f106220a129479f
+run_name: stately-stork-588
+run_uuid: 111d4ae92ede4c3b8f106220a129479f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532066548
+status: 3
+tags: []
+user_id: elias

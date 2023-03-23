@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/fb5fb5633625431eb142e39e79989655/artifacts
+end_time: 1679502262347
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: fb5fb5633625431eb142e39e79989655
+run_name: luxuriant-kit-482
+run_uuid: fb5fb5633625431eb142e39e79989655
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502261300
+status: 3
+tags: []
+user_id: elias

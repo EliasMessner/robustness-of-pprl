@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/780f0d98f75d4f5e99bd50cdd2eefe85/artifacts
+end_time: 1679532582090
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 780f0d98f75d4f5e99bd50cdd2eefe85
+run_name: bouncy-panda-887
+run_uuid: 780f0d98f75d4f5e99bd50cdd2eefe85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532580403
+status: 3
+tags: []
+user_id: elias

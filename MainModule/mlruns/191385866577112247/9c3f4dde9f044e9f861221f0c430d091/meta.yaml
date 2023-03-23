@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/9c3f4dde9f044e9f861221f0c430d091/artifacts
+end_time: 1679513273158
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 9c3f4dde9f044e9f861221f0c430d091
+run_name: auspicious-ray-716
+run_uuid: 9c3f4dde9f044e9f861221f0c430d091
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513268924
+status: 3
+tags: []
+user_id: elias

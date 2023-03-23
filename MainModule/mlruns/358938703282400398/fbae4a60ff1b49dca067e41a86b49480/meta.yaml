@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/fbae4a60ff1b49dca067e41a86b49480/artifacts
+end_time: 1679482555875
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: fbae4a60ff1b49dca067e41a86b49480
+run_name: suave-jay-561
+run_uuid: fbae4a60ff1b49dca067e41a86b49480
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482555562
+status: 3
+tags: []
+user_id: elias

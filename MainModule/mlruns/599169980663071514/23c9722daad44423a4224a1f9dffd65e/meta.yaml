@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/23c9722daad44423a4224a1f9dffd65e/artifacts
+end_time: 1679532630842
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 23c9722daad44423a4224a1f9dffd65e
+run_name: exultant-smelt-340
+run_uuid: 23c9722daad44423a4224a1f9dffd65e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532630185
+status: 3
+tags: []
+user_id: elias

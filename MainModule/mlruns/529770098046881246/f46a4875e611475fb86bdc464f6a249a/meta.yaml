@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/f46a4875e611475fb86bdc464f6a249a/artifacts
+end_time: 1679486478980
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: f46a4875e611475fb86bdc464f6a249a
+run_name: luxuriant-worm-858
+run_uuid: f46a4875e611475fb86bdc464f6a249a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486478215
+status: 3
+tags: []
+user_id: elias

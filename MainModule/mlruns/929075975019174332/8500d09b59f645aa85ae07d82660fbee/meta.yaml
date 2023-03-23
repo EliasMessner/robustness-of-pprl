@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/8500d09b59f645aa85ae07d82660fbee/artifacts
+end_time: 1679502404412
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 8500d09b59f645aa85ae07d82660fbee
+run_name: bright-colt-716
+run_uuid: 8500d09b59f645aa85ae07d82660fbee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502403928
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/bb04ca03ba43449ca0f2c79c0608d5c6/artifacts
+end_time: 1679486488168
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: bb04ca03ba43449ca0f2c79c0608d5c6
+run_name: colorful-grouse-880
+run_uuid: bb04ca03ba43449ca0f2c79c0608d5c6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486487480
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0f2d129d6e3049f29bb38fc7b8e47568/artifacts
+end_time: 1679530558784
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0f2d129d6e3049f29bb38fc7b8e47568
+run_name: glamorous-deer-215
+run_uuid: 0f2d129d6e3049f29bb38fc7b8e47568
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530558362
+status: 3
+tags: []
+user_id: elias

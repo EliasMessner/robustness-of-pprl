@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/589b221789c14cca83c374bcd7c18104/artifacts
+end_time: 1679530238028
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 589b221789c14cca83c374bcd7c18104
+run_name: charming-goat-653
+run_uuid: 589b221789c14cca83c374bcd7c18104
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530237122
+status: 3
+tags: []
+user_id: elias

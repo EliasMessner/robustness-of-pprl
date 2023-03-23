@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dd355e0a28c343e8840e2fec978d1c35/artifacts
+end_time: 1679532725593
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dd355e0a28c343e8840e2fec978d1c35
+run_name: bouncy-tern-388
+run_uuid: dd355e0a28c343e8840e2fec978d1c35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532724796
+status: 3
+tags: []
+user_id: elias

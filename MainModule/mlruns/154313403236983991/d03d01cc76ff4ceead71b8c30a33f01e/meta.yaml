@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/d03d01cc76ff4ceead71b8c30a33f01e/artifacts
+end_time: 1679508237067
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: d03d01cc76ff4ceead71b8c30a33f01e
+run_name: bustling-fowl-261
+run_uuid: d03d01cc76ff4ceead71b8c30a33f01e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508236504
+status: 3
+tags: []
+user_id: elias

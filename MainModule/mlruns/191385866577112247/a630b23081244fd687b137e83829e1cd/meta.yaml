@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/a630b23081244fd687b137e83829e1cd/artifacts
+end_time: 1679512928214
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: a630b23081244fd687b137e83829e1cd
+run_name: shivering-wolf-640
+run_uuid: a630b23081244fd687b137e83829e1cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512926949
+status: 3
+tags: []
+user_id: elias

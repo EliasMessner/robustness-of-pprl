@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/25329c6282204d76a74d345e26f060a7/artifacts
+end_time: 1679502725138
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 25329c6282204d76a74d345e26f060a7
+run_name: selective-loon-99
+run_uuid: 25329c6282204d76a74d345e26f060a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502724278
+status: 3
+tags: []
+user_id: elias

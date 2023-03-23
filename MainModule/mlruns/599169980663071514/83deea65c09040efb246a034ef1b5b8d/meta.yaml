@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/83deea65c09040efb246a034ef1b5b8d/artifacts
+end_time: 1679531697572
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 83deea65c09040efb246a034ef1b5b8d
+run_name: exultant-shad-790
+run_uuid: 83deea65c09040efb246a034ef1b5b8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531696244
+status: 3
+tags: []
+user_id: elias

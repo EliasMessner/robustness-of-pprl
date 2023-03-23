@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9139d2a6d0de4bf9b09944d8b47032c4/artifacts
+end_time: 1679530461017
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9139d2a6d0de4bf9b09944d8b47032c4
+run_name: delightful-seal-752
+run_uuid: 9139d2a6d0de4bf9b09944d8b47032c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530460392
+status: 3
+tags: []
+user_id: elias

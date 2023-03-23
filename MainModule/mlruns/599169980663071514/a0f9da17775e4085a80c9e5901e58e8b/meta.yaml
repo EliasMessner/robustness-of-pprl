@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a0f9da17775e4085a80c9e5901e58e8b/artifacts
+end_time: 1679530451954
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a0f9da17775e4085a80c9e5901e58e8b
+run_name: magnificent-vole-454
+run_uuid: a0f9da17775e4085a80c9e5901e58e8b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530450954
+status: 3
+tags: []
+user_id: elias

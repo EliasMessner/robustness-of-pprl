@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f9c50853468649c6b3c6754d184f432c/artifacts
+end_time: 1679532125971
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f9c50853468649c6b3c6754d184f432c
+run_name: bouncy-ray-748
+run_uuid: f9c50853468649c6b3c6754d184f432c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532124971
+status: 3
+tags: []
+user_id: elias

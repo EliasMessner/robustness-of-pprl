@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f90e3b4c2d124faeb97171ffd4df2771/artifacts
+end_time: 1679532551528
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f90e3b4c2d124faeb97171ffd4df2771
+run_name: nebulous-rook-528
+run_uuid: f90e3b4c2d124faeb97171ffd4df2771
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532550637
+status: 3
+tags: []
+user_id: elias

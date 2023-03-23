@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/885337bad8d14dc6a676059d6f4d8f77/artifacts
+end_time: 1679482178945
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 885337bad8d14dc6a676059d6f4d8f77
+run_name: sneaky-zebra-992
+run_uuid: 885337bad8d14dc6a676059d6f4d8f77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482178617
+status: 3
+tags: []
+user_id: elias

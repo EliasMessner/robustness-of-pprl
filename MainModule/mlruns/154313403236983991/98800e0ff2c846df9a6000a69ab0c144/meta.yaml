@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/98800e0ff2c846df9a6000a69ab0c144/artifacts
+end_time: 1679508563949
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 98800e0ff2c846df9a6000a69ab0c144
+run_name: nebulous-wren-298
+run_uuid: 98800e0ff2c846df9a6000a69ab0c144
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508563012
+status: 3
+tags: []
+user_id: elias

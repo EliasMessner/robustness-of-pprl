@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/cf4d2c0594d3463ba8fc867f761c6eaa/artifacts
+end_time: 1679502661418
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: cf4d2c0594d3463ba8fc867f761c6eaa
+run_name: angry-doe-605
+run_uuid: cf4d2c0594d3463ba8fc867f761c6eaa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502660730
+status: 3
+tags: []
+user_id: elias

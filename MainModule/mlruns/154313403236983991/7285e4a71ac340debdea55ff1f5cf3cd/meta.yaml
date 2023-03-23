@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/7285e4a71ac340debdea55ff1f5cf3cd/artifacts
+end_time: 1679508081549
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 7285e4a71ac340debdea55ff1f5cf3cd
+run_name: kindly-crow-774
+run_uuid: 7285e4a71ac340debdea55ff1f5cf3cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508081314
+status: 3
+tags: []
+user_id: elias

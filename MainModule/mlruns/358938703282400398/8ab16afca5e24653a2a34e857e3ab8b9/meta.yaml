@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/8ab16afca5e24653a2a34e857e3ab8b9/artifacts
+end_time: 1679482225212
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 8ab16afca5e24653a2a34e857e3ab8b9
+run_name: amusing-donkey-966
+run_uuid: 8ab16afca5e24653a2a34e857e3ab8b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482224805
+status: 3
+tags: []
+user_id: elias

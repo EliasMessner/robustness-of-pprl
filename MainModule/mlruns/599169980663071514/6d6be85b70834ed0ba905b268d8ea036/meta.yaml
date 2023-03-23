@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6d6be85b70834ed0ba905b268d8ea036/artifacts
+end_time: 1679531572803
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6d6be85b70834ed0ba905b268d8ea036
+run_name: rare-bee-838
+run_uuid: 6d6be85b70834ed0ba905b268d8ea036
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531572038
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d039491268404bce9c39b55492fb2bc3/artifacts
+end_time: 1679530204246
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d039491268404bce9c39b55492fb2bc3
+run_name: gregarious-grub-434
+run_uuid: d039491268404bce9c39b55492fb2bc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530203683
+status: 3
+tags: []
+user_id: elias

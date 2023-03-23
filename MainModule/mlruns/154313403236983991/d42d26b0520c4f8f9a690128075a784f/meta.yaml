@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/d42d26b0520c4f8f9a690128075a784f/artifacts
+end_time: 1679508126331
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: d42d26b0520c4f8f9a690128075a784f
+run_name: fortunate-crow-682
+run_uuid: d42d26b0520c4f8f9a690128075a784f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508125550
+status: 3
+tags: []
+user_id: elias

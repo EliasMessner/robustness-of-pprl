@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/ae71a6f901ae47228a7d85351529ecf4/artifacts
+end_time: 1679489196422
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: ae71a6f901ae47228a7d85351529ecf4
+run_name: gaudy-pug-328
+run_uuid: ae71a6f901ae47228a7d85351529ecf4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489196219
+status: 3
+tags: []
+user_id: elias

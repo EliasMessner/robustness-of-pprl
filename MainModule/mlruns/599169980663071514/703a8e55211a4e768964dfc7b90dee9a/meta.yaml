@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/703a8e55211a4e768964dfc7b90dee9a/artifacts
+end_time: 1679531789949
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 703a8e55211a4e768964dfc7b90dee9a
+run_name: wise-quail-784
+run_uuid: 703a8e55211a4e768964dfc7b90dee9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531788449
+status: 3
+tags: []
+user_id: elias

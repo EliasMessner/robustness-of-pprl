@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/406ea77dc8844fa28e75c9c8c2916c7d/artifacts
+end_time: 1679530240059
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 406ea77dc8844fa28e75c9c8c2916c7d
+run_name: ambitious-cub-770
+run_uuid: 406ea77dc8844fa28e75c9c8c2916c7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530238965
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/06d20dea00714a05aa2f87f41431f701/artifacts
+end_time: 1679502701980
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 06d20dea00714a05aa2f87f41431f701
+run_name: gregarious-stork-976
+run_uuid: 06d20dea00714a05aa2f87f41431f701
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502700871
+status: 3
+tags: []
+user_id: elias

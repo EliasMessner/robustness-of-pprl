@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b83d9e94c6fc4e468ef97f698d32f825/artifacts
+end_time: 1679532561981
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b83d9e94c6fc4e468ef97f698d32f825
+run_name: orderly-wren-828
+run_uuid: b83d9e94c6fc4e468ef97f698d32f825
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532560419
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/82400c1da16a42afbec69e17b9055213/artifacts
+end_time: 1679508703108
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 82400c1da16a42afbec69e17b9055213
+run_name: popular-zebra-274
+run_uuid: 82400c1da16a42afbec69e17b9055213
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508702311
+status: 3
+tags: []
+user_id: elias

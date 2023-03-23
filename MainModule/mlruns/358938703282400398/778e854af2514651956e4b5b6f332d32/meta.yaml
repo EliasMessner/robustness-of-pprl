@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/778e854af2514651956e4b5b6f332d32/artifacts
+end_time: 1679482345839
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 778e854af2514651956e4b5b6f332d32
+run_name: sassy-snake-276
+run_uuid: 778e854af2514651956e4b5b6f332d32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482344980
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/63e7e58079624c9798d8ff0c8a9a01b0/artifacts
+end_time: 1679530304982
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 63e7e58079624c9798d8ff0c8a9a01b0
+run_name: welcoming-jay-811
+run_uuid: 63e7e58079624c9798d8ff0c8a9a01b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530304170
+status: 3
+tags: []
+user_id: elias

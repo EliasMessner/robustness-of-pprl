@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5c9686a626ab433793832d523b0dba6d/artifacts
+end_time: 1679531565522
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5c9686a626ab433793832d523b0dba6d
+run_name: upbeat-wasp-114
+run_uuid: 5c9686a626ab433793832d523b0dba6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531564975
+status: 3
+tags: []
+user_id: elias

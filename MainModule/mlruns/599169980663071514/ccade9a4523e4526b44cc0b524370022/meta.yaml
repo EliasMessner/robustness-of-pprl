@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ccade9a4523e4526b44cc0b524370022/artifacts
+end_time: 1679531556866
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ccade9a4523e4526b44cc0b524370022
+run_name: whimsical-sloth-400
+run_uuid: ccade9a4523e4526b44cc0b524370022
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531556303
+status: 3
+tags: []
+user_id: elias

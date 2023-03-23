@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/a14bdea8e760465095cf2009b0ceff6e/artifacts
+end_time: 1679489325518
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: a14bdea8e760465095cf2009b0ceff6e
+run_name: amazing-auk-104
+run_uuid: a14bdea8e760465095cf2009b0ceff6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489325331
+status: 3
+tags: []
+user_id: elias

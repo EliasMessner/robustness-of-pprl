@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/30728f31f2f8401490349c669a92a434/artifacts
+end_time: 1679532518027
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 30728f31f2f8401490349c669a92a434
+run_name: thundering-bird-135
+run_uuid: 30728f31f2f8401490349c669a92a434
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532516917
+status: 3
+tags: []
+user_id: elias

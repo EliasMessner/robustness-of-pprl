@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/45aa1ea8e39e451bac8acc867358c949/artifacts
+end_time: 1679508343882
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 45aa1ea8e39e451bac8acc867358c949
+run_name: dapper-kite-556
+run_uuid: 45aa1ea8e39e451bac8acc867358c949
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508343272
+status: 3
+tags: []
+user_id: elias

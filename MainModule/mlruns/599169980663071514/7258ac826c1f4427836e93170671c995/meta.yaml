@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/7258ac826c1f4427836e93170671c995/artifacts
+end_time: 1679530561690
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 7258ac826c1f4427836e93170671c995
+run_name: redolent-ox-646
+run_uuid: 7258ac826c1f4427836e93170671c995
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530561159
+status: 3
+tags: []
+user_id: elias

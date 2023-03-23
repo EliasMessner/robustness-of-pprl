@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c62f6ccba7d54bd79ddaf62980357885/artifacts
+end_time: 1679532674796
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c62f6ccba7d54bd79ddaf62980357885
+run_name: secretive-crab-314
+run_uuid: c62f6ccba7d54bd79ddaf62980357885
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532673780
+status: 3
+tags: []
+user_id: elias

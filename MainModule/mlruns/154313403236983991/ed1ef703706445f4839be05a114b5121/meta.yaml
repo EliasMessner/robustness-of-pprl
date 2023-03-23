@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/ed1ef703706445f4839be05a114b5121/artifacts
+end_time: 1679508446853
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: ed1ef703706445f4839be05a114b5121
+run_name: handsome-goose-747
+run_uuid: ed1ef703706445f4839be05a114b5121
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508446540
+status: 3
+tags: []
+user_id: elias

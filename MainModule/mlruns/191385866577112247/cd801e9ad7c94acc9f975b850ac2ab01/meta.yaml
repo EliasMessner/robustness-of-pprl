@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/cd801e9ad7c94acc9f975b850ac2ab01/artifacts
+end_time: 1679513193079
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: cd801e9ad7c94acc9f975b850ac2ab01
+run_name: adaptable-fish-441
+run_uuid: cd801e9ad7c94acc9f975b850ac2ab01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513192563
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/a1f41fe194854e5e84ace3e80ef98c7f/artifacts
+end_time: 1679508226004
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: a1f41fe194854e5e84ace3e80ef98c7f
+run_name: gifted-snake-743
+run_uuid: a1f41fe194854e5e84ace3e80ef98c7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508225004
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/a1037db75c8d4194b311a1dd479f79ae/artifacts
+end_time: 1679482097647
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: a1037db75c8d4194b311a1dd479f79ae
+run_name: redolent-dolphin-927
+run_uuid: a1037db75c8d4194b311a1dd479f79ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482097178
+status: 3
+tags: []
+user_id: elias

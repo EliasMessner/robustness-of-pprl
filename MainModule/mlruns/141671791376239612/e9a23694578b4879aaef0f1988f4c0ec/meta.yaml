@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/e9a23694578b4879aaef0f1988f4c0ec/artifacts
+end_time: 1679489397474
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: e9a23694578b4879aaef0f1988f4c0ec
+run_name: flawless-foal-48
+run_uuid: e9a23694578b4879aaef0f1988f4c0ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489397271
+status: 3
+tags: []
+user_id: elias

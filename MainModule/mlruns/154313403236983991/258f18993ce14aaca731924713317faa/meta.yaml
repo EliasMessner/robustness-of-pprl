@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/258f18993ce14aaca731924713317faa/artifacts
+end_time: 1679508346694
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 258f18993ce14aaca731924713317faa
+run_name: learned-shoat-353
+run_uuid: 258f18993ce14aaca731924713317faa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508346022
+status: 3
+tags: []
+user_id: elias

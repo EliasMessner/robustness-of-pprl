@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/827dcdedc4dc483eb63b68f3848baa6a/artifacts
+end_time: 1679486447354
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 827dcdedc4dc483eb63b68f3848baa6a
+run_name: sassy-shrimp-322
+run_uuid: 827dcdedc4dc483eb63b68f3848baa6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486447120
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b17eb4b59fbe4cd6a520f33436e55b10/artifacts
+end_time: 1679532022188
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b17eb4b59fbe4cd6a520f33436e55b10
+run_name: luminous-shrike-103
+run_uuid: b17eb4b59fbe4cd6a520f33436e55b10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532020407
+status: 3
+tags: []
+user_id: elias

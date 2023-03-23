@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5b7f8f2174654c8aa249eca40bedb8cf/artifacts
+end_time: 1679531761260
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5b7f8f2174654c8aa249eca40bedb8cf
+run_name: victorious-sloth-365
+run_uuid: 5b7f8f2174654c8aa249eca40bedb8cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531760463
+status: 3
+tags: []
+user_id: elias

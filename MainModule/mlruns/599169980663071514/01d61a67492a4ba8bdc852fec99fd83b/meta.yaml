@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/01d61a67492a4ba8bdc852fec99fd83b/artifacts
+end_time: 1679531256938
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 01d61a67492a4ba8bdc852fec99fd83b
+run_name: redolent-sloth-547
+run_uuid: 01d61a67492a4ba8bdc852fec99fd83b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531256235
+status: 3
+tags: []
+user_id: elias

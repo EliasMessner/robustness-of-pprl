@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/9a0fb4761389419f851d560f285eab63/artifacts
+end_time: 1679497396628
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 9a0fb4761389419f851d560f285eab63
+run_name: fearless-roo-600
+run_uuid: 9a0fb4761389419f851d560f285eab63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497395643
+status: 3
+tags: []
+user_id: elias

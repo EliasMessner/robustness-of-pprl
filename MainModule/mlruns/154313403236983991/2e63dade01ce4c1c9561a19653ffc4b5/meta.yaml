@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/2e63dade01ce4c1c9561a19653ffc4b5/artifacts
+end_time: 1679508548371
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 2e63dade01ce4c1c9561a19653ffc4b5
+run_name: glamorous-cub-55
+run_uuid: 2e63dade01ce4c1c9561a19653ffc4b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508548106
+status: 3
+tags: []
+user_id: elias

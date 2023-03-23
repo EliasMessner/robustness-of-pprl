@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/ae34bdd9bbf54d3ab6f843ef404eca7b/artifacts
+end_time: 1679489201094
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: ae34bdd9bbf54d3ab6f843ef404eca7b
+run_name: delightful-shoat-789
+run_uuid: ae34bdd9bbf54d3ab6f843ef404eca7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489200188
+status: 3
+tags: []
+user_id: elias

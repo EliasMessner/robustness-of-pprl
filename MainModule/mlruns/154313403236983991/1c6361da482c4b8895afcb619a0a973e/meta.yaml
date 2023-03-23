@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/1c6361da482c4b8895afcb619a0a973e/artifacts
+end_time: 1679508668889
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 1c6361da482c4b8895afcb619a0a973e
+run_name: popular-seal-372
+run_uuid: 1c6361da482c4b8895afcb619a0a973e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508668280
+status: 3
+tags: []
+user_id: elias

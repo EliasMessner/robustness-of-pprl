@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c183a96db98e4361951eb1a72f31ee3b/artifacts
+end_time: 1679530193683
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c183a96db98e4361951eb1a72f31ee3b
+run_name: spiffy-sloth-29
+run_uuid: c183a96db98e4361951eb1a72f31ee3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530193277
+status: 3
+tags: []
+user_id: elias

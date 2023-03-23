@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/2537362cb1be4ef7956d98fbe9a20005/artifacts
+end_time: 1679486460527
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 2537362cb1be4ef7956d98fbe9a20005
+run_name: bouncy-turtle-834
+run_uuid: 2537362cb1be4ef7956d98fbe9a20005
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486460309
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/cb73c366f6d44e9fbae77d8ce4926496/artifacts
+end_time: 1679531784762
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: cb73c366f6d44e9fbae77d8ce4926496
+run_name: handsome-moth-569
+run_uuid: cb73c366f6d44e9fbae77d8ce4926496
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531783559
+status: 3
+tags: []
+user_id: elias

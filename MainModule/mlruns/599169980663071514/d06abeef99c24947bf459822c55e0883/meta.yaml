@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d06abeef99c24947bf459822c55e0883/artifacts
+end_time: 1679530424922
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d06abeef99c24947bf459822c55e0883
+run_name: enthused-frog-744
+run_uuid: d06abeef99c24947bf459822c55e0883
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530423906
+status: 3
+tags: []
+user_id: elias

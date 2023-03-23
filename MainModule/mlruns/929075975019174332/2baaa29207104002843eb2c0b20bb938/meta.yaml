@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/2baaa29207104002843eb2c0b20bb938/artifacts
+end_time: 1679502416912
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 2baaa29207104002843eb2c0b20bb938
+run_name: sneaky-moose-393
+run_uuid: 2baaa29207104002843eb2c0b20bb938
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502416131
+status: 3
+tags: []
+user_id: elias

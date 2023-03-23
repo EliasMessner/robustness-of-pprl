@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f40c2c918559480490bd3a3c2ce38c43/artifacts
+end_time: 1679532445056
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f40c2c918559480490bd3a3c2ce38c43
+run_name: resilient-stork-799
+run_uuid: f40c2c918559480490bd3a3c2ce38c43
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532444244
+status: 3
+tags: []
+user_id: elias

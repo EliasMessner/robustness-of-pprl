@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/e276eeb4ba5b46f5ac78ff13ca7e7e4f/artifacts
+end_time: 1679497526942
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: e276eeb4ba5b46f5ac78ff13ca7e7e4f
+run_name: mercurial-auk-874
+run_uuid: e276eeb4ba5b46f5ac78ff13ca7e7e4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497525833
+status: 3
+tags: []
+user_id: elias

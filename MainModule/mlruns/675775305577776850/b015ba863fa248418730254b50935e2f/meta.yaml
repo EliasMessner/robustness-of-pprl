@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/b015ba863fa248418730254b50935e2f/artifacts
+end_time: 1679491295830
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: b015ba863fa248418730254b50935e2f
+run_name: learned-cub-306
+run_uuid: b015ba863fa248418730254b50935e2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491294299
+status: 3
+tags: []
+user_id: elias

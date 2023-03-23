@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/83f48d36d3274877b5f454fcb145cb16/artifacts
+end_time: 1679532300381
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 83f48d36d3274877b5f454fcb145cb16
+run_name: gaudy-shark-68
+run_uuid: 83f48d36d3274877b5f454fcb145cb16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532299350
+status: 3
+tags: []
+user_id: elias

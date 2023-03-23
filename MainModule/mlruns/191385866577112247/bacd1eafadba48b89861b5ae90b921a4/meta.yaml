@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/bacd1eafadba48b89861b5ae90b921a4/artifacts
+end_time: 1679513197094
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: bacd1eafadba48b89861b5ae90b921a4
+run_name: upbeat-hound-377
+run_uuid: bacd1eafadba48b89861b5ae90b921a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513196204
+status: 3
+tags: []
+user_id: elias

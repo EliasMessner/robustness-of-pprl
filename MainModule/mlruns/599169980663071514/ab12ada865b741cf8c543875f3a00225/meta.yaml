@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ab12ada865b741cf8c543875f3a00225/artifacts
+end_time: 1679532652217
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ab12ada865b741cf8c543875f3a00225
+run_name: exultant-moth-830
+run_uuid: ab12ada865b741cf8c543875f3a00225
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532651357
+status: 3
+tags: []
+user_id: elias

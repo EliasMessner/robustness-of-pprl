@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/e68c064c28e34b04ac4473d57e403d0a/artifacts
+end_time: 1679491315847
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: e68c064c28e34b04ac4473d57e403d0a
+run_name: traveling-mink-476
+run_uuid: e68c064c28e34b04ac4473d57e403d0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491314253
+status: 3
+tags: []
+user_id: elias

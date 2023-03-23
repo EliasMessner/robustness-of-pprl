@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/c5ed6966235d4449afe1e58f295d3845/artifacts
+end_time: 1679508361805
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: c5ed6966235d4449afe1e58f295d3845
+run_name: orderly-tern-817
+run_uuid: c5ed6966235d4449afe1e58f295d3845
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508361320
+status: 3
+tags: []
+user_id: elias

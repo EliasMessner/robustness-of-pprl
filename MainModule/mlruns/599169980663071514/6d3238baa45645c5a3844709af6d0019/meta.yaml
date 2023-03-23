@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6d3238baa45645c5a3844709af6d0019/artifacts
+end_time: 1679530677145
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6d3238baa45645c5a3844709af6d0019
+run_name: chill-duck-306
+run_uuid: 6d3238baa45645c5a3844709af6d0019
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530675942
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/c7f1cb595bf742cd9b163fbd0ae899aa/artifacts
+end_time: 1679491323503
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: c7f1cb595bf742cd9b163fbd0ae899aa
+run_name: rare-horse-982
+run_uuid: c7f1cb595bf742cd9b163fbd0ae899aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491321847
+status: 3
+tags: []
+user_id: elias

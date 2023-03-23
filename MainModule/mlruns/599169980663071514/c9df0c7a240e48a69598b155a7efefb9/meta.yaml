@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c9df0c7a240e48a69598b155a7efefb9/artifacts
+end_time: 1679531027480
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c9df0c7a240e48a69598b155a7efefb9
+run_name: painted-gnat-791
+run_uuid: c9df0c7a240e48a69598b155a7efefb9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531026230
+status: 3
+tags: []
+user_id: elias

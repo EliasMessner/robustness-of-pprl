@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/61f14b2e6f0d458faaf7bd7959c763aa/artifacts
+end_time: 1679508186661
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 61f14b2e6f0d458faaf7bd7959c763aa
+run_name: fortunate-goose-11
+run_uuid: 61f14b2e6f0d458faaf7bd7959c763aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508186208
+status: 3
+tags: []
+user_id: elias

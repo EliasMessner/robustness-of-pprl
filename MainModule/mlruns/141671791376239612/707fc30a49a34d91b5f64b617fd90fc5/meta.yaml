@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/707fc30a49a34d91b5f64b617fd90fc5/artifacts
+end_time: 1679489376457
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 707fc30a49a34d91b5f64b617fd90fc5
+run_name: rumbling-kite-716
+run_uuid: 707fc30a49a34d91b5f64b617fd90fc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489376254
+status: 3
+tags: []
+user_id: elias

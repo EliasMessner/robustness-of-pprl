@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4ea1af66fa3f4670ac93b2cc218ff257/artifacts
+end_time: 1679530859461
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4ea1af66fa3f4670ac93b2cc218ff257
+run_name: spiffy-squid-921
+run_uuid: 4ea1af66fa3f4670ac93b2cc218ff257
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530858633
+status: 3
+tags: []
+user_id: elias

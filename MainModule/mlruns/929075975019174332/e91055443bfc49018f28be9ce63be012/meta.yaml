@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/e91055443bfc49018f28be9ce63be012/artifacts
+end_time: 1679502651448
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: e91055443bfc49018f28be9ce63be012
+run_name: adaptable-shrew-230
+run_uuid: e91055443bfc49018f28be9ce63be012
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502651010
+status: 3
+tags: []
+user_id: elias

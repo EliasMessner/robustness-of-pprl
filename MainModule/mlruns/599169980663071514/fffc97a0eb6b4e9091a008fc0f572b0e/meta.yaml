@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fffc97a0eb6b4e9091a008fc0f572b0e/artifacts
+end_time: 1679531085966
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fffc97a0eb6b4e9091a008fc0f572b0e
+run_name: receptive-bird-970
+run_uuid: fffc97a0eb6b4e9091a008fc0f572b0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531085153
+status: 3
+tags: []
+user_id: elias

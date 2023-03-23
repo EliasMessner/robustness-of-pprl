@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/f59193149c3547c499ae3a6f1e8a966a/artifacts
+end_time: 1679502380412
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: f59193149c3547c499ae3a6f1e8a966a
+run_name: unequaled-shrimp-753
+run_uuid: f59193149c3547c499ae3a6f1e8a966a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502379881
+status: 3
+tags: []
+user_id: elias

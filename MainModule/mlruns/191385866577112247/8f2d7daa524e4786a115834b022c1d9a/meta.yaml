@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/8f2d7daa524e4786a115834b022c1d9a/artifacts
+end_time: 1679513037856
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 8f2d7daa524e4786a115834b022c1d9a
+run_name: traveling-skink-91
+run_uuid: 8f2d7daa524e4786a115834b022c1d9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513036559
+status: 3
+tags: []
+user_id: elias

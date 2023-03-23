@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/28fc0fff943c4195a32a408f71caa040/artifacts
+end_time: 1679531543960
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 28fc0fff943c4195a32a408f71caa040
+run_name: skillful-fox-309
+run_uuid: 28fc0fff943c4195a32a408f71caa040
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531542803
+status: 3
+tags: []
+user_id: elias

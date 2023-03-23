@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/739f52fc12354a33946b70904bc6a2ee/artifacts
+end_time: 1679486766767
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 739f52fc12354a33946b70904bc6a2ee
+run_name: secretive-croc-431
+run_uuid: 739f52fc12354a33946b70904bc6a2ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486765689
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/da2b00585659422f8a6d83bf07d5bb6c/artifacts
+end_time: 1679482746832
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: da2b00585659422f8a6d83bf07d5bb6c
+run_name: whimsical-panda-180
+run_uuid: da2b00585659422f8a6d83bf07d5bb6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482746238
+status: 3
+tags: []
+user_id: elias

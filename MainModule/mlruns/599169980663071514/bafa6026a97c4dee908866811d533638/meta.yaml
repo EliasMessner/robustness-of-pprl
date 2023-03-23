@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bafa6026a97c4dee908866811d533638/artifacts
+end_time: 1679531623273
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bafa6026a97c4dee908866811d533638
+run_name: languid-foal-714
+run_uuid: bafa6026a97c4dee908866811d533638
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531622492
+status: 3
+tags: []
+user_id: elias

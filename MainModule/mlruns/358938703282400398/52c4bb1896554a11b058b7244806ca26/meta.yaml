@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/52c4bb1896554a11b058b7244806ca26/artifacts
+end_time: 1679482525874
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 52c4bb1896554a11b058b7244806ca26
+run_name: skittish-hen-593
+run_uuid: 52c4bb1896554a11b058b7244806ca26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482525436
+status: 3
+tags: []
+user_id: elias

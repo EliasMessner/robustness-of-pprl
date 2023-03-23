@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/f5e4091ba3454f52a1aa0c3151cd1389/artifacts
+end_time: 1679489404193
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: f5e4091ba3454f52a1aa0c3151cd1389
+run_name: funny-cod-139
+run_uuid: f5e4091ba3454f52a1aa0c3151cd1389
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489403989
+status: 3
+tags: []
+user_id: elias

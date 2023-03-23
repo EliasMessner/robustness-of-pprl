@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e6cd6b5d5a3348d7b34d042d786a0925/artifacts
+end_time: 1679531803121
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e6cd6b5d5a3348d7b34d042d786a0925
+run_name: treasured-roo-571
+run_uuid: e6cd6b5d5a3348d7b34d042d786a0925
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531802059
+status: 3
+tags: []
+user_id: elias

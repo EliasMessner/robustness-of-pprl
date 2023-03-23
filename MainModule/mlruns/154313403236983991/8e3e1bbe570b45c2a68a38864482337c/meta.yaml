@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/8e3e1bbe570b45c2a68a38864482337c/artifacts
+end_time: 1679508443478
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 8e3e1bbe570b45c2a68a38864482337c
+run_name: enchanting-toad-131
+run_uuid: 8e3e1bbe570b45c2a68a38864482337c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508442540
+status: 3
+tags: []
+user_id: elias

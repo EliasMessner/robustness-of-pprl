@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/624126d0b6444c58ad07263ae8f94f23/artifacts
+end_time: 1679489338363
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 624126d0b6444c58ad07263ae8f94f23
+run_name: agreeable-seal-282
+run_uuid: 624126d0b6444c58ad07263ae8f94f23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489338160
+status: 3
+tags: []
+user_id: elias

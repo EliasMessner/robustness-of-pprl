@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/56bc2f22c1f143f29b0d12e46e74dc89/artifacts
+end_time: 1679482184351
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 56bc2f22c1f143f29b0d12e46e74dc89
+run_name: upbeat-trout-352
+run_uuid: 56bc2f22c1f143f29b0d12e46e74dc89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482183648
+status: 3
+tags: []
+user_id: elias

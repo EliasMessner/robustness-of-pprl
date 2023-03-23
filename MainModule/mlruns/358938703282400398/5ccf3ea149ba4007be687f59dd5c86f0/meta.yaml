@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/5ccf3ea149ba4007be687f59dd5c86f0/artifacts
+end_time: 1679482518608
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 5ccf3ea149ba4007be687f59dd5c86f0
+run_name: able-ox-483
+run_uuid: 5ccf3ea149ba4007be687f59dd5c86f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482518171
+status: 3
+tags: []
+user_id: elias

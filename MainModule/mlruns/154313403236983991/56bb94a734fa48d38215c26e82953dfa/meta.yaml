@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/56bb94a734fa48d38215c26e82953dfa/artifacts
+end_time: 1679508334241
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 56bb94a734fa48d38215c26e82953dfa
+run_name: youthful-shrike-429
+run_uuid: 56bb94a734fa48d38215c26e82953dfa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508333288
+status: 3
+tags: []
+user_id: elias

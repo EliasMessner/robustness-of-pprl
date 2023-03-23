@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/18481167bb9747a9a5dbe5057f8ee1ef/artifacts
+end_time: 1679482699080
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 18481167bb9747a9a5dbe5057f8ee1ef
+run_name: bright-moth-447
+run_uuid: 18481167bb9747a9a5dbe5057f8ee1ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482698784
+status: 3
+tags: []
+user_id: elias

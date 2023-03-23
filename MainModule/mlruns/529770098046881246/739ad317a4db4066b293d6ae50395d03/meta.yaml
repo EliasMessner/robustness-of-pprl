@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/739ad317a4db4066b293d6ae50395d03/artifacts
+end_time: 1679486445979
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 739ad317a4db4066b293d6ae50395d03
+run_name: fortunate-snake-538
+run_uuid: 739ad317a4db4066b293d6ae50395d03
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486445698
+status: 3
+tags: []
+user_id: elias

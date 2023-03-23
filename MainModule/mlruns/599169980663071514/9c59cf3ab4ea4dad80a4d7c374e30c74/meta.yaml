@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9c59cf3ab4ea4dad80a4d7c374e30c74/artifacts
+end_time: 1679532624123
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9c59cf3ab4ea4dad80a4d7c374e30c74
+run_name: adorable-perch-803
+run_uuid: 9c59cf3ab4ea4dad80a4d7c374e30c74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532623342
+status: 3
+tags: []
+user_id: elias

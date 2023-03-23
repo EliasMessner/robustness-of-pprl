@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/a3880f379ab6462db4a8bdcb7b4331d2/artifacts
+end_time: 1679508689780
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: a3880f379ab6462db4a8bdcb7b4331d2
+run_name: upbeat-shad-50
+run_uuid: a3880f379ab6462db4a8bdcb7b4331d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508689296
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f070530dac6447ffbd05e3bec1a02746/artifacts
+end_time: 1679531960390
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f070530dac6447ffbd05e3bec1a02746
+run_name: receptive-trout-360
+run_uuid: f070530dac6447ffbd05e3bec1a02746
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531959375
+status: 3
+tags: []
+user_id: elias

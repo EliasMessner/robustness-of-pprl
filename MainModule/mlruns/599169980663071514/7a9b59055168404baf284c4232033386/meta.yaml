@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/7a9b59055168404baf284c4232033386/artifacts
+end_time: 1679531618211
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 7a9b59055168404baf284c4232033386
+run_name: adorable-wren-530
+run_uuid: 7a9b59055168404baf284c4232033386
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531617648
+status: 3
+tags: []
+user_id: elias

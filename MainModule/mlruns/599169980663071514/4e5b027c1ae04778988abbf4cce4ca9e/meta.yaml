@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4e5b027c1ae04778988abbf4cce4ca9e/artifacts
+end_time: 1679530340030
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4e5b027c1ae04778988abbf4cce4ca9e
+run_name: lyrical-rat-354
+run_uuid: 4e5b027c1ae04778988abbf4cce4ca9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530339390
+status: 3
+tags: []
+user_id: elias

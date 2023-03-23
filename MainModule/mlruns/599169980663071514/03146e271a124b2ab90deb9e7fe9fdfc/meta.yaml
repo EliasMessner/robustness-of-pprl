@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/03146e271a124b2ab90deb9e7fe9fdfc/artifacts
+end_time: 1679531364378
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 03146e271a124b2ab90deb9e7fe9fdfc
+run_name: wistful-stork-873
+run_uuid: 03146e271a124b2ab90deb9e7fe9fdfc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531363378
+status: 3
+tags: []
+user_id: elias

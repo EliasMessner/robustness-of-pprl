@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ef96d7cd0d4943979bbf568954dfa5cf/artifacts
+end_time: 1679532666498
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ef96d7cd0d4943979bbf568954dfa5cf
+run_name: unique-whale-621
+run_uuid: ef96d7cd0d4943979bbf568954dfa5cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532665513
+status: 3
+tags: []
+user_id: elias

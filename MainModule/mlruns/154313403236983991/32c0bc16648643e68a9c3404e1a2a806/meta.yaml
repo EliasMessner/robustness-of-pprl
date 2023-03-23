@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/32c0bc16648643e68a9c3404e1a2a806/artifacts
+end_time: 1679508091893
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 32c0bc16648643e68a9c3404e1a2a806
+run_name: bedecked-conch-762
+run_uuid: 32c0bc16648643e68a9c3404e1a2a806
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508091158
+status: 3
+tags: []
+user_id: elias

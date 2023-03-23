@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/569e7a973beb4dd2a67265498d1e1b12/artifacts
+end_time: 1679532128910
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 569e7a973beb4dd2a67265498d1e1b12
+run_name: crawling-stork-676
+run_uuid: 569e7a973beb4dd2a67265498d1e1b12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532128238
+status: 3
+tags: []
+user_id: elias

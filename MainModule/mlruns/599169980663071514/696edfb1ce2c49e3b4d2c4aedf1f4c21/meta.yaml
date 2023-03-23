@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/696edfb1ce2c49e3b4d2c4aedf1f4c21/artifacts
+end_time: 1679531566335
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 696edfb1ce2c49e3b4d2c4aedf1f4c21
+run_name: amazing-gull-424
+run_uuid: 696edfb1ce2c49e3b4d2c4aedf1f4c21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531565788
+status: 3
+tags: []
+user_id: elias

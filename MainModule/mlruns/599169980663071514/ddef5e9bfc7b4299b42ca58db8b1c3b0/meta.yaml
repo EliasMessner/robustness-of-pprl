@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ddef5e9bfc7b4299b42ca58db8b1c3b0/artifacts
+end_time: 1679531119326
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ddef5e9bfc7b4299b42ca58db8b1c3b0
+run_name: intelligent-calf-153
+run_uuid: ddef5e9bfc7b4299b42ca58db8b1c3b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531118811
+status: 3
+tags: []
+user_id: elias

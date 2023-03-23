@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/242fa4db39dd42efaa09f2ed3b35bfe7/artifacts
+end_time: 1679532192583
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 242fa4db39dd42efaa09f2ed3b35bfe7
+run_name: secretive-auk-891
+run_uuid: 242fa4db39dd42efaa09f2ed3b35bfe7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532191301
+status: 3
+tags: []
+user_id: elias

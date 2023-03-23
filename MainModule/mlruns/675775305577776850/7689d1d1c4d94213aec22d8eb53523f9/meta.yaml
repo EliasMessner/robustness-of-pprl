@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/7689d1d1c4d94213aec22d8eb53523f9/artifacts
+end_time: 1679491422055
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 7689d1d1c4d94213aec22d8eb53523f9
+run_name: nervous-vole-981
+run_uuid: 7689d1d1c4d94213aec22d8eb53523f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491420414
+status: 3
+tags: []
+user_id: elias

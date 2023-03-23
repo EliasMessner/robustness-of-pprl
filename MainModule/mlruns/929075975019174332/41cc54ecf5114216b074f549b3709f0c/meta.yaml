@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/41cc54ecf5114216b074f549b3709f0c/artifacts
+end_time: 1679502505336
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 41cc54ecf5114216b074f549b3709f0c
+run_name: debonair-vole-224
+run_uuid: 41cc54ecf5114216b074f549b3709f0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502504914
+status: 3
+tags: []
+user_id: elias

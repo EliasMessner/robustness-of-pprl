@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3c45916613224a1496da5bc557d6ad42/artifacts
+end_time: 1679531620586
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3c45916613224a1496da5bc557d6ad42
+run_name: fun-lark-946
+run_uuid: 3c45916613224a1496da5bc557d6ad42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531619961
+status: 3
+tags: []
+user_id: elias

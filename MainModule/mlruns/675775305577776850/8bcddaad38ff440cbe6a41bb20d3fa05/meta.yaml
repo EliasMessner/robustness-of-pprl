@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/8bcddaad38ff440cbe6a41bb20d3fa05/artifacts
+end_time: 1679491312799
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 8bcddaad38ff440cbe6a41bb20d3fa05
+run_name: silent-stoat-628
+run_uuid: 8bcddaad38ff440cbe6a41bb20d3fa05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491311845
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/ef8dc6c5d28941b1b2124b64abd23d61/artifacts
+end_time: 1679482603812
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: ef8dc6c5d28941b1b2124b64abd23d61
+run_name: bright-lark-135
+run_uuid: ef8dc6c5d28941b1b2124b64abd23d61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482603406
+status: 3
+tags: []
+user_id: elias

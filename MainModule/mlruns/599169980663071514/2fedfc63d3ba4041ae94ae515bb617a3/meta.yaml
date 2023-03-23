@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2fedfc63d3ba4041ae94ae515bb617a3/artifacts
+end_time: 1679532153628
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2fedfc63d3ba4041ae94ae515bb617a3
+run_name: intrigued-lynx-996
+run_uuid: 2fedfc63d3ba4041ae94ae515bb617a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532151785
+status: 3
+tags: []
+user_id: elias

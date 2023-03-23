@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/3f0e6ff332ad47a0a11f1542f8c71695/artifacts
+end_time: 1679512863665
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 3f0e6ff332ad47a0a11f1542f8c71695
+run_name: intelligent-mink-41
+run_uuid: 3f0e6ff332ad47a0a11f1542f8c71695
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512862837
+status: 3
+tags: []
+user_id: elias

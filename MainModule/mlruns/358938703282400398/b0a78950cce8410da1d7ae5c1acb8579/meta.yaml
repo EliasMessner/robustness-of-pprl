@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/b0a78950cce8410da1d7ae5c1acb8579/artifacts
+end_time: 1679482122959
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: b0a78950cce8410da1d7ae5c1acb8579
+run_name: calm-lynx-305
+run_uuid: b0a78950cce8410da1d7ae5c1acb8579
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482122569
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3fd80946ccf04551860157550d6dfc17/artifacts
+end_time: 1679532140003
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3fd80946ccf04551860157550d6dfc17
+run_name: orderly-bird-155
+run_uuid: 3fd80946ccf04551860157550d6dfc17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532138800
+status: 3
+tags: []
+user_id: elias

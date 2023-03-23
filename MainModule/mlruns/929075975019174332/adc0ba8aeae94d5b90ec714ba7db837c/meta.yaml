@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/adc0ba8aeae94d5b90ec714ba7db837c/artifacts
+end_time: 1679502688433
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: adc0ba8aeae94d5b90ec714ba7db837c
+run_name: angry-boar-438
+run_uuid: adc0ba8aeae94d5b90ec714ba7db837c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502687793
+status: 3
+tags: []
+user_id: elias

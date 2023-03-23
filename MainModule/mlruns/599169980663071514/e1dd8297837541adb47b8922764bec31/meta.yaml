@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e1dd8297837541adb47b8922764bec31/artifacts
+end_time: 1679530218919
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e1dd8297837541adb47b8922764bec31
+run_name: vaunted-shrew-673
+run_uuid: e1dd8297837541adb47b8922764bec31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530218247
+status: 3
+tags: []
+user_id: elias

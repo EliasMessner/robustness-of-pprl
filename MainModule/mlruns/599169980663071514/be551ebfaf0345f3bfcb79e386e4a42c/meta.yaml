@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/be551ebfaf0345f3bfcb79e386e4a42c/artifacts
+end_time: 1679531344830
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: be551ebfaf0345f3bfcb79e386e4a42c
+run_name: silent-flea-536
+run_uuid: be551ebfaf0345f3bfcb79e386e4a42c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531343924
+status: 3
+tags: []
+user_id: elias

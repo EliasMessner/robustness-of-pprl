@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/23b61819ff194f779e5395acb7daf2d5/artifacts
+end_time: 1679482417450
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 23b61819ff194f779e5395acb7daf2d5
+run_name: gregarious-trout-7
+run_uuid: 23b61819ff194f779e5395acb7daf2d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482417168
+status: 3
+tags: []
+user_id: elias

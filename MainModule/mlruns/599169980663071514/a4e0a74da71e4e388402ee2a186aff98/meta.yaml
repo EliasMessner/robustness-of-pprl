@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a4e0a74da71e4e388402ee2a186aff98/artifacts
+end_time: 1679531660478
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a4e0a74da71e4e388402ee2a186aff98
+run_name: rebellious-kit-952
+run_uuid: a4e0a74da71e4e388402ee2a186aff98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531659665
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/409a79edd79f43549b4c6b22f1003afa/artifacts
+end_time: 1679502428147
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 409a79edd79f43549b4c6b22f1003afa
+run_name: worried-dog-912
+run_uuid: 409a79edd79f43549b4c6b22f1003afa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502427757
+status: 3
+tags: []
+user_id: elias

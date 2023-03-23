@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/46717155264c4122ba4afc994021d0d0/artifacts
+end_time: 1679482482232
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 46717155264c4122ba4afc994021d0d0
+run_name: entertaining-hen-990
+run_uuid: 46717155264c4122ba4afc994021d0d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482481701
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/e7c4fe94c74749b5a55a11c36a794ad9/artifacts
+end_time: 1679489374535
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: e7c4fe94c74749b5a55a11c36a794ad9
+run_name: trusting-bird-104
+run_uuid: e7c4fe94c74749b5a55a11c36a794ad9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489374332
+status: 3
+tags: []
+user_id: elias

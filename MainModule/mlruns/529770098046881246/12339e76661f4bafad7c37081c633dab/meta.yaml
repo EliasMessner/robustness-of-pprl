@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/12339e76661f4bafad7c37081c633dab/artifacts
+end_time: 1679486764564
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 12339e76661f4bafad7c37081c633dab
+run_name: fortunate-sow-487
+run_uuid: 12339e76661f4bafad7c37081c633dab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486763783
+status: 3
+tags: []
+user_id: elias

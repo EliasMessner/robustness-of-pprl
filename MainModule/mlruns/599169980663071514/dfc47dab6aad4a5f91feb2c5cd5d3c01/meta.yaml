@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dfc47dab6aad4a5f91feb2c5cd5d3c01/artifacts
+end_time: 1679530809743
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dfc47dab6aad4a5f91feb2c5cd5d3c01
+run_name: useful-kite-563
+run_uuid: dfc47dab6aad4a5f91feb2c5cd5d3c01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530809274
+status: 3
+tags: []
+user_id: elias

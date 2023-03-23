@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/243d592783174202b6bec94cddbfb21c/artifacts
+end_time: 1679482751410
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 243d592783174202b6bec94cddbfb21c
+run_name: capable-pug-783
+run_uuid: 243d592783174202b6bec94cddbfb21c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482751175
+status: 3
+tags: []
+user_id: elias

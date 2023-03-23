@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/e3fd33c6d0d24b2b81675bd84ee88e51/artifacts
+end_time: 1679512889853
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: e3fd33c6d0d24b2b81675bd84ee88e51
+run_name: adventurous-fawn-32
+run_uuid: e3fd33c6d0d24b2b81675bd84ee88e51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512888790
+status: 3
+tags: []
+user_id: elias

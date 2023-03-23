@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c4d5e653c9e3496ca7dcaa85b2f57b02/artifacts
+end_time: 1679530755523
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c4d5e653c9e3496ca7dcaa85b2f57b02
+run_name: skillful-auk-938
+run_uuid: c4d5e653c9e3496ca7dcaa85b2f57b02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530754351
+status: 3
+tags: []
+user_id: elias

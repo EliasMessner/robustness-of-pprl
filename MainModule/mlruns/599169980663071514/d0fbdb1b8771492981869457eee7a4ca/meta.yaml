@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d0fbdb1b8771492981869457eee7a4ca/artifacts
+end_time: 1679532708718
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d0fbdb1b8771492981869457eee7a4ca
+run_name: wise-toad-342
+run_uuid: d0fbdb1b8771492981869457eee7a4ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532708015
+status: 3
+tags: []
+user_id: elias

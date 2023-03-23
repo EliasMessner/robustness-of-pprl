@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/71a47d6317404d82a36f6f05169e410d/artifacts
+end_time: 1679530316795
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 71a47d6317404d82a36f6f05169e410d
+run_name: fun-shrike-998
+run_uuid: 71a47d6317404d82a36f6f05169e410d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530315076
+status: 3
+tags: []
+user_id: elias

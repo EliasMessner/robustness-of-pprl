@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f8474b36ebc64f248ed9af4334bb6935/artifacts
+end_time: 1679530426828
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f8474b36ebc64f248ed9af4334bb6935
+run_name: sneaky-squid-552
+run_uuid: f8474b36ebc64f248ed9af4334bb6935
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530425719
+status: 3
+tags: []
+user_id: elias

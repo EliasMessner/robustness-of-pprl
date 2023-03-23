@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/95ffd033d68f44198c83d76792a8a087/artifacts
+end_time: 1679482062192
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 95ffd033d68f44198c83d76792a8a087
+run_name: adorable-deer-551
+run_uuid: 95ffd033d68f44198c83d76792a8a087
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482061802
+status: 3
+tags: []
+user_id: elias

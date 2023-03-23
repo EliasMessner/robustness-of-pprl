@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c48696ff04054f46832197051a98f4c0/artifacts
+end_time: 1679531708198
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c48696ff04054f46832197051a98f4c0
+run_name: unleashed-croc-157
+run_uuid: c48696ff04054f46832197051a98f4c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531707525
+status: 3
+tags: []
+user_id: elias

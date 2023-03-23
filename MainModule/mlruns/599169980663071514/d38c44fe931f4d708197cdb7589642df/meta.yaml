@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d38c44fe931f4d708197cdb7589642df/artifacts
+end_time: 1679530348374
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d38c44fe931f4d708197cdb7589642df
+run_name: gregarious-conch-717
+run_uuid: d38c44fe931f4d708197cdb7589642df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530347687
+status: 3
+tags: []
+user_id: elias

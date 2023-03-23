@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/1977cdbe9a774abb95c6f6ffdac57aaa/artifacts
+end_time: 1679502311020
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 1977cdbe9a774abb95c6f6ffdac57aaa
+run_name: debonair-chimp-76
+run_uuid: 1977cdbe9a774abb95c6f6ffdac57aaa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502310630
+status: 3
+tags: []
+user_id: elias

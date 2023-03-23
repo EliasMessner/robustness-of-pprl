@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/c306eadb29644b819a17886da831603b/artifacts
+end_time: 1679502445304
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: c306eadb29644b819a17886da831603b
+run_name: blushing-tern-437
+run_uuid: c306eadb29644b819a17886da831603b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502444929
+status: 3
+tags: []
+user_id: elias

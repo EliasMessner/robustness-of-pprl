@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/1bcce2de37fe4150b852a56c885bbb41/artifacts
+end_time: 1679512996903
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 1bcce2de37fe4150b852a56c885bbb41
+run_name: tasteful-tern-725
+run_uuid: 1bcce2de37fe4150b852a56c885bbb41
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512996012
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/3699448e46a145b79730d870d74f2221/artifacts
+end_time: 1679482245102
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 3699448e46a145b79730d870d74f2221
+run_name: secretive-shad-776
+run_uuid: 3699448e46a145b79730d870d74f2221
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482244493
+status: 3
+tags: []
+user_id: elias

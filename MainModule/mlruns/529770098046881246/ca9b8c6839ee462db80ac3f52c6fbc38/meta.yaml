@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/ca9b8c6839ee462db80ac3f52c6fbc38/artifacts
+end_time: 1679486582030
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: ca9b8c6839ee462db80ac3f52c6fbc38
+run_name: unequaled-trout-527
+run_uuid: ca9b8c6839ee462db80ac3f52c6fbc38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486581764
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/14f8ec15fb454d859c63e43729542e82/artifacts
+end_time: 1679532603934
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 14f8ec15fb454d859c63e43729542e82
+run_name: gifted-perch-53
+run_uuid: 14f8ec15fb454d859c63e43729542e82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532602169
+status: 3
+tags: []
+user_id: elias

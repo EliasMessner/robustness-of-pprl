@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/76e5758d0cc54580af2afe337b0dafdf/artifacts
+end_time: 1679489219299
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 76e5758d0cc54580af2afe337b0dafdf
+run_name: blushing-snail-254
+run_uuid: 76e5758d0cc54580af2afe337b0dafdf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489219127
+status: 3
+tags: []
+user_id: elias

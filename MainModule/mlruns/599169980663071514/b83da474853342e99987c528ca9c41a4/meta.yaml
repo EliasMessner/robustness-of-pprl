@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b83da474853342e99987c528ca9c41a4/artifacts
+end_time: 1679532427524
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b83da474853342e99987c528ca9c41a4
+run_name: delicate-calf-236
+run_uuid: b83da474853342e99987c528ca9c41a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532426492
+status: 3
+tags: []
+user_id: elias

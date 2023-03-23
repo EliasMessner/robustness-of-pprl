@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/e508fb5572c049ee8c934c11693c33d6/artifacts
+end_time: 1679508367492
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: e508fb5572c049ee8c934c11693c33d6
+run_name: glamorous-bug-357
+run_uuid: e508fb5572c049ee8c934c11693c33d6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508366367
+status: 3
+tags: []
+user_id: elias

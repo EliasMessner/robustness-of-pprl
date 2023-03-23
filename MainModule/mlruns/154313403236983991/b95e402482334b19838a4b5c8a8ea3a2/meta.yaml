@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/b95e402482334b19838a4b5c8a8ea3a2/artifacts
+end_time: 1679508093721
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: b95e402482334b19838a4b5c8a8ea3a2
+run_name: loud-bass-780
+run_uuid: b95e402482334b19838a4b5c8a8ea3a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508092877
+status: 3
+tags: []
+user_id: elias

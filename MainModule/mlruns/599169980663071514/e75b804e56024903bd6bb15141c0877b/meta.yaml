@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e75b804e56024903bd6bb15141c0877b/artifacts
+end_time: 1679531167123
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e75b804e56024903bd6bb15141c0877b
+run_name: calm-wren-123
+run_uuid: e75b804e56024903bd6bb15141c0877b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531166045
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/32ae819dabb547ac82a0c6da4c6f7224/artifacts
+end_time: 1679508527010
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 32ae819dabb547ac82a0c6da4c6f7224
+run_name: intelligent-ray-171
+run_uuid: 32ae819dabb547ac82a0c6da4c6f7224
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508526417
+status: 3
+tags: []
+user_id: elias

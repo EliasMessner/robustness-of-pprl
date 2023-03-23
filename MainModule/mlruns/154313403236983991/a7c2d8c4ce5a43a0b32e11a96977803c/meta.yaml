@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/a7c2d8c4ce5a43a0b32e11a96977803c/artifacts
+end_time: 1679508701342
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: a7c2d8c4ce5a43a0b32e11a96977803c
+run_name: beautiful-shrimp-27
+run_uuid: a7c2d8c4ce5a43a0b32e11a96977803c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508700546
+status: 3
+tags: []
+user_id: elias

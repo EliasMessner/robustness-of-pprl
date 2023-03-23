@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/745dfeae40b44bfa9bb2de0ee2af2ff4/artifacts
+end_time: 1679531418629
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 745dfeae40b44bfa9bb2de0ee2af2ff4
+run_name: unequaled-dove-895
+run_uuid: 745dfeae40b44bfa9bb2de0ee2af2ff4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531416801
+status: 3
+tags: []
+user_id: elias

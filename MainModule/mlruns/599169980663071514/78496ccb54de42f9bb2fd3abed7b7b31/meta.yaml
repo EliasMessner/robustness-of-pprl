@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/78496ccb54de42f9bb2fd3abed7b7b31/artifacts
+end_time: 1679530739740
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 78496ccb54de42f9bb2fd3abed7b7b31
+run_name: funny-crane-509
+run_uuid: 78496ccb54de42f9bb2fd3abed7b7b31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530737865
+status: 3
+tags: []
+user_id: elias

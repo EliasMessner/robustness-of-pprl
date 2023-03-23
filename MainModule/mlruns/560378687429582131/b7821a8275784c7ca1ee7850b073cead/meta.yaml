@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/b7821a8275784c7ca1ee7850b073cead/artifacts
+end_time: 1679497248061
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: b7821a8275784c7ca1ee7850b073cead
+run_name: whimsical-gnat-188
+run_uuid: b7821a8275784c7ca1ee7850b073cead
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497246061
+status: 3
+tags: []
+user_id: elias

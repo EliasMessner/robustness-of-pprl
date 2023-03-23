@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9f7c5d4abefe4b849c30a644f8be8804/artifacts
+end_time: 1679530385327
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9f7c5d4abefe4b849c30a644f8be8804
+run_name: upbeat-stork-903
+run_uuid: 9f7c5d4abefe4b849c30a644f8be8804
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530384483
+status: 3
+tags: []
+user_id: elias

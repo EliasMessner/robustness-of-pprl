@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/7a1d9da9cd1447cf98225b7d5023203e/artifacts
+end_time: 1679502200752
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 7a1d9da9cd1447cf98225b7d5023203e
+run_name: rumbling-sloth-224
+run_uuid: 7a1d9da9cd1447cf98225b7d5023203e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502200393
+status: 3
+tags: []
+user_id: elias

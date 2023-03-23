@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/629933f696e044fb8cf7fe4cb63d2182/artifacts
+end_time: 1679530914978
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 629933f696e044fb8cf7fe4cb63d2182
+run_name: welcoming-rook-888
+run_uuid: 629933f696e044fb8cf7fe4cb63d2182
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530913806
+status: 3
+tags: []
+user_id: elias

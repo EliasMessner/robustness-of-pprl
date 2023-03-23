@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/cbfbd6a0509b433c89e0c062e9b8afe5/artifacts
+end_time: 1679502630104
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: cbfbd6a0509b433c89e0c062e9b8afe5
+run_name: overjoyed-cod-439
+run_uuid: cbfbd6a0509b433c89e0c062e9b8afe5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502629229
+status: 3
+tags: []
+user_id: elias

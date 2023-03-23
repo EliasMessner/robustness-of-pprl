@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/486b69f244bc4a1d9ef96e7f01628694/artifacts
+end_time: 1679508133003
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 486b69f244bc4a1d9ef96e7f01628694
+run_name: likeable-sow-82
+run_uuid: 486b69f244bc4a1d9ef96e7f01628694
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508132175
+status: 3
+tags: []
+user_id: elias

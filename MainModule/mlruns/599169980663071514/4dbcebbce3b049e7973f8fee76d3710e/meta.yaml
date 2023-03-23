@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4dbcebbce3b049e7973f8fee76d3710e/artifacts
+end_time: 1679531213671
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4dbcebbce3b049e7973f8fee76d3710e
+run_name: likeable-finch-665
+run_uuid: 4dbcebbce3b049e7973f8fee76d3710e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531212390
+status: 3
+tags: []
+user_id: elias

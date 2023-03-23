@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/ec2c510594ca432b88ff08951d88e6d9/artifacts
+end_time: 1679489273112
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: ec2c510594ca432b88ff08951d88e6d9
+run_name: useful-cow-821
+run_uuid: ec2c510594ca432b88ff08951d88e6d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489272940
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/840d07e2e71f41d9bf7ef1df76ab9d34/artifacts
+end_time: 1679513295159
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 840d07e2e71f41d9bf7ef1df76ab9d34
+run_name: gifted-boar-471
+run_uuid: 840d07e2e71f41d9bf7ef1df76ab9d34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513293534
+status: 3
+tags: []
+user_id: elias

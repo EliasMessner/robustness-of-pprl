@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/b989565ffbff4df49baaedc0b85c7617/artifacts
+end_time: 1679513125218
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: b989565ffbff4df49baaedc0b85c7617
+run_name: valuable-midge-533
+run_uuid: b989565ffbff4df49baaedc0b85c7617
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513124265
+status: 3
+tags: []
+user_id: elias

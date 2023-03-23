@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ba966f975bbd47bf8bb1752e8d841505/artifacts
+end_time: 1679530628677
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ba966f975bbd47bf8bb1752e8d841505
+run_name: loud-rat-743
+run_uuid: ba966f975bbd47bf8bb1752e8d841505
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530627989
+status: 3
+tags: []
+user_id: elias

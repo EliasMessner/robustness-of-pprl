@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1fe44ad84fa7412fb11f01d071c28584/artifacts
+end_time: 1679530594785
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1fe44ad84fa7412fb11f01d071c28584
+run_name: bald-asp-198
+run_uuid: 1fe44ad84fa7412fb11f01d071c28584
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530594066
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f9976dd852ac45628146b5d9e4c4b6e4/artifacts
+end_time: 1679530343171
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f9976dd852ac45628146b5d9e4c4b6e4
+run_name: trusting-moth-586
+run_uuid: f9976dd852ac45628146b5d9e4c4b6e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530342687
+status: 3
+tags: []
+user_id: elias

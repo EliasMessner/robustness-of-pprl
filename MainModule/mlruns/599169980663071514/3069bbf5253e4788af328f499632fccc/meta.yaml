@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3069bbf5253e4788af328f499632fccc/artifacts
+end_time: 1679531300970
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3069bbf5253e4788af328f499632fccc
+run_name: colorful-swan-559
+run_uuid: 3069bbf5253e4788af328f499632fccc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531300408
+status: 3
+tags: []
+user_id: elias

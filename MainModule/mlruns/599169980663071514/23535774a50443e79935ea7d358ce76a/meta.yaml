@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/23535774a50443e79935ea7d358ce76a/artifacts
+end_time: 1679531343392
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 23535774a50443e79935ea7d358ce76a
+run_name: smiling-asp-970
+run_uuid: 23535774a50443e79935ea7d358ce76a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531342549
+status: 3
+tags: []
+user_id: elias

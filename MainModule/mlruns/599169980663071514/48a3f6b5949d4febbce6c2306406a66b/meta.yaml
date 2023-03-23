@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/48a3f6b5949d4febbce6c2306406a66b/artifacts
+end_time: 1679530644708
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 48a3f6b5949d4febbce6c2306406a66b
+run_name: classy-midge-143
+run_uuid: 48a3f6b5949d4febbce6c2306406a66b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530643786
+status: 3
+tags: []
+user_id: elias

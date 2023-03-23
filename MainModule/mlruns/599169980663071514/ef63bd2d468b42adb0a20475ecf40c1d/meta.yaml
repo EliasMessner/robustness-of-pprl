@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ef63bd2d468b42adb0a20475ecf40c1d/artifacts
+end_time: 1679532574106
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ef63bd2d468b42adb0a20475ecf40c1d
+run_name: popular-fish-986
+run_uuid: ef63bd2d468b42adb0a20475ecf40c1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532573044
+status: 3
+tags: []
+user_id: elias

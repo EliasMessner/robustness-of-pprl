@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/725036b696de4a4d9f13b7cbcd8eea3c/artifacts
+end_time: 1679530842649
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 725036b696de4a4d9f13b7cbcd8eea3c
+run_name: thoughtful-hare-160
+run_uuid: 725036b696de4a4d9f13b7cbcd8eea3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530842071
+status: 3
+tags: []
+user_id: elias

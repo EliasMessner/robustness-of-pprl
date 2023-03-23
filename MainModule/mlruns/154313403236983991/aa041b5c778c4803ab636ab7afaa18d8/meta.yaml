@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/aa041b5c778c4803ab636ab7afaa18d8/artifacts
+end_time: 1679508712624
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: aa041b5c778c4803ab636ab7afaa18d8
+run_name: popular-bass-752
+run_uuid: aa041b5c778c4803ab636ab7afaa18d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508712264
+status: 3
+tags: []
+user_id: elias

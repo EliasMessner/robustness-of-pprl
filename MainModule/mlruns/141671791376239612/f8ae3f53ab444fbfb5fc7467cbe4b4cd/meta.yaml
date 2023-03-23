@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/f8ae3f53ab444fbfb5fc7467cbe4b4cd/artifacts
+end_time: 1679489298518
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: f8ae3f53ab444fbfb5fc7467cbe4b4cd
+run_name: flawless-yak-151
+run_uuid: f8ae3f53ab444fbfb5fc7467cbe4b4cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489298331
+status: 3
+tags: []
+user_id: elias

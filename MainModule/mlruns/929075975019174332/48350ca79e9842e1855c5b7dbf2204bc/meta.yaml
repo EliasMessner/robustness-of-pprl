@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/48350ca79e9842e1855c5b7dbf2204bc/artifacts
+end_time: 1679502608964
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 48350ca79e9842e1855c5b7dbf2204bc
+run_name: unruly-seal-637
+run_uuid: 48350ca79e9842e1855c5b7dbf2204bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502605667
+status: 3
+tags: []
+user_id: elias

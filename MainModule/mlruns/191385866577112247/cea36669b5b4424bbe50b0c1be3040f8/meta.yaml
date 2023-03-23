@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/cea36669b5b4424bbe50b0c1be3040f8/artifacts
+end_time: 1679512833930
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: cea36669b5b4424bbe50b0c1be3040f8
+run_name: blushing-panda-165
+run_uuid: cea36669b5b4424bbe50b0c1be3040f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512832539
+status: 3
+tags: []
+user_id: elias

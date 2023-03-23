@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1db22d6f422f48a1b71a8e9f44cff2ad/artifacts
+end_time: 1679530687661
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1db22d6f422f48a1b71a8e9f44cff2ad
+run_name: useful-fox-762
+run_uuid: 1db22d6f422f48a1b71a8e9f44cff2ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530687208
+status: 3
+tags: []
+user_id: elias

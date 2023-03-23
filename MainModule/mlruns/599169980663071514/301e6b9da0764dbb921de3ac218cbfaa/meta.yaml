@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/301e6b9da0764dbb921de3ac218cbfaa/artifacts
+end_time: 1679532424305
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 301e6b9da0764dbb921de3ac218cbfaa
+run_name: inquisitive-gull-136
+run_uuid: 301e6b9da0764dbb921de3ac218cbfaa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532423133
+status: 3
+tags: []
+user_id: elias

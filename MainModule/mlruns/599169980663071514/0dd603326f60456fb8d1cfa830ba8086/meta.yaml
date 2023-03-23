@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0dd603326f60456fb8d1cfa830ba8086/artifacts
+end_time: 1679531255204
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0dd603326f60456fb8d1cfa830ba8086
+run_name: fearless-worm-235
+run_uuid: 0dd603326f60456fb8d1cfa830ba8086
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531253501
+status: 3
+tags: []
+user_id: elias

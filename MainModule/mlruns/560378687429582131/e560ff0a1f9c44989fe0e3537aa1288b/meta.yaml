@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/e560ff0a1f9c44989fe0e3537aa1288b/artifacts
+end_time: 1679497327080
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: e560ff0a1f9c44989fe0e3537aa1288b
+run_name: intrigued-fish-964
+run_uuid: e560ff0a1f9c44989fe0e3537aa1288b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497326002
+status: 3
+tags: []
+user_id: elias

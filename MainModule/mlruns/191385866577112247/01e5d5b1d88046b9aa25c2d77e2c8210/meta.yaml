@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/01e5d5b1d88046b9aa25c2d77e2c8210/artifacts
+end_time: 1679512917884
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 01e5d5b1d88046b9aa25c2d77e2c8210
+run_name: dashing-lamb-580
+run_uuid: 01e5d5b1d88046b9aa25c2d77e2c8210
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512917462
+status: 3
+tags: []
+user_id: elias

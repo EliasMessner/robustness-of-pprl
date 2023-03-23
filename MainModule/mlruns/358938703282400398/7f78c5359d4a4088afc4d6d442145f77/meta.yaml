@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/7f78c5359d4a4088afc4d6d442145f77/artifacts
+end_time: 1679482556734
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 7f78c5359d4a4088afc4d6d442145f77
+run_name: unleashed-tern-3
+run_uuid: 7f78c5359d4a4088afc4d6d442145f77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482556344
+status: 3
+tags: []
+user_id: elias

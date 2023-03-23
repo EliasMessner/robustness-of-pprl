@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/27a83aaf8838441bac73d343f69ae1e2/artifacts
+end_time: 1679532221958
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 27a83aaf8838441bac73d343f69ae1e2
+run_name: legendary-stoat-264
+run_uuid: 27a83aaf8838441bac73d343f69ae1e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532219817
+status: 3
+tags: []
+user_id: elias

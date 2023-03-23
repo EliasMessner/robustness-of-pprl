@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/6d6a8b48039746bdb665cc526862315f/artifacts
+end_time: 1679502408959
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 6d6a8b48039746bdb665cc526862315f
+run_name: monumental-koi-303
+run_uuid: 6d6a8b48039746bdb665cc526862315f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502408381
+status: 3
+tags: []
+user_id: elias

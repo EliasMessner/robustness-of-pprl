@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/c4619a47ef914080ad2d7ea6ff546acf/artifacts
+end_time: 1679502511399
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: c4619a47ef914080ad2d7ea6ff546acf
+run_name: invincible-horse-651
+run_uuid: c4619a47ef914080ad2d7ea6ff546acf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502510727
+status: 3
+tags: []
+user_id: elias

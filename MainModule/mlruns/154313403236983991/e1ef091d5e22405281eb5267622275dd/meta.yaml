@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/e1ef091d5e22405281eb5267622275dd/artifacts
+end_time: 1679508143159
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: e1ef091d5e22405281eb5267622275dd
+run_name: gifted-kit-134
+run_uuid: e1ef091d5e22405281eb5267622275dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508142519
+status: 3
+tags: []
+user_id: elias

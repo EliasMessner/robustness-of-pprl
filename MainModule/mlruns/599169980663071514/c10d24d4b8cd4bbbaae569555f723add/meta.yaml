@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c10d24d4b8cd4bbbaae569555f723add/artifacts
+end_time: 1679530538190
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c10d24d4b8cd4bbbaae569555f723add
+run_name: judicious-sloth-262
+run_uuid: c10d24d4b8cd4bbbaae569555f723add
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530537518
+status: 3
+tags: []
+user_id: elias

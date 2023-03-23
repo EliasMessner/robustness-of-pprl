@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/6e03db024738415d9d797f2db41617bc/artifacts
+end_time: 1679486423010
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 6e03db024738415d9d797f2db41617bc
+run_name: angry-mouse-300
+run_uuid: 6e03db024738415d9d797f2db41617bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486422214
+status: 3
+tags: []
+user_id: elias

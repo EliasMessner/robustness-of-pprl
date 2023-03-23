@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f066349b74f24a2eaf835b060154e72c/artifacts
+end_time: 1679530352718
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f066349b74f24a2eaf835b060154e72c
+run_name: unruly-kite-844
+run_uuid: f066349b74f24a2eaf835b060154e72c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530352171
+status: 3
+tags: []
+user_id: elias

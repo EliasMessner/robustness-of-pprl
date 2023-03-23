@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/fd20a0d6c5ee4b44821b67040b5e0058/artifacts
+end_time: 1679508497448
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: fd20a0d6c5ee4b44821b67040b5e0058
+run_name: beautiful-dog-65
+run_uuid: fd20a0d6c5ee4b44821b67040b5e0058
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508497057
+status: 3
+tags: []
+user_id: elias

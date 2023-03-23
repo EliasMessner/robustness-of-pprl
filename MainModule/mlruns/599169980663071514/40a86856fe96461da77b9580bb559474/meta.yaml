@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/40a86856fe96461da77b9580bb559474/artifacts
+end_time: 1679530244512
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 40a86856fe96461da77b9580bb559474
+run_name: bemused-kite-855
+run_uuid: 40a86856fe96461da77b9580bb559474
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530243184
+status: 3
+tags: []
+user_id: elias

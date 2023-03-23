@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/414dfdd0e177466e9bdf7af9245bf1de/artifacts
+end_time: 1679530417797
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 414dfdd0e177466e9bdf7af9245bf1de
+run_name: dazzling-bass-750
+run_uuid: 414dfdd0e177466e9bdf7af9245bf1de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530417094
+status: 3
+tags: []
+user_id: elias

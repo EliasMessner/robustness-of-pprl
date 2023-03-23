@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5bbff28b68db4f6ebdf07d5659a4951b/artifacts
+end_time: 1679532064063
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5bbff28b68db4f6ebdf07d5659a4951b
+run_name: treasured-hawk-889
+run_uuid: 5bbff28b68db4f6ebdf07d5659a4951b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532063532
+status: 3
+tags: []
+user_id: elias

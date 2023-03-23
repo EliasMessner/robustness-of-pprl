@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dad67188f50d4041a13104e3be0c6d3b/artifacts
+end_time: 1679530911072
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dad67188f50d4041a13104e3be0c6d3b
+run_name: delightful-lynx-52
+run_uuid: dad67188f50d4041a13104e3be0c6d3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530910056
+status: 3
+tags: []
+user_id: elias

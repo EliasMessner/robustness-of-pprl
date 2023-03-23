@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/530535ef0c0641a2a22905641c84d102/artifacts
+end_time: 1679531944249
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 530535ef0c0641a2a22905641c84d102
+run_name: upbeat-fly-406
+run_uuid: 530535ef0c0641a2a22905641c84d102
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531943186
+status: 3
+tags: []
+user_id: elias

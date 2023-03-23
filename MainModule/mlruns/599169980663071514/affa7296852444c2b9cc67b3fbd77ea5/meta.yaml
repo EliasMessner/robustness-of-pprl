@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/affa7296852444c2b9cc67b3fbd77ea5/artifacts
+end_time: 1679531145108
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: affa7296852444c2b9cc67b3fbd77ea5
+run_name: rogue-worm-329
+run_uuid: affa7296852444c2b9cc67b3fbd77ea5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531144639
+status: 3
+tags: []
+user_id: elias

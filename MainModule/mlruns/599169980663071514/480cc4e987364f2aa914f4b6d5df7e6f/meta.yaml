@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/480cc4e987364f2aa914f4b6d5df7e6f/artifacts
+end_time: 1679532275193
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 480cc4e987364f2aa914f4b6d5df7e6f
+run_name: gentle-vole-962
+run_uuid: 480cc4e987364f2aa914f4b6d5df7e6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532273396
+status: 3
+tags: []
+user_id: elias

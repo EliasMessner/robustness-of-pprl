@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/a29a5f4bcc764f43a163f4cab4a9518e/artifacts
+end_time: 1679489256970
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: a29a5f4bcc764f43a163f4cab4a9518e
+run_name: hilarious-steed-899
+run_uuid: a29a5f4bcc764f43a163f4cab4a9518e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489256799
+status: 3
+tags: []
+user_id: elias

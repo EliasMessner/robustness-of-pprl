@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/94c6c9d981de4ff99ba6c9e467a75b34/artifacts
+end_time: 1679531672790
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 94c6c9d981de4ff99ba6c9e467a75b34
+run_name: capable-asp-927
+run_uuid: 94c6c9d981de4ff99ba6c9e467a75b34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531672119
+status: 3
+tags: []
+user_id: elias

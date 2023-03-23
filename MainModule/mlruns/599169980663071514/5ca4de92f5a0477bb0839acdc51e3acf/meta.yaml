@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5ca4de92f5a0477bb0839acdc51e3acf/artifacts
+end_time: 1679532500136
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5ca4de92f5a0477bb0839acdc51e3acf
+run_name: stylish-fish-924
+run_uuid: 5ca4de92f5a0477bb0839acdc51e3acf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532499058
+status: 3
+tags: []
+user_id: elias

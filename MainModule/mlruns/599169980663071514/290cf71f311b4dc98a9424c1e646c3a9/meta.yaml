@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/290cf71f311b4dc98a9424c1e646c3a9/artifacts
+end_time: 1679531294392
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 290cf71f311b4dc98a9424c1e646c3a9
+run_name: resilient-chimp-385
+run_uuid: 290cf71f311b4dc98a9424c1e646c3a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531292455
+status: 3
+tags: []
+user_id: elias

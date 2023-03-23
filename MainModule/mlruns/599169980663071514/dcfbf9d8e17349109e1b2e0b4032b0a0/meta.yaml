@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dcfbf9d8e17349109e1b2e0b4032b0a0/artifacts
+end_time: 1679530619910
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dcfbf9d8e17349109e1b2e0b4032b0a0
+run_name: masked-moth-925
+run_uuid: dcfbf9d8e17349109e1b2e0b4032b0a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530619082
+status: 3
+tags: []
+user_id: elias

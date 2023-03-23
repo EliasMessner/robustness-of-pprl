@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/082c9fe613954db4ad74248860a3afd5/artifacts
+end_time: 1679508197176
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 082c9fe613954db4ad74248860a3afd5
+run_name: respected-hog-591
+run_uuid: 082c9fe613954db4ad74248860a3afd5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508196411
+status: 3
+tags: []
+user_id: elias

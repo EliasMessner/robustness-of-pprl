@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6b72708f467442cbafdd53f7bd21daa5/artifacts
+end_time: 1679530971870
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6b72708f467442cbafdd53f7bd21daa5
+run_name: peaceful-jay-791
+run_uuid: 6b72708f467442cbafdd53f7bd21daa5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530970870
+status: 3
+tags: []
+user_id: elias

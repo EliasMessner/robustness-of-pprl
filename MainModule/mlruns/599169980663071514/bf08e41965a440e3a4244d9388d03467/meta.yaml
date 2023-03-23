@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bf08e41965a440e3a4244d9388d03467/artifacts
+end_time: 1679530413719
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bf08e41965a440e3a4244d9388d03467
+run_name: selective-shrike-381
+run_uuid: bf08e41965a440e3a4244d9388d03467
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530412547
+status: 3
+tags: []
+user_id: elias

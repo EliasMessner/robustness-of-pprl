@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/996fc39318eb47d38867ac6e504f1344/artifacts
+end_time: 1679530704475
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 996fc39318eb47d38867ac6e504f1344
+run_name: welcoming-moose-877
+run_uuid: 996fc39318eb47d38867ac6e504f1344
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530703240
+status: 3
+tags: []
+user_id: elias

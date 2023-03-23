@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/fa10fb0e33ab4ca9804211abf7e789aa/artifacts
+end_time: 1679497524396
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: fa10fb0e33ab4ca9804211abf7e789aa
+run_name: debonair-elk-900
+run_uuid: fa10fb0e33ab4ca9804211abf7e789aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497523224
+status: 3
+tags: []
+user_id: elias

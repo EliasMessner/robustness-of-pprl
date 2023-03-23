@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/ce4a9a85b8db40798c3b70fd45f98d73/artifacts
+end_time: 1679508067377
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: ce4a9a85b8db40798c3b70fd45f98d73
+run_name: learned-wren-290
+run_uuid: ce4a9a85b8db40798c3b70fd45f98d73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508066674
+status: 3
+tags: []
+user_id: elias

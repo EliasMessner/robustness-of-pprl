@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/5d4dcbb8e16e436794588028b72388c1/artifacts
+end_time: 1679513071842
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 5d4dcbb8e16e436794588028b72388c1
+run_name: learned-squirrel-709
+run_uuid: 5d4dcbb8e16e436794588028b72388c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513070576
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/31cfb143ae6442eca824479e6c61659f/artifacts
+end_time: 1679532352351
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 31cfb143ae6442eca824479e6c61659f
+run_name: indecisive-gnat-993
+run_uuid: 31cfb143ae6442eca824479e6c61659f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532351601
+status: 3
+tags: []
+user_id: elias

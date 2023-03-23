@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3604964c587c473682a0ee03d6701a90/artifacts
+end_time: 1679532397899
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3604964c587c473682a0ee03d6701a90
+run_name: fun-frog-450
+run_uuid: 3604964c587c473682a0ee03d6701a90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532397117
+status: 3
+tags: []
+user_id: elias

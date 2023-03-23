@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3cce2b04ef4045dea52f092f4d1e277f/artifacts
+end_time: 1679530638114
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3cce2b04ef4045dea52f092f4d1e277f
+run_name: blushing-bear-767
+run_uuid: 3cce2b04ef4045dea52f092f4d1e277f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530637645
+status: 3
+tags: []
+user_id: elias

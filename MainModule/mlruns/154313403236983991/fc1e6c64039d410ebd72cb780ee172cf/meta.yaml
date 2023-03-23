@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/fc1e6c64039d410ebd72cb780ee172cf/artifacts
+end_time: 1679508635951
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: fc1e6c64039d410ebd72cb780ee172cf
+run_name: sneaky-wren-895
+run_uuid: fc1e6c64039d410ebd72cb780ee172cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508635013
+status: 3
+tags: []
+user_id: elias

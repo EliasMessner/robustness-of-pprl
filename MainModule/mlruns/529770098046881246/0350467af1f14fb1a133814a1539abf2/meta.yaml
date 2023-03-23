@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/0350467af1f14fb1a133814a1539abf2/artifacts
+end_time: 1679486528341
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 0350467af1f14fb1a133814a1539abf2
+run_name: bustling-eel-302
+run_uuid: 0350467af1f14fb1a133814a1539abf2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486528107
+status: 3
+tags: []
+user_id: elias

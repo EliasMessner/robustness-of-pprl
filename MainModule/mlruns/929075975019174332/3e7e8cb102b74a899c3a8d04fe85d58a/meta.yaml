@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/3e7e8cb102b74a899c3a8d04fe85d58a/artifacts
+end_time: 1679502223268
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 3e7e8cb102b74a899c3a8d04fe85d58a
+run_name: unleashed-cub-985
+run_uuid: 3e7e8cb102b74a899c3a8d04fe85d58a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502222596
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/dbf34ec746754fc7848b6eb28c887b3f/artifacts
+end_time: 1679486393432
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: dbf34ec746754fc7848b6eb28c887b3f
+run_name: receptive-swan-403
+run_uuid: dbf34ec746754fc7848b6eb28c887b3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486393182
+status: 3
+tags: []
+user_id: elias

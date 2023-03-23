@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/43880b0c400d4a609eba939507780b24/artifacts
+end_time: 1679508192426
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 43880b0c400d4a609eba939507780b24
+run_name: receptive-stoat-560
+run_uuid: 43880b0c400d4a609eba939507780b24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508191770
+status: 3
+tags: []
+user_id: elias

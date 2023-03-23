@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/d9d7ff5e1b88460bad846fe294ef7f3e/artifacts
+end_time: 1679482696705
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: d9d7ff5e1b88460bad846fe294ef7f3e
+run_name: bemused-shrew-626
+run_uuid: d9d7ff5e1b88460bad846fe294ef7f3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482696471
+status: 3
+tags: []
+user_id: elias

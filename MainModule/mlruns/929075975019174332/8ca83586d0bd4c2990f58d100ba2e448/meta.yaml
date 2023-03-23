@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/8ca83586d0bd4c2990f58d100ba2e448/artifacts
+end_time: 1679502694199
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 8ca83586d0bd4c2990f58d100ba2e448
+run_name: intrigued-wasp-869
+run_uuid: 8ca83586d0bd4c2990f58d100ba2e448
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502693793
+status: 3
+tags: []
+user_id: elias

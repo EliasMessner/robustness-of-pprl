@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/ae4e5dc6d92b40df947073648e13cae7/artifacts
+end_time: 1679502541587
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: ae4e5dc6d92b40df947073648e13cae7
+run_name: gregarious-skunk-314
+run_uuid: ae4e5dc6d92b40df947073648e13cae7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502541197
+status: 3
+tags: []
+user_id: elias

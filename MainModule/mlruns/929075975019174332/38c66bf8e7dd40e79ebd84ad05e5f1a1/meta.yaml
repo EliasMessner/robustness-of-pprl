@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/38c66bf8e7dd40e79ebd84ad05e5f1a1/artifacts
+end_time: 1679502520867
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 38c66bf8e7dd40e79ebd84ad05e5f1a1
+run_name: thoughtful-fox-370
+run_uuid: 38c66bf8e7dd40e79ebd84ad05e5f1a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502520477
+status: 3
+tags: []
+user_id: elias

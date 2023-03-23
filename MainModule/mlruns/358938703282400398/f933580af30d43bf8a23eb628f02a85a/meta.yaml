@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/f933580af30d43bf8a23eb628f02a85a/artifacts
+end_time: 1679482109366
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: f933580af30d43bf8a23eb628f02a85a
+run_name: bedecked-asp-534
+run_uuid: f933580af30d43bf8a23eb628f02a85a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482108678
+status: 3
+tags: []
+user_id: elias

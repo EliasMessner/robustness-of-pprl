@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/32edf0d1ff2542d4a2c4af7b543bbebc/artifacts
+end_time: 1679532593372
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 32edf0d1ff2542d4a2c4af7b543bbebc
+run_name: casual-newt-646
+run_uuid: 32edf0d1ff2542d4a2c4af7b543bbebc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532592434
+status: 3
+tags: []
+user_id: elias

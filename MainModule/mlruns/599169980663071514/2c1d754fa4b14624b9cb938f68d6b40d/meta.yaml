@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2c1d754fa4b14624b9cb938f68d6b40d/artifacts
+end_time: 1679530499048
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2c1d754fa4b14624b9cb938f68d6b40d
+run_name: suave-worm-807
+run_uuid: 2c1d754fa4b14624b9cb938f68d6b40d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530497251
+status: 3
+tags: []
+user_id: elias

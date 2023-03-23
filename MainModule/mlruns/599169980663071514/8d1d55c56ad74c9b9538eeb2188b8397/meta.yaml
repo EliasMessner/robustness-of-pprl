@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8d1d55c56ad74c9b9538eeb2188b8397/artifacts
+end_time: 1679531728088
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8d1d55c56ad74c9b9538eeb2188b8397
+run_name: beautiful-asp-976
+run_uuid: 8d1d55c56ad74c9b9538eeb2188b8397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531727229
+status: 3
+tags: []
+user_id: elias

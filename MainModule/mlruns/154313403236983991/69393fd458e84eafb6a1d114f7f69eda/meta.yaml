@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/69393fd458e84eafb6a1d114f7f69eda/artifacts
+end_time: 1679508069189
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 69393fd458e84eafb6a1d114f7f69eda
+run_name: secretive-turtle-102
+run_uuid: 69393fd458e84eafb6a1d114f7f69eda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508068361
+status: 3
+tags: []
+user_id: elias

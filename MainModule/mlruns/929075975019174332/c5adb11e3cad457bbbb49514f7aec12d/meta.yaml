@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/c5adb11e3cad457bbbb49514f7aec12d/artifacts
+end_time: 1679502295488
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: c5adb11e3cad457bbbb49514f7aec12d
+run_name: clean-foal-90
+run_uuid: c5adb11e3cad457bbbb49514f7aec12d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502294347
+status: 3
+tags: []
+user_id: elias

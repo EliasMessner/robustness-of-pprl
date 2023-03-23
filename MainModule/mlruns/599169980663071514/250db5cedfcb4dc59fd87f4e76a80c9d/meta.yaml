@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/250db5cedfcb4dc59fd87f4e76a80c9d/artifacts
+end_time: 1679531061216
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 250db5cedfcb4dc59fd87f4e76a80c9d
+run_name: dashing-smelt-577
+run_uuid: 250db5cedfcb4dc59fd87f4e76a80c9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531060685
+status: 3
+tags: []
+user_id: elias

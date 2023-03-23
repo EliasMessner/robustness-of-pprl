@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/8a51ff1d42a04d8f9a772316d137b325/artifacts
+end_time: 1679482758847
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 8a51ff1d42a04d8f9a772316d137b325
+run_name: serious-seal-545
+run_uuid: 8a51ff1d42a04d8f9a772316d137b325
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482758019
+status: 3
+tags: []
+user_id: elias

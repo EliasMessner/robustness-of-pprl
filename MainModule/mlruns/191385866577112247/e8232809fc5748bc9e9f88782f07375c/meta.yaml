@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/e8232809fc5748bc9e9f88782f07375c/artifacts
+end_time: 1679512916181
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: e8232809fc5748bc9e9f88782f07375c
+run_name: sedate-lamb-800
+run_uuid: e8232809fc5748bc9e9f88782f07375c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512914384
+status: 3
+tags: []
+user_id: elias

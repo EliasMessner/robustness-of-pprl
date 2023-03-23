@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d7bb63c305d841419c63e1ee70343d50/artifacts
+end_time: 1679532640482
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d7bb63c305d841419c63e1ee70343d50
+run_name: abrasive-fawn-817
+run_uuid: d7bb63c305d841419c63e1ee70343d50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532639685
+status: 3
+tags: []
+user_id: elias

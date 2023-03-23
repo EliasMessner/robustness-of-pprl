@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/868d06f165524a1b9a08e126598806e3/artifacts
+end_time: 1679530397125
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 868d06f165524a1b9a08e126598806e3
+run_name: valuable-mouse-272
+run_uuid: 868d06f165524a1b9a08e126598806e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530396250
+status: 3
+tags: []
+user_id: elias

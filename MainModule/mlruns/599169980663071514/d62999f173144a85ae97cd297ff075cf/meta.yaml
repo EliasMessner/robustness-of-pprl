@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d62999f173144a85ae97cd297ff075cf/artifacts
+end_time: 1679532414680
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d62999f173144a85ae97cd297ff075cf
+run_name: dazzling-stag-758
+run_uuid: d62999f173144a85ae97cd297ff075cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532412961
+status: 3
+tags: []
+user_id: elias

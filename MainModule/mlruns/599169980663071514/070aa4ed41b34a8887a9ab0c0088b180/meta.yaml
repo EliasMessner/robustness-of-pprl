@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/070aa4ed41b34a8887a9ab0c0088b180/artifacts
+end_time: 1679532113487
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 070aa4ed41b34a8887a9ab0c0088b180
+run_name: funny-zebra-312
+run_uuid: 070aa4ed41b34a8887a9ab0c0088b180
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532112580
+status: 3
+tags: []
+user_id: elias

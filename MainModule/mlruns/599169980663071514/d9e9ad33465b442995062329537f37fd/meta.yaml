@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d9e9ad33465b442995062329537f37fd/artifacts
+end_time: 1679530228403
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d9e9ad33465b442995062329537f37fd
+run_name: nosy-stork-694
+run_uuid: d9e9ad33465b442995062329537f37fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530227153
+status: 3
+tags: []
+user_id: elias

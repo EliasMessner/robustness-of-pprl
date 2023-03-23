@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/be395f91fc3d4064b072d8e421b7414e/artifacts
+end_time: 1679502363631
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: be395f91fc3d4064b072d8e421b7414e
+run_name: amazing-ram-320
+run_uuid: be395f91fc3d4064b072d8e421b7414e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502363193
+status: 3
+tags: []
+user_id: elias

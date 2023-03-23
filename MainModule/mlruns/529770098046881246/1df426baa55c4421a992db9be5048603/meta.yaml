@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/1df426baa55c4421a992db9be5048603/artifacts
+end_time: 1679486553122
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 1df426baa55c4421a992db9be5048603
+run_name: masked-mink-567
+run_uuid: 1df426baa55c4421a992db9be5048603
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486552419
+status: 3
+tags: []
+user_id: elias

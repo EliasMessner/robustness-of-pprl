@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/b126ff3bb6204871854d73b27b5c268e/artifacts
+end_time: 1679489394161
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: b126ff3bb6204871854d73b27b5c268e
+run_name: rebellious-shoat-341
+run_uuid: b126ff3bb6204871854d73b27b5c268e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489393958
+status: 3
+tags: []
+user_id: elias

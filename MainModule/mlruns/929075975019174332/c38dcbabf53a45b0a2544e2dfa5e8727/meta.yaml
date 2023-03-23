@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/c38dcbabf53a45b0a2544e2dfa5e8727/artifacts
+end_time: 1679502288441
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: c38dcbabf53a45b0a2544e2dfa5e8727
+run_name: upset-swan-60
+run_uuid: c38dcbabf53a45b0a2544e2dfa5e8727
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502288097
+status: 3
+tags: []
+user_id: elias

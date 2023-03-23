@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/7546745c9f8442448129144784f5fc96/artifacts
+end_time: 1679486517575
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 7546745c9f8442448129144784f5fc96
+run_name: rebellious-panda-94
+run_uuid: 7546745c9f8442448129144784f5fc96
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486516278
+status: 3
+tags: []
+user_id: elias

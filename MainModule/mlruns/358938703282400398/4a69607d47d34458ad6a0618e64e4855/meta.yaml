@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/4a69607d47d34458ad6a0618e64e4855/artifacts
+end_time: 1679482487654
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 4a69607d47d34458ad6a0618e64e4855
+run_name: useful-shoat-500
+run_uuid: 4a69607d47d34458ad6a0618e64e4855
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482486998
+status: 3
+tags: []
+user_id: elias

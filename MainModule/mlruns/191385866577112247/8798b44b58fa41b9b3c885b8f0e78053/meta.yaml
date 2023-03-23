@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/8798b44b58fa41b9b3c885b8f0e78053/artifacts
+end_time: 1679512871603
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 8798b44b58fa41b9b3c885b8f0e78053
+run_name: abrasive-zebra-566
+run_uuid: 8798b44b58fa41b9b3c885b8f0e78053
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512869728
+status: 3
+tags: []
+user_id: elias

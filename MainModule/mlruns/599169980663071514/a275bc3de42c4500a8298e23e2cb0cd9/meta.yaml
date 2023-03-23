@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a275bc3de42c4500a8298e23e2cb0cd9/artifacts
+end_time: 1679531011637
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a275bc3de42c4500a8298e23e2cb0cd9
+run_name: debonair-whale-73
+run_uuid: a275bc3de42c4500a8298e23e2cb0cd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531010262
+status: 3
+tags: []
+user_id: elias

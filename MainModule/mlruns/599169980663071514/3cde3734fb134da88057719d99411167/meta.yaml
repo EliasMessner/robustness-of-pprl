@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3cde3734fb134da88057719d99411167/artifacts
+end_time: 1679532522855
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3cde3734fb134da88057719d99411167
+run_name: resilient-zebra-681
+run_uuid: 3cde3734fb134da88057719d99411167
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532521292
+status: 3
+tags: []
+user_id: elias

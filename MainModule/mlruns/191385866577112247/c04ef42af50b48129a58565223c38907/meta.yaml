@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/c04ef42af50b48129a58565223c38907/artifacts
+end_time: 1679512991231
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: c04ef42af50b48129a58565223c38907
+run_name: crawling-goose-44
+run_uuid: c04ef42af50b48129a58565223c38907
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512990794
+status: 3
+tags: []
+user_id: elias

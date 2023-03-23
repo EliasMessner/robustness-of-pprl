@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c096a83186674a329f307bcc8f982c81/artifacts
+end_time: 1679531295095
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c096a83186674a329f307bcc8f982c81
+run_name: fortunate-vole-748
+run_uuid: c096a83186674a329f307bcc8f982c81
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531294627
+status: 3
+tags: []
+user_id: elias

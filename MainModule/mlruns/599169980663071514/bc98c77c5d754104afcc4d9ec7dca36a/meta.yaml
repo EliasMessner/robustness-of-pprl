@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bc98c77c5d754104afcc4d9ec7dca36a/artifacts
+end_time: 1679531162873
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bc98c77c5d754104afcc4d9ec7dca36a
+run_name: adorable-shrew-328
+run_uuid: bc98c77c5d754104afcc4d9ec7dca36a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531162420
+status: 3
+tags: []
+user_id: elias

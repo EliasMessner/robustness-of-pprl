@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/41a8007663f14d4eb8f9493010281a10/artifacts
+end_time: 1679531681540
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 41a8007663f14d4eb8f9493010281a10
+run_name: zealous-rook-181
+run_uuid: 41a8007663f14d4eb8f9493010281a10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531680400
+status: 3
+tags: []
+user_id: elias

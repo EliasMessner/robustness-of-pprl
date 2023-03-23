@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/34aed416c6a0450587493c6333f1e43c/artifacts
+end_time: 1679531863279
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 34aed416c6a0450587493c6333f1e43c
+run_name: blushing-loon-303
+run_uuid: 34aed416c6a0450587493c6333f1e43c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531862576
+status: 3
+tags: []
+user_id: elias

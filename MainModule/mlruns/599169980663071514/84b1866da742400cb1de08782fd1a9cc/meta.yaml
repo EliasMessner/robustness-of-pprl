@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/84b1866da742400cb1de08782fd1a9cc/artifacts
+end_time: 1679531711463
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 84b1866da742400cb1de08782fd1a9cc
+run_name: carefree-carp-772
+run_uuid: 84b1866da742400cb1de08782fd1a9cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531710573
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/a6020843bb9d46f9926a1a4421811394/artifacts
+end_time: 1679489282034
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: a6020843bb9d46f9926a1a4421811394
+run_name: bright-sloth-924
+run_uuid: a6020843bb9d46f9926a1a4421811394
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489281847
+status: 3
+tags: []
+user_id: elias

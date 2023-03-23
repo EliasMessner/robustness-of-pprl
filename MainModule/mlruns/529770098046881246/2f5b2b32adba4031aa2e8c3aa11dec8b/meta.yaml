@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/2f5b2b32adba4031aa2e8c3aa11dec8b/artifacts
+end_time: 1679486575998
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 2f5b2b32adba4031aa2e8c3aa11dec8b
+run_name: shivering-donkey-950
+run_uuid: 2f5b2b32adba4031aa2e8c3aa11dec8b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486575170
+status: 3
+tags: []
+user_id: elias

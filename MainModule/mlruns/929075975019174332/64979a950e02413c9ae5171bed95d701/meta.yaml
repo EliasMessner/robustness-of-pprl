@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/64979a950e02413c9ae5171bed95d701/artifacts
+end_time: 1679502563634
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 64979a950e02413c9ae5171bed95d701
+run_name: intelligent-mare-112
+run_uuid: 64979a950e02413c9ae5171bed95d701
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502563212
+status: 3
+tags: []
+user_id: elias

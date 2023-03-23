@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/6e04039e93dc429dad3bb5d986303879/artifacts
+end_time: 1679482743457
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 6e04039e93dc429dad3bb5d986303879
+run_name: whimsical-shrike-652
+run_uuid: 6e04039e93dc429dad3bb5d986303879
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482743004
+status: 3
+tags: []
+user_id: elias

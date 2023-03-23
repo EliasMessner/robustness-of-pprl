@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f2d4ec0da0af49e0b66379dc68b9be7e/artifacts
+end_time: 1679530907525
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f2d4ec0da0af49e0b66379dc68b9be7e
+run_name: peaceful-sow-107
+run_uuid: f2d4ec0da0af49e0b66379dc68b9be7e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530906681
+status: 3
+tags: []
+user_id: elias

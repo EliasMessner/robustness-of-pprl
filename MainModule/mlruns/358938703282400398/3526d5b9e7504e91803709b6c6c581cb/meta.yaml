@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/3526d5b9e7504e91803709b6c6c581cb/artifacts
+end_time: 1679482273713
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 3526d5b9e7504e91803709b6c6c581cb
+run_name: flawless-shark-562
+run_uuid: 3526d5b9e7504e91803709b6c6c581cb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482273275
+status: 3
+tags: []
+user_id: elias

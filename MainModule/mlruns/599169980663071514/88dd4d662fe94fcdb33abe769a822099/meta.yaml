@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/88dd4d662fe94fcdb33abe769a822099/artifacts
+end_time: 1679530582519
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 88dd4d662fe94fcdb33abe769a822099
+run_name: bald-yak-10
+run_uuid: 88dd4d662fe94fcdb33abe769a822099
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530581722
+status: 3
+tags: []
+user_id: elias

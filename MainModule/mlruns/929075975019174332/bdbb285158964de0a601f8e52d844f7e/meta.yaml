@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/bdbb285158964de0a601f8e52d844f7e/artifacts
+end_time: 1679502260175
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: bdbb285158964de0a601f8e52d844f7e
+run_name: monumental-mouse-220
+run_uuid: bdbb285158964de0a601f8e52d844f7e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502259535
+status: 3
+tags: []
+user_id: elias

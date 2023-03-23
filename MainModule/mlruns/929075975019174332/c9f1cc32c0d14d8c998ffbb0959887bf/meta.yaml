@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/c9f1cc32c0d14d8c998ffbb0959887bf/artifacts
+end_time: 1679502346145
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: c9f1cc32c0d14d8c998ffbb0959887bf
+run_name: unleashed-loon-71
+run_uuid: c9f1cc32c0d14d8c998ffbb0959887bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502345770
+status: 3
+tags: []
+user_id: elias

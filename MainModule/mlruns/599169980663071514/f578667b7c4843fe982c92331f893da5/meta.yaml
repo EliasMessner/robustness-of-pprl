@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f578667b7c4843fe982c92331f893da5/artifacts
+end_time: 1679530643161
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f578667b7c4843fe982c92331f893da5
+run_name: skittish-sow-337
+run_uuid: f578667b7c4843fe982c92331f893da5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530642411
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/704cea70a27441608ff2b67646f2be28/artifacts
+end_time: 1679497507614
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 704cea70a27441608ff2b67646f2be28
+run_name: agreeable-bear-885
+run_uuid: 704cea70a27441608ff2b67646f2be28
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497504614
+status: 3
+tags: []
+user_id: elias

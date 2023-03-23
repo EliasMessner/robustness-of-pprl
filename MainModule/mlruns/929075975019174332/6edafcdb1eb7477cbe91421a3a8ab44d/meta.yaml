@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/6edafcdb1eb7477cbe91421a3a8ab44d/artifacts
+end_time: 1679502597792
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 6edafcdb1eb7477cbe91421a3a8ab44d
+run_name: youthful-turtle-519
+run_uuid: 6edafcdb1eb7477cbe91421a3a8ab44d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502596634
+status: 3
+tags: []
+user_id: elias

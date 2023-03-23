@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/5d99b10cafbb47baa9566f4a3a7a989d/artifacts
+end_time: 1679489193141
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 5d99b10cafbb47baa9566f4a3a7a989d
+run_name: capricious-steed-458
+run_uuid: 5d99b10cafbb47baa9566f4a3a7a989d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489192985
+status: 3
+tags: []
+user_id: elias

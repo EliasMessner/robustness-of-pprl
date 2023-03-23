@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/4a2c61168ce4492a8d2db82f01f1db70/artifacts
+end_time: 1679489405364
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 4a2c61168ce4492a8d2db82f01f1db70
+run_name: capable-shark-357
+run_uuid: 4a2c61168ce4492a8d2db82f01f1db70
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489405083
+status: 3
+tags: []
+user_id: elias

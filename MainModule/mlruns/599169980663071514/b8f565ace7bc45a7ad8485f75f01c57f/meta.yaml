@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b8f565ace7bc45a7ad8485f75f01c57f/artifacts
+end_time: 1679530377858
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b8f565ace7bc45a7ad8485f75f01c57f
+run_name: vaunted-moth-486
+run_uuid: b8f565ace7bc45a7ad8485f75f01c57f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530376890
+status: 3
+tags: []
+user_id: elias

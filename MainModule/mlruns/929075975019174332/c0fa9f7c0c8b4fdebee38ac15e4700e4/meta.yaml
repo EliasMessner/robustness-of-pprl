@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/c0fa9f7c0c8b4fdebee38ac15e4700e4/artifacts
+end_time: 1679502506617
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: c0fa9f7c0c8b4fdebee38ac15e4700e4
+run_name: luminous-chimp-571
+run_uuid: c0fa9f7c0c8b4fdebee38ac15e4700e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502506227
+status: 3
+tags: []
+user_id: elias

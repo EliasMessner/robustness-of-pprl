@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/f66f22d045ca4560a6df663d936806cd/artifacts
+end_time: 1679512796694
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: f66f22d045ca4560a6df663d936806cd
+run_name: intrigued-hawk-265
+run_uuid: f66f22d045ca4560a6df663d936806cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512795303
+status: 3
+tags: []
+user_id: elias

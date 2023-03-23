@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/985e941321a1465095965986d53a9a51/artifacts
+end_time: 1679530281826
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 985e941321a1465095965986d53a9a51
+run_name: enthused-newt-350
+run_uuid: 985e941321a1465095965986d53a9a51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530280217
+status: 3
+tags: []
+user_id: elias

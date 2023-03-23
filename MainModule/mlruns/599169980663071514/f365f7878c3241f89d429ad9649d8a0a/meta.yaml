@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f365f7878c3241f89d429ad9649d8a0a/artifacts
+end_time: 1679532267209
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f365f7878c3241f89d429ad9649d8a0a
+run_name: amazing-snipe-894
+run_uuid: f365f7878c3241f89d429ad9649d8a0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532265990
+status: 3
+tags: []
+user_id: elias

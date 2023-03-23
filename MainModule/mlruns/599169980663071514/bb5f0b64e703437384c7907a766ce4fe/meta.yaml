@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bb5f0b64e703437384c7907a766ce4fe/artifacts
+end_time: 1679532418914
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bb5f0b64e703437384c7907a766ce4fe
+run_name: whimsical-bird-474
+run_uuid: bb5f0b64e703437384c7907a766ce4fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532417211
+status: 3
+tags: []
+user_id: elias

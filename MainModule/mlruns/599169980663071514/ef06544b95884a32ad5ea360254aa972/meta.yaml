@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ef06544b95884a32ad5ea360254aa972/artifacts
+end_time: 1679530696521
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ef06544b95884a32ad5ea360254aa972
+run_name: gregarious-mare-858
+run_uuid: ef06544b95884a32ad5ea360254aa972
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530695771
+status: 3
+tags: []
+user_id: elias

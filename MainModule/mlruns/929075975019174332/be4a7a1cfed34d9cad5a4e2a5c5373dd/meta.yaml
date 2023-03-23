@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/be4a7a1cfed34d9cad5a4e2a5c5373dd/artifacts
+end_time: 1679502227159
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: be4a7a1cfed34d9cad5a4e2a5c5373dd
+run_name: whimsical-squid-533
+run_uuid: be4a7a1cfed34d9cad5a4e2a5c5373dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502226487
+status: 3
+tags: []
+user_id: elias

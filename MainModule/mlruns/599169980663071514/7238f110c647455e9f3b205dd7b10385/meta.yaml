@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/7238f110c647455e9f3b205dd7b10385/artifacts
+end_time: 1679530874431
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 7238f110c647455e9f3b205dd7b10385
+run_name: intrigued-snake-908
+run_uuid: 7238f110c647455e9f3b205dd7b10385
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530873541
+status: 3
+tags: []
+user_id: elias

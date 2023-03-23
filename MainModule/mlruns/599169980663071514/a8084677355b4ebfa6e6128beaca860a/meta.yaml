@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a8084677355b4ebfa6e6128beaca860a/artifacts
+end_time: 1679532664920
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a8084677355b4ebfa6e6128beaca860a
+run_name: traveling-bear-417
+run_uuid: a8084677355b4ebfa6e6128beaca860a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532663920
+status: 3
+tags: []
+user_id: elias

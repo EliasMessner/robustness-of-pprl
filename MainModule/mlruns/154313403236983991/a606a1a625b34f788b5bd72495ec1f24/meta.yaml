@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/a606a1a625b34f788b5bd72495ec1f24/artifacts
+end_time: 1679508230004
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: a606a1a625b34f788b5bd72495ec1f24
+run_name: traveling-flea-106
+run_uuid: a606a1a625b34f788b5bd72495ec1f24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508229676
+status: 3
+tags: []
+user_id: elias

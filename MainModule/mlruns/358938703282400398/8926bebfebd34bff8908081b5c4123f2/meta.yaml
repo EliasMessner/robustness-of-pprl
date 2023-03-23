@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/8926bebfebd34bff8908081b5c4123f2/artifacts
+end_time: 1679482280853
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 8926bebfebd34bff8908081b5c4123f2
+run_name: bedecked-squid-751
+run_uuid: 8926bebfebd34bff8908081b5c4123f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482279682
+status: 3
+tags: []
+user_id: elias

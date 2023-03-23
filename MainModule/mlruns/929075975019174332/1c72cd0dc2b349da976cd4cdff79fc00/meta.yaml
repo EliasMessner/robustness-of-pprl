@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/1c72cd0dc2b349da976cd4cdff79fc00/artifacts
+end_time: 1679502406381
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 1c72cd0dc2b349da976cd4cdff79fc00
+run_name: delightful-moth-610
+run_uuid: 1c72cd0dc2b349da976cd4cdff79fc00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502405740
+status: 3
+tags: []
+user_id: elias

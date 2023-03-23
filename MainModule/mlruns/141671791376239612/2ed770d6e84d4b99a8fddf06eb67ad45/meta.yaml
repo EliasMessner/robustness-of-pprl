@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/2ed770d6e84d4b99a8fddf06eb67ad45/artifacts
+end_time: 1679489186251
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 2ed770d6e84d4b99a8fddf06eb67ad45
+run_name: enthused-stag-519
+run_uuid: 2ed770d6e84d4b99a8fddf06eb67ad45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489186094
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5d36d51077ef4910b4c99096a5bfea3e/artifacts
+end_time: 1679530897369
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5d36d51077ef4910b4c99096a5bfea3e
+run_name: auspicious-cow-519
+run_uuid: 5d36d51077ef4910b4c99096a5bfea3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530896400
+status: 3
+tags: []
+user_id: elias

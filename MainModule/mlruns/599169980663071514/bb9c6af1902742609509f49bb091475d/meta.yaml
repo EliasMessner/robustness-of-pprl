@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bb9c6af1902742609509f49bb091475d/artifacts
+end_time: 1679530685083
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bb9c6af1902742609509f49bb091475d
+run_name: glamorous-quail-397
+run_uuid: bb9c6af1902742609509f49bb091475d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530684067
+status: 3
+tags: []
+user_id: elias

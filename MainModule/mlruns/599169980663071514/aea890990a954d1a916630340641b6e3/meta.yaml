@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/aea890990a954d1a916630340641b6e3/artifacts
+end_time: 1679531442395
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: aea890990a954d1a916630340641b6e3
+run_name: awesome-rook-945
+run_uuid: aea890990a954d1a916630340641b6e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531441286
+status: 3
+tags: []
+user_id: elias

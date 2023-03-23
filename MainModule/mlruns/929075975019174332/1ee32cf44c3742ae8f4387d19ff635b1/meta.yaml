@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/1ee32cf44c3742ae8f4387d19ff635b1/artifacts
+end_time: 1679502631417
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 1ee32cf44c3742ae8f4387d19ff635b1
+run_name: burly-crab-258
+run_uuid: 1ee32cf44c3742ae8f4387d19ff635b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502630354
+status: 3
+tags: []
+user_id: elias

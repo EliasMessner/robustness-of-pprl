@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/cc26321f98e14a2faab78a2d0e717f05/artifacts
+end_time: 1679530350233
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: cc26321f98e14a2faab78a2d0e717f05
+run_name: suave-hog-627
+run_uuid: cc26321f98e14a2faab78a2d0e717f05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530349702
+status: 3
+tags: []
+user_id: elias

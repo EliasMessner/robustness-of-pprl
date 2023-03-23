@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b2474db36fb34547ba5afb8388204daf/artifacts
+end_time: 1679531237797
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b2474db36fb34547ba5afb8388204daf
+run_name: burly-shrimp-538
+run_uuid: b2474db36fb34547ba5afb8388204daf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531237094
+status: 3
+tags: []
+user_id: elias

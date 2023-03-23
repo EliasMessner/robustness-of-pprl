@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1acc38e833614363a6ad176bf05c4703/artifacts
+end_time: 1679531485521
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1acc38e833614363a6ad176bf05c4703
+run_name: sincere-fish-173
+run_uuid: 1acc38e833614363a6ad176bf05c4703
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531484568
+status: 3
+tags: []
+user_id: elias

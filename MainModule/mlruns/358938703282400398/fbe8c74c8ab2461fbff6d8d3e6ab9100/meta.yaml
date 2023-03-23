@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/fbe8c74c8ab2461fbff6d8d3e6ab9100/artifacts
+end_time: 1679482727346
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: fbe8c74c8ab2461fbff6d8d3e6ab9100
+run_name: gregarious-wolf-505
+run_uuid: fbe8c74c8ab2461fbff6d8d3e6ab9100
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482726987
+status: 3
+tags: []
+user_id: elias

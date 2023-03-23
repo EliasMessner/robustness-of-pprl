@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/187b0ac9860b4f7a982aeb1f5b90e9a9/artifacts
+end_time: 1679532236364
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 187b0ac9860b4f7a982aeb1f5b90e9a9
+run_name: dazzling-croc-893
+run_uuid: 187b0ac9860b4f7a982aeb1f5b90e9a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532235020
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/a148480ed2f248fdbfce26a4f5663110/artifacts
+end_time: 1679486768705
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: a148480ed2f248fdbfce26a4f5663110
+run_name: luminous-deer-544
+run_uuid: a148480ed2f248fdbfce26a4f5663110
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486767877
+status: 3
+tags: []
+user_id: elias

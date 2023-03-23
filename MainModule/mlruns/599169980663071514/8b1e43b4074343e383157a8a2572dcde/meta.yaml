@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8b1e43b4074343e383157a8a2572dcde/artifacts
+end_time: 1679531084716
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8b1e43b4074343e383157a8a2572dcde
+run_name: stylish-sheep-600
+run_uuid: 8b1e43b4074343e383157a8a2572dcde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531084060
+status: 3
+tags: []
+user_id: elias

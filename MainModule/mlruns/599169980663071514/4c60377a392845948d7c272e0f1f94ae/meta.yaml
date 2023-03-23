@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4c60377a392845948d7c272e0f1f94ae/artifacts
+end_time: 1679532256725
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4c60377a392845948d7c272e0f1f94ae
+run_name: nosy-swan-637
+run_uuid: 4c60377a392845948d7c272e0f1f94ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532255037
+status: 3
+tags: []
+user_id: elias

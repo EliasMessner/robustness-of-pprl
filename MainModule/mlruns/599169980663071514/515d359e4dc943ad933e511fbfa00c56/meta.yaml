@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/515d359e4dc943ad933e511fbfa00c56/artifacts
+end_time: 1679532509777
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 515d359e4dc943ad933e511fbfa00c56
+run_name: abundant-swan-386
+run_uuid: 515d359e4dc943ad933e511fbfa00c56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532508136
+status: 3
+tags: []
+user_id: elias

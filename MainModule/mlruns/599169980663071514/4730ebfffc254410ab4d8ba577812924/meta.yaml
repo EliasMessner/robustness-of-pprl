@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4730ebfffc254410ab4d8ba577812924/artifacts
+end_time: 1679530391391
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4730ebfffc254410ab4d8ba577812924
+run_name: spiffy-perch-398
+run_uuid: 4730ebfffc254410ab4d8ba577812924
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530390860
+status: 3
+tags: []
+user_id: elias

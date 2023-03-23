@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/d196a0fd84694c69a80d3c3d9fa3879e/artifacts
+end_time: 1679486611420
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: d196a0fd84694c69a80d3c3d9fa3879e
+run_name: dapper-ant-671
+run_uuid: d196a0fd84694c69a80d3c3d9fa3879e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486610764
+status: 3
+tags: []
+user_id: elias

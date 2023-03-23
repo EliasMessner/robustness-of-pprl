@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/cd4ba78424d84dd9b9edaaf0cd03f63b/artifacts
+end_time: 1679532729094
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: cd4ba78424d84dd9b9edaaf0cd03f63b
+run_name: glamorous-croc-970
+run_uuid: cd4ba78424d84dd9b9edaaf0cd03f63b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532728141
+status: 3
+tags: []
+user_id: elias

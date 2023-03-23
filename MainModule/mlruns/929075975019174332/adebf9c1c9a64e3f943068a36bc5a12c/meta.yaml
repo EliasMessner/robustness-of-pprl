@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/adebf9c1c9a64e3f943068a36bc5a12c/artifacts
+end_time: 1679502657245
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: adebf9c1c9a64e3f943068a36bc5a12c
+run_name: clumsy-colt-24
+run_uuid: adebf9c1c9a64e3f943068a36bc5a12c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502656870
+status: 3
+tags: []
+user_id: elias

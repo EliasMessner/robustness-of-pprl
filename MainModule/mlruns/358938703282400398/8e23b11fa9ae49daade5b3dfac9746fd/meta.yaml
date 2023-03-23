@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/8e23b11fa9ae49daade5b3dfac9746fd/artifacts
+end_time: 1679482606062
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 8e23b11fa9ae49daade5b3dfac9746fd
+run_name: judicious-hare-269
+run_uuid: 8e23b11fa9ae49daade5b3dfac9746fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482605656
+status: 3
+tags: []
+user_id: elias

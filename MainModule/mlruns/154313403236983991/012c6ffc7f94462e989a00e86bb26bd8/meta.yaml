@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/012c6ffc7f94462e989a00e86bb26bd8/artifacts
+end_time: 1679508667671
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 012c6ffc7f94462e989a00e86bb26bd8
+run_name: tasteful-mole-692
+run_uuid: 012c6ffc7f94462e989a00e86bb26bd8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508667217
+status: 3
+tags: []
+user_id: elias

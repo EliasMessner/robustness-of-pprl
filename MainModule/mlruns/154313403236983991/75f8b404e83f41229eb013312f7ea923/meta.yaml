@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/75f8b404e83f41229eb013312f7ea923/artifacts
+end_time: 1679508235864
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 75f8b404e83f41229eb013312f7ea923
+run_name: fortunate-ant-289
+run_uuid: 75f8b404e83f41229eb013312f7ea923
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508235583
+status: 3
+tags: []
+user_id: elias

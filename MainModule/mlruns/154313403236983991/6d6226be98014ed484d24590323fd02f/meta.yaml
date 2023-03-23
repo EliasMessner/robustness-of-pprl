@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/6d6226be98014ed484d24590323fd02f/artifacts
+end_time: 1679508591731
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 6d6226be98014ed484d24590323fd02f
+run_name: omniscient-bass-323
+run_uuid: 6d6226be98014ed484d24590323fd02f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508591403
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/47d840094d1a4688a41bf78f6c5c7fce/artifacts
+end_time: 1679531444645
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 47d840094d1a4688a41bf78f6c5c7fce
+run_name: loud-trout-400
+run_uuid: 47d840094d1a4688a41bf78f6c5c7fce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531443192
+status: 3
+tags: []
+user_id: elias

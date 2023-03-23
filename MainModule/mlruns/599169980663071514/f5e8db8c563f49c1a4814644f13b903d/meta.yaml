@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f5e8db8c563f49c1a4814644f13b903d/artifacts
+end_time: 1679530540081
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f5e8db8c563f49c1a4814644f13b903d
+run_name: shivering-stork-776
+run_uuid: f5e8db8c563f49c1a4814644f13b903d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530539315
+status: 3
+tags: []
+user_id: elias

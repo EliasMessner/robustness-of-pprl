@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/adbc08458f9442b59a112908d03c8bbb/artifacts
+end_time: 1679513022637
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: adbc08458f9442b59a112908d03c8bbb
+run_name: invincible-sow-105
+run_uuid: adbc08458f9442b59a112908d03c8bbb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513021106
+status: 3
+tags: []
+user_id: elias

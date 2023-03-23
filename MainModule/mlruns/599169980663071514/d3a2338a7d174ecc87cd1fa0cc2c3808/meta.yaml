@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d3a2338a7d174ecc87cd1fa0cc2c3808/artifacts
+end_time: 1679530627347
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d3a2338a7d174ecc87cd1fa0cc2c3808
+run_name: exultant-duck-575
+run_uuid: d3a2338a7d174ecc87cd1fa0cc2c3808
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530626769
+status: 3
+tags: []
+user_id: elias

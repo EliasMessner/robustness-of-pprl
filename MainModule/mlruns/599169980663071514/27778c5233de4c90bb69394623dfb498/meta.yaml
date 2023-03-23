@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/27778c5233de4c90bb69394623dfb498/artifacts
+end_time: 1679531201531
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 27778c5233de4c90bb69394623dfb498
+run_name: dazzling-carp-772
+run_uuid: 27778c5233de4c90bb69394623dfb498
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531200093
+status: 3
+tags: []
+user_id: elias

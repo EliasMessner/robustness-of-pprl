@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/54ed511b1bfa4520ad8204b0487157df/artifacts
+end_time: 1679489354410
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 54ed511b1bfa4520ad8204b0487157df
+run_name: puzzled-colt-903
+run_uuid: 54ed511b1bfa4520ad8204b0487157df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489354223
+status: 3
+tags: []
+user_id: elias

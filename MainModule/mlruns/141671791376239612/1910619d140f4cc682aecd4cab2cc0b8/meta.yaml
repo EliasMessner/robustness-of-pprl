@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/1910619d140f4cc682aecd4cab2cc0b8/artifacts
+end_time: 1679489283487
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 1910619d140f4cc682aecd4cab2cc0b8
+run_name: suave-bird-466
+run_uuid: 1910619d140f4cc682aecd4cab2cc0b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489283315
+status: 3
+tags: []
+user_id: elias

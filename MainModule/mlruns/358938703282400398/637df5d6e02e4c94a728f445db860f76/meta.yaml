@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/637df5d6e02e4c94a728f445db860f76/artifacts
+end_time: 1679482120647
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 637df5d6e02e4c94a728f445db860f76
+run_name: merciful-swan-651
+run_uuid: 637df5d6e02e4c94a728f445db860f76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482119725
+status: 3
+tags: []
+user_id: elias

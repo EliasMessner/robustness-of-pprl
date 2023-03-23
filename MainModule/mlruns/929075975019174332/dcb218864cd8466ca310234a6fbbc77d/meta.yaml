@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/dcb218864cd8466ca310234a6fbbc77d/artifacts
+end_time: 1679502505977
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: dcb218864cd8466ca310234a6fbbc77d
+run_name: vaunted-wasp-116
+run_uuid: dcb218864cd8466ca310234a6fbbc77d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502505586
+status: 3
+tags: []
+user_id: elias

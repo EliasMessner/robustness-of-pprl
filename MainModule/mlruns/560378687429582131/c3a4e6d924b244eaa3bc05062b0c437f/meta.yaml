@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/c3a4e6d924b244eaa3bc05062b0c437f/artifacts
+end_time: 1679497170654
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: c3a4e6d924b244eaa3bc05062b0c437f
+run_name: tasteful-mouse-75
+run_uuid: c3a4e6d924b244eaa3bc05062b0c437f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497169310
+status: 3
+tags: []
+user_id: elias

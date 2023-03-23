@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/14a47e6f6eec4f22841b471ef31c1928/artifacts
+end_time: 1679531335549
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 14a47e6f6eec4f22841b471ef31c1928
+run_name: dashing-skunk-115
+run_uuid: 14a47e6f6eec4f22841b471ef31c1928
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531335033
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0a5be5f912d64942a3b46ee5e613f983/artifacts
+end_time: 1679531610711
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0a5be5f912d64942a3b46ee5e613f983
+run_name: fortunate-goat-187
+run_uuid: 0a5be5f912d64942a3b46ee5e613f983
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531609976
+status: 3
+tags: []
+user_id: elias

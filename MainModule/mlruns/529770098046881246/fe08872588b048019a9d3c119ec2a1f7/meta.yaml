@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/fe08872588b048019a9d3c119ec2a1f7/artifacts
+end_time: 1679486437792
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: fe08872588b048019a9d3c119ec2a1f7
+run_name: delightful-hog-38
+run_uuid: fe08872588b048019a9d3c119ec2a1f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486436792
+status: 3
+tags: []
+user_id: elias

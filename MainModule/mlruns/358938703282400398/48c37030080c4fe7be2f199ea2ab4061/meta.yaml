@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/48c37030080c4fe7be2f199ea2ab4061/artifacts
+end_time: 1679482517546
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 48c37030080c4fe7be2f199ea2ab4061
+run_name: grandiose-sloth-800
+run_uuid: 48c37030080c4fe7be2f199ea2ab4061
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482517046
+status: 3
+tags: []
+user_id: elias

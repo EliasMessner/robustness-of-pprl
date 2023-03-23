@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/c611dea2d80f493b93288f26c8966c03/artifacts
+end_time: 1679486432745
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: c611dea2d80f493b93288f26c8966c03
+run_name: abrasive-conch-471
+run_uuid: c611dea2d80f493b93288f26c8966c03
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486432510
+status: 3
+tags: []
+user_id: elias

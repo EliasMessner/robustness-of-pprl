@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f05a4aa09a6e4b11a896d7a8bba18cee/artifacts
+end_time: 1679530995980
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f05a4aa09a6e4b11a896d7a8bba18cee
+run_name: able-turtle-541
+run_uuid: f05a4aa09a6e4b11a896d7a8bba18cee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530994543
+status: 3
+tags: []
+user_id: elias

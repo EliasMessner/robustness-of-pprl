@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/307e89d6200045abafe560de09f664d4/artifacts
+end_time: 1679531702212
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 307e89d6200045abafe560de09f664d4
+run_name: bouncy-bass-361
+run_uuid: 307e89d6200045abafe560de09f664d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531701697
+status: 3
+tags: []
+user_id: elias

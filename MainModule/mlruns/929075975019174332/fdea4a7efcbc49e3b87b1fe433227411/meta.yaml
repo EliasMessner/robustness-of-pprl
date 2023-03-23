@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/fdea4a7efcbc49e3b87b1fe433227411/artifacts
+end_time: 1679502689480
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: fdea4a7efcbc49e3b87b1fe433227411
+run_name: capable-horse-548
+run_uuid: fdea4a7efcbc49e3b87b1fe433227411
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502688980
+status: 3
+tags: []
+user_id: elias

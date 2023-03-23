@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/eaaae48b7e8b4c34b8ad09a29c2abd63/artifacts
+end_time: 1679532239630
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: eaaae48b7e8b4c34b8ad09a29c2abd63
+run_name: colorful-gnu-383
+run_uuid: eaaae48b7e8b4c34b8ad09a29c2abd63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532239067
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/da12ba9cff654fdfbfdbc02b411f188b/artifacts
+end_time: 1679513012903
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: da12ba9cff654fdfbfdbc02b411f188b
+run_name: hilarious-dove-419
+run_uuid: da12ba9cff654fdfbfdbc02b411f188b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513012075
+status: 3
+tags: []
+user_id: elias

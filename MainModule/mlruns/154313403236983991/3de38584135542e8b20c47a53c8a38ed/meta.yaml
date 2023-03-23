@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/3de38584135542e8b20c47a53c8a38ed/artifacts
+end_time: 1679508479244
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 3de38584135542e8b20c47a53c8a38ed
+run_name: vaunted-mink-754
+run_uuid: 3de38584135542e8b20c47a53c8a38ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508478603
+status: 3
+tags: []
+user_id: elias

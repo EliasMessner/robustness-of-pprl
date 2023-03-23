@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/6c9f7b4fb32540f88b76f497f857d68b/artifacts
+end_time: 1679508181520
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 6c9f7b4fb32540f88b76f497f857d68b
+run_name: invincible-panda-925
+run_uuid: 6c9f7b4fb32540f88b76f497f857d68b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508181208
+status: 3
+tags: []
+user_id: elias

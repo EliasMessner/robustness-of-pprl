@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/15b573aaafd04fe9bd14126fe5f66e4d/artifacts
+end_time: 1679532246864
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 15b573aaafd04fe9bd14126fe5f66e4d
+run_name: loud-turtle-752
+run_uuid: 15b573aaafd04fe9bd14126fe5f66e4d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532245833
+status: 3
+tags: []
+user_id: elias

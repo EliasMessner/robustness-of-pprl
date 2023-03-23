@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/c123eeabcefe4a6caa9a2478d41954d5/artifacts
+end_time: 1679508717171
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: c123eeabcefe4a6caa9a2478d41954d5
+run_name: blushing-sloth-638
+run_uuid: c123eeabcefe4a6caa9a2478d41954d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508716592
+status: 3
+tags: []
+user_id: elias

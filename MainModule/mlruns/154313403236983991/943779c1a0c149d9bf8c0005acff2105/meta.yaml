@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/943779c1a0c149d9bf8c0005acff2105/artifacts
+end_time: 1679508528354
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 943779c1a0c149d9bf8c0005acff2105
+run_name: sassy-conch-873
+run_uuid: 943779c1a0c149d9bf8c0005acff2105
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508527760
+status: 3
+tags: []
+user_id: elias

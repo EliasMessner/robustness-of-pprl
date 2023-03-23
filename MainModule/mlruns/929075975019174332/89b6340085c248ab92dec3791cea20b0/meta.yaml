@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/89b6340085c248ab92dec3791cea20b0/artifacts
+end_time: 1679502329551
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 89b6340085c248ab92dec3791cea20b0
+run_name: incongruous-foal-464
+run_uuid: 89b6340085c248ab92dec3791cea20b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502329161
+status: 3
+tags: []
+user_id: elias

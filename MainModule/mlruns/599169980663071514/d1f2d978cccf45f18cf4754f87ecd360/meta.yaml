@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d1f2d978cccf45f18cf4754f87ecd360/artifacts
+end_time: 1679530201558
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d1f2d978cccf45f18cf4754f87ecd360
+run_name: tasteful-koi-801
+run_uuid: d1f2d978cccf45f18cf4754f87ecd360
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530200402
+status: 3
+tags: []
+user_id: elias

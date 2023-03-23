@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/f3e11c402ced4f4b92be885ab5ff33d5/artifacts
+end_time: 1679486637234
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: f3e11c402ced4f4b92be885ab5ff33d5
+run_name: delightful-rat-910
+run_uuid: f3e11c402ced4f4b92be885ab5ff33d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486636827
+status: 3
+tags: []
+user_id: elias

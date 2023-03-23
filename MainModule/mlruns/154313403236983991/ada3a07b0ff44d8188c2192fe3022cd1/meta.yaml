@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/ada3a07b0ff44d8188c2192fe3022cd1/artifacts
+end_time: 1679508326569
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: ada3a07b0ff44d8188c2192fe3022cd1
+run_name: bemused-squirrel-603
+run_uuid: ada3a07b0ff44d8188c2192fe3022cd1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508325835
+status: 3
+tags: []
+user_id: elias

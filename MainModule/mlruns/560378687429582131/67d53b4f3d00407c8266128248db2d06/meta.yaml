@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/67d53b4f3d00407c8266128248db2d06/artifacts
+end_time: 1679497535911
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 67d53b4f3d00407c8266128248db2d06
+run_name: rogue-trout-646
+run_uuid: 67d53b4f3d00407c8266128248db2d06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497534083
+status: 3
+tags: []
+user_id: elias

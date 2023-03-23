@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c47d37a8121645c9a0266cc9a0cc8c11/artifacts
+end_time: 1679531583194
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c47d37a8121645c9a0266cc9a0cc8c11
+run_name: marvelous-bass-120
+run_uuid: c47d37a8121645c9a0266cc9a0cc8c11
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531582194
+status: 3
+tags: []
+user_id: elias

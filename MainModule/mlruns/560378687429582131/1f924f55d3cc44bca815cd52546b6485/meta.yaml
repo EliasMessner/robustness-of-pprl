@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/1f924f55d3cc44bca815cd52546b6485/artifacts
+end_time: 1679497483894
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 1f924f55d3cc44bca815cd52546b6485
+run_name: nosy-lark-370
+run_uuid: 1f924f55d3cc44bca815cd52546b6485
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497482660
+status: 3
+tags: []
+user_id: elias

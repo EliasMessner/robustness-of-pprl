@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5a6611b805104d0e9c4363879deca8ad/artifacts
+end_time: 1679531585100
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5a6611b805104d0e9c4363879deca8ad
+run_name: legendary-conch-55
+run_uuid: 5a6611b805104d0e9c4363879deca8ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531584585
+status: 3
+tags: []
+user_id: elias

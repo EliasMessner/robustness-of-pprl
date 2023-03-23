@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/d2b6e33173cf4baea6ffa3a6aaeef984/artifacts
+end_time: 1679482609656
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: d2b6e33173cf4baea6ffa3a6aaeef984
+run_name: tasteful-gnat-273
+run_uuid: d2b6e33173cf4baea6ffa3a6aaeef984
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482609422
+status: 3
+tags: []
+user_id: elias

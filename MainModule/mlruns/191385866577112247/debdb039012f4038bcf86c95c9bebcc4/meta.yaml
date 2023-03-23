@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/debdb039012f4038bcf86c95c9bebcc4/artifacts
+end_time: 1679513239189
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: debdb039012f4038bcf86c95c9bebcc4
+run_name: ambitious-owl-405
+run_uuid: debdb039012f4038bcf86c95c9bebcc4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513235408
+status: 3
+tags: []
+user_id: elias

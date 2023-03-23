@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/33c3f4b8cc5e4efbb35590189ceb912c/artifacts
+end_time: 1679530433110
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 33c3f4b8cc5e4efbb35590189ceb912c
+run_name: colorful-bass-865
+run_uuid: 33c3f4b8cc5e4efbb35590189ceb912c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530432344
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1fdd49fc1d004b9e8d676f25c220c1bd/artifacts
+end_time: 1679532008688
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1fdd49fc1d004b9e8d676f25c220c1bd
+run_name: youthful-fox-500
+run_uuid: 1fdd49fc1d004b9e8d676f25c220c1bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532007719
+status: 3
+tags: []
+user_id: elias

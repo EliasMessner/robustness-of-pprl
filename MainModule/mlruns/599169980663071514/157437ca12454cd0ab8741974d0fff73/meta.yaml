@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/157437ca12454cd0ab8741974d0fff73/artifacts
+end_time: 1679531132436
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 157437ca12454cd0ab8741974d0fff73
+run_name: charming-cod-493
+run_uuid: 157437ca12454cd0ab8741974d0fff73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531131858
+status: 3
+tags: []
+user_id: elias

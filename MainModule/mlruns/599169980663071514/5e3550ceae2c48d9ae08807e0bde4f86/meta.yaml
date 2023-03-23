@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/5e3550ceae2c48d9ae08807e0bde4f86/artifacts
+end_time: 1679531917296
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 5e3550ceae2c48d9ae08807e0bde4f86
+run_name: redolent-squid-47
+run_uuid: 5e3550ceae2c48d9ae08807e0bde4f86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531916124
+status: 3
+tags: []
+user_id: elias

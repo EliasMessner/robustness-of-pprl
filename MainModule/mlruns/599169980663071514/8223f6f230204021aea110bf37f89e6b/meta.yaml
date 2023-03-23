@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8223f6f230204021aea110bf37f89e6b/artifacts
+end_time: 1679532475540
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8223f6f230204021aea110bf37f89e6b
+run_name: zealous-mouse-813
+run_uuid: 8223f6f230204021aea110bf37f89e6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532474197
+status: 3
+tags: []
+user_id: elias

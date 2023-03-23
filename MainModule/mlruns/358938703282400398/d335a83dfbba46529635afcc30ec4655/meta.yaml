@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/d335a83dfbba46529635afcc30ec4655/artifacts
+end_time: 1679482118006
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: d335a83dfbba46529635afcc30ec4655
+run_name: wistful-carp-680
+run_uuid: d335a83dfbba46529635afcc30ec4655
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482117381
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/f9f139e0205c4599acfcd7878f614f69/artifacts
+end_time: 1679502468132
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: f9f139e0205c4599acfcd7878f614f69
+run_name: enchanting-smelt-923
+run_uuid: f9f139e0205c4599acfcd7878f614f69
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502467741
+status: 3
+tags: []
+user_id: elias

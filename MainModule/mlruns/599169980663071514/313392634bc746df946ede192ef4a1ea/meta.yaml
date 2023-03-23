@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/313392634bc746df946ede192ef4a1ea/artifacts
+end_time: 1679532463384
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 313392634bc746df946ede192ef4a1ea
+run_name: dashing-zebra-726
+run_uuid: 313392634bc746df946ede192ef4a1ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532461915
+status: 3
+tags: []
+user_id: elias

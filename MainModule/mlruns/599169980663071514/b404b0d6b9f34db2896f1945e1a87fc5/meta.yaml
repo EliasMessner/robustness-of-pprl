@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b404b0d6b9f34db2896f1945e1a87fc5/artifacts
+end_time: 1679532296318
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b404b0d6b9f34db2896f1945e1a87fc5
+run_name: stylish-frog-459
+run_uuid: b404b0d6b9f34db2896f1945e1a87fc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532295521
+status: 3
+tags: []
+user_id: elias

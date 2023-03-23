@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/815fbe9855d74bf4856989be81d30007/artifacts
+end_time: 1679532396555
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 815fbe9855d74bf4856989be81d30007
+run_name: caring-bug-121
+run_uuid: 815fbe9855d74bf4856989be81d30007
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532395836
+status: 3
+tags: []
+user_id: elias

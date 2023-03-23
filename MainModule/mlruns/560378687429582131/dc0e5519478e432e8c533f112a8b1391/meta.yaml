@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/dc0e5519478e432e8c533f112a8b1391/artifacts
+end_time: 1679497945919
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: dc0e5519478e432e8c533f112a8b1391
+run_name: omniscient-squid-918
+run_uuid: dc0e5519478e432e8c533f112a8b1391
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497944622
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0fa38e2a91eb49d5bcb3ece8d8be5d83/artifacts
+end_time: 1679531562944
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0fa38e2a91eb49d5bcb3ece8d8be5d83
+run_name: gentle-ox-37
+run_uuid: 0fa38e2a91eb49d5bcb3ece8d8be5d83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531562272
+status: 3
+tags: []
+user_id: elias

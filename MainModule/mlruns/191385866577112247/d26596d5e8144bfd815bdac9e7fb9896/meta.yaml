@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/d26596d5e8144bfd815bdac9e7fb9896/artifacts
+end_time: 1679512807930
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: d26596d5e8144bfd815bdac9e7fb9896
+run_name: dapper-hen-111
+run_uuid: d26596d5e8144bfd815bdac9e7fb9896
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512807148
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/bb1ce9803a1f4ff8a9d36101333e81f5/artifacts
+end_time: 1679531209187
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: bb1ce9803a1f4ff8a9d36101333e81f5
+run_name: smiling-wolf-27
+run_uuid: bb1ce9803a1f4ff8a9d36101333e81f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531208187
+status: 3
+tags: []
+user_id: elias

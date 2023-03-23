@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/2d3f746765de48c4a6463083d6c245cd/artifacts
+end_time: 1679486471184
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 2d3f746765de48c4a6463083d6c245cd
+run_name: bald-squirrel-756
+run_uuid: 2d3f746765de48c4a6463083d6c245cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486470543
+status: 3
+tags: []
+user_id: elias

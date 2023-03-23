@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ce5c198223394e6ea2bcc11167f5d29f/artifacts
+end_time: 1679532724015
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ce5c198223394e6ea2bcc11167f5d29f
+run_name: caring-perch-217
+run_uuid: ce5c198223394e6ea2bcc11167f5d29f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532723327
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/b16487f7ee464f299bb0457272596813/artifacts
+end_time: 1679502611807
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: b16487f7ee464f299bb0457272596813
+run_name: mercurial-bird-953
+run_uuid: b16487f7ee464f299bb0457272596813
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502610057
+status: 3
+tags: []
+user_id: elias

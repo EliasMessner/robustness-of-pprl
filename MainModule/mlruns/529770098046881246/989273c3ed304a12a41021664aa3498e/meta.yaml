@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/989273c3ed304a12a41021664aa3498e/artifacts
+end_time: 1679486699172
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 989273c3ed304a12a41021664aa3498e
+run_name: wise-swan-260
+run_uuid: 989273c3ed304a12a41021664aa3498e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486698344
+status: 3
+tags: []
+user_id: elias

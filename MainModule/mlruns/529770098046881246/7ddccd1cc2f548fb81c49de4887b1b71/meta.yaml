@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/7ddccd1cc2f548fb81c49de4887b1b71/artifacts
+end_time: 1679486667468
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 7ddccd1cc2f548fb81c49de4887b1b71
+run_name: popular-fox-562
+run_uuid: 7ddccd1cc2f548fb81c49de4887b1b71
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486666687
+status: 3
+tags: []
+user_id: elias

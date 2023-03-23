@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/974e44af911a4fbbb3243b4bc469f2b2/artifacts
+end_time: 1679491278252
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 974e44af911a4fbbb3243b4bc469f2b2
+run_name: gentle-rat-803
+run_uuid: 974e44af911a4fbbb3243b4bc469f2b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491276720
+status: 3
+tags: []
+user_id: elias

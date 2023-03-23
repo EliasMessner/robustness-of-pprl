@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6f389d09c50745bd9f3c9c4e32763349/artifacts
+end_time: 1679532238895
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6f389d09c50745bd9f3c9c4e32763349
+run_name: burly-moth-360
+run_uuid: 6f389d09c50745bd9f3c9c4e32763349
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532237364
+status: 3
+tags: []
+user_id: elias

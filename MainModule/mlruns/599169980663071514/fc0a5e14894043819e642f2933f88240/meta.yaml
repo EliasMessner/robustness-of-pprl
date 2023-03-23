@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fc0a5e14894043819e642f2933f88240/artifacts
+end_time: 1679531325595
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fc0a5e14894043819e642f2933f88240
+run_name: treasured-robin-822
+run_uuid: fc0a5e14894043819e642f2933f88240
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531325095
+status: 3
+tags: []
+user_id: elias

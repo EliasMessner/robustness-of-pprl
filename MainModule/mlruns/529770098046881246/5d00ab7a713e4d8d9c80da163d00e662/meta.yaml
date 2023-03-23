@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/5d00ab7a713e4d8d9c80da163d00e662/artifacts
+end_time: 1679486625514
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 5d00ab7a713e4d8d9c80da163d00e662
+run_name: abrasive-lamb-654
+run_uuid: 5d00ab7a713e4d8d9c80da163d00e662
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486624733
+status: 3
+tags: []
+user_id: elias

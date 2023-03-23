@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a6c14d2b684e473fbb1f9f1a2719ce6d/artifacts
+end_time: 1679530752554
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a6c14d2b684e473fbb1f9f1a2719ce6d
+run_name: smiling-stork-868
+run_uuid: a6c14d2b684e473fbb1f9f1a2719ce6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530751523
+status: 3
+tags: []
+user_id: elias

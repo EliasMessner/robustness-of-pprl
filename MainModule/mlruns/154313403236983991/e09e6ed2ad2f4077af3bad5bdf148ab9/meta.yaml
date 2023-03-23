@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/e09e6ed2ad2f4077af3bad5bdf148ab9/artifacts
+end_time: 1679508578965
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: e09e6ed2ad2f4077af3bad5bdf148ab9
+run_name: gentle-turtle-476
+run_uuid: e09e6ed2ad2f4077af3bad5bdf148ab9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508578246
+status: 3
+tags: []
+user_id: elias

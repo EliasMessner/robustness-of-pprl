@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e4eb769486f54b37ad5e42456c5a7fa9/artifacts
+end_time: 1679530563143
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e4eb769486f54b37ad5e42456c5a7fa9
+run_name: overjoyed-fawn-286
+run_uuid: e4eb769486f54b37ad5e42456c5a7fa9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530562690
+status: 3
+tags: []
+user_id: elias

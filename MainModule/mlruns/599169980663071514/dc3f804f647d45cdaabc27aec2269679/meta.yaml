@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dc3f804f647d45cdaabc27aec2269679/artifacts
+end_time: 1679531926936
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dc3f804f647d45cdaabc27aec2269679
+run_name: dapper-whale-792
+run_uuid: dc3f804f647d45cdaabc27aec2269679
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531926436
+status: 3
+tags: []
+user_id: elias

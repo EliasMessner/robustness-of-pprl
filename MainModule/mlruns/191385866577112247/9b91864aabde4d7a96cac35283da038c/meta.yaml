@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/9b91864aabde4d7a96cac35283da038c/artifacts
+end_time: 1679513135968
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 9b91864aabde4d7a96cac35283da038c
+run_name: bittersweet-stag-749
+run_uuid: 9b91864aabde4d7a96cac35283da038c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679513134202
+status: 3
+tags: []
+user_id: elias

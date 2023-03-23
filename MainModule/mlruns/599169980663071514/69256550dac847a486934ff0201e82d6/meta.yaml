@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/69256550dac847a486934ff0201e82d6/artifacts
+end_time: 1679532710921
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 69256550dac847a486934ff0201e82d6
+run_name: dazzling-sheep-487
+run_uuid: 69256550dac847a486934ff0201e82d6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532710343
+status: 3
+tags: []
+user_id: elias

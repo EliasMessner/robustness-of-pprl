@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/00f2f5a84504429e9188cca009c9d0dd/artifacts
+end_time: 1679531362690
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 00f2f5a84504429e9188cca009c9d0dd
+run_name: youthful-mink-305
+run_uuid: 00f2f5a84504429e9188cca009c9d0dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531361784
+status: 3
+tags: []
+user_id: elias

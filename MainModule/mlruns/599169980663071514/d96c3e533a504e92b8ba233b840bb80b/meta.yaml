@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d96c3e533a504e92b8ba233b840bb80b/artifacts
+end_time: 1679530450033
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d96c3e533a504e92b8ba233b840bb80b
+run_name: luminous-conch-897
+run_uuid: d96c3e533a504e92b8ba233b840bb80b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530449111
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/86f1abe2eb7c4deab79e47b7fefd9de1/artifacts
+end_time: 1679508193864
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 86f1abe2eb7c4deab79e47b7fefd9de1
+run_name: bemused-dolphin-378
+run_uuid: 86f1abe2eb7c4deab79e47b7fefd9de1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508193223
+status: 3
+tags: []
+user_id: elias

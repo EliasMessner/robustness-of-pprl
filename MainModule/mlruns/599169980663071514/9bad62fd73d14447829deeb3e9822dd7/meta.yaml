@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9bad62fd73d14447829deeb3e9822dd7/artifacts
+end_time: 1679531619398
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9bad62fd73d14447829deeb3e9822dd7
+run_name: unique-goose-731
+run_uuid: 9bad62fd73d14447829deeb3e9822dd7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531618742
+status: 3
+tags: []
+user_id: elias

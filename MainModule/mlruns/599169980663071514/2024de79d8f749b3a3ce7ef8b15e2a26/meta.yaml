@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2024de79d8f749b3a3ce7ef8b15e2a26/artifacts
+end_time: 1679531352925
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2024de79d8f749b3a3ce7ef8b15e2a26
+run_name: dazzling-sloth-616
+run_uuid: 2024de79d8f749b3a3ce7ef8b15e2a26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531352409
+status: 3
+tags: []
+user_id: elias

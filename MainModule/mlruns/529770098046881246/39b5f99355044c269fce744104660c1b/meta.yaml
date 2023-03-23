@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/529770098046881246/39b5f99355044c269fce744104660c1b/artifacts
+end_time: 1679486495465
+entry_point_name: ''
+experiment_id: '529770098046881246'
+lifecycle_stage: active
+run_id: 39b5f99355044c269fce744104660c1b
+run_name: luxuriant-dove-238
+run_uuid: 39b5f99355044c269fce744104660c1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679486494793
+status: 3
+tags: []
+user_id: elias

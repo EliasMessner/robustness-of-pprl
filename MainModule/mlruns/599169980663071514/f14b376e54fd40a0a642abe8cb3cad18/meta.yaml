@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f14b376e54fd40a0a642abe8cb3cad18/artifacts
+end_time: 1679532705265
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f14b376e54fd40a0a642abe8cb3cad18
+run_name: whimsical-tern-148
+run_uuid: f14b376e54fd40a0a642abe8cb3cad18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532703968
+status: 3
+tags: []
+user_id: elias

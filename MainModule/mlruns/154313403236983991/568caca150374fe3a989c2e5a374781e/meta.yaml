@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/568caca150374fe3a989c2e5a374781e/artifacts
+end_time: 1679508135237
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 568caca150374fe3a989c2e5a374781e
+run_name: marvelous-moose-320
+run_uuid: 568caca150374fe3a989c2e5a374781e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508133566
+status: 3
+tags: []
+user_id: elias

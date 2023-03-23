@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/263b1bd1ded54c51b19c18300d42cb9e/artifacts
+end_time: 1679532048298
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 263b1bd1ded54c51b19c18300d42cb9e
+run_name: bittersweet-flea-117
+run_uuid: 263b1bd1ded54c51b19c18300d42cb9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532047251
+status: 3
+tags: []
+user_id: elias

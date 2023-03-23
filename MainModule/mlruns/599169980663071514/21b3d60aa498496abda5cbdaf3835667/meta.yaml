@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/21b3d60aa498496abda5cbdaf3835667/artifacts
+end_time: 1679530798757
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 21b3d60aa498496abda5cbdaf3835667
+run_name: indecisive-bass-569
+run_uuid: 21b3d60aa498496abda5cbdaf3835667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530797085
+status: 3
+tags: []
+user_id: elias

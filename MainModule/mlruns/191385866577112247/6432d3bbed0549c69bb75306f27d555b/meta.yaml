@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/6432d3bbed0549c69bb75306f27d555b/artifacts
+end_time: 1679512964761
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 6432d3bbed0549c69bb75306f27d555b
+run_name: spiffy-skunk-654
+run_uuid: 6432d3bbed0549c69bb75306f27d555b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512963324
+status: 3
+tags: []
+user_id: elias

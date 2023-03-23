@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/98614ce2cb9d4fbbb3e94828a69a23c7/artifacts
+end_time: 1679531067825
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 98614ce2cb9d4fbbb3e94828a69a23c7
+run_name: bouncy-ox-608
+run_uuid: 98614ce2cb9d4fbbb3e94828a69a23c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531067247
+status: 3
+tags: []
+user_id: elias

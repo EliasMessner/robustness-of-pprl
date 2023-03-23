@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/10ce912f0c2c470ab94dbc8679f8d2f5/artifacts
+end_time: 1679491330940
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 10ce912f0c2c470ab94dbc8679f8d2f5
+run_name: melodic-sow-614
+run_uuid: 10ce912f0c2c470ab94dbc8679f8d2f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491329472
+status: 3
+tags: []
+user_id: elias

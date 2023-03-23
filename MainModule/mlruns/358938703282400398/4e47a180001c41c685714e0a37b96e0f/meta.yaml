@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/4e47a180001c41c685714e0a37b96e0f/artifacts
+end_time: 1679482658485
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 4e47a180001c41c685714e0a37b96e0f
+run_name: popular-boar-942
+run_uuid: 4e47a180001c41c685714e0a37b96e0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482657751
+status: 3
+tags: []
+user_id: elias

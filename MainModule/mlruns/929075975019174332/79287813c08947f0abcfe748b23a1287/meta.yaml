@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/79287813c08947f0abcfe748b23a1287/artifacts
+end_time: 1679502714262
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 79287813c08947f0abcfe748b23a1287
+run_name: painted-eel-161
+run_uuid: 79287813c08947f0abcfe748b23a1287
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502713840
+status: 3
+tags: []
+user_id: elias

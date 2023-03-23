@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/6377a95701774c238711ee1a4b7db6ee/artifacts
+end_time: 1679512907853
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 6377a95701774c238711ee1a4b7db6ee
+run_name: gregarious-midge-288
+run_uuid: 6377a95701774c238711ee1a4b7db6ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512906618
+status: 3
+tags: []
+user_id: elias

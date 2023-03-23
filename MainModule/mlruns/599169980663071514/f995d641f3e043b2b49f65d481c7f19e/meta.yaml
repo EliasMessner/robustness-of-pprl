@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f995d641f3e043b2b49f65d481c7f19e/artifacts
+end_time: 1679531679119
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f995d641f3e043b2b49f65d481c7f19e
+run_name: puzzled-cow-963
+run_uuid: f995d641f3e043b2b49f65d481c7f19e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531678353
+status: 3
+tags: []
+user_id: elias

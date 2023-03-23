@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0c43a9d4db19448ea60acadcea7d19d8/artifacts
+end_time: 1679530568722
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0c43a9d4db19448ea60acadcea7d19d8
+run_name: nervous-zebra-557
+run_uuid: 0c43a9d4db19448ea60acadcea7d19d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530568035
+status: 3
+tags: []
+user_id: elias

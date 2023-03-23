@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/98c243f16c3f4a6b97500d70f4ecb014/artifacts
+end_time: 1679531053013
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 98c243f16c3f4a6b97500d70f4ecb014
+run_name: fearless-croc-520
+run_uuid: 98c243f16c3f4a6b97500d70f4ecb014
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531051294
+status: 3
+tags: []
+user_id: elias

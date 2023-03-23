@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/526f05dd4d3d49e29e5d809222a1cbbb/artifacts
+end_time: 1679530687036
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 526f05dd4d3d49e29e5d809222a1cbbb
+run_name: carefree-dog-799
+run_uuid: 526f05dd4d3d49e29e5d809222a1cbbb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530685942
+status: 3
+tags: []
+user_id: elias

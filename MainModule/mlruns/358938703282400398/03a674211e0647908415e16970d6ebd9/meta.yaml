@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/03a674211e0647908415e16970d6ebd9/artifacts
+end_time: 1679482329902
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 03a674211e0647908415e16970d6ebd9
+run_name: nervous-shoat-6
+run_uuid: 03a674211e0647908415e16970d6ebd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482329464
+status: 3
+tags: []
+user_id: elias

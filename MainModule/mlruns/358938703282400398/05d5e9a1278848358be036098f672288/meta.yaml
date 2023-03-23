@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/05d5e9a1278848358be036098f672288/artifacts
+end_time: 1679482762097
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 05d5e9a1278848358be036098f672288
+run_name: capable-dog-188
+run_uuid: 05d5e9a1278848358be036098f672288
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482761347
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/1b3ab00be06f4f7a8093a23295630b19/artifacts
+end_time: 1679497685415
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 1b3ab00be06f4f7a8093a23295630b19
+run_name: lyrical-ray-712
+run_uuid: 1b3ab00be06f4f7a8093a23295630b19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497683336
+status: 3
+tags: []
+user_id: elias

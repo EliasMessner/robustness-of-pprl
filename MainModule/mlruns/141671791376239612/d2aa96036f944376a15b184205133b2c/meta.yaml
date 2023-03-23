@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/d2aa96036f944376a15b184205133b2c/artifacts
+end_time: 1679489238830
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: d2aa96036f944376a15b184205133b2c
+run_name: big-fowl-377
+run_uuid: d2aa96036f944376a15b184205133b2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489238674
+status: 3
+tags: []
+user_id: elias

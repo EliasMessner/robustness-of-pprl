@@ -1,0 +1,20 @@
+{
+  "base_dataset": "data/2023_NCVR_Panse_1M/records.csv",
+  "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
+  "source_id_col_name": "sourceID",
+  "global_id_col_name": "globalID",
+  "desc": "Different age subset, with downsampling to 200000.",
+  "variations": [
+    {
+      "desc": "Different age subset, with downsampling to 200000.",
+      "params": {
+        "subset_selection": "AGE",
+        "range": null,
+        "downsampling": 200000
+      },
+      "replacements": {
+        "range": [[0, 19], [20, 39], [40, 59], [60, 1000]]
+      }
+    }
+  ]
+}

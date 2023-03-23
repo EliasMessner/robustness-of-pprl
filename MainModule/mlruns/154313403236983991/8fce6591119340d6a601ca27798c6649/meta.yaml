@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/8fce6591119340d6a601ca27798c6649/artifacts
+end_time: 1679508580559
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 8fce6591119340d6a601ca27798c6649
+run_name: wise-shad-180
+run_uuid: 8fce6591119340d6a601ca27798c6649
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508579840
+status: 3
+tags: []
+user_id: elias

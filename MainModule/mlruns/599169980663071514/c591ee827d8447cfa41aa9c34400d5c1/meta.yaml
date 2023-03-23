@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c591ee827d8447cfa41aa9c34400d5c1/artifacts
+end_time: 1679532492949
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c591ee827d8447cfa41aa9c34400d5c1
+run_name: redolent-skunk-407
+run_uuid: c591ee827d8447cfa41aa9c34400d5c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532491417
+status: 3
+tags: []
+user_id: elias

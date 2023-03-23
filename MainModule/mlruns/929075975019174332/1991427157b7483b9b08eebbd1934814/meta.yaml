@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/1991427157b7483b9b08eebbd1934814/artifacts
+end_time: 1679502691512
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 1991427157b7483b9b08eebbd1934814
+run_name: youthful-owl-825
+run_uuid: 1991427157b7483b9b08eebbd1934814
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502691105
+status: 3
+tags: []
+user_id: elias

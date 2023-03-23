@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/74df59cbf80f45378cb5f954e0a325fc/artifacts
+end_time: 1679530213887
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 74df59cbf80f45378cb5f954e0a325fc
+run_name: sassy-asp-725
+run_uuid: 74df59cbf80f45378cb5f954e0a325fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530212684
+status: 3
+tags: []
+user_id: elias

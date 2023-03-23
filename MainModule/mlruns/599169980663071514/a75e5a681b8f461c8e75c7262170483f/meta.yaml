@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a75e5a681b8f461c8e75c7262170483f/artifacts
+end_time: 1679532216098
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a75e5a681b8f461c8e75c7262170483f
+run_name: upbeat-ram-802
+run_uuid: a75e5a681b8f461c8e75c7262170483f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532215083
+status: 3
+tags: []
+user_id: elias

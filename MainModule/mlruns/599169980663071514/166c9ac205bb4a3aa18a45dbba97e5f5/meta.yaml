@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/166c9ac205bb4a3aa18a45dbba97e5f5/artifacts
+end_time: 1679530689740
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 166c9ac205bb4a3aa18a45dbba97e5f5
+run_name: fearless-shrew-483
+run_uuid: 166c9ac205bb4a3aa18a45dbba97e5f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530688553
+status: 3
+tags: []
+user_id: elias

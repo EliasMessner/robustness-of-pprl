@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f75a0a66f5894ca88f4c0ab362343c5e/artifacts
+end_time: 1679530621300
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f75a0a66f5894ca88f4c0ab362343c5e
+run_name: treasured-wasp-335
+run_uuid: f75a0a66f5894ca88f4c0ab362343c5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530620504
+status: 3
+tags: []
+user_id: elias

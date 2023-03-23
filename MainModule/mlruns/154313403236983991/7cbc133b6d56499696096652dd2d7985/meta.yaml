@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/7cbc133b6d56499696096652dd2d7985/artifacts
+end_time: 1679508307304
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 7cbc133b6d56499696096652dd2d7985
+run_name: casual-wolf-550
+run_uuid: 7cbc133b6d56499696096652dd2d7985
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508306554
+status: 3
+tags: []
+user_id: elias

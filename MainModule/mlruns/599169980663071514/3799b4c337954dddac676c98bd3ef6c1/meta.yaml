@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3799b4c337954dddac676c98bd3ef6c1/artifacts
+end_time: 1679531305049
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3799b4c337954dddac676c98bd3ef6c1
+run_name: victorious-bass-287
+run_uuid: 3799b4c337954dddac676c98bd3ef6c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531304439
+status: 3
+tags: []
+user_id: elias

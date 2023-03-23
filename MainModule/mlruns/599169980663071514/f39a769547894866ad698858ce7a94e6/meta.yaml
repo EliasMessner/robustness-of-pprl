@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f39a769547894866ad698858ce7a94e6/artifacts
+end_time: 1679530681505
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f39a769547894866ad698858ce7a94e6
+run_name: upbeat-pig-707
+run_uuid: f39a769547894866ad698858ce7a94e6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530680708
+status: 3
+tags: []
+user_id: elias

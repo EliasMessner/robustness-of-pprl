@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/9b77b2238a3a4aaf8796013a79e285bb/artifacts
+end_time: 1679508534964
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 9b77b2238a3a4aaf8796013a79e285bb
+run_name: secretive-ray-764
+run_uuid: 9b77b2238a3a4aaf8796013a79e285bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508534135
+status: 3
+tags: []
+user_id: elias

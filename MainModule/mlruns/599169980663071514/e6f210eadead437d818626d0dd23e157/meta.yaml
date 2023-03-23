@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e6f210eadead437d818626d0dd23e157/artifacts
+end_time: 1679532044063
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e6f210eadead437d818626d0dd23e157
+run_name: smiling-hare-601
+run_uuid: e6f210eadead437d818626d0dd23e157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532043345
+status: 3
+tags: []
+user_id: elias

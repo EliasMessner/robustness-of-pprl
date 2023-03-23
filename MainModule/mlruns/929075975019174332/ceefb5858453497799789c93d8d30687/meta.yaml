@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/ceefb5858453497799789c93d8d30687/artifacts
+end_time: 1679502315723
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: ceefb5858453497799789c93d8d30687
+run_name: enchanting-lynx-115
+run_uuid: ceefb5858453497799789c93d8d30687
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502315067
+status: 3
+tags: []
+user_id: elias

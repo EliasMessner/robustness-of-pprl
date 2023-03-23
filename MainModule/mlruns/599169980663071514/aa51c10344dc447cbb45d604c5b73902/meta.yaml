@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/aa51c10344dc447cbb45d604c5b73902/artifacts
+end_time: 1679530993465
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: aa51c10344dc447cbb45d604c5b73902
+run_name: blushing-stoat-467
+run_uuid: aa51c10344dc447cbb45d604c5b73902
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530992215
+status: 3
+tags: []
+user_id: elias

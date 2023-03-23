@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/2c5a883c329a40beae9b13cb2f34450e/artifacts
+end_time: 1679532097565
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 2c5a883c329a40beae9b13cb2f34450e
+run_name: righteous-stag-510
+run_uuid: 2c5a883c329a40beae9b13cb2f34450e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532097033
+status: 3
+tags: []
+user_id: elias

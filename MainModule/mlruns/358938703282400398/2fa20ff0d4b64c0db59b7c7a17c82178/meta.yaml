@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/2fa20ff0d4b64c0db59b7c7a17c82178/artifacts
+end_time: 1679482617189
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 2fa20ff0d4b64c0db59b7c7a17c82178
+run_name: nebulous-dolphin-942
+run_uuid: 2fa20ff0d4b64c0db59b7c7a17c82178
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482616204
+status: 3
+tags: []
+user_id: elias

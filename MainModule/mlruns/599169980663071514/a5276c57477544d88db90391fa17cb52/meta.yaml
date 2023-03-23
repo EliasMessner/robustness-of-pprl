@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a5276c57477544d88db90391fa17cb52/artifacts
+end_time: 1679531819918
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a5276c57477544d88db90391fa17cb52
+run_name: upbeat-steed-758
+run_uuid: a5276c57477544d88db90391fa17cb52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531819371
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/e5915ccb18a744eaaac8237fe78c1ec2/artifacts
+end_time: 1679508317007
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: e5915ccb18a744eaaac8237fe78c1ec2
+run_name: agreeable-calf-251
+run_uuid: e5915ccb18a744eaaac8237fe78c1ec2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508316507
+status: 3
+tags: []
+user_id: elias

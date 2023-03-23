@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/dfbc7fe3c66f4e0188171679ac0cbbc4/artifacts
+end_time: 1679489289065
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: dfbc7fe3c66f4e0188171679ac0cbbc4
+run_name: gentle-stork-55
+run_uuid: dfbc7fe3c66f4e0188171679ac0cbbc4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489288878
+status: 3
+tags: []
+user_id: elias

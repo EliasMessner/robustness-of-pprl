@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/797dded0e9044b12a802d6655b319ed8/artifacts
+end_time: 1679531461286
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 797dded0e9044b12a802d6655b319ed8
+run_name: caring-shrike-20
+run_uuid: 797dded0e9044b12a802d6655b319ed8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531459395
+status: 3
+tags: []
+user_id: elias

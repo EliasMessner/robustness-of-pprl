@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/1c92a9e0db544506815cfa3f8386ac2d/artifacts
+end_time: 1679489238611
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 1c92a9e0db544506815cfa3f8386ac2d
+run_name: polite-seal-254
+run_uuid: 1c92a9e0db544506815cfa3f8386ac2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489238439
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/740b1c2f7523463c9fcbafbb76a425fe/artifacts
+end_time: 1679531406034
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 740b1c2f7523463c9fcbafbb76a425fe
+run_name: angry-stork-662
+run_uuid: 740b1c2f7523463c9fcbafbb76a425fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531404440
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e2079d6081a74310b099d6acb63e1c32/artifacts
+end_time: 1679531749838
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e2079d6081a74310b099d6acb63e1c32
+run_name: flawless-bee-812
+run_uuid: e2079d6081a74310b099d6acb63e1c32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531748651
+status: 3
+tags: []
+user_id: elias

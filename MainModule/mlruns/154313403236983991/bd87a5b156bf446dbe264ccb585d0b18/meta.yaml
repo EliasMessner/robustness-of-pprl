@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/bd87a5b156bf446dbe264ccb585d0b18/artifacts
+end_time: 1679508257506
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: bd87a5b156bf446dbe264ccb585d0b18
+run_name: skillful-fowl-605
+run_uuid: bd87a5b156bf446dbe264ccb585d0b18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508257084
+status: 3
+tags: []
+user_id: elias

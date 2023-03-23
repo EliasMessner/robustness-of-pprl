@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a7f1a5f76cb54a3b9629f7cc0b816ebd/artifacts
+end_time: 1679530664364
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a7f1a5f76cb54a3b9629f7cc0b816ebd
+run_name: serious-newt-675
+run_uuid: a7f1a5f76cb54a3b9629f7cc0b816ebd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530663755
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/c869207527c847e7ac5de041f2a7dfc5/artifacts
+end_time: 1679530808289
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: c869207527c847e7ac5de041f2a7dfc5
+run_name: learned-stork-987
+run_uuid: c869207527c847e7ac5de041f2a7dfc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530807695
+status: 3
+tags: []
+user_id: elias

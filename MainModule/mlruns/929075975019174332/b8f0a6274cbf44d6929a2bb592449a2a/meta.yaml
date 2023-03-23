@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/b8f0a6274cbf44d6929a2bb592449a2a/artifacts
+end_time: 1679502553728
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: b8f0a6274cbf44d6929a2bb592449a2a
+run_name: receptive-squid-11
+run_uuid: b8f0a6274cbf44d6929a2bb592449a2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502553025
+status: 3
+tags: []
+user_id: elias

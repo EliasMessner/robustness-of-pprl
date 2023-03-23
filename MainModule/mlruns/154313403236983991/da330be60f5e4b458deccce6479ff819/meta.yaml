@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/da330be60f5e4b458deccce6479ff819/artifacts
+end_time: 1679508208708
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: da330be60f5e4b458deccce6479ff819
+run_name: amusing-skink-36
+run_uuid: da330be60f5e4b458deccce6479ff819
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508208208
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8475cadbec9847e9b3d1a7f93c62bd78/artifacts
+end_time: 1679531778527
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8475cadbec9847e9b3d1a7f93c62bd78
+run_name: nebulous-kit-699
+run_uuid: 8475cadbec9847e9b3d1a7f93c62bd78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531777762
+status: 3
+tags: []
+user_id: elias

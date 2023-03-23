@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/9cd3ad31af6645b29667483f65df45eb/artifacts
+end_time: 1679497769322
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 9cd3ad31af6645b29667483f65df45eb
+run_name: rebellious-rook-654
+run_uuid: 9cd3ad31af6645b29667483f65df45eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497767525
+status: 3
+tags: []
+user_id: elias

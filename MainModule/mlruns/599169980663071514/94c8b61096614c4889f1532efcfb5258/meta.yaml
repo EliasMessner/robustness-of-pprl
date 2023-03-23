@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/94c8b61096614c4889f1532efcfb5258/artifacts
+end_time: 1679531771074
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 94c8b61096614c4889f1532efcfb5258
+run_name: whimsical-skunk-201
+run_uuid: 94c8b61096614c4889f1532efcfb5258
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531769652
+status: 3
+tags: []
+user_id: elias

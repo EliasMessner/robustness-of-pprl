@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/2a77a598436d4093945daa7eab873a15/artifacts
+end_time: 1679489301472
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 2a77a598436d4093945daa7eab873a15
+run_name: resilient-snail-713
+run_uuid: 2a77a598436d4093945daa7eab873a15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489301300
+status: 3
+tags: []
+user_id: elias

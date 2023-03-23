@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/5ad5f69667d24af0ae5964e5872b3e64/artifacts
+end_time: 1679502328301
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 5ad5f69667d24af0ae5964e5872b3e64
+run_name: bemused-crab-403
+run_uuid: 5ad5f69667d24af0ae5964e5872b3e64
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502327895
+status: 3
+tags: []
+user_id: elias

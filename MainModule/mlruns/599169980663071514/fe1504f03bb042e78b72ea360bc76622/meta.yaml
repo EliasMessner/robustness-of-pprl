@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/fe1504f03bb042e78b72ea360bc76622/artifacts
+end_time: 1679531036715
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: fe1504f03bb042e78b72ea360bc76622
+run_name: melodic-lark-750
+run_uuid: fe1504f03bb042e78b72ea360bc76622
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531034887
+status: 3
+tags: []
+user_id: elias

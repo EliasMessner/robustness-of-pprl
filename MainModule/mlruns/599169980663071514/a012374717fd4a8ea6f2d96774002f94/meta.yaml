@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a012374717fd4a8ea6f2d96774002f94/artifacts
+end_time: 1679531602336
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a012374717fd4a8ea6f2d96774002f94
+run_name: awesome-fowl-535
+run_uuid: a012374717fd4a8ea6f2d96774002f94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531601695
+status: 3
+tags: []
+user_id: elias

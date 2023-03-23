@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/df8044decbd64bada0d5f7a22740db98/artifacts
+end_time: 1679508263412
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: df8044decbd64bada0d5f7a22740db98
+run_name: capricious-owl-450
+run_uuid: df8044decbd64bada0d5f7a22740db98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508262818
+status: 3
+tags: []
+user_id: elias

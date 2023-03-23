@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/ba4dc8b54f7140edbd13ce239b765cd8/artifacts
+end_time: 1679497561787
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: ba4dc8b54f7140edbd13ce239b765cd8
+run_name: chill-perch-948
+run_uuid: ba4dc8b54f7140edbd13ce239b765cd8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497560694
+status: 3
+tags: []
+user_id: elias

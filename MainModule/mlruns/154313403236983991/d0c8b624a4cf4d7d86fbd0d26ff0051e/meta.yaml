@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/d0c8b624a4cf4d7d86fbd0d26ff0051e/artifacts
+end_time: 1679508191020
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: d0c8b624a4cf4d7d86fbd0d26ff0051e
+run_name: defiant-boar-979
+run_uuid: d0c8b624a4cf4d7d86fbd0d26ff0051e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508190489
+status: 3
+tags: []
+user_id: elias

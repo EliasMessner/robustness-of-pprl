@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/32535f909383440d91266684162a670f/artifacts
+end_time: 1679532614763
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 32535f909383440d91266684162a670f
+run_name: resilient-bird-538
+run_uuid: 32535f909383440d91266684162a670f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532614185
+status: 3
+tags: []
+user_id: elias

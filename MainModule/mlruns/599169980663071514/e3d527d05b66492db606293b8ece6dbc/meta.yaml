@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/e3d527d05b66492db606293b8ece6dbc/artifacts
+end_time: 1679530216090
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: e3d527d05b66492db606293b8ece6dbc
+run_name: colorful-conch-347
+run_uuid: e3d527d05b66492db606293b8ece6dbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530214809
+status: 3
+tags: []
+user_id: elias

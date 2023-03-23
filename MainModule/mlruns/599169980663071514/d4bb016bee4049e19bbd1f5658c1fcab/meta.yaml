@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d4bb016bee4049e19bbd1f5658c1fcab/artifacts
+end_time: 1679531695322
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d4bb016bee4049e19bbd1f5658c1fcab
+run_name: gaudy-koi-200
+run_uuid: d4bb016bee4049e19bbd1f5658c1fcab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531693962
+status: 3
+tags: []
+user_id: elias

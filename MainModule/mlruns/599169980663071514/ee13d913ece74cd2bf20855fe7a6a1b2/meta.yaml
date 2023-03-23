@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ee13d913ece74cd2bf20855fe7a6a1b2/artifacts
+end_time: 1679531839872
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ee13d913ece74cd2bf20855fe7a6a1b2
+run_name: monumental-colt-966
+run_uuid: ee13d913ece74cd2bf20855fe7a6a1b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531839107
+status: 3
+tags: []
+user_id: elias

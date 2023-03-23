@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dba5c9b170f54131a109606c40a70c21/artifacts
+end_time: 1679530408281
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dba5c9b170f54131a109606c40a70c21
+run_name: ambitious-shrew-832
+run_uuid: dba5c9b170f54131a109606c40a70c21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530407375
+status: 3
+tags: []
+user_id: elias

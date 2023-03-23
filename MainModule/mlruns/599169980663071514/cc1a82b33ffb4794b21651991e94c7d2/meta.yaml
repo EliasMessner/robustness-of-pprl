@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/cc1a82b33ffb4794b21651991e94c7d2/artifacts
+end_time: 1679531370472
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: cc1a82b33ffb4794b21651991e94c7d2
+run_name: adorable-gnat-840
+run_uuid: cc1a82b33ffb4794b21651991e94c7d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531369909
+status: 3
+tags: []
+user_id: elias

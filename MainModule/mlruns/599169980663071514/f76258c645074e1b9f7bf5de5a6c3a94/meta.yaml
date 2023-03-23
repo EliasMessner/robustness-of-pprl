@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f76258c645074e1b9f7bf5de5a6c3a94/artifacts
+end_time: 1679531063685
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f76258c645074e1b9f7bf5de5a6c3a94
+run_name: monumental-shrimp-90
+run_uuid: f76258c645074e1b9f7bf5de5a6c3a94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531063185
+status: 3
+tags: []
+user_id: elias

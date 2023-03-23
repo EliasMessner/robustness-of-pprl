@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/ce34ffd1e6dc4345910e1a8b0ad65b97/artifacts
+end_time: 1679502299473
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: ce34ffd1e6dc4345910e1a8b0ad65b97
+run_name: amusing-steed-370
+run_uuid: ce34ffd1e6dc4345910e1a8b0ad65b97
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502298411
+status: 3
+tags: []
+user_id: elias

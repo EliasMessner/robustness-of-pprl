@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/f44fbd9c2e774c4c9dd78dc42254f4b6/artifacts
+end_time: 1679489245767
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: f44fbd9c2e774c4c9dd78dc42254f4b6
+run_name: handsome-dove-411
+run_uuid: f44fbd9c2e774c4c9dd78dc42254f4b6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489245580
+status: 3
+tags: []
+user_id: elias

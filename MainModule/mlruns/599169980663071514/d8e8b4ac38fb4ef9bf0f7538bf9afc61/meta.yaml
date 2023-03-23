@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d8e8b4ac38fb4ef9bf0f7538bf9afc61/artifacts
+end_time: 1679531420614
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d8e8b4ac38fb4ef9bf0f7538bf9afc61
+run_name: intrigued-sponge-981
+run_uuid: d8e8b4ac38fb4ef9bf0f7538bf9afc61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531419364
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/9e9166451b5e4db4a4f8d8b87777731d/artifacts
+end_time: 1679532576622
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 9e9166451b5e4db4a4f8d8b87777731d
+run_name: skittish-croc-246
+run_uuid: 9e9166451b5e4db4a4f8d8b87777731d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532575325
+status: 3
+tags: []
+user_id: elias

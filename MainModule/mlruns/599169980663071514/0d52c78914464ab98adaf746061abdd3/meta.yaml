@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0d52c78914464ab98adaf746061abdd3/artifacts
+end_time: 1679530324717
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0d52c78914464ab98adaf746061abdd3
+run_name: unleashed-shoat-322
+run_uuid: 0d52c78914464ab98adaf746061abdd3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530324217
+status: 3
+tags: []
+user_id: elias

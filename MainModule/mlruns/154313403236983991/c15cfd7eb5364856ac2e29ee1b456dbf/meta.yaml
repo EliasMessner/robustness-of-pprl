@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/c15cfd7eb5364856ac2e29ee1b456dbf/artifacts
+end_time: 1679508260318
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: c15cfd7eb5364856ac2e29ee1b456dbf
+run_name: sneaky-bug-203
+run_uuid: c15cfd7eb5364856ac2e29ee1b456dbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508260052
+status: 3
+tags: []
+user_id: elias

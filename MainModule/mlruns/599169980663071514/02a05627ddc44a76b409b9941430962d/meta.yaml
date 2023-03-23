@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/02a05627ddc44a76b409b9941430962d/artifacts
+end_time: 1679531390206
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 02a05627ddc44a76b409b9941430962d
+run_name: abrasive-seal-398
+run_uuid: 02a05627ddc44a76b409b9941430962d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531389081
+status: 3
+tags: []
+user_id: elias

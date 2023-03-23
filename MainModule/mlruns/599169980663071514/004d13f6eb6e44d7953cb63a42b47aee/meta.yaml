@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/004d13f6eb6e44d7953cb63a42b47aee/artifacts
+end_time: 1679530501298
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 004d13f6eb6e44d7953cb63a42b47aee
+run_name: brawny-snipe-65
+run_uuid: 004d13f6eb6e44d7953cb63a42b47aee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530499970
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/0f6cd0fd0fdd4dc1bffa7a8ba3be5d20/artifacts
+end_time: 1679531072856
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 0f6cd0fd0fdd4dc1bffa7a8ba3be5d20
+run_name: powerful-pig-955
+run_uuid: 0f6cd0fd0fdd4dc1bffa7a8ba3be5d20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531072325
+status: 3
+tags: []
+user_id: elias

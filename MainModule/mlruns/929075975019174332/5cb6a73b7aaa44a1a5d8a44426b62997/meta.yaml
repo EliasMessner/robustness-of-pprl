@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/5cb6a73b7aaa44a1a5d8a44426b62997/artifacts
+end_time: 1679502290894
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 5cb6a73b7aaa44a1a5d8a44426b62997
+run_name: likeable-fish-435
+run_uuid: 5cb6a73b7aaa44a1a5d8a44426b62997
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502290535
+status: 3
+tags: []
+user_id: elias

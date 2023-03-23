@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/7e458c798095464cabcfe8027f7b1206/artifacts
+end_time: 1679512843805
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 7e458c798095464cabcfe8027f7b1206
+run_name: bemused-conch-535
+run_uuid: 7e458c798095464cabcfe8027f7b1206
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512843117
+status: 3
+tags: []
+user_id: elias

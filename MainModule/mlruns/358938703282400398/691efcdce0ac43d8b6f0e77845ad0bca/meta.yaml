@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/691efcdce0ac43d8b6f0e77845ad0bca/artifacts
+end_time: 1679482131710
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 691efcdce0ac43d8b6f0e77845ad0bca
+run_name: rumbling-mare-606
+run_uuid: 691efcdce0ac43d8b6f0e77845ad0bca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482130898
+status: 3
+tags: []
+user_id: elias

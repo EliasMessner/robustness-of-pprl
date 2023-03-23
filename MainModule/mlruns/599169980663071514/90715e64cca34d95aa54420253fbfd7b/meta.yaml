@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/90715e64cca34d95aa54420253fbfd7b/artifacts
+end_time: 1679532659967
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 90715e64cca34d95aa54420253fbfd7b
+run_name: thoughtful-mule-186
+run_uuid: 90715e64cca34d95aa54420253fbfd7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532659279
+status: 3
+tags: []
+user_id: elias

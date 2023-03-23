@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/dcd204af55c246a6bf84dcb646e3c6b8/artifacts
+end_time: 1679489211610
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: dcd204af55c246a6bf84dcb646e3c6b8
+run_name: clean-mole-403
+run_uuid: dcd204af55c246a6bf84dcb646e3c6b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489211454
+status: 3
+tags: []
+user_id: elias

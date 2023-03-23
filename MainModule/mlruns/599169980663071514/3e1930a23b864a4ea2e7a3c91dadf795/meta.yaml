@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/3e1930a23b864a4ea2e7a3c91dadf795/artifacts
+end_time: 1679531271672
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 3e1930a23b864a4ea2e7a3c91dadf795
+run_name: resilient-moose-497
+run_uuid: 3e1930a23b864a4ea2e7a3c91dadf795
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531270047
+status: 3
+tags: []
+user_id: elias

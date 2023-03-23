@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/79b1df61146b48cb974a3adf7c2df862/artifacts
+end_time: 1679482631735
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 79b1df61146b48cb974a3adf7c2df862
+run_name: worried-calf-444
+run_uuid: 79b1df61146b48cb974a3adf7c2df862
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482631298
+status: 3
+tags: []
+user_id: elias

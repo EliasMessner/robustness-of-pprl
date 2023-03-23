@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/93e83383f8f94871b6169ff17de4a313/artifacts
+end_time: 1679502232440
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 93e83383f8f94871b6169ff17de4a313
+run_name: peaceful-koi-972
+run_uuid: 93e83383f8f94871b6169ff17de4a313
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502232080
+status: 3
+tags: []
+user_id: elias

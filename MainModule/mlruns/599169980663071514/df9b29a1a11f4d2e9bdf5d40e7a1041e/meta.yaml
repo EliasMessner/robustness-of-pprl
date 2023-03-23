@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/df9b29a1a11f4d2e9bdf5d40e7a1041e/artifacts
+end_time: 1679532035532
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: df9b29a1a11f4d2e9bdf5d40e7a1041e
+run_name: persistent-hawk-555
+run_uuid: df9b29a1a11f4d2e9bdf5d40e7a1041e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532033938
+status: 3
+tags: []
+user_id: elias

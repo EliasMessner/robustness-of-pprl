@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/e913dcbc3bf642bc9efc5d23e6a99960/artifacts
+end_time: 1679482209868
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: e913dcbc3bf642bc9efc5d23e6a99960
+run_name: indecisive-roo-797
+run_uuid: e913dcbc3bf642bc9efc5d23e6a99960
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482209102
+status: 3
+tags: []
+user_id: elias

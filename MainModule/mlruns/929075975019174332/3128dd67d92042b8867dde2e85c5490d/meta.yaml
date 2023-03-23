@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/3128dd67d92042b8867dde2e85c5490d/artifacts
+end_time: 1679502233127
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 3128dd67d92042b8867dde2e85c5490d
+run_name: treasured-fawn-454
+run_uuid: 3128dd67d92042b8867dde2e85c5490d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502232690
+status: 3
+tags: []
+user_id: elias

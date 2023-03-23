@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/9b11699f4dc245b7a55d686679fad3df/artifacts
+end_time: 1679489246689
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 9b11699f4dc245b7a55d686679fad3df
+run_name: burly-skunk-150
+run_uuid: 9b11699f4dc245b7a55d686679fad3df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489246517
+status: 3
+tags: []
+user_id: elias

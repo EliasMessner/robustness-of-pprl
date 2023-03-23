@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/4db8ad1f25b34948b68a2a2551771c2b/artifacts
+end_time: 1679508284349
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: 4db8ad1f25b34948b68a2a2551771c2b
+run_name: shivering-mare-29
+run_uuid: 4db8ad1f25b34948b68a2a2551771c2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508283490
+status: 3
+tags: []
+user_id: elias

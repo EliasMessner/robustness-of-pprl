@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/fdbdde0888f746d998e8cc08b907fe33/artifacts
+end_time: 1679489236767
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: fdbdde0888f746d998e8cc08b907fe33
+run_name: lyrical-wren-527
+run_uuid: fdbdde0888f746d998e8cc08b907fe33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489236611
+status: 3
+tags: []
+user_id: elias

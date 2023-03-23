@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/76b5a87ebb6d4e71bf9d990d1b3777b2/artifacts
+end_time: 1679531349425
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 76b5a87ebb6d4e71bf9d990d1b3777b2
+run_name: gaudy-squirrel-975
+run_uuid: 76b5a87ebb6d4e71bf9d990d1b3777b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531348706
+status: 3
+tags: []
+user_id: elias

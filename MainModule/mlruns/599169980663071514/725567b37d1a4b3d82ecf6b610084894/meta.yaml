@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/725567b37d1a4b3d82ecf6b610084894/artifacts
+end_time: 1679531136701
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 725567b37d1a4b3d82ecf6b610084894
+run_name: amusing-mole-668
+run_uuid: 725567b37d1a4b3d82ecf6b610084894
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531135826
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/775985b61dcc4c92ae4e2ac576354d67/artifacts
+end_time: 1679530889291
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 775985b61dcc4c92ae4e2ac576354d67
+run_name: intrigued-crow-153
+run_uuid: 775985b61dcc4c92ae4e2ac576354d67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530888431
+status: 3
+tags: []
+user_id: elias

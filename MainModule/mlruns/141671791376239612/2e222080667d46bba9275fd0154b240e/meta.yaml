@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/2e222080667d46bba9275fd0154b240e/artifacts
+end_time: 1679489355176
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 2e222080667d46bba9275fd0154b240e
+run_name: resilient-shad-149
+run_uuid: 2e222080667d46bba9275fd0154b240e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489354988
+status: 3
+tags: []
+user_id: elias

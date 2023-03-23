@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/d7d807b8e55e41898cea22c7c231dc6e/artifacts
+end_time: 1679532618451
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: d7d807b8e55e41898cea22c7c231dc6e
+run_name: unequaled-crane-429
+run_uuid: d7d807b8e55e41898cea22c7c231dc6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532617795
+status: 3
+tags: []
+user_id: elias

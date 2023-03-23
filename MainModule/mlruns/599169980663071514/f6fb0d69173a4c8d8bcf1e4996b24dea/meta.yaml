@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/f6fb0d69173a4c8d8bcf1e4996b24dea/artifacts
+end_time: 1679531143170
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: f6fb0d69173a4c8d8bcf1e4996b24dea
+run_name: receptive-bat-466
+run_uuid: f6fb0d69173a4c8d8bcf1e4996b24dea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531142623
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/46d6cf2411fd4d8b94a8f49bd529d62f/artifacts
+end_time: 1679497329673
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 46d6cf2411fd4d8b94a8f49bd529d62f
+run_name: stately-hare-731
+run_uuid: 46d6cf2411fd4d8b94a8f49bd529d62f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497328580
+status: 3
+tags: []
+user_id: elias

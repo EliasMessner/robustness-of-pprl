@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a21aa5af97ce41d2a4d2b4d6b3c6c835/artifacts
+end_time: 1679530902306
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a21aa5af97ce41d2a4d2b4d6b3c6c835
+run_name: wistful-calf-482
+run_uuid: a21aa5af97ce41d2a4d2b4d6b3c6c835
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530901759
+status: 3
+tags: []
+user_id: elias

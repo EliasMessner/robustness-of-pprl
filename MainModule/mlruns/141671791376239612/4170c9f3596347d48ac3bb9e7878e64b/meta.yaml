@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/4170c9f3596347d48ac3bb9e7878e64b/artifacts
+end_time: 1679489245049
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 4170c9f3596347d48ac3bb9e7878e64b
+run_name: victorious-lark-824
+run_uuid: 4170c9f3596347d48ac3bb9e7878e64b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489244892
+status: 3
+tags: []
+user_id: elias

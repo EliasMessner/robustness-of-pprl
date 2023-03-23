@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/d12a3366fd6d48608e35c0438435dc26/artifacts
+end_time: 1679512824726
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: d12a3366fd6d48608e35c0438435dc26
+run_name: placid-smelt-32
+run_uuid: d12a3366fd6d48608e35c0438435dc26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512824023
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/141671791376239612/1e1e283f420d42e687a7351ae1471ac9/artifacts
+end_time: 1679489325253
+entry_point_name: ''
+experiment_id: '141671791376239612'
+lifecycle_stage: active
+run_id: 1e1e283f420d42e687a7351ae1471ac9
+run_name: agreeable-smelt-308
+run_uuid: 1e1e283f420d42e687a7351ae1471ac9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679489325065
+status: 3
+tags: []
+user_id: elias

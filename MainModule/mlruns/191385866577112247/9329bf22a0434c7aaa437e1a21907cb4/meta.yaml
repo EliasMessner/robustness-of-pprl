@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/9329bf22a0434c7aaa437e1a21907cb4/artifacts
+end_time: 1679512787381
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 9329bf22a0434c7aaa437e1a21907cb4
+run_name: bald-fish-186
+run_uuid: 9329bf22a0434c7aaa437e1a21907cb4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512786710
+status: 3
+tags: []
+user_id: elias

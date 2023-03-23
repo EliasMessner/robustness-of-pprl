@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/60e76a4693dd47a082903b1445e9bf50/artifacts
+end_time: 1679530354952
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 60e76a4693dd47a082903b1445e9bf50
+run_name: indecisive-fawn-696
+run_uuid: 60e76a4693dd47a082903b1445e9bf50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530354280
+status: 3
+tags: []
+user_id: elias

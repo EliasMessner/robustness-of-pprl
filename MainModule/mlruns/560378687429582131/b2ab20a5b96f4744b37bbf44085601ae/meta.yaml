@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/b2ab20a5b96f4744b37bbf44085601ae/artifacts
+end_time: 1679498000608
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: b2ab20a5b96f4744b37bbf44085601ae
+run_name: blushing-duck-772
+run_uuid: b2ab20a5b96f4744b37bbf44085601ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497999592
+status: 3
+tags: []
+user_id: elias

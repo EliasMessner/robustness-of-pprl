@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8625ab4c11054a40a9fae3e993519daa/artifacts
+end_time: 1679532180863
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8625ab4c11054a40a9fae3e993519daa
+run_name: intelligent-newt-748
+run_uuid: 8625ab4c11054a40a9fae3e993519daa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532179847
+status: 3
+tags: []
+user_id: elias

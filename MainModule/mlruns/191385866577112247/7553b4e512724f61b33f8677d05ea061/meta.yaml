@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/7553b4e512724f61b33f8677d05ea061/artifacts
+end_time: 1679512993012
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: 7553b4e512724f61b33f8677d05ea061
+run_name: righteous-owl-15
+run_uuid: 7553b4e512724f61b33f8677d05ea061
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512992341
+status: 3
+tags: []
+user_id: elias

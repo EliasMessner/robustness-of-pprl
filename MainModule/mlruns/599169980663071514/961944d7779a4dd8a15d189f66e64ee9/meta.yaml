@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/961944d7779a4dd8a15d189f66e64ee9/artifacts
+end_time: 1679531109389
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 961944d7779a4dd8a15d189f66e64ee9
+run_name: likeable-deer-680
+run_uuid: 961944d7779a4dd8a15d189f66e64ee9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531108842
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/c583f23a13e643bfaab804fbbb6077cd/artifacts
+end_time: 1679502544290
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: c583f23a13e643bfaab804fbbb6077cd
+run_name: clumsy-rook-925
+run_uuid: c583f23a13e643bfaab804fbbb6077cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502543900
+status: 3
+tags: []
+user_id: elias

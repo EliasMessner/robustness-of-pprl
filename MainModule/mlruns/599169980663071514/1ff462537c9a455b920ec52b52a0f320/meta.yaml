@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/1ff462537c9a455b920ec52b52a0f320/artifacts
+end_time: 1679531863919
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 1ff462537c9a455b920ec52b52a0f320
+run_name: gentle-grub-558
+run_uuid: 1ff462537c9a455b920ec52b52a0f320
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531863404
+status: 3
+tags: []
+user_id: elias

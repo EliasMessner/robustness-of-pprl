@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/74d70f7b65e84135b9b8cb914f39b614/artifacts
+end_time: 1679497147170
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 74d70f7b65e84135b9b8cb914f39b614
+run_name: caring-crow-75
+run_uuid: 74d70f7b65e84135b9b8cb914f39b614
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497146310
+status: 3
+tags: []
+user_id: elias

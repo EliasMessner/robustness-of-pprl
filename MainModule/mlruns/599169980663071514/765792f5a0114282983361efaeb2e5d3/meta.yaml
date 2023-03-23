@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/765792f5a0114282983361efaeb2e5d3/artifacts
+end_time: 1679530329187
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 765792f5a0114282983361efaeb2e5d3
+run_name: angry-dog-432
+run_uuid: 765792f5a0114282983361efaeb2e5d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530328702
+status: 3
+tags: []
+user_id: elias

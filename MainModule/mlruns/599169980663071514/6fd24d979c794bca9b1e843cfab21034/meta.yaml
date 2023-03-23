@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/6fd24d979c794bca9b1e843cfab21034/artifacts
+end_time: 1679530383874
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 6fd24d979c794bca9b1e843cfab21034
+run_name: nervous-bee-502
+run_uuid: 6fd24d979c794bca9b1e843cfab21034
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530383124
+status: 3
+tags: []
+user_id: elias

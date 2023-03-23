@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/b7ec3a56870240b8a4f3208c388c5c74/artifacts
+end_time: 1679530831180
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: b7ec3a56870240b8a4f3208c388c5c74
+run_name: zealous-midge-276
+run_uuid: b7ec3a56870240b8a4f3208c388c5c74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530830368
+status: 3
+tags: []
+user_id: elias

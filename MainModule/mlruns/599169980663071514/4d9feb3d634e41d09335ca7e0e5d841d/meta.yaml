@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/4d9feb3d634e41d09335ca7e0e5d841d/artifacts
+end_time: 1679531925311
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 4d9feb3d634e41d09335ca7e0e5d841d
+run_name: silent-worm-952
+run_uuid: 4d9feb3d634e41d09335ca7e0e5d841d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531924436
+status: 3
+tags: []
+user_id: elias

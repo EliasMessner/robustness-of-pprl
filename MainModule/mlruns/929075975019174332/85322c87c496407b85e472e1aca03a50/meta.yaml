@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/85322c87c496407b85e472e1aca03a50/artifacts
+end_time: 1679502475835
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 85322c87c496407b85e472e1aca03a50
+run_name: entertaining-deer-1
+run_uuid: 85322c87c496407b85e472e1aca03a50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502474741
+status: 3
+tags: []
+user_id: elias

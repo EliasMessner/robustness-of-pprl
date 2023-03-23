@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/11e6efd30c07433ba3aa3aca2aaf593d/artifacts
+end_time: 1679497744963
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: 11e6efd30c07433ba3aa3aca2aaf593d
+run_name: nebulous-shad-915
+run_uuid: 11e6efd30c07433ba3aa3aca2aaf593d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497743588
+status: 3
+tags: []
+user_id: elias

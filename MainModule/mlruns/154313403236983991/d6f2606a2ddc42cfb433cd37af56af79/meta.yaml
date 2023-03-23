@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/d6f2606a2ddc42cfb433cd37af56af79/artifacts
+end_time: 1679508597059
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: d6f2606a2ddc42cfb433cd37af56af79
+run_name: crawling-colt-530
+run_uuid: d6f2606a2ddc42cfb433cd37af56af79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508596793
+status: 3
+tags: []
+user_id: elias

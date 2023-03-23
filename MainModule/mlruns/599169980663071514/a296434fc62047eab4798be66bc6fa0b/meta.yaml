@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a296434fc62047eab4798be66bc6fa0b/artifacts
+end_time: 1679530536440
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a296434fc62047eab4798be66bc6fa0b
+run_name: rare-rook-207
+run_uuid: a296434fc62047eab4798be66bc6fa0b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530534706
+status: 3
+tags: []
+user_id: elias

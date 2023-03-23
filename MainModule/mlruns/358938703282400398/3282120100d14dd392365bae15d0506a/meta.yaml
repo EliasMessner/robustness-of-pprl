@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/3282120100d14dd392365bae15d0506a/artifacts
+end_time: 1679482692221
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: 3282120100d14dd392365bae15d0506a
+run_name: sassy-stoat-348
+run_uuid: 3282120100d14dd392365bae15d0506a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482691627
+status: 3
+tags: []
+user_id: elias

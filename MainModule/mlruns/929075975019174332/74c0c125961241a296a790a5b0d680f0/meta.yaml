@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/74c0c125961241a296a790a5b0d680f0/artifacts
+end_time: 1679502386474
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 74c0c125961241a296a790a5b0d680f0
+run_name: thundering-zebra-980
+run_uuid: 74c0c125961241a296a790a5b0d680f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502386037
+status: 3
+tags: []
+user_id: elias

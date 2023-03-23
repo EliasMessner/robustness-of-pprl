@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/402718b8f1f64b64be3fb430a93c3b1d/artifacts
+end_time: 1679532383805
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 402718b8f1f64b64be3fb430a93c3b1d
+run_name: enchanting-worm-773
+run_uuid: 402718b8f1f64b64be3fb430a93c3b1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532383211
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/209aceda346c40f8b1922a40f31bd352/artifacts
+end_time: 1679530527518
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 209aceda346c40f8b1922a40f31bd352
+run_name: whimsical-ant-771
+run_uuid: 209aceda346c40f8b1922a40f31bd352
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530526252
+status: 3
+tags: []
+user_id: elias

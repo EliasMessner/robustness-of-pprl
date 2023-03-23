@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/638463da739f43189065714d5407f72f/artifacts
+end_time: 1679530336202
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 638463da739f43189065714d5407f72f
+run_name: resilient-bear-590
+run_uuid: 638463da739f43189065714d5407f72f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530335702
+status: 3
+tags: []
+user_id: elias

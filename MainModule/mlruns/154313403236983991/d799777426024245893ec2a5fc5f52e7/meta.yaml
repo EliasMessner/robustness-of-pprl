@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/154313403236983991/d799777426024245893ec2a5fc5f52e7/artifacts
+end_time: 1679508370633
+entry_point_name: ''
+experiment_id: '154313403236983991'
+lifecycle_stage: active
+run_id: d799777426024245893ec2a5fc5f52e7
+run_name: dapper-goat-653
+run_uuid: d799777426024245893ec2a5fc5f52e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679508369883
+status: 3
+tags: []
+user_id: elias

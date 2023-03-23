@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/191385866577112247/c196ba14a8044311937bdae0b1ca3603/artifacts
+end_time: 1679512943699
+entry_point_name: ''
+experiment_id: '191385866577112247'
+lifecycle_stage: active
+run_id: c196ba14a8044311937bdae0b1ca3603
+run_name: tasteful-boar-926
+run_uuid: c196ba14a8044311937bdae0b1ca3603
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679512942511
+status: 3
+tags: []
+user_id: elias

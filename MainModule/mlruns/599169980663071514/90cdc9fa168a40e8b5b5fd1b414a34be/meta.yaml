@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/90cdc9fa168a40e8b5b5fd1b414a34be/artifacts
+end_time: 1679532619326
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 90cdc9fa168a40e8b5b5fd1b414a34be
+run_name: abrasive-bear-622
+run_uuid: 90cdc9fa168a40e8b5b5fd1b414a34be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532618748
+status: 3
+tags: []
+user_id: elias

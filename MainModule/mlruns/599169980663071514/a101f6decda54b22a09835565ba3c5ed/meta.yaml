@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a101f6decda54b22a09835565ba3c5ed/artifacts
+end_time: 1679531847779
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a101f6decda54b22a09835565ba3c5ed
+run_name: rebellious-dove-784
+run_uuid: a101f6decda54b22a09835565ba3c5ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531847029
+status: 3
+tags: []
+user_id: elias

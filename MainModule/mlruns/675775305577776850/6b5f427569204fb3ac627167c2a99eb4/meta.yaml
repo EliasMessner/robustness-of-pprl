@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/675775305577776850/6b5f427569204fb3ac627167c2a99eb4/artifacts
+end_time: 1679491393774
+entry_point_name: ''
+experiment_id: '675775305577776850'
+lifecycle_stage: active
+run_id: 6b5f427569204fb3ac627167c2a99eb4
+run_name: resilient-vole-550
+run_uuid: 6b5f427569204fb3ac627167c2a99eb4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679491392602
+status: 3
+tags: []
+user_id: elias

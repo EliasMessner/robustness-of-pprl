@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/af04ccace5fb4e5686ea2ae1ae0535a7/artifacts
+end_time: 1679502245550
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: af04ccace5fb4e5686ea2ae1ae0535a7
+run_name: defiant-hawk-510
+run_uuid: af04ccace5fb4e5686ea2ae1ae0535a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502244863
+status: 3
+tags: []
+user_id: elias

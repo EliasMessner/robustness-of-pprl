@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/a1ea9c4a627d4a94ab25270d412ffcb2/artifacts
+end_time: 1679530879728
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: a1ea9c4a627d4a94ab25270d412ffcb2
+run_name: delicate-cow-749
+run_uuid: a1ea9c4a627d4a94ab25270d412ffcb2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530878447
+status: 3
+tags: []
+user_id: elias

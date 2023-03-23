@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/7b23d67b07c84156b105cd40f8fa1acc/artifacts
+end_time: 1679532435119
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 7b23d67b07c84156b105cd40f8fa1acc
+run_name: gregarious-seal-835
+run_uuid: 7b23d67b07c84156b105cd40f8fa1acc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532433494
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/929075975019174332/22dc94219362471a99d70de5b70e770d/artifacts
+end_time: 1679502712949
+entry_point_name: ''
+experiment_id: '929075975019174332'
+lifecycle_stage: active
+run_id: 22dc94219362471a99d70de5b70e770d
+run_name: shivering-mouse-281
+run_uuid: 22dc94219362471a99d70de5b70e770d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679502712512
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/74e8efc307b64119955bece0e3a4f1e7/artifacts
+end_time: 1679530325482
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 74e8efc307b64119955bece0e3a4f1e7
+run_name: upset-goose-196
+run_uuid: 74e8efc307b64119955bece0e3a4f1e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679530324967
+status: 3
+tags: []
+user_id: elias

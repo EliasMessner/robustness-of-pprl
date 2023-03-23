@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/99ea6ab57fe747fc93080a842dc9c2f7/artifacts
+end_time: 1679531175624
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 99ea6ab57fe747fc93080a842dc9c2f7
+run_name: bustling-stag-357
+run_uuid: 99ea6ab57fe747fc93080a842dc9c2f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531174874
+status: 3
+tags: []
+user_id: elias

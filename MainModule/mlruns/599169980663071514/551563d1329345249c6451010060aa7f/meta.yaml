@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/551563d1329345249c6451010060aa7f/artifacts
+end_time: 1679531569522
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 551563d1329345249c6451010060aa7f
+run_name: selective-wren-108
+run_uuid: 551563d1329345249c6451010060aa7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531568382
+status: 3
+tags: []
+user_id: elias

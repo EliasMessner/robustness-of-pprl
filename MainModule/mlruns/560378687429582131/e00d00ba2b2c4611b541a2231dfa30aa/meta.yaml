@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/560378687429582131/e00d00ba2b2c4611b541a2231dfa30aa/artifacts
+end_time: 1679497242186
+entry_point_name: ''
+experiment_id: '560378687429582131'
+lifecycle_stage: active
+run_id: e00d00ba2b2c4611b541a2231dfa30aa
+run_name: capable-deer-370
+run_uuid: e00d00ba2b2c4611b541a2231dfa30aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679497240421
+status: 3
+tags: []
+user_id: elias

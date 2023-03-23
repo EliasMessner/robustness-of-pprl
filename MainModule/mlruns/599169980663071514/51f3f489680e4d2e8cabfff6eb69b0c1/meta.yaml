@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/51f3f489680e4d2e8cabfff6eb69b0c1/artifacts
+end_time: 1679532278771
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 51f3f489680e4d2e8cabfff6eb69b0c1
+run_name: charming-kite-624
+run_uuid: 51f3f489680e4d2e8cabfff6eb69b0c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532277928
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/ea077a0ad62d44a0a46cea02f9a1a9aa/artifacts
+end_time: 1679531674415
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: ea077a0ad62d44a0a46cea02f9a1a9aa
+run_name: omniscient-mare-288
+run_uuid: ea077a0ad62d44a0a46cea02f9a1a9aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531673509
+status: 3
+tags: []
+user_id: elias

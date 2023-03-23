@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/494269c4c69d47b8ab6786b3941ac291/artifacts
+end_time: 1679532148410
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 494269c4c69d47b8ab6786b3941ac291
+run_name: melodic-gull-397
+run_uuid: 494269c4c69d47b8ab6786b3941ac291
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679532147128
+status: 3
+tags: []
+user_id: elias

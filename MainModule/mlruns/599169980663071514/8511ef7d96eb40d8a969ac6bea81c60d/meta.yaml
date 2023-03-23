@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/8511ef7d96eb40d8a969ac6bea81c60d/artifacts
+end_time: 1679531953422
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: 8511ef7d96eb40d8a969ac6bea81c60d
+run_name: secretive-fly-892
+run_uuid: 8511ef7d96eb40d8a969ac6bea81c60d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531952781
+status: 3
+tags: []
+user_id: elias

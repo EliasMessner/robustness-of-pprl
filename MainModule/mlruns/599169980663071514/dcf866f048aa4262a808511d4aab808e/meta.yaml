@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/599169980663071514/dcf866f048aa4262a808511d4aab808e/artifacts
+end_time: 1679531123030
+entry_point_name: ''
+experiment_id: '599169980663071514'
+lifecycle_stage: active
+run_id: dcf866f048aa4262a808511d4aab808e
+run_name: bald-duck-640
+run_uuid: dcf866f048aa4262a808511d4aab808e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679531122311
+status: 3
+tags: []
+user_id: elias

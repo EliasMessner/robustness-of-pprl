@@ -1,0 +1,15 @@
+artifact_uri: file:///home/elias/VSCodeProjects/robustness-of-pprl/MainModule/mlruns/358938703282400398/fde8ea7452b2426a920284a51276f2ce/artifacts
+end_time: 1679482220868
+entry_point_name: ''
+experiment_id: '358938703282400398'
+lifecycle_stage: active
+run_id: fde8ea7452b2426a920284a51276f2ce
+run_name: illustrious-fly-172
+run_uuid: fde8ea7452b2426a920284a51276f2ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679482220477
+status: 3
+tags: []
+user_id: elias
