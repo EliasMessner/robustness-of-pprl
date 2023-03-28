@@ -11,7 +11,7 @@ import itertools
 from datetime import datetime as dt
 
 import error_rates
-from dataset_properties import get_overlap, get_true_matches, split_by_source_id
+from dataset_properties import get_overlap, get_true_matches, split_by_source_id, split_and_get_overlap
 from attr_val_dist import attr_val_dist_random_sample
 from log import prepare_logger
 from random_sample import random_sample, random_sample_wrapper
@@ -111,7 +111,7 @@ class DatasetModifier:
             # when all ds variants have been created,
             # because the minimum ds size in the group must be known first.
             variant_group = self.get_variant_group(param_variant_group)
-            variant_group = sample_all_down_if_needed(variant_group)
+            variant_group = self.sample_all_down_if_needed(variant_group)
             self.write_variant_group(variant_group, outfile_directory, description)
             self.group_id += 1
         self.log_and_reset_omitted()
@@ -177,6 +177,52 @@ class DatasetModifier:
         if min(a.shape[0], b.shape[0]) < self.min_size_per_source:
             return True
         return False
+
+    def sample_all_down_if_needed(self, variant_group):
+        """
+        On each element in the passed list do:
+
+            Get a down-sampled version of the passed dataset variant according to the specified downsampling mode.
+            Downsampling mode can be one of:
+                None                -> return the original variant
+                "TO_MIN_GROUP_SIZE" -> sample down to the size of the smallest subset in the group
+                An integer          -> sample down to the specified size
+
+        And return the resulting list.
+        Each element in the passed list should be tuple of a dataset variant and its parameter dict, where the downsampling
+        mode is specified under the top-level key "downsampling".
+        """
+        result = []
+        min_group_size = min(
+            variant[0].shape[0] for variant in variant_group)  # size of the smallest variant in this group
+        for variant, params in tqdm(variant_group, desc="Downsampling", leave=False):
+            # sample down if necessary
+            downsampling_mode = params.get("downsampling", None)
+            preserve_overlap = params.get("preserve_overlap_in_downsampling", False)
+            variant = self._sample_down_if_needed(min_group_size, downsampling_mode, preserve_overlap, variant)
+            result.append((variant, params))
+        return result
+
+    def _sample_down_if_needed(self, min_group_size, downsampling_mode, preserve_overlap, variant):
+        """
+        Return a down-sampled version of the passed dataset variant according to the specified downsampling mode.
+        Downsampling mode can be one of:
+            None                -> return the original variant
+            "TO_MIN_GROUP_SIZE" -> sample down to the min_group_size (assumed to be the size of the smallest subset in the
+                                    group)
+            An integer          -> sample down to the specified size
+        """
+        if downsampling_mode is None:
+            return variant
+        if downsampling_mode == "TO_MIN_GROUP_SIZE":
+            downsampling_size = min_group_size
+        elif isinstance(downsampling_mode, int):
+            downsampling_size = min(downsampling_mode, min_group_size)
+        else:
+            raise ValueError(f"Bad downsampling parameter '{downsampling_mode}'.")
+        variant = random_sample_wrapper(variant, downsampling_size,
+                                        overlap=self.base_overlap if preserve_overlap else None)
+        return variant
 
     def random_sample(self, params) -> Union[pd.DataFrame, None]:
         """
@@ -349,51 +395,6 @@ def _get_cartesian_product(items: list[(str, any)]):
         all_kv_lists.append(kv_list)
     cartesian_prod = itertools.product(*all_kv_lists)  # = [((size, 1000), (overlap, 0.1)), ...]
     return [*cartesian_prod]
-
-
-def sample_all_down_if_needed(variant_group):
-    """
-    On each element in the passed list do:
-
-        Get a down-sampled version of the passed dataset variant according to the specified downsampling mode.
-        Downsampling mode can be one of:
-            None                -> return the original variant
-            "TO_MIN_GROUP_SIZE" -> sample down to the size of the smallest subset in the group
-            An integer          -> sample down to the specified size
-
-    And return the resulting list.
-    Each element in the passed list should be tuple of a dataset variant and its parameter dict, where the downsampling
-    mode is specified under the top-level key "downsampling".
-    """
-    result = []
-    min_group_size = min(variant[0].shape[0] for variant in variant_group)  # size of the smallest variant in this group
-    for variant, params in tqdm(variant_group, desc="Downsampling", leave=False):
-        # sample down if necessary
-        downsampling_mode = params.get("downsampling", None)
-        variant = _sample_down_if_needed(min_group_size, downsampling_mode, variant)
-        result.append((variant, params))
-    return result
-
-
-def _sample_down_if_needed(min_group_size, downsampling_mode, variant):
-    """
-    Return a down-sampled version of the passed dataset variant according to the specified downsampling mode.
-    Downsampling mode can be one of:
-        None                -> return the original variant
-        "TO_MIN_GROUP_SIZE" -> sample down to the min_group_size (assumed to be the size of the smallest subset in the
-                                group)
-        An integer          -> sample down to the specified size
-    """
-    if downsampling_mode is None:
-        return variant
-    if downsampling_mode == "TO_MIN_GROUP_SIZE":
-        downsampling_size = min_group_size
-    elif isinstance(downsampling_mode, int):
-        downsampling_size = min(downsampling_mode, min_group_size)
-    else:
-        raise ValueError(f"Bad downsampling parameter '{downsampling_mode}'.")
-    variant = random_sample_wrapper(variant, downsampling_size)
-    return variant
 
 
 def _create_params_json(params, variant, variant_sub_folder):

@@ -12,16 +12,16 @@
         "column": "GENDER",
         "dist": null,
         "downsampling": 200000,
-        "preserve_overlap": true
+        "preserve_overlap_in_downsampling": true
       },
       "replacements": {
         "dist": [
-          {"M": 0.0, "F": 1.0},
+          {"F": 1.0},
           {"M": 0.2, "F": 0.8},
           {"M": 0.4, "F": 0.6},
           {"M": 0.6, "F": 0.4},
           {"M": 0.8, "F": 0.2},
-          {"M": 1.0, "F": 0.0}
+          {"M": 1.0}
         ]
       }
     }
