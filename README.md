@@ -79,7 +79,7 @@ For visualization of results
 
 > cd MainModule
 
-> streamlit run streamlit_app.py --server.fileWatcherType none
+> streamlit run streamlit_entry.py --server.fileWatcherType none
 
 # Miscellaneous
 
