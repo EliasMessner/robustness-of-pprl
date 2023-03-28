@@ -11,7 +11,8 @@
         "subset_selection": "PLZ",
         "digits": 2,
         "equals": null,
-        "downsampling": 200000
+        "downsampling": 200000,
+        "preserve_overlap_in_downsampling": true
       },
       "replacements": {
         "equals": [0, 99]
