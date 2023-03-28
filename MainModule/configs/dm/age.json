@@ -10,10 +10,11 @@
       "params": {
         "subset_selection": "AGE",
         "range": null,
-        "downsampling": 200000
+        "downsampling": 50000,
+        "preserve_overlap_in_downsampling": true
       },
       "replacements": {
-        "range": [[0, 19], [20, 39], [40, 59], [60, 79], [80, 99]]
+        "range": [[0, 19], [20, 39], [40, 59], [60, 79], [80, 1000]]
       }
     }
   ]
