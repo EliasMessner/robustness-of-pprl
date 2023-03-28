@@ -3,31 +3,34 @@
   "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
   "source_id_col_name": "sourceID",
   "global_id_col_name": "globalID",
-  "desc": "Varying lengths for FIRSTNAME, MIDDLENAME, LASTNAME, STREET, and CITY, resulting in subsets of each approx 100k-200k records",
+  "desc": "Varying lengths for FIRSTNAME, LASTNAME, STREET, and CITY, resulting in subsets of each approx 100k-200k records",
   "variations": [
     {
-      "desc": "Length of LASTNAME/FIRSTNAME in [<5, 5, 6, 7, >7], downsampling on",
+      "desc": "Length of FIRSTNAME in [<5, 5, 6, 7, >7], downsampling on",
       "params": {
         "subset_selection": "ATTRIBUTE_VALUE",
         "column": null,
         "length": null,
-        "downsampling": "TO_MIN_GROUP_SIZE"
+        "downsampling": 80000,
+        "preserve_overlap_in_downsampling": true
       },
       "replacements": {
         "length": [[1, 4], [5, 5], [6, 6], [7, 7], [8, 30]],
-        "column": ["FIRSTNAME", "LASTNAME"]
+        "column": ["FIRSTNAME"]
       }
     },
     {
-      "desc": "Length of MIDDLENAME in [0, 1, 2-4, 5-6, >6], downsampling on",
+      "desc": "Length of LASTNAME in [<6, 6, 7, >7], downsampling on",
       "params": {
         "subset_selection": "ATTRIBUTE_VALUE",
-        "column": "MIDDLENAME",
+        "column": null,
         "length": null,
-        "downsampling": "TO_MIN_GROUP_SIZE"
+        "downsampling": 80000,
+        "preserve_overlap_in_downsampling": true
       },
       "replacements": {
-        "length": [[0, 0], [1, 1], [2, 4], [5, 6], [7, 9]]
+        "length": [[1, 5], [6, 6], [7, 7], [8, 30]],
+        "column": ["FIRSTNAME"]
       }
     },
     {
@@ -36,7 +39,8 @@
         "subset_selection": "ATTRIBUTE_VALUE",
         "column": "STREET",
         "length": null,
-        "downsampling": "TO_MIN_GROUP_SIZE"
+        "downsampling": 100000,
+        "preserve_overlap_in_downsampling": true
       },
       "replacements": {
         "length": [[0, 6], [7, 9]]
@@ -48,7 +52,8 @@
         "subset_selection": "ATTRIBUTE_VALUE",
         "column": "CITY",
         "length": null,
-        "downsampling": "TO_MIN_GROUP_SIZE"
+        "downsampling": 100000,
+        "preserve_overlap_in_downsampling": true
       },
       "replacements": {
         "length": [[0, 6], [7, 8], [9, 9], [10, 11]]
