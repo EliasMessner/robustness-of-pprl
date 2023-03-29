@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/76193d0eaa544e93b67a25daa919e02e/artifacts
+end_time: 1680103070275
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 76193d0eaa544e93b67a25daa919e02e
+run_name: victorious-conch-360
+run_uuid: 76193d0eaa544e93b67a25daa919e02e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103069431
+status: 3
+tags: []
+user_id: elias

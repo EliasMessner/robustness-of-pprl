@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/0f443b48092f44d680fee76ba66f66c4/artifacts
+end_time: 1680113515866
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: 0f443b48092f44d680fee76ba66f66c4
+run_name: judicious-hawk-660
+run_uuid: 0f443b48092f44d680fee76ba66f66c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113514459
+status: 3
+tags: []
+user_id: elias

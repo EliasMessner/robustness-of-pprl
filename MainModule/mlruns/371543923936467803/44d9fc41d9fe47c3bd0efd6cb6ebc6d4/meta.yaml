@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/44d9fc41d9fe47c3bd0efd6cb6ebc6d4/artifacts
+end_time: 1680107591265
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 44d9fc41d9fe47c3bd0efd6cb6ebc6d4
+run_name: bustling-loon-68
+run_uuid: 44d9fc41d9fe47c3bd0efd6cb6ebc6d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107590405
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/b40ebdbafd044350802bf30b799f0287/artifacts
+end_time: 1680103267482
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: b40ebdbafd044350802bf30b799f0287
+run_name: bemused-stork-736
+run_uuid: b40ebdbafd044350802bf30b799f0287
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103266639
+status: 3
+tags: []
+user_id: elias

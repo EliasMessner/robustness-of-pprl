@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/711351aeabfc490e8fd7bda93f63592c/artifacts
+end_time: 1680103193793
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 711351aeabfc490e8fd7bda93f63592c
+run_name: thoughtful-bug-510
+run_uuid: 711351aeabfc490e8fd7bda93f63592c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103192746
+status: 3
+tags: []
+user_id: elias

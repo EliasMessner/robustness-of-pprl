@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/b66979c2c3604da29a096cb91f5984ae/artifacts
+end_time: 1680107767799
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: b66979c2c3604da29a096cb91f5984ae
+run_name: dapper-koi-411
+run_uuid: b66979c2c3604da29a096cb91f5984ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107766674
+status: 3
+tags: []
+user_id: elias

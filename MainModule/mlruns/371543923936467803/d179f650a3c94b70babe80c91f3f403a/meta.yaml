@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/d179f650a3c94b70babe80c91f3f403a/artifacts
+end_time: 1680107824347
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: d179f650a3c94b70babe80c91f3f403a
+run_name: mysterious-sow-44
+run_uuid: d179f650a3c94b70babe80c91f3f403a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107822363
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/7abafc3e37fa4ba4b5f57aae996969c4/artifacts
+end_time: 1680107828754
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 7abafc3e37fa4ba4b5f57aae996969c4
+run_name: unequaled-turtle-854
+run_uuid: 7abafc3e37fa4ba4b5f57aae996969c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107825879
+status: 3
+tags: []
+user_id: elias

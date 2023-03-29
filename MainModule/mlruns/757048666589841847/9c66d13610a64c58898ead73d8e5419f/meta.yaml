@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/9c66d13610a64c58898ead73d8e5419f/artifacts
+end_time: 1680103003820
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 9c66d13610a64c58898ead73d8e5419f
+run_name: mercurial-skunk-813
+run_uuid: 9c66d13610a64c58898ead73d8e5419f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103002992
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/e4c28ece92ee4307b4a0d8db3c3cfe31/artifacts
+end_time: 1680113267814
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: e4c28ece92ee4307b4a0d8db3c3cfe31
+run_name: youthful-crow-763
+run_uuid: e4c28ece92ee4307b4a0d8db3c3cfe31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113266423
+status: 3
+tags: []
+user_id: elias

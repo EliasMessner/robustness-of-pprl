@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/c6fa6a8bd1f6418d8c409f3fe22fb949/artifacts
+end_time: 1680103059415
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: c6fa6a8bd1f6418d8c409f3fe22fb949
+run_name: casual-asp-268
+run_uuid: c6fa6a8bd1f6418d8c409f3fe22fb949
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103058509
+status: 3
+tags: []
+user_id: elias

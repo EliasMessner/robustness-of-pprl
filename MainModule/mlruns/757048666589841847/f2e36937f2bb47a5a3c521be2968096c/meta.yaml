@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/f2e36937f2bb47a5a3c521be2968096c/artifacts
+end_time: 1680103068884
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: f2e36937f2bb47a5a3c521be2968096c
+run_name: caring-shoat-283
+run_uuid: f2e36937f2bb47a5a3c521be2968096c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103067556
+status: 3
+tags: []
+user_id: elias

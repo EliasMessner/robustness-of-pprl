@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/c93132da1c574845a55a8cd518012abe/artifacts
+end_time: 1680103144230
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: c93132da1c574845a55a8cd518012abe
+run_name: bright-steed-828
+run_uuid: c93132da1c574845a55a8cd518012abe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103143371
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/38b9055b988843abb36420759d7db58d/artifacts
+end_time: 1680113499819
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: 38b9055b988843abb36420759d7db58d
+run_name: illustrious-rook-911
+run_uuid: 38b9055b988843abb36420759d7db58d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113498350
+status: 3
+tags: []
+user_id: elias

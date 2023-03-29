@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/c0b06e4c10c143c7948b3aafe472cb36/artifacts
+end_time: 1680107788237
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: c0b06e4c10c143c7948b3aafe472cb36
+run_name: big-snipe-570
+run_uuid: c0b06e4c10c143c7948b3aafe472cb36
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107785721
+status: 3
+tags: []
+user_id: elias

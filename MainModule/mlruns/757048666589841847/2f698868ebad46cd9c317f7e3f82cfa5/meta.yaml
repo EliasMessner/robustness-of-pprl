@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/2f698868ebad46cd9c317f7e3f82cfa5/artifacts
+end_time: 1680102948178
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 2f698868ebad46cd9c317f7e3f82cfa5
+run_name: awesome-hog-117
+run_uuid: 2f698868ebad46cd9c317f7e3f82cfa5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680102947288
+status: 3
+tags: []
+user_id: elias

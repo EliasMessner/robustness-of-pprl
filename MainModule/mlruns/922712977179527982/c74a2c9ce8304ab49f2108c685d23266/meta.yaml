@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/c74a2c9ce8304ab49f2108c685d23266/artifacts
+end_time: 1680113127280
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: c74a2c9ce8304ab49f2108c685d23266
+run_name: skillful-flea-308
+run_uuid: c74a2c9ce8304ab49f2108c685d23266
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113125890
+status: 3
+tags: []
+user_id: elias

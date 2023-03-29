@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/627b1e18aebb4deb8b521b31e474e739/artifacts
+end_time: 1680103353593
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 627b1e18aebb4deb8b521b31e474e739
+run_name: enchanting-goose-331
+run_uuid: 627b1e18aebb4deb8b521b31e474e739
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103352218
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/87258ba7f1554a15ad9a07e137570375/artifacts
+end_time: 1680112900338
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: 87258ba7f1554a15ad9a07e137570375
+run_name: zealous-whale-539
+run_uuid: 87258ba7f1554a15ad9a07e137570375
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680112898869
+status: 3
+tags: []
+user_id: elias

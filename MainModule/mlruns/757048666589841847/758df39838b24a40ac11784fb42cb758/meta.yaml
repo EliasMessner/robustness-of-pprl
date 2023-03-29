@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/758df39838b24a40ac11784fb42cb758/artifacts
+end_time: 1680103027775
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 758df39838b24a40ac11784fb42cb758
+run_name: skittish-frog-721
+run_uuid: 758df39838b24a40ac11784fb42cb758
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103026884
+status: 3
+tags: []
+user_id: elias

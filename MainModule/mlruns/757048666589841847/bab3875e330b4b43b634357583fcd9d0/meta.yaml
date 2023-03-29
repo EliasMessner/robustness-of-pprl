@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/bab3875e330b4b43b634357583fcd9d0/artifacts
+end_time: 1680103296748
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: bab3875e330b4b43b634357583fcd9d0
+run_name: tasteful-sloth-604
+run_uuid: bab3875e330b4b43b634357583fcd9d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103295826
+status: 3
+tags: []
+user_id: elias

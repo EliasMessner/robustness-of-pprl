@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/c5ed43792a584f94b3ae34c65644f964/artifacts
+end_time: 1680107692703
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: c5ed43792a584f94b3ae34c65644f964
+run_name: gifted-grouse-879
+run_uuid: c5ed43792a584f94b3ae34c65644f964
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107691750
+status: 3
+tags: []
+user_id: elias

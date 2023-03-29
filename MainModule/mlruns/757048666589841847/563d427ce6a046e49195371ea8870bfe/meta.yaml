@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/563d427ce6a046e49195371ea8870bfe/artifacts
+end_time: 1680103109760
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 563d427ce6a046e49195371ea8870bfe
+run_name: trusting-shrike-532
+run_uuid: 563d427ce6a046e49195371ea8870bfe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103108901
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/58dfbb118f6f4f3f93918b422458396f/artifacts
+end_time: 1680113050404
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: 58dfbb118f6f4f3f93918b422458396f
+run_name: persistent-skink-42
+run_uuid: 58dfbb118f6f4f3f93918b422458396f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113048451
+status: 3
+tags: []
+user_id: elias

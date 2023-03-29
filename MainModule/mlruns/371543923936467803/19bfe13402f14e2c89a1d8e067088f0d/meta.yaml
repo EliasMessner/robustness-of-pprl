@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/19bfe13402f14e2c89a1d8e067088f0d/artifacts
+end_time: 1680107679813
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 19bfe13402f14e2c89a1d8e067088f0d
+run_name: zealous-ape-78
+run_uuid: 19bfe13402f14e2c89a1d8e067088f0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107678016
+status: 3
+tags: []
+user_id: elias

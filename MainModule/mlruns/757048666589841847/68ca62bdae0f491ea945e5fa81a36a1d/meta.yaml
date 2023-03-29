@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/68ca62bdae0f491ea945e5fa81a36a1d/artifacts
+end_time: 1680102945350
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 68ca62bdae0f491ea945e5fa81a36a1d
+run_name: clean-hen-252
+run_uuid: 68ca62bdae0f491ea945e5fa81a36a1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680102944522
+status: 3
+tags: []
+user_id: elias

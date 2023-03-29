@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/cbaf8f158edb46078236134c7a3e89a4/artifacts
+end_time: 1680107553888
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: cbaf8f158edb46078236134c7a3e89a4
+run_name: trusting-hound-953
+run_uuid: cbaf8f158edb46078236134c7a3e89a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107552154
+status: 3
+tags: []
+user_id: elias

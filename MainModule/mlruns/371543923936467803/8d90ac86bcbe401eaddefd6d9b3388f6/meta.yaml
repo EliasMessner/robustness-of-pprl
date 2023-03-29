@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/8d90ac86bcbe401eaddefd6d9b3388f6/artifacts
+end_time: 1680107726626
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 8d90ac86bcbe401eaddefd6d9b3388f6
+run_name: nosy-perch-504
+run_uuid: 8d90ac86bcbe401eaddefd6d9b3388f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107725314
+status: 3
+tags: []
+user_id: elias

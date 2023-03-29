@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/ef9fec5345c347858dc4bb6594a62042/artifacts
+end_time: 1680103092885
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: ef9fec5345c347858dc4bb6594a62042
+run_name: victorious-bug-378
+run_uuid: ef9fec5345c347858dc4bb6594a62042
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103091979
+status: 3
+tags: []
+user_id: elias

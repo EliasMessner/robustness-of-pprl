@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/ba2ce6f618c1416e8d020a88553ee076/artifacts
+end_time: 1680103273873
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: ba2ce6f618c1416e8d020a88553ee076
+run_name: unleashed-dove-598
+run_uuid: ba2ce6f618c1416e8d020a88553ee076
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103272482
+status: 3
+tags: []
+user_id: elias

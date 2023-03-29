@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/e4704659d855495382681fc9fcb0a00a/artifacts
+end_time: 1680103308857
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: e4704659d855495382681fc9fcb0a00a
+run_name: caring-rat-104
+run_uuid: e4704659d855495382681fc9fcb0a00a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103307998
+status: 3
+tags: []
+user_id: elias

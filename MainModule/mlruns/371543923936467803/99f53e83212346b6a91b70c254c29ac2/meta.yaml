@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/99f53e83212346b6a91b70c254c29ac2/artifacts
+end_time: 1680107573998
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 99f53e83212346b6a91b70c254c29ac2
+run_name: secretive-toad-314
+run_uuid: 99f53e83212346b6a91b70c254c29ac2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107572826
+status: 3
+tags: []
+user_id: elias

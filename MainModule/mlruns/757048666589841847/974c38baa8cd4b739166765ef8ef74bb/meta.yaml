@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/974c38baa8cd4b739166765ef8ef74bb/artifacts
+end_time: 1680102936210
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 974c38baa8cd4b739166765ef8ef74bb
+run_name: gentle-crane-251
+run_uuid: 974c38baa8cd4b739166765ef8ef74bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680102935382
+status: 3
+tags: []
+user_id: elias

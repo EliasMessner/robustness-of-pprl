@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/1109508a2fc64f3f87f43c7d99e52cae/artifacts
+end_time: 1680103340843
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 1109508a2fc64f3f87f43c7d99e52cae
+run_name: indecisive-mule-269
+run_uuid: 1109508a2fc64f3f87f43c7d99e52cae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103339984
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/734d7da01d844942a07c0f39b63f9bee/artifacts
+end_time: 1680103083682
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 734d7da01d844942a07c0f39b63f9bee
+run_name: intrigued-moose-380
+run_uuid: 734d7da01d844942a07c0f39b63f9bee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103082838
+status: 3
+tags: []
+user_id: elias

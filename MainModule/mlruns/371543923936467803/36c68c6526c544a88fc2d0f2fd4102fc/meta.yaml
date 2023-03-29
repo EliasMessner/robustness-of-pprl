@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/36c68c6526c544a88fc2d0f2fd4102fc/artifacts
+end_time: 1680107627046
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 36c68c6526c544a88fc2d0f2fd4102fc
+run_name: valuable-skunk-33
+run_uuid: 36c68c6526c544a88fc2d0f2fd4102fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107626155
+status: 3
+tags: []
+user_id: elias

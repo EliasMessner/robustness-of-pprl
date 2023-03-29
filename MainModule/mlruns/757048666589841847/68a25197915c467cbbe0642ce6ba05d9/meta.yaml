@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/68a25197915c467cbbe0642ce6ba05d9/artifacts
+end_time: 1680103142824
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 68a25197915c467cbbe0642ce6ba05d9
+run_name: skillful-robin-521
+run_uuid: 68a25197915c467cbbe0642ce6ba05d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103141980
+status: 3
+tags: []
+user_id: elias

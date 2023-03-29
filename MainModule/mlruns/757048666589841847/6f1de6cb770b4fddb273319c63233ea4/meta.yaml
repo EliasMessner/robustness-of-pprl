@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/6f1de6cb770b4fddb273319c63233ea4/artifacts
+end_time: 1680103178761
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 6f1de6cb770b4fddb273319c63233ea4
+run_name: overjoyed-worm-205
+run_uuid: 6f1de6cb770b4fddb273319c63233ea4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103177902
+status: 3
+tags: []
+user_id: elias

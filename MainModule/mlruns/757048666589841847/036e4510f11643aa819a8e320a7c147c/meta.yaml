@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/036e4510f11643aa819a8e320a7c147c/artifacts
+end_time: 1680103357906
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 036e4510f11643aa819a8e320a7c147c
+run_name: shivering-robin-333
+run_uuid: 036e4510f11643aa819a8e320a7c147c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103356999
+status: 3
+tags: []
+user_id: elias

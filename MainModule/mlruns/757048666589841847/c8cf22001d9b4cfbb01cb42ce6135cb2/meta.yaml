@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/c8cf22001d9b4cfbb01cb42ce6135cb2/artifacts
+end_time: 1680102890615
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: c8cf22001d9b4cfbb01cb42ce6135cb2
+run_name: defiant-gnat-809
+run_uuid: c8cf22001d9b4cfbb01cb42ce6135cb2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680102889740
+status: 3
+tags: []
+user_id: elias

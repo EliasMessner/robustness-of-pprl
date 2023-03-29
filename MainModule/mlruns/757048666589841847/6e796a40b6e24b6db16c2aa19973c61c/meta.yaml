@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/6e796a40b6e24b6db16c2aa19973c61c/artifacts
+end_time: 1680103123182
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 6e796a40b6e24b6db16c2aa19973c61c
+run_name: sneaky-wren-709
+run_uuid: 6e796a40b6e24b6db16c2aa19973c61c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103122338
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/336971ba14d0420cb4e4d6b16d013020/artifacts
+end_time: 1680107812487
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 336971ba14d0420cb4e4d6b16d013020
+run_name: rambunctious-pig-529
+run_uuid: 336971ba14d0420cb4e4d6b16d013020
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107811440
+status: 3
+tags: []
+user_id: elias

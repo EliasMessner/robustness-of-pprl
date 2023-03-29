@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/86716d138a9d4d45b5c63b9934dadc1a/artifacts
+end_time: 1680103323952
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 86716d138a9d4d45b5c63b9934dadc1a
+run_name: orderly-fly-707
+run_uuid: 86716d138a9d4d45b5c63b9934dadc1a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103323031
+status: 3
+tags: []
+user_id: elias

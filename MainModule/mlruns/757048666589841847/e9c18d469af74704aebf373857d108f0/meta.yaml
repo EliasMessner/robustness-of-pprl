@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/e9c18d469af74704aebf373857d108f0/artifacts
+end_time: 1680103217731
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: e9c18d469af74704aebf373857d108f0
+run_name: efficient-shark-932
+run_uuid: e9c18d469af74704aebf373857d108f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103216575
+status: 3
+tags: []
+user_id: elias

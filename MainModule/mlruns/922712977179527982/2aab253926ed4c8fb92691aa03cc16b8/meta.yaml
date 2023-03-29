@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/2aab253926ed4c8fb92691aa03cc16b8/artifacts
+end_time: 1680112970855
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: 2aab253926ed4c8fb92691aa03cc16b8
+run_name: burly-bug-23
+run_uuid: 2aab253926ed4c8fb92691aa03cc16b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680112969449
+status: 3
+tags: []
+user_id: elias

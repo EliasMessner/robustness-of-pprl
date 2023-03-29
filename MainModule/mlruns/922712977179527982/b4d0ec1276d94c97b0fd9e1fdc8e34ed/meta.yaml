@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/b4d0ec1276d94c97b0fd9e1fdc8e34ed/artifacts
+end_time: 1680113150827
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: b4d0ec1276d94c97b0fd9e1fdc8e34ed
+run_name: popular-rook-856
+run_uuid: b4d0ec1276d94c97b0fd9e1fdc8e34ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113149437
+status: 3
+tags: []
+user_id: elias

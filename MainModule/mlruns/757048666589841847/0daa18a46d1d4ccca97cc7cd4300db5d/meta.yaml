@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/0daa18a46d1d4ccca97cc7cd4300db5d/artifacts
+end_time: 1680103118557
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 0daa18a46d1d4ccca97cc7cd4300db5d
+run_name: spiffy-wren-237
+run_uuid: 0daa18a46d1d4ccca97cc7cd4300db5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103117635
+status: 3
+tags: []
+user_id: elias

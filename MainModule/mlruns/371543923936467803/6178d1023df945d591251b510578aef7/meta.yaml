@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/6178d1023df945d591251b510578aef7/artifacts
+end_time: 1680107533545
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 6178d1023df945d591251b510578aef7
+run_name: secretive-midge-392
+run_uuid: 6178d1023df945d591251b510578aef7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107532716
+status: 3
+tags: []
+user_id: elias

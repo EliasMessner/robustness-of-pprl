@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/00a9756fce91412b971008650d3d086f/artifacts
+end_time: 1680107802971
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 00a9756fce91412b971008650d3d086f
+run_name: nosy-ram-15
+run_uuid: 00a9756fce91412b971008650d3d086f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107800877
+status: 3
+tags: []
+user_id: elias

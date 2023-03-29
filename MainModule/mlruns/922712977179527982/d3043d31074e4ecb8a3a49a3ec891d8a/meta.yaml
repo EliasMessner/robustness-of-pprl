@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/d3043d31074e4ecb8a3a49a3ec891d8a/artifacts
+end_time: 1680113241892
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: d3043d31074e4ecb8a3a49a3ec891d8a
+run_name: persistent-tern-972
+run_uuid: d3043d31074e4ecb8a3a49a3ec891d8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113240517
+status: 3
+tags: []
+user_id: elias

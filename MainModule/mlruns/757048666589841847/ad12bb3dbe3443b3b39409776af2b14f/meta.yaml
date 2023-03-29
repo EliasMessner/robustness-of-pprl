@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/ad12bb3dbe3443b3b39409776af2b14f/artifacts
+end_time: 1680102895427
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: ad12bb3dbe3443b3b39409776af2b14f
+run_name: melodic-crane-639
+run_uuid: ad12bb3dbe3443b3b39409776af2b14f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680102894552
+status: 3
+tags: []
+user_id: elias

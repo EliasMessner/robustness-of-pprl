@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/c3e8b8c8e06c4b10adc89807d527475d/artifacts
+end_time: 1680103012898
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: c3e8b8c8e06c4b10adc89807d527475d
+run_name: capable-goose-709
+run_uuid: c3e8b8c8e06c4b10adc89807d527475d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103012055
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/20a3449ac5aa43c8ad4ac446cba18d61/artifacts
+end_time: 1680107815081
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 20a3449ac5aa43c8ad4ac446cba18d61
+run_name: blushing-crow-343
+run_uuid: 20a3449ac5aa43c8ad4ac446cba18d61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107813877
+status: 3
+tags: []
+user_id: elias

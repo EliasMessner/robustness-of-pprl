@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/b97d2cf84ac246e38c67f1735a359c23/artifacts
+end_time: 1680103211122
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: b97d2cf84ac246e38c67f1735a359c23
+run_name: shivering-carp-774
+run_uuid: b97d2cf84ac246e38c67f1735a359c23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103209434
+status: 3
+tags: []
+user_id: elias

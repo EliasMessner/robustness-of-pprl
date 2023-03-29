@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/650bf7a6ffd94047a8990ddad0322b60/artifacts
+end_time: 1680107702548
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 650bf7a6ffd94047a8990ddad0322b60
+run_name: adaptable-fox-337
+run_uuid: 650bf7a6ffd94047a8990ddad0322b60
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107701376
+status: 3
+tags: []
+user_id: elias

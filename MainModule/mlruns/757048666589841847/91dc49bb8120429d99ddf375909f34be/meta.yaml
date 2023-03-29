@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/91dc49bb8120429d99ddf375909f34be/artifacts
+end_time: 1680102969258
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 91dc49bb8120429d99ddf375909f34be
+run_name: secretive-boar-771
+run_uuid: 91dc49bb8120429d99ddf375909f34be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680102968352
+status: 3
+tags: []
+user_id: elias

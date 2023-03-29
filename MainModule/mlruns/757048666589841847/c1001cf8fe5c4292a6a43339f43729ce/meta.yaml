@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/c1001cf8fe5c4292a6a43339f43729ce/artifacts
+end_time: 1680103159152
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: c1001cf8fe5c4292a6a43339f43729ce
+run_name: chill-loon-607
+run_uuid: c1001cf8fe5c4292a6a43339f43729ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103158246
+status: 3
+tags: []
+user_id: elias

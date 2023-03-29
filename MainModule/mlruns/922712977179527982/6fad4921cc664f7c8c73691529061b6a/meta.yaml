@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/6fad4921cc664f7c8c73691529061b6a/artifacts
+end_time: 1680113272908
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: 6fad4921cc664f7c8c73691529061b6a
+run_name: colorful-slug-229
+run_uuid: 6fad4921cc664f7c8c73691529061b6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113271470
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/90dbb30eae9a487db84b1032b13bf114/artifacts
+end_time: 1680103192183
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 90dbb30eae9a487db84b1032b13bf114
+run_name: bedecked-ram-630
+run_uuid: 90dbb30eae9a487db84b1032b13bf114
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103191230
+status: 3
+tags: []
+user_id: elias

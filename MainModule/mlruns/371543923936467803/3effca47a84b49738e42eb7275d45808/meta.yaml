@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/3effca47a84b49738e42eb7275d45808/artifacts
+end_time: 1680107752704
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 3effca47a84b49738e42eb7275d45808
+run_name: clumsy-horse-738
+run_uuid: 3effca47a84b49738e42eb7275d45808
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107750033
+status: 3
+tags: []
+user_id: elias

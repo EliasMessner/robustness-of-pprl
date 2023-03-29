@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/922712977179527982/879fc2c523944e82ba4988eb592cbafc/artifacts
+end_time: 1680113047295
+entry_point_name: ''
+experiment_id: '922712977179527982'
+lifecycle_stage: active
+run_id: 879fc2c523944e82ba4988eb592cbafc
+run_name: classy-goose-7
+run_uuid: 879fc2c523944e82ba4988eb592cbafc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680113044935
+status: 3
+tags: []
+user_id: elias

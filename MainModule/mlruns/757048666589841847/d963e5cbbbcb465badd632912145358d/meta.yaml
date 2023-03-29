@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/d963e5cbbbcb465badd632912145358d/artifacts
+end_time: 1680103256748
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: d963e5cbbbcb465badd632912145358d
+run_name: salty-panda-988
+run_uuid: d963e5cbbbcb465badd632912145358d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103255778
+status: 3
+tags: []
+user_id: elias

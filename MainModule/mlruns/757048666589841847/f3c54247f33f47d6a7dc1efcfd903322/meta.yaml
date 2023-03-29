@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/f3c54247f33f47d6a7dc1efcfd903322/artifacts
+end_time: 1680103377985
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: f3c54247f33f47d6a7dc1efcfd903322
+run_name: mercurial-whale-220
+run_uuid: f3c54247f33f47d6a7dc1efcfd903322
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103377125
+status: 3
+tags: []
+user_id: elias

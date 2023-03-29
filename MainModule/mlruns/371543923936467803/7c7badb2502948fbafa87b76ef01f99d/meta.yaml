@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/371543923936467803/7c7badb2502948fbafa87b76ef01f99d/artifacts
+end_time: 1680107663641
+entry_point_name: ''
+experiment_id: '371543923936467803'
+lifecycle_stage: active
+run_id: 7c7badb2502948fbafa87b76ef01f99d
+run_name: nosy-snake-543
+run_uuid: 7c7badb2502948fbafa87b76ef01f99d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680107662625
+status: 3
+tags: []
+user_id: elias

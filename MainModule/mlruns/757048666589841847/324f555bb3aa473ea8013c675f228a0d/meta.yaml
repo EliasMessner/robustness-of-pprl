@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/324f555bb3aa473ea8013c675f228a0d/artifacts
+end_time: 1680103147558
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: 324f555bb3aa473ea8013c675f228a0d
+run_name: clean-carp-111
+run_uuid: 324f555bb3aa473ea8013c675f228a0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103146339
+status: 3
+tags: []
+user_id: elias

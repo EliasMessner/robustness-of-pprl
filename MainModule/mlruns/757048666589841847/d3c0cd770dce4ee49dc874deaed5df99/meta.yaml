@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/757048666589841847/d3c0cd770dce4ee49dc874deaed5df99/artifacts
+end_time: 1680103370046
+entry_point_name: ''
+experiment_id: '757048666589841847'
+lifecycle_stage: active
+run_id: d3c0cd770dce4ee49dc874deaed5df99
+run_name: bemused-rat-995
+run_uuid: d3c0cd770dce4ee49dc874deaed5df99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680103369124
+status: 3
+tags: []
+user_id: elias
