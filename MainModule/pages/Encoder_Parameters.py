@@ -2,10 +2,10 @@ from streamlit_entry import *
 
 key = 0
 
-st.set_page_config(page_title="Encoder Parameters")
+st.set_page_config(page_title="Encoder Parameters", layout="wide")
 st.write("# Encoder Parameters")
 
-CHART_ARRANGEMENT = st.sidebar.radio(label="Chart Arrangement", options=["Vertical", "Horizontal"])
+CHART_ARRANGEMENT = st.sidebar.radio(label="Chart Arrangement", options=["Horizontal", "Vertical"])
 st.sidebar.write("Figure Size")
 key += 1
 size_x = st.sidebar.slider(label="X", min_value=5, max_value=20, value=DEFAULT_FIG_SIZE[0], key=key)
@@ -31,19 +31,21 @@ def get_max_seed_count(_runs):
     return _runs["tags.seed"].unique().shape[0]
 
 
-exp_ids = experiment_multiselect(default=[])  # TODO add default
+default_exp = mlflow.search_experiments(filter_string="name ILIKE '%ENCODER-PARAMS%'")
+default_exp = [sorted(default_exp, key=lambda e: e.creation_time, reverse=True)[0]]  # if many are found, use the latest
+exp_ids = experiment_multiselect(default=[e.experiment_id for e in default_exp])
 runs = get_runs(exp_ids)
 
 max_seed_count = get_max_seed_count(runs)
 if max_seed_count > 1:
-    seed_count = st.slider("Seed Count", 1, max_seed_count)
+    seed_count = st.slider("Seed Count", 1, max_seed_count, value=max_seed_count)
 else:
     seed_count = 1
 seeds = runs["tags.seed"].unique().tolist()[:seed_count]
 
 
-st.write(f"## Threshold")
-param = "tags.t"
+st.write(f"## Influence of Seed")
+param = "tags.seed"
 k_options = sorted(runs["tags.k"].unique().tolist())
 key += 1
 select_all = st.checkbox("Select All", key=key)
@@ -64,7 +66,7 @@ for k in k_selections:
                        chart_arrangement=CHART_ARRANGEMENT, fig=fig, key=key)
 
 
-st.write(f"## k (# hash functions)")
+st.write(f"## Influence of k (# hash functions)")
 param = "tags.k"
 t_options = sorted(runs["tags.t"].unique().tolist())
 key += 1
