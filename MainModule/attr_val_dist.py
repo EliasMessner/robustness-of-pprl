@@ -34,9 +34,6 @@ def attr_val_dist_random_sample(df: pd.DataFrame, desired_dist: dict, desired_si
         filter = lambda key, value: key == value
         check_all_values_possible(attr_name, desired_dist, df)
     check_portions_sum(desired_dist)
-    # check_size_possible(df, desired_dist, desired_size, attr_name, condition)
-    # TODO maybe remove check_size_possible call because it takes very long time and if size was not possible an
-    #  exception would be thrown at a later point anyway
     overlap_scaling_factor = get_scaling_factor(df, desired_dist, desired_size, attr_name, is_range, preserve_overlap, seed)
     # draw randomly according to the desired distribution
     result_subsets = []
@@ -83,7 +80,6 @@ def get_scaling_factor(df, desired_dist, desired_size, attr_name, is_range, pres
         -> altered overlap = 75% * 0.3 + 25% * 0.1 = 0.25
         -> scaling factor = 0.2 / 0.25 = 0.8
     """
-    # get the scaling factor
     if not preserve_overlap:
         return 1.0
     altered_overlap = split_and_get_overlap(
