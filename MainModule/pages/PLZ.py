@@ -2,8 +2,9 @@ from streamlit_entry import *
 
 key = 0
 
-st.set_page_config(page_title="Attribute Value Length", layout="wide")
-st.write("# Attribute Value Length")
+st.set_page_config(page_title="PLZ", layout="wide")
+st.write("# PLZ (Zip Code)")
+st.write("Analyze Influence of PLZ (Zip Code)")
 
 CHART_ARRANGEMENT = st.sidebar.radio(label="Chart Arrangement", options=["Horizontal", "Vertical"])
 st.sidebar.write("Figure Size")
@@ -20,22 +21,17 @@ def experiment_multiselect(default):
     selection = st.multiselect("Experiments", options, default)
     return [value.split()[0] for value in selection]  # return only ID
 
-default_exp = mlflow.search_experiments(filter_string="name ILIKE '%ATTR-VAL-LENGTH%'")
+
+default_exp = mlflow.search_experiments(filter_string="name ILIKE '%PLZ%'")
 default_exp = [sorted(default_exp, key=lambda e: e.creation_time, reverse=True)[0]]  # if many are found, use the latest
 exp_ids = experiment_multiselect(default=[e.experiment_id for e in default_exp])
 runs = get_runs(exp_ids)
-assert (runs["params.subset_selection"] == "ATTRIBUTE_VALUE").all()
-assert (~runs["params.length"].isnull()).all()
 
-col_options = runs["params.column"].unique().tolist()
-col_selections = st.multiselect("Column", options=col_options, default=col_options)
 
-for col in col_selections:
-    param = "params.length"
-    runs_filtered = runs[runs["params.column"] == col]
-    with st.expander(f"Column = **{col}**"):
-        if runs_filtered.shape[0] == 0:
-            continue
-        key += 1
-        basic_box_plot(runs_filtered, param=param, x_order=sorted(runs_filtered[param].unique().tolist()),
-                       chart_arrangement=CHART_ARRANGEMENT, key=key, fig=fig)
+param = "params.equals"
+for digits in runs["params.digits"].unique().tolist():
+    st.write(f"## First {digits} digits")
+    runs_filtered = runs[runs["params.digits"] == digits]
+    key += 1
+    basic_box_plot(runs_filtered, param=param, x_order=sorted(runs_filtered[param].unique().tolist()),
+                   chart_arrangement=CHART_ARRANGEMENT, fig=fig, key=key)

@@ -31,58 +31,36 @@ def get_max_seed_count(_runs):
     return _runs["tags.seed"].unique().shape[0]
 
 
-default_exp = mlflow.search_experiments(filter_string="name ILIKE '%ENCODER-PARAMS%'")
+st.write(f"## Influence of k (# hash functions)")
+
+default_exp = mlflow.search_experiments(filter_string="name ILIKE '%ENCODER-PARAMS-k%'")
 default_exp = [sorted(default_exp, key=lambda e: e.creation_time, reverse=True)[0]]  # if many are found, use the latest
 exp_ids = experiment_multiselect(default=[e.experiment_id for e in default_exp])
-runs = get_runs(exp_ids)
+runs_k = get_runs(exp_ids)
 
-max_seed_count = get_max_seed_count(runs)
+max_seed_count = get_max_seed_count(runs_k)
 if max_seed_count > 1:
     seed_count = st.slider("Seed Count", 1, max_seed_count, value=max_seed_count)
 else:
     seed_count = 1
-seeds = runs["tags.seed"].unique().tolist()[:seed_count]
+seeds = runs_k["tags.seed"].unique().tolist()[:seed_count]
+
+
+runs_k_filtered = runs_k[runs_k["tags.seed"].isin(seeds)]
+param = "tags.k"
+key += 1
+basic_box_plot(runs_k_filtered, param=param, x_order=sorted(runs_k_filtered[param].unique().tolist()),
+               chart_arrangement=CHART_ARRANGEMENT, fig=fig, key=key)
 
 
 st.write(f"## Influence of Seed")
+
+default_exp = mlflow.search_experiments(filter_string="name ILIKE '%ENCODER-PARAMS-seed%'")
+default_exp = [sorted(default_exp, key=lambda e: e.creation_time, reverse=True)[0]]  # if many are found, use the latest
+exp_ids = experiment_multiselect(default=[e.experiment_id for e in default_exp])
+runs_s = get_runs(exp_ids)
+
 param = "tags.seed"
-k_options = sorted(runs["tags.k"].unique().tolist())
 key += 1
-select_all = st.checkbox("Select All", key=key)
-key += 1
-k_selections = st.multiselect("k (# hash functions)", options=k_options, default=[] if not select_all else k_options,
-                              key=key)
-
-for k in k_selections:
-    runs_filtered = runs[
-        (runs["tags.k"] == k)
-        & runs["tags.seed"].isin(seeds)
-        ]
-    with st.expander(f"k = {k}"):
-        if runs_filtered.shape[0] == 0:
-            continue
-        key += 1
-        basic_box_plot(runs_filtered, param=param, x_order=sorted(runs_filtered[param].unique().tolist()),
-                       chart_arrangement=CHART_ARRANGEMENT, fig=fig, key=key)
-
-
-st.write(f"## Influence of k (# hash functions)")
-param = "tags.k"
-t_options = sorted(runs["tags.t"].unique().tolist())
-key += 1
-select_all = st.checkbox("Select All", key=key)
-key += 1
-t_selections = st.multiselect("t (threshold)", options=t_options, default=[] if not select_all else t_options,
-                              key=key)
-
-for t in t_selections:
-    runs_filtered = runs[
-        (runs["tags.t"] == t)
-        & runs["tags.seed"].isin(seeds)
-        ]
-    with st.expander(f"t = {t}"):
-        if runs_filtered.shape[0] == 0:
-            continue
-        key += 1
-        basic_box_plot(runs_filtered, param=param, x_order=sorted(runs_filtered[param].unique().tolist()),
-                       chart_arrangement=CHART_ARRANGEMENT, fig=fig, key=key)
+basic_box_plot(runs_s, param=param, x_order=sorted(runs_s[param].unique().tolist()),
+               chart_arrangement=CHART_ARRANGEMENT, fig=fig, key=key)
