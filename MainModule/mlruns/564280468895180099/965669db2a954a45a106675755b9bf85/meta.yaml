@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/965669db2a954a45a106675755b9bf85/artifacts
+end_time: 1680126453997
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 965669db2a954a45a106675755b9bf85
+run_name: skillful-moose-187
+run_uuid: 965669db2a954a45a106675755b9bf85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126453169
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/5745c65d1cae44fa91108515415102f1/artifacts
+end_time: 1680126517530
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 5745c65d1cae44fa91108515415102f1
+run_name: crawling-moth-791
+run_uuid: 5745c65d1cae44fa91108515415102f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126516701
+status: 3
+tags: []
+user_id: elias

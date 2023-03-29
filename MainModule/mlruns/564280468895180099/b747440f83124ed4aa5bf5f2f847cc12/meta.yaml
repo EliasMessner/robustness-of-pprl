@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/b747440f83124ed4aa5bf5f2f847cc12/artifacts
+end_time: 1680126497311
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: b747440f83124ed4aa5bf5f2f847cc12
+run_name: sneaky-panda-507
+run_uuid: b747440f83124ed4aa5bf5f2f847cc12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126496561
+status: 3
+tags: []
+user_id: elias

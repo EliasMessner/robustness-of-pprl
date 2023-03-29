@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/6c0676a70c39433da0645164d39e97ae/artifacts
+end_time: 1680126522155
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 6c0676a70c39433da0645164d39e97ae
+run_name: nosy-deer-613
+run_uuid: 6c0676a70c39433da0645164d39e97ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126521326
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/d71d609c74364127875086b5b2d0148a/artifacts
+end_time: 1680126494498
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: d71d609c74364127875086b5b2d0148a
+run_name: polite-bird-844
+run_uuid: d71d609c74364127875086b5b2d0148a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126493733
+status: 3
+tags: []
+user_id: elias

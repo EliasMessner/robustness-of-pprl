@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/3acb386b9fd640019c4a77640a59cfb6/artifacts
+end_time: 1680126535358
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 3acb386b9fd640019c4a77640a59cfb6
+run_name: grandiose-hawk-816
+run_uuid: 3acb386b9fd640019c4a77640a59cfb6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126534514
+status: 3
+tags: []
+user_id: elias

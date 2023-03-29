@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/cf705a013b7749df8576b3f7eb3b0a4a/artifacts
+end_time: 1680126541031
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: cf705a013b7749df8576b3f7eb3b0a4a
+run_name: flawless-ox-299
+run_uuid: cf705a013b7749df8576b3f7eb3b0a4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126540248
+status: 3
+tags: []
+user_id: elias

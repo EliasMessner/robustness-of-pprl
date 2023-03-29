@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/3f7c192af95c41079dee2439b763d276/artifacts
+end_time: 1680126488530
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 3f7c192af95c41079dee2439b763d276
+run_name: defiant-stoat-208
+run_uuid: 3f7c192af95c41079dee2439b763d276
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126487701
+status: 3
+tags: []
+user_id: elias

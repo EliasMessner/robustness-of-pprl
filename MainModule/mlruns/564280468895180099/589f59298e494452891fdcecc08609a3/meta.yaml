@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/589f59298e494452891fdcecc08609a3/artifacts
+end_time: 1680126452559
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 589f59298e494452891fdcecc08609a3
+run_name: youthful-mare-535
+run_uuid: 589f59298e494452891fdcecc08609a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126451794
+status: 3
+tags: []
+user_id: elias

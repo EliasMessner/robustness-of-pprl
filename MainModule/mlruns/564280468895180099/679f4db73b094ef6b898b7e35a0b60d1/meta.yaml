@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/679f4db73b094ef6b898b7e35a0b60d1/artifacts
+end_time: 1680126558515
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 679f4db73b094ef6b898b7e35a0b60d1
+run_name: wistful-dolphin-406
+run_uuid: 679f4db73b094ef6b898b7e35a0b60d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126557734
+status: 3
+tags: []
+user_id: elias

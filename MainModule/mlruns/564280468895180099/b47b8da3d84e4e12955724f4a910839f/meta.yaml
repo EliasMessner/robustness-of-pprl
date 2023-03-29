@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/b47b8da3d84e4e12955724f4a910839f/artifacts
+end_time: 1680126484264
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: b47b8da3d84e4e12955724f4a910839f
+run_name: gifted-crow-184
+run_uuid: b47b8da3d84e4e12955724f4a910839f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126483483
+status: 3
+tags: []
+user_id: elias

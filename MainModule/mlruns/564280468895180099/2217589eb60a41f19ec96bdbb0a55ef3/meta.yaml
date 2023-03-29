@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/2217589eb60a41f19ec96bdbb0a55ef3/artifacts
+end_time: 1680126525014
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 2217589eb60a41f19ec96bdbb0a55ef3
+run_name: thundering-flea-466
+run_uuid: 2217589eb60a41f19ec96bdbb0a55ef3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126524186
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/ba2bcb3676114aa7b705cb383d9e3ad3/artifacts
+end_time: 1680126460997
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: ba2bcb3676114aa7b705cb383d9e3ad3
+run_name: glamorous-hog-999
+run_uuid: ba2bcb3676114aa7b705cb383d9e3ad3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126460153
+status: 3
+tags: []
+user_id: elias

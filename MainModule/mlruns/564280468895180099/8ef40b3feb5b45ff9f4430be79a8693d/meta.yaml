@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/8ef40b3feb5b45ff9f4430be79a8693d/artifacts
+end_time: 1680126422841
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: 8ef40b3feb5b45ff9f4430be79a8693d
+run_name: carefree-cod-487
+run_uuid: 8ef40b3feb5b45ff9f4430be79a8693d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126422075
+status: 3
+tags: []
+user_id: elias

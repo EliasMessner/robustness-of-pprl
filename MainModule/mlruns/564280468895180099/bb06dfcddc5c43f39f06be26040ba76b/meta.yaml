@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/564280468895180099/bb06dfcddc5c43f39f06be26040ba76b/artifacts
+end_time: 1680126442513
+entry_point_name: ''
+experiment_id: '564280468895180099'
+lifecycle_stage: active
+run_id: bb06dfcddc5c43f39f06be26040ba76b
+run_name: calm-finch-27
+run_uuid: bb06dfcddc5c43f39f06be26040ba76b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680126441763
+status: 3
+tags: []
+user_id: elias
