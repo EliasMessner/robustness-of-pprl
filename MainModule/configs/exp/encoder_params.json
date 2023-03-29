@@ -1,9 +1,15 @@
 {
   "experiments": [
     {
-      "exp_name": "ENCODER-PARAMS",
+      "exp_name": "ENCODER-PARAMS-k",
       "dm_config": "configs/dm/base_ds_small.json",
       "rl_config": "configs/rl/varying_k.json",
+      "append_if_exists": false,
+      "timestamp": true
+    },
+    {
+      "exp_name": "ENCODER-PARAMS-seed",
+      "dm_config": "configs/dm/base_ds_small_10_random_subsets.json",
       "append_if_exists": false,
       "timestamp": true
     }
