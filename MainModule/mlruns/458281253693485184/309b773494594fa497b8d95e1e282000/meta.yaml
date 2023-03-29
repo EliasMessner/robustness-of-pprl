@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/309b773494594fa497b8d95e1e282000/artifacts
+end_time: 1680051942593
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 309b773494594fa497b8d95e1e282000
+run_name: righteous-calf-31
+run_uuid: 309b773494594fa497b8d95e1e282000
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051942030
+status: 3
+tags: []
+user_id: elias

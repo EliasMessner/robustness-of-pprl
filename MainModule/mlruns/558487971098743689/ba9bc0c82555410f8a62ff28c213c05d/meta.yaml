@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/ba9bc0c82555410f8a62ff28c213c05d/artifacts
+end_time: 1680050059047
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: ba9bc0c82555410f8a62ff28c213c05d
+run_name: tasteful-fly-927
+run_uuid: ba9bc0c82555410f8a62ff28c213c05d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680050058281
+status: 3
+tags: []
+user_id: elias

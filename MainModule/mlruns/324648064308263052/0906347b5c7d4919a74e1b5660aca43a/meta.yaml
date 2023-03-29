@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/0906347b5c7d4919a74e1b5660aca43a/artifacts
+end_time: 1680055536808
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 0906347b5c7d4919a74e1b5660aca43a
+run_name: bemused-hound-785
+run_uuid: 0906347b5c7d4919a74e1b5660aca43a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055536448
+status: 3
+tags: []
+user_id: elias

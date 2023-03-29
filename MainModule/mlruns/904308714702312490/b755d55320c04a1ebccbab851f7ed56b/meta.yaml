@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/b755d55320c04a1ebccbab851f7ed56b/artifacts
+end_time: 1680054554302
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: b755d55320c04a1ebccbab851f7ed56b
+run_name: adorable-seal-538
+run_uuid: b755d55320c04a1ebccbab851f7ed56b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054553739
+status: 3
+tags: []
+user_id: elias

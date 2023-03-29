@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/e4f7a7495c4a4a7ba96ce53707f66109/artifacts
+end_time: 1680054817181
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: e4f7a7495c4a4a7ba96ce53707f66109
+run_name: skittish-ant-11
+run_uuid: e4f7a7495c4a4a7ba96ce53707f66109
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054816572
+status: 3
+tags: []
+user_id: elias

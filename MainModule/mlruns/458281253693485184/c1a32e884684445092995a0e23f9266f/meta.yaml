@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/c1a32e884684445092995a0e23f9266f/artifacts
+end_time: 1680051929562
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: c1a32e884684445092995a0e23f9266f
+run_name: welcoming-goat-190
+run_uuid: c1a32e884684445092995a0e23f9266f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051928984
+status: 3
+tags: []
+user_id: elias

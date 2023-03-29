@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/847471fe049340ff8a37cf580876a478/artifacts
+end_time: 1680054483971
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 847471fe049340ff8a37cf580876a478
+run_name: gaudy-sow-2
+run_uuid: 847471fe049340ff8a37cf580876a478
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054483409
+status: 3
+tags: []
+user_id: elias

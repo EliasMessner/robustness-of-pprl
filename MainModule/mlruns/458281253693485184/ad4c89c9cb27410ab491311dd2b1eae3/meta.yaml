@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/ad4c89c9cb27410ab491311dd2b1eae3/artifacts
+end_time: 1680051910640
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: ad4c89c9cb27410ab491311dd2b1eae3
+run_name: judicious-lamb-315
+run_uuid: ad4c89c9cb27410ab491311dd2b1eae3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051909984
+status: 3
+tags: []
+user_id: elias

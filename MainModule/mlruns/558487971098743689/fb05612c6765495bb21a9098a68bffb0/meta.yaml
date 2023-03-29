@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/fb05612c6765495bb21a9098a68bffb0/artifacts
+end_time: 1680049787478
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: fb05612c6765495bb21a9098a68bffb0
+run_name: skittish-shrike-25
+run_uuid: fb05612c6765495bb21a9098a68bffb0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049786697
+status: 3
+tags: []
+user_id: elias

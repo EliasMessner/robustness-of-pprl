@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/476c4e219cbc4b05999400976576c746/artifacts
+end_time: 1680054406892
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 476c4e219cbc4b05999400976576c746
+run_name: grandiose-toad-645
+run_uuid: 476c4e219cbc4b05999400976576c746
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054406329
+status: 3
+tags: []
+user_id: elias

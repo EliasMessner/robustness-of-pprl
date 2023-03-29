@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/e22291bdbd944f059593952c9cbdcb67/artifacts
+end_time: 1680054584755
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: e22291bdbd944f059593952c9cbdcb67
+run_name: worried-carp-357
+run_uuid: e22291bdbd944f059593952c9cbdcb67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054584177
+status: 3
+tags: []
+user_id: elias

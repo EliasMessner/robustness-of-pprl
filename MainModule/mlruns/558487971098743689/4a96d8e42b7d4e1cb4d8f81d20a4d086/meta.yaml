@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/4a96d8e42b7d4e1cb4d8f81d20a4d086/artifacts
+end_time: 1680050150470
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 4a96d8e42b7d4e1cb4d8f81d20a4d086
+run_name: awesome-worm-83
+run_uuid: 4a96d8e42b7d4e1cb4d8f81d20a4d086
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680050149736
+status: 3
+tags: []
+user_id: elias

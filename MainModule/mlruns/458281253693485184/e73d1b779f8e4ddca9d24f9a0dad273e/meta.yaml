@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/e73d1b779f8e4ddca9d24f9a0dad273e/artifacts
+end_time: 1680051883904
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: e73d1b779f8e4ddca9d24f9a0dad273e
+run_name: overjoyed-kite-229
+run_uuid: e73d1b779f8e4ddca9d24f9a0dad273e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051883326
+status: 3
+tags: []
+user_id: elias

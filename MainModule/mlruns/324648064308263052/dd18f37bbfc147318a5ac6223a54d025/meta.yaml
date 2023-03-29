@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/dd18f37bbfc147318a5ac6223a54d025/artifacts
+end_time: 1680055534589
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: dd18f37bbfc147318a5ac6223a54d025
+run_name: mysterious-dog-382
+run_uuid: dd18f37bbfc147318a5ac6223a54d025
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055534214
+status: 3
+tags: []
+user_id: elias

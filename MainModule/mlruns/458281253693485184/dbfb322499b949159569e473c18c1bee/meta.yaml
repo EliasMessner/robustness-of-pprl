@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/dbfb322499b949159569e473c18c1bee/artifacts
+end_time: 1680051924843
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: dbfb322499b949159569e473c18c1bee
+run_name: unequaled-owl-111
+run_uuid: dbfb322499b949159569e473c18c1bee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051924171
+status: 3
+tags: []
+user_id: elias

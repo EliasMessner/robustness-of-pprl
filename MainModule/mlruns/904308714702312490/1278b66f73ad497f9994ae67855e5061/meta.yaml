@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/1278b66f73ad497f9994ae67855e5061/artifacts
+end_time: 1680054481330
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 1278b66f73ad497f9994ae67855e5061
+run_name: capricious-crane-659
+run_uuid: 1278b66f73ad497f9994ae67855e5061
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054480768
+status: 3
+tags: []
+user_id: elias

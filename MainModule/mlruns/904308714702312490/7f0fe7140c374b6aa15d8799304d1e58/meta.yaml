@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/7f0fe7140c374b6aa15d8799304d1e58/artifacts
+end_time: 1680054519394
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 7f0fe7140c374b6aa15d8799304d1e58
+run_name: redolent-wren-448
+run_uuid: 7f0fe7140c374b6aa15d8799304d1e58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054518832
+status: 3
+tags: []
+user_id: elias

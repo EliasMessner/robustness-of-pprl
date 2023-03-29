@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/b5f25a1a4a434047aff8fbad74d3edf4/artifacts
+end_time: 1680049784963
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: b5f25a1a4a434047aff8fbad74d3edf4
+run_name: burly-gull-648
+run_uuid: b5f25a1a4a434047aff8fbad74d3edf4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049784150
+status: 3
+tags: []
+user_id: elias

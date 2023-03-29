@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/9ee28c3e18744d01a144ef2c37785364/artifacts
+end_time: 1680050164361
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 9ee28c3e18744d01a144ef2c37785364
+run_name: abundant-shad-667
+run_uuid: 9ee28c3e18744d01a144ef2c37785364
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680050163658
+status: 3
+tags: []
+user_id: elias

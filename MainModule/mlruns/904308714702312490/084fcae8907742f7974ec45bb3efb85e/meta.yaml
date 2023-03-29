@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/084fcae8907742f7974ec45bb3efb85e/artifacts
+end_time: 1680054521394
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 084fcae8907742f7974ec45bb3efb85e
+run_name: carefree-conch-926
+run_uuid: 084fcae8907742f7974ec45bb3efb85e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054520832
+status: 3
+tags: []
+user_id: elias

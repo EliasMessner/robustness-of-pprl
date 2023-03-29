@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/168dce9aea8d4e26bb3d435c9b939a87/artifacts
+end_time: 1680054797916
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 168dce9aea8d4e26bb3d435c9b939a87
+run_name: calm-slug-545
+run_uuid: 168dce9aea8d4e26bb3d435c9b939a87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054797306
+status: 3
+tags: []
+user_id: elias

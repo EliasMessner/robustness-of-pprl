@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/eb9da6e6eb62456a84b21e78382ec4a4/artifacts
+end_time: 1680055524511
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: eb9da6e6eb62456a84b21e78382ec4a4
+run_name: chill-mink-595
+run_uuid: eb9da6e6eb62456a84b21e78382ec4a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055524152
+status: 3
+tags: []
+user_id: elias

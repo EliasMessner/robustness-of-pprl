@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/dd1eacb66a5f4a3c94e5dfb0b38454e2/artifacts
+end_time: 1680051919124
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: dd1eacb66a5f4a3c94e5dfb0b38454e2
+run_name: dapper-shoat-996
+run_uuid: dd1eacb66a5f4a3c94e5dfb0b38454e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051918546
+status: 3
+tags: []
+user_id: elias

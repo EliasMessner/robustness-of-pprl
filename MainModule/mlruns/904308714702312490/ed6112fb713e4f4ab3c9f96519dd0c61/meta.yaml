@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/ed6112fb713e4f4ab3c9f96519dd0c61/artifacts
+end_time: 1680054775321
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: ed6112fb713e4f4ab3c9f96519dd0c61
+run_name: unruly-rook-616
+run_uuid: ed6112fb713e4f4ab3c9f96519dd0c61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054774711
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/c30f1591d1cd4c449ba531a46e5db58c/artifacts
+end_time: 1680054474034
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: c30f1591d1cd4c449ba531a46e5db58c
+run_name: grandiose-bug-68
+run_uuid: c30f1591d1cd4c449ba531a46e5db58c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054473455
+status: 3
+tags: []
+user_id: elias

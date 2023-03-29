@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/344c652885e1439083700e3b2ff5ea02/artifacts
+end_time: 1680054606740
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 344c652885e1439083700e3b2ff5ea02
+run_name: defiant-shark-376
+run_uuid: 344c652885e1439083700e3b2ff5ea02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054606147
+status: 3
+tags: []
+user_id: elias

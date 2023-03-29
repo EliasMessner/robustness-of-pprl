@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/6590e4e917ae42868223a7d03e0ea9ec/artifacts
+end_time: 1680054545597
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 6590e4e917ae42868223a7d03e0ea9ec
+run_name: angry-bird-364
+run_uuid: 6590e4e917ae42868223a7d03e0ea9ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054544285
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/c17dbae4b7214b0a84a6377287d48dde/artifacts
+end_time: 1680054447893
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: c17dbae4b7214b0a84a6377287d48dde
+run_name: crawling-stork-159
+run_uuid: c17dbae4b7214b0a84a6377287d48dde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054447330
+status: 3
+tags: []
+user_id: elias

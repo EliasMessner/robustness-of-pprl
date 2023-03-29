@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/c0945b0f5c81446386d3a2a22b489041/artifacts
+end_time: 1680055511136
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: c0945b0f5c81446386d3a2a22b489041
+run_name: agreeable-shrew-544
+run_uuid: c0945b0f5c81446386d3a2a22b489041
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055510777
+status: 3
+tags: []
+user_id: elias

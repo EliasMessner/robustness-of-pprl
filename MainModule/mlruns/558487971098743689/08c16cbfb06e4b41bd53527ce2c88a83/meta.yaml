@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/08c16cbfb06e4b41bd53527ce2c88a83/artifacts
+end_time: 1680049809730
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 08c16cbfb06e4b41bd53527ce2c88a83
+run_name: debonair-gull-421
+run_uuid: 08c16cbfb06e4b41bd53527ce2c88a83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049808870
+status: 3
+tags: []
+user_id: elias

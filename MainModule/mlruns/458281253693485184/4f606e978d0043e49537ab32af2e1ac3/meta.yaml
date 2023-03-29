@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/4f606e978d0043e49537ab32af2e1ac3/artifacts
+end_time: 1680051914249
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 4f606e978d0043e49537ab32af2e1ac3
+run_name: salty-ox-35
+run_uuid: 4f606e978d0043e49537ab32af2e1ac3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051913687
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/39e3d7637f9d4a55a71475fdad7e41ba/artifacts
+end_time: 1680049848995
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 39e3d7637f9d4a55a71475fdad7e41ba
+run_name: exultant-calf-56
+run_uuid: 39e3d7637f9d4a55a71475fdad7e41ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049848464
+status: 3
+tags: []
+user_id: elias

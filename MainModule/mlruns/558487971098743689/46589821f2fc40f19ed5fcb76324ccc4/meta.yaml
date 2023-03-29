@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/46589821f2fc40f19ed5fcb76324ccc4/artifacts
+end_time: 1680049995811
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 46589821f2fc40f19ed5fcb76324ccc4
+run_name: silent-moth-691
+run_uuid: 46589821f2fc40f19ed5fcb76324ccc4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049995202
+status: 3
+tags: []
+user_id: elias

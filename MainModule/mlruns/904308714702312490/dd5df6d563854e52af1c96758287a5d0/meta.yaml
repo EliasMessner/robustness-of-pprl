@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/dd5df6d563854e52af1c96758287a5d0/artifacts
+end_time: 1680054848823
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: dd5df6d563854e52af1c96758287a5d0
+run_name: rogue-cow-798
+run_uuid: dd5df6d563854e52af1c96758287a5d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054848183
+status: 3
+tags: []
+user_id: elias

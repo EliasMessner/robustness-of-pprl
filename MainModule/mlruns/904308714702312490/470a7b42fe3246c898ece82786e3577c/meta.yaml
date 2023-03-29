@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/470a7b42fe3246c898ece82786e3577c/artifacts
+end_time: 1680054738602
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 470a7b42fe3246c898ece82786e3577c
+run_name: funny-cod-805
+run_uuid: 470a7b42fe3246c898ece82786e3577c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054738008
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/e06c1c3d5c37437e9b2bcc1ca7f3867e/artifacts
+end_time: 1680049813995
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: e06c1c3d5c37437e9b2bcc1ca7f3867e
+run_name: caring-fly-624
+run_uuid: e06c1c3d5c37437e9b2bcc1ca7f3867e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049813136
+status: 3
+tags: []
+user_id: elias

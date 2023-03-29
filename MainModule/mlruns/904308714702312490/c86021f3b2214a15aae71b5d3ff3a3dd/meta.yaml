@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/c86021f3b2214a15aae71b5d3ff3a3dd/artifacts
+end_time: 1680054733071
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: c86021f3b2214a15aae71b5d3ff3a3dd
+run_name: merciful-hen-958
+run_uuid: c86021f3b2214a15aae71b5d3ff3a3dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054731696
+status: 3
+tags: []
+user_id: elias

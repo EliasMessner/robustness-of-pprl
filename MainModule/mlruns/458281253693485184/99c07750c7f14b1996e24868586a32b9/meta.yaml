@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/99c07750c7f14b1996e24868586a32b9/artifacts
+end_time: 1680052000563
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 99c07750c7f14b1996e24868586a32b9
+run_name: resilient-flea-45
+run_uuid: 99c07750c7f14b1996e24868586a32b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051999985
+status: 3
+tags: []
+user_id: elias

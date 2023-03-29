@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/ce37957c632b415e8f89029a3066df99/artifacts
+end_time: 1680054829431
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: ce37957c632b415e8f89029a3066df99
+run_name: burly-squid-93
+run_uuid: ce37957c632b415e8f89029a3066df99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054828822
+status: 3
+tags: []
+user_id: elias

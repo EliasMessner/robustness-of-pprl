@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/d32b41a7307e4e03899c8b623403ab16/artifacts
+end_time: 1680054480674
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: d32b41a7307e4e03899c8b623403ab16
+run_name: fortunate-duck-164
+run_uuid: d32b41a7307e4e03899c8b623403ab16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054480096
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/b321c0e4ebfd48f4af4ae313d589a41c/artifacts
+end_time: 1680052038627
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: b321c0e4ebfd48f4af4ae313d589a41c
+run_name: fearless-grouse-823
+run_uuid: b321c0e4ebfd48f4af4ae313d589a41c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680052037955
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/790840250a5f4b0794049d8c0d73df22/artifacts
+end_time: 1680054868104
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 790840250a5f4b0794049d8c0d73df22
+run_name: flawless-dove-182
+run_uuid: 790840250a5f4b0794049d8c0d73df22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054867495
+status: 3
+tags: []
+user_id: elias

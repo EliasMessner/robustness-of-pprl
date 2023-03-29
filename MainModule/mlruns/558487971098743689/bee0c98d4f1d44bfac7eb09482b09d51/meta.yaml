@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/bee0c98d4f1d44bfac7eb09482b09d51/artifacts
+end_time: 1680049864714
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: bee0c98d4f1d44bfac7eb09482b09d51
+run_name: righteous-kit-255
+run_uuid: bee0c98d4f1d44bfac7eb09482b09d51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049863933
+status: 3
+tags: []
+user_id: elias

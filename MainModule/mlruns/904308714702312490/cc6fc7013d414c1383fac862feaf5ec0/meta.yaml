@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/cc6fc7013d414c1383fac862feaf5ec0/artifacts
+end_time: 1680054584083
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: cc6fc7013d414c1383fac862feaf5ec0
+run_name: upbeat-shad-414
+run_uuid: cc6fc7013d414c1383fac862feaf5ec0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054583505
+status: 3
+tags: []
+user_id: elias

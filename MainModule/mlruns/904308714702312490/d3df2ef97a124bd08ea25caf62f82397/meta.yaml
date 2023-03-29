@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/d3df2ef97a124bd08ea25caf62f82397/artifacts
+end_time: 1680054752118
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: d3df2ef97a124bd08ea25caf62f82397
+run_name: thoughtful-fish-479
+run_uuid: d3df2ef97a124bd08ea25caf62f82397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054750774
+status: 3
+tags: []
+user_id: elias

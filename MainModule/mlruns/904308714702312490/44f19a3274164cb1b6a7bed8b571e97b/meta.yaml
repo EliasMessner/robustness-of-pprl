@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/44f19a3274164cb1b6a7bed8b571e97b/artifacts
+end_time: 1680054546942
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 44f19a3274164cb1b6a7bed8b571e97b
+run_name: capricious-stork-553
+run_uuid: 44f19a3274164cb1b6a7bed8b571e97b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054546364
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/c78b3f3f73ae427381b22822f1089dec/artifacts
+end_time: 1680054535785
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: c78b3f3f73ae427381b22822f1089dec
+run_name: awesome-bear-626
+run_uuid: c78b3f3f73ae427381b22822f1089dec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054535207
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/c612f3dc474245b6889eccab27f6d751/artifacts
+end_time: 1680050124689
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: c612f3dc474245b6889eccab27f6d751
+run_name: overjoyed-lark-544
+run_uuid: c612f3dc474245b6889eccab27f6d751
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680050124017
+status: 3
+tags: []
+user_id: elias

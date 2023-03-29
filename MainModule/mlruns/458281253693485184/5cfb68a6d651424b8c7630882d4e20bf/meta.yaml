@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/5cfb68a6d651424b8c7630882d4e20bf/artifacts
+end_time: 1680052001704
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 5cfb68a6d651424b8c7630882d4e20bf
+run_name: adventurous-moth-203
+run_uuid: 5cfb68a6d651424b8c7630882d4e20bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680052001110
+status: 3
+tags: []
+user_id: elias

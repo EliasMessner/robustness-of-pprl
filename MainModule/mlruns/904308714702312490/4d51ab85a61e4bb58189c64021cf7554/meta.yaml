@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/4d51ab85a61e4bb58189c64021cf7554/artifacts
+end_time: 1680054852339
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 4d51ab85a61e4bb58189c64021cf7554
+run_name: sassy-rook-585
+run_uuid: 4d51ab85a61e4bb58189c64021cf7554
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054851729
+status: 3
+tags: []
+user_id: elias

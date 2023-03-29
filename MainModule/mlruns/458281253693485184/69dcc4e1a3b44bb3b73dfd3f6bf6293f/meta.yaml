@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/69dcc4e1a3b44bb3b73dfd3f6bf6293f/artifacts
+end_time: 1680051921374
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 69dcc4e1a3b44bb3b73dfd3f6bf6293f
+run_name: crawling-cub-617
+run_uuid: 69dcc4e1a3b44bb3b73dfd3f6bf6293f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051920827
+status: 3
+tags: []
+user_id: elias

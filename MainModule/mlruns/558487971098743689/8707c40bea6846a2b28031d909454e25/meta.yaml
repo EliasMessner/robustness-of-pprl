@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/8707c40bea6846a2b28031d909454e25/artifacts
+end_time: 1680049846667
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 8707c40bea6846a2b28031d909454e25
+run_name: valuable-ape-751
+run_uuid: 8707c40bea6846a2b28031d909454e25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049845995
+status: 3
+tags: []
+user_id: elias

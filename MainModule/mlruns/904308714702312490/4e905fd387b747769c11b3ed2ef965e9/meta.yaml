@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/4e905fd387b747769c11b3ed2ef965e9/artifacts
+end_time: 1680054621475
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 4e905fd387b747769c11b3ed2ef965e9
+run_name: casual-colt-65
+run_uuid: 4e905fd387b747769c11b3ed2ef965e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054620897
+status: 3
+tags: []
+user_id: elias

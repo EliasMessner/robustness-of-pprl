@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/568ca92566644733a1db848703211d51/artifacts
+end_time: 1680052027892
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 568ca92566644733a1db848703211d51
+run_name: luminous-koi-697
+run_uuid: 568ca92566644733a1db848703211d51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680052027314
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/806a81c513a54dd394315cf3251a4309/artifacts
+end_time: 1680054476705
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 806a81c513a54dd394315cf3251a4309
+run_name: delightful-crab-736
+run_uuid: 806a81c513a54dd394315cf3251a4309
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054476127
+status: 3
+tags: []
+user_id: elias

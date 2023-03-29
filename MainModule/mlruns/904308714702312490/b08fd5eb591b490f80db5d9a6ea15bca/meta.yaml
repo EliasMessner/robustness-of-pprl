@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/b08fd5eb591b490f80db5d9a6ea15bca/artifacts
+end_time: 1680054757649
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: b08fd5eb591b490f80db5d9a6ea15bca
+run_name: industrious-hawk-314
+run_uuid: b08fd5eb591b490f80db5d9a6ea15bca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054757040
+status: 3
+tags: []
+user_id: elias

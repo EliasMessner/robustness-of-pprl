@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/6711cf73bc0146a68506caf5a86f88ab/artifacts
+end_time: 1680051984063
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 6711cf73bc0146a68506caf5a86f88ab
+run_name: righteous-bass-221
+run_uuid: 6711cf73bc0146a68506caf5a86f88ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051983485
+status: 3
+tags: []
+user_id: elias

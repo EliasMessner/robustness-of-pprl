@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/b0212e3de41a4cf6b6448d91463b5ef8/artifacts
+end_time: 1680054650381
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: b0212e3de41a4cf6b6448d91463b5ef8
+run_name: salty-shrew-48
+run_uuid: b0212e3de41a4cf6b6448d91463b5ef8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054649803
+status: 3
+tags: []
+user_id: elias

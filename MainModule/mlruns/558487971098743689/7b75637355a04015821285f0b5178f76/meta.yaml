@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/7b75637355a04015821285f0b5178f76/artifacts
+end_time: 1680049793947
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 7b75637355a04015821285f0b5178f76
+run_name: bald-goat-556
+run_uuid: 7b75637355a04015821285f0b5178f76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049793385
+status: 3
+tags: []
+user_id: elias

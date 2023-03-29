@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/3a1137f67a874952bec981f0c762639a/artifacts
+end_time: 1680054509379
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 3a1137f67a874952bec981f0c762639a
+run_name: bold-rat-175
+run_uuid: 3a1137f67a874952bec981f0c762639a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054508816
+status: 3
+tags: []
+user_id: elias

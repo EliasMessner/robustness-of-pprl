@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/db35cf66142e4188a9a7ed2dcf9dc1e4/artifacts
+end_time: 1680051947437
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: db35cf66142e4188a9a7ed2dcf9dc1e4
+run_name: luxuriant-ram-263
+run_uuid: db35cf66142e4188a9a7ed2dcf9dc1e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051946874
+status: 3
+tags: []
+user_id: elias

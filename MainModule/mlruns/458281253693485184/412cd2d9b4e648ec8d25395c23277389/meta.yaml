@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/412cd2d9b4e648ec8d25395c23277389/artifacts
+end_time: 1680052012500
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 412cd2d9b4e648ec8d25395c23277389
+run_name: grandiose-ant-193
+run_uuid: 412cd2d9b4e648ec8d25395c23277389
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680052011922
+status: 3
+tags: []
+user_id: elias

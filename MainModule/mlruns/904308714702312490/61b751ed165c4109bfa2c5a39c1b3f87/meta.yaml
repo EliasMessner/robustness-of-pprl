@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/61b751ed165c4109bfa2c5a39c1b3f87/artifacts
+end_time: 1680054742071
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 61b751ed165c4109bfa2c5a39c1b3f87
+run_name: debonair-cod-573
+run_uuid: 61b751ed165c4109bfa2c5a39c1b3f87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054741477
+status: 3
+tags: []
+user_id: elias

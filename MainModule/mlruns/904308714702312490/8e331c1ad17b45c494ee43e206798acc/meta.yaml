@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/8e331c1ad17b45c494ee43e206798acc/artifacts
+end_time: 1680054799306
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 8e331c1ad17b45c494ee43e206798acc
+run_name: nosy-asp-375
+run_uuid: 8e331c1ad17b45c494ee43e206798acc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054798697
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/9fabe44d745a41438ef50041e818e3e8/artifacts
+end_time: 1680054878714
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 9fabe44d745a41438ef50041e818e3e8
+run_name: wistful-midge-284
+run_uuid: 9fabe44d745a41438ef50041e818e3e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054878104
+status: 3
+tags: []
+user_id: elias

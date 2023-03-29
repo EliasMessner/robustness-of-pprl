@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/1f391800e84f4420a7cd1cf3e7994fb4/artifacts
+end_time: 1680055507558
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 1f391800e84f4420a7cd1cf3e7994fb4
+run_name: ambitious-sponge-442
+run_uuid: 1f391800e84f4420a7cd1cf3e7994fb4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055507198
+status: 3
+tags: []
+user_id: elias

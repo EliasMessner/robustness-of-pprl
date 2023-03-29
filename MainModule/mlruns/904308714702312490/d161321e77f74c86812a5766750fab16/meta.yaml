@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/d161321e77f74c86812a5766750fab16/artifacts
+end_time: 1680054646990
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: d161321e77f74c86812a5766750fab16
+run_name: casual-kite-444
+run_uuid: d161321e77f74c86812a5766750fab16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054646397
+status: 3
+tags: []
+user_id: elias

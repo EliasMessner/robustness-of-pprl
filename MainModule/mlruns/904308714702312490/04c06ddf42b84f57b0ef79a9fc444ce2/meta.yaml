@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/04c06ddf42b84f57b0ef79a9fc444ce2/artifacts
+end_time: 1680054620115
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 04c06ddf42b84f57b0ef79a9fc444ce2
+run_name: masked-wren-720
+run_uuid: 04c06ddf42b84f57b0ef79a9fc444ce2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054618818
+status: 3
+tags: []
+user_id: elias

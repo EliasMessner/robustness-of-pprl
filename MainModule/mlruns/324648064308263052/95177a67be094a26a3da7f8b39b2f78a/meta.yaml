@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/95177a67be094a26a3da7f8b39b2f78a/artifacts
+end_time: 1680055539042
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 95177a67be094a26a3da7f8b39b2f78a
+run_name: suave-loon-998
+run_uuid: 95177a67be094a26a3da7f8b39b2f78a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055538683
+status: 3
+tags: []
+user_id: elias

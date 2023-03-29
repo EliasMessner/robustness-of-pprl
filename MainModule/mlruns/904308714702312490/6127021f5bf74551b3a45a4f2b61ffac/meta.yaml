@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/6127021f5bf74551b3a45a4f2b61ffac/artifacts
+end_time: 1680054772555
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 6127021f5bf74551b3a45a4f2b61ffac
+run_name: charming-tern-504
+run_uuid: 6127021f5bf74551b3a45a4f2b61ffac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054771946
+status: 3
+tags: []
+user_id: elias

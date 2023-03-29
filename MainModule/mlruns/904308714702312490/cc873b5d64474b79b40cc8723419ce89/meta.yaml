@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/cc873b5d64474b79b40cc8723419ce89/artifacts
+end_time: 1680054543222
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: cc873b5d64474b79b40cc8723419ce89
+run_name: tasteful-goat-73
+run_uuid: cc873b5d64474b79b40cc8723419ce89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054541957
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/8e670fd1afe34d9a9b9d6783bc6f0416/artifacts
+end_time: 1680054608772
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 8e670fd1afe34d9a9b9d6783bc6f0416
+run_name: dapper-shrike-723
+run_uuid: 8e670fd1afe34d9a9b9d6783bc6f0416
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054608178
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/8132426819fb4299952c1bf050482705/artifacts
+end_time: 1680055504729
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 8132426819fb4299952c1bf050482705
+run_name: charming-loon-301
+run_uuid: 8132426819fb4299952c1bf050482705
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055504369
+status: 3
+tags: []
+user_id: elias

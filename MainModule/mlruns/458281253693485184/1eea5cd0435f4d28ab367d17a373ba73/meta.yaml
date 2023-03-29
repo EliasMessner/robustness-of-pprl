@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/1eea5cd0435f4d28ab367d17a373ba73/artifacts
+end_time: 1680052037392
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 1eea5cd0435f4d28ab367d17a373ba73
+run_name: bedecked-cub-266
+run_uuid: 1eea5cd0435f4d28ab367d17a373ba73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680052036798
+status: 3
+tags: []
+user_id: elias

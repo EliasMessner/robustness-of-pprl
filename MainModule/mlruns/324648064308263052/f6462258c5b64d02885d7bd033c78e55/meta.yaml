@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/f6462258c5b64d02885d7bd033c78e55/artifacts
+end_time: 1680055499057
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: f6462258c5b64d02885d7bd033c78e55
+run_name: masked-bass-489
+run_uuid: f6462258c5b64d02885d7bd033c78e55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055498635
+status: 3
+tags: []
+user_id: elias

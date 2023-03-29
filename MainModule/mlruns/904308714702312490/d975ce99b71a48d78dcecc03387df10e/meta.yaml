@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/d975ce99b71a48d78dcecc03387df10e/artifacts
+end_time: 1680054817884
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: d975ce99b71a48d78dcecc03387df10e
+run_name: capricious-wren-936
+run_uuid: d975ce99b71a48d78dcecc03387df10e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054817275
+status: 3
+tags: []
+user_id: elias

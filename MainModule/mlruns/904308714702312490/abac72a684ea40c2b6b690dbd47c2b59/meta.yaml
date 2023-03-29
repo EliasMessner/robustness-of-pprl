@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/abac72a684ea40c2b6b690dbd47c2b59/artifacts
+end_time: 1680054815775
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: abac72a684ea40c2b6b690dbd47c2b59
+run_name: handsome-midge-51
+run_uuid: abac72a684ea40c2b6b690dbd47c2b59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054815166
+status: 3
+tags: []
+user_id: elias

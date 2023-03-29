@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/586c6bfee0714a20b61e840975261e13/artifacts
+end_time: 1680052007657
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 586c6bfee0714a20b61e840975261e13
+run_name: lyrical-crow-665
+run_uuid: 586c6bfee0714a20b61e840975261e13
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680052007032
+status: 3
+tags: []
+user_id: elias

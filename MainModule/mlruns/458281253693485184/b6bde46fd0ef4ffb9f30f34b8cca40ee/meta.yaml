@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/b6bde46fd0ef4ffb9f30f34b8cca40ee/artifacts
+end_time: 1680051926187
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: b6bde46fd0ef4ffb9f30f34b8cca40ee
+run_name: welcoming-bee-472
+run_uuid: b6bde46fd0ef4ffb9f30f34b8cca40ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051925609
+status: 3
+tags: []
+user_id: elias

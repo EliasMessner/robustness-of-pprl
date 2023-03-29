@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/15e503abcef04a8e8244e6c4d470c33f/artifacts
+end_time: 1680054606053
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 15e503abcef04a8e8244e6c4d470c33f
+run_name: polite-ape-536
+run_uuid: 15e503abcef04a8e8244e6c4d470c33f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054605473
+status: 3
+tags: []
+user_id: elias

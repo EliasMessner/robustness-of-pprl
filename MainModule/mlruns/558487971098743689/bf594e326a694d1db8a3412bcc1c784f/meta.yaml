@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/bf594e326a694d1db8a3412bcc1c784f/artifacts
+end_time: 1680049791041
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: bf594e326a694d1db8a3412bcc1c784f
+run_name: handsome-bass-846
+run_uuid: bf594e326a694d1db8a3412bcc1c784f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049790510
+status: 3
+tags: []
+user_id: elias

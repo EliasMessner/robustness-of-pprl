@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/ed0a9e0b8b904664abcf504b66384dc0/artifacts
+end_time: 1680055500541
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: ed0a9e0b8b904664abcf504b66384dc0
+run_name: unruly-hare-802
+run_uuid: ed0a9e0b8b904664abcf504b66384dc0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055500197
+status: 3
+tags: []
+user_id: elias

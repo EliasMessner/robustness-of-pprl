@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/48e081c2606d4898ad4058f7366092f0/artifacts
+end_time: 1680055530339
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 48e081c2606d4898ad4058f7366092f0
+run_name: legendary-shrike-219
+run_uuid: 48e081c2606d4898ad4058f7366092f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055529980
+status: 3
+tags: []
+user_id: elias

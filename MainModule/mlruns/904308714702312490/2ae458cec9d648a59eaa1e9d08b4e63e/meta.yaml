@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/2ae458cec9d648a59eaa1e9d08b4e63e/artifacts
+end_time: 1680054516707
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 2ae458cec9d648a59eaa1e9d08b4e63e
+run_name: merciful-pug-667
+run_uuid: 2ae458cec9d648a59eaa1e9d08b4e63e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054516129
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/0ebe0bf0d28d46a48a02b01d8c725241/artifacts
+end_time: 1680051908312
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 0ebe0bf0d28d46a48a02b01d8c725241
+run_name: charming-cow-679
+run_uuid: 0ebe0bf0d28d46a48a02b01d8c725241
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051907749
+status: 3
+tags: []
+user_id: elias

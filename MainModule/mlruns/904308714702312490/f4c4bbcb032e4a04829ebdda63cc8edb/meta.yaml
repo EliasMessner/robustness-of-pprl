@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/f4c4bbcb032e4a04829ebdda63cc8edb/artifacts
+end_time: 1680054859370
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: f4c4bbcb032e4a04829ebdda63cc8edb
+run_name: thundering-fox-571
+run_uuid: f4c4bbcb032e4a04829ebdda63cc8edb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054858761
+status: 3
+tags: []
+user_id: elias

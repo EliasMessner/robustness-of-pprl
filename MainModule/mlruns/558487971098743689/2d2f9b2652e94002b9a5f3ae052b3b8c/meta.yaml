@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/2d2f9b2652e94002b9a5f3ae052b3b8c/artifacts
+end_time: 1680049959404
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 2d2f9b2652e94002b9a5f3ae052b3b8c
+run_name: burly-skunk-870
+run_uuid: 2d2f9b2652e94002b9a5f3ae052b3b8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049958935
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/3f731f68657b40618ccf298f47b3826e/artifacts
+end_time: 1680055554261
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 3f731f68657b40618ccf298f47b3826e
+run_name: secretive-shoat-118
+run_uuid: 3f731f68657b40618ccf298f47b3826e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055553886
+status: 3
+tags: []
+user_id: elias

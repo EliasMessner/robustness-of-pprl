@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/8abbd628d2bb438baffc2367ae5c33cc/artifacts
+end_time: 1680051981594
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 8abbd628d2bb438baffc2367ae5c33cc
+run_name: awesome-stag-825
+run_uuid: 8abbd628d2bb438baffc2367ae5c33cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051980907
+status: 3
+tags: []
+user_id: elias

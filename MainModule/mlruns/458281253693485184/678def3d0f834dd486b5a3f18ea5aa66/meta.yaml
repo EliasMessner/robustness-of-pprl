@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/678def3d0f834dd486b5a3f18ea5aa66/artifacts
+end_time: 1680051892045
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 678def3d0f834dd486b5a3f18ea5aa66
+run_name: rebellious-cod-717
+run_uuid: 678def3d0f834dd486b5a3f18ea5aa66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051891482
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/e0cb4ef271ce43d0ae6ae4208d197d63/artifacts
+end_time: 1680052029064
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: e0cb4ef271ce43d0ae6ae4208d197d63
+run_name: rare-lynx-739
+run_uuid: e0cb4ef271ce43d0ae6ae4208d197d63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680052028423
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/ede3be8a62d647c8b95478edba6411ed/artifacts
+end_time: 1680054503660
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: ede3be8a62d647c8b95478edba6411ed
+run_name: seed=n | l=1024 | k=10 | t=0.7
+run_uuid: ede3be8a62d647c8b95478edba6411ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054485409
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/ea68570f2d234cb7b22dd6e128f4bea6/artifacts
+end_time: 1680052013610
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: ea68570f2d234cb7b22dd6e128f4bea6
+run_name: kindly-owl-266
+run_uuid: ea68570f2d234cb7b22dd6e128f4bea6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680052013032
+status: 3
+tags: []
+user_id: elias

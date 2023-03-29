@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/3f7da4bbec844ebaaaa44e8ec59c9bed/artifacts
+end_time: 1680054761133
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 3f7da4bbec844ebaaaa44e8ec59c9bed
+run_name: glamorous-skunk-889
+run_uuid: 3f7da4bbec844ebaaaa44e8ec59c9bed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054760540
+status: 3
+tags: []
+user_id: elias

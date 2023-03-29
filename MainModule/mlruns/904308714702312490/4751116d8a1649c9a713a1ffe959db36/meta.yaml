@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/4751116d8a1649c9a713a1ffe959db36/artifacts
+end_time: 1680054535129
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 4751116d8a1649c9a713a1ffe959db36
+run_name: clumsy-turtle-221
+run_uuid: 4751116d8a1649c9a713a1ffe959db36
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054534550
+status: 3
+tags: []
+user_id: elias

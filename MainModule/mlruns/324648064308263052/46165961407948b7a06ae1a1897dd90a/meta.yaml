@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/46165961407948b7a06ae1a1897dd90a/artifacts
+end_time: 1680055527464
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 46165961407948b7a06ae1a1897dd90a
+run_name: treasured-shad-257
+run_uuid: 46165961407948b7a06ae1a1897dd90a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055527105
+status: 3
+tags: []
+user_id: elias

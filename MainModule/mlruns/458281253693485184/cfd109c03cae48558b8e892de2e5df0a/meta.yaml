@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/cfd109c03cae48558b8e892de2e5df0a/artifacts
+end_time: 1680051988704
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: cfd109c03cae48558b8e892de2e5df0a
+run_name: clumsy-lamb-969
+run_uuid: cfd109c03cae48558b8e892de2e5df0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051988016
+status: 3
+tags: []
+user_id: elias

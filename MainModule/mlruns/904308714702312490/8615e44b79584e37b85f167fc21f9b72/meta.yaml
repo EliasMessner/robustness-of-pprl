@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/8615e44b79584e37b85f167fc21f9b72/artifacts
+end_time: 1680054795119
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 8615e44b79584e37b85f167fc21f9b72
+run_name: smiling-hen-46
+run_uuid: 8615e44b79584e37b85f167fc21f9b72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054794509
+status: 3
+tags: []
+user_id: elias

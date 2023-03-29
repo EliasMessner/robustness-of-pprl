@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/93bc1e78a25441859ba8893ea66f9b05/artifacts
+end_time: 1680051934421
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 93bc1e78a25441859ba8893ea66f9b05
+run_name: gaudy-donkey-653
+run_uuid: 93bc1e78a25441859ba8893ea66f9b05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051933812
+status: 3
+tags: []
+user_id: elias

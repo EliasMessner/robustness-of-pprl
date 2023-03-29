@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/9ad60c838f814a08a024b3d681583d88/artifacts
+end_time: 1680050049797
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 9ad60c838f814a08a024b3d681583d88
+run_name: powerful-rat-257
+run_uuid: 9ad60c838f814a08a024b3d681583d88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680050049203
+status: 3
+tags: []
+user_id: elias

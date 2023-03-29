@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/ca252642bfb645a3800ea2cece90db51/artifacts
+end_time: 1680050056422
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: ca252642bfb645a3800ea2cece90db51
+run_name: delightful-bass-621
+run_uuid: ca252642bfb645a3800ea2cece90db51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680050055516
+status: 3
+tags: []
+user_id: elias

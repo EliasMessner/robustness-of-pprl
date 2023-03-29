@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/78ec2f49fb1048a5a90f4d2e8116360a/artifacts
+end_time: 1680055496869
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 78ec2f49fb1048a5a90f4d2e8116360a
+run_name: welcoming-colt-921
+run_uuid: 78ec2f49fb1048a5a90f4d2e8116360a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055496447
+status: 3
+tags: []
+user_id: elias

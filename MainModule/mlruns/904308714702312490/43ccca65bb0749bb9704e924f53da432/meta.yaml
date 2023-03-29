@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/43ccca65bb0749bb9704e924f53da432/artifacts
+end_time: 1680054749711
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 43ccca65bb0749bb9704e924f53da432
+run_name: burly-pig-481
+run_uuid: 43ccca65bb0749bb9704e924f53da432
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054748415
+status: 3
+tags: []
+user_id: elias

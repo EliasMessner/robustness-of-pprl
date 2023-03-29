@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/81200ce0495047f1a1659f10816c4bd3/artifacts
+end_time: 1680051940327
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: 81200ce0495047f1a1659f10816c4bd3
+run_name: wistful-stag-831
+run_uuid: 81200ce0495047f1a1659f10816c4bd3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051939765
+status: 3
+tags: []
+user_id: elias

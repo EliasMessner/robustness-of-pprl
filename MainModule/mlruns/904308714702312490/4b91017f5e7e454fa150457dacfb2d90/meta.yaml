@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/4b91017f5e7e454fa150457dacfb2d90/artifacts
+end_time: 1680054453674
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 4b91017f5e7e454fa150457dacfb2d90
+run_name: illustrious-hawk-475
+run_uuid: 4b91017f5e7e454fa150457dacfb2d90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054452330
+status: 3
+tags: []
+user_id: elias

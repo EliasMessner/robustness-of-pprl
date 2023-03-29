@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/a09f986be99b42c4a09726ee9c2cbfb1/artifacts
+end_time: 1680054533785
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: a09f986be99b42c4a09726ee9c2cbfb1
+run_name: sedate-moose-29
+run_uuid: a09f986be99b42c4a09726ee9c2cbfb1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054533207
+status: 3
+tags: []
+user_id: elias

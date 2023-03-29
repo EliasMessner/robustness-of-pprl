@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/5f2687cd913e420d834c4b7f46206d40/artifacts
+end_time: 1680054644943
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 5f2687cd913e420d834c4b7f46206d40
+run_name: bedecked-bee-805
+run_uuid: 5f2687cd913e420d834c4b7f46206d40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054644365
+status: 3
+tags: []
+user_id: elias

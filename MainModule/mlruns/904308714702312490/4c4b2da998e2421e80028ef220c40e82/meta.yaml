@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/4c4b2da998e2421e80028ef220c40e82/artifacts
+end_time: 1680054533113
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 4c4b2da998e2421e80028ef220c40e82
+run_name: intelligent-croc-965
+run_uuid: 4c4b2da998e2421e80028ef220c40e82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054532550
+status: 3
+tags: []
+user_id: elias

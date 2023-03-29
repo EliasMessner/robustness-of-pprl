@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/a740e181ea3249f7a3d8ba08b2bbae84/artifacts
+end_time: 1680054702038
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: a740e181ea3249f7a3d8ba08b2bbae84
+run_name: able-zebra-48
+run_uuid: a740e181ea3249f7a3d8ba08b2bbae84
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054701445
+status: 3
+tags: []
+user_id: elias

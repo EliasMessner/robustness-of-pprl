@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/6534bc85dfa1498b961b12d9e0897bb2/artifacts
+end_time: 1680055514886
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 6534bc85dfa1498b961b12d9e0897bb2
+run_name: redolent-pig-623
+run_uuid: 6534bc85dfa1498b961b12d9e0897bb2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055514527
+status: 3
+tags: []
+user_id: elias

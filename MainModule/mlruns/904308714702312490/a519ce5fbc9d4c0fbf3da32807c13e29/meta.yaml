@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/a519ce5fbc9d4c0fbf3da32807c13e29/artifacts
+end_time: 1680054441330
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: a519ce5fbc9d4c0fbf3da32807c13e29
+run_name: popular-gull-661
+run_uuid: a519ce5fbc9d4c0fbf3da32807c13e29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054440752
+status: 3
+tags: []
+user_id: elias

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/66dc1aeea1b04f69bab893a6241d4535/artifacts
+end_time: 1680054864995
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 66dc1aeea1b04f69bab893a6241d4535
+run_name: melodic-squid-547
+run_uuid: 66dc1aeea1b04f69bab893a6241d4535
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054863698
+status: 3
+tags: []
+user_id: elias

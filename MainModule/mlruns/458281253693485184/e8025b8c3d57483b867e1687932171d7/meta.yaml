@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/458281253693485184/e8025b8c3d57483b867e1687932171d7/artifacts
+end_time: 1680051968719
+entry_point_name: ''
+experiment_id: '458281253693485184'
+lifecycle_stage: active
+run_id: e8025b8c3d57483b867e1687932171d7
+run_name: caring-lark-34
+run_uuid: e8025b8c3d57483b867e1687932171d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680051968157
+status: 3
+tags: []
+user_id: elias

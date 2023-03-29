@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/31d61c71e92f449e89e0004842f1fc4b/artifacts
+end_time: 1680054838572
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 31d61c71e92f449e89e0004842f1fc4b
+run_name: magnificent-colt-356
+run_uuid: 31d61c71e92f449e89e0004842f1fc4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054837963
+status: 3
+tags: []
+user_id: elias

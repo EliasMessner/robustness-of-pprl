@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/a0fbda4e94cc4d749cfdaffbd087c13b/artifacts
+end_time: 1680054611459
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: a0fbda4e94cc4d749cfdaffbd087c13b
+run_name: colorful-newt-750
+run_uuid: a0fbda4e94cc4d749cfdaffbd087c13b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054610881
+status: 3
+tags: []
+user_id: elias

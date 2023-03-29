@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/1286e110324d4743bf897ccf7d4873de/artifacts
+end_time: 1680054666382
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 1286e110324d4743bf897ccf7d4873de
+run_name: dapper-loon-202
+run_uuid: 1286e110324d4743bf897ccf7d4873de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054665803
+status: 3
+tags: []
+user_id: elias

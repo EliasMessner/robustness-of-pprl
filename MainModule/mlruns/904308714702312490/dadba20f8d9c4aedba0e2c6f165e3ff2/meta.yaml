@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/dadba20f8d9c4aedba0e2c6f165e3ff2/artifacts
+end_time: 1680054708241
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: dadba20f8d9c4aedba0e2c6f165e3ff2
+run_name: omniscient-toad-146
+run_uuid: dadba20f8d9c4aedba0e2c6f165e3ff2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054707648
+status: 3
+tags: []
+user_id: elias

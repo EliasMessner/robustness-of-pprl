@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/56384ca33c9342bf9ecab3b03cfccad3/artifacts
+end_time: 1680054857964
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 56384ca33c9342bf9ecab3b03cfccad3
+run_name: gentle-fowl-991
+run_uuid: 56384ca33c9342bf9ecab3b03cfccad3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054857354
+status: 3
+tags: []
+user_id: elias

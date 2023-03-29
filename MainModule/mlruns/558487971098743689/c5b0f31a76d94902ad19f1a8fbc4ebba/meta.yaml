@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/c5b0f31a76d94902ad19f1a8fbc4ebba/artifacts
+end_time: 1680049778353
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: c5b0f31a76d94902ad19f1a8fbc4ebba
+run_name: selective-cow-49
+run_uuid: c5b0f31a76d94902ad19f1a8fbc4ebba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680049777822
+status: 3
+tags: []
+user_id: elias

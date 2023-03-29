@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/67d454328a484ec780c0c5955f4489e7/artifacts
+end_time: 1680054739290
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 67d454328a484ec780c0c5955f4489e7
+run_name: loud-doe-21
+run_uuid: 67d454328a484ec780c0c5955f4489e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054738696
+status: 3
+tags: []
+user_id: elias

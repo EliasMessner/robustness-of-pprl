@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/558487971098743689/6082bf783e2744c88c16013ba1d4b932/artifacts
+end_time: 1680050054953
+entry_point_name: ''
+experiment_id: '558487971098743689'
+lifecycle_stage: active
+run_id: 6082bf783e2744c88c16013ba1d4b932
+run_name: unique-bass-130
+run_uuid: 6082bf783e2744c88c16013ba1d4b932
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680050054109
+status: 3
+tags: []
+user_id: elias

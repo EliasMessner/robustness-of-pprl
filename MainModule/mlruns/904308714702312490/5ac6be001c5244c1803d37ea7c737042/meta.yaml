@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/5ac6be001c5244c1803d37ea7c737042/artifacts
+end_time: 1680054715476
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 5ac6be001c5244c1803d37ea7c737042
+run_name: monumental-vole-857
+run_uuid: 5ac6be001c5244c1803d37ea7c737042
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054714866
+status: 3
+tags: []
+user_id: elias

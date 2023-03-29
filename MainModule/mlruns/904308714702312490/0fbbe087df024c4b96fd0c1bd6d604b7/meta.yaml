@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/0fbbe087df024c4b96fd0c1bd6d604b7/artifacts
+end_time: 1680054860776
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 0fbbe087df024c4b96fd0c1bd6d604b7
+run_name: intelligent-hog-357
+run_uuid: 0fbbe087df024c4b96fd0c1bd6d604b7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054860167
+status: 3
+tags: []
+user_id: elias

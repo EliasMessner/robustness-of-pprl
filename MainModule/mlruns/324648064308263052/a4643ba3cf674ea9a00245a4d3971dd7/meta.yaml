@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/a4643ba3cf674ea9a00245a4d3971dd7/artifacts
+end_time: 1680055501885
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: a4643ba3cf674ea9a00245a4d3971dd7
+run_name: rebellious-skunk-149
+run_uuid: a4643ba3cf674ea9a00245a4d3971dd7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055501541
+status: 3
+tags: []
+user_id: elias

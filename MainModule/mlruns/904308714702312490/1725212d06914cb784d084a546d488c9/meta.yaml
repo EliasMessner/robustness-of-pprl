@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/1725212d06914cb784d084a546d488c9/artifacts
+end_time: 1680054573536
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 1725212d06914cb784d084a546d488c9
+run_name: dapper-vole-774
+run_uuid: 1725212d06914cb784d084a546d488c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054572942
+status: 3
+tags: []
+user_id: elias

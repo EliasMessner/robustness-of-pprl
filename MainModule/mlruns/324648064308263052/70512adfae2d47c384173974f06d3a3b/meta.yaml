@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/324648064308263052/70512adfae2d47c384173974f06d3a3b/artifacts
+end_time: 1680055487557
+entry_point_name: ''
+experiment_id: '324648064308263052'
+lifecycle_stage: active
+run_id: 70512adfae2d47c384173974f06d3a3b
+run_name: polite-dolphin-137
+run_uuid: 70512adfae2d47c384173974f06d3a3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680055487197
+status: 3
+tags: []
+user_id: elias

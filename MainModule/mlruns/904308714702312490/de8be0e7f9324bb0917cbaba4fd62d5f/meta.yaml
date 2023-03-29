@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/de8be0e7f9324bb0917cbaba4fd62d5f/artifacts
+end_time: 1680054506363
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: de8be0e7f9324bb0917cbaba4fd62d5f
+run_name: worried-frog-971
+run_uuid: de8be0e7f9324bb0917cbaba4fd62d5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054505113
+status: 3
+tags: []
+user_id: elias

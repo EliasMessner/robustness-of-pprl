@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/87d93a8ac82d43db9af7f6f9e0526d14/artifacts
+end_time: 1680054684476
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 87d93a8ac82d43db9af7f6f9e0526d14
+run_name: exultant-ant-930
+run_uuid: 87d93a8ac82d43db9af7f6f9e0526d14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054683882
+status: 3
+tags: []
+user_id: elias

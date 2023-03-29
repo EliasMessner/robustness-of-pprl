@@ -1,0 +1,29 @@
+{
+  "base_dataset": "data/2023_NCVR_Panse_1M/records.csv",
+  "col_names": ["sourceID", "globalID", "localID", "FIRSTNAME", "MIDDLENAME", "LASTNAME", "YEAROFBIRTH", "PLACEOFBIRTH", "COUNTRY", "CITY", "PLZ", "STREET", "GENDER", "ETHNIC", "RACE"],
+  "source_id_col_name": "sourceID",
+  "global_id_col_name": "globalID",
+  "desc": "Varying gender distributions",
+  "variations":[
+    {
+      "desc": "Different ratios of M/F, with downsampling to 200000",
+      "params": {
+        "subset_selection": "ATTRIBUTE_VALUE",
+        "column": "GENDER",
+        "dist": null,
+        "downsampling": 100000,
+        "preserve_overlap_in_downsampling": true
+      },
+      "replacements": {
+        "dist": [
+          {"F": 1.0},
+          {"M": 0.2, "F": 0.8},
+          {"M": 0.4, "F": 0.6},
+          {"M": 0.6, "F": 0.4},
+          {"M": 0.8, "F": 0.2},
+          {"M": 1.0}
+        ]
+      }
+    }
+  ]
+}

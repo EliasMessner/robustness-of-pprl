@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/93f2c903a9904ba4a57045b59d014bda/artifacts
+end_time: 1680054494316
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 93f2c903a9904ba4a57045b59d014bda
+run_name: welcoming-shark-606
+run_uuid: 93f2c903a9904ba4a57045b59d014bda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054493754
+status: 3
+tags: []
+user_id: elias

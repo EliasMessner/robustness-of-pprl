@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/elias/PycharmProjects/robustness-of-pprl/MainModule/mlruns/904308714702312490/94a5fef55c974715b20979bb98db36ad/artifacts
+end_time: 1680054626912
+entry_point_name: ''
+experiment_id: '904308714702312490'
+lifecycle_stage: active
+run_id: 94a5fef55c974715b20979bb98db36ad
+run_name: victorious-duck-695
+run_uuid: 94a5fef55c974715b20979bb98db36ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680054626318
+status: 3
+tags: []
+user_id: elias
