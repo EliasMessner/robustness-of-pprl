@@ -9,9 +9,9 @@ st.write("# Error Rate")
 CHART_ARRANGEMENT = st.sidebar.radio(label="Chart Arrangement", options=["Horizontal", "Vertical"])
 st.sidebar.write("Figure Size")
 key += 1
-size_x = st.sidebar.slider(label="X", min_value=5, max_value=20, value=DEFAULT_FIG_SIZE[0], key=key)
+size_x = st.sidebar.slider(label="X", min_value=2, max_value=20, value=DEFAULT_FIG_SIZE[0], key=key)
 key += 1
-size_y = st.sidebar.slider(label="Y", min_value=3, max_value=15, value=DEFAULT_FIG_SIZE[1], key=key)
+size_y = st.sidebar.slider(label="Y", min_value=2, max_value=15, value=DEFAULT_FIG_SIZE[1], key=key)
 fig = plt.figure(figsize=(size_x, size_y))
 
 
@@ -26,7 +26,9 @@ default_exp = [sorted(default_exp, key=lambda e: e.creation_time, reverse=True)[
 exp_ids = experiment_multiselect(default=[e.experiment_id for e in default_exp])
 runs = get_runs(exp_ids)
 assert (runs["params.subset_selection"] == "ERROR_RATE").all()
-st.write(runs)
+
+with st.expander(f"Found {runs.shape[0]} runs"):
+    st.write(runs)
 
 step_selections = st.multiselect("Step", options=[2, 3], default=[2, 3])
 preserve_overlap_selections = st.multiselect("Preserve Overlap", options=["True", "False"], default=["True", "False"])

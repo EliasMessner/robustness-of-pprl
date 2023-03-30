@@ -9,7 +9,7 @@
       "params": {
         "subset_selection": "RANDOM",
         "seed": null,
-        "size": 200000
+        "size": 100000
       },
       "replacements": {
         "seed": [0, 10]
